@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+coverage/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# OMX runtime/state
+.omx/
+
+# Local generated public placeholders (optional to keep if replaced with real assets)
+# public/favicon.ico
+# public/og-image.png
+# public/resume.pdf
