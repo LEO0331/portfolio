@@ -2,7 +2,7 @@ export interface Profile {
   fullName: string;
   title: string;
   summary: string;
-  email: string;
+  websiteUrl: string;
   githubUrl: string;
   linkedinUrl: string;
   resumeUrl: string;

@@ -4,7 +4,7 @@ import { PageContainer } from "./PageContainer";
 
 export function Footer(): JSX.Element {
   const year = new Date().getFullYear();
-  const hasEmail = profile.email !== "YOUR_EMAIL_HERE";
+  const hasWebsite = profile.websiteUrl !== "YOUR_WEBSITE_URL_HERE";
   const hasLinkedIn = profile.linkedinUrl !== "YOUR_LINKEDIN_URL_HERE";
 
   return (
@@ -28,12 +28,12 @@ export function Footer(): JSX.Element {
             ) : (
               <span>LinkedIn: YOUR_LINKEDIN_URL_HERE</span>
             )}
-            {hasEmail ? (
-              <a href={`mailto:${profile.email}`} className="font-semibold text-brand-700 hover:underline">
-                {profile.email}
-              </a>
+            {hasWebsite ? (
+              <ExternalLink href={profile.websiteUrl} label="Open personal website" className="font-semibold">
+                Website
+              </ExternalLink>
             ) : (
-              <span>Email: YOUR_EMAIL_HERE</span>
+              <span>Website: YOUR_WEBSITE_URL_HERE</span>
             )}
           </div>
         </div>

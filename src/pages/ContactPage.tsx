@@ -6,10 +6,10 @@ import { usePageSeo } from "../utils/seo";
 export function ContactPage(): JSX.Element {
   usePageSeo(
     "Contact",
-    "Contact Leo Chen via email, GitHub, LinkedIn, and resume links."
+    "Contact Leo Chen via personal website, GitHub, LinkedIn, and resume links."
   );
 
-  const hasEmail = profile.email !== "YOUR_EMAIL_HERE";
+  const hasWebsite = profile.websiteUrl !== "YOUR_WEBSITE_URL_HERE";
   const hasLinkedIn = profile.linkedinUrl !== "YOUR_LINKEDIN_URL_HERE";
 
   return (
@@ -23,13 +23,13 @@ export function ContactPage(): JSX.Element {
 
         <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4 sm:text-base">
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-            <span className="font-semibold text-slate-900">Email: </span>
-            {hasEmail ? (
-              <a href={`mailto:${profile.email}`} className="text-brand-700 hover:underline">
-                {profile.email}
-              </a>
+            <span className="font-semibold text-slate-900">Website: </span>
+            {hasWebsite ? (
+              <ExternalLink href={profile.websiteUrl} label="Open personal website">
+                {profile.websiteUrl}
+              </ExternalLink>
             ) : (
-              <span className="text-slate-600">YOUR_EMAIL_HERE</span>
+              <span className="text-slate-600">YOUR_WEBSITE_URL_HERE</span>
             )}
           </li>
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">

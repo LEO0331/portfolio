@@ -5,7 +5,7 @@ export const profile: Profile = {
   title: "Full Stack Engineer",
   summary:
     "Backend-focused full stack engineer with experience building web applications, interactive tools, and user-facing products across frontend and backend workflows.",
-  email: "https://leolicheng.wordpress.com/",
+  websiteUrl: "https://leolicheng.wordpress.com/",
   githubUrl: "https://github.com/LEO0331",
   linkedinUrl: "https://linkedin.com/in/li-cheng-chen",
   resumeUrl: "/resume.pdf",

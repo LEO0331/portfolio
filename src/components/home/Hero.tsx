@@ -8,7 +8,7 @@ export function Hero(): JSX.Element {
     <Section className="pb-8 pt-14 sm:pt-20">
       <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-end">
         <div className="space-y-4 sm:space-y-5">
-          <p className="eyebrow">Full Stack Engineer · Available For New Opportunities</p>
+          <p className="eyebrow">Full Stack Engineer </p>
           <h1 className="max-w-3xl text-3xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
             {profile.fullName}
           </h1>
