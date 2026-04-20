@@ -9,20 +9,20 @@ export function ProjectHighlights({ allProjects, visibleProjects }: ProjectHighl
   const liveCount = allProjects.filter((project) => project.status === "live").length;
   const featuredCount = allProjects.filter((project) => project.featured).length;
 
+  const stats = [
+    { label: "Visible", value: visibleProjects.length, tone: "text-brand-700" },
+    { label: "Featured", value: featuredCount, tone: "text-slate-900" },
+    { label: "Live", value: liveCount, tone: "text-teal-700" }
+  ];
+
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-      <div className="rounded-lg border border-slate-200 bg-white p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Visible Projects</p>
-        <p className="mt-1 text-2xl font-semibold text-slate-900">{visibleProjects.length}</p>
-      </div>
-      <div className="rounded-lg border border-slate-200 bg-white p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Featured Projects</p>
-        <p className="mt-1 text-2xl font-semibold text-slate-900">{featuredCount}</p>
-      </div>
-      <div className="rounded-lg border border-slate-200 bg-white p-4">
-        <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Live Projects</p>
-        <p className="mt-1 text-2xl font-semibold text-slate-900">{liveCount}</p>
-      </div>
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+      {stats.map((stat) => (
+        <div key={stat.label} className="panel-soft p-4">
+          <p className="eyebrow">{stat.label}</p>
+          <p className={`mt-1 text-3xl font-bold ${stat.tone}`}>{stat.value}</p>
+        </div>
+      ))}
     </div>
   );
 }

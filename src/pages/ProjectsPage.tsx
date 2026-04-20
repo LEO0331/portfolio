@@ -30,14 +30,15 @@ export function ProjectsPage(): JSX.Element {
 
   return (
     <Section>
-      <header className="mb-6 space-y-2">
-        <h1 className="text-3xl font-bold text-slate-900">Projects</h1>
-        <p className="max-w-3xl text-slate-600">
-          Browse projects by technology, category, and status. Each card includes role, key features, and direct links to demo and source code.
+      <header className="mb-6 space-y-2.5 sm:mb-7 sm:space-y-3">
+        <p className="eyebrow">Portfolio Work</p>
+        <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">Projects</h1>
+        <p className="max-w-3xl text-sm text-slate-600 sm:text-base">
+          Filter by category, technology, and status. Each project includes role context, technical stack, and direct links to live demo and source code.
         </p>
       </header>
 
-      <div className="space-y-4">
+      <div className="space-y-3.5 sm:space-y-4">
         <ProjectSearch value={searchTerm} onChange={setSearchTerm} />
         <ProjectFilters
           categories={categories}

@@ -10,10 +10,11 @@ interface ProjectGridProps {
 export function ProjectGrid({ projects, onReset }: ProjectGridProps): JSX.Element {
   if (projects.length === 0) {
     return (
-      <div className="rounded-xl border border-dashed border-slate-300 bg-white p-10 text-center">
-        <h3 className="text-lg font-semibold text-slate-900">No projects match your filters</h3>
+      <div className="panel p-7 text-center sm:p-10">
+        <p className="eyebrow">No Match</p>
+        <h3 className="mt-1 text-lg font-bold text-slate-900 sm:text-xl">No projects match your current filters</h3>
         <p className="mt-2 text-sm text-slate-600">Try clearing filters or using a different keyword.</p>
-        <Button className="mt-4" variant="secondary" onClick={onReset}>
+        <Button className="mt-5" variant="secondary" onClick={onReset}>
           Reset Filters
         </Button>
       </div>

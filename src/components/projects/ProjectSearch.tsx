@@ -5,14 +5,15 @@ interface ProjectSearchProps {
 
 export function ProjectSearch({ value, onChange }: ProjectSearchProps): JSX.Element {
   return (
-    <label className="block text-sm text-slate-700">
-      <span className="mb-1 block font-medium">Search projects</span>
+    <label className="block rounded-xl border border-slate-200 bg-white p-3.5 text-sm text-slate-700 sm:p-4">
+      <span className="eyebrow">Search</span>
+      <span className="mt-1 block text-sm font-semibold text-slate-900">Find projects quickly</span>
       <input
         type="search"
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder="Search by name, tagline, description, category, or tech"
-        className="w-full rounded-md border border-slate-300 px-3 py-2 focus:border-brand-600 focus:outline-none"
+        className="mt-2.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm focus:border-brand-600 focus:outline-none sm:mt-3 sm:py-2.5"
       />
     </label>
   );

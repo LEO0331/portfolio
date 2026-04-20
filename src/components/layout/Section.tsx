@@ -10,7 +10,7 @@ interface SectionProps {
 
 export function Section({ children, className, id }: SectionProps): JSX.Element {
   return (
-    <section id={id} className={cn("py-12 sm:py-16", className)}>
+    <section id={id} className={cn("py-12 sm:py-16 lg:py-20", className)}>
       <PageContainer>{children}</PageContainer>
     </section>
   );

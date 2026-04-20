@@ -1,16 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --surface-soft: #f0f4ff;
+  --text: #0f172a;
+  --muted: #475569;
+  --line: #d7deea;
+  --brand: #1746a2;
+  --brand-strong: #0f2f77;
+  --accent: #0f766e;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Manrope", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background:
+      radial-gradient(circle at top right, #dce8ff 0%, transparent 34%),
+      radial-gradient(circle at 0% 40%, #e8f8f7 0%, transparent 32%),
+      var(--bg);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Grotesk", "Manrope", sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  a {
+    text-underline-offset: 2px;
+  }
 }
 
-a {
-  text-underline-offset: 2px;
+@layer components {
+  .eyebrow {
+    @apply font-mono text-[0.64rem] uppercase tracking-[0.16em] text-slate-500 sm:text-[0.68rem] sm:tracking-[0.18em];
+  }
+
+  .panel {
+    @apply rounded-2xl border border-slate-200/90 bg-white/95;
+    box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
+  }
+
+  .panel-soft {
+    @apply rounded-2xl border border-slate-200 bg-slate-50/90;
+  }
+
+  .rule-accent {
+    @apply h-px bg-gradient-to-r from-brand-600 via-cyan-700/70 to-transparent;
+  }
 }

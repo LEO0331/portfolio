@@ -14,30 +14,31 @@ export function ContactPage(): JSX.Element {
 
   return (
     <Section>
-      <div className="mx-auto max-w-2xl rounded-xl border border-slate-200 bg-white p-8">
-        <h1 className="text-3xl font-bold text-slate-900">Contact</h1>
-        <p className="mt-3 text-slate-600">
+      <div className="mx-auto max-w-3xl panel p-6 sm:p-10">
+        <p className="eyebrow">Contact</p>
+        <h1 className="mt-2 text-3xl font-bold text-slate-900 sm:text-4xl">Let’s Connect</h1>
+        <p className="mt-2.5 text-sm text-slate-600 sm:mt-3 sm:text-base">
           Open to full stack engineering opportunities and technical collaboration.
         </p>
 
-        <ul className="mt-6 space-y-4 text-sm sm:text-base">
-          <li>
+        <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4 sm:text-base">
+          <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">Email: </span>
             {hasEmail ? (
-              <a href={`mailto:${profile.email}`} className="text-brand-600 hover:underline">
+              <a href={`mailto:${profile.email}`} className="text-brand-700 hover:underline">
                 {profile.email}
               </a>
             ) : (
               <span className="text-slate-600">YOUR_EMAIL_HERE</span>
             )}
           </li>
-          <li>
+          <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">GitHub: </span>
             <ExternalLink href={profile.githubUrl} label="Open GitHub profile">
               {profile.githubUrl}
             </ExternalLink>
           </li>
-          <li>
+          <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">LinkedIn: </span>
             {hasLinkedIn ? (
               <ExternalLink href={profile.linkedinUrl} label="Open LinkedIn profile">
@@ -47,7 +48,7 @@ export function ContactPage(): JSX.Element {
               <span className="text-slate-600">YOUR_LINKEDIN_URL_HERE</span>
             )}
           </li>
-          <li>
+          <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">Resume: </span>
             <ExternalLink href={profile.resumeUrl} label="Open resume PDF">
               View Resume

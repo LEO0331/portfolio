@@ -3,6 +3,7 @@ import type { Project } from "../../types/project";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { Tag } from "../common/Tag";
+import { resolveProjectImage } from "../../utils/projectImage";
 
 interface ProjectCardProps {
   project: Project;
@@ -16,45 +17,50 @@ function statusTone(status: Project["status"]): "success" | "warning" | "neutral
 
 export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
   const [imageFailed, setImageFailed] = useState(false);
+  const resolvedImage = resolveProjectImage(project.image);
+  const shouldShowImage = !imageFailed && Boolean(resolvedImage);
 
   return (
-    <article className="flex h-full flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-card">
-      <div className="h-44 bg-slate-100">
-        {!imageFailed ? (
+    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300">
+      <div className="relative h-44 bg-slate-100 sm:h-48">
+        {shouldShowImage ? (
           <img
-            src={project.image}
+            src={resolvedImage}
             alt={`${project.name} preview`}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
             onError={() => setImageFailed(true)}
             loading="lazy"
           />
         ) : (
-          <div className="flex h-full items-center justify-center px-4 text-center text-sm font-medium text-slate-600">
+          <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
             {project.name} preview image coming soon
           </div>
         )}
-      </div>
-
-      <div className="flex flex-1 flex-col p-5">
-        <div className="mb-3 flex items-center justify-between gap-3">
-          <h3 className="text-lg font-semibold text-slate-900">{project.name}</h3>
+        <div className="absolute left-4 top-4">
           <Badge label={project.status} tone={statusTone(project.status)} />
         </div>
+      </div>
 
-        <p className="mb-2 text-sm font-medium text-slate-700">{project.tagline}</p>
-        <p className="mb-3 text-sm leading-6 text-slate-600">{project.shortDescription}</p>
-        <p className="mb-3 text-sm text-slate-600">
-          <span className="font-medium text-slate-700">Role:</span> {project.role}
+      <div className="flex flex-1 flex-col p-4 sm:p-5">
+        <div className="mb-2.5 sm:mb-3">
+          <p className="eyebrow">{project.teamType === "solo" ? "Solo Project" : "Team Project"}</p>
+          <h3 className="mt-1 text-lg font-bold text-slate-900 sm:text-xl">{project.name}</h3>
+        </div>
+
+        <p className="mb-1.5 text-sm font-semibold leading-6 text-slate-800">{project.tagline}</p>
+        <p className="mb-2.5 text-sm leading-6 text-slate-600">{project.shortDescription}</p>
+        <p className="mb-2.5 text-sm text-slate-600">
+          <span className="font-semibold text-slate-800">Role:</span> {project.role}
         </p>
 
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-3.5 flex flex-wrap gap-1.5 sm:gap-2">
           {project.techStack.slice(0, 6).map((tech) => (
             <Tag key={`${project.id}-${tech}`} label={tech} />
           ))}
         </div>
 
         <div className="mb-4">
-          <p className="mb-2 text-sm font-medium text-slate-700">Key features</p>
+          <p className="mb-1.5 text-sm font-semibold text-slate-800">Feature Preview</p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-slate-600">
             {project.features.slice(0, 3).map((feature) => (
               <li key={`${project.id}-${feature}`}>{feature}</li>
@@ -62,7 +68,7 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
           </ul>
         </div>
 
-        <div className="mt-auto flex flex-wrap gap-2">
+        <div className="mt-auto flex flex-wrap gap-2 border-t border-slate-100 pt-3.5 sm:pt-4">
           {project.demoUrl ? (
             <Button as="a" href={project.demoUrl} target="_blank" rel="noreferrer" size="sm">
               Live Demo
