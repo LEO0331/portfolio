@@ -5,6 +5,7 @@ import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
 import { PageContainer } from "./PageContainer";
 import { cn } from "../../utils/cn";
+import { toSafeExternalHref } from "../../utils/urlSafety";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -15,6 +16,7 @@ const navItems = [
 
 export function Navbar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
+  const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-md">
@@ -41,15 +43,17 @@ export function Navbar(): JSX.Element {
           ))}
         </nav>
 
-        <div className="hidden md:block">
-          <ExternalLink
-            href={profile.githubUrl}
-            label="Visit GitHub profile"
-            className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:no-underline"
-          >
-            GitHub
-          </ExternalLink>
-        </div>
+        {safeGithubUrl ? (
+          <div className="hidden md:block">
+            <ExternalLink
+              href={safeGithubUrl}
+              label="Visit GitHub profile"
+              className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:no-underline"
+            >
+              GitHub
+            </ExternalLink>
+          </div>
+        ) : null}
 
         <Button
           className="md:hidden"
@@ -81,9 +85,11 @@ export function Navbar(): JSX.Element {
                 {item.label}
               </NavLink>
             ))}
-            <ExternalLink href={profile.githubUrl} label="Visit GitHub profile" className="px-1 py-1 text-sm font-semibold">
-              GitHub
-            </ExternalLink>
+            {safeGithubUrl ? (
+              <ExternalLink href={safeGithubUrl} label="Visit GitHub profile" className="px-1 py-1 text-sm font-semibold">
+                GitHub
+              </ExternalLink>
+            ) : null}
           </PageContainer>
         </div>
       )}

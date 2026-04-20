@@ -1,11 +1,15 @@
 import { profile } from "../../data/profile";
 import { ExternalLink } from "../common/ExternalLink";
 import { PageContainer } from "./PageContainer";
+import { toSafeExternalHref } from "../../utils/urlSafety";
 
 export function Footer(): JSX.Element {
   const year = new Date().getFullYear();
-  const hasWebsite = profile.websiteUrl !== "YOUR_WEBSITE_URL_HERE";
-  const hasLinkedIn = profile.linkedinUrl !== "YOUR_LINKEDIN_URL_HERE";
+  const safeWebsiteUrl = toSafeExternalHref(profile.websiteUrl);
+  const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
+  const safeLinkedinUrl = toSafeExternalHref(profile.linkedinUrl);
+  const hasWebsite = Boolean(safeWebsiteUrl);
+  const hasLinkedIn = Boolean(safeLinkedinUrl);
 
   return (
     <footer className="border-t border-slate-200/90 bg-white/90 py-10">
@@ -18,18 +22,20 @@ export function Footer(): JSX.Element {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <ExternalLink href={profile.githubUrl} label="Open GitHub profile" className="font-semibold">
-              GitHub
-            </ExternalLink>
+            {safeGithubUrl ? (
+              <ExternalLink href={safeGithubUrl} label="Open GitHub profile" className="font-semibold">
+                GitHub
+              </ExternalLink>
+            ) : null}
             {hasLinkedIn ? (
-              <ExternalLink href={profile.linkedinUrl} label="Open LinkedIn profile" className="font-semibold">
+              <ExternalLink href={safeLinkedinUrl} label="Open LinkedIn profile" className="font-semibold">
                 LinkedIn
               </ExternalLink>
             ) : (
               <span>LinkedIn: YOUR_LINKEDIN_URL_HERE</span>
             )}
             {hasWebsite ? (
-              <ExternalLink href={profile.websiteUrl} label="Open personal website" className="font-semibold">
+              <ExternalLink href={safeWebsiteUrl} label="Open personal website" className="font-semibold">
                 Website
               </ExternalLink>
             ) : (

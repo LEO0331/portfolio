@@ -4,6 +4,7 @@ import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { Tag } from "../common/Tag";
 import { resolveProjectImage } from "../../utils/projectImage";
+import { toSafeExternalHref } from "../../utils/urlSafety";
 
 interface ProjectCardProps {
   project: Project;
@@ -19,6 +20,8 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
   const [imageFailed, setImageFailed] = useState(false);
   const resolvedImage = resolveProjectImage(project.image);
   const shouldShowImage = !imageFailed && Boolean(resolvedImage);
+  const safeDemoUrl = toSafeExternalHref(project.demoUrl);
+  const safeRepoUrl = toSafeExternalHref(project.repoUrl);
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300">
@@ -68,17 +71,17 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
         </div>
 
         <div className="mt-auto flex flex-wrap gap-2 border-t border-slate-100 pt-3.5 sm:pt-4">
-          {project.demoUrl ? (
-            <Button as="a" href={project.demoUrl} target="_blank" rel="noreferrer" size="sm">
+          {safeDemoUrl ? (
+            <Button as="a" href={safeDemoUrl} target="_blank" rel="noopener noreferrer" size="sm">
               Live Demo
             </Button>
           ) : null}
-          {project.repoUrl ? (
+          {safeRepoUrl ? (
             <Button
               as="a"
-              href={project.repoUrl}
+              href={safeRepoUrl}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               variant="secondary"
               size="sm"
             >

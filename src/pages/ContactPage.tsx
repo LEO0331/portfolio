@@ -2,6 +2,7 @@ import { ExternalLink } from "../components/common/ExternalLink";
 import { Section } from "../components/layout/Section";
 import { profile } from "../data/profile";
 import { usePageSeo } from "../utils/seo";
+import { toSafeExternalHref } from "../utils/urlSafety";
 
 export function ContactPage(): JSX.Element {
   usePageSeo(
@@ -9,8 +10,11 @@ export function ContactPage(): JSX.Element {
     "Contact Leo Chen via personal website, GitHub, and LinkedIn."
   );
 
-  const hasWebsite = profile.websiteUrl !== "YOUR_WEBSITE_URL_HERE";
-  const hasLinkedIn = profile.linkedinUrl !== "YOUR_LINKEDIN_URL_HERE";
+  const safeWebsiteUrl = toSafeExternalHref(profile.websiteUrl);
+  const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
+  const safeLinkedInUrl = toSafeExternalHref(profile.linkedinUrl);
+  const hasWebsite = Boolean(safeWebsiteUrl);
+  const hasLinkedIn = Boolean(safeLinkedInUrl);
 
   return (
     <Section>
@@ -25,8 +29,8 @@ export function ContactPage(): JSX.Element {
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">Website: </span>
             {hasWebsite ? (
-              <ExternalLink href={profile.websiteUrl} label="Open personal website">
-                {profile.websiteUrl}
+              <ExternalLink href={safeWebsiteUrl} label="Open personal website">
+                {safeWebsiteUrl}
               </ExternalLink>
             ) : (
               <span className="text-slate-600">YOUR_WEBSITE_URL_HERE</span>
@@ -34,15 +38,19 @@ export function ContactPage(): JSX.Element {
           </li>
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">GitHub: </span>
-            <ExternalLink href={profile.githubUrl} label="Open GitHub profile">
-              {profile.githubUrl}
-            </ExternalLink>
+            {safeGithubUrl ? (
+              <ExternalLink href={safeGithubUrl} label="Open GitHub profile">
+                {safeGithubUrl}
+              </ExternalLink>
+            ) : (
+              <span className="text-slate-600">YOUR_GITHUB_URL_HERE</span>
+            )}
           </li>
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">LinkedIn: </span>
             {hasLinkedIn ? (
-              <ExternalLink href={profile.linkedinUrl} label="Open LinkedIn profile">
-                {profile.linkedinUrl}
+              <ExternalLink href={safeLinkedInUrl} label="Open LinkedIn profile">
+                {safeLinkedInUrl}
               </ExternalLink>
             ) : (
               <span className="text-slate-600">YOUR_LINKEDIN_URL_HERE</span>

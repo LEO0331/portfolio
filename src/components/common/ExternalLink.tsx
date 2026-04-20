@@ -12,7 +12,7 @@ export function ExternalLink({ children, label, className, ...props }: ExternalL
     <a
       {...props}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       aria-label={label}
       className={cn("text-brand-700 hover:text-brand-800 hover:underline", className)}
     >
