@@ -32,3 +32,7 @@ pnpm-debug.log*
 # public/favicon.ico
 # public/og-image.png
 # public/resume.pdf
+
+# Playwright
+playwright-report/
+test-results/
