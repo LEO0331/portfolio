@@ -43,8 +43,7 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
         <div className="mb-2.5 sm:mb-3">
-          <p className="eyebrow">{project.teamType === "solo" ? "Solo Project" : "Team Project"}</p>
-          <h3 className="mt-1 text-lg font-bold text-slate-900 sm:text-xl">{project.name}</h3>
+          <h3 className="text-lg font-bold text-slate-900 sm:text-xl">{project.name}</h3>
         </div>
 
         <p className="mb-1.5 text-sm font-semibold leading-6 text-slate-800">{project.tagline}</p>

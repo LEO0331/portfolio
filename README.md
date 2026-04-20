@@ -1,25 +1,32 @@
-# Portfolio Site
+# Portfolio Site Template
 
-A static, recruiter-friendly personal portfolio built with React, Vite, TypeScript, Tailwind CSS, and HashRouter for GitHub Pages compatibility.
+A static, recruiter-friendly personal portfolio template built with React, Vite, TypeScript, Tailwind CSS, HashRouter, and Playwright E2E validation.
+
+## Documentation
+- Template skill for agent workflows: [skill.md](./skill.md)
+- Detailed setup and customization guide: [wiki.md](./wiki.md)
 
 ## Features
-
 - Home, Projects, About, and Contact pages
-- Data-driven project and profile content from `src/data/*.ts`
-- Search + filterable Projects page (category, technology, status)
-- Project cards with graceful image fallback placeholders
-- GitHub Pages deployment workflow via GitHub Actions
+- Data-driven content from `src/data/*.ts`
+- Search + filterable Projects page
+- GitHub Pages deployment workflow
+- Playwright E2E suite + real browser flow scripts
 
-## Local Development
-
+## Local development
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
-
+## Validation
 ```bash
 npm run build
-npm run preview
+npm run test:e2e
+npm run test:e2e:flow:all
 ```
+
+## Deployment
+1. Set `base` in `vite.config.ts` to `"/<your-repo-name>/"`.
+2. Push to `main`.
+3. Enable GitHub Pages with GitHub Actions in repository settings.

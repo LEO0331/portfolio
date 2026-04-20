@@ -119,7 +119,7 @@ test.describe("Portfolio smoke", () => {
 
     await expect(page.getByRole("heading", { name: "Let’s Connect", level: 1 })).toBeVisible();
     await expect(page.getByRole("link", { name: "Open GitHub profile" }).first()).toBeVisible();
-    await expect(page.getByRole("link", { name: "Open resume PDF" })).toHaveAttribute("href", "/resume.pdf");
+    await expect(page.getByRole("link", { name: "Open LinkedIn profile" }).first()).toBeVisible();
 
     await expect(page.getByRole("link", { name: "Open GitHub profile" }).last()).toBeVisible();
   });

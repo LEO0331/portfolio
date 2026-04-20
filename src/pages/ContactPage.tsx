@@ -6,7 +6,7 @@ import { usePageSeo } from "../utils/seo";
 export function ContactPage(): JSX.Element {
   usePageSeo(
     "Contact",
-    "Contact Leo Chen via personal website, GitHub, LinkedIn, and resume links."
+    "Contact Leo Chen via personal website, GitHub, and LinkedIn."
   );
 
   const hasWebsite = profile.websiteUrl !== "YOUR_WEBSITE_URL_HERE";
@@ -47,12 +47,6 @@ export function ContactPage(): JSX.Element {
             ) : (
               <span className="text-slate-600">YOUR_LINKEDIN_URL_HERE</span>
             )}
-          </li>
-          <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
-            <span className="font-semibold text-slate-900">Resume: </span>
-            <ExternalLink href={profile.resumeUrl} label="Open resume PDF">
-              View Resume
-            </ExternalLink>
           </li>
         </ul>
       </div>

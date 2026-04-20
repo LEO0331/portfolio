@@ -29,7 +29,8 @@ export function sortProjects(projectList: Project[]): Project[] {
 }
 
 export function extractUniqueCategories(projectList: Project[]): string[] {
-  return [...new Set(projectList.flatMap((project) => project.categories))].sort((a, b) =>
+  // Keep category filter concise by using each project's primary category only.
+  return [...new Set(projectList.map((project) => project.categories[0]).filter(Boolean))].sort((a, b) =>
     a.localeCompare(b)
   );
 }

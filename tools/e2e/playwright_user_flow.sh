@@ -68,7 +68,7 @@ async (page) => {
 
   // 4) Contact
   await waitHeading("Let’s Connect");
-  await page.getByRole("link", { name: "Open resume PDF" }).waitFor({ state: "visible", timeout: 10000 });
+  await page.getByRole("link", { name: "Open LinkedIn profile" }).waitFor({ state: "visible", timeout: 10000 });
 
   // 5) Unknown route => 404
   const baseWithoutHash = page.url().split("#")[0];
