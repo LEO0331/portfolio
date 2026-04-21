@@ -13,8 +13,10 @@ const projects = blocks
   .map((block) => {
     const id = block.match(/id:\s*"([^"]+)"/)?.[1];
     const demoUrl = block.match(/demoUrl:\s*"([^"]+)"/)?.[1];
+    const techStackRaw = block.match(/techStack:\s*\[([\s\S]*?)\]/)?.[1] ?? '';
+    const isFlutterOrDart = /"Flutter"|"Dart"/.test(techStackRaw);
     if (!id || !demoUrl) return null;
-    return { id, demoUrl };
+    return { id, demoUrl, isFlutterOrDart };
   })
   .filter(Boolean);
 
@@ -34,11 +36,17 @@ const failures = [];
 for (const project of projects) {
   const target = `${project.demoUrl.replace(/\/$/, '')}/`;
   const outFile = path.join(outputDir, `${project.id}.png`);
+  const shouldWaitLong = project.isFlutterOrDart;
 
   try {
     console.log(`Capturing ${project.id}: ${target}`);
     await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 45000 });
-    await page.waitForTimeout(1500);
+    if (shouldWaitLong) {
+      await page.locator('body').click({ position: { x: 24, y: 24 }, timeout: 3000 }).catch(() => {});
+      await page.waitForTimeout(30000);
+    } else {
+      await page.waitForTimeout(1500);
+    }
     await page.screenshot({ path: outFile, fullPage: false });
   } catch (error) {
     failures.push({ id: project.id, url: target, error: String(error) });

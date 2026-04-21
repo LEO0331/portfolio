@@ -368,5 +368,52 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/LEO0331/epubreader",
     status: "live",
     featured: false
+  },
+  {
+    id: "prosemasters-skill",
+    slug: "prosemasters-skill",
+    name: "ProseMasters Skill",
+    tagline: "Reusable Codex/Claude skill package for writing quality workflows",
+    shortDescription:
+      "A reusable skill repository focused on structured writing workflows and practical prompt execution patterns.",
+    fullDescription:
+      "ProseMasters Skill is a tooling-oriented project that packages writing and workflow guidance into reusable skill artifacts for AI coding assistants.",
+    role: "Tooling / Prompt Engineer",
+    teamType: "solo",
+    techStack: ["Markdown", "Prompt Engineering", "GitHub"],
+    categories: ["Developer Tooling", "AI Workflow", "Documentation"],
+    features: [
+      "Reusable skill artifact structure",
+      "Workflow-oriented prompt templates",
+      "Versioned GitHub distribution"
+    ],
+    image: "/src/assets/images/projects/prosemasters-skill.png",
+    repoUrl: "https://github.com/LEO0331/prosemasters-skill",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "skill-gen",
+    slug: "skill-gen",
+    name: "Skill Gen",
+    tagline: "Tooling utility to turn frontend assets into reusable skill artifacts",
+    shortDescription:
+      "Turn index.html, style.css, and script.js into reusable skills.md artifacts.",
+    fullDescription:
+      "Skill Gen is a tooling utility in the projects_drafts workspace designed to convert static frontend files into reusable skills.md artifacts for repeatable AI-assisted workflows.",
+    role: "Tooling / Frontend Developer",
+    teamType: "solo",
+    techStack: ["JavaScript", "HTML", "CSS", "GitHub Pages"],
+    categories: ["Developer Tooling", "Workflow Tool", "Web App"],
+    features: [
+      "Static asset to skill artifact transformation",
+      "Reusable output for AI workflows",
+      "Browser-based deployment"
+    ],
+    image: "/src/assets/images/projects/skill-gen.png",
+    demoUrl: "https://leo0331.github.io/projects_drafts/",
+    repoUrl: "https://github.com/LEO0331/projects_drafts/tree/main/tools/skill-gen",
+    status: "live",
+    featured: false
   }
 ];
