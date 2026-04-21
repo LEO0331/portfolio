@@ -3,7 +3,7 @@ import type { Project } from "../../types/project";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { Tag } from "../common/Tag";
-import { resolveProjectImage } from "../../utils/projectImage";
+import { resolveProjectImageSources } from "../../utils/projectImage";
 import { toSafeExternalHref } from "../../utils/urlSafety";
 
 interface ProjectCardProps {
@@ -18,8 +18,8 @@ function statusTone(status: Project["status"]): "success" | "warning" | "neutral
 
 export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
   const [imageFailed, setImageFailed] = useState(false);
-  const resolvedImage = resolveProjectImage(project.image);
-  const shouldShowImage = !imageFailed && Boolean(resolvedImage);
+  const { primary: primaryImage, fallback: fallbackImage } = resolveProjectImageSources(project.image);
+  const shouldShowImage = !imageFailed && Boolean(primaryImage || fallbackImage);
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
 
@@ -27,13 +27,16 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300">
       <div className="relative h-44 bg-slate-100 sm:h-48">
         {shouldShowImage ? (
-          <img
-            src={resolvedImage}
-            alt={`${project.name} preview`}
-            className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
-            onError={() => setImageFailed(true)}
-            loading="lazy"
-          />
+          <picture>
+            {primaryImage?.endsWith(".webp") ? <source srcSet={primaryImage} type="image/webp" /> : null}
+            <img
+              src={fallbackImage ?? primaryImage}
+              alt={`${project.name} preview`}
+              className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+              onError={() => setImageFailed(true)}
+              loading="lazy"
+            />
+          </picture>
         ) : (
           <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
             {project.name} preview image coming soon

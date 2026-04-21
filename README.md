@@ -1,6 +1,6 @@
 # Portfolio Site Template
-[![E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml)
-[![Deploy Portfolio to GitHub Pages](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml)
+[![E2E Smoke Tests](/actions/workflows/e2e.yml/badge.svg)](/actions/workflows/e2e.yml)
+[![Deploy Portfolio to GitHub Pages](/actions/workflows/deploy.yml/badge.svg)](/actions/workflows/deploy.yml)
 
 A static, recruiter-friendly personal portfolio template built with React, Vite, TypeScript, Tailwind CSS, HashRouter, and Playwright E2E validation.
 
