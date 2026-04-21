@@ -364,7 +364,7 @@ export const projects: Project[] = [
     categories: ["Web App", "Reader", "Frontend"],
     features: ["Reader-oriented interface", "Vercel deployment", "Live public demo"],
     image: "/src/assets/images/projects/epubreader.png",
-    demoUrl: "https://epubreader-fhe8m2ipp-leo0331s-projects.vercel.app/",
+    demoUrl: "https://epubreader-az8qiix07-leo0331s-projects.vercel.app/",
     repoUrl: "https://github.com/LEO0331/epubreader",
     status: "live",
     featured: false
