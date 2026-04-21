@@ -415,5 +415,28 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/LEO0331/projects_drafts/tree/main/tools/skill-gen",
     status: "live",
     featured: false
+  },
+  {
+    id: "ppt-design-md",
+    slug: "ppt-design-md",
+    name: "PPT Design MD",
+    tagline: "Markdown-first workflow for structured slide and presentation design",
+    shortDescription:
+      "A repository focused on building presentation content through markdown-driven structure and reusable design patterns.",
+    fullDescription:
+      "PPT Design MD is a workflow-oriented project for creating and organizing presentation assets with markdown-based authoring. It demonstrates documentation discipline, reusable structure, and practical content-design tooling.",
+    role: "Tooling / Documentation Developer",
+    teamType: "solo",
+    techStack: ["Markdown", "Documentation", "GitHub"],
+    categories: ["Developer Tooling", "Documentation", "Workflow Tool"],
+    features: [
+      "Markdown-first content workflow",
+      "Reusable presentation structure",
+      "Version-controlled collaboration via GitHub"
+    ],
+    image: "/src/assets/images/projects/ppt-design-md.png",
+    repoUrl: "https://github.com/LEO0331/ppt-design-md",
+    status: "live",
+    featured: false
   }
 ];
