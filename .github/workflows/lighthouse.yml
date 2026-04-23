@@ -33,6 +33,11 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Prepare /portfolio mount for preview
+        run: |
+          mkdir -p dist/portfolio
+          find dist -mindepth 1 -maxdepth 1 ! -name portfolio -exec cp -R {} dist/portfolio/ \;
+
       - name: Lighthouse CI audit
         uses: treosh/lighthouse-ci-action@v12
         with:
@@ -47,7 +52,7 @@ jobs:
           temporaryPublicStorage: true
           runs: 1
           startServerCommand: npm run preview -- --host 127.0.0.1 --port 4173
-          startServerReadyPattern: Local
+          startServerReadyPattern: 127.0.0.1:4173
 
       - name: Upload Lighthouse raw artifacts
         if: always()
