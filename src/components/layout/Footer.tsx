@@ -17,7 +17,7 @@ export function Footer(): JSX.Element {
         <div className="rule-accent" />
         <div className="flex flex-col gap-4 text-sm text-slate-600 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="eyebrow">Built For Recruiter Review</p>
+            <p className="eyebrow">Intelligently designed, passionately built, and seamlessly delivered to the world.</p>
             <p className="mt-1 font-semibold text-slate-800">© {year} {profile.fullName}. All rights reserved.</p>
           </div>
 
@@ -44,7 +44,7 @@ export function Footer(): JSX.Element {
           </div>
         </div>
         <p className="text-xs text-slate-500">
-          Engineered with React, TypeScript, Tailwind CSS, and GitHub Pages deployment.
+          Fueling innovation through dedicated craftsmanship and intelligent design.
         </p>
       </PageContainer>
     </footer>

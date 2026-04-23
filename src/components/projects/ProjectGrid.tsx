@@ -5,9 +5,10 @@ import { ProjectCard } from "./ProjectCard";
 interface ProjectGridProps {
   projects: Project[];
   onReset: () => void;
+  onViewDetails?: (project: Project, trigger: HTMLButtonElement) => void;
 }
 
-export function ProjectGrid({ projects, onReset }: ProjectGridProps): JSX.Element {
+export function ProjectGrid({ projects, onReset, onViewDetails }: ProjectGridProps): JSX.Element {
   if (projects.length === 0) {
     return (
       <div className="panel p-7 text-center sm:p-10">
@@ -24,7 +25,7 @@ export function ProjectGrid({ projects, onReset }: ProjectGridProps): JSX.Elemen
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
       {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
+        <ProjectCard key={project.id} project={project} onViewDetails={onViewDetails} />
       ))}
     </div>
   );

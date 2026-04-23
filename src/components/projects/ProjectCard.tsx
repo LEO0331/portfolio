@@ -8,7 +8,11 @@ import { toSafeExternalHref } from "../../utils/urlSafety";
 
 interface ProjectCardProps {
   project: Project;
+  onViewDetails?: (project: Project, trigger: HTMLButtonElement) => void;
 }
+
+const MAX_TECH_PREVIEW = 6;
+const MAX_FEATURE_PREVIEW = 3;
 
 function statusTone(status: Project["status"]): "success" | "warning" | "neutral" {
   if (status === "live") return "success";
@@ -16,7 +20,7 @@ function statusTone(status: Project["status"]): "success" | "warning" | "neutral
   return "neutral";
 }
 
-export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
+export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.Element {
   const [imageFailed, setImageFailed] = useState(false);
   const { primary: primaryImage, fallback: fallbackImage } = resolveProjectImageSources(project.image);
   const shouldShowImage = !imageFailed && Boolean(primaryImage || fallbackImage);
@@ -59,7 +63,7 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
         </p>
 
         <div className="mb-3.5 flex flex-wrap gap-1.5 sm:gap-2">
-          {project.techStack.slice(0, 6).map((tech) => (
+          {project.techStack.slice(0, MAX_TECH_PREVIEW).map((tech) => (
             <Tag key={`${project.id}-${tech}`} label={tech} />
           ))}
         </div>
@@ -67,7 +71,7 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
         <div className="mb-4">
           <p className="mb-1.5 text-sm font-semibold text-slate-800">Feature Preview</p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-slate-600">
-            {project.features.slice(0, 3).map((feature) => (
+            {project.features.slice(0, MAX_FEATURE_PREVIEW).map((feature) => (
               <li key={`${project.id}-${feature}`}>{feature}</li>
             ))}
           </ul>
@@ -89,6 +93,16 @@ export function ProjectCard({ project }: ProjectCardProps): JSX.Element {
               size="sm"
             >
               GitHub Repo
+            </Button>
+          ) : null}
+          {onViewDetails ? (
+            <Button
+              variant="ghost"
+              size="sm"
+              aria-label={`View details for ${project.name}`}
+              onClick={(event) => onViewDetails(project, event.currentTarget)}
+            >
+              View Details
             </Button>
           ) : null}
         </div>

@@ -25,7 +25,7 @@ export function Hero(): JSX.Element {
         </div>
 
         <aside className="panel p-4 sm:p-5">
-          <p className="eyebrow">Recruiter Snapshot</p>
+          <p className="eyebrow">Empowering the future with intelligent design and pure passion</p>
           <div className="mt-3 space-y-2.5 text-xs leading-6 text-slate-700 sm:text-sm sm:leading-6">
             <p>
               <span className="font-semibold text-slate-900">Primary focus:</span> shipping maintainable web apps end-to-end.

@@ -42,7 +42,7 @@ When you complete a new project and want it to appear on the website:
    - `shortDescription`, `fullDescription`
    - `role`, `teamType`, `techStack`, `categories`, `features`
    - `status`, `featured`
-   - `repoUrl` (required for recruiter credibility)
+   - `repoUrl` 
    - `demoUrl` (optional; if missing, Live Demo button is hidden)
 3. Add preview image file:
    - `src/assets/images/projects/<id>.png`

@@ -133,4 +133,62 @@ test.describe("Portfolio smoke", () => {
     await page.getByRole("link", { name: "Return to home page" }).click();
     await expect(page).toHaveURL(/#\/$/);
   });
+
+  test("[COV-12] project detail drawer opens and closes with URL sync", async ({ page }) => {
+    await page.goto("/#/projects");
+
+    await page.getByRole("button", { name: "View details for ToyRobot" }).click();
+    const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
+    await expect(drawer).toBeVisible();
+    await expect(page).toHaveURL(/#\/projects\?project=toyrobot$/);
+    await expect(drawer.getByText("Role:")).toBeVisible();
+    await expect(drawer.getByText("Tech Stack")).toBeVisible();
+
+    await page.getByRole("button", { name: "Close project details" }).click();
+    await expect(drawer).toHaveCount(0);
+    await expect(page).toHaveURL(/#\/projects$/);
+  });
+
+  test("[COV-13] detail drawer supports Escape and backdrop close", async ({ page }) => {
+    await page.goto("/#/projects");
+
+    await page.getByRole("button", { name: "View details for AssistantHub" }).click();
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toBeVisible();
+    await page.keyboard.press("Escape");
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toHaveCount(0);
+
+    await page.getByRole("button", { name: "View details for AssistantHub" }).click();
+    const reopenedDrawer = page.getByRole("dialog", { name: "Project details for AssistantHub" });
+    await expect(reopenedDrawer).toBeVisible();
+    await page.getByTestId("project-detail-overlay").evaluate((element) => {
+      (element as HTMLElement).click();
+    });
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toHaveCount(0);
+  });
+
+  test("[COV-14] deep-link query opens project drawer on initial load", async ({ page }) => {
+    await page.goto("/#/projects?project=toyrobot");
+    await expect(page.getByRole("dialog", { name: "Project details for ToyRobot" })).toBeVisible();
+  });
+
+  test("[COV-15] mobile drawer opens and preserves filter/search state", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto("/#/projects");
+
+    const searchInput = page.getByPlaceholder("Search by name, tagline, description, category, or tech");
+    await searchInput.fill("toyrobot");
+    await expect(page.getByRole("heading", { name: "ToyRobot", level: 3 })).toBeVisible();
+
+    await page.getByRole("button", { name: "View details for ToyRobot" }).click();
+    const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
+    await expect(drawer).toBeVisible();
+    await expect(page.getByRole("button", { name: "Close project details" })).toBeVisible();
+
+    const bodyOverflow = await page.evaluate(() => document.body.style.overflow);
+    expect(bodyOverflow).toBe("hidden");
+
+    await page.keyboard.press("Escape");
+    await expect(drawer).toHaveCount(0);
+    await expect(searchInput).toHaveValue("toyrobot");
+  });
 });
