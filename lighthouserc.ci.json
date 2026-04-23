@@ -1,0 +1,16 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "url": [
+        "/portfolio/#/",
+        "/portfolio/#/projects",
+        "/portfolio/#/about",
+        "/portfolio/#/contact",
+        "/portfolio/#/zh",
+        "/portfolio/#/zh/projects"
+      ],
+      "numberOfRuns": 1
+    }
+  }
+}
