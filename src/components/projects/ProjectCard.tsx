@@ -1,5 +1,7 @@
 import { useState } from "react";
 import type { Project } from "../../types/project";
+import { copy } from "../../i18n/copy";
+import { useLocale } from "../../i18n/LocaleContext";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { Tag } from "../common/Tag";
@@ -20,7 +22,15 @@ function statusTone(status: Project["status"]): "success" | "warning" | "neutral
   return "neutral";
 }
 
+function statusLabel(status: Project["status"], live: string, inProgress: string, archived: string): string {
+  if (status === "live") return live;
+  if (status === "in-progress") return inProgress;
+  return archived;
+}
+
 export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.Element {
+  const { locale } = useLocale();
+  const text = copy[locale];
   const [imageFailed, setImageFailed] = useState(false);
   const { primary: primaryImage, fallback: fallbackImage } = resolveProjectImageSources(project.image);
   const shouldShowImage = !imageFailed && Boolean(primaryImage || fallbackImage);
@@ -35,19 +45,23 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
             {primaryImage?.endsWith(".webp") ? <source srcSet={primaryImage} type="image/webp" /> : null}
             <img
               src={fallbackImage ?? primaryImage}
-              alt={`${project.name} preview`}
+              alt={`${project.name}: ${project.tagline}`}
               className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
               onError={() => setImageFailed(true)}
               loading="lazy"
+              decoding="async"
             />
           </picture>
         ) : (
           <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
-            {project.name} preview image coming soon
+            {project.name} {text.projects.previewComingSoon}
           </div>
         )}
         <div className="absolute left-4 top-4">
-          <Badge label={project.status} tone={statusTone(project.status)} />
+          <Badge
+            label={statusLabel(project.status, text.projects.live, text.projects.inProgress, text.projects.archived)}
+            tone={statusTone(project.status)}
+          />
         </div>
       </div>
 
@@ -59,7 +73,7 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
         <p className="mb-1.5 text-sm font-semibold leading-6 text-slate-800">{project.tagline}</p>
         <p className="mb-2.5 text-sm leading-6 text-slate-600">{project.shortDescription}</p>
         <p className="mb-2.5 text-sm text-slate-600">
-          <span className="font-semibold text-slate-800">Role:</span> {project.role}
+          <span className="font-semibold text-slate-800">{text.projects.role}</span> {project.role}
         </p>
 
         <div className="mb-3.5 flex flex-wrap gap-1.5 sm:gap-2">
@@ -69,7 +83,7 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
         </div>
 
         <div className="mb-4">
-          <p className="mb-1.5 text-sm font-semibold text-slate-800">Feature Preview</p>
+          <p className="mb-1.5 text-sm font-semibold text-slate-800">{text.projects.featurePreview}</p>
           <ul className="list-disc space-y-1 pl-5 text-sm text-slate-600">
             {project.features.slice(0, MAX_FEATURE_PREVIEW).map((feature) => (
               <li key={`${project.id}-${feature}`}>{feature}</li>
@@ -79,8 +93,15 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
 
         <div className="mt-auto flex flex-wrap gap-2 border-t border-slate-100 pt-3.5 sm:pt-4">
           {safeDemoUrl ? (
-            <Button as="a" href={safeDemoUrl} target="_blank" rel="noopener noreferrer" size="sm">
-              Live Demo
+            <Button
+              as="a"
+              href={safeDemoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="sm"
+              aria-label={`View ${project.name} live demo`}
+            >
+              {text.projects.liveDemo}
             </Button>
           ) : null}
           {safeRepoUrl ? (
@@ -91,8 +112,9 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
               rel="noopener noreferrer"
               variant="secondary"
               size="sm"
+              aria-label={`View ${project.name} GitHub repository`}
             >
-              GitHub Repo
+              {text.projects.githubRepo}
             </Button>
           ) : null}
           {onViewDetails ? (
@@ -102,7 +124,7 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
               aria-label={`View details for ${project.name}`}
               onClick={(event) => onViewDetails(project, event.currentTarget)}
             >
-              View Details
+              {text.projects.viewDetails}
             </Button>
           ) : null}
         </div>

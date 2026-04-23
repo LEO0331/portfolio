@@ -1,4 +1,6 @@
 import type { Project } from "../../types/project";
+import { copy } from "../../i18n/copy";
+import { useLocale } from "../../i18n/LocaleContext";
 
 interface ProjectHighlightsProps {
   allProjects: Project[];
@@ -6,13 +8,15 @@ interface ProjectHighlightsProps {
 }
 
 export function ProjectHighlights({ allProjects, visibleProjects }: ProjectHighlightsProps): JSX.Element {
+  const { locale } = useLocale();
+  const text = copy[locale];
   const liveCount = allProjects.filter((project) => project.status === "live").length;
   const featuredCount = allProjects.filter((project) => project.featured).length;
 
   const stats = [
-    { label: "Visible", value: visibleProjects.length, tone: "text-brand-700" },
-    { label: "Featured", value: featuredCount, tone: "text-slate-900" },
-    { label: "Live", value: liveCount, tone: "text-teal-700" }
+    { label: text.projects.visible, value: visibleProjects.length, tone: "text-brand-700" },
+    { label: text.projects.featured, value: featuredCount, tone: "text-slate-900" },
+    { label: text.projects.live, value: liveCount, tone: "text-teal-700" }
   ];
 
   return (

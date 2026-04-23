@@ -1,14 +1,19 @@
 import { skillGroups } from "../../data/skills";
+import { copy } from "../../i18n/copy";
+import { useLocale } from "../../i18n/LocaleContext";
 import { Section } from "../layout/Section";
 
 export function SkillsOverview(): JSX.Element {
+  const { locale } = useLocale();
+  const text = copy[locale];
+
   return (
     <Section>
       <div className="panel p-6 sm:p-8">
-        <p className="eyebrow">Skill Matrix</p>
-        <h2 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">Skills Overview</h2>
+        <p className="eyebrow">{text.home.skillsEyebrow}</p>
+        <h2 className="mt-2 text-2xl font-bold text-slate-900 sm:text-3xl">{text.home.skillsOverview}</h2>
         <p className="mt-2 max-w-2xl text-sm text-slate-600 sm:text-base">
-          Practical tools used across frontend, backend collaboration, deployment, and product delivery.
+          {text.home.skillsDescription}
         </p>
 
         <div className="mt-6 grid grid-cols-1 gap-3.5 sm:mt-7 sm:gap-4 md:grid-cols-2">

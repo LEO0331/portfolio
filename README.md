@@ -2,64 +2,72 @@
 [![E2E Smoke Tests](/actions/workflows/e2e.yml/badge.svg)](/actions/workflows/e2e.yml)
 [![Deploy Portfolio to GitHub Pages](/actions/workflows/deploy.yml/badge.svg)](/actions/workflows/deploy.yml)
 
-A static, recruiter-friendly personal portfolio template built with React, Vite, TypeScript, Tailwind CSS, HashRouter, and Playwright E2E validation.
+Production-ready portfolio template for engineers who want a clean, recruiter-friendly site with fast setup and low maintenance.
 
-## Documentation
-- Template skill for agent workflows: [skill.md](./skill.md)
-- Detailed setup and customization guide: [wiki.md](./wiki.md)
+## Why this template
+- Built for quick recruiter scanning: clear sections, focused project cards, direct demo/repo links
+- Data-driven content: update portfolio info in data files, not JSX
+- Bilingual ready: English + Traditional Chinese UI and project content support
+- Static deployment: optimized for GitHub Pages (HashRouter)
+- Quality guardrails: Playwright E2E + CI workflows
 
-## Features
-- Home, Projects, About, and Contact pages
-- Data-driven content from `src/data/*.ts`
-- Search + filterable Projects page
-- GitHub Pages deployment workflow
-- Playwright E2E suite + real browser flow scripts
+## What visitors can do
+- Review who you are and your engineering focus
+- Filter projects by category, technology, and status
+- Open project details in-page without losing filters/scroll state
+- Switch language between English and Traditional Chinese
+- Open live demos and source repositories directly
 
-## Local development
+## Quick start
 ```bash
 npm install
 npm run dev
 ```
 
-## Validation
+## Build and test
 ```bash
 npm run build
 npm run test:e2e
-npm run test:e2e:flow:all
 ```
 
-## Deployment
+## Deploy to GitHub Pages
 1. Set `base` in `vite.config.ts` to `"/<your-repo-name>/"`.
-2. Push to `main`.
-3. Enable GitHub Pages with GitHub Actions in repository settings.
+2. Build with your real site URL so sitemap is generated correctly:
+   - `SITE_URL=https://<username>.github.io/<repo> npm run build`
+   - this auto-generates both `public/sitemap.xml` and `public/robots.txt`
+   - for security, only `http/https` SITE_URL values are accepted
+3. Update placeholders in:
+   - `index.html` (canonical/OG URL)
+4. Push to `main`.
+5. In repository settings, enable GitHub Pages with GitHub Actions.
 
-## Add A New Project (Display Flow)
-When you complete a new project and want it to appear on the website:
+## SEO (lightweight and automated)
+- Route-level metadata is handled by `usePageSeo` in `src/utils/seo.ts`.
+- `public/sitemap.xml` is auto-generated from `src/routes/routeConfig.json` during build.
+- `public/robots.txt` is auto-generated from `SITE_URL` during build.
+- After deployment, submit:
+  - `https://<username>.github.io/<repo>/sitemap.xml` to Google Search Console
+  - same URL to Bing Webmaster Tools
 
-1. Add a new `Project` object in `src/data/projects.ts`.
-2. Fill at minimum:
-   - `id`, `slug`, `name`, `tagline`
-   - `shortDescription`, `fullDescription`
-   - `role`, `teamType`, `techStack`, `categories`, `features`
-   - `status`, `featured`
-   - `repoUrl` 
-   - `demoUrl` (optional; if missing, Live Demo button is hidden)
-3. Add preview image file:
-   - `src/assets/images/projects/<id>.png`
-4. Run image capture automation (optional if you already have a custom screenshot):
-   ```bash
-   node tools/capture-project-previews.mjs
-   ```
-5. Validate and publish:
-   ```bash
-   npm run build
-   npm run test:e2e
-   git add .
-   git commit -m "Add <project-name> to portfolio"
-   git push
-   ```
+## Update your portfolio content
+### Profile and skills
+- `src/data/profile.ts`
+- `src/data/skills.ts`
+
+### Projects (English + Traditional Chinese)
+1. Add/update project base data in `src/data/projects.ts`.
+2. Add/update Traditional Chinese project text in `src/data/projects.zh.ts`.
+3. Add preview image to `src/assets/images/projects/<id>.png` (or `.webp`).
+4. Optional preview capture:
+```bash
+node tools/capture-project-previews.mjs
+```
 
 Notes:
-- Cards are rendered from `src/data/projects.ts`; no JSX edits required.
-- If image is missing, the site shows a graceful placeholder.
-- If you use this repo as a template, update badge URLs above to your own `<username>/<repo>`.
+- If `demoUrl` is missing, the Live Demo button is hidden.
+- If `repoUrl` is missing, the GitHub Repo button is hidden.
+- If image is missing, cards render a graceful placeholder.
+
+## Documentation
+- Workflow skill template: [skill.md](./skill.md)
+- Template usage guide: [wiki.md](./wiki.md)

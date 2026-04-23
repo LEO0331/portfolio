@@ -191,4 +191,13 @@ test.describe("Portfolio smoke", () => {
     await expect(drawer).toHaveCount(0);
     await expect(searchInput).toHaveValue("toyrobot");
   });
+
+  test("[COV-16] traditional chinese route renders localized project content", async ({ page }) => {
+    await page.goto("/#/zh/projects");
+
+    await expect(page).toHaveURL(/#\/zh\/projects$/);
+    await expect(page.getByRole("heading", { name: "專案", level: 1 })).toBeVisible();
+    await expect(page.getByPlaceholder("可搜尋名稱、標語、描述、分類或技術")).toBeVisible();
+    await expect(page.getByText("剩食媒合概念，支援就近預約取餐")).toBeVisible();
+  });
 });

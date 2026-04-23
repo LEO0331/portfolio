@@ -1,0 +1,14 @@
+{
+  "routes": [
+    { "key": "home", "path": "/", "indexable": true, "changefreq": "weekly", "priority": 1.0 },
+    { "key": "projects", "path": "/projects", "indexable": true, "changefreq": "weekly", "priority": 0.9 },
+    { "key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
+    { "key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
+    { "key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9 },
+    { "key": "projects-zh", "path": "/zh/projects", "indexable": true, "changefreq": "weekly", "priority": 0.8 },
+    { "key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
+    { "key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
+    { "key": "not-found", "path": "/404", "indexable": false }
+  ]
+}
+

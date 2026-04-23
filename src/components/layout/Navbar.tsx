@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { profile } from "../../data/profile";
+import { copy } from "../../i18n/copy";
+import { useLocale } from "../../i18n/LocaleContext";
 import { useTheme } from "../../hooks/useTheme";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
@@ -8,23 +10,25 @@ import { PageContainer } from "./PageContainer";
 import { cn } from "../../utils/cn";
 import { toSafeExternalHref } from "../../utils/urlSafety";
 
-const navItems = [
-  { to: "/", label: "Home" },
-  { to: "/projects", label: "Projects" },
-  { to: "/about", label: "About" },
-  { to: "/contact", label: "Contact" }
-];
-
 export function Navbar(): JSX.Element {
   const [isOpen, setIsOpen] = useState(false);
   const { isDark, toggleTheme } = useTheme();
+  const { locale, toLocalePath, switchLocale } = useLocale();
+  const text = copy[locale];
+  const navItems = [
+    { to: "/", label: text.nav.home },
+    { to: "/projects", label: text.nav.projects },
+    { to: "/about", label: text.nav.about },
+    { to: "/contact", label: text.nav.contact }
+  ];
   const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
+  const nextLocale = locale === "en" ? "zh" : "en";
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-md dark:border-slate-700/80 dark:bg-slate-950/90">
-      <PageContainer className="flex h-[4.25rem] items-center justify-between">
-        <Link to="/" className="group">
-          <p className="eyebrow">Portfolio</p>
+      <PageContainer className="flex h-[4.25rem] items-center justify-between gap-2">
+        <Link to={toLocalePath("/")} className="group">
+          <p className="eyebrow">{text.brand.eyebrow}</p>
           <p className="text-base font-bold text-slate-900 group-hover:text-brand-700 dark:text-slate-100 dark:group-hover:text-brand-400">
             {profile.fullName}
           </p>
@@ -37,7 +41,7 @@ export function Navbar(): JSX.Element {
           {navItems.map((item) => (
             <NavLink
               key={item.to}
-              to={item.to}
+              to={toLocalePath(item.to)}
               className={({ isActive }) =>
                 cn(
                   "rounded-full px-3 py-1.5 text-sm font-semibold text-slate-700 transition dark:text-slate-200",
@@ -51,6 +55,9 @@ export function Navbar(): JSX.Element {
         </nav>
 
         <div className="hidden items-center gap-2 md:flex">
+          <Button variant="secondary" size="sm" onClick={() => switchLocale(nextLocale)}>
+            {text.nav.language}
+          </Button>
           <Button
             variant="secondary"
             size="sm"
@@ -74,6 +81,14 @@ export function Navbar(): JSX.Element {
           <Button
             variant="secondary"
             size="sm"
+            onClick={() => switchLocale(nextLocale)}
+            aria-label="Switch language"
+          >
+            {text.nav.language}
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
             onClick={toggleTheme}
             aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
@@ -86,7 +101,7 @@ export function Navbar(): JSX.Element {
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
-            Menu
+            {text.nav.menu}
           </Button>
         </div>
       </PageContainer>
@@ -97,7 +112,7 @@ export function Navbar(): JSX.Element {
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
-                to={item.to}
+                to={toLocalePath(item.to)}
                 className={({ isActive }) =>
                   cn(
                     "rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200",
@@ -111,7 +126,7 @@ export function Navbar(): JSX.Element {
             ))}
             {safeGithubUrl ? (
               <ExternalLink href={safeGithubUrl} label="Visit GitHub profile" className="px-1 py-1 text-sm font-semibold">
-                GitHub
+                {text.nav.github}
               </ExternalLink>
             ) : null}
           </PageContainer>

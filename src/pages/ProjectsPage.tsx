@@ -8,7 +8,10 @@ import { ProjectSearch } from "../components/projects/ProjectSearch";
 import { Section } from "../components/layout/Section";
 import { projects } from "../data/projects";
 import { useProjectFilters } from "../hooks/useProjectFilters";
+import { copy } from "../i18n/copy";
+import { useLocale } from "../i18n/LocaleContext";
 import type { Project } from "../types/project";
+import { getLocalizedProjects } from "../utils/projectLocalization";
 import { usePageSeo } from "../utils/seo";
 
 function isValidProjectSlug(value: string): boolean {
@@ -16,10 +19,43 @@ function isValidProjectSlug(value: string): boolean {
 }
 
 export function ProjectsPage(): JSX.Element {
-  usePageSeo(
-    "Projects",
-    "Filterable portfolio projects including roles, technologies, live demos, and GitHub source repositories."
+  const { locale, toLocalePath } = useLocale();
+  const text = copy[locale];
+  const localizedProjects = useMemo(() => getLocalizedProjects(projects, locale), [locale]);
+  const projectsStructuredData = useMemo(
+    () => [
+      {
+        "@type": "ItemList",
+        name: "Leo Chen Projects",
+        itemListOrder: "https://schema.org/ItemListOrderAscending",
+        numberOfItems: localizedProjects.length,
+        itemListElement: localizedProjects.slice(0, 12).map((project, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: project.name,
+          url: project.demoUrl ?? project.repoUrl
+        }))
+      },
+      ...localizedProjects
+        .filter((project) => project.repoUrl)
+        .slice(0, 8)
+        .map((project) => ({
+          "@type": "SoftwareSourceCode",
+          name: project.name,
+          codeRepository: project.repoUrl,
+          programmingLanguage: project.techStack.join(", "),
+          description: project.shortDescription,
+          url: project.demoUrl ?? project.repoUrl
+        }))
+    ],
+    [localizedProjects]
   );
+
+  usePageSeo(text.seo.projectsTitle, {
+    routePath: toLocalePath("/projects"),
+    description: text.seo.projectsDescription,
+    jsonLd: projectsStructuredData
+  });
 
   const {
     searchTerm,
@@ -34,7 +70,7 @@ export function ProjectsPage(): JSX.Element {
     setSelectedTechnology,
     setSelectedStatus,
     resetFilters
-  } = useProjectFilters();
+  } = useProjectFilters(localizedProjects);
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -52,8 +88,8 @@ export function ProjectsPage(): JSX.Element {
   );
 
   const selectedProject = useMemo(
-    () => projects.find((project) => project.slug === selectedProjectSlug) ?? null,
-    [selectedProjectSlug]
+    () => localizedProjects.find((project) => project.slug === selectedProjectSlug) ?? null,
+    [localizedProjects, selectedProjectSlug]
   );
 
   useEffect(() => {
@@ -68,14 +104,14 @@ export function ProjectsPage(): JSX.Element {
       return;
     }
 
-    const projectExists = projects.some((project) => project.slug === paramSlug);
+    const projectExists = localizedProjects.some((project) => project.slug === paramSlug);
     if (projectExists) {
       setSelectedProjectSlug(paramSlug);
       return;
     }
 
     updateProjectQueryParam(null, true);
-  }, [searchParams, updateProjectQueryParam]);
+  }, [localizedProjects, searchParams, updateProjectQueryParam]);
 
   const onOpenDetails = useCallback(
     (project: Project, trigger: HTMLButtonElement) => {
@@ -95,10 +131,10 @@ export function ProjectsPage(): JSX.Element {
   return (
     <Section>
       <header className="mb-6 space-y-2.5 sm:mb-7 sm:space-y-3">
-        <p className="eyebrow">Portfolio Work</p>
-        <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">Projects</h1>
+        <p className="eyebrow">{text.projects.eyebrow}</p>
+        <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">{text.projects.title}</h1>
         <p className="max-w-3xl text-sm text-slate-600 sm:text-base">
-          Filter by category, technology, and status. Each project includes role context, technical stack, and direct links to live demo and source code.
+          {text.projects.intro}
         </p>
       </header>
 
@@ -114,7 +150,7 @@ export function ProjectsPage(): JSX.Element {
           onTechnologyChange={setSelectedTechnology}
           onStatusChange={setSelectedStatus}
         />
-        <ProjectHighlights allProjects={projects} visibleProjects={filteredProjects} />
+        <ProjectHighlights allProjects={localizedProjects} visibleProjects={filteredProjects} />
         <ProjectGrid projects={filteredProjects} onReset={resetFilters} onViewDetails={onOpenDetails} />
       </div>
 

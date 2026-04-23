@@ -1,10 +1,14 @@
 import { profile } from "../../data/profile";
+import { copy } from "../../i18n/copy";
+import { useLocale } from "../../i18n/LocaleContext";
 import { ExternalLink } from "../common/ExternalLink";
 import { PageContainer } from "./PageContainer";
 import { toSafeExternalHref } from "../../utils/urlSafety";
 
 export function Footer(): JSX.Element {
   const year = new Date().getFullYear();
+  const { locale } = useLocale();
+  const text = copy[locale];
   const safeWebsiteUrl = toSafeExternalHref(profile.websiteUrl);
   const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
   const safeLinkedinUrl = toSafeExternalHref(profile.linkedinUrl);
@@ -17,9 +21,9 @@ export function Footer(): JSX.Element {
         <div className="rule-accent" />
         <div className="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-300 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="eyebrow">Intelligently designed, passionately built, and seamlessly delivered to the world.</p>
+            <p className="eyebrow">{text.footer.lead}</p>
             <p className="mt-1 font-semibold text-slate-800 dark:text-slate-100">
-              © {year} {profile.fullName}. All rights reserved.
+              © {year} {profile.fullName}. {text.footer.rights}
             </p>
           </div>
 
@@ -34,19 +38,19 @@ export function Footer(): JSX.Element {
                 LinkedIn
               </ExternalLink>
             ) : (
-              <span>LinkedIn: YOUR_LINKEDIN_URL_HERE</span>
+              <span>{text.footer.linkedinFallback}</span>
             )}
             {hasWebsite ? (
               <ExternalLink href={safeWebsiteUrl} label="Open personal website" className="font-semibold">
                 Website
               </ExternalLink>
             ) : (
-              <span>Website: YOUR_WEBSITE_URL_HERE</span>
+              <span>{text.footer.websiteFallback}</span>
             )}
           </div>
         </div>
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Fueling innovation through dedicated craftsmanship and intelligent design.
+          {text.footer.note}
         </p>
       </PageContainer>
     </footer>

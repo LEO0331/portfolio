@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
-import { projects } from "../data/projects";
-import type { ProjectStatus } from "../types/project";
+import type { Project, ProjectStatus } from "../types/project";
 import {
   extractUniqueCategories,
   extractUniqueTechnologies,
@@ -15,7 +14,7 @@ export interface UseProjectFiltersResult {
   selectedStatus: "all" | ProjectStatus;
   categories: string[];
   technologies: string[];
-  filteredProjects: typeof projects;
+  filteredProjects: Project[];
   setSearchTerm: (value: string) => void;
   setSelectedCategory: (value: string) => void;
   setSelectedTechnology: (value: string) => void;
@@ -23,26 +22,26 @@ export interface UseProjectFiltersResult {
   resetFilters: () => void;
 }
 
-export function useProjectFilters(): UseProjectFiltersResult {
+export function useProjectFilters(projectList: Project[]): UseProjectFiltersResult {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedTechnology, setSelectedTechnology] = useState("all");
   const [selectedStatus, setSelectedStatus] = useState<"all" | ProjectStatus>("all");
 
-  const categories = useMemo(() => extractUniqueCategories(projects), []);
-  const technologies = useMemo(() => extractUniqueTechnologies(projects), []);
+  const categories = useMemo(() => extractUniqueCategories(projectList), [projectList]);
+  const technologies = useMemo(() => extractUniqueTechnologies(projectList), [projectList]);
 
   const filteredProjects = useMemo(
     () =>
       sortProjects(
-        filterProjects(projects, {
+        filterProjects(projectList, {
           searchTerm,
           category: selectedCategory,
           technology: selectedTechnology,
           status: selectedStatus
         })
       ),
-    [searchTerm, selectedCategory, selectedTechnology, selectedStatus]
+    [projectList, searchTerm, selectedCategory, selectedTechnology, selectedStatus]
   );
 
   return {
@@ -65,3 +64,4 @@ export function useProjectFilters(): UseProjectFiltersResult {
     }
   };
 }
+
