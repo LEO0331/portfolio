@@ -16,9 +16,27 @@
   --accent: #0f766e;
 }
 
+.dark {
+  --bg: #020617;
+  --surface: #0f172a;
+  --surface-soft: #111f37;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --line: #243448;
+  --brand: #60a5fa;
+  --brand-strong: #3b82f6;
+  --accent: #2dd4bf;
+}
+
 @layer base {
   * {
     @apply box-border;
+  }
+
+  html,
+  body,
+  #root {
+    min-height: 100%;
   }
 
   body {
@@ -43,23 +61,90 @@
   a {
     text-underline-offset: 2px;
   }
+
+  ::selection {
+    background: rgba(37, 99, 235, 0.28);
+    color: inherit;
+  }
 }
 
 @layer components {
   .eyebrow {
-    @apply font-mono text-[0.64rem] uppercase tracking-[0.16em] text-slate-500 sm:text-[0.68rem] sm:tracking-[0.18em];
+    @apply font-mono text-[0.64rem] uppercase tracking-[0.16em] text-slate-500 sm:text-[0.68rem] sm:tracking-[0.18em] dark:text-slate-400;
   }
 
   .panel {
-    @apply rounded-2xl border border-slate-200/90 bg-white/95;
+    @apply rounded-2xl border border-slate-200/90 bg-white/95 dark:border-slate-700/80 dark:bg-slate-900/95;
     box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
   }
 
   .panel-soft {
-    @apply rounded-2xl border border-slate-200 bg-slate-50/90;
+    @apply rounded-2xl border border-slate-200 bg-slate-50/90 dark:border-slate-700/80 dark:bg-slate-900/75;
   }
 
   .rule-accent {
-    @apply h-px bg-gradient-to-r from-brand-600 via-cyan-700/70 to-transparent;
+    @apply h-px bg-gradient-to-r from-brand-600 via-cyan-700/70 to-transparent dark:from-brand-500 dark:via-cyan-400/70;
+  }
+}
+
+@layer utilities {
+  .dark .text-slate-900 {
+    color: rgb(241 245 249);
+  }
+
+  .dark .text-slate-800 {
+    color: rgb(226 232 240);
+  }
+
+  .dark .text-slate-700 {
+    color: rgb(203 213 225);
+  }
+
+  .dark .text-slate-600 {
+    color: rgb(148 163 184);
+  }
+
+  .dark .text-slate-500 {
+    color: rgb(148 163 184);
+  }
+
+  .dark .bg-white {
+    background-color: rgb(15 23 42);
+  }
+
+  .dark .bg-white\/90 {
+    background-color: rgb(15 23 42 / 0.9);
+  }
+
+  .dark .bg-white\/95 {
+    background-color: rgb(15 23 42 / 0.95);
+  }
+
+  .dark .bg-slate-50 {
+    background-color: rgb(15 23 42 / 0.65);
+  }
+
+  .dark .bg-slate-50\/90 {
+    background-color: rgb(15 23 42 / 0.9);
+  }
+
+  .dark .bg-slate-100 {
+    background-color: rgb(30 41 59);
+  }
+
+  .dark .bg-slate-200 {
+    background-color: rgb(51 65 85);
+  }
+
+  .dark .border-slate-200 {
+    border-color: rgb(51 65 85);
+  }
+
+  .dark .border-slate-200\/90 {
+    border-color: rgb(51 65 85 / 0.9);
+  }
+
+  .dark .border-slate-300 {
+    border-color: rgb(71 85 105);
   }
 }

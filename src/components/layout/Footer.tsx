@@ -12,13 +12,15 @@ export function Footer(): JSX.Element {
   const hasLinkedIn = Boolean(safeLinkedinUrl);
 
   return (
-    <footer className="border-t border-slate-200/90 bg-white/90 py-10">
+    <footer className="border-t border-slate-200/90 bg-white/90 py-10 dark:border-slate-700/80 dark:bg-slate-950/90">
       <PageContainer className="space-y-5">
         <div className="rule-accent" />
-        <div className="flex flex-col gap-4 text-sm text-slate-600 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-col gap-4 text-sm text-slate-600 dark:text-slate-300 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="eyebrow">Intelligently designed, passionately built, and seamlessly delivered to the world.</p>
-            <p className="mt-1 font-semibold text-slate-800">© {year} {profile.fullName}. All rights reserved.</p>
+            <p className="mt-1 font-semibold text-slate-800 dark:text-slate-100">
+              © {year} {profile.fullName}. All rights reserved.
+            </p>
           </div>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
@@ -43,7 +45,7 @@ export function Footer(): JSX.Element {
             )}
           </div>
         </div>
-        <p className="text-xs text-slate-500">
+        <p className="text-xs text-slate-500 dark:text-slate-400">
           Fueling innovation through dedicated craftsmanship and intelligent design.
         </p>
       </PageContainer>

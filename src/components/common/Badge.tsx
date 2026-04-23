@@ -7,9 +7,9 @@ interface BadgeProps {
 }
 
 const toneClasses: Record<NonNullable<BadgeProps["tone"]>, string> = {
-  neutral: "border border-slate-300 bg-slate-100 text-slate-700",
-  success: "border border-emerald-200 bg-emerald-50 text-emerald-800",
-  warning: "border border-amber-200 bg-amber-50 text-amber-800"
+  neutral: "border border-slate-300 bg-slate-100 text-slate-700 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-200",
+  success: "border border-emerald-200 bg-emerald-50 text-emerald-800 dark:border-emerald-700/80 dark:bg-emerald-950/40 dark:text-emerald-300",
+  warning: "border border-amber-200 bg-amber-50 text-amber-800 dark:border-amber-700/80 dark:bg-amber-950/40 dark:text-amber-300"
 };
 
 export function Badge({ label, tone = "neutral", className }: BadgeProps): JSX.Element {

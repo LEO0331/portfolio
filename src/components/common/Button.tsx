@@ -18,10 +18,11 @@ type ButtonProps = BaseProps &
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "border border-brand-700 bg-brand-700 text-white hover:bg-brand-800 hover:border-brand-800 focus-visible:ring-brand-600",
+    "border border-brand-700 bg-brand-700 text-white hover:bg-brand-800 hover:border-brand-800 focus-visible:ring-brand-600 dark:border-brand-500 dark:bg-brand-500 dark:text-slate-950 dark:hover:border-brand-400 dark:hover:bg-brand-400",
   secondary:
-    "border border-slate-300 bg-white text-slate-800 hover:border-slate-400 hover:bg-slate-50 focus-visible:ring-slate-500",
-  ghost: "border border-transparent text-slate-700 hover:bg-slate-100 focus-visible:ring-slate-500"
+    "border border-slate-300 bg-white text-slate-800 hover:border-slate-400 hover:bg-slate-50 focus-visible:ring-slate-500 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-slate-500 dark:hover:bg-slate-700",
+  ghost:
+    "border border-transparent text-slate-700 hover:bg-slate-100 focus-visible:ring-slate-500 dark:text-slate-200 dark:hover:bg-slate-800"
 };
 
 const sizeClasses: Record<Size, string> = {
@@ -35,7 +36,7 @@ export function getButtonClassName(
   className?: string
 ): string {
   return cn(
-    "inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2",
+    "inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950",
     variantClasses[variant],
     sizeClasses[size],
     className
