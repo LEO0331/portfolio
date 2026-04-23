@@ -126,6 +126,9 @@ export function ProjectDetailDrawer({ project, isOpen, onClose }: ProjectDetailD
                     src={fallbackImage ?? primaryImage}
                     alt={`${project.name}: ${project.tagline}`}
                     className="h-full w-full object-cover"
+                    width={1200}
+                    height={675}
+                    sizes="(max-width: 640px) 100vw, 672px"
                     onError={() => setImageFailed(true)}
                     loading="lazy"
                     decoding="async"

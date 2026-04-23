@@ -43,6 +43,15 @@ function getStoredLocale(): Locale | null {
   }
 }
 
+function setStoredLocale(locale: Locale): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(LOCALE_STORAGE_KEY, locale);
+  } catch {
+    // Ignore storage failures in restricted/private contexts.
+  }
+}
+
 const LocaleContext = createContext<LocaleContextValue | undefined>(undefined);
 
 interface LocaleProviderProps {
@@ -66,11 +75,7 @@ export function LocaleProvider({ children }: LocaleProviderProps): JSX.Element {
   }, [locale, location.pathname, location.search, navigate]);
 
   useEffect(() => {
-    try {
-      window.localStorage.setItem(LOCALE_STORAGE_KEY, locale);
-    } catch {
-      // Ignore storage failures in restricted/private contexts.
-    }
+    setStoredLocale(locale);
   }, [locale]);
 
   const value = useMemo<LocaleContextValue>(
@@ -80,6 +85,8 @@ export function LocaleProvider({ children }: LocaleProviderProps): JSX.Element {
       toLocalePath: (path: string) => buildLocalizedPath(path, locale),
       switchLocale: (nextLocale: Locale) => {
         if (nextLocale === locale) return;
+        // Persist first so locale-sync effect doesn't redirect to the previous locale.
+        setStoredLocale(nextLocale);
         const nextPath = buildLocalizedPath(location.pathname, nextLocale);
         navigate(`${nextPath}${location.search}`);
       }

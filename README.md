@@ -1,6 +1,7 @@
 # Portfolio Site Template
-[![E2E Smoke Tests](/actions/workflows/e2e.yml/badge.svg)](/actions/workflows/e2e.yml)
-[![Deploy Portfolio to GitHub Pages](/actions/workflows/deploy.yml/badge.svg)](/actions/workflows/deploy.yml)
+[![E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml)
+[![Deploy Portfolio to GitHub Pages](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml)
+[![Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/lighthouse.yml)
 
 Production-ready portfolio template for engineers who want a clean, recruiter-friendly site with fast setup and low maintenance.
 

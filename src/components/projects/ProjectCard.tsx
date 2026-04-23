@@ -47,6 +47,9 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
               src={fallbackImage ?? primaryImage}
               alt={`${project.name}: ${project.tagline}`}
               className="h-full w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+              width={1200}
+              height={675}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
               onError={() => setImageFailed(true)}
               loading="lazy"
               decoding="async"
