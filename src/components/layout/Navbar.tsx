@@ -42,6 +42,7 @@ export function Navbar(): JSX.Element {
             <NavLink
               key={item.to}
               to={toLocalePath(item.to)}
+              end={item.to === "/"}
               className={({ isActive }) =>
                 cn(
                   "rounded-full px-3 py-1.5 text-sm font-semibold text-slate-700 transition dark:text-slate-200",
@@ -113,6 +114,7 @@ export function Navbar(): JSX.Element {
               <NavLink
                 key={item.to}
                 to={toLocalePath(item.to)}
+                end={item.to === "/"}
                 className={({ isActive }) =>
                   cn(
                     "rounded-lg px-3 py-2 text-sm font-semibold text-slate-700 dark:text-slate-200",

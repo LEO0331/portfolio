@@ -17,8 +17,8 @@ export function Hero(): JSX.Element {
           <h1 className="max-w-3xl text-3xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
             {profile.fullName}
           </h1>
-          <p className="text-lg font-semibold text-brand-700 sm:text-xl">{profile.title}</p>
-          <p className="max-w-2xl text-sm leading-6 text-slate-700 sm:text-base sm:leading-7">{profile.summary}</p>
+          <p className="text-lg font-semibold text-brand-700 sm:text-xl">{text.home.heroTitle}</p>
+          <p className="max-w-2xl text-sm leading-6 text-slate-700 sm:text-base sm:leading-7">{text.home.heroSummary}</p>
           <div className="flex flex-wrap gap-2.5 pt-1.5 sm:gap-3 sm:pt-2">
             <Link to={toLocalePath("/projects")} aria-label="View projects" className={getButtonClassName("primary")}>
               {text.home.viewProjects}

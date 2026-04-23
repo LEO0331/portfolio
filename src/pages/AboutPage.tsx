@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
 import { getButtonClassName } from "../components/common/Button";
 import { Section } from "../components/layout/Section";
-import { profile } from "../data/profile";
 import { copy } from "../i18n/copy";
 import { useLocale } from "../i18n/LocaleContext";
+import { getLocalizedProfile } from "../utils/profileLocalization";
 import { usePageSeo } from "../utils/seo";
 
 export function AboutPage(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
+  const localizedProfile = getLocalizedProfile(locale);
 
   usePageSeo(text.seo.aboutTitle, {
     routePath: toLocalePath("/about"),
@@ -40,7 +41,7 @@ export function AboutPage(): JSX.Element {
           <article className="panel-soft p-5">
             <h2 className="text-base font-bold text-slate-900 sm:text-lg">{text.about.strengths}</h2>
             <ul className="mt-2.5 list-disc space-y-1.5 pl-5 text-sm text-slate-700 sm:mt-3 sm:space-y-2">
-              {profile.strengths.map((strength) => (
+              {localizedProfile.strengths.map((strength) => (
                 <li key={strength}>{strength}</li>
               ))}
             </ul>

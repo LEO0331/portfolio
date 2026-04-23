@@ -23,6 +23,9 @@ const localizedCopy = {
     },
     home: {
       heroEyebrow: "Full Stack Engineer",
+      heroTitle: "Full Stack Engineer",
+      heroSummary:
+        "Backend-focused full stack engineer with experience building web applications, interactive tools, and user-facing products across frontend and backend workflows.",
       valueCardEyebrow: "Empowering the future with intelligent design and pure passion",
       primaryFocus: "Primary focus:",
       strengthProfile: "Strength profile:",
@@ -165,6 +168,9 @@ const localizedCopy = {
     },
     home: {
       heroEyebrow: "全端工程師",
+      heroTitle: "全端工程師",
+      heroSummary:
+        "偏後端導向的全端工程師，具備建置 Web 應用、互動工具與面向使用者產品的實作經驗，涵蓋前後端協作流程。",
       valueCardEyebrow: "以實作與設計思考，推動可靠的產品交付",
       primaryFocus: "主要專注：",
       strengthProfile: "能力輪廓：",
