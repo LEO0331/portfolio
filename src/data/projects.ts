@@ -207,26 +207,6 @@ export const projects: Project[] = [
     featured: true
   },
   {
-    id: "projects-drafts",
-    slug: "projects-drafts",
-    name: "Projects Drafts",
-    tagline: "Sandbox for project concepts and UI experimentation",
-    shortDescription:
-      "A working space for testing and presenting draft project concepts in a browser-accessible format.",
-    fullDescription:
-      "Projects Drafts acts as an experimentation area and can be used in the portfolio as a lower-priority supporting project.",
-    role: "Frontend Developer",
-    teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Sandbox", "Experimentation"],
-    features: ["Draft concept presentation", "Browser deployment"],
-    image: "/src/assets/images/projects/projects-drafts.png",
-    demoUrl: "https://leo0331.github.io/projects_drafts/",
-    repoUrl: "https://github.com/LEO0331/projects_drafts",
-    status: "live",
-    featured: false
-  },
-  {
     id: "leave-request",
     slug: "leave-request",
     name: "Leave Request",

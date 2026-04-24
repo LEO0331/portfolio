@@ -92,14 +92,6 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     categories: ["產品概念", "行動應用", "服務設計"],
     features: ["服務導向體驗", "產品框架思考", "線上部署"]
   },
-  "projects-drafts": {
-    tagline: "專案概念與 UI 實驗的沙盒空間",
-    shortDescription: "用於測試與展示草稿概念的瀏覽器工作區。",
-    fullDescription: "Projects Drafts 作為實驗場，適合在作品集中作為次要支援項目呈現。",
-    role: "前端開發者",
-    categories: ["沙盒", "實驗"],
-    features: ["草稿概念展示", "瀏覽器部署"]
-  },
   "leave-request": {
     tagline: "以 React、TypeScript、MUI 實作的請假管理系統",
     shortDescription: "含動態驗證、天數計算與資料處理邏輯的互動式請假流程系統。",
