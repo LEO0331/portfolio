@@ -75,6 +75,10 @@ export function LocaleProvider({ children }: LocaleProviderProps): JSX.Element {
   }, [locale, location.pathname, location.search, navigate]);
 
   useEffect(() => {
+    document.documentElement.lang = locale === "zh" ? "zh-Hant" : "en";
+  }, [locale]);
+
+  useEffect(() => {
     setStoredLocale(locale);
   }, [locale]);
 

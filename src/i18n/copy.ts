@@ -12,7 +12,8 @@ const localizedCopy = {
       contact: "Contact",
       github: "GitHub",
       menu: "Menu",
-      language: "繁中"
+      language: "繁中",
+      skipToContent: "Skip to main content"
     },
     footer: {
       lead: "Intelligently designed, passionately built, and seamlessly delivered to the world.",
@@ -157,7 +158,8 @@ const localizedCopy = {
       contact: "聯絡",
       github: "GitHub",
       menu: "選單",
-      language: "EN"
+      language: "EN",
+      skipToContent: "跳至主要內容"
     },
     footer: {
       lead: "以設計思維與工程實作，打造可落地的數位產品。",

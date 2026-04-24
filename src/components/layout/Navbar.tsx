@@ -26,6 +26,12 @@ export function Navbar(): JSX.Element {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/90 bg-white/90 backdrop-blur-md dark:border-slate-700/80 dark:bg-slate-950/90">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-3 focus:top-3 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-900 focus:shadow dark:focus:bg-slate-900 dark:focus:text-slate-100"
+      >
+        {text.nav.skipToContent}
+      </a>
       <PageContainer className="flex h-[4.25rem] items-center justify-between gap-2">
         <Link to={toLocalePath("/")} className="group">
           <p className="eyebrow">{text.brand.eyebrow}</p>
@@ -101,6 +107,7 @@ export function Navbar(): JSX.Element {
             onClick={() => setIsOpen((prev) => !prev)}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
+            aria-controls="mobile-primary-nav"
           >
             {text.nav.menu}
           </Button>
@@ -108,7 +115,7 @@ export function Navbar(): JSX.Element {
       </PageContainer>
 
       {isOpen && (
-        <div className="border-t border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-950 md:hidden">
+        <div id="mobile-primary-nav" className="border-t border-slate-200 bg-white dark:border-slate-700 dark:bg-slate-950 md:hidden">
           <PageContainer className="flex flex-col gap-2 py-3">
             {navItems.map((item) => (
               <NavLink
