@@ -325,7 +325,7 @@ export const projects: Project[] = [
     categories: ["Web App", "Deployment", "Frontend"],
     features: ["Vercel deployment", "Live public demo"],
     image: "/src/assets/images/projects/email-website.png",
-    demoUrl: "https://email-website-hunys3mr1-leo0331s-projects.vercel.app/",
+    demoUrl: "https://email-website-chi.vercel.app/",
     repoUrl: "https://github.com/LEO0331/email_website",
     status: "live",
     featured: false
@@ -364,7 +364,7 @@ export const projects: Project[] = [
     categories: ["Web App", "Reader", "Frontend"],
     features: ["Reader-oriented interface", "Vercel deployment", "Live public demo"],
     image: "/src/assets/images/projects/epubreader.png",
-    demoUrl: "https://epubreader-az8qiix07-leo0331s-projects.vercel.app/",
+    demoUrl: "https://epubreader-theta.vercel.app/",
     repoUrl: "https://github.com/LEO0331/epubreader",
     status: "live",
     featured: false
@@ -388,6 +388,7 @@ export const projects: Project[] = [
       "Versioned GitHub distribution"
     ],
     image: "/src/assets/images/projects/prosemasters-skill.png",
+    demoUrl: "https://prosemasters-skill.vercel.app/",
     repoUrl: "https://github.com/LEO0331/prosemasters-skill",
     status: "live",
     featured: false
@@ -435,7 +436,105 @@ export const projects: Project[] = [
       "Version-controlled collaboration via GitHub"
     ],
     image: "/src/assets/images/projects/ppt-design-md.png",
+    demoUrl: "https://ppt-design-md.vercel.app/",
     repoUrl: "https://github.com/LEO0331/ppt-design-md",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "lighthouse-skill-pack",
+    slug: "lighthouse-skill-pack",
+    name: "Lighthouse Skill Pack",
+    tagline: "Deterministic optimization patterns for Lighthouse score improvements",
+    shortDescription:
+      "A practical skill pack focused on improving Lighthouse Performance, SEO, Accessibility, and Best Practices with minimal, high-impact fixes.",
+    fullDescription:
+      "Lighthouse Skill Pack provides reusable optimization workflows and implementation patterns for modern frontend projects. It is designed to help teams apply prioritized fixes for LCP, CLS, and JS execution bottlenecks without sacrificing UX quality.",
+    role: "Performance / Frontend Optimization Developer",
+    teamType: "solo",
+    techStack: ["Lighthouse", "TypeScript", "JavaScript", "Web Performance"],
+    categories: ["Developer Tooling", "Performance", "Frontend"],
+    features: [
+      "Priority-based optimization workflow",
+      "Reusable performance fix patterns",
+      "LCP and CLS-focused guidance",
+      "Developer-oriented documentation"
+    ],
+    image: "/src/assets/images/projects/lighthouse-skill-pack.png",
+    demoUrl: "https://leo0331.github.io/lighthouse-skill-pack/",
+    repoUrl: "https://github.com/LEO0331/lighthouse-skill-pack",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "wordpressparser",
+    slug: "wordpressparser",
+    name: "WordPress Parser",
+    tagline: "Parsing utility for extracting and structuring WordPress content",
+    shortDescription:
+      "A utility project for parsing WordPress data into cleaner, structured outputs suitable for downstream workflows.",
+    fullDescription:
+      "WordPress Parser focuses on content extraction and transformation from WordPress sources. It demonstrates practical tooling, data handling, and workflow-oriented implementation for documentation or migration scenarios.",
+    role: "Utility / Data Workflow Developer",
+    teamType: "solo",
+    techStack: ["JavaScript", "Node.js", "Parser Tooling"],
+    categories: ["Utility", "Workflow Tool", "Developer Tooling"],
+    features: [
+      "WordPress content parsing",
+      "Structured data output",
+      "Workflow-oriented utility design"
+    ],
+    image: "/src/assets/images/projects/wordpressparser.png",
+    demoUrl: "https://wordpressparser.vercel.app/",
+    repoUrl: "https://github.com/LEO0331/wordpressparser",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "wordpress",
+    slug: "wordpress",
+    name: "WordPress",
+    tagline: "WordPress-focused project and implementation workspace",
+    shortDescription:
+      "A repository centered on WordPress development, customization, and practical website implementation workflows.",
+    fullDescription:
+      "WordPress is a practical implementation project for content-driven websites and publishing workflows. It is suitable for demonstrating CMS-oriented development, customization capability, and real-world delivery in WordPress ecosystems.",
+    role: "Web Developer",
+    teamType: "solo",
+    techStack: ["WordPress", "PHP", "CSS", "JavaScript"],
+    categories: ["Web App", "CMS", "Frontend"],
+    features: [
+      "WordPress implementation workflow",
+      "CMS-oriented customization",
+      "Content publishing support"
+    ],
+    image: "/src/assets/images/projects/wordpress.png",
+    demoUrl: "https://leo0331.github.io/wordpress/",
+    repoUrl: "https://github.com/LEO0331/wordpress",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "rednote-gallery",
+    slug: "rednote-gallery",
+    name: "Rednote Gallery",
+    tagline: "Gallery-style web experience for curated visual note content",
+    shortDescription:
+      "A frontend gallery project focused on clear visual presentation, browsing flow, and lightweight interaction.",
+    fullDescription:
+      "Rednote Gallery showcases a structured, presentation-first gallery experience built for fast scanning and clean content display. It works well as a portfolio piece for UI organization, responsive layout execution, and user-facing polish.",
+    role: "Frontend Developer",
+    teamType: "solo",
+    techStack: ["React", "TypeScript", "CSS", "UI Design"],
+    categories: ["Web App", "Frontend", "Gallery"],
+    features: [
+      "Gallery-first browsing interface",
+      "Responsive layout behavior",
+      "Clear content hierarchy"
+    ],
+    image: "/src/assets/images/projects/rednote-gallery.png",
+    demoUrl: "https://leo0331.github.io/rednote-gallery/",
+    repoUrl: "https://github.com/LEO0331/rednote-gallery",
     status: "live",
     featured: false
   }

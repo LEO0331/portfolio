@@ -11,7 +11,10 @@ function extractProjectsArrayContent(source) {
   const start = source.indexOf(marker);
   if (start === -1) return '';
 
-  const arrayStart = source.indexOf('[', start);
+  const equalsIndex = source.indexOf('=', start);
+  if (equalsIndex === -1) return '';
+
+  const arrayStart = source.indexOf('[', equalsIndex);
   if (arrayStart === -1) return '';
 
   let depth = 0;

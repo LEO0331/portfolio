@@ -182,6 +182,42 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     role: "工具 / 文件流程開發者",
     categories: ["開發者工具", "文件化", "流程工具"],
     features: ["Markdown-first 編輯流程", "可重用簡報結構", "GitHub 協作與版本控管"]
+  },
+  "lighthouse-skill-pack": {
+    tagline: "針對 Lighthouse 分數提升的可重用優化模式包",
+    shortDescription:
+      "以最小改動完成高影響優化，聚焦 Performance、SEO、Accessibility 與 Best Practices。",
+    fullDescription:
+      "Lighthouse Skill Pack 提供可重複使用的前端優化流程與修正模式，協助團隊依優先順序處理 LCP、CLS 與 JS 執行瓶頸，同時維持既有體驗品質。",
+    role: "效能 / 前端優化開發者",
+    categories: ["開發者工具", "效能優化", "前端"],
+    features: ["優先序導向優化流程", "可重用效能修正模式", "聚焦 LCP 與 CLS", "開發者導向文件化"]
+  },
+  wordpressparser: {
+    tagline: "擷取並結構化 WordPress 內容的解析工具",
+    shortDescription: "將 WordPress 資料解析為較乾淨、可用於後續流程的結構化輸出。",
+    fullDescription:
+      "WordPress Parser 聚焦內容擷取與轉換，適合文件整理、內容搬遷或資料工作流前處理情境，展現工具型開發與資料處理能力。",
+    role: "工具 / 資料流程開發者",
+    categories: ["工具", "流程工具", "開發者工具"],
+    features: ["WordPress 內容解析", "結構化資料輸出", "流程導向工具設計"]
+  },
+  wordpress: {
+    tagline: "聚焦 WordPress 網站實作與客製流程的專案",
+    shortDescription: "以 WordPress 開發、客製與內容型網站交付為核心的實務專案。",
+    fullDescription:
+      "WordPress 專案著重內容型網站建置與 CMS 流程，適合展示 WordPress 生態中的實作能力、客製經驗與實際交付導向。",
+    role: "網站開發者",
+    categories: ["Web 應用", "CMS", "前端"],
+    features: ["WordPress 實作流程", "CMS 導向客製能力", "內容發布支援"]
+  },
+  "rednote-gallery": {
+    tagline: "以視覺筆記內容為核心的展示型 Gallery Web 專案",
+    shortDescription: "重視視覺呈現、瀏覽流程與輕量互動的前端作品。",
+    fullDescription:
+      "Rednote Gallery 提供結構清晰、易掃讀的展示型瀏覽體驗，適合用於呈現 UI 組織能力、響應式版面實作與使用者導向的介面打磨。",
+    role: "前端開發者",
+    categories: ["Web 應用", "前端", "圖庫展示"],
+    features: ["展示導向瀏覽介面", "響應式版面行為", "清晰內容層級"]
   }
 };
-
