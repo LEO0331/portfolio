@@ -70,7 +70,7 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
         <div className="mb-2.5 sm:mb-3">
-          <h3 className="text-lg font-bold text-slate-900 sm:text-xl">{project.name}</h3>
+          <h2 className="text-lg font-bold text-slate-900 sm:text-xl">{project.name}</h2>
         </div>
 
         <p className="mb-1.5 text-sm font-semibold leading-6 text-slate-800">{project.tagline}</p>
@@ -102,7 +102,6 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
               target="_blank"
               rel="noopener noreferrer"
               size="sm"
-              aria-label={`View ${project.name} live demo`}
             >
               {text.projects.liveDemo}
             </Button>
@@ -115,7 +114,6 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
               rel="noopener noreferrer"
               variant="secondary"
               size="sm"
-              aria-label={`View ${project.name} GitHub repository`}
             >
               {text.projects.githubRepo}
             </Button>
@@ -124,7 +122,6 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
             <Button
               variant="ghost"
               size="sm"
-              aria-label={`View details for ${project.name}`}
               onClick={(event) => onViewDetails(project, event.currentTarget)}
             >
               {text.projects.viewDetails}

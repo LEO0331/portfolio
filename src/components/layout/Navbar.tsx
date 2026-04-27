@@ -69,7 +69,6 @@ export function Navbar(): JSX.Element {
             variant="secondary"
             size="sm"
             onClick={toggleTheme}
-            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDark ? "Light" : "Dark"}
           </Button>
@@ -89,7 +88,6 @@ export function Navbar(): JSX.Element {
             variant="secondary"
             size="sm"
             onClick={() => switchLocale(nextLocale)}
-            aria-label="Switch language"
           >
             {text.nav.language}
           </Button>
@@ -97,7 +95,6 @@ export function Navbar(): JSX.Element {
             variant="secondary"
             size="sm"
             onClick={toggleTheme}
-            aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
           >
             {isDark ? "Light" : "Dark"}
           </Button>
@@ -105,7 +102,6 @@ export function Navbar(): JSX.Element {
             variant="ghost"
             size="sm"
             onClick={() => setIsOpen((prev) => !prev)}
-            aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
             aria-controls="mobile-primary-nav"
           >
