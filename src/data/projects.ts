@@ -517,5 +517,54 @@ export const projects: Project[] = [
     repoUrl: "https://github.com/LEO0331/rednote-gallery",
     status: "live",
     featured: false
+  },
+  {
+    id: "genomic-data-science-with-galaxy-project",
+    slug: "genomic-data-science-with-galaxy-project",
+    name: "Genomic Data Science with Galaxy Project",
+    tagline: "Interactive genomic variant workflow case-study web app",
+    shortDescription:
+      "A genomic workflow web app for browser-based VCF exploration, filtering, and CSV export powered by Galaxy-generated results.",
+    fullDescription:
+      "This project demonstrates practical bioinformatics workflow delivery in a user-facing web interface. It includes variant exploration and filtering features designed for clear result inspection and downstream analysis export.",
+    role: "Bioinformatics / Full Stack Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "Bioinformatics", "Galaxy", "Web App"],
+    categories: ["Web App", "Data Science", "Bioinformatics"],
+    features: [
+      "Browser-based VCF exploration",
+      "Variant filtering workflow",
+      "CSV export for downstream analysis"
+    ],
+    image: "/src/assets/images/projects/genomic-data-science-with-galaxy-project.png",
+    demoUrl: "https://genomic-data-science-with-galaxy-pr.vercel.app/",
+    repoUrl: "https://github.com/LEO0331/Genomic-Data-Science-with-Galaxy-Project",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "thalassemia-seq-analysis",
+    slug: "thalassemia-seq-analysis",
+    name: "Thalassemia SEQ Analysis",
+    tagline: "Sanger .ab1 upload and primer-specific thalassemia mutation analysis",
+    shortDescription:
+      "Upload .ab1 Sanger files, run primer-specific thalassemia mutation checks, review QC/mutation results, and export JSON reports.",
+    fullDescription:
+      "Thalassemia SEQ Analysis focuses on a domain-specific sequence analysis workflow with practical reporting output. It showcases applied bioinformatics tooling in a usable browser interface for mutation-focused review.",
+    role: "Bioinformatics Developer",
+    teamType: "solo",
+    techStack: ["Python", "Bioinformatics", "Sanger Sequencing", "Web App"],
+    categories: ["Web App", "Bioinformatics", "Healthcare"],
+    features: [
+      "AB1 file upload pipeline",
+      "Primer-specific mutation checks",
+      "QC and mutation result display",
+      "JSON report export"
+    ],
+    image: "/src/assets/images/projects/thalassemia-seq-analysis.png",
+    demoUrl: "https://thalassemia-seq-analysis.vercel.app/",
+    repoUrl: "https://github.com/LEO0331/Thalassemia_SEQ_analysis",
+    status: "live",
+    featured: false
   }
 ];

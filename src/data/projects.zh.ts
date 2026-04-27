@@ -22,8 +22,8 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     outcomes: ["已提供可公開瀏覽的線上 Demo"]
   },
   "circles-app": {
-    tagline: "依線框圖需求完成，含 JSON 載入與前端篩選的 React 專案",
-    shortDescription: "依指定 wireframe 實作 React 應用，包含資料載入、loading 狀態與篩選功能。",
+    tagline: "依線框稿需求完成，含 JSON 載入與前端篩選的 React 專案",
+    shortDescription: "依指定線框稿實作 React 應用，包含資料載入、載入狀態與篩選功能。",
     fullDescription:
       "Circles App 展示從需求到 UI 落地的能力，包含非同步資料處理、前端篩選邏輯與乾淨的元件結構。",
     role: "前端工程師",
@@ -204,12 +204,32 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["WordPress 實作流程", "CMS 導向客製能力", "內容發布支援"]
   },
   "rednote-gallery": {
-    tagline: "以視覺筆記內容為核心的展示型 Gallery Web 專案",
+    tagline: "以視覺筆記內容為核心的圖庫式 Web 專案",
     shortDescription: "重視視覺呈現、瀏覽流程與輕量互動的前端作品。",
     fullDescription:
       "Rednote Gallery 提供結構清晰、易掃讀的展示型瀏覽體驗，適合用於呈現 UI 組織能力、響應式版面實作與使用者導向的介面打磨。",
     role: "前端開發者",
     categories: ["Web 應用", "前端", "圖庫展示"],
     features: ["展示導向瀏覽介面", "響應式版面行為", "清晰內容層級"]
+  },
+  "genomic-data-science-with-galaxy-project": {
+    tagline: "互動式基因體變異分析流程案例 Web 應用",
+    shortDescription:
+      "以 Galaxy 結果為基礎，提供瀏覽器端 VCF 檢視、篩選與 CSV 匯出的基因體資料工作流程。",
+    fullDescription:
+      "此專案將生物資訊流程落地為使用者可操作的 Web 介面，重點在於變異資料檢視、篩選與分析輸出，適合作為資料科學與實務工具整合的代表作品。",
+    role: "生物資訊 / 全端開發者",
+    categories: ["Web 應用", "資料科學", "生物資訊"],
+    features: ["瀏覽器端 VCF 檢視", "變異資料篩選流程", "CSV 匯出供後續分析"]
+  },
+  "thalassemia-seq-analysis": {
+    tagline: "Sanger .ab1 上傳與地中海型貧血變異分析工具",
+    shortDescription:
+      "支援上傳 .ab1 檔案，執行引子導向突變檢查，顯示 QC 與突變結果，並可匯出 JSON 報告。",
+    fullDescription:
+      "Thalassemia SEQ Analysis 聚焦特定領域序列分析流程，將檢測與報告整合進易用的 Web 介面，展示生物資訊應用與資料報告能力。",
+    role: "生物資訊開發者",
+    categories: ["Web 應用", "生物資訊", "醫療應用"],
+    features: ["AB1 檔案上傳流程", "引子導向突變檢查", "QC 與突變結果呈現", "JSON 報告匯出"]
   }
 };
