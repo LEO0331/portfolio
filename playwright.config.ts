@@ -1,5 +1,10 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const E2E_PORT = Number(process.env.E2E_PORT ?? "4175");
+const E2E_HOST = "127.0.0.1";
+const E2E_BASE_PATH = "/portfolio";
+const E2E_ORIGIN = `http://${E2E_HOST}:${E2E_PORT}`;
+
 export default defineConfig({
   testDir: "./tests/e2e",
   fullyParallel: false,
@@ -12,7 +17,7 @@ export default defineConfig({
     ["json", { outputFile: "test-results/e2e-report.json" }]
   ],
   use: {
-    baseURL: "http://127.0.0.1:4173/portfolio",
+    baseURL: `${E2E_ORIGIN}${E2E_BASE_PATH}`,
     trace: "on-first-retry",
     video: "retain-on-failure",
     screenshot: "only-on-failure"
@@ -24,8 +29,8 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: "npm run dev -- --host 127.0.0.1 --port 4173",
-    url: "http://127.0.0.1:4173/portfolio/",
+    command: `npm run dev -- --host ${E2E_HOST} --port ${E2E_PORT} --strictPort`,
+    url: `${E2E_ORIGIN}${E2E_BASE_PATH}/`,
     reuseExistingServer: !process.env.CI,
     timeout: 120000
   }

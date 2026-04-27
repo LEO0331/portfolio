@@ -46,8 +46,8 @@ test.describe("Portfolio smoke", () => {
     await page.goto("/#/projects");
 
     await page.getByPlaceholder("Search by name, tagline, description, category, or tech").fill("toyrobot");
-    await expect(page.getByRole("heading", { name: "ToyRobot", level: 3 })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "AssistantHub", level: 3 })).toHaveCount(0);
+    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "AssistantHub" })).toHaveCount(0);
   });
 
   test("[COV-05] projects filters by category, technology, and status", async ({ page }) => {
@@ -57,14 +57,14 @@ test.describe("Portfolio smoke", () => {
     await page.getByLabel("Technology").selectOption("JavaScript");
     await page.getByLabel("Status").selectOption("live");
 
-    await expect(page.getByRole("heading", { name: "ToyRobot", level: 3 })).toBeVisible();
-    await expect(page.locator("article h3")).toHaveCount(1);
+    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
+    await expect(page.locator("article h2")).toHaveCount(1);
   });
 
   test("[COV-06] empty state appears and reset restores results", async ({ page }) => {
     await page.goto("/#/projects");
 
-    const cardHeadings = page.locator("article h3");
+    const cardHeadings = page.locator("article h2");
     const initialCount = await cardHeadings.count();
     expect(initialCount).toBeGreaterThan(5);
 
@@ -137,7 +137,8 @@ test.describe("Portfolio smoke", () => {
   test("[COV-12] project detail drawer opens and closes with URL sync", async ({ page }) => {
     await page.goto("/#/projects");
 
-    await page.getByRole("button", { name: "View details for ToyRobot" }).click();
+    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "ToyRobot" }) }).first();
+    await toyRobotCard.getByRole("button", { name: "View Details" }).click();
     const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
     await expect(drawer).toBeVisible();
     await expect(page).toHaveURL(/#\/projects\?project=toyrobot$/);
@@ -152,12 +153,13 @@ test.describe("Portfolio smoke", () => {
   test("[COV-13] detail drawer supports Escape and backdrop close", async ({ page }) => {
     await page.goto("/#/projects");
 
-    await page.getByRole("button", { name: "View details for AssistantHub" }).click();
+    const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub" }) }).first();
+    await assistantHubCard.getByRole("button", { name: "View Details" }).click();
     await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toBeVisible();
     await page.keyboard.press("Escape");
     await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toHaveCount(0);
 
-    await page.getByRole("button", { name: "View details for AssistantHub" }).click();
+    await assistantHubCard.getByRole("button", { name: "View Details" }).click();
     const reopenedDrawer = page.getByRole("dialog", { name: "Project details for AssistantHub" });
     await expect(reopenedDrawer).toBeVisible();
     await page.getByTestId("project-detail-overlay").evaluate((element) => {
@@ -177,9 +179,10 @@ test.describe("Portfolio smoke", () => {
 
     const searchInput = page.getByPlaceholder("Search by name, tagline, description, category, or tech");
     await searchInput.fill("toyrobot");
-    await expect(page.getByRole("heading", { name: "ToyRobot", level: 3 })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
 
-    await page.getByRole("button", { name: "View details for ToyRobot" }).click();
+    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "ToyRobot" }) }).first();
+    await toyRobotCard.getByRole("button", { name: "View Details" }).click();
     const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
     await expect(drawer).toBeVisible();
     await expect(page.getByRole("button", { name: "Close project details" })).toBeVisible();
