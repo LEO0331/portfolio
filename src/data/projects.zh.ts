@@ -211,6 +211,15 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     categories: ["Web 應用", "前端", "圖庫展示"],
     features: ["展示導向瀏覽介面", "響應式版面行為", "清晰內容層級"]
   },
+  craftfocus: {
+    tagline: "結合專注計時、像素房間成長與手作分享的產品型應用",
+    shortDescription: "協助使用者維持專注節奏，透過像素房間解鎖機制與作品分享建立持續創作習慣。",
+    fullDescription:
+      "CraftFocus 結合專注流程、視覺化成就與社交分享，定位在創作者日常習慣養成情境。專案可作為產品導向 UX、TypeScript 實作與 GitHub Pages 部署能力的代表作品。",
+    role: "產品／前端開發者",
+    categories: ["生產力工具", "社交應用", "行動應用"],
+    features: ["專注計時流程", "像素房間解鎖進程", "手作作品分享", "公開線上部署"]
+  },
   "genomic-data-science-with-galaxy-project": {
     tagline: "互動式基因體變異分析流程案例 Web 應用",
     shortDescription: "以 Galaxy 結果為基礎，提供瀏覽器端 VCF 檢視、篩選與 CSV 匯出的基因體資料流程。",

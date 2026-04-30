@@ -519,6 +519,31 @@ export const projects: Project[] = [
     featured: false
   },
   {
+    id: "craftfocus",
+    slug: "craftfocus",
+    name: "CraftFocus",
+    tagline: "Focus-and-sharing app for handmade projects with pixel room progression",
+    shortDescription:
+      "A productivity-oriented app that helps users stay focused, unlock pixel room items, and share handmade projects with friends.",
+    fullDescription:
+      "CraftFocus combines focus sessions, visual progression, and lightweight social sharing to support creative habits. It demonstrates product-oriented UX, TypeScript implementation, and GitHub Pages deployment.",
+    role: "Product / Frontend Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React Native", "Expo", "Supabase"],
+    categories: ["Productivity", "Social App", "Mobile App"],
+    features: [
+      "Focus timer workflow",
+      "Pixel room unlock progression",
+      "Handmade project sharing",
+      "Live public deployment"
+    ],
+    image: "/src/assets/images/projects/craftfocus.png",
+    demoUrl: "https://leo0331.github.io/craftfocus/",
+    repoUrl: "https://github.com/LEO0331/craftfocus",
+    status: "live",
+    featured: false
+  },
+  {
     id: "genomic-data-science-with-galaxy-project",
     slug: "genomic-data-science-with-galaxy-project",
     name: "Genomic Data Science with Galaxy Project",
