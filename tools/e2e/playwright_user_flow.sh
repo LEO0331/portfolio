@@ -4,14 +4,36 @@ set -euo pipefail
 export CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 export PWCLI="$CODEX_HOME/skills/playwright/scripts/playwright_cli.sh"
 
-BASE_URL="${1:-http://127.0.0.1:4173/portfolio}"
+BASE_URL="${1:-${E2E_BASE_URL:-http://127.0.0.1:${E2E_PORT:-4175}/portfolio}}"
 mkdir -p output/playwright
 
+run_pwcli() {
+  local output
+  local status
+
+  set +e
+  output=$("$PWCLI" "$@" 2>&1)
+  status=$?
+  set -e
+
+  printf '%s\n' "$output"
+
+  if [ "$status" -ne 0 ]; then
+    echo "[flow] PWCLI command failed: $*" >&2
+    exit "$status"
+  fi
+
+  if printf '%s\n' "$output" | grep -Eq '(^### Error)|TimeoutError|ERR_CONNECTION_REFUSED|net::ERR_|chrome-error://chromewebdata'; then
+    echo "[flow] PWCLI reported runtime/browser errors: $*" >&2
+    exit 1
+  fi
+}
+
 echo "[flow] Opening browser at ${BASE_URL}/#/"
-"$PWCLI" open "${BASE_URL}/#/"
+run_pwcli open "${BASE_URL}/#/"
 
 # Run deterministic assertions with stable selectors in one browser session.
-"$PWCLI" run-code '
+run_pwcli run-code '
 async (page) => {
   const expect = (condition, message) => {
     if (!condition) throw new Error(message);
@@ -31,13 +53,13 @@ async (page) => {
 
   const searchInput = page.getByPlaceholder("Search by name, tagline, description, category, or tech");
   await searchInput.fill("toyrobot");
-  await page.getByRole("heading", { name: "ToyRobot", level: 3 }).waitFor({ state: "visible", timeout: 10000 });
+  await page.getByRole("heading", { name: "ToyRobot" }).waitFor({ state: "visible", timeout: 10000 });
 
   await page.getByLabel("Category").selectOption("Simulation");
   await page.getByLabel("Technology").selectOption("JavaScript");
   await page.getByLabel("Status").selectOption("live");
 
-  const cardsAfterFilter = await page.locator("article h3").count();
+  const cardsAfterFilter = await page.locator("article h2").count();
   await expect(cardsAfterFilter === 1, `Expected 1 filtered card, got ${cardsAfterFilter}`);
 
   await searchInput.fill("zzzz-no-match");
@@ -68,7 +90,7 @@ async (page) => {
 
   // 4) Contact
   await waitHeading("Let’s Connect");
-  await page.getByRole("link", { name: "Open LinkedIn profile" }).waitFor({ state: "visible", timeout: 10000 });
+  await page.getByRole("link", { name: "Open LinkedIn profile" }).first().waitFor({ state: "visible", timeout: 10000 });
 
   // 5) Unknown route => 404
   const baseWithoutHash = page.url().split("#")[0];
@@ -90,7 +112,7 @@ async (page) => {
   };
 }
 ' --raw
-"$PWCLI" run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-final.png", fullPage: true }); return "screenshot-saved"; }' --raw
-"$PWCLI" close
+run_pwcli run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-final.png", fullPage: true }); return "screenshot-saved"; }' --raw
+run_pwcli close
 
 echo "[flow] Playwright user flow completed."

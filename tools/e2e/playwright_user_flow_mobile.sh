@@ -4,13 +4,35 @@ set -euo pipefail
 export CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
 export PWCLI="$CODEX_HOME/skills/playwright/scripts/playwright_cli.sh"
 
-BASE_URL="${1:-http://127.0.0.1:4173/portfolio}"
+BASE_URL="${1:-${E2E_BASE_URL:-http://127.0.0.1:${E2E_PORT:-4175}/portfolio}}"
 mkdir -p output/playwright
 
-echo "[flow-mobile] Opening mobile flow at ${BASE_URL}/#/"
-"$PWCLI" open "${BASE_URL}/#/"
+run_pwcli() {
+  local output
+  local status
 
-"$PWCLI" run-code '
+  set +e
+  output=$("$PWCLI" "$@" 2>&1)
+  status=$?
+  set -e
+
+  printf '%s\n' "$output"
+
+  if [ "$status" -ne 0 ]; then
+    echo "[flow-mobile] PWCLI command failed: $*" >&2
+    exit "$status"
+  fi
+
+  if printf '%s\n' "$output" | grep -Eq '(^### Error)|TimeoutError|ERR_CONNECTION_REFUSED|net::ERR_|chrome-error://chromewebdata'; then
+    echo "[flow-mobile] PWCLI reported runtime/browser errors: $*" >&2
+    exit 1
+  fi
+}
+
+echo "[flow-mobile] Opening mobile flow at ${BASE_URL}/#/"
+run_pwcli open "${BASE_URL}/#/"
+
+run_pwcli run-code '
 async (page) => {
   const assert = (condition, message) => {
     if (!condition) throw new Error(message);
@@ -69,7 +91,7 @@ async (page) => {
 }
 ' --raw
 
-"$PWCLI" run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-mobile-final.png", fullPage: true }); return "mobile-screenshot-saved"; }' --raw
-"$PWCLI" close
+run_pwcli run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-mobile-final.png", fullPage: true }); return "mobile-screenshot-saved"; }' --raw
+run_pwcli close
 
 echo "[flow-mobile] Playwright mobile user flow completed."
