@@ -1,39 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-export CODEX_HOME="${CODEX_HOME:-$HOME/.codex}"
-export PWCLI="$CODEX_HOME/skills/playwright/scripts/playwright_cli.sh"
-
-BASE_URL="${1:-${E2E_BASE_URL:-http://127.0.0.1:${E2E_PORT:-4175}/portfolio}}"
-mkdir -p output/playwright
-
-run_pwcli() {
-  local output
-  local status
-
-  set +e
-  output=$("$PWCLI" "$@" 2>&1)
-  status=$?
-  set -e
-
-  printf '%s\n' "$output"
-
-  if [ "$status" -ne 0 ]; then
-    echo "[flow] PWCLI command failed: $*" >&2
-    exit "$status"
-  fi
-
-  if printf '%s\n' "$output" | grep -Eq '(^### Error)|TimeoutError|ERR_CONNECTION_REFUSED|net::ERR_|chrome-error://chromewebdata'; then
-    echo "[flow] PWCLI reported runtime/browser errors: $*" >&2
-    exit 1
-  fi
-}
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/lib.sh"
 
 echo "[flow] Opening browser at ${BASE_URL}/#/"
-run_pwcli open "${BASE_URL}/#/"
+run_pwcli flow open "${BASE_URL}/#/"
 
 # Run deterministic assertions with stable selectors in one browser session.
-run_pwcli run-code '
+run_pwcli flow run-code '
 async (page) => {
   const expect = (condition, message) => {
     if (!condition) throw new Error(message);
@@ -112,7 +87,7 @@ async (page) => {
   };
 }
 ' --raw
-run_pwcli run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-final.png", fullPage: true }); return "screenshot-saved"; }' --raw
-run_pwcli close
+run_pwcli flow run-code 'async (page) => { await page.screenshot({ path: "output/playwright/user-flow-final.png", fullPage: true }); return "screenshot-saved"; }' --raw
+run_pwcli flow close
 
 echo "[flow] Playwright user flow completed."

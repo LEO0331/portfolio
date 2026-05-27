@@ -58,7 +58,7 @@ function normalizeRoutePath(routePath: string | undefined): string {
 }
 
 function getSiteOriginAndBase(): string {
-  if (typeof window === "undefined") return "https://YOUR_USERNAME.github.io/YOUR_REPO_NAME";
+  if (typeof window === "undefined") return "https://leo0331.github.io/portfolio";
   return new URL(import.meta.env.BASE_URL, window.location.origin).toString().replace(/\/$/, "");
 }
 

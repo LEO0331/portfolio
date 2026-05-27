@@ -13,10 +13,10 @@
     "test:e2e": "playwright test && node tools/e2e-coverage-check.mjs",
     "test:e2e:ui": "playwright test --ui",
     "sync:projects": "node tools/sync-projects-from-github.mjs",
-    "test:e2e:flow": "./tools/e2e/playwright_user_flow.sh http://127.0.0.1:4173/portfolio",
-    "test:e2e:flow:mobile": "./tools/e2e/playwright_user_flow_mobile.sh http://127.0.0.1:4173/portfolio",
-    "test:e2e:flow:routes": "./tools/e2e/playwright_user_flow_routes.sh http://127.0.0.1:4173/portfolio",
-    "test:e2e:flow:all": "./tools/e2e/playwright_user_flow_all.sh http://127.0.0.1:4173/portfolio"
+    "test:e2e:flow": "./tools/e2e/playwright_user_flow.sh",
+    "test:e2e:flow:mobile": "./tools/e2e/playwright_user_flow_mobile.sh",
+    "test:e2e:flow:routes": "./tools/e2e/playwright_user_flow_routes.sh",
+    "test:e2e:flow:all": "./tools/e2e/playwright_user_flow_all.sh"
   },
   "dependencies": {
     "react": "^18.3.1",

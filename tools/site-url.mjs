@@ -27,7 +27,7 @@ export function resolveSiteUrl(basePath, context) {
     return sanitizeSiteUrl(fromEnv);
   }
 
-  const fallbackOrigin = "https://YOUR_USERNAME.github.io";
+  const fallbackOrigin = "https://leo0331.github.io";
   const normalizedBase = normalizeBase(basePath);
   const fallbackUrl = `${fallbackOrigin}${normalizedBase}`.replace(/\/+$/, "");
   console.warn(`[${context}] SITE_URL is not set. Using fallback: ${fallbackUrl}`);
@@ -46,4 +46,3 @@ export function escapeXml(value) {
 export function normalizeBasePath(basePath) {
   return normalizeBase(basePath);
 }
-

@@ -32,15 +32,13 @@ npm run test:e2e
 ```
 
 ## Deploy to GitHub Pages
-1. Set `base` in `vite.config.ts` to `"/<your-repo-name>/"`.
-2. Build with your real site URL so sitemap is generated correctly:
+1. Confirm `base` in `vite.config.ts` matches the deployed repo path.
+2. Build with your public site URL so sitemap and robots metadata are generated correctly:
    - `SITE_URL=https://<username>.github.io/<repo> npm run build`
    - this auto-generates both `public/sitemap.xml` and `public/robots.txt`
    - for security, only `http/https` SITE_URL values are accepted
-3. Update placeholders in:
-   - `index.html` (canonical/OG URL)
-4. Push to `main`.
-5. In repository settings, enable GitHub Pages with GitHub Actions.
+3. Push to `main`.
+4. In repository settings, enable GitHub Pages with GitHub Actions.
 
 ## SEO (lightweight and automated)
 - Route-level metadata is handled by `usePageSeo` in `src/utils/seo.ts`.

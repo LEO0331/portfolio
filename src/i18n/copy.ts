@@ -18,8 +18,8 @@ const localizedCopy = {
     footer: {
       lead: "Intelligently designed, passionately built, and seamlessly delivered to the world.",
       rights: "All rights reserved.",
-      websiteFallback: "Website: YOUR_WEBSITE_URL_HERE",
-      linkedinFallback: "LinkedIn: YOUR_LINKEDIN_URL_HERE",
+      websiteFallback: "Website unavailable",
+      linkedinFallback: "LinkedIn unavailable",
       note: "Fueling innovation through dedicated craftsmanship and intelligent design."
     },
     home: {
@@ -123,9 +123,9 @@ const localizedCopy = {
       website: "Website:",
       github: "GitHub:",
       linkedin: "LinkedIn:",
-      websiteFallback: "YOUR_WEBSITE_URL_HERE",
-      githubFallback: "YOUR_GITHUB_URL_HERE",
-      linkedinFallback: "YOUR_LINKEDIN_URL_HERE"
+      websiteFallback: "Website unavailable",
+      githubFallback: "GitHub unavailable",
+      linkedinFallback: "LinkedIn unavailable"
     },
     notFound: {
       title: "Page not found",
@@ -164,8 +164,8 @@ const localizedCopy = {
     footer: {
       lead: "以設計思維結合工程實作，交付可落地的數位產品。",
       rights: "版權所有。",
-      websiteFallback: "網站：YOUR_WEBSITE_URL_HERE",
-      linkedinFallback: "LinkedIn：YOUR_LINKEDIN_URL_HERE",
+      websiteFallback: "網站暫未提供",
+      linkedinFallback: "LinkedIn 暫未提供",
       note: "重視可維護性、可讀性與可驗證成果。"
     },
     home: {
@@ -262,9 +262,9 @@ const localizedCopy = {
       website: "個人網站：",
       github: "GitHub：",
       linkedin: "LinkedIn：",
-      websiteFallback: "YOUR_WEBSITE_URL_HERE",
-      githubFallback: "YOUR_GITHUB_URL_HERE",
-      linkedinFallback: "YOUR_LINKEDIN_URL_HERE"
+      websiteFallback: "網站暫未提供",
+      githubFallback: "GitHub 暫未提供",
+      linkedinFallback: "LinkedIn 暫未提供"
     },
     notFound: {
       title: "找不到此頁面",

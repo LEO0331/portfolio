@@ -8,7 +8,6 @@ export const profile: Profile = {
   websiteUrl: "https://leolicheng.wordpress.com/",
   githubUrl: "https://github.com/LEO0331",
   linkedinUrl: "https://linkedin.com/in/li-cheng-chen",
-  resumeUrl: "/resume.pdf",
   introParagraphs: [
     "I build practical, user-focused applications with an emphasis on maintainable architecture, clear interfaces, and working end-to-end delivery.",
     "My portfolio highlights projects across React, TypeScript, JavaScript, Flutter, and static web deployment, with live demos where available.",

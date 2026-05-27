@@ -5,7 +5,6 @@ export interface Profile {
   websiteUrl: string;
   githubUrl: string;
   linkedinUrl: string;
-  resumeUrl: string;
   introParagraphs: string[];
   strengths: string[];
 }
