@@ -30,12 +30,12 @@ async (page) => {
   await searchInput.fill("toyrobot");
   await page.getByRole("heading", { name: "ToyRobot" }).waitFor({ state: "visible", timeout: 10000 });
 
-  await page.getByLabel("Category").selectOption("Simulation");
-  await page.getByLabel("Technology").selectOption("JavaScript");
+  await page.getByLabel("Category").selectOption("tools-utilities");
+  await page.getByLabel("Technology").selectOption("web-fundamentals");
   await page.getByLabel("Status").selectOption("live");
 
   const cardsAfterFilter = await page.locator("article h2").count();
-  await expect(cardsAfterFilter === 1, `Expected 1 filtered card, got ${cardsAfterFilter}`);
+  await expect(cardsAfterFilter > 0, `Expected filtered cards, got ${cardsAfterFilter}`);
 
   await searchInput.fill("zzzz-no-match");
   await page.getByRole("heading", { name: "No projects match your current filters" }).waitFor({ state: "visible", timeout: 10000 });

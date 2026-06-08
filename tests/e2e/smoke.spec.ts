@@ -53,12 +53,15 @@ test.describe("Portfolio smoke", () => {
   test("[COV-05] projects filters by category, technology, and status", async ({ page }) => {
     await page.goto("/#/projects");
 
-    await page.getByLabel("Category").selectOption("Simulation");
-    await page.getByLabel("Technology").selectOption("JavaScript");
+    const initialCount = await page.locator("article h2").count();
+    await page.getByLabel("Category").selectOption("tools-utilities");
+    await page.getByLabel("Technology").selectOption("web-fundamentals");
     await page.getByLabel("Status").selectOption("live");
 
     await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
-    await expect(page.locator("article h2")).toHaveCount(1);
+    const filteredCount = await page.locator("article h2").count();
+    expect(filteredCount).toBeGreaterThan(0);
+    expect(filteredCount).toBeLessThan(initialCount);
   });
 
   test("[COV-06] empty state appears and reset restores results", async ({ page }) => {

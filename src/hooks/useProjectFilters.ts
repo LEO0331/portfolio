@@ -4,6 +4,7 @@ import {
   extractUniqueCategories,
   extractUniqueTechnologies,
   filterProjects,
+  type ProjectFilterOption,
   sortProjects
 } from "../utils/projectUtils";
 
@@ -12,8 +13,8 @@ export interface UseProjectFiltersResult {
   selectedCategory: string;
   selectedTechnology: string;
   selectedStatus: "all" | ProjectStatus;
-  categories: string[];
-  technologies: string[];
+  categories: ProjectFilterOption[];
+  technologies: ProjectFilterOption[];
   filteredProjects: Project[];
   setSearchTerm: (value: string) => void;
   setSelectedCategory: (value: string) => void;
@@ -64,4 +65,3 @@ export function useProjectFilters(projectList: Project[]): UseProjectFiltersResu
     }
   };
 }
-

@@ -1,10 +1,11 @@
 import type { ProjectStatus } from "../../types/project";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
+import type { ProjectFilterOption } from "../../utils/projectUtils";
 
 interface ProjectFiltersProps {
-  categories: string[];
-  technologies: string[];
+  categories: ProjectFilterOption[];
+  technologies: ProjectFilterOption[];
   selectedCategory: string;
   selectedTechnology: string;
   selectedStatus: "all" | ProjectStatus;
@@ -39,8 +40,8 @@ export function ProjectFilters({
           >
             <option value="all">{text.projects.allCategories}</option>
             {categories.map((category) => (
-              <option key={category} value={category}>
-                {category}
+              <option key={category.value} value={category.value}>
+                {category.label}
               </option>
             ))}
           </select>
@@ -55,8 +56,8 @@ export function ProjectFilters({
           >
             <option value="all">{text.projects.allTechnologies}</option>
             {technologies.map((technology) => (
-              <option key={technology} value={technology}>
-                {technology}
+              <option key={technology.value} value={technology.value}>
+                {technology.label}
               </option>
             ))}
           </select>
