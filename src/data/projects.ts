@@ -544,6 +544,31 @@ export const projects: Project[] = [
     featured: false
   },
   {
+    id: "publicsafetydashboard",
+    slug: "publicsafetydashboard",
+    name: "Public Safety Dashboard",
+    tagline: "Full-stack dashboard for Taipei traffic-safety PDF announcements",
+    shortDescription:
+      "An educational dashboard that ingests Taipei public traffic-safety PDF announcements and presents searchable records, statistics, filters, and map visualization.",
+    fullDescription:
+      "Public Safety Dashboard demonstrates a full-stack data workflow: Python ingestion for public PDF announcements, SQLite-backed storage, and a Next.js interface for filtering, statistics, and map-based exploration. It is useful as a portfolio project because it connects data processing, backend persistence, and recruiter-visible dashboard UX.",
+    role: "Full Stack / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "Next.js", "SQLite", "Python", "Data Visualization"],
+    categories: ["Web App", "Dashboard", "Data Visualization"],
+    features: [
+      "PDF announcement ingestion workflow",
+      "Search and filtering interface",
+      "Dashboard statistics",
+      "Map-based data visualization"
+    ],
+    image: "/src/assets/images/projects/publicsafetydashboard.png",
+    demoUrl: "https://publicsafetydashboard.onrender.com",
+    repoUrl: "https://github.com/LEO0331/publicsafetydashboard",
+    status: "live",
+    featured: false
+  },
+  {
     id: "genomic-data-science-with-galaxy-project",
     slug: "genomic-data-science-with-galaxy-project",
     name: "Genomic Data Science with Galaxy Project",

@@ -220,6 +220,15 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     categories: ["生產力工具", "社交應用", "行動應用"],
     features: ["專注計時流程", "像素房間解鎖進程", "手作作品分享", "公開線上部署"]
   },
+  publicsafetydashboard: {
+    tagline: "台北交通安全 PDF 公告資料的全端儀表板",
+    shortDescription: "將台北市公開交通安全 PDF 公告整理為可搜尋、可篩選、可視覺化檢視的教育型資料儀表板。",
+    fullDescription:
+      "Public Safety Dashboard 串接資料處理、後端儲存與前端呈現流程：以 Python 擷取公開 PDF 公告資料，使用 SQLite 管理資料，並透過 Next.js 介面提供篩選、統計與地圖式探索。此專案適合展示資料流程整合、全端實作與儀表板 UX 能力。",
+    role: "全端／資料儀表板開發者",
+    categories: ["Web 應用", "儀表板", "資料視覺化"],
+    features: ["PDF 公告擷取流程", "搜尋與篩選介面", "統計儀表板", "地圖式資料視覺化"]
+  },
   "genomic-data-science-with-galaxy-project": {
     tagline: "互動式基因體變異分析流程案例 Web 應用",
     shortDescription: "以 Galaxy 結果為基礎，提供瀏覽器端 VCF 檢視、篩選與 CSV 匯出的基因體資料流程。",
