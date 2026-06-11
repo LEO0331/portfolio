@@ -41,7 +41,7 @@ const categoryFilterGroups = [
     value: "data-analytics",
     label: "Data & analytics",
     labelZh: "資料與分析",
-    keywords: ["data visualization", "data ui", "data science", "bioinformatics", "healthcare", "health", "資料視覺化", "資料介面", "資料科學", "生物資訊", "醫療應用", "健康"]
+    keywords: ["data visualization", "data ui", "data science", "bioinformatics", "healthcare", "health", "maps", "map", "civic tech", "資料視覺化", "資料介面", "資料科學", "生物資訊", "醫療應用", "健康", "地圖", "公民科技"]
   },
   {
     value: "developer-workflow",

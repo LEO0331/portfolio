@@ -229,6 +229,15 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     categories: ["Web 應用", "儀表板", "資料視覺化"],
     features: ["PDF 公告擷取流程", "搜尋與篩選介面", "統計儀表板", "地圖式資料視覺化"]
   },
+  "taipei-bin-map": {
+    tagline: "協助行人查找台北市公用垃圾桶的雙語地圖工具",
+    shortDescription: "以行動優先體驗呈現台北市公用垃圾桶位置，支援附近查找與雙語介面。",
+    fullDescription:
+      "Taipei Bin Map 將城市公共服務資訊整理成實用的地圖型工具，聚焦行走情境下的快速查找、雙語可用性與 PWA-ready 前端結構，適合作為 civic tech 與地圖介面實作的作品。",
+    role: "前端／公民科技開發者",
+    categories: ["Web 應用", "地圖工具", "公民科技"],
+    features: ["附近公用垃圾桶查找", "行動優先地圖體驗", "雙語介面", "PWA-ready 應用架構"]
+  },
   "genomic-data-science-with-galaxy-project": {
     tagline: "互動式基因體變異分析流程案例 Web 應用",
     shortDescription: "以 Galaxy 結果為基礎，提供瀏覽器端 VCF 檢視、篩選與 CSV 匯出的基因體資料流程。",

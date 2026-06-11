@@ -569,6 +569,31 @@ export const projects: Project[] = [
     featured: false
   },
   {
+    id: "taipei-bin-map",
+    slug: "taipei-bin-map",
+    name: "Taipei Bin Map",
+    tagline: "Mobile-first bilingual map for finding public garbage bins in Taipei",
+    shortDescription:
+      "A bilingual web app that helps pedestrians find nearby public garbage bins in Taipei through a mobile-first map and search experience.",
+    fullDescription:
+      "Taipei Bin Map turns public city-service information into a practical, mobile-first utility. It focuses on nearby-bin discovery, bilingual usability, and a PWA-ready front-end structure suitable for quick access while walking around Taipei.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "Vite", "CSS", "JavaScript", "Map UI"],
+    categories: ["Web App", "Maps", "Civic Tech"],
+    features: [
+      "Nearby public bin discovery",
+      "Mobile-first map experience",
+      "Bilingual interface",
+      "PWA-ready application structure"
+    ],
+    image: "/src/assets/images/projects/taipei-bin-map.png",
+    demoUrl: "https://taipei-bin-map.vercel.app/",
+    repoUrl: "https://github.com/LEO0331/taipei-bin-map",
+    status: "live",
+    featured: false
+  },
+  {
     id: "genomic-data-science-with-galaxy-project",
     slug: "genomic-data-science-with-galaxy-project",
     name: "Genomic Data Science with Galaxy Project",
