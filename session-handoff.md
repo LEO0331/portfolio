@@ -2,7 +2,7 @@
 
 **Last updated:** 2026-08-26  
 **Current objective:** Keep the portfolio catalogue synchronized with accepted public GitHub projects using curated records and verified live-demo previews.  
-**Current status:** English and Traditional Chinese README documentation plus the maintenance harness are complete; waiting for the next project-data update.
+**Current status:** The bilingual documentation and repository-owned maintenance harness are structurally and operationally verified; waiting for the next project-data update.
 
 ## Blockers
 
@@ -20,6 +20,7 @@
 - `src/assets/images/projects/`
 - `tools/sync-projects-from-github.mjs`
 - `tools/capture-project-previews.mjs`
+- `tools/validate-harness-state.mjs`
 
 ## Recommended Next Step
 

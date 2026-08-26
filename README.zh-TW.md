@@ -42,6 +42,7 @@ npm run dev
 ## 建置與測試
 
 ```bash
+npm run validate:harness
 npm ci
 npm audit
 npm run build
@@ -103,6 +104,6 @@ node tools/capture-project-previews.mjs
 - 功能狀態：[feature_list.json](./feature_list.json)
 - 可續接進度紀錄：[progress.md](./progress.md)
 - 目前工作階段交接：[session-handoff.md](./session-handoff.md)
-- Git Bash／CI 完整驗證入口：[init.sh](./init.sh)
+- Git Bash／CI 完整驗證入口（`bash init.sh`）：[init.sh](./init.sh)
 - 工作流程技能範本：[skill.md](./skill.md)
 - 範本使用指南：[wiki.md](./wiki.md)

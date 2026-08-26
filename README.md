@@ -37,6 +37,7 @@ npm run dev
 
 ## Build and test
 ```bash
+npm run validate:harness
 npm ci
 npm audit
 npm run build
@@ -89,6 +90,6 @@ Notes:
 - Feature state: [feature_list.json](./feature_list.json)
 - Restartable work log: [progress.md](./progress.md)
 - Current-session handoff: [session-handoff.md](./session-handoff.md)
-- Full verification entrypoint for Git Bash/CI: [init.sh](./init.sh)
+- Full verification entrypoint for Git Bash/CI (`bash init.sh`): [init.sh](./init.sh)
 - Workflow skill template: [skill.md](./skill.md)
 - Template usage guide: [wiki.md](./wiki.md)

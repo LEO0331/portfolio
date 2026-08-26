@@ -84,6 +84,7 @@ npm run dev
 ## Testing
 ### Fast quality checks
 ```bash
+npm run validate:harness
 npm ci
 npm audit
 npm run build

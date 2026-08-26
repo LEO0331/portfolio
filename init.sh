@@ -3,6 +3,7 @@ set -e
 
 echo "=== Portfolio Harness Verification ==="
 
+node tools/validate-harness-state.mjs
 npm ci
 npm audit
 npm run build

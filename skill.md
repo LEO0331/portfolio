@@ -38,6 +38,7 @@ npm install
 9. Set the correct GitHub Pages base path in `vite.config.ts`.
 10. Verify locally:
 ```bash
+npm run validate:harness
 npm audit
 npm run build
 npm run test:e2e

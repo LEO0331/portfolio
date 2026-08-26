@@ -25,6 +25,7 @@
 - Added repository-local maintenance rules and restartable state through `AGENTS.md`, `feature_list.json`, `init.sh`, and `session-handoff.md`.
 - Updated the README, wiki, and reusable skill documentation to match the current workflow.
 - Split repository documentation into an English `README.md` and equivalent Traditional Chinese `README.zh-TW.md`, with reciprocal language navigation.
+- Added the repository-owned `npm run validate:harness` check and proved the full `bash init.sh` lifecycle through a clean install, audit, build, E2E, and diff verification run.
 
 ### Verification Evidence
 
@@ -36,6 +37,8 @@
 - Harness validation: 100/100
 - English／Traditional Chinese README heading parity: passed
 - Relative documentation link check: no broken links
+- Repository-owned harness state validation: passed
+- `bash init.sh`: passed end to end through Git Bash
 
 ### Blockers
 
@@ -57,6 +60,13 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-08-26 — Harness runtime validation completed
+
+- Added `tools/validate-harness-state.mjs` and the `npm run validate:harness` command so structural checks do not depend on an externally installed skill.
+- Wired structural validation into `init.sh` before dependency installation and application verification.
+- Executed `init.sh` through Git Bash: clean install, zero-vulnerability audit, Vite 8.2.2 build, 16/16 E2E tests, 100% functional coverage, and diff integrity all passed.
+- Kept the external five-subsystem harness assessment at 100/100.
 
 ### 2026-08-26 — Bilingual repository documentation
 

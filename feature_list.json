@@ -57,6 +57,30 @@
       ]
     },
     {
+      "id": "harness-runtime-validation-2026-08",
+      "name": "Complete repository-owned harness validation",
+      "description": "Validate both harness structure and the real clean-install, audit, build, E2E, and diff workflow without depending on an external skill installation.",
+      "status": "complete",
+      "dependencies": [
+        "dependency-security-2026-08",
+        "bilingual-readme-2026-08"
+      ],
+      "doneCriteria": [
+        "Repository-owned harness validator passes",
+        "External structural validator scores all five subsystems",
+        "init.sh executes successfully through Git Bash",
+        "Clean install, audit, build, E2E, and diff checks pass",
+        "Progress and handoff evidence are current"
+      ],
+      "evidence": [
+        "External harness validation scored 100/100",
+        "Git Bash init.sh completed with exit code 0",
+        "npm audit reported zero vulnerabilities",
+        "Vite 8.2.2 production build passed",
+        "Playwright E2E passed 16/16 with 100% functional coverage"
+      ]
+    },
+    {
       "id": "next-github-project-sync",
       "name": "Review the next GitHub project-data update",
       "description": "When a new public project is available, review sync output, curate its record and localization, capture its live preview, update documentation when needed, and record evidence in progress.md.",
@@ -64,7 +88,8 @@
       "dependencies": [
         "portfolio-catalogue-2026-08",
         "dependency-security-2026-08",
-        "bilingual-readme-2026-08"
+        "bilingual-readme-2026-08",
+        "harness-runtime-validation-2026-08"
       ],
       "doneCriteria": [
         "GitHub sync dry run reviewed",

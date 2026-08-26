@@ -10,7 +10,7 @@ This file is the repository-local operating contract for coding agents. Keep it 
 4. Check `git status --short` before editing and preserve unrelated changes.
 5. Inspect the relevant source and existing tests before implementation.
 
-This is the clean, restartable path for a new session. Use `./init.sh` in Git Bash or CI when a full baseline verification is needed.
+This is the clean, restartable path for a new session. Use `bash init.sh` in Git Bash or CI when a full baseline verification is needed.
 
 ## Scope and safety
 
@@ -36,6 +36,7 @@ This is the clean, restartable path for a new session. Use `./init.sh` in Git Ba
 Run the smallest relevant checks, and run the full gate for project-data, dependency, routing, or release changes:
 
 ```bash
+npm run validate:harness
 npm ci
 npm audit
 npm run build
