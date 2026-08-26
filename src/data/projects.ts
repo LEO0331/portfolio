@@ -594,6 +594,256 @@ export const projects: Project[] = [
     featured: false
   },
   {
+    id: "taipei-crash-map",
+    slug: "taipei-crash-map",
+    name: "Taipei Crash Map",
+    tagline: "Bilingual dashboard for exploring Taipei traffic accident hotspots",
+    shortDescription:
+      "A mobile-first map and dashboard for exploring historical Taipei A1/A2 crash points, intersection hotspots, and traffic-safety statistics.",
+    fullDescription:
+      "Taipei Crash Map turns public traffic-accident records into an accessible bilingual exploration tool. It combines location and time filters, clustered and heat-map views, aggregate factor charts, and procedural traffic datasets in a responsive PWA-ready interface.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
+    categories: ["Dashboard", "Maps", "Civic Tech"],
+    features: [
+      "A1/A2 crash point and hotspot visualization",
+      "Time, district, crash-type, and location filters",
+      "Aggregate crash-factor charts",
+      "Bilingual responsive interface"
+    ],
+    image: "/src/assets/images/projects/taipei-crash-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-crash-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-crash-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-faith-map",
+    slug: "taipei-faith-map",
+    name: "Taipei Faith Map",
+    tagline: "Bilingual directory map of registered religious groups in Taipei",
+    shortDescription:
+      "A mobile-first map for searching and exploring officially registered religious organizations across Taipei.",
+    fullDescription:
+      "Taipei Faith Map converts public registration and coordinate data into a practical bilingual directory. It demonstrates data conversion, coordinate-system handling, clustered map markers, filtering, and responsive civic-tech interface design.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Proj4"],
+    categories: ["Web App", "Maps", "Civic Tech"],
+    features: [
+      "Registered religious-group directory",
+      "Clustered map visualization",
+      "Coordinate conversion workflow",
+      "Bilingual mobile-first interface"
+    ],
+    image: "/src/assets/images/projects/taipei-faith-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-faith-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-faith-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-1999-map",
+    slug: "taipei-1999-map",
+    name: "Taipei 1999 Map",
+    tagline: "Privacy-aware dashboard for Taipei 1999 service request data",
+    shortDescription:
+      "A bilingual map and dashboard for exploring Taipei 1999 dispatched service requests alongside related public-works datasets.",
+    fullDescription:
+      "Taipei 1999 Map presents public service-request data through district, time, category, and location filters while deliberately removing private address details. It also connects streetlight maintenance, construction audits, and stop/resume-work records in a mobile-first interface.",
+    role: "Frontend / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Papa Parse"],
+    categories: ["Dashboard", "Maps", "Civic Tech"],
+    features: [
+      "1999 service-request map and filters",
+      "Privacy-aware location processing",
+      "Related public-works data modules",
+      "Bilingual responsive experience"
+    ],
+    image: "/src/assets/images/projects/taipei-1999-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-1999-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-1999-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-feitsui-water-map",
+    slug: "taipei-feitsui-water-map",
+    name: "Taipei Feitsui Water Map",
+    tagline: "Water-quality and ecology dashboard for the Feitsui Reservoir system",
+    shortDescription:
+      "A bilingual map and dashboard for exploring Feitsui Reservoir water quality, hydrometeorology, operations, and related ecology datasets.",
+    fullDescription:
+      "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. It demonstrates careful public-data transformation, geospatial visualization, charting, and transparent interpretation limits.",
+    role: "Frontend / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
+    categories: ["Dashboard", "Data Visualization", "Civic Tech"],
+    features: [
+      "Water-quality monitoring dashboard",
+      "Reservoir and river map layers",
+      "Operations and hydrometeorology views",
+      "Historical ecology data explorers"
+    ],
+    image: "/src/assets/images/projects/taipei-feitsui-water-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-feitsui-water-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-feitsui-water-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-zoo-guide",
+    slug: "taipei-zoo-guide",
+    name: "Taipei Zoo Guide",
+    tagline: "Bilingual map and guide for Taipei wildlife and zoo exhibits",
+    shortDescription:
+      "A mobile-first guide for exploring Taipei Zoo animals, plants, exhibit areas, events, and citywide biodiversity records.",
+    fullDescription:
+      "Taipei Zoo Guide brings animal, plant, exhibit, event, and historical wildlife-survey datasets into one bilingual experience. Search, filters, detail drawers, maps, summaries, and local exports make the source material easier to explore without overstating historical observations.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Vitest"],
+    categories: ["Web App", "Maps", "Education"],
+    features: [
+      "Animal, plant, exhibit, and event guides",
+      "Biodiversity and historical wildlife explorers",
+      "Searchable map layers and detail drawers",
+      "Bilingual interface with local data export"
+    ],
+    image: "/src/assets/images/projects/taipei-zoo-guide.png",
+    demoUrl: "https://leo0331.github.io/taipei-zoo-guide/",
+    repoUrl: "https://github.com/LEO0331/taipei-zoo-guide",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-safety-map",
+    slug: "taipei-safety-map",
+    name: "Taipei Safety Map",
+    tagline: "Multi-dataset public safety map and resource dashboard for Taipei",
+    shortDescription:
+      "A bilingual map and dashboard for exploring Taipei emergency resources, infrastructure, and carefully scoped historical safety records.",
+    fullDescription:
+      "Taipei Safety Map organizes public emergency, medical, fire, traffic, environmental, and historical incident datasets without producing a misleading combined safety score. It showcases large-scale data ingestion, geospatial layers, privacy-aware presentation, and responsible data communication.",
+    role: "Frontend / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Vitest"],
+    categories: ["Dashboard", "Maps", "Civic Tech"],
+    features: [
+      "Emergency resource and infrastructure layers",
+      "Multi-dataset filtering and directories",
+      "Privacy-aware historical record views",
+      "Responsible-use and data-limit guidance"
+    ],
+    image: "/src/assets/images/projects/taipei-safety-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-safety-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-safety-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-friendly-food-map",
+    slug: "taipei-friendly-food-map",
+    name: "Taipei Friendly Food Map",
+    tagline: "Bilingual food, friendly-store, and refill-location explorer",
+    shortDescription:
+      "A mobile-first map for finding Taipei friendly stores, water-refill locations, registered food businesses, and related public food datasets.",
+    fullDescription:
+      "Taipei Friendly Food Map combines store accessibility tags, water-refill locations, food traceability, hygiene records, green stores, markets, and commercial districts. Its clustered map, searchable directories, filters, and summaries turn fragmented public records into a practical exploration tool.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Open Data"],
+    categories: ["Web App", "Maps", "Civic Tech"],
+    features: [
+      "Friendly-store and water-refill map layers",
+      "Searchable food-business directories",
+      "Clustered markers and district filters",
+      "Bilingual data summaries"
+    ],
+    image: "/src/assets/images/projects/taipei-friendly-food-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-friendly-food-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-friendly-food-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-free-wifi-map",
+    slug: "taipei-free-wifi-map",
+    name: "Taipei Free Wi-Fi Map",
+    tagline: "Nearby public Wi-Fi finder with more than 3,000 listed hotspots",
+    shortDescription:
+      "A bilingual mobile-first map for finding Taipei Free Wi-Fi hotspots by district, type, agency, vendor, and nearby distance.",
+    fullDescription:
+      "Taipei Free Wi-Fi Map turns the city hotspot registry into an easier nearby-search experience. It combines marker clustering, browser geolocation, distance sorting, rich filters, a paginated directory, and distribution summaries in a static deployment.",
+    role: "Frontend / Civic Tech Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "MarkerCluster"],
+    categories: ["Web App", "Maps", "Civic Tech"],
+    features: [
+      "Clustered map with 3,000+ listed hotspots",
+      "Nearby search and distance sorting",
+      "District, type, agency, and vendor filters",
+      "Bilingual hotspot directory"
+    ],
+    image: "/src/assets/images/projects/taipei-free-wifi-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-free-wifi-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-free-wifi-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-civic-groups-map",
+    slug: "taipei-civic-groups-map",
+    name: "Taipei Public Data Explorer",
+    tagline: "Searchable bilingual catalogue for Taipei public-service directories",
+    shortDescription:
+      "A topic-based dashboard for searching, filtering, comparing, and exporting more than 100 Taipei public-data directories.",
+    fullDescription:
+      "Taipei Public Data Explorer expands beyond its original civic-groups scope into a catalogue of public services, healthcare, welfare, culture, labor, business, and community datasets. It provides dataset-specific filtering, source-field details, CSV export, and visible data-freshness evidence.",
+    role: "Frontend / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Leaflet", "Open Data"],
+    categories: ["Dashboard", "Directory", "Civic Tech"],
+    features: [
+      "Catalogue of 100+ public-data directories",
+      "Dataset-specific search and filters",
+      "Source-field details and CSV export",
+      "Data freshness and privacy guidance"
+    ],
+    image: "/src/assets/images/projects/taipei-civic-groups-map.png",
+    demoUrl: "https://leo0331.github.io/taipei-civic-groups-map/",
+    repoUrl: "https://github.com/LEO0331/taipei-civic-groups-map",
+    status: "live",
+    featured: false
+  },
+  {
+    id: "taipei-real-estate-dashboard",
+    slug: "taipei-real-estate-dashboard",
+    name: "Taipei Real Estate Dashboard",
+    tagline: "Real-price, housing, and demographic insights across Taipei",
+    shortDescription:
+      "A mobile-first bilingual dashboard for exploring Taipei real-price records, market trends, land and development data, and demographic context.",
+    fullDescription:
+      "Taipei Real Estate Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. It demonstrates an extensive static-data pipeline and recruiter-visible analytical UI with careful methodology notes.",
+    role: "Frontend / Data Dashboard Developer",
+    teamType: "solo",
+    techStack: ["TypeScript", "React", "Vite", "Recharts", "Open Data"],
+    categories: ["Dashboard", "Data Visualization", "Civic Tech"],
+    features: [
+      "Real-price and market trend analysis",
+      "District and quarterly comparisons",
+      "Land, development, and housing datasets",
+      "Demographic context and data-status views"
+    ],
+    image: "/src/assets/images/projects/taipei-real-estate-dashboard.png",
+    demoUrl: "https://leo0331.github.io/taipei-real-estate-dashboard/",
+    repoUrl: "https://github.com/LEO0331/taipei-real-estate-dashboard",
+    status: "live",
+    featured: false
+  },
+  {
     id: "genomic-data-science-with-galaxy-project",
     slug: "genomic-data-science-with-galaxy-project",
     name: "Genomic Data Science with Galaxy Project",
