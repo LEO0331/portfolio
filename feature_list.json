@@ -1,0 +1,80 @@
+{
+  "features": [
+    {
+      "id": "portfolio-catalogue-2026-08",
+      "name": "Add latest Taipei dashboard projects",
+      "description": "Curate the latest public GitHub dashboard projects, add verified live-demo previews, and preserve bilingual fallback behavior.",
+      "status": "complete",
+      "dependencies": [],
+      "doneCriteria": [
+        "Ten accepted project records exist in src/data/projects.ts",
+        "Each accepted project has a visually verified preview image",
+        "Build and E2E verification pass",
+        "progress.md records sources, files, evidence, and next action"
+      ],
+      "evidence": [
+        "npm run build passed",
+        "npm run test:e2e passed 16/16",
+        "Ten live-demo images added under src/assets/images/projects"
+      ]
+    },
+    {
+      "id": "dependency-security-2026-08",
+      "name": "Resolve npm security advisories",
+      "description": "Update vulnerable dependencies without regressing the production build, routing behavior, or E2E pipeline.",
+      "status": "complete",
+      "dependencies": [],
+      "doneCriteria": [
+        "npm audit reports zero vulnerabilities",
+        "Production build passes",
+        "Existing E2E coverage gate passes"
+      ],
+      "evidence": [
+        "npm audit --json reported zero vulnerabilities",
+        "Vite 8.2.2 production build passed",
+        "Playwright E2E passed 16/16 with 100% functional coverage"
+      ]
+    },
+    {
+      "id": "bilingual-readme-2026-08",
+      "name": "Provide bilingual repository README files",
+      "description": "Keep the English README canonical, add a complete Traditional Chinese README, and provide reciprocal language navigation.",
+      "status": "complete",
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
+      "doneCriteria": [
+        "README.md presents the English documentation",
+        "README.zh-TW.md presents an equivalent Traditional Chinese version",
+        "Both files link to each other",
+        "Documentation and harness state are updated"
+      ],
+      "evidence": [
+        "Reciprocal language navigation added",
+        "Traditional Chinese setup, maintenance, deployment, and harness guidance added",
+        "README heading parity and relative links validated",
+        "Harness validation remained 100/100"
+      ]
+    },
+    {
+      "id": "next-github-project-sync",
+      "name": "Review the next GitHub project-data update",
+      "description": "When a new public project is available, review sync output, curate its record and localization, capture its live preview, update documentation when needed, and record evidence in progress.md.",
+      "status": "pending",
+      "dependencies": [
+        "portfolio-catalogue-2026-08",
+        "dependency-security-2026-08",
+        "bilingual-readme-2026-08"
+      ],
+      "doneCriteria": [
+        "GitHub sync dry run reviewed",
+        "Accepted project data is curated and has unique identifiers",
+        "Preview image is visually verified",
+        "Localization decision is recorded",
+        "progress.md and session-handoff.md are updated",
+        "Audit, build, E2E, and diff checks pass"
+      ],
+      "evidence": []
+    }
+  ]
+}

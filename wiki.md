@@ -8,7 +8,7 @@ Stack:
 - Vite
 - TypeScript
 - Tailwind CSS
-- React Router HashRouter
+- React Router 7 with HashRouter
 - Playwright for E2E validation
 
 ## Repository layout
@@ -62,6 +62,10 @@ npm run dev
 - Keep each `id` unique
 - Keep `demoUrl` and `repoUrl` valid
 - Keep `image` file names aligned with files in `src/assets/images/projects/`
+- Use `npm run sync:projects` as a dry run before accepting GitHub metadata changes
+- Add `src/data/projects.zh.ts` content when a project needs Traditional Chinese copy
+- Capture selected live previews with `$env:TARGET_IDS="project-id"; node tools/capture-project-previews.mjs`
+- Record accepted project IDs and verification evidence in `progress.md`
 
 3. Update skills:
 - Edit `src/data/skills.ts`
@@ -80,9 +84,21 @@ npm run dev
 ## Testing
 ### Fast quality checks
 ```bash
+npm ci
+npm audit
 npm run build
 npm run test:e2e
+git diff --check
 ```
+
+## Agent maintenance workflow
+
+- Read `AGENTS.md` before changing project data, dependencies, routing, or CI.
+- Select one ready item from `feature_list.json` and keep its status/evidence current.
+- Read `progress.md` to recover the latest state without relying on prior chat history.
+- Update `progress.md` whenever project data or preview assets are added, even when the application code is unchanged.
+- Update `session-handoff.md` before ending so the next session has blockers, files, and one recommended next step.
+- Keep GitHub sync output as a proposal: verify repository READMEs, package metadata, demo URLs, and rendered previews before treating an entry as complete.
 
 ### Real browser flow checks (CLI-based)
 ```bash

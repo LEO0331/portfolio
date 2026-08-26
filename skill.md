@@ -18,7 +18,10 @@ Use this repo as a reusable template for building a recruiter-friendly portfolio
 - Full name, title, website, GitHub, LinkedIn, resume URL in `src/data/profile.ts`
 - Skills in `src/data/skills.ts`
 - Project entries in `src/data/projects.ts`
+- Optional Traditional Chinese overrides in `src/data/projects.zh.ts`
 - Repository base path in `vite.config.ts`
+- Current work state and verification evidence in `progress.md`
+- Feature status in `feature_list.json` and the current restart point in `session-handoff.md`
 
 ## Required implementation sequence
 1. Create repository from this template or clone it.
@@ -27,24 +30,29 @@ Use this repo as a reusable template for building a recruiter-friendly portfolio
 npm install
 ```
 3. Update identity data in `src/data/profile.ts`.
-4. Replace project list in `src/data/projects.ts` and keep URLs valid.
-5. Add real images to `src/assets/images/projects/` and keep image names aligned with project data.
-6. Put resume file at `public/resume.pdf`.
-7. Set correct GitHub Pages base path in `vite.config.ts`.
-8. Verify locally:
+4. Run `npm run sync:projects` as a dry run, then curate accepted project records in `src/data/projects.ts` and keep URLs valid.
+5. Add Traditional Chinese overrides in `src/data/projects.zh.ts` when localized copy is required.
+6. Add real live-demo images to `src/assets/images/projects/`, keep names aligned with project IDs, and visually verify each capture.
+7. Update `feature_list.json`, `progress.md`, and `session-handoff.md` with status, project IDs, sources, files, verification evidence, blockers, and the next action.
+8. Put resume file at `public/resume.pdf`.
+9. Set the correct GitHub Pages base path in `vite.config.ts`.
+10. Verify locally:
 ```bash
+npm audit
 npm run build
 npm run test:e2e
 ```
-9. Optional real browser validation:
+11. Optional real browser validation:
 ```bash
 npm run test:e2e:flow:all
 ```
-10. Push to `main` and enable GitHub Pages with GitHub Actions in repo settings.
+12. Push to `main` and enable GitHub Pages with GitHub Actions in repo settings.
 
 ## Done criteria
 - `npm run build` passes
 - `npm run test:e2e` passes with coverage gate
+- `npm audit` reports no unresolved advisories, or remaining risk is recorded in `progress.md`
+- `progress.md` records the completed change and restartable next action
 - Core user-flow scripts pass
 - Site deploys on GitHub Pages with valid links
 
