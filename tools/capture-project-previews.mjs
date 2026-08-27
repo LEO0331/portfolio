@@ -1,117 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from 'playwright';
+import { extractObjectBlocks, requireProjectsArrayContent } from './project-source.mjs';
+import { toPublicDemoUrl } from './public-demo-url.mjs';
 
 const repoRoot = process.cwd();
 const dataFile = path.join(repoRoot, 'src/data/projects.ts');
 const outputDir = path.join(repoRoot, 'src/assets/images/projects');
 
-function extractProjectsArrayContent(source) {
-  const marker = 'export const projects';
-  const start = source.indexOf(marker);
-  if (start === -1) return '';
-
-  const equalsIndex = source.indexOf('=', start);
-  if (equalsIndex === -1) return '';
-
-  const arrayStart = source.indexOf('[', equalsIndex);
-  if (arrayStart === -1) return '';
-
-  let depth = 0;
-  let inString = false;
-  let quote = '';
-  let escaping = false;
-
-  for (let i = arrayStart; i < source.length; i += 1) {
-    const ch = source[i];
-
-    if (inString) {
-      if (escaping) {
-        escaping = false;
-        continue;
-      }
-      if (ch === '\\') {
-        escaping = true;
-        continue;
-      }
-      if (ch === quote) {
-        inString = false;
-      }
-      continue;
-    }
-
-    if (ch === '"' || ch === "'" || ch === '`') {
-      inString = true;
-      quote = ch;
-      continue;
-    }
-
-    if (ch === '[') depth += 1;
-    if (ch === ']') {
-      depth -= 1;
-      if (depth === 0) {
-        return source.slice(arrayStart + 1, i);
-      }
-    }
-  }
-
-  return '';
-}
-
-function extractObjectBlocks(arrayContent) {
-  const blocks = [];
-  let depth = 0;
-  let start = -1;
-  let inString = false;
-  let quote = '';
-  let escaping = false;
-
-  for (let i = 0; i < arrayContent.length; i += 1) {
-    const ch = arrayContent[i];
-
-    if (inString) {
-      if (escaping) {
-        escaping = false;
-        continue;
-      }
-      if (ch === '\\') {
-        escaping = true;
-        continue;
-      }
-      if (ch === quote) {
-        inString = false;
-      }
-      continue;
-    }
-
-    if (ch === '"' || ch === "'" || ch === '`') {
-      inString = true;
-      quote = ch;
-      continue;
-    }
-
-    if (ch === '{') {
-      if (depth === 0) {
-        start = i;
-      }
-      depth += 1;
-      continue;
-    }
-
-    if (ch === '}') {
-      depth -= 1;
-      if (depth === 0 && start !== -1) {
-        blocks.push(arrayContent.slice(start, i + 1));
-        start = -1;
-      }
-    }
-  }
-
-  return blocks;
-}
-
 function parseProjects(source) {
-  const arrayContent = extractProjectsArrayContent(source);
+  const arrayContent = requireProjectsArrayContent(source, 'Unable to locate projects array in src/data/projects.ts');
   const blocks = extractObjectBlocks(arrayContent);
 
   return blocks
@@ -158,11 +56,11 @@ const page = await context.newPage();
 const failures = [];
 
 for (const project of filteredProjects) {
-  const target = `${project.demoUrl.replace(/\/$/, '')}/`;
   const outFile = path.join(outputDir, `${project.id}.png`);
   const shouldWaitLong = project.isFlutterOrDart;
 
   try {
+    const target = toPublicDemoUrl(project.demoUrl);
     console.log(`Capturing ${project.id}: ${target}`);
     await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForLoadState('networkidle', { timeout: 20000 }).catch(() => {});
@@ -176,8 +74,8 @@ for (const project of filteredProjects) {
 
     await page.screenshot({ path: outFile, fullPage: false });
   } catch (error) {
-    failures.push({ id: project.id, url: target, error: String(error) });
-    console.error(`Failed ${project.id}: ${target}`);
+    failures.push({ id: project.id, url: project.demoUrl, error: String(error) });
+    console.error(`Failed ${project.id}: ${project.demoUrl}`);
   }
 }
 

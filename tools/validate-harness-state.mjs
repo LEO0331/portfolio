@@ -3,15 +3,6 @@ import path from "node:path";
 
 const root = process.cwd();
 const failures = [];
-const requiredFiles = [
-  "AGENTS.md",
-  "README.md",
-  "README.zh-TW.md",
-  "feature_list.json",
-  "progress.md",
-  "session-handoff.md",
-  "init.sh"
-];
 
 function read(relativePath) {
   const absolutePath = path.join(root, relativePath);
@@ -33,10 +24,6 @@ function requireText(content, relativePath, markers) {
       failures.push(`${relativePath} is missing required marker: ${marker}`);
     }
   }
-}
-
-for (const relativePath of requiredFiles) {
-  read(relativePath);
 }
 
 const agents = read("AGENTS.md");
@@ -128,6 +115,7 @@ if (featureState) {
 
 const readme = read("README.md");
 const readmeZh = read("README.zh-TW.md");
+read("init.sh");
 requireText(readme, "README.md", ["[繁體中文](./README.zh-TW.md)"]);
 requireText(readmeZh, "README.zh-TW.md", ["[English](./README.md)"]);
 

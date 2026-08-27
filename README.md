@@ -10,7 +10,7 @@ A production-ready, recruiter-friendly portfolio for LEO0331. The site is driven
 
 ## Architecture and stack
 - React 18 and TypeScript
-- React Router 7 with `HashRouter` for GitHub Pages
+- React Router 7 with static route entrypoints for GitHub Pages
 - Vite 8 and Tailwind CSS
 - Playwright E2E tests with a functional coverage gate
 - GitHub Actions for build, Lighthouse, E2E, and Pages deployment
@@ -19,7 +19,7 @@ A production-ready, recruiter-friendly portfolio for LEO0331. The site is driven
 - Built for quick recruiter scanning: clear sections, focused project cards, direct demo/repo links
 - Data-driven content: update portfolio info in data files, not JSX
 - Bilingual ready: English + Traditional Chinese UI and project content support
-- Static deployment: optimized for GitHub Pages (HashRouter)
+- Static deployment: crawlable routes with generated GitHub Pages entrypoints
 - Quality guardrails: Playwright E2E + CI workflows
 
 ## What visitors can do
@@ -67,10 +67,11 @@ npm run test:e2e
 - `src/data/skills.ts`
 
 ### Projects (English + Traditional Chinese)
-1. Run `npm run sync:projects` to preview GitHub metadata changes. Review the dry-run output before using `npm run sync:projects -- --write`.
+1. Run `npm run sync:projects` to preview GitHub metadata changes. New repositories are listed as review-only candidates and are never inserted automatically. Use `npm run sync:projects -- --write` only for reviewed demo URL updates to existing entries; curated descriptions are never overwritten.
 2. Curate the canonical project record in `src/data/projects.ts`; do not keep automatically generated placeholder copy.
 3. Add/update Traditional Chinese text in `src/data/projects.zh.ts` when localized copy is required. Missing entries fall back to the canonical English record.
 4. Add the live-demo preview to `src/assets/images/projects/<id>.png` (or `.webp`) and visually verify that data-heavy pages finished loading.
+   - Capture automation only visits public hosts approved in `tools/public-demo-url.mjs`; review and explicitly add custom deployment domains.
 5. Capture selected previews in PowerShell:
 ```bash
 $env:TARGET_IDS="project-id,another-id"

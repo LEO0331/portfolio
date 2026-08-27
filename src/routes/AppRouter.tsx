@@ -1,4 +1,4 @@
-import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import { LocaleProvider } from "../i18n/LocaleContext";
 import { Footer } from "../components/layout/Footer";
 import { Navbar } from "../components/layout/Navbar";
@@ -42,6 +42,7 @@ function AppShell(): JSX.Element {
 }
 
 export function AppRouter(): JSX.Element {
+  const routerBase = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
   const routesWithElement = routeConfig.routes.map((route) => {
     const element = getPageElementForRouteKey(route.key);
     if (!element) {
@@ -54,7 +55,7 @@ export function AppRouter(): JSX.Element {
   });
 
   return (
-    <HashRouter>
+    <BrowserRouter basename={routerBase}>
       <Routes>
         <Route element={<AppShell />}>
           {routesWithElement.map((route) => (
@@ -63,6 +64,6 @@ export function AppRouter(): JSX.Element {
           <Route path="*" element={<Navigate to="/404" replace />} />
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }

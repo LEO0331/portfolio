@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Project } from "../../types/project";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
@@ -11,7 +11,6 @@ import { Tag } from "../common/Tag";
 
 interface ProjectDetailDrawerProps {
   project: Project;
-  isOpen: boolean;
   onClose: () => void;
 }
 
@@ -26,6 +25,15 @@ const STATUS_TONE: Record<Project["status"], "success" | "warning" | "neutral"> 
   "in-progress": "warning",
   archived: "neutral"
 };
+
+const FOCUSABLE_SELECTOR = [
+  "a[href]",
+  "button:not([disabled])",
+  "input:not([disabled])",
+  "select:not([disabled])",
+  "textarea:not([disabled])",
+  '[tabindex]:not([tabindex="-1"])'
+].join(",");
 
 function formatTimeline(startDate: string | undefined, endDate: string | undefined, presentLabel: string): string | undefined {
   if (!startDate && !endDate) return undefined;
@@ -58,10 +66,11 @@ function ListSection({ title, items, itemKeyPrefix }: ListSectionProps): JSX.Ele
   );
 }
 
-export function ProjectDetailDrawer({ project, isOpen, onClose }: ProjectDetailDrawerProps): JSX.Element | null {
+export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerProps): JSX.Element {
   const { locale } = useLocale();
   const text = copy[locale];
   const [imageFailed, setImageFailed] = useState(false);
+  const dialogRef = useRef<HTMLElement | null>(null);
   const { primary: primaryImage, fallback: fallbackImage } = resolveProjectImageSources(project.image);
   const hasImage = !imageFailed && Boolean(primaryImage || fallbackImage);
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
@@ -70,14 +79,36 @@ export function ProjectDetailDrawer({ project, isOpen, onClose }: ProjectDetailD
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
 
   useEffect(() => {
-    if (!isOpen) return;
+    setImageFailed(false);
+  }, [project.id, project.image]);
 
+  useEffect(() => {
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    dialogRef.current?.focus();
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         onClose();
+        return;
+      }
+
+      if (event.key !== "Tab" || !dialogRef.current) return;
+      const focusable = Array.from(dialogRef.current.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR));
+      if (focusable.length === 0) {
+        event.preventDefault();
+        dialogRef.current.focus();
+        return;
+      }
+
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && (document.activeElement === first || document.activeElement === dialogRef.current)) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
       }
     };
 
@@ -86,9 +117,7 @@ export function ProjectDetailDrawer({ project, isOpen, onClose }: ProjectDetailD
       document.body.style.overflow = previousOverflow;
       window.removeEventListener("keydown", onKeyDown);
     };
-  }, [isOpen, onClose]);
-
-  if (!isOpen) return null;
+  }, [onClose]);
 
   return (
     <div
@@ -98,9 +127,11 @@ export function ProjectDetailDrawer({ project, isOpen, onClose }: ProjectDetailD
       role="presentation"
     >
       <aside
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
         aria-label={`${text.projects.drawerAriaLabelPrefix} ${project.name}`}
+        tabIndex={-1}
         className="h-[88vh] w-full overflow-hidden rounded-t-2xl bg-white shadow-2xl sm:h-full sm:w-[42rem] sm:max-w-[calc(100vw-2rem)] sm:rounded-none sm:rounded-l-2xl"
         onClick={(event) => event.stopPropagation()}
       >

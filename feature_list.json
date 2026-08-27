@@ -100,6 +100,60 @@
         "Audit, build, E2E, and diff checks pass"
       ],
       "evidence": []
+    },
+    {
+      "id": "whole-project-review-remediation-2026-08",
+      "name": "Remediate whole-project code review findings",
+      "description": "Fix confirmed SEO, automation safety, data-sync, CI supply-chain, accessibility, performance, and regression-coverage issues found by the comprehensive review.",
+      "status": "complete",
+      "dependencies": [
+        "dependency-security-2026-08",
+        "harness-runtime-validation-2026-08"
+      ],
+      "doneCriteria": [
+        "Canonical and sitemap URLs use crawlable paths without hash fragments",
+        "GitHub Pages direct-route entrypoints are generated",
+        "Workflow actions are pinned to immutable commits",
+        "Preview capture validates navigation URLs",
+        "Project sync cannot auto-publish new placeholder entries",
+        "Core filters, localization, URL safety, sync parsing, and coverage accounting have regression tests",
+        "Audit, build, E2E, Lighthouse configuration, harness, and diff checks pass"
+      ],
+      "evidence": [
+        "Comprehensive final code reviewer returned APPROVE with zero issues",
+        "Final security reviewer returned APPROVE with no remaining security regression",
+        "npm audit reported zero vulnerabilities",
+        "npm run test:unit passed 4/4",
+        "npm run build passed with crawlable route entrypoints and route-specific canonical metadata",
+        "npm run test:e2e passed 23/23 with 17/17 functional coverage",
+        "Harness validation passed and git diff --check passed",
+        "Representative optimized previews passed visual QA at 98/100"
+      ]
+    },
+    {
+      "id": "whole-project-deslop-2026-08",
+      "name": "Remove whole-project implementation and documentation slop",
+      "description": "Preserve reviewed behavior while deleting dead tooling, consolidating duplicated parsers and site helpers, tightening needless wrappers, and routing duplicated documentation to canonical sources.",
+      "status": "complete",
+      "dependencies": [
+        "whole-project-review-remediation-2026-08"
+      ],
+      "doneCriteria": [
+        "Behavior baseline is recorded before cleanup",
+        "Dead code and duplicate logic are removed in separate verified passes",
+        "Documentation routes to canonical sources without losing required guidance",
+        "No new dependencies or speculative abstractions are introduced",
+        "Full harness, build, audit, unit, E2E, static, and diff checks pass"
+      ],
+      "evidence": [
+        "Pre-cleanup bash init.sh baseline passed with 4/4 Node tests and 23/23 Playwright tests",
+        "One shared project-source parser replaced two independent implementations",
+        "One shared Vite base/route boundary replaced three generator copies",
+        "Impossible drawer state, redundant Boolean aliases, duplicate harness reads, and a needless URL wrapper were removed",
+        "wiki.md and skill.md now route repeated instructions to README.md and AGENTS.md",
+        "Post-cleanup bash init.sh passed with 7/7 Node tests, 23/23 Playwright tests, and 17/17 functional coverage",
+        "npm audit reported zero vulnerabilities and git diff --check passed"
+      ]
     }
   ]
 }

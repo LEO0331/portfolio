@@ -17,7 +17,7 @@ export default defineConfig({
     ["json", { outputFile: "test-results/e2e-report.json" }]
   ],
   use: {
-    baseURL: `${E2E_ORIGIN}${E2E_BASE_PATH}`,
+    baseURL: `${E2E_ORIGIN}${E2E_BASE_PATH}/`,
     trace: "on-first-retry",
     video: "retain-on-failure",
     screenshot: "only-on-failure"

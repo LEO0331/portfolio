@@ -18,8 +18,6 @@ export function ContactPage(): JSX.Element {
   const safeWebsiteUrl = toSafeExternalHref(profile.websiteUrl);
   const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
   const safeLinkedInUrl = toSafeExternalHref(profile.linkedinUrl);
-  const hasWebsite = Boolean(safeWebsiteUrl);
-  const hasLinkedIn = Boolean(safeLinkedInUrl);
 
   return (
     <Section>
@@ -33,7 +31,7 @@ export function ContactPage(): JSX.Element {
         <ul className="mt-6 space-y-3 sm:mt-8 sm:space-y-4 sm:text-base">
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">{text.contact.website} </span>
-            {hasWebsite ? (
+            {safeWebsiteUrl ? (
               <ExternalLink href={safeWebsiteUrl} label="Open personal website">
                 {safeWebsiteUrl}
               </ExternalLink>
@@ -53,7 +51,7 @@ export function ContactPage(): JSX.Element {
           </li>
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">{text.contact.linkedin} </span>
-            {hasLinkedIn ? (
+            {safeLinkedInUrl ? (
               <ExternalLink href={safeLinkedInUrl} label="Open LinkedIn profile">
                 {safeLinkedInUrl}
               </ExternalLink>

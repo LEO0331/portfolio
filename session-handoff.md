@@ -1,12 +1,14 @@
 # Session Handoff
 
-**Last updated:** 2026-08-26  
-**Current objective:** Keep the portfolio catalogue synchronized with accepted public GitHub projects using curated records and verified live-demo previews.  
-**Current status:** The bilingual documentation and repository-owned maintenance harness are structurally and operationally verified; waiting for the next project-data update.
+**Last updated:** 2026-08-27
+
+**Current objective:** Keep the reviewed, simplified portfolio catalogue and deployment workflow healthy.
+
+**Current status:** Whole-project anti-slop cleanup is complete and the full harness passes.
 
 ## Blockers
 
-- None.
+- Anonymous GitHub API quota resets at 2026-08-27 09:34:14 +08:00; repeat the optimized live sync dry run after that time.
 
 ## Files Relevant to the Next Update
 
@@ -21,10 +23,12 @@
 - `tools/sync-projects-from-github.mjs`
 - `tools/capture-project-previews.mjs`
 - `tools/validate-harness-state.mjs`
+- `tools/public-demo-url.mjs`
+- `tools/generate-route-entrypoints.mjs`
 
 ## Recommended Next Step
 
-Run `npm run sync:projects`, review the dry-run output, and start `next-github-project-sync` only when a repository is accepted for the portfolio.
+After the GitHub API reset, run `npm run sync:projects` once. Otherwise wait for the next accepted public project and follow the review-only catalogue workflow.
 
 ## Required Handoff Update
 

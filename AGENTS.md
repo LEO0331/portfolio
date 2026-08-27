@@ -22,11 +22,12 @@ This is the clean, restartable path for a new session. Use `bash init.sh` in Git
 
 ## Adding or updating project data
 
-1. Run `npm run sync:projects` as a dry run to identify GitHub metadata changes. Use `npm run sync:projects -- --write` only after reviewing the proposed entries.
+1. Run `npm run sync:projects` as a dry run to identify GitHub metadata changes. New repositories are review-only candidates and must be curated manually. Use `npm run sync:projects -- --write` only to apply reviewed demo URL updates to existing entries; curated descriptions are never overwritten.
 2. Keep `src/data/projects.ts` as the canonical project record. Ensure every `id` and `slug` is unique and every URL is valid.
 3. Curate the tagline, descriptions, role, stack, categories, and features from the repository README, package metadata, and live app. Remove auto-generated placeholder wording.
 4. Add or update `src/data/projects.zh.ts` when Traditional Chinese project copy is required. Missing entries intentionally fall back to the canonical English record.
 5. Save the preview as `src/assets/images/projects/<id>.png` or `.webp`. Prefer the live demo, wait for data-heavy dashboards to finish loading, and visually verify the result.
+   - Preview automation accepts only hosts approved in `tools/public-demo-url.mjs`. Add a custom domain only after reviewing it as an intentional public deployment target.
 6. For targeted captures, run `$env:TARGET_IDS='<id-one>,<id-two>'; node tools/capture-project-previews.mjs` in PowerShell.
 7. Update `README.md`, `wiki.md`, or `skill.md` when the workflow, stack, commands, or user-facing behavior changes.
 8. Update `progress.md` in the same change. Record the project IDs, source checked, files changed, verification evidence, blockers, and next action.

@@ -11,7 +11,7 @@
 ## 架構與技術棧
 
 - React 18 與 TypeScript
-- React Router 7，搭配適用於 GitHub Pages 的 `HashRouter`
+- React Router 7，搭配自動產生的 GitHub Pages 靜態路由入口
 - Vite 8 與 Tailwind CSS
 - Playwright E2E 測試與功能覆蓋率門檻
 - GitHub Actions 自動執行建置、Lighthouse、E2E 與 Pages 部署
@@ -21,7 +21,7 @@
 - 方便招募者快速掃讀：清楚的區塊、聚焦的專案卡片，以及直接的 Demo／原始碼連結
 - 資料驅動內容：在資料檔更新作品集資訊，不需修改 JSX
 - 雙語就緒：支援英文與繁體中文介面及專案內容
-- 靜態部署：以 `HashRouter` 最佳化 GitHub Pages 相容性
+- 靜態部署：以可索引路徑與自動產生的 GitHub Pages 路由入口維持相容性
 - 品質防線：Playwright E2E 與 CI 工作流程
 
 ## 訪客可以做什麼
@@ -77,10 +77,11 @@ npm run test:e2e
 
 ### 專案（英文＋繁體中文）
 
-1. 執行 `npm run sync:projects` 預覽 GitHub 中繼資料變更。在使用 `npm run sync:projects -- --write` 前，先檢查 dry-run 輸出。
+1. 執行 `npm run sync:projects` 預覽 GitHub 中繼資料變更。新儲存庫只會列為待審查候選項目，不會自動寫入。`npm run sync:projects -- --write` 僅用於將已審查的 Demo 網址更新套用至既有項目；已整理的專案描述永遠不會被覆寫。
 2. 在 `src/data/projects.ts` 整理正式專案資料；不要保留自動產生的佔位文字。
 3. 需要繁體中文內容時，在 `src/data/projects.zh.ts` 新增或更新翻譯。沒有對應資料時，系統會回退至標準英文專案資料。
 4. 將線上 Demo 預覽存放於 `src/assets/images/projects/<id>.png`（或 `.webp`），並目視確認資料量較大的頁面已完成載入。
+   - 擷取工具只會造訪 `tools/public-demo-url.mjs` 核准的公開主機；自訂部署網域必須先審查再明確加入。
 5. 在 PowerShell 擷取指定專案的預覽：
 
 ```bash

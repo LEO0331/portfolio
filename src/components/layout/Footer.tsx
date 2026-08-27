@@ -12,8 +12,6 @@ export function Footer(): JSX.Element {
   const safeWebsiteUrl = toSafeExternalHref(profile.websiteUrl);
   const safeGithubUrl = toSafeExternalHref(profile.githubUrl);
   const safeLinkedinUrl = toSafeExternalHref(profile.linkedinUrl);
-  const hasWebsite = Boolean(safeWebsiteUrl);
-  const hasLinkedIn = Boolean(safeLinkedinUrl);
 
   return (
     <footer className="border-t border-slate-200/90 bg-white/90 py-10 dark:border-slate-700/80 dark:bg-slate-950/90">
@@ -33,14 +31,14 @@ export function Footer(): JSX.Element {
                 GitHub
               </ExternalLink>
             ) : null}
-            {hasLinkedIn ? (
+            {safeLinkedinUrl ? (
               <ExternalLink href={safeLinkedinUrl} label="Open LinkedIn profile" className="font-semibold">
                 LinkedIn
               </ExternalLink>
             ) : (
               <span>{text.footer.linkedinFallback}</span>
             )}
-            {hasWebsite ? (
+            {safeWebsiteUrl ? (
               <ExternalLink href={safeWebsiteUrl} label="Open personal website" className="font-semibold">
                 Website
               </ExternalLink>

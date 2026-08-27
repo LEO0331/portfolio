@@ -155,7 +155,7 @@ export function ProjectsPage(): JSX.Element {
       </div>
 
       {selectedProject ? (
-        <ProjectDetailDrawer project={selectedProject} isOpen={Boolean(selectedProject)} onClose={onCloseDetails} />
+        <ProjectDetailDrawer project={selectedProject} onClose={onCloseDetails} />
       ) : null}
     </Section>
   );

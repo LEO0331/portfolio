@@ -1,6 +1,7 @@
+import { readFile } from "node:fs/promises";
 import process from "node:process";
 
-function normalizeBase(basePath) {
+export function normalizeBasePath(basePath) {
   if (!basePath || basePath === "/") return "";
   const withLeadingSlash = basePath.startsWith("/") ? basePath : `/${basePath}`;
   return withLeadingSlash.replace(/\/+$/, "");
@@ -28,7 +29,7 @@ export function resolveSiteUrl(basePath, context) {
   }
 
   const fallbackOrigin = "https://leo0331.github.io";
-  const normalizedBase = normalizeBase(basePath);
+  const normalizedBase = normalizeBasePath(basePath);
   const fallbackUrl = `${fallbackOrigin}${normalizedBase}`.replace(/\/+$/, "");
   console.warn(`[${context}] SITE_URL is not set. Using fallback: ${fallbackUrl}`);
   return fallbackUrl;
@@ -43,6 +44,13 @@ export function escapeXml(value) {
     .replace(/'/g, "&apos;");
 }
 
-export function normalizeBasePath(basePath) {
-  return normalizeBase(basePath);
+export async function readViteBasePath(viteConfigPath) {
+  const viteConfigContent = await readFile(viteConfigPath, "utf8");
+  const baseMatch = viteConfigContent.match(/base:\s*["'`]([^"'`]+)["'`]/);
+  const rawBase = baseMatch?.[1] ?? "/";
+  return normalizeBasePath(rawBase);
+}
+
+export function isSafeRoutePath(routePath) {
+  return typeof routePath === "string" && /^\/[a-z0-9/-]*$/i.test(routePath);
 }

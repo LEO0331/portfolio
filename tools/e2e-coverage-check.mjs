@@ -1,20 +1,20 @@
 import fs from "node:fs";
 
 const REPORT_PATH = "test-results/e2e-report.json";
+const SPEC_PATH = "tests/e2e/smoke.spec.ts";
 const THRESHOLD = 85;
-const EXPECTED_IDS = [
-  "COV-01",
-  "COV-02",
-  "COV-03",
-  "COV-04",
-  "COV-05",
-  "COV-06",
-  "COV-07",
-  "COV-08",
-  "COV-09",
-  "COV-10",
-  "COV-11"
-];
+
+if (!fs.existsSync(SPEC_PATH)) {
+  console.error(`Coverage specification missing: ${SPEC_PATH}`);
+  process.exit(1);
+}
+
+const specSource = fs.readFileSync(SPEC_PATH, "utf8");
+const EXPECTED_IDS = [...new Set([...specSource.matchAll(/\[(COV-\d{2})\]/g)].map((match) => match[1]))];
+if (EXPECTED_IDS.length === 0) {
+  console.error(`No functional coverage IDs found in ${SPEC_PATH}`);
+  process.exit(1);
+}
 
 function collectTitles(node, out = []) {
   if (!node || typeof node !== "object") return out;

@@ -36,7 +36,3 @@ pnpm-debug.log*
 # Playwright
 playwright-report/
 test-results/
-
-# Playwright CLI flow artifacts
-output/playwright/
-.playwright-cli/

@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 test.describe("Portfolio smoke", () => {
   test("[COV-01] home renders hero and primary CTAs", async ({ page }) => {
-    await page.goto("/#/");
+    await page.goto("./");
 
     await expect(page.getByRole("heading", { name: "Leo Chen", level: 1 })).toBeVisible();
     await expect(page.getByRole("link", { name: "View Projects" })).toBeVisible();
@@ -11,39 +11,39 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-02] desktop navbar route navigation works", async ({ page }) => {
-    await page.goto("/#/");
+    await page.goto("./");
 
     await page.getByRole("link", { name: "Projects", exact: true }).first().click();
-    await expect(page).toHaveURL(/#\/projects$/);
+    await expect(page).toHaveURL(/\/portfolio\/projects$/);
     await expect(page.getByRole("heading", { name: "Projects", level: 1 })).toBeVisible();
 
     await page.getByRole("link", { name: "About", exact: true }).first().click();
-    await expect(page).toHaveURL(/#\/about$/);
+    await expect(page).toHaveURL(/\/portfolio\/about$/);
     await expect(page.getByRole("heading", { name: "About", level: 1 })).toBeVisible();
 
     await page.getByRole("link", { name: "Contact", exact: true }).first().click();
-    await expect(page).toHaveURL(/#\/contact$/);
+    await expect(page).toHaveURL(/\/portfolio\/contact$/);
     await expect(page.getByRole("heading", { name: "Let’s Connect", level: 1 })).toBeVisible();
   });
 
   test("[COV-03] mobile menu opens and navigates routes", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto("/#/");
+    await page.goto("./");
 
     await page.getByRole("button", { name: "Menu" }).click();
     const mobileMenu = page.locator("header div.border-t.border-slate-200.bg-white.md\\:hidden");
     await expect(mobileMenu).toBeVisible();
     await mobileMenu.getByRole("link", { name: "Projects", exact: true }).click();
-    await expect(page).toHaveURL(/#\/projects$/);
+    await expect(page).toHaveURL(/\/portfolio\/projects$/);
 
     await page.getByRole("button", { name: "Menu" }).click();
     await expect(mobileMenu).toBeVisible();
     await mobileMenu.getByRole("link", { name: "About", exact: true }).click();
-    await expect(page).toHaveURL(/#\/about$/);
+    await expect(page).toHaveURL(/\/portfolio\/about$/);
   });
 
   test("[COV-04] projects search narrows results", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     await page.getByPlaceholder("Search by name, tagline, description, category, or tech").fill("toyrobot");
     await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
@@ -51,7 +51,7 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-05] projects filters by category, technology, and status", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const initialCount = await page.locator("article h2").count();
     await page.getByLabel("Category").selectOption("tools-utilities");
@@ -65,7 +65,7 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-06] empty state appears and reset restores results", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const cardHeadings = page.locator("article h2");
     const initialCount = await cardHeadings.count();
@@ -79,7 +79,7 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-07] project highlights counters are visible", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const highlights = page.locator("div.grid.grid-cols-1.gap-3.sm\\:grid-cols-3");
     await expect(highlights.getByText("Visible", { exact: true })).toBeVisible();
@@ -92,7 +92,7 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-08] project card external links include safe attributes", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const firstCard = page.locator("article").first();
     const demoLink = firstCard.getByRole("link", { name: "Live Demo" });
@@ -107,18 +107,18 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-09] about page content and CTA route to contact", async ({ page }) => {
-    await page.goto("/#/about");
+    await page.goto("./about");
 
     await expect(page.getByRole("heading", { name: "About", level: 1 })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Strengths", level: 2 })).toBeVisible();
     await expect(page.getByRole("heading", { name: "Domains of Interest", level: 2 })).toBeVisible();
 
     await page.getByRole("link", { name: "Go to contact page" }).click();
-    await expect(page).toHaveURL(/#\/contact$/);
+    await expect(page).toHaveURL(/\/portfolio\/contact$/);
   });
 
   test("[COV-10] contact page key links and footer links are present", async ({ page }) => {
-    await page.goto("/#/contact");
+    await page.goto("./contact");
 
     await expect(page.getByRole("heading", { name: "Let’s Connect", level: 1 })).toBeVisible();
     await expect(page.getByRole("link", { name: "Open GitHub profile" }).first()).toBeVisible();
@@ -128,33 +128,36 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-11] unknown route redirects to 404 and can return home", async ({ page }) => {
-    await page.goto("/#/unknown-route");
+    await page.goto("./unknown-route");
 
-    await expect(page).toHaveURL(/#\/404$/);
+    await expect(page).toHaveURL(/\/portfolio\/404$/);
     await expect(page.getByRole("heading", { name: "Page not found", level: 1 })).toBeVisible();
 
     await page.getByRole("link", { name: "Return to home page" }).click();
-    await expect(page).toHaveURL(/#\/$/);
+    await expect(page).toHaveURL(/\/portfolio\/?$/);
   });
 
   test("[COV-12] project detail drawer opens and closes with URL sync", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "ToyRobot" }) }).first();
     await toyRobotCard.getByRole("button", { name: "View Details" }).click();
     const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
     await expect(drawer).toBeVisible();
-    await expect(page).toHaveURL(/#\/projects\?project=toyrobot$/);
+    await expect(drawer).toBeFocused();
+    await expect(page).toHaveURL(/\/portfolio\/projects\?project=toyrobot$/);
     await expect(drawer.getByText("Role:")).toBeVisible();
     await expect(drawer.getByText("Tech Stack")).toBeVisible();
 
+    const detailsTrigger = toyRobotCard.getByRole("button", { name: "View Details" });
     await page.getByRole("button", { name: "Close project details" }).click();
     await expect(drawer).toHaveCount(0);
-    await expect(page).toHaveURL(/#\/projects$/);
+    await expect(page).toHaveURL(/\/portfolio\/projects$/);
+    await expect(detailsTrigger).toBeFocused();
   });
 
   test("[COV-13] detail drawer supports Escape and backdrop close", async ({ page }) => {
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub" }) }).first();
     await assistantHubCard.getByRole("button", { name: "View Details" }).click();
@@ -172,13 +175,13 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-14] deep-link query opens project drawer on initial load", async ({ page }) => {
-    await page.goto("/#/projects?project=toyrobot");
+    await page.goto("./projects?project=toyrobot");
     await expect(page.getByRole("dialog", { name: "Project details for ToyRobot" })).toBeVisible();
   });
 
   test("[COV-15] mobile drawer opens and preserves filter/search state", async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
-    await page.goto("/#/projects");
+    await page.goto("./projects");
 
     const searchInput = page.getByPlaceholder("Search by name, tagline, description, category, or tech");
     await searchInput.fill("toyrobot");
@@ -199,11 +202,28 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-16] traditional chinese route renders localized project content", async ({ page }) => {
-    await page.goto("/#/zh/projects");
+    await page.goto("./zh/projects");
 
-    await expect(page).toHaveURL(/#\/zh\/projects$/);
+    await expect(page).toHaveURL(/\/portfolio\/zh\/projects$/);
     await expect(page.getByRole("heading", { name: "專案", level: 1 })).toBeVisible();
     await expect(page.getByPlaceholder("可搜尋名稱、標語、描述、分類或技術")).toBeVisible();
     await expect(page.getByText("剩食媒合概念，支援就近預約取餐")).toBeVisible();
+  });
+
+  test("[COV-17] canonical and social metadata use crawlable deployment paths", async ({ page }) => {
+    await page.goto("./projects");
+
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
+      "href",
+      "http://127.0.0.1:4175/portfolio/projects"
+    );
+    await expect(page.locator('meta[property="og:url"]')).toHaveAttribute(
+      "content",
+      "http://127.0.0.1:4175/portfolio/projects"
+    );
+    await expect(page.locator('meta[property="og:image"]')).toHaveAttribute(
+      "content",
+      "http://127.0.0.1:4175/portfolio/og-image.png"
+    );
   });
 });

@@ -6,6 +6,7 @@ echo "=== Portfolio Harness Verification ==="
 node tools/validate-harness-state.mjs
 npm ci
 npm audit
+npm run test:unit
 npm run build
 npm run test:e2e
 git diff --check

@@ -65,12 +65,12 @@ function getSiteOriginAndBase(): string {
 function buildCanonicalUrl(routePath?: string): string {
   const base = getSiteOriginAndBase();
   const normalized = normalizeRoutePath(routePath);
-  if (normalized === "/") return `${base}/#/`;
-  return `${base}/#${normalized}`;
+  if (normalized === "/") return `${base}/`;
+  return `${base}${normalized}`;
 }
 
 function buildGlobalJsonLd(): JsonLdNode[] {
-  const siteUrl = `${getSiteOriginAndBase()}/#/`;
+  const siteUrl = `${getSiteOriginAndBase()}/`;
   return [
     {
       "@context": "https://schema.org",
@@ -104,7 +104,7 @@ export function usePageSeo(pageTitle: string, optionsOrDescription?: SeoOptions 
 
   useEffect(() => {
     const canonicalUrl = buildCanonicalUrl(routePath);
-    const ogImageUrl = new URL(ogImage, getSiteOriginAndBase()).toString();
+    const ogImageUrl = new URL(ogImage.replace(/^\/+/, ""), `${getSiteOriginAndBase()}/`).toString();
     const finalTitle = `${pageTitle} | ${TITLE_SUFFIX}`;
     const robotsValue = noIndex ? "noindex, nofollow" : "index, follow";
     const pageSchema: JsonLdNode = {

@@ -8,27 +8,15 @@ Stack:
 - Vite
 - TypeScript
 - Tailwind CSS
-- React Router 7 with HashRouter
+- React Router 7 with generated static route entrypoints
 - Playwright for E2E validation
 
-## Repository layout
-Key locations:
-- `src/data/profile.ts`: personal profile and contact links
-- `src/data/projects.ts`: project catalog
-- `src/data/skills.ts`: grouped skills
-- `src/components/`: reusable UI components
-- `src/pages/`: route-level pages
-- `.github/workflows/`: deploy and E2E CI jobs
-- `public/resume.pdf`: resume file served as `/resume.pdf`
+## Canonical documentation
 
-## Quick start
-```bash
-npm install
-npm run dev
-```
-
-Open:
-- `http://127.0.0.1:5173/portfolio/#/` (or shown local Vite URL)
+- Setup, stack, content updates, deployment, and verification: [README.md](./README.md)
+- Traditional Chinese guide: [README.zh-TW.md](./README.zh-TW.md)
+- Agent rules and project-data workflow: [AGENTS.md](./AGENTS.md)
+- Current state and restart point: [progress.md](./progress.md) and [session-handoff.md](./session-handoff.md)
 
 ## Use this template (GitHub CLI)
 Create a new repository from this template with copy-paste commands:
@@ -52,64 +40,14 @@ npm install
 npm run dev
 ```
 
-## Customization guide
-1. Update profile:
-- Edit `src/data/profile.ts`
-- Set `fullName`, `title`, `websiteUrl`, `githubUrl`, `linkedinUrl`, `resumeUrl`
+## Template checklist
 
-2. Update projects:
-- Edit `src/data/projects.ts`
-- Keep each `id` unique
-- Keep `demoUrl` and `repoUrl` valid
-- Keep `image` file names aligned with files in `src/assets/images/projects/`
-- Use `npm run sync:projects` as a dry run before accepting GitHub metadata changes
-- Add `src/data/projects.zh.ts` content when a project needs Traditional Chinese copy
-- Capture selected live previews with `$env:TARGET_IDS="project-id"; node tools/capture-project-previews.mjs`
-- Record accepted project IDs and verification evidence in `progress.md`
-
-3. Update skills:
-- Edit `src/data/skills.ts`
-
-4. Replace resume:
-- Put your PDF at `public/resume.pdf`
-
-## GitHub Pages deployment
-1. Update `vite.config.ts`:
-- `base: "/<your-repo-name>/"`
-
-2. Push to `main`.
-3. In GitHub repo settings, set Pages source to GitHub Actions.
-4. Deployment workflow publishes from `dist/`.
-
-## Testing
-### Fast quality checks
-```bash
-npm run validate:harness
-npm ci
-npm audit
-npm run build
-npm run test:e2e
-git diff --check
-```
-
-## Agent maintenance workflow
-
-- Read `AGENTS.md` before changing project data, dependencies, routing, or CI.
-- Select one ready item from `feature_list.json` and keep its status/evidence current.
-- Read `progress.md` to recover the latest state without relying on prior chat history.
-- Update `progress.md` whenever project data or preview assets are added, even when the application code is unchanged.
-- Update `session-handoff.md` before ending so the next session has blockers, files, and one recommended next step.
-- Keep GitHub sync output as a proposal: verify repository READMEs, package metadata, demo URLs, and rendered previews before treating an entry as complete.
-
-### Real browser flow checks (CLI-based)
-```bash
-npm run test:e2e:flow
-npm run test:e2e:flow:mobile
-npm run test:e2e:flow:routes
-npm run test:e2e:flow:all
-```
-
-Artifacts are written to `output/playwright/`.
+1. Update profile and skills in `src/data/profile.ts` and `src/data/skills.ts`.
+2. Follow [AGENTS.md](./AGENTS.md) when replacing the project catalogue or previews.
+3. Put the resume at `public/resume.pdf`.
+4. Set `base` in `vite.config.ts` to `/<your-repo-name>/`.
+5. Run `bash init.sh` before pushing.
+6. Enable GitHub Pages with GitHub Actions as the source.
 
 ## Troubleshooting
 ### White page on GitHub Pages
