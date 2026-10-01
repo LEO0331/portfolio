@@ -165,6 +165,28 @@
         "Post-cleanup bash init.sh passed with 7/7 Node tests, 23/23 Playwright tests, and 17/17 functional coverage",
         "npm audit reported zero vulnerabilities and git diff --check passed"
       ]
+    },
+    {
+      "id": "complete-chinese-project-content-2026-10",
+      "name": "Complete Chinese project cards and details",
+      "description": "Provide Traditional Chinese copy for every current project, localize descriptive display names, and prevent untranslated card/detail fields from returning.",
+      "status": "complete",
+      "dependencies": [
+        "next-github-project-sync"
+      ],
+      "doneCriteria": [
+        "All 38 project records have Chinese card and detail text",
+        "Localized project names work without changing English titles or stable slugs",
+        "Regression, build, visual, and lifecycle checks pass"
+      ],
+      "evidence": [
+        "Regression failed before the fix on AssistantHub English challenge text",
+        "Added ten missing Taipei translations and AssistantHub challenge/outcome translations",
+        "Added optional localized names and 33 Chinese descriptive titles",
+        "Production card/drawer spot checks passed for safety, real estate, and religious-group projects",
+        "npm run build passed; npm run test:unit passed 7/7; npm run test:e2e passed 24/24 (17/17 tracked coverage)",
+        "npm audit: zero vulnerabilities; visual verdict passed"
+      ]
     }
   ]
 }

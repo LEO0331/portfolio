@@ -79,7 +79,7 @@ npm run test:e2e
 
 1. 執行 `npm run sync:projects` 預覽 GitHub 中繼資料變更。新儲存庫只會列為待審查候選項目，不會自動寫入。`npm run sync:projects -- --write` 僅用於將已審查的 Demo 網址更新套用至既有項目；已整理的專案描述永遠不會被覆寫。
 2. 在 `src/data/projects.ts` 整理正式專案資料；不要保留自動產生的佔位文字。
-3. 需要繁體中文內容時，在 `src/data/projects.zh.ts` 新增或更新翻譯。沒有對應資料時，系統會回退至標準英文專案資料。
+3. 在 `src/data/projects.zh.ts` 新增或更新繁體中文描述、角色、分類、功能，以及挑戰與成果。可用選填的 `name` 欄位設定中文顯示名稱。目前所有專案皆已提供中文內容；未來新增的專案若缺少翻譯，系統會回退至標準英文專案資料。
 4. 將線上 Demo 預覽存放於 `src/assets/images/projects/<id>.png`（或 `.webp`），並目視確認資料量較大的頁面已完成載入。
    - 擷取工具只會造訪 `tools/public-demo-url.mjs` 核准的公開主機；自訂部署網域必須先審查再明確加入。
 5. 在 PowerShell 擷取指定專案的預覽：

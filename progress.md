@@ -4,11 +4,13 @@
 
 **Last updated:** 2026-10-01
 
-**Active work:** Project-name, description, and preview refresh
+**Active work:** Complete Traditional Chinese project localization
 
-**Status:** Verified catalogue update; local changes ready for review and deployment
+**Status:** Chinese cards and detail drawers verified for all 38 projects; local changes ready for deployment
 
 ### Completed
+
+- Filled all ten missing Taipei Chinese content records, restored AssistantHub challenge/outcome translations, and added 33 localized descriptive titles. All 38 current projects now have Chinese card and detail copy.
 
 - Audited all 38 displayed projects against the public GitHub owner listing, resolved repository redirects, current READMEs, package metadata where stacks changed, and public demos.
 - Updated 28 display names and curated outdated English/Traditional Chinese descriptions, roles, stacks, categories, and features.
@@ -18,6 +20,9 @@
 - Updated existing browser-test copy expectations to match current project names and localized wording.
 
 ### Verification Evidence
+
+- Chinese-localization regression: failed before the fix, passed after; final browser suite 24/24, with 17/17 tracked flows.
+- Production checks verified Chinese safety, real-estate, and religious-group cards and detail drawers, preserving their original project slugs.
 
 - Initial and final GitHub sync dry runs reviewed; final: 0 existing updates, 0 new candidates, no missing repository warnings.
 - npm ci and npm audit: passed, 0 vulnerabilities.
@@ -112,3 +117,14 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Final production spot check: CNA Practice, Family Cabinet, Competition Practice, Gridline, and WanderStamp cards show current titles, canonical repository links, decoded WebP previews, and unchanged detail slugs; renamed-project Traditional Chinese copy is present.
 
 - Final lifecycle gate: npm run validate:harness passed (7 valid feature records); git diff --check passed. Final build passed and final E2E rerun passed 23/23 with 100% tracked coverage after the public-records title/preview update. No lint script is configured; TypeScript static checking ran through npm run build.
+
+### 2026-10-01 — Complete Chinese project localization
+
+- Root cause: ten Taipei project IDs had no zhProjectContent entry; getLocalizedProjects fell back to English. Name localization was unsupported, and AssistantHub challenge/outcome fields also fell back to English.
+- Added complete translations for taipei-crash-map, taipei-faith-map, taipei-1999-map, taipei-feitsui-water-map, taipei-zoo-guide, taipei-safety-map, taipei-friendly-food-map, taipei-free-wifi-map, taipei-civic-groups-map, and taipei-real-estate-dashboard. Restored assistanthub challenge/outcome translations and corrected mixed-language skill-gen/Lighthouse copy.
+- Added optional localized name support to the existing mapping and 33 Chinese descriptive display titles, retaining branded names and standard technology names. English records, source screenshots, and stable IDs/slugs remain as before.
+- Changed files: src/data/projects.zh.ts, src/utils/projectLocalization.ts, tests/e2e/core-utils.spec.ts, README.md, README.zh-TW.md, feature_list.json, progress.md, session-handoff.md.
+- Added a regression checking Chinese text across all 38 project cards/details and optional challenges/outcomes, plus localized titles and unchanged English behavior. It failed before implementation and passed after.
+- Evidence: production build/typecheck passed; 7/7 unit tests; 24/24 Playwright tests; tracked coverage 17/17 (100%); npm audit 0 vulnerabilities. Production browser spot checks passed for the three highlighted cards and drawers; visual review passed.
+- Simplification: reused zhProjectContent and the existing localization helper; no new dependencies or parallel localization layer.
+- Remaining risks: changes are local and require the existing deployment workflow to reach GitHub Pages. No known untranslated description/detail fields remain in current records.

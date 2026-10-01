@@ -1,6 +1,7 @@
 import { expect, test } from "@playwright/test";
 import type { Project } from "../../src/types/project";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
+import { projects as portfolioProjects } from "../../src/data/projects";
 import {
   extractUniqueCategories,
   extractUniqueTechnologies,
@@ -93,6 +94,24 @@ test("project localization overrides known content and preserves unknown project
   expect(localized[0].tagline).toBe("展場剩食媒合與取餐安排");
   expect(localized[1]).toBe(unknown);
   expect(getLocalizedProjects([boxmatch], "en")[0]).toBe(boxmatch);
+});
+
+test("every portfolio project has Traditional Chinese card and detail copy", () => {
+  const localized = getLocalizedProjects(portfolioProjects, "zh");
+
+  for (const project of localized) {
+    const textFields = [
+      project.tagline, project.shortDescription, project.fullDescription, project.role,
+      ...project.categories, ...project.features,
+      ...(project.challenges ?? []), ...(project.outcomes ?? [])
+    ];
+    for (const text of textFields) {
+      expect(text, `${project.id}: ${text}`).toMatch(/[\u3400-\u9fff]/);
+    }
+  }
+
+  expect(localized.find((project) => project.id === "taipei-safety-map")?.name).toBe("台北公共安全地圖");
+  expect(getLocalizedProjects(portfolioProjects, "en")).toBe(portfolioProjects);
 });
 
 test("external URL safety accepts http(s) and rejects executable or credential URLs", () => {

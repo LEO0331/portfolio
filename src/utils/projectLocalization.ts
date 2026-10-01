@@ -11,6 +11,7 @@ export function getLocalizedProjects(projectList: Project[], locale: Locale): Pr
 
     return {
       ...project,
+      name: localized.name ?? project.name,
       tagline: localized.tagline,
       shortDescription: localized.shortDescription,
       fullDescription: localized.fullDescription,

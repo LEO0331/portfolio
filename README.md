@@ -69,7 +69,7 @@ npm run test:e2e
 ### Projects (English + Traditional Chinese)
 1. Run `npm run sync:projects` to preview GitHub metadata changes. New repositories are listed as review-only candidates and are never inserted automatically. Use `npm run sync:projects -- --write` only for reviewed demo URL updates to existing entries; curated descriptions are never overwritten.
 2. Curate the canonical project record in `src/data/projects.ts`; do not keep automatically generated placeholder copy.
-3. Add/update Traditional Chinese text in `src/data/projects.zh.ts` when localized copy is required. Missing entries fall back to the canonical English record.
+3. Add/update Traditional Chinese text in `src/data/projects.zh.ts`, including descriptions, roles, categories, features, and any challenges/outcomes. Use the optional `name` field for Chinese display titles. Every current project has translated copy; missing future entries fall back to the canonical English record.
 4. Add the live-demo preview to `src/assets/images/projects/<id>.png` (or `.webp`) and visually verify that data-heavy pages finished loading.
    - Capture automation only visits public hosts approved in `tools/public-demo-url.mjs`; review and explicitly add custom deployment domains.
 5. Capture selected previews in PowerShell:
