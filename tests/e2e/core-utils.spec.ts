@@ -90,7 +90,7 @@ test("project localization overrides known content and preserves unknown project
   const unknown = project({ id: "unknown", slug: "unknown", name: "Unknown" });
   const localized = getLocalizedProjects([boxmatch, unknown], "zh");
 
-  expect(localized[0].tagline).toBe("展場剩食媒合概念，支援就近預約取餐");
+  expect(localized[0].tagline).toBe("展場剩食媒合與取餐安排");
   expect(localized[1]).toBe(unknown);
   expect(getLocalizedProjects([boxmatch], "en")[0]).toBe(boxmatch);
 });

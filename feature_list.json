@@ -82,9 +82,9 @@
     },
     {
       "id": "next-github-project-sync",
-      "name": "Review the next GitHub project-data update",
-      "description": "When a new public project is available, review sync output, curate its record and localization, capture its live preview, update documentation when needed, and record evidence in progress.md.",
-      "status": "pending",
+      "name": "Review current GitHub project identities, copy, and previews",
+      "description": "Audit all displayed projects against current repository metadata, redirects, READMEs, and live demos; curate bilingual copy and refresh renamed-project previews.",
+      "status": "complete",
       "dependencies": [
         "portfolio-catalogue-2026-08",
         "dependency-security-2026-08",
@@ -99,7 +99,18 @@
         "progress.md and session-handoff.md are updated",
         "Audit, build, E2E, and diff checks pass"
       ],
-      "evidence": []
+      "evidence": [
+        "2026-10-01: all 38 displayed projects audited against public GitHub metadata, current READMEs, and live demos",
+        "28 display names updated; 4 renamed repository/demo links resolved while keeping IDs/slugs stable",
+        "29 PNG/WebP preview pairs visually verified after loading",
+        "English and existing Traditional Chinese project copy updated; missing localized records retain the established English fallback",
+        "Final sync dry run: 0 updates and 0 candidates",
+        "npm ci and npm audit passed with 0 vulnerabilities",
+        "npm run test:unit passed 7/7; npm run build passed",
+        "npm run test:e2e passed 23/23 with 17/17 tracked coverage",
+        "Production spot check passed for CNA Practice, Family Cabinet, Competition Practice, Gridline, and WanderStamp: names, canonical repo links, decoded WebP images, detail URLs, and bilingual copy",
+        "progress.md and session-handoff.md updated"
+      ]
     },
     {
       "id": "whole-project-review-remediation-2026-08",

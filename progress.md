@@ -2,72 +2,45 @@
 
 ## Current State
 
-**Last updated:** 2026-08-27
+**Last updated:** 2026-10-01
 
-**Active work:** Whole-project anti-slop cleanup
+**Active work:** Project-name, description, and preview refresh
 
-**Status:** Complete and verified
+**Status:** Verified catalogue update; local changes ready for review and deployment
 
 ### Completed
 
-- Added 10 Taipei civic-tech dashboards from the latest public GitHub repositories:
-  - `taipei-crash-map`
-  - `taipei-faith-map`
-  - `taipei-1999-map`
-  - `taipei-feitsui-water-map`
-  - `taipei-zoo-guide`
-  - `taipei-safety-map`
-  - `taipei-friendly-food-map`
-  - `taipei-free-wifi-map`
-  - `taipei-civic-groups-map`
-  - `taipei-real-estate-dashboard`
-- Added and visually checked live-demo preview images under `src/assets/images/projects/`.
-- Removed all 3 moderate and 3 high npm advisories by updating patched dependency versions, including React Router 7.18.2, Vite 8.2.2, PostCSS 8.5.26, and Nano ID 3.3.18.
-- Removed obsolete React Router v6 future flags after the v7 migration.
-- Added repository-local maintenance rules and restartable state through `AGENTS.md`, `feature_list.json`, `init.sh`, and `session-handoff.md`.
-- Updated the README, wiki, and reusable skill documentation to match the current workflow.
-- Split repository documentation into an English `README.md` and equivalent Traditional Chinese `README.zh-TW.md`, with reciprocal language navigation.
-- Added the repository-owned `npm run validate:harness` check and proved the full `bash init.sh` lifecycle through a clean install, audit, build, E2E, and diff verification run.
-- Replaced hash routing with crawlable path routing and generated GitHub Pages entrypoints with route-specific canonical/OG metadata and a noindex 404 fallback.
-- Pinned every GitHub Action to an immutable commit SHA.
-- Hardened project sync and preview capture with review-only candidates, one GitHub API request, structural write guards, and an approved-public-host boundary.
-- Added Node and Playwright regression coverage for sync parsing, URL safety, filtering, sorting, localization, route metadata, and dialog focus behavior.
-- Added nine optimized WebP previews, reducing the affected card assets by 26–95% while retaining PNG fallbacks.
-- Removed obsolete hardcoded preview tooling and the broken external-skill CLI test system that duplicated maintained Playwright coverage.
-- Consolidated duplicate project-source parsing into `tools/project-source.mjs` for both sync and preview capture.
-- Consolidated Vite base parsing and route safety in `tools/site-url.mjs` for sitemap, robots, and static route generation.
-- Removed impossible drawer state, redundant URL/Boolean wrappers, and duplicate harness reads without changing rendered behavior.
-- Shortened `wiki.md` and `skill.md` by routing shared setup and maintenance rules to `README.md` and `AGENTS.md`.
+- Audited all 38 displayed projects against the public GitHub owner listing, resolved repository redirects, current READMEs, package metadata where stacks changed, and public demos.
+- Updated 28 display names and curated outdated English/Traditional Chinese descriptions, roles, stacks, categories, and features.
+- Resolved four renamed repositories without adding duplicates: sharpface → cna-practice; amazon-app → family-cabinet; email_website → competition-practice; RobotFriends → Gridline.
+- Preserved project IDs/slugs so existing portfolio detail links remain stable.
+- Refreshed 29 visually reviewed live-demo PNG previews and their preferred WebP versions, including all renamed display entries, CraftFocus, and Taipei Public Records Explorer.
+- Updated existing browser-test copy expectations to match current project names and localized wording.
 
 ### Verification Evidence
 
-- `npm audit --json`: 0 vulnerabilities
-- `npm run build`: passed with Vite 8.2.2
-- `npm run test:unit`: 7/7 passed
-- `npm run test:e2e`: 23/23 passed
-- Functional E2E coverage: 17/17 flows, 100%
-- `git diff --check`: passed
-- `src/data/projects.ts` image references: all referenced project image files exist
-- Harness validation: 100/100
-- English／Traditional Chinese README heading parity: passed
-- Relative documentation link check: no broken links
-- Repository-owned harness state validation: passed
-- `bash init.sh`: passed end to end through Git Bash
-- Generated route entrypoints and route-specific canonical/OG metadata: verified
-- GitHub Actions mutable-reference scan: no mutable action tags remain
-- Optimized preview visual verdict: 98/100, pass
-- Final comprehensive review: APPROVE, 0 issues
-- Final security review: APPROVE, 0 issues
+- Initial and final GitHub sync dry runs reviewed; final: 0 existing updates, 0 new candidates, no missing repository warnings.
+- npm ci and npm audit: passed, 0 vulnerabilities.
+- npm run test:unit: 7/7 passed.
+- npm run build: passed, including TypeScript checking and static route generation.
+- npm run test:e2e: 23/23 passed; 17/17 tracked flows (100%).
+- Data validation: 38 unique IDs and slugs; all demo/repository URLs and preview references valid; localized keys resolve to existing projects.
+- Visual review: 29 loaded public-demo captures passed at 97/100; loading-only and Render wake-up captures were rejected and replaced after initialization.
+- Harness and diff checks: recorded in the dated history entry after final verification.
 
 ### Blockers
 
-- The anonymous GitHub API quota was exhausted during review and resets at 2026-08-27 09:34:14 +08:00, so the final optimized one-request sync could not be repeated live in this session. Local sync tests and both final reviewers passed.
+- None. Initial sandbox subprocess restrictions were resolved through approved build/browser execution.
+
+### Remaining Risks
+
+- Public demos can load slowly or cold-start; screenshots are verified snapshots from 2026-10-01.
+- Changes are local and have not been published to GitHub Pages.
 
 ### Next Session Should
 
-1. After the GitHub API reset, run `npm run sync:projects` once to confirm the live dry run remains clean.
-2. Review future repositories as manual candidates and preserve the shared parser/site boundaries.
-3. Avoid reintroducing workflow instructions into `wiki.md` or `skill.md`; update canonical README/AGENTS sources instead.
+1. Review the local catalogue and refreshed images, then deploy through the existing GitHub Pages workflow when requested.
+2. Continue checking READMEs/live titles and GitHub redirects alongside sync: the existing sync only updates demo URLs and does not detect product-name or description changes.
 
 ## Update Contract
 
@@ -122,3 +95,20 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Changed dependency/runtime files: `package.json`, `package-lock.json`, and `src/routes/AppRouter.tsx`.
 - Changed documentation/harness files: `README.md`, `wiki.md`, `skill.md`, `AGENTS.md`, `feature_list.json`, `init.sh`, `progress.md`, and `session-handoff.md`.
 - Result: catalogue updated, audit clean, production build passing, and all E2E tests passing.
+
+### 2026-10-01 — Project identity, content, and preview audit
+
+- Sources checked: https://api.github.com/users/LEO0331/repos?per_page=100&sort=updated; each displayed repository's current README; GitHub redirects for sharpface, amazon-app, email_website, and RobotFriends; current public demos. Package metadata confirmed Family Cabinet uses Astro, Gridline uses React/JavaScript/Node.js/Supabase, and Boxmatch uses Flutter/Firebase.
+- Project IDs updated: assistanthub, passportcomparison, simpletaxautoextraction, warmthfromafar, sharpface, warmmemo, leave-request, resume-vault, amazon-app, email-website, robotfriends, epubreader, prosemasters-skill, ppt-design-md, wordpressparser, wordpress, rednote-gallery, craftfocus, publicsafetydashboard, taipei-bin-map, genomic-data-science-with-galaxy-project, thalassemia-seq-analysis, taipei-crash-map, taipei-faith-map, taipei-1999-map, taipei-safety-map, taipei-real-estate-dashboard, toyrobot, skill-gen, boxmatch, taipei-civic-groups-map.
+- Display names changed: assistanthub, passportcomparison, simpletaxautoextraction, warmthfromafar, sharpface, warmmemo, leave-request, amazon-app, email-website, robotfriends, epubreader, prosemasters-skill, ppt-design-md, wordpressparser, wordpress, rednote-gallery, publicsafetydashboard, taipei-bin-map, taipei-crash-map, taipei-faith-map, taipei-1999-map, taipei-safety-map, taipei-real-estate-dashboard, genomic-data-science-with-galaxy-project, thalassemia-seq-analysis, toyrobot, skill-gen.
+- Changed files: src/data/projects.ts, src/data/projects.zh.ts, 29 PNG/WebP preview pairs under src/assets/images/projects/, tests/e2e/smoke.spec.ts, tests/e2e/core-utils.spec.ts, feature_list.json, progress.md, session-handoff.md.
+- Simplifications: replaced generic portfolio copy with source-backed product descriptions; retained existing IDs, localization fallback, and image resolution without new dependencies or abstractions.
+- Verification: npm ci; npm audit (0 vulnerabilities); npm run sync:projects (0 updates, 0 candidates after manual curation); npm run test:unit (7/7); npm run build; npm run test:e2e (23/23, 100% tracked coverage); data uniqueness/URL/image/translation validation; visual QA of loaded captures. Three intermediate browser failures were stale content expectations and were updated; final suite passed.
+- Capture recovery: waited for Flutter initialization, Render service wake-up, and large static dashboard datasets; preserved no blank or loading-only replacement images.
+- Scope: no new projects, dependencies, commits, pushes, or deployment. Remaining risk: public demo cold starts and data loading; local changes await deployment.
+
+- Final live-language check: Taipei Public Records Explorer is the current English app heading, superseding the README title Taipei Public Data Explorer; captured its loaded catalogue overview and updated the canonical display name.
+
+- Final production spot check: CNA Practice, Family Cabinet, Competition Practice, Gridline, and WanderStamp cards show current titles, canonical repository links, decoded WebP previews, and unchanged detail slugs; renamed-project Traditional Chinese copy is present.
+
+- Final lifecycle gate: npm run validate:harness passed (7 valid feature records); git diff --check passed. Final build passed and final E2E rerun passed 23/23 with 100% tracked coverage after the public-records title/preview update. No lint script is configured; TypeScript static checking ran through npm run build.

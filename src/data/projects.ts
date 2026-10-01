@@ -4,21 +4,21 @@ export const projects: Project[] = [
   {
     id: "assistanthub",
     slug: "assistanthub",
-    name: "AssistantHub",
-    tagline: "Directory-style web application for discovering personal assistants",
+    name: "AssistantHub Talent Pool",
+    tagline: "Assistant discovery, shortlisting, and local hiring pipelines",
     shortDescription:
-      "A web application designed to help users discover personal assistants through a structured and accessible interface.",
+      "A React talent-pool demo with role, availability, and rate filters, shortlists, and a local hiring pipeline.",
     fullDescription:
-      "AssistantHub is a portfolio project focused on presenting assistant discovery in a usable, straightforward interface. It demonstrates frontend implementation, information presentation, and static deployment.",
+      "AssistantHub Talent Pool supports seeded talent generation, detail drawers, hiring inquiries, CSV/JSON portability, and virtualized browsing of large demo datasets.",
     role: "Frontend / Full Stack Portfolio Project",
     teamType: "solo",
-    techStack: ["React", "JavaScript", "HTML", "CSS"],
+    techStack: ["React", "JavaScript", "Leaflet"],
     categories: ["Web App", "Frontend", "Directory"],
     features: [
-      "Project listing interface",
-      "User-focused browsing experience",
-      "Responsive layout",
-      "Static deployment"
+      "Talent filters and shortlists",
+      "Local hiring status pipeline",
+      "Seeded demo data and virtualized lists",
+      "CSV and JSON import/export"
     ],
     challenges: ["Designing a clean browsing experience for service discovery"],
     outcomes: ["Working public demo available"],
@@ -85,17 +85,22 @@ export const projects: Project[] = [
   {
     id: "passportcomparison",
     slug: "passportcomparison",
-    name: "Passport Comparison",
-    tagline: "Comparison tool for passport-related data and access scenarios",
+    name: "Passport Index Toolbox",
+    tagline: "Compare passport strength, track rankings, and export PDF reports",
     shortDescription:
-      "A comparison-oriented web app for presenting passport-related information in a clearer side-by-side format.",
+      "A Flutter toolbox for comparing up to five passports, exploring historical rankings, and saving favorite comparison snapshots.",
     fullDescription:
-      "Passport Comparison is a data presentation project that emphasizes structured comparison and quick information review through a simple browser-based interface.",
-    role: "Frontend Developer",
+      "Passport Index Toolbox presents visa-access differences side by side, supports historical rank tracking, and exports full or differences-only PDF reports.",
+    role: "Flutter Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Web App", "Comparison Tool", "Data UI"],
-    features: ["Comparison layout", "Browser-based interaction", "Static deployment"],
+    techStack: ["Flutter", "Dart"],
+    categories: ["Web App", "Comparison Tool", "Data Visualization"],
+    features: [
+      "Compare up to five passports",
+      "Historical ranking views",
+      "Favorite comparison snapshots",
+      "Full and differences-only PDF reports"
+    ],
     image: "/src/assets/images/projects/passportcomparison.png",
     demoUrl: "https://leo0331.github.io/passportcomparison/",
     repoUrl: "https://github.com/LEO0331/passportcomparison",
@@ -105,17 +110,22 @@ export const projects: Project[] = [
   {
     id: "simpletaxautoextraction",
     slug: "simpletaxautoextraction",
-    name: "Simple Tax Auto Extraction",
-    tagline: "Utility project for simplifying tax-related extraction workflows",
+    name: "Tax Auto Extraction",
+    tagline: "Turn rental-property PDF statements into categorized tax records",
     shortDescription:
-      "A browser-based utility project focused on reducing manual handling in tax-related extraction scenarios.",
+      "A Flutter app that extracts rental income and expenses from property-management PDF statements and maps them to ATO worksheet categories.",
     fullDescription:
-      "This project demonstrates practical workflow simplification and utility-focused UI design for handling repetitive tasks more efficiently.",
-    role: "Frontend / Utility Project Developer",
+      "Tax Auto Extraction lets Australian property owners review extracted values, save records with Firebase, and compare income and expenses across financial years.",
+    role: "Flutter / Utility Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Utility", "Workflow Tool", "Web App"],
-    features: ["Task simplification", "Practical utility interface", "Static deployment"],
+    techStack: ["Flutter", "Dart", "Firebase"],
+    categories: ["Web App", "Utility", "Data Visualization"],
+    features: [
+      "PDF income and expense extraction",
+      "ATO worksheet category mapping",
+      "Manual review and editing",
+      "Financial-year comparisons"
+    ],
     image: "/src/assets/images/projects/simpletaxautoextraction.png",
     demoUrl: "https://leo0331.github.io/simpletaxautoextraction/",
     repoUrl: "https://github.com/LEO0331/simpletaxautoextraction",
@@ -125,17 +135,17 @@ export const projects: Project[] = [
   {
     id: "warmthfromafar",
     slug: "warmthfromafar",
-    name: "Warmth From Afar",
-    tagline: "User-facing project centered on thoughtful digital experience design",
+    name: "WanderStamp",
+    tagline: "Connect travelers and recipients through handwritten postcards",
     shortDescription:
-      "A user-facing web project with an emphasis on presentation, accessibility, and clear interaction flow.",
+      "A Flutter Web app that connects travelers with people around the world to share postcards, encouragement, and travel stories.",
     fullDescription:
-      "Warmth From Afar demonstrates front-end design execution and a polished browser-based experience for a themed user-facing application.",
-    role: "Frontend Developer",
+      "WanderStamp helps people find meaningful connections through handwritten postcards, bringing traveler and recipient workflows into a browser-based experience.",
+    role: "Flutter Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Web App", "Frontend", "UX"],
-    features: ["Presentation-focused design", "Themed UI", "Static deployment"],
+    techStack: ["Flutter", "Dart", "Firebase"],
+    categories: ["Web App", "Social Impact", "Travel"],
+    features: ["Traveler and recipient workflows", "Postcard sharing", "Travel stories and encouragement"],
     image: "/src/assets/images/projects/warmthfromafar.png",
     demoUrl: "https://leo0331.github.io/WarmthFromAfar/",
     repoUrl: "https://github.com/LEO0331/WarmthFromAfar",
@@ -145,20 +155,25 @@ export const projects: Project[] = [
   {
     id: "sharpface",
     slug: "sharpface",
-    name: "Sharpface",
-    tagline: "Interactive frontend project with a live browser deployment",
+    name: "CNA Practice",
+    tagline: "Computer-network past questions and guided revision",
     shortDescription:
-      "A browser-based project demonstrating interactive front-end implementation and public deployment.",
+      "An independent study app for University of Adelaide Computer Networks and Applications historical exam questions and revision notes.",
     fullDescription:
-      "Sharpface is a portfolio project useful for showcasing UI development, browser interaction, and deployment practices.",
-    role: "Frontend Developer",
+      "CNA Practice organizes 2013–2015 past questions by year and topic, with guided recall, answer approaches, bookmarks, and locally saved study progress.",
+    role: "Frontend / Education App Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Web App", "Frontend"],
-    features: ["Interactive UI", "Static deployment"],
+    techStack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    categories: ["Web App", "Education", "Study Tool"],
+    features: [
+      "Year and topic question browsing",
+      "Guided recall and answer notes",
+      "Bookmarks and reviewed progress",
+      "Browser-local study state"
+    ],
     image: "/src/assets/images/projects/sharpface.png",
-    demoUrl: "https://leo0331.github.io/sharpface/",
-    repoUrl: "https://github.com/LEO0331/sharpface",
+    demoUrl: "https://leo0331.github.io/cna-practice/",
+    repoUrl: "https://github.com/LEO0331/cna-practice",
     status: "live",
     featured: false
   },
@@ -168,17 +183,18 @@ export const projects: Project[] = [
     name: "Boxmatch",
     tagline: "Food surplus matching concept for exhibitions and nearby pickup",
     shortDescription:
-      "A concept app aimed at reducing food waste by helping organizers and nearby users reserve surplus meals and drinks.",
+      "A surplus-food matching app for exhibitions, where organizers post leftover meals and nearby people reserve pickup windows.",
     fullDescription:
-      "Boxmatch focuses on a socially useful scenario: reducing food waste through timed reservation and pickup coordination. It is suitable as a portfolio piece because it demonstrates product thinking as well as interface design.",
-    role: "Frontend / Product Project Developer",
+      "Boxmatch combines a listing feed and map, enterprise posting, recipient reservations, and pickup codes to coordinate surplus-food handoffs.",
+    role: "Product / Flutter Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["Flutter", "Dart", "Firebase"],
     categories: ["Web App", "Social Impact", "Product Concept"],
     features: [
-      "Food surplus matching concept",
-      "Reservation-oriented UX",
-      "Static deployment"
+      "Surplus-food listings and map",
+      "Enterprise posting flow",
+      "Reservation and pickup windows",
+      "Pickup handoff codes"
     ],
     image: "/src/assets/images/projects/boxmatch.png",
     demoUrl: "https://leo0331.github.io/boxmatch/",
@@ -189,17 +205,22 @@ export const projects: Project[] = [
   {
     id: "warmmemo",
     slug: "warmmemo",
-    name: "Warm Memo",
-    tagline: "Product-oriented app concept focused on memorial planning support",
+    name: "WarmMemo",
+    tagline: "Memorial pages, digital obituaries, and service delivery workflows",
     shortDescription:
-      "A product concept aimed at reducing paperwork and simplifying planning during emotionally difficult moments.",
+      "A Flutter Web and Firebase app for families and funeral-service teams to prepare memorial content and manage service orders.",
     fullDescription:
-      "Warm Memo is positioned as a thoughtful product concept with a service-oriented user experience. It is a strong portfolio candidate because it shows design intent, product framing, and implementation discipline.",
+      "WarmMemo combines shareable memorial pages and QR codes, obituary drafting and export, planning tools, and an administrator workspace for orders, suppliers, and delivery milestones.",
     role: "Product / Frontend Developer",
     teamType: "solo",
-    techStack: ["Dart", "Flutter"],
-    categories: ["Product Concept", "Mobile App", "Service Design"],
-    features: ["Service-focused experience", "Product framing", "Live deployment"],
+    techStack: ["Flutter", "Dart", "Firebase"],
+    categories: ["Web App", "Service Design", "Workflow Tool"],
+    features: [
+      "Shareable memorial pages and QR codes",
+      "Digital obituary drafting and export",
+      "Service orders and notifications",
+      "Supplier and delivery administration"
+    ],
     image: "/src/assets/images/projects/warmmemo.png",
     demoUrl: "https://leo0331.github.io/warmmemo/",
     repoUrl: "https://github.com/LEO0331/warmmemo",
@@ -209,20 +230,21 @@ export const projects: Project[] = [
   {
     id: "leave-request",
     slug: "leave-request",
-    name: "Leave Request",
-    tagline: "Interactive leave management system built with React, TypeScript, and MUI",
+    name: "Leave Management System",
+    tagline: "Role-aware leave approvals, balances, and reporting",
     shortDescription:
-      "An interactive leave management system with dynamic validation, automated duration calculation, and data handling.",
+      "A React, TypeScript, and MUI leave-management demo with employee and manager actions, balance-aware validation, and 10,000 seeded requests.",
     fullDescription:
-      "Leave Request is a stronger engineering portfolio piece because it combines React, TypeScript, UI component work, and more structured business logic around forms and validation.",
+      "Leave Management System tracks approval states and audit history, calculates business-day durations, supports searchable tables and CSV import/export, and validates requests against leave balances.",
     role: "Frontend Engineer",
     teamType: "solo",
-    techStack: ["React", "TypeScript", "MUI", "HTML"],
-    categories: ["Business App", "Frontend", "Forms"],
+    techStack: ["React", "TypeScript", "MUI"],
+    categories: ["Business App", "Frontend", "Form System"],
     features: [
-      "Dynamic form validation",
-      "Automated duration calculation",
-      "Interactive business workflow UI"
+      "Employee and manager approval workflow",
+      "Leave balances and business-day validation",
+      "Request audit history",
+      "Searchable tables and CSV portability"
     ],
     image: "/src/assets/images/projects/leave-request.png",
     demoUrl: "https://leo0331.github.io/LeaveRequest/",
@@ -234,16 +256,21 @@ export const projects: Project[] = [
     id: "resume-vault",
     slug: "resume-vault",
     name: "Resume Vault",
-    tagline: "Portfolio-supporting app related to resume or document presentation",
+    tagline: "Turn reusable career entries into tailored resumes",
     shortDescription:
-      "A browser-based project related to structured document or resume presentation.",
+      "A bilingual local-first app that matches reusable career entries to job descriptions and generates tailored resumes.",
     fullDescription:
-      "Resume Vault can be presented as a supporting utility project that aligns well with professional workflows and document-focused user needs.",
+      "Resume Vault offers an Experience Bank, simple and advanced workflows, ATS templates, job-description import, Markdown and Obsidian export, and JSON state portability.",
     role: "Frontend Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Utility", "Documents", "Web App"],
-    features: ["Document-oriented UI", "Static deployment"],
+    techStack: ["React", "TypeScript", "Vite"],
+    categories: ["Web App", "Documents", "Utility"],
+    features: [
+      "Reusable Experience Bank",
+      "Job-description matching",
+      "ATS resume templates",
+      "Markdown, Obsidian, and JSON export"
+    ],
     image: "/src/assets/images/projects/resume-vault.png",
     demoUrl: "https://leo0331.github.io/resume_vault/",
     repoUrl: "https://github.com/LEO0331/resume_vault",
@@ -253,32 +280,37 @@ export const projects: Project[] = [
   {
     id: "amazon-app",
     slug: "amazon-app",
-    name: "Amazon App",
-    tagline: "Frontend commerce-style interface project",
+    name: "Family Cabinet",
+    tagline: "A living archive of family-made objects and collected keepsakes",
     shortDescription:
-      "A browser-based project inspired by commerce-style application patterns and interface structure.",
+      "A bilingual digital archive for documenting objects a family makes, keeps, and collects, including their stories and history.",
     fullDescription:
-      "Amazon App is useful as a front-end showcase project for layout composition, component thinking, and UI pattern replication.",
+      "Family Cabinet presents handmade and collected objects through searchable archive records, detail pages, and URL-preserved filters. The public collection uses fictional demonstration objects and illustrations.",
     role: "Frontend Developer",
     teamType: "solo",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    categories: ["Web App", "Frontend", "E-commerce UI"],
-    features: ["Commerce-style interface patterns", "Static deployment"],
+    techStack: ["Astro", "TypeScript", "HTML", "CSS"],
+    categories: ["Web App", "Archive", "Frontend"],
+    features: [
+      "Made and collected object records",
+      "Search and URL-preserved filters",
+      "Object stories and history",
+      "English and Traditional Chinese routes"
+    ],
     image: "/src/assets/images/projects/amazon-app.png",
-    demoUrl: "https://leo0331.github.io/amazon-app/",
-    repoUrl: "https://github.com/LEO0331/amazon-app",
+    demoUrl: "https://leo0331.github.io/family-cabinet/",
+    repoUrl: "https://github.com/LEO0331/family-cabinet",
     status: "live",
     featured: false
   },
   {
     id: "toyrobot",
     slug: "toyrobot",
-    name: "ToyRobot",
+    name: "Toy Robot",
     tagline: "Simulation program for a toy robot moving on a tabletop",
     shortDescription:
       "A simulation-style application that models a toy robot moving on a tabletop according to defined commands.",
     fullDescription:
-      "ToyRobot is a useful portfolio project for demonstrating programming logic, state handling, and rule-based movement behavior.",
+      "Toy Robot shares a command engine between a CLI simulator and an interactive browser game, with command scripts, demo presets, and a live 6×6 board.",
     role: "JavaScript Developer",
     teamType: "solo",
     techStack: ["JavaScript", "HTML", "CSS"],
@@ -293,56 +325,71 @@ export const projects: Project[] = [
   {
     id: "email-website",
     slug: "email-website",
-    name: "Email Website",
-    tagline: "Live-deployed project hosted on Vercel",
+    name: "Competition Practice",
+    tagline: "Accessible environmental-knowledge quiz practice",
     shortDescription:
-      "A web project deployed on Vercel, useful as a portfolio piece showing deployment beyond GitHub Pages.",
+      "A Traditional Chinese quiz app designed for older learners, with large text, simple controls, and environmental-knowledge question banks.",
     fullDescription:
-      "Email Website broadens the hosting profile of the portfolio by demonstrating that projects are not limited to GitHub Pages and can also be deployed on Vercel.",
+      "Competition Practice supports question-by-question feedback, wrong-answer review, locally saved progress, and source-preserving environmental study notes and image cards.",
     role: "Frontend / Web Developer",
     teamType: "solo",
-    techStack: ["React", "TypeScript", "Vercel"],
-    categories: ["Web App", "Deployment", "Frontend"],
-    features: ["Vercel deployment", "Live public demo"],
+    techStack: ["Next.js", "React", "TypeScript"],
+    categories: ["Web App", "Education", "Accessibility"],
+    features: [
+      "Large text and simple quiz controls",
+      "Answer feedback and wrong-answer review",
+      "Browser-local progress",
+      "Source-linked notes and image cards"
+    ],
     image: "/src/assets/images/projects/email-website.png",
-    demoUrl: "https://email-website-chi.vercel.app/",
-    repoUrl: "https://github.com/LEO0331/email_website",
+    demoUrl: "https://leo0331.github.io/competition-practice/",
+    repoUrl: "https://github.com/LEO0331/competition-practice",
     status: "live",
     featured: false
   },
   {
     id: "robotfriends",
     slug: "robotfriends",
-    name: "RobotFriends",
-    tagline: "Frontend project for interactive browser-based exploration",
+    name: "Gridline",
+    tagline: "Investigate data-center buildout through dated primary-source evidence",
     shortDescription:
-      "A public browser-based front-end project suitable for demonstrating interactivity and interface implementation.",
+      "A bilingual research dashboard connecting grid demand, infrastructure project records, company disclosures, and market-price context.",
     fullDescription:
-      "RobotFriends is a familiar portfolio-style front-end project that can still serve as evidence of React and UI skills if presented cleanly.",
-    role: "Frontend Developer",
+      "Gridline brings EIA load records, verified project milestones, SEC company facts, and descriptive price analysis into a source-first research workflow, with dates and data-health gaps visible.",
+    role: "Full Stack / Research Dashboard Developer",
     teamType: "solo",
-    techStack: ["React", "JavaScript", "HTML", "CSS"],
-    categories: ["Frontend", "Web App"],
-    features: ["Interactive browser UI", "Live public demo"],
+    techStack: ["React", "JavaScript", "Node.js", "Supabase"],
+    categories: ["Web App", "Dashboard", "Data Visualization"],
+    features: [
+      "Grid-demand evidence",
+      "Dated infrastructure milestones",
+      "SEC company disclosures",
+      "Source dates and data-health tracking"
+    ],
     image: "/src/assets/images/projects/robotfriends.png",
-    demoUrl: "https://leo0331.github.io/RobotFriends/",
-    repoUrl: "https://github.com/LEO0331/RobotFriends",
+    demoUrl: "https://leo0331.github.io/Gridline/",
+    repoUrl: "https://github.com/LEO0331/Gridline",
     status: "live",
     featured: false
   },
   {
     id: "epubreader",
     slug: "epubreader",
-    name: "EPUB Reader",
-    tagline: "Reader-style web app deployed on Vercel",
-    shortDescription: "A live-deployed reader-focused project hosted on Vercel.",
+    name: "Book QA Library",
+    tagline: "Private-library ingestion and citation-grounded answers",
+    shortDescription: "A local-first bilingual library system for ingesting EPUB and web sources, inspecting parsed content, and asking questions with citations.",
     fullDescription:
-      "EPUB Reader expands the portfolio with a reader-oriented experience and demonstrates another deployed web application outside GitHub Pages.",
-    role: "Frontend / Web Developer",
+      "Book QA Library combines a FastAPI ingestion and retrieval backend with a Next.js interface. Parser mode supports content inspection; API mode adds generated artifacts, grounded Q&A, collections, and exports.",
+    role: "Full Stack / AI App Developer",
     teamType: "solo",
-    techStack: ["React", "TypeScript", "Vercel"],
-    categories: ["Web App", "Reader", "Frontend"],
-    features: ["Reader-oriented interface", "Vercel deployment", "Live public demo"],
+    techStack: ["Next.js", "TypeScript", "Python", "FastAPI", "Chroma"],
+    categories: ["Web App", "AI Workflow", "Documents"],
+    features: [
+      "EPUB and web ingestion",
+      "Section and chunk inspection",
+      "Citation-grounded Q&A",
+      "Artifact and collection exports"
+    ],
     image: "/src/assets/images/projects/epubreader.png",
     demoUrl: "https://epubreader-theta.vercel.app/",
     repoUrl: "https://github.com/LEO0331/epubreader",
@@ -352,20 +399,21 @@ export const projects: Project[] = [
   {
     id: "prosemasters-skill",
     slug: "prosemasters-skill",
-    name: "ProseMasters Skill",
-    tagline: "Reusable Codex/Claude skill package for writing quality workflows",
+    name: "World Author Persona Builder",
+    tagline: "Distill historical writing into reusable literary-persona skills",
     shortDescription:
-      "A reusable skill repository focused on structured writing workflows and practical prompt execution patterns.",
+      "A tool for turning historical texts, biographies, and commentary into structured master-persona skills and wiki artifacts.",
     fullDescription:
-      "ProseMasters Skill is a tooling-oriented project that packages writing and workflow guidance into reusable skill artifacts for AI coding assistants.",
+      "World Author Persona Builder combines author identity, literary memory, values, and writing traits through form or JSON input, then generates reusable SKILL.md and wiki.md outputs.",
     role: "Tooling / Prompt Engineer",
     teamType: "solo",
-    techStack: ["Markdown", "Prompt Engineering", "GitHub"],
-    categories: ["Developer Tooling", "AI Workflow", "Documentation"],
+    techStack: ["Python", "JavaScript"],
+    categories: ["Developer Tool", "AI Workflow", "Documents"],
     features: [
-      "Reusable skill artifact structure",
-      "Workflow-oriented prompt templates",
-      "Versioned GitHub distribution"
+      "Author identity and persona forms",
+      "Historical-source classification",
+      "JSON import/export",
+      "SKILL.md and wiki.md generation"
     ],
     image: "/src/assets/images/projects/prosemasters-skill.png",
     demoUrl: "https://prosemasters-skill.vercel.app/",
@@ -376,12 +424,12 @@ export const projects: Project[] = [
   {
     id: "skill-gen",
     slug: "skill-gen",
-    name: "Skill Gen",
+    name: "3-File to SKILL.md Generator",
     tagline: "Tooling utility to turn frontend assets into reusable skill artifacts",
     shortDescription:
-      "Turn index.html, style.css, and script.js into reusable skills.md artifacts.",
+      "Turn index.html, style.css, and script.js into reusable SKILL.md artifacts.",
     fullDescription:
-      "Skill Gen is a tooling utility in the projects_drafts workspace designed to convert static frontend files into reusable skills.md artifacts for repeatable AI-assisted workflows.",
+      "3-File to SKILL.md Generator is a tooling utility in the projects_drafts workspace designed to convert static frontend files into reusable SKILL.md artifacts for repeatable AI-assisted workflows.",
     role: "Tooling / Frontend Developer",
     teamType: "solo",
     techStack: ["JavaScript", "HTML", "CSS", "GitHub Pages"],
@@ -400,20 +448,21 @@ export const projects: Project[] = [
   {
     id: "ppt-design-md",
     slug: "ppt-design-md",
-    name: "PPT Design MD",
-    tagline: "Markdown-first workflow for structured slide and presentation design",
+    name: "pptx-design-md",
+    tagline: "Extract reusable visual rules from PowerPoint decks",
     shortDescription:
-      "A repository focused on building presentation content through markdown-driven structure and reusable design patterns.",
+      "A tool that analyzes one or more PowerPoint files and generates editable design.md rules and structured analysis.json output.",
     fullDescription:
-      "PPT Design MD is a workflow-oriented project for creating and organizing presentation assets with markdown-based authoring. It demonstrates documentation discipline, reusable structure, and practical content-design tooling.",
+      "pptx-design-md extracts colors, typography, spacing, and recurring layout patterns from presentations, with batch analysis, a Markdown editor, and downloadable design artifacts.",
     role: "Tooling / Documentation Developer",
     teamType: "solo",
-    techStack: ["Markdown", "Documentation", "GitHub"],
-    categories: ["Developer Tooling", "Documentation", "Workflow Tool"],
+    techStack: ["Python", "FastAPI", "JavaScript"],
+    categories: ["Developer Tool", "Documents", "Workflow Tool"],
     features: [
-      "Markdown-first content workflow",
-      "Reusable presentation structure",
-      "Version-controlled collaboration via GitHub"
+      "Single and batch PPTX analysis",
+      "Color and typography extraction",
+      "Editable design.md output",
+      "Structured analysis.json export"
     ],
     image: "/src/assets/images/projects/ppt-design-md.png",
     demoUrl: "https://ppt-design-md.vercel.app/",
@@ -449,20 +498,21 @@ export const projects: Project[] = [
   {
     id: "wordpressparser",
     slug: "wordpressparser",
-    name: "WordPress Parser",
-    tagline: "Parsing utility for extracting and structuring WordPress content",
+    name: "WordPress Persona Parser",
+    tagline: "Turn blog sources into skills, wikis, and portable Markdown",
     shortDescription:
-      "A utility project for parsing WordPress data into cleaner, structured outputs suitable for downstream workflows.",
+      "A bilingual tool that parses WordPress JSON or public URLs into knowledge and persona artifacts, with XML-to-Markdown migration.",
     fullDescription:
-      "WordPress Parser focuses on content extraction and transformation from WordPress sources. It demonstrates practical tooling, data handling, and workflow-oriented implementation for documentation or migration scenarios.",
+      "WordPress Persona Parser supports deterministic parser and optional AI generation modes, reusable skill/wiki outputs, versioned profiles, and Obsidian-ready Markdown ZIP exports from WordPress XML.",
     role: "Utility / Data Workflow Developer",
     teamType: "solo",
-    techStack: ["JavaScript", "Node.js", "Parser Tooling"],
-    categories: ["Utility", "Workflow Tool", "Developer Tooling"],
+    techStack: ["Node.js", "JavaScript", "Express"],
+    categories: ["Developer Tool", "AI Workflow", "Documents"],
     features: [
-      "WordPress content parsing",
-      "Structured data output",
-      "Workflow-oriented utility design"
+      "WordPress JSON and URL ingestion",
+      "Knowledge and persona analysis",
+      "Skill and wiki generation",
+      "XML-to-Obsidian Markdown ZIP migration"
     ],
     image: "/src/assets/images/projects/wordpressparser.png",
     demoUrl: "https://wordpressparser.vercel.app/",
@@ -473,20 +523,21 @@ export const projects: Project[] = [
   {
     id: "wordpress",
     slug: "wordpress",
-    name: "WordPress",
-    tagline: "WordPress-focused project and implementation workspace",
+    name: "Leo's WordPress-to-GitHub Blog Archive",
+    tagline: "Preserve a WordPress blog as a portable Jekyll archive",
     shortDescription:
-      "A repository centered on WordPress development, customization, and practical website implementation workflows.",
+      "A WordPress-to-Jekyll migration project preserving blog posts and local image assets on GitHub Pages.",
     fullDescription:
-      "WordPress is a practical implementation project for content-driven websites and publishing workflows. It is suitable for demonstrating CMS-oriented development, customization capability, and real-world delivery in WordPress ecosystems.",
-    role: "Web Developer",
+      "Leo's WordPress-to-GitHub Blog Archive keeps exported WordPress content in a static Jekyll site, with Ruby migration scripts, rewritten image links, and category pages for long-term ownership.",
+    role: "Web / Content Migration Developer",
     teamType: "solo",
-    techStack: ["WordPress", "PHP", "CSS", "JavaScript"],
-    categories: ["Web App", "CMS", "Frontend"],
+    techStack: ["Ruby", "Jekyll", "HTML", "CSS"],
+    categories: ["Web App", "Archive", "Documents"],
     features: [
-      "WordPress implementation workflow",
-      "CMS-oriented customization",
-      "Content publishing support"
+      "WordPress XML migration",
+      "Local image preservation",
+      "Category and article browsing",
+      "Static GitHub Pages archive"
     ],
     image: "/src/assets/images/projects/wordpress.png",
     demoUrl: "https://leo0331.github.io/wordpress/",
@@ -497,20 +548,21 @@ export const projects: Project[] = [
   {
     id: "rednote-gallery",
     slug: "rednote-gallery",
-    name: "Rednote Gallery",
-    tagline: "Gallery-style web experience for curated visual note content",
+    name: "RedNote Milestone Gallery",
+    tagline: "Browse RedNote badges, achievements, and growth snapshots",
     shortDescription:
-      "A frontend gallery project focused on clear visual presentation, browsing flow, and lightweight interaction.",
+      "A static gallery for RedNote / Xiaohongshu milestone screenshots with tag filters, sorting, and lightbox previews.",
     fullDescription:
-      "Rednote Gallery showcases a structured, presentation-first gallery experience built for fast scanning and clean content display. It works well as a portfolio piece for UI organization, responsive layout execution, and user-facing polish.",
+      "RedNote Milestone Gallery presents repository-managed badge and achievement images in a responsive layout, with theme switching and English, Traditional Chinese, and Simplified Chinese interfaces.",
     role: "Frontend Developer",
     teamType: "solo",
-    techStack: ["React", "TypeScript", "CSS", "UI Design"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     categories: ["Web App", "Frontend", "Gallery"],
     features: [
-      "Gallery-first browsing interface",
-      "Responsive layout behavior",
-      "Clear content hierarchy"
+      "Milestone and badge gallery",
+      "Tag filters and date sorting",
+      "Lightbox image previews",
+      "Three-language and theme switching"
     ],
     image: "/src/assets/images/projects/rednote-gallery.png",
     demoUrl: "https://leo0331.github.io/rednote-gallery/",
@@ -522,20 +574,20 @@ export const projects: Project[] = [
     id: "craftfocus",
     slug: "craftfocus",
     name: "CraftFocus",
-    tagline: "Focus-and-sharing app for handmade projects with pixel room progression",
+    tagline: "Focus sessions become seeds, room decorations, and shared crafts",
     shortDescription:
-      "A productivity-oriented app that helps users stay focused, unlock pixel room items, and share handmade projects with friends.",
+      "An Expo React Native app for iOS, Android, and Web that rewards focus sessions with seeds for room items and handmade collectibles.",
     fullDescription:
-      "CraftFocus combines focus sessions, visual progression, and lightweight social sharing to support creative habits. It demonstrates product-oriented UX, TypeScript implementation, and GitHub Pages deployment.",
+      "CraftFocus combines protected focus timers, a seed wallet, official and custom craft claims, 2.5D room decoration, collectible galleries, and social visits backed by Supabase.",
     role: "Product / Frontend Developer",
     teamType: "solo",
-    techStack: ["TypeScript", "React Native", "Expo", "Supabase"],
+    techStack: ["React Native", "Expo", "TypeScript", "Supabase"],
     categories: ["Productivity", "Social App", "Mobile App"],
     features: [
-      "Focus timer workflow",
-      "Pixel room unlock progression",
-      "Handmade project sharing",
-      "Live public deployment"
+      "Focus timers and seed rewards",
+      "Room decoration and collectibles",
+      "Custom craft listings and claims",
+      "Friend rooms and social interactions"
     ],
     image: "/src/assets/images/projects/craftfocus.png",
     demoUrl: "https://leo0331.github.io/craftfocus/",
@@ -546,24 +598,24 @@ export const projects: Project[] = [
   {
     id: "publicsafetydashboard",
     slug: "publicsafetydashboard",
-    name: "Public Safety Dashboard",
-    tagline: "Full-stack dashboard for Taipei traffic-safety PDF announcements",
+    name: "Taipei Repeat DUI / Drug-Impaired / Test-Refusal Education Dashboard",
+    tagline: "Explore repeat DUI, drug-impaired, and test-refusal announcements",
     shortDescription:
-      "An educational dashboard that ingests Taipei public traffic-safety PDF announcements and presents searchable records, statistics, filters, and map visualization.",
+      "An educational dashboard that parses Taipei public PDF announcements about repeat impaired-driving and test-refusal records.",
     fullDescription:
-      "Public Safety Dashboard demonstrates a full-stack data workflow: Python ingestion for public PDF announcements, SQLite-backed storage, and a Next.js interface for filtering, statistics, and map-based exploration. It is useful as a portfolio project because it connects data processing, backend persistence, and recruiter-visible dashboard UX.",
+      "This Next.js, SQLite, and Python dashboard supports announcement ingestion, filters, descriptive statistics, map views, CSV exports, and review of parser rows and source freshness.",
     role: "Full Stack / Data Dashboard Developer",
     teamType: "solo",
-    techStack: ["TypeScript", "Next.js", "SQLite", "Python", "Data Visualization"],
+    techStack: ["Next.js", "TypeScript", "Python", "SQLite"],
     categories: ["Web App", "Dashboard", "Data Visualization"],
     features: [
-      "PDF announcement ingestion workflow",
-      "Search and filtering interface",
-      "Dashboard statistics",
-      "Map-based data visualization"
+      "Public PDF ingestion",
+      "Violation and repeat-count filters",
+      "Descriptive statistics and map views",
+      "CSV exports and parser review"
     ],
     image: "/src/assets/images/projects/publicsafetydashboard.png",
-    demoUrl: "https://publicsafetydashboard.onrender.com",
+    demoUrl: "https://publicsafetydashboard.onrender.com/",
     repoUrl: "https://github.com/LEO0331/publicsafetydashboard",
     status: "live",
     featured: false
@@ -571,21 +623,21 @@ export const projects: Project[] = [
   {
     id: "taipei-bin-map",
     slug: "taipei-bin-map",
-    name: "Taipei Bin Map",
-    tagline: "Mobile-first bilingual map for finding public garbage bins in Taipei",
+    name: "Taipei Public Amenities Map",
+    tagline: "Find Taipei public amenities across official datasets",
     shortDescription:
-      "A bilingual web app that helps pedestrians find nearby public garbage bins in Taipei through a mobile-first map and search experience.",
+      "A mobile-first bilingual map and directory for Taipei public amenities, with source-specific filters and nearby sorting.",
     fullDescription:
-      "Taipei Bin Map turns public city-service information into a practical, mobile-first utility. It focuses on nearby-bin discovery, bilingual usability, and a PWA-ready front-end structure suitable for quick access while walking around Taipei.",
+      "Taipei Public Amenities Map combines official local datasets, Leaflet maps, accessible directories and tables, CSV exports, and offline-friendly caching to help visitors inspect published facility records.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
-    techStack: ["TypeScript", "Vite", "CSS", "JavaScript", "Map UI"],
-    categories: ["Web App", "Maps", "Civic Tech"],
+    techStack: ["React", "TypeScript", "Vite", "Leaflet"],
+    categories: ["Web App", "Map Tool", "Civic Tech"],
     features: [
-      "Nearby public bin discovery",
-      "Mobile-first map experience",
-      "Bilingual interface",
-      "PWA-ready application structure"
+      "Public-amenity maps and directories",
+      "District and source-specific filters",
+      "Nearby sorting and address lookup",
+      "CSV export and offline-friendly caching"
     ],
     image: "/src/assets/images/projects/taipei-bin-map.png",
     demoUrl: "https://taipei-bin-map.vercel.app/",
@@ -596,12 +648,12 @@ export const projects: Project[] = [
   {
     id: "taipei-crash-map",
     slug: "taipei-crash-map",
-    name: "Taipei Crash Map",
+    name: "Taipei Traffic Accident Hotspot Map",
     tagline: "Bilingual dashboard for exploring Taipei traffic accident hotspots",
     shortDescription:
       "A mobile-first map and dashboard for exploring historical Taipei A1/A2 crash points, intersection hotspots, and traffic-safety statistics.",
     fullDescription:
-      "Taipei Crash Map turns public traffic-accident records into an accessible bilingual exploration tool. It combines location and time filters, clustered and heat-map views, aggregate factor charts, and procedural traffic datasets in a responsive PWA-ready interface.",
+      "Taipei Traffic Accident Hotspot Map turns public traffic-accident records into an accessible bilingual exploration tool. It combines location and time filters, clustered and heat-map views, aggregate factor charts, and procedural traffic datasets in a responsive PWA-ready interface.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
@@ -621,12 +673,12 @@ export const projects: Project[] = [
   {
     id: "taipei-faith-map",
     slug: "taipei-faith-map",
-    name: "Taipei Faith Map",
+    name: "Taipei Registered Religious Groups Map",
     tagline: "Bilingual directory map of registered religious groups in Taipei",
     shortDescription:
       "A mobile-first map for searching and exploring officially registered religious organizations across Taipei.",
     fullDescription:
-      "Taipei Faith Map converts public registration and coordinate data into a practical bilingual directory. It demonstrates data conversion, coordinate-system handling, clustered map markers, filtering, and responsive civic-tech interface design.",
+      "Taipei Registered Religious Groups Map converts public registration and coordinate data into a practical bilingual directory. It demonstrates data conversion, coordinate-system handling, clustered map markers, filtering, and responsive civic-tech interface design.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Proj4"],
@@ -646,12 +698,12 @@ export const projects: Project[] = [
   {
     id: "taipei-1999-map",
     slug: "taipei-1999-map",
-    name: "Taipei 1999 Map",
+    name: "Taipei 1999 Service Request Map",
     tagline: "Privacy-aware dashboard for Taipei 1999 service request data",
     shortDescription:
       "A bilingual map and dashboard for exploring Taipei 1999 dispatched service requests alongside related public-works datasets.",
     fullDescription:
-      "Taipei 1999 Map presents public service-request data through district, time, category, and location filters while deliberately removing private address details. It also connects streetlight maintenance, construction audits, and stop/resume-work records in a mobile-first interface.",
+      "Taipei 1999 Service Request Map presents public service-request data through district, time, category, and location filters while deliberately removing private address details. It also connects streetlight maintenance, construction audits, and stop/resume-work records in a mobile-first interface.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Papa Parse"],
@@ -721,12 +773,12 @@ export const projects: Project[] = [
   {
     id: "taipei-safety-map",
     slug: "taipei-safety-map",
-    name: "Taipei Safety Map",
+    name: "Taipei Public Safety Map",
     tagline: "Multi-dataset public safety map and resource dashboard for Taipei",
     shortDescription:
       "A bilingual map and dashboard for exploring Taipei emergency resources, infrastructure, and carefully scoped historical safety records.",
     fullDescription:
-      "Taipei Safety Map organizes public emergency, medical, fire, traffic, environmental, and historical incident datasets without producing a misleading combined safety score. It showcases large-scale data ingestion, geospatial layers, privacy-aware presentation, and responsible data communication.",
+      "Taipei Public Safety Map organizes public emergency, medical, fire, traffic, environmental, and historical incident datasets without producing a misleading combined safety score. It showcases large-scale data ingestion, geospatial layers, privacy-aware presentation, and responsible data communication.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Vitest"],
@@ -796,18 +848,18 @@ export const projects: Project[] = [
   {
     id: "taipei-civic-groups-map",
     slug: "taipei-civic-groups-map",
-    name: "Taipei Public Data Explorer",
+    name: "Taipei Public Records Explorer",
     tagline: "Searchable bilingual catalogue for Taipei public-service directories",
     shortDescription:
-      "A topic-based dashboard for searching, filtering, comparing, and exporting more than 100 Taipei public-data directories.",
+      "A bilingual guide to selected Taipei public records, with a searchable catalogue spanning health, care, work, culture, and city services.",
     fullDescription:
-      "Taipei Public Data Explorer expands beyond its original civic-groups scope into a catalogue of public services, healthcare, welfare, culture, labor, business, and community datasets. It provides dataset-specific filtering, source-field details, CSV export, and visible data-freshness evidence.",
+      "Taipei Public Records Explorer organizes public directories, administrative records, and descriptive summaries into topic-based views, with source-specific filters, CSV exports, comparison tools, and data-quality context.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Open Data"],
     categories: ["Dashboard", "Directory", "Civic Tech"],
     features: [
-      "Catalogue of 100+ public-data directories",
+      "Topic-based public-record catalogue",
       "Dataset-specific search and filters",
       "Source-field details and CSV export",
       "Data freshness and privacy guidance"
@@ -821,12 +873,12 @@ export const projects: Project[] = [
   {
     id: "taipei-real-estate-dashboard",
     slug: "taipei-real-estate-dashboard",
-    name: "Taipei Real Estate Dashboard",
+    name: "Taipei Real Estate & Demographics Dashboard",
     tagline: "Real-price, housing, and demographic insights across Taipei",
     shortDescription:
       "A mobile-first bilingual dashboard for exploring Taipei real-price records, market trends, land and development data, and demographic context.",
     fullDescription:
-      "Taipei Real Estate Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. It demonstrates an extensive static-data pipeline and recruiter-visible analytical UI with careful methodology notes.",
+      "Taipei Real Estate & Demographics Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. It demonstrates an extensive static-data pipeline and recruiter-visible analytical UI with careful methodology notes.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Recharts", "Open Data"],
@@ -846,20 +898,21 @@ export const projects: Project[] = [
   {
     id: "genomic-data-science-with-galaxy-project",
     slug: "genomic-data-science-with-galaxy-project",
-    name: "Genomic Data Science with Galaxy Project",
-    tagline: "Interactive genomic variant workflow case-study web app",
+    name: "Genome Variant Case Study Explorer",
+    tagline: "Present Galaxy workflows and explore genomic variants",
     shortDescription:
-      "A genomic workflow web app for browser-based VCF exploration, filtering, and CSV export powered by Galaxy-generated results.",
+      "An interactive case-study app for presenting Galaxy-generated results, exploring VCF records, and exporting filtered variants.",
     fullDescription:
-      "This project demonstrates practical bioinformatics workflow delivery in a user-facing web interface. It includes variant exploration and filtering features designed for clear result inspection and downstream analysis export.",
+      "Genome Variant Case Study Explorer offers workflow storytelling, bundled or uploaded VCF exploration, CSV exports, and downloadable artifacts; genomic computation is performed outside the web app.",
     role: "Bioinformatics / Full Stack Developer",
     teamType: "solo",
-    techStack: ["TypeScript", "Bioinformatics", "Galaxy", "Web App"],
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Bioinformatics"],
     categories: ["Web App", "Data Science", "Bioinformatics"],
     features: [
-      "Browser-based VCF exploration",
-      "Variant filtering workflow",
-      "CSV export for downstream analysis"
+      "Galaxy workflow presentation",
+      "Sample and uploaded VCF exploration",
+      "Variant filtering and CSV export",
+      "Downloadable project artifacts"
     ],
     image: "/src/assets/images/projects/genomic-data-science-with-galaxy-project.png",
     demoUrl: "https://genomic-data-science-with-galaxy-pr.vercel.app/",
@@ -870,21 +923,21 @@ export const projects: Project[] = [
   {
     id: "thalassemia-seq-analysis",
     slug: "thalassemia-seq-analysis",
-    name: "Thalassemia SEQ Analysis",
-    tagline: "Sanger .ab1 upload and primer-specific thalassemia mutation analysis",
+    name: "Thalassemia Sanger Sequencing Mutation Checker",
+    tagline: "Review Sanger files with primer-specific mutation and QC checks",
     shortDescription:
-      "Upload .ab1 Sanger files, run primer-specific thalassemia mutation checks, review QC/mutation results, and export JSON reports.",
+      "A research prototype for uploading .ab1 Sanger files, selecting primer groups, and reviewing deterministic mutation and quality-control results.",
     fullDescription:
-      "Thalassemia SEQ Analysis focuses on a domain-specific sequence analysis workflow with practical reporting output. It showcases applied bioinformatics tooling in a usable browser interface for mutation-focused review.",
+      "This Next.js and FastAPI prototype combines primer-specific sequence checks with browser-based result review and structured JSON reports for educational and research workflows.",
     role: "Bioinformatics Developer",
     teamType: "solo",
-    techStack: ["Python", "Bioinformatics", "Sanger Sequencing", "Web App"],
-    categories: ["Web App", "Bioinformatics", "Healthcare"],
+    techStack: ["Next.js", "Python", "FastAPI", "Bioinformatics"],
+    categories: ["Web App", "Bioinformatics", "Research"],
     features: [
-      "AB1 file upload pipeline",
-      "Primer-specific mutation checks",
-      "QC and mutation result display",
-      "JSON report export"
+      "AB1 upload and primer selection",
+      "Deterministic mutation checks",
+      "Quality-control result review",
+      "Structured JSON report export"
     ],
     image: "/src/assets/images/projects/thalassemia-seq-analysis.png",
     demoUrl: "https://thalassemia-seq-analysis.vercel.app/",

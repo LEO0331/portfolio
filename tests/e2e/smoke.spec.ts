@@ -45,9 +45,9 @@ test.describe("Portfolio smoke", () => {
   test("[COV-04] projects search narrows results", async ({ page }) => {
     await page.goto("./projects");
 
-    await page.getByPlaceholder("Search by name, tagline, description, category, or tech").fill("toyrobot");
-    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
-    await expect(page.getByRole("heading", { name: "AssistantHub" })).toHaveCount(0);
+    await page.getByPlaceholder("Search by name, tagline, description, category, or tech").fill("toy robot");
+    await expect(page.getByRole("heading", { name: "Toy Robot" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "AssistantHub Talent Pool" })).toHaveCount(0);
   });
 
   test("[COV-05] projects filters by category, technology, and status", async ({ page }) => {
@@ -58,7 +58,7 @@ test.describe("Portfolio smoke", () => {
     await page.getByLabel("Technology").selectOption("web-fundamentals");
     await page.getByLabel("Status").selectOption("live");
 
-    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Toy Robot" })).toBeVisible();
     const filteredCount = await page.locator("article h2").count();
     expect(filteredCount).toBeGreaterThan(0);
     expect(filteredCount).toBeLessThan(initialCount);
@@ -140,9 +140,9 @@ test.describe("Portfolio smoke", () => {
   test("[COV-12] project detail drawer opens and closes with URL sync", async ({ page }) => {
     await page.goto("./projects");
 
-    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "ToyRobot" }) }).first();
+    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "Toy Robot" }) }).first();
     await toyRobotCard.getByRole("button", { name: "View Details" }).click();
-    const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
+    const drawer = page.getByRole("dialog", { name: "Project details for Toy Robot" });
     await expect(drawer).toBeVisible();
     await expect(drawer).toBeFocused();
     await expect(page).toHaveURL(/\/portfolio\/projects\?project=toyrobot$/);
@@ -159,24 +159,24 @@ test.describe("Portfolio smoke", () => {
   test("[COV-13] detail drawer supports Escape and backdrop close", async ({ page }) => {
     await page.goto("./projects");
 
-    const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub" }) }).first();
+    const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub Talent Pool" }) }).first();
     await assistantHubCard.getByRole("button", { name: "View Details" }).click();
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toBeVisible();
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toBeVisible();
     await page.keyboard.press("Escape");
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toHaveCount(0);
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toHaveCount(0);
 
     await assistantHubCard.getByRole("button", { name: "View Details" }).click();
-    const reopenedDrawer = page.getByRole("dialog", { name: "Project details for AssistantHub" });
+    const reopenedDrawer = page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" });
     await expect(reopenedDrawer).toBeVisible();
     await page.getByTestId("project-detail-overlay").evaluate((element) => {
       (element as HTMLElement).click();
     });
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub" })).toHaveCount(0);
+    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toHaveCount(0);
   });
 
   test("[COV-14] deep-link query opens project drawer on initial load", async ({ page }) => {
     await page.goto("./projects?project=toyrobot");
-    await expect(page.getByRole("dialog", { name: "Project details for ToyRobot" })).toBeVisible();
+    await expect(page.getByRole("dialog", { name: "Project details for Toy Robot" })).toBeVisible();
   });
 
   test("[COV-15] mobile drawer opens and preserves filter/search state", async ({ page }) => {
@@ -184,12 +184,12 @@ test.describe("Portfolio smoke", () => {
     await page.goto("./projects");
 
     const searchInput = page.getByPlaceholder("Search by name, tagline, description, category, or tech");
-    await searchInput.fill("toyrobot");
-    await expect(page.getByRole("heading", { name: "ToyRobot" })).toBeVisible();
+    await searchInput.fill("toy robot");
+    await expect(page.getByRole("heading", { name: "Toy Robot" })).toBeVisible();
 
-    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "ToyRobot" }) }).first();
+    const toyRobotCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "Toy Robot" }) }).first();
     await toyRobotCard.getByRole("button", { name: "View Details" }).click();
-    const drawer = page.getByRole("dialog", { name: "Project details for ToyRobot" });
+    const drawer = page.getByRole("dialog", { name: "Project details for Toy Robot" });
     await expect(drawer).toBeVisible();
     await expect(page.getByRole("button", { name: "Close project details" })).toBeVisible();
 
@@ -198,7 +198,7 @@ test.describe("Portfolio smoke", () => {
 
     await page.keyboard.press("Escape");
     await expect(drawer).toHaveCount(0);
-    await expect(searchInput).toHaveValue("toyrobot");
+    await expect(searchInput).toHaveValue("toy robot");
   });
 
   test("[COV-16] traditional chinese route renders localized project content", async ({ page }) => {
@@ -207,7 +207,7 @@ test.describe("Portfolio smoke", () => {
     await expect(page).toHaveURL(/\/portfolio\/zh\/projects$/);
     await expect(page.getByRole("heading", { name: "專案", level: 1 })).toBeVisible();
     await expect(page.getByPlaceholder("可搜尋名稱、標語、描述、分類或技術")).toBeVisible();
-    await expect(page.getByText("剩食媒合概念，支援就近預約取餐")).toBeVisible();
+    await expect(page.getByText("剩食媒合與取餐安排")).toBeVisible();
   });
 
   test("[COV-17] canonical and social metadata use crawlable deployment paths", async ({ page }) => {
