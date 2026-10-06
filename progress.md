@@ -6,7 +6,7 @@
 
 **Active work:** GitHub-pinned homepage project selection
 
-**Status:** Published and verified on the live homepage. Authenticated GitHub pin/repository scan and runner checks passed; Actions PR creation was enabled with user approval, and the final workflow run is being verified.
+**Status:** Complete and deployed. Live homepage selection verified; authenticated maintenance run 37396328563 succeeded and automatically opened draft PR #15.
 
 ### Completed
 
@@ -34,7 +34,7 @@
 
 ### Next Session Should
 
-1. Verify the monthly Actions job's authenticated GraphQL query and PR creation, then review/merge its initial scan baseline.
+1. Review draft PR #15's initial scan baseline and proposed WanderStamp demo URL before merging; authenticated pin sync and automatic PR creation are verified.
 2. Keep future project IDs stable and curate any unlisted pinned project before accepting the sync.
 3. Address the separate braces-chain advisories as a scoped toolchain change.
 
@@ -160,3 +160,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Published implementation commit ca68f77; live GitHub Pages homepage verified with all five project cards in profile pin order. Updated both languages' section copy to describe pin selection rather than status/name ranking.
 - First authenticated run 37395955885 succeeded at GraphQL query, full repository scan, 20 unit tests, 26 browser tests, build/typecheck, harness and diff gates; audit reported the same 5 existing advisories. It preserved the exact saved pin order and proposed a WanderStamp demo URL update.
 - Automatic PR creation failed because repository Actions PR creation was disabled. User explicitly approved enabling that setting; saved state was verified in GitHub settings. Added same-run branch recovery so retrying a post-push PR failure preserves the scan branch rather than failing a non-fast-forward push.
+- Final live verification: https://github.com/LEO0331/portfolio/actions/runs/37396328563 completed successfully on dbb0854, including authenticated scan, 20 unit tests, 26 browser tests, TypeScript/build, harness/diff checks, and automatic creation of draft PR #15 (https://github.com/LEO0331/portfolio/pull/15). Existing audit findings were surfaced separately as designed. GitHub's pin order matched the saved snapshot exactly.
+- Final local checks: harness valid with 11 feature records; git diff --check passed; workflow Bash syntax passed for all six run steps. No lint script is configured; TypeScript static checking passed through build. Implementation and copy/workflow recovery are published on main; PR #15 retains the reviewed-scan baseline for user review rather than automatic merging.

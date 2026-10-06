@@ -254,7 +254,8 @@
         "Pin mapping covers aliases, order, unlisted/ambiguous repos, empty selection, private exclusions and GraphQL failures",
         "Rendered homepage order verified in both English and Chinese",
         "No new dependencies; no runtime GitHub request or token; monthly PR includes saved snapshot",
-        "npm audit retains 5 separate high braces-chain findings; authenticated workflow run recorded separately in progress.md"
+        "npm audit retains 5 separate high braces-chain findings; authenticated workflow run recorded separately in progress.md",
+        "Live homepage verified; authenticated Actions run 37396328563 succeeded and automatically opened draft PR #15 with the saved profile pin order unchanged"
       ]
     }
   ]

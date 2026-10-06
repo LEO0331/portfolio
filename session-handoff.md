@@ -4,7 +4,7 @@
 
 **Current objective:** GitHub-pinned homepage selection.
 
-**Current status:** Published in ca68f77 and verified on the live homepage. Authenticated Actions pin query and all runner checks passed. Actions PR creation setting enabled with user approval; final PR run verification is recorded in progress.md.
+**Current status:** Complete and deployed through ca68f77/dbb0854. Live homepage order verified. Authenticated maintenance run 37396328563 succeeded and automatically opened draft PR #15 after enabling Actions PR creation with user approval.
 
 ## Blockers
 
@@ -20,7 +20,7 @@
 
 ## Recommended Next Step
 
-Run Monthly Project Maintenance and review its initial baseline; pin syncing is authenticated via the existing GitHub token. Merge reviewed pin changes to main to deploy. npm run sync:pins also supports local sync with GITHUB_TOKEN. Add curated records for unmatched pins only when appropriate.
+Review draft PR #15's initial baseline and proposed WanderStamp URL. Monthly pin syncing and PR creation are already verified; merge reviewed future pin changes to main to deploy. npm run sync:pins also supports local sync with GITHUB_TOKEN. Add curated records for unmatched pins only when appropriate.
 
 ## Verification
 
