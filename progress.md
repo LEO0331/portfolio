@@ -4,39 +4,39 @@
 
 **Last updated:** 2026-10-06
 
-**Active work:** Fix portfolio Dependabot alert #6 (selector parser CPU exhaustion)
+**Active work:** GitHub-pinned homepage project selection
 
-**Status:** Fixed and pushed to main. GitHub Dependabot closed alert #6 as completed by commit 9912908 on 2026-10-06 at 08:32 Asia/Taipei.
+**Status:** Implemented and locally verified; initial saved pins match the public GitHub profile.
 
 ### Completed
 
-- Overrode the existing postcss-selector-parser dependency to patched version 7.1.6 and regenerated only its lock entry; Tailwind remains 3.4.19.
-- Added a subprocess regression for GHSA-rj75-hqrm-r3gf/CVE-2026-104844 and documented why the override must remain until parent dependencies adopt a patched parser.
-- Monthly maintenance workflow is already published to main; prior content/localization work remains complete.
+- Homepage uses saved stable project IDs in GitHub pin order, identical in English/Chinese. Existing featured flags are synchronized too.
+- Saved six public repository pins, with five catalogue matches: taipei-real-estate-dashboard, taipei-civic-groups-map, publicsafetydashboard, sharpface (CNA Practice), robotfriends (Gridline). The portfolio self-pin is an unmatched review item, not a project card.
+- Added authenticated GraphQL pin sync to monthly maintenance and npm run sync:pins. Failed queries preserve the cache; unlisted/ambiguous pins never create placeholder records; private repository names are excluded.
+- Selector-parser alert #6 remains fixed; parser override preserved.
 
 ### Verification Evidence
 
-- Regression timed out at 12 seconds before the fix; passed in 278 ms after the fix on the same machine/input.
-- npm ci passed; npm run test:unit 15/15; TypeScript/build passed; E2E 24/24 with tracked coverage 17/17 (100%).
-- Production CSS SHA256 is unchanged: F944DC93A5FFF7FF98450C10BA63395D1DE3BB2D1DBBD10165474D602C7DB60E.
-- npm ls confirms both Tailwind and postcss-nested use postcss-selector-parser 7.1.6. npm audit has no selector-parser finding; 5 high braces-chain findings remain.
-- Harness and diff checks are recorded in the dated entry.
+- 20/20 unit tests and TypeScript/build passed; browser tests 26/26, tracked flows 17/17 (100%). Actual homepage card order checked in both languages.
+- GraphQL fixtures cover successful/public-only responses, missing token, HTTP errors, errors in HTTP 200, null users, invalid/duplicate lists. Source tests cover renames, monorepo ambiguity, stale flag clearing, repeat runs and no placeholders.
+- Initial public pins verified using the authenticated GitHub profile UI on 2026-10-06.
+- npm ci passed; audit still reports 5 high findings in the separate braces toolchain. Harness/diff and authenticated Actions verification recorded in history.
 
 ### Blockers
 
-- None for the requested fix.
+- No implementation blocker. Authenticated Actions execution/PR creation must be verified after publication.
 
 ### Remaining Risks
 
-- Parser 7 is outside the parent packages' requested major range; this deliberate security override is supported by the regression, full build/browser suite, and identical generated CSS. Recheck compatibility when changing the Tailwind toolchain.
-- Five existing high dependency findings remain in the separate braces/chokidar/micromatch/fast-glob/Tailwind chain; no patched braces version is currently listed.
-- Monthly scan authenticated execution and repository PR creation permission remain unverified; the workflow is published.
+- Pin changes reach the static site after a successful monthly/manual scan and review PR merge, rather than immediately on GitHub profile edits.
+- Five existing braces-chain audit findings remain. No dependency changes added by this feature.
+- Empty pins show zero cards; unmatched/ambiguous pins are omitted and flagged for curation. Current self-pin results in five cards.
 
 ### Next Session Should
 
-1. Keep the security override until the parent toolchain supports a patched parser; do not merge the Dependabot Tailwind 4 proposal without a complete migration.
-2. Address the separate braces chain as a scoped toolchain change.
-3. Run Monthly Project Maintenance manually to establish the repository baseline and verify Actions PR creation.
+1. Verify the monthly Actions job's authenticated GraphQL query and PR creation, then review/merge its initial scan baseline.
+2. Keep future project IDs stable and curate any unlisted pinned project before accepting the sync.
+3. Address the separate braces-chain advisories as a scoped toolchain change.
 
 ## Update Contract
 
@@ -148,3 +148,12 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Final local lifecycle checks: npm run validate:harness passed (10 feature records), git diff --check passed. No lint script is configured; TypeScript static analysis ran through npm run build.
 - Incorporated the newly merged upstream source-map-js 1.2.2 patch before publication and repeated the full verification; parser regression passed in 264 ms and production CSS remained byte-identical.
 - Published fix commit 99129086c0633334fc9edffd1e7eca12b8322d3f to main. Authenticated alert page confirmed **Fixed**, with Dependabot closing it as completed by that commit at 08:32 Asia/Taipei. No manual dismissal was used.
+
+### 2026-10-06 — GitHub profile pins drive homepage selection
+
+- Sources: GitHub GraphQL User.pinnedItems documentation; LEO0331 profile UI with actual pinned order. Public pins: portfolio, taipei-real-estate-dashboard, taipei-civic-groups-map, publicsafetydashboard, cna-practice, Gridline.
+- Changed files: src/data/github-pins.json, src/data/projects.ts, src/components/home/FeaturedProjects.tsx, src/utils/projectUtils.ts, tools/sync-github-pins.mjs, tools/sync-github-pins.test.mjs, tools/scan-project-changes.mjs, .github/workflows/project-maintenance.yml, package.json, tests/e2e/core-utils.spec.ts, README.md, README.zh-TW.md, feature_list.json, progress.md, session-handoff.md.
+- Simplifications: reused existing project parsing/source validation and featured flags. Saved matched stable IDs avoids localized-name sorting and preserves links through repository renames; no new dependencies or dynamic page API.
+- Monthly job fetches pins before writing any scan output, maps canonical repository URLs, reports unmatched/ambiguous pins, and stages the pin JSON alongside source changes in its draft PR. Local npm run sync:pins requires GITHUB_TOKEN; HTTP/GraphQL failures fail closed without overwriting cached data.
+- Verified 20/20 unit tests, TypeScript/build, and 26/26 browser tests with 100% tracked coverage. Actual rendered homepage shows five matching cards in identical pin order for both languages. Initial test failures were Node JSON import-attribute and unscoped article/heading selectors; corrected test setup and final suite passed.
+- npm ci passed; 5 existing high braces-chain advisories remain. No new dependency or application styling changes. Authenticated Actions verification is recorded after publication.

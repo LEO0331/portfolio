@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import type { Project } from "../../src/types/project";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
 import { projects as portfolioProjects } from "../../src/data/projects";
+import githubPins from "../../src/data/github-pins.json" with { type: "json" };
 import {
   extractUniqueCategories,
   extractUniqueTechnologies,
@@ -84,6 +85,29 @@ test("getFeaturedProjects fills a short featured list without duplicating projec
   ];
 
   expect(getFeaturedProjects(projects, 3, 6).map((item) => item.id)).toEqual(["featured", "second", "third"]);
+});
+
+test("saved GitHub pins select the same projects in pin order for both languages", () => {
+  for (const locale of ["en", "zh"] as const) {
+    const selected = getFeaturedProjects(getLocalizedProjects(portfolioProjects, locale), 3, 6, githubPins.projectIds);
+    expect(selected.map((item) => item.id)).toEqual(githubPins.projectIds);
+    expect(selected.every((item) => item.featured)).toBe(true);
+  }
+  expect(portfolioProjects.filter((item) => item.featured).map((item) => item.id).sort()).toEqual([...githubPins.projectIds].sort());
+  const list = [project({ id: "first", name: "Z" }), project({ id: "second", name: "A" })];
+  expect(getFeaturedProjects(list, 3, 6, ["first", "missing", "first", "second"]).map((item) => item.id)).toEqual(["first", "second"]);
+  expect(getFeaturedProjects(list, 3, 6, [])).toEqual([]);
+});
+
+test("homepage renders saved pins in the same order in both languages", async ({ page }) => {
+  for (const locale of ["en", "zh"] as const) {
+    const localized = getLocalizedProjects(portfolioProjects, locale);
+    const expected = githubPins.projectIds.map((id) => localized.find((project) => project.id === id)!.name);
+    await page.goto(locale === "en" ? "./" : "./zh");
+    const section = page.locator("section").filter({ has: page.getByRole("heading", { name: locale === "en" ? "Featured Projects" : "重點專案", exact: true }) });
+    await expect(section.locator("article")).toHaveCount(expected.length);
+    await expect(section.locator("article h2")).toHaveText(expected);
+  }
 });
 
 test("project localization overrides known content and preserves unknown projects", () => {

@@ -100,6 +100,12 @@ node tools/capture-project-previews.mjs
 - 缺少 `repoUrl` 時，不顯示 GitHub Repo 按鈕。
 - 缺少圖片時，專案卡片會顯示安全的預設佔位內容。
 
+## 首頁精選專案
+
+首頁依照 `src/data/github-pins.json` 儲存的公開 GitHub 置頂順序，使用穩定的專案 ID，讓中英文顯示相同專案及順序，儲存庫改名也能保留對應。只顯示已收錄且唯一對應的專案。未收錄項目（包含此作品集）及有多筆對應的 monorepo 會列入報告，不自動補入其他專案或佔位卡片；清空置頂清單時不顯示精選卡片。
+
+設定 `GITHUB_TOKEN` 後執行 `npm run sync:pins`，透過 GraphQL 同步公開置頂儲存庫、對應 ID 與既有 `featured` 旗標。每月掃描也會執行同步，使用正式儲存庫網址處理改名。API 錯誤會保留上次成功快照並使工作失敗；頁面不需即時 API 或 token。初始快照已於 2026-10-06 核對公開個人頁面：六個置頂中有五個專案，`LEO0331/portfolio` 不列為卡片。
+
 ## 每月專案維護
 
 [Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) 於每月 1 日 **台北時間 09:17** 執行，也可在 Actions → Monthly Project Maintenance → Run workflow 手動啟動。推送至預設分支後排程才會生效；請在 Settings → Actions → General 啟用 **Allow GitHub Actions to create and approve pull requests**，不需要額外 API 金鑰。
@@ -110,7 +116,7 @@ node tools/capture-project-previews.mjs
 
 推送前執行 harness、單元測試、TypeScript／建置、E2E 及 diff 檢查。相依套件 audit 結果會附在 PR／工作紀錄供審查，避免安全公告阻擋專案變更報告；發布前仍須處理公告。API 錯誤會使掃描失敗且不寫入不完整基準。報告及 audit 輸出會上傳為 artifacts。GitHub 排程可能延遲，公開儲存庫 60 天無活動時會停用排程，屆時需在 Actions 重新啟用。內建 token 觸發的其他工作流程可能需要核准，因此驗證直接在此工作中執行。
 
-本機可執行 `node tools/scan-project-changes.mjs`，並選擇設定 `GITHUB_TOKEN` 避免公開 API 限流。工具會寫入 `.github/project-scan-state.json`、`.github/project-scan-report.md` 及建議的 Demo 網址，接受基準前請一起審查。
+本機執行 `node tools/scan-project-changes.mjs` 時須設定 `GITHUB_TOKEN` 供 GraphQL 取得置頂項目。工具會寫入 `.github/project-scan-state.json`、`.github/project-scan-report.md`、`src/data/github-pins.json` 及建議的 Demo 網址／精選旗標，接受基準前請一起審查。置頂選擇也會包含在草稿 PR 中。
 
 ## 文件
 

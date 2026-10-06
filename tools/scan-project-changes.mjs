@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { extractObjectBlocks, requireProjectsArrayContent } from './project-source.mjs';
 import { setStringProperty, validateGeneratedProjectsSource } from './sync-projects-from-github.mjs';
 import { sanitizePublicDemoUrl } from './public-demo-url.mjs';
+import { PINS_FILE, fetchPinnedRepositories, applyPinnedRepositories } from './sync-github-pins.mjs';
 
 const STATE_FILE = '.github/project-scan-state.json';
 const REPORT_FILE = '.github/project-scan-report.md';
@@ -102,7 +103,7 @@ export async function scanProjects(source, previous, request = githubJson, owner
 export function renderReport(changes) {
   return '# Monthly portfolio repository scan\n\n' +
     (changes.length ? changes.map((change) => `- ${change}`).join('\n') : 'No repository or project-link changes detected.') +
-    '\n\nOnly approved demo URL changes are proposed automatically. New entries, renamed repository links, descriptions, translations, and images require curation. Repository pushes are a review signal, not proof of a visible product change.\n\n' +
+    '\n\nApproved demo URLs and GitHub-pinned homepage selection are proposed automatically. New entries, renamed repository links, descriptions, translations, and images require curation. Repository pushes are a review signal, not proof of a visible product change.\n\n' +
     'Before merging: inspect changed READMEs and live demos, curate src/data/projects.ts and src/data/projects.zh.ts, capture and visually verify affected previews, update progress.md and session-handoff.md, and rerun the full verification gate. Merging to main uses the existing GitHub Pages deployment.\n';
 }
 
@@ -110,10 +111,24 @@ async function main() {
   const source = fs.readFileSync('src/data/projects.ts', 'utf8');
   const previous = fs.existsSync(STATE_FILE) ? JSON.parse(fs.readFileSync(STATE_FILE, 'utf8')) : undefined;
   if (previous && previous.version !== 1) throw new Error('Unsupported scan state version');
-  const result = await scanProjects(source, previous, githubJson, process.env.GITHUB_OWNER || 'LEO0331');
+  const owner = process.env.GITHUB_OWNER || 'LEO0331';
+  const repositories = await fetchPinnedRepositories(owner, process.env.GITHUB_TOKEN);
+  const result = await scanProjects(source, previous, githubJson, owner);
+  const pinned = applyPinnedRepositories(result.source, repositories, result.state.projects);
+  const snapshot = { owner, repositories, projectIds: pinned.projectIds };
+  const oldPins = fs.existsSync(PINS_FILE) ? JSON.parse(fs.readFileSync(PINS_FILE, 'utf8')) : undefined;
+  if (JSON.stringify(snapshot) !== JSON.stringify(oldPins) || pinned.source !== result.source) {
+    result.changes.push(`GitHub pin selection/order updated: ${repositories.map(text).join(', ') || 'none'}.`);
+  }
+  // Include unresolved pins for review without creating placeholder cards.
+  if (result.changes.length) {
+    for (const repo of pinned.unmatched) result.changes.push(`Unmatched pinned repository: ${text(repo)}. Add a curated record only if appropriate.`);
+    for (const repo of pinned.ambiguous) result.changes.push(`Ambiguous pinned repository: ${text(repo)}. Multiple catalogue records match; choose a project explicitly.`);
+  }
   // Write only after the entire scan succeeds; rate limits/errors cannot accept a partial baseline.
   fs.writeFileSync(STATE_FILE, `${JSON.stringify(result.state, null, 2)}\n`);
-  fs.writeFileSync('src/data/projects.ts', result.source);
+  fs.writeFileSync(PINS_FILE, `${JSON.stringify(snapshot, null, 2)}\n`);
+  fs.writeFileSync('src/data/projects.ts', pinned.source);
   if (result.changes.length || !fs.existsSync(REPORT_FILE)) fs.writeFileSync(REPORT_FILE, renderReport(result.changes));
   console.log(`${result.changes.length} project scan findings. Report: ${REPORT_FILE}`);
 }

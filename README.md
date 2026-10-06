@@ -87,6 +87,12 @@ Notes:
 - If `repoUrl` is missing, the GitHub Repo button is hidden.
 - If image is missing, cards render a graceful placeholder.
 
+## Homepage featured projects
+
+The homepage follows the public GitHub pin order saved in `src/data/github-pins.json`. Pins map to stable project IDs so both languages show the same projects in the same order, including after repository renames. Only uniquely matched catalogue records appear. Unmatched pins (including this portfolio) and ambiguous monorepo pins are flagged for curation; no placeholders or unrelated filler cards are added. An empty pin list displays no featured cards.
+
+Run `npm run sync:pins` with `GITHUB_TOKEN` to query GraphQL, save public pins/matched IDs, and update existing `featured` flags. The monthly scan performs the same sync using canonical repository URLs to handle renames. API errors preserve the last successful snapshot and fail the job. Rendering needs no network request or token. The initial snapshot was verified against the public profile on 2026-10-06: six pins, five catalogue matches, with `LEO0331/portfolio` intentionally unlisted.
+
 ## Monthly project maintenance
 
 [Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) runs on the first of each month at **09:17 Asia/Taipei** and can also be started from Actions → Monthly Project Maintenance → Run workflow. The schedule becomes active after the workflow is pushed to the default branch. In Settings → Actions → General, enable **Allow GitHub Actions to create and approve pull requests**; no additional API key is needed.
@@ -97,7 +103,7 @@ Approved demo URL updates to existing root-repository projects are proposed auto
 
 The job runs harness validation, unit tests, TypeScript/build, E2E, and diff checks before pushing. Dependency audit findings are attached to the PR/run as advisory results so a security advisory cannot hide project-change findings; resolve them before release. Scan/API errors fail the job without writing a partial baseline. Reports and audit output are uploaded as artifacts. GitHub may delay scheduled runs and disables schedules in inactive public repositories after 60 days; re-enable the workflow in Actions if needed. Additional workflows triggered by the built-in token may require approval, so verification runs inside this job.
 
-Run `node tools/scan-project-changes.mjs` locally (optionally with `GITHUB_TOKEN` to avoid public API rate limits). It writes `.github/project-scan-state.json`, `.github/project-scan-report.md`, and proposed demo URLs; review these together before accepting the baseline.
+Run `node tools/scan-project-changes.mjs` locally with `GITHUB_TOKEN` (required for GraphQL pins). It writes `.github/project-scan-state.json`, `.github/project-scan-report.md`, `src/data/github-pins.json`, and proposed demo URLs/featured flags; review these together before accepting the baseline. Pin selections are included in the draft PR.
 
 GitHub references: [scheduled workflow behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) and [token-triggered workflow behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 

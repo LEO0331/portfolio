@@ -14,7 +14,8 @@
     "test:unit": "node --test --test-isolation=none tools/*.test.mjs",
     "test:e2e": "playwright test && node tools/e2e-coverage-check.mjs",
     "test:e2e:ui": "playwright test --ui",
-    "sync:projects": "node tools/sync-projects-from-github.mjs"
+    "sync:projects": "node tools/sync-projects-from-github.mjs",
+    "sync:pins": "node tools/sync-github-pins.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

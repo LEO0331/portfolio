@@ -1,0 +1,18 @@
+{
+  "owner": "LEO0331",
+  "repositories": [
+    "LEO0331/portfolio",
+    "LEO0331/taipei-real-estate-dashboard",
+    "LEO0331/taipei-civic-groups-map",
+    "LEO0331/publicsafetydashboard",
+    "LEO0331/cna-practice",
+    "LEO0331/Gridline"
+  ],
+  "projectIds": [
+    "taipei-real-estate-dashboard",
+    "taipei-civic-groups-map",
+    "publicsafetydashboard",
+    "sharpface",
+    "robotfriends"
+  ]
+}

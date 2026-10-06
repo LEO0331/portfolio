@@ -233,6 +233,29 @@
         "npm audit contains no postcss-selector-parser finding; 5 unrelated high braces-chain findings remain",
         "Fix pushed in commit 9912908; authenticated GitHub alert #6 marked Fixed and closed as completed by that commit on 2026-10-06"
       ]
+    },
+    {
+      "id": "github-pinned-homepage-2026-10",
+      "name": "Use GitHub profile pins for homepage projects",
+      "description": "Save public GitHub pins and matched stable IDs; preserve pin order across languages and synchronize featured flags through monthly maintenance.",
+      "status": "complete",
+      "dependencies": [
+        "monthly-project-maintenance-2026-10"
+      ],
+      "doneCriteria": [
+        "Homepage uses the saved pin order in both languages",
+        "Monthly workflow proposes pin snapshot and featured flag changes",
+        "Unmatched pins are review-only; API errors preserve cached selection",
+        "Regression, build, browser, harness and audit outcomes recorded"
+      ],
+      "evidence": [
+        "Initial snapshot verified against public profile on 2026-10-06: portfolio plus five catalogue projects",
+        "20/20 unit tests; 26/26 browser tests, 17/17 tracked flows; TypeScript/build passed",
+        "Pin mapping covers aliases, order, unlisted/ambiguous repos, empty selection, private exclusions and GraphQL failures",
+        "Rendered homepage order verified in both English and Chinese",
+        "No new dependencies; no runtime GitHub request or token; monthly PR includes saved snapshot",
+        "npm audit retains 5 separate high braces-chain findings; authenticated workflow run recorded separately in progress.md"
+      ]
     }
   ]
 }

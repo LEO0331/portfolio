@@ -177,7 +177,15 @@ export function filterProjects(projectList: Project[], filters: ProjectFilterSta
   });
 }
 
-export function getFeaturedProjects(projectList: Project[], min = 3, max = 6): Project[] {
+export function getFeaturedProjects(projectList: Project[], min = 3, max = 6, pinnedProjectIds?: string[]): Project[] {
+  if (pinnedProjectIds !== undefined) {
+    // Saved stable IDs preserve pin order across repository renames and locales.
+    // An unmatched or ambiguous pin stays a review item, never an invented card.
+    return [...new Set(pinnedProjectIds)].flatMap((id) => {
+      const matches = projectList.filter((project) => project.id === id);
+      return matches.length === 1 ? matches : [];
+    }).slice(0, max);
+  }
   const featured = sortProjects(projectList.filter((project) => project.featured));
 
   if (featured.length >= min) {

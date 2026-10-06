@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../../data/projects";
+import githubPins from "../../data/github-pins.json";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { getLocalizedProjects } from "../../utils/projectLocalization";
@@ -12,7 +13,7 @@ export function FeaturedProjects(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
   const localizedProjects = getLocalizedProjects(projects, locale);
-  const featuredProjects = getFeaturedProjects(localizedProjects, 3, 6);
+  const featuredProjects = getFeaturedProjects(localizedProjects, 3, 6, githubPins.projectIds);
 
   return (
     <Section>

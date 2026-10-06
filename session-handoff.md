@@ -2,35 +2,36 @@
 
 **Last updated:** 2026-10-06
 
-**Current objective:** Fix portfolio Dependabot alert #6.
+**Current objective:** GitHub-pinned homepage selection.
 
-**Current status:** Fixed and pushed to main in commit 9912908. Authenticated GitHub alert page confirmed Dependabot closed alert #6 as completed on 2026-10-06 at 08:32 Asia/Taipei.
+**Current status:** Implemented and locally verified. Initial snapshot reflects actual public profile pins; five match curated records, and the portfolio self-pin is omitted.
 
 ## Blockers
 
-- None for the requested selector-parser fix.
+- None for implementation. Verify authenticated Actions execution/PR creation after publication.
 
 ## Files Relevant to the Next Update
 
-- package.json and package-lock.json
-- tools/selector-parser-security.test.mjs
-- README.md and README.zh-TW.md
-- feature_list.json, progress.md, session-handoff.md
+- src/data/github-pins.json and src/data/projects.ts
+- src/components/home/FeaturedProjects.tsx and src/utils/projectUtils.ts
+- tools/sync-github-pins.mjs, tools/sync-github-pins.test.mjs, tools/scan-project-changes.mjs
+- .github/workflows/project-maintenance.yml, package.json, tests/e2e/core-utils.spec.ts
+- README.md, README.zh-TW.md, feature_list.json, progress.md
 
 ## Recommended Next Step
 
-Keep postcss-selector-parser pinned through the npm override at 7.1.6 until parent packages adopt a patched release. Treat a Tailwind 4 migration as separate work; the dependency-only Dependabot PR #14 does not migrate the PostCSS/CSS integration. Also verify the published monthly maintenance workflow through a manual Actions run.
+Run Monthly Project Maintenance and review its initial baseline; pin syncing is authenticated via the existing GitHub token. Merge reviewed pin changes to main to deploy. npm run sync:pins also supports local sync with GITHUB_TOKEN. Add curated records for unmatched pins only when appropriate.
 
 ## Verification
 
-- Security regression failed before (12-second timeout) and passed after (278 ms).
-- npm ci; 15/15 unit tests; TypeScript/build; 24/24 E2E, tracked coverage 17/17.
-- Production CSS byte-identical before/after; installed parser tree contains only 7.1.6.
-- npm audit no longer reports the targeted parser; 5 high braces-chain findings remain.
-- Harness and diff checks recorded in progress.md.
+- Public profile order verified; saved IDs match existing records and flags.
+- 20/20 unit tests; 26/26 E2E, 17/17 tracked flows; TypeScript/build; npm ci.
+- Source/query regressions cover pin reorder, aliases, ambiguity, unlisted/private repos, empty pins, invalid responses, and error cache preservation.
+- Five high braces-chain audit findings remain; prior selector-parser fix remains in place.
+- Harness/diff and live workflow evidence recorded in progress.md.
 
 ## Remaining Risks
 
-- Explicit major-version override needs compatibility review on future parent dependency changes; current generated CSS and browser behavior are verified.
-- Separate braces-chain advisories remain; no patched braces release is currently listed.
-- First authenticated monthly scan/PR creation remains unverified.
+- Static selection changes only after successful sync/review merge; failed sync preserves saved pins.
+- Current self-pin gives five homepage cards; no unrelated sixth project is inserted.
+- Separate braces-chain advisories remain.

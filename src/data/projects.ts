@@ -26,7 +26,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/AssistantHub/",
     repoUrl: "https://github.com/LEO0331/AssistantHub",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "circles-app",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/circles-app/",
     repoUrl: "https://github.com/LEO0331/circles-app",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "inbodysimpletracker",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/inbodysimpletracker/",
     repoUrl: "https://github.com/LEO0331/inbodysimpletracker",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "passportcomparison",
@@ -175,7 +175,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/cna-practice/",
     repoUrl: "https://github.com/LEO0331/cna-practice",
     status: "live",
-    featured: false
+    featured: true
   },
   {
     id: "boxmatch",
@@ -200,7 +200,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/boxmatch/",
     repoUrl: "https://github.com/LEO0331/boxmatch",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "warmmemo",
@@ -225,7 +225,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/warmmemo/",
     repoUrl: "https://github.com/LEO0331/warmmemo",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "leave-request",
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/LeaveRequest/",
     repoUrl: "https://github.com/LEO0331/LeaveRequest",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "resume-vault",
@@ -320,7 +320,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/ToyRobot/",
     repoUrl: "https://github.com/LEO0331/ToyRobot",
     status: "live",
-    featured: true
+    featured: false
   },
   {
     id: "email-website",
@@ -370,7 +370,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/Gridline/",
     repoUrl: "https://github.com/LEO0331/Gridline",
     status: "live",
-    featured: false
+    featured: true
   },
   {
     id: "epubreader",
@@ -618,7 +618,7 @@ export const projects: Project[] = [
     demoUrl: "https://publicsafetydashboard.onrender.com/",
     repoUrl: "https://github.com/LEO0331/publicsafetydashboard",
     status: "live",
-    featured: false
+    featured: true
   },
   {
     id: "taipei-bin-map",
@@ -868,7 +868,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/taipei-civic-groups-map/",
     repoUrl: "https://github.com/LEO0331/taipei-civic-groups-map",
     status: "live",
-    featured: false
+    featured: true
   },
   {
     id: "taipei-real-estate-dashboard",
@@ -893,7 +893,7 @@ export const projects: Project[] = [
     demoUrl: "https://leo0331.github.io/taipei-real-estate-dashboard/",
     repoUrl: "https://github.com/LEO0331/taipei-real-estate-dashboard",
     status: "live",
-    featured: false
+    featured: true
   },
   {
     id: "genomic-data-science-with-galaxy-project",

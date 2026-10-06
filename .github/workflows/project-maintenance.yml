@@ -85,7 +85,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          git add -- .github/project-scan-state.json .github/project-scan-report.md src/data/projects.ts
+          git add -- .github/project-scan-state.json .github/project-scan-report.md src/data/projects.ts src/data/github-pins.json
           if ! git diff --cached --quiet; then
             cat > "$RUNNER_TEMP/project-scan-commit.txt" <<'MESSAGE'
           Keep portfolio links and review signals aligned with source repositories
