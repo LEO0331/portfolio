@@ -6,7 +6,7 @@
 
 **Active work:** Fix portfolio Dependabot alert #6 (selector parser CPU exhaustion)
 
-**Status:** Targeted fix verified; remote alert closure is checked after publication.
+**Status:** Fixed and pushed to main. GitHub Dependabot closed alert #6 as completed by commit 9912908 on 2026-10-06 at 08:32 Asia/Taipei.
 
 ### Completed
 
@@ -147,3 +147,4 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Scope: fixes the requested advisory without changing site CSS/content. Remote alert closure is verified after pushing the dependency fix.
 - Final local lifecycle checks: npm run validate:harness passed (10 feature records), git diff --check passed. No lint script is configured; TypeScript static analysis ran through npm run build.
 - Incorporated the newly merged upstream source-map-js 1.2.2 patch before publication and repeated the full verification; parser regression passed in 264 ms and production CSS remained byte-identical.
+- Published fix commit 99129086c0633334fc9edffd1e7eca12b8322d3f to main. Authenticated alert page confirmed **Fixed**, with Dependabot closing it as completed by that commit at 08:32 Asia/Taipei. No manual dismissal was used.

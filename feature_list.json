@@ -230,7 +230,8 @@
         "400 KB flat-selector regression timed out at 12 seconds before the fix, passed in 278 ms after",
         "npm ci passed; 15/15 unit tests; TypeScript/build passed; 24/24 E2E, 17/17 tracked flows",
         "Production CSS SHA256 unchanged: F944DC93A5FFF7FF98450C10BA63395D1DE3BB2D1DBBD10165474D602C7DB60E",
-        "npm audit contains no postcss-selector-parser finding; 5 unrelated high braces-chain findings remain"
+        "npm audit contains no postcss-selector-parser finding; 5 unrelated high braces-chain findings remain",
+        "Fix pushed in commit 9912908; authenticated GitHub alert #6 marked Fixed and closed as completed by that commit on 2026-10-06"
       ]
     }
   ]
