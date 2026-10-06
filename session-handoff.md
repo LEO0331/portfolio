@@ -4,11 +4,11 @@
 
 **Current objective:** GitHub-pinned homepage selection.
 
-**Current status:** Implemented and locally verified. Initial snapshot reflects actual public profile pins; five match curated records, and the portfolio self-pin is omitted.
+**Current status:** Published in ca68f77 and verified on the live homepage. Authenticated Actions pin query and all runner checks passed. Actions PR creation setting enabled with user approval; final PR run verification is recorded in progress.md.
 
 ## Blockers
 
-- None for implementation. Verify authenticated Actions execution/PR creation after publication.
+- None. User approved enabling the Actions PR creation setting after the first scan reached that step successfully.
 
 ## Files Relevant to the Next Update
 

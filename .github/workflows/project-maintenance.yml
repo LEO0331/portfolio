@@ -44,7 +44,13 @@ jobs:
             git merge "origin/$DEFAULT_BRANCH" -m 'Keep pending project review compatible with the current portfolio'
           else
             branch="codex/project-scan-$GITHUB_RUN_ID"
-            git switch -c "$branch"
+            # A prior attempt may have pushed successfully before PR creation failed.
+            if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
+              git switch --track "origin/$branch"
+              git merge "origin/$DEFAULT_BRANCH" -m 'Keep pending project review compatible with the current portfolio'
+            else
+              git switch -c "$branch"
+            fi
           fi
           echo "name=$branch" >> "$GITHUB_OUTPUT"
 

@@ -6,7 +6,7 @@
 
 **Active work:** GitHub-pinned homepage project selection
 
-**Status:** Implemented and locally verified; initial saved pins match the public GitHub profile.
+**Status:** Published and verified on the live homepage. Authenticated GitHub pin/repository scan and runner checks passed; Actions PR creation was enabled with user approval, and the final workflow run is being verified.
 
 ### Completed
 
@@ -24,7 +24,7 @@
 
 ### Blockers
 
-- No implementation blocker. Authenticated Actions execution/PR creation must be verified after publication.
+- None. The user approved enabling Actions PR creation after the initial scan was blocked by the repository setting.
 
 ### Remaining Risks
 
@@ -157,3 +157,6 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Monthly job fetches pins before writing any scan output, maps canonical repository URLs, reports unmatched/ambiguous pins, and stages the pin JSON alongside source changes in its draft PR. Local npm run sync:pins requires GITHUB_TOKEN; HTTP/GraphQL failures fail closed without overwriting cached data.
 - Verified 20/20 unit tests, TypeScript/build, and 26/26 browser tests with 100% tracked coverage. Actual rendered homepage shows five matching cards in identical pin order for both languages. Initial test failures were Node JSON import-attribute and unscoped article/heading selectors; corrected test setup and final suite passed.
 - npm ci passed; 5 existing high braces-chain advisories remain. No new dependency or application styling changes. Authenticated Actions verification is recorded after publication.
+- Published implementation commit ca68f77; live GitHub Pages homepage verified with all five project cards in profile pin order. Updated both languages' section copy to describe pin selection rather than status/name ranking.
+- First authenticated run 37395955885 succeeded at GraphQL query, full repository scan, 20 unit tests, 26 browser tests, build/typecheck, harness and diff gates; audit reported the same 5 existing advisories. It preserved the exact saved pin order and proposed a WanderStamp demo URL update.
+- Automatic PR creation failed because repository Actions PR creation was disabled. User explicitly approved enabling that setting; saved state was verified in GitHub settings. Added same-run branch recovery so retrying a post-push PR failure preserves the scan branch rather than failing a non-fast-forward push.
