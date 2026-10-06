@@ -36,6 +36,8 @@ npm run dev
 ```
 
 ## Build and test
+The existing Tailwind 3 toolchain uses an npm override for `postcss-selector-parser` **7.1.6** to fix [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) without a Tailwind 4 migration. Keep the override until the parent dependencies request a patched version themselves; regenerate the lockfile and run the full gate when changing it. A subprocess regression checks the malicious flat-selector case.
+
 ```bash
 npm run validate:harness
 npm ci

@@ -4,39 +4,39 @@
 
 **Last updated:** 2026-10-06
 
-**Active work:** Monthly GitHub Actions project maintenance
+**Active work:** Fix portfolio Dependabot alert #6 (selector parser CPU exhaustion)
 
-**Status:** Implemented and verified against current upstream main; repository PR permission and the first authenticated Actions run remain unverified.
+**Status:** Targeted fix verified; remote alert closure is checked after publication.
 
 ### Completed
 
-- Added monthly/manual repository scan and a verified draft-PR workflow. Scans repository push timestamps, canonical URLs, metadata, root README hashes, and unlisted public repository candidates.
-- Proposes only approved demo URL changes for root-repository projects; preserves curated bilingual content, stable IDs/slugs, monorepo demo links, and pending PR curation.
-- Previous 38-project content/localization audit remains complete.
+- Overrode the existing postcss-selector-parser dependency to patched version 7.1.6 and regenerated only its lock entry; Tailwind remains 3.4.19.
+- Added a subprocess regression for GHSA-rj75-hqrm-r3gf/CVE-2026-104844 and documented why the override must remain until parent dependencies adopt a patched parser.
+- Monthly maintenance workflow is already published to main; prior content/localization work remains complete.
 
 ### Verification Evidence
 
-- npm ci passed; unit tests 14/14; TypeScript/production build passed; E2E 24/24, tracked flows 17/17 (100%).
-- Full-catalogue fixture verifies all 38 entries and an unchanged repeat scan; targeted regressions cover pagination, renames, missing repos, unsafe links, monorepo URLs, escaping, and API failure.
-- Workflow Bash syntax checked; harness and diff checks recorded below.
-- After incorporating upstream Dependabot updates, npm audit reports 5 high vulnerabilities in the existing Tailwind toolchain. Workflow audit is advisory and visible in logs/artifacts/PR; build/test failures still block PR publication.
+- Regression timed out at 12 seconds before the fix; passed in 278 ms after the fix on the same machine/input.
+- npm ci passed; npm run test:unit 15/15; TypeScript/build passed; E2E 24/24 with tracked coverage 17/17 (100%).
+- Production CSS SHA256 is unchanged: F944DC93A5FFF7FF98450C10BA63395D1DE3BB2D1DBBD10165474D602C7DB60E.
+- npm ls confirms both Tailwind and postcss-nested use postcss-selector-parser 7.1.6. npm audit has no selector-parser finding; 5 high braces-chain findings remain.
+- Harness and diff checks are recorded in the dated entry.
 
 ### Blockers
 
-- No implementation blocker. GitHub activation requires pushing the workflow to the default branch and enabling Actions to create pull requests in repository settings.
+- None for the requested fix.
 
 ### Remaining Risks
 
-- End-to-end GitHub push/PR creation and authenticated scan have not run in Actions yet. Local unauthenticated scan hit HTTP 403 rate limiting; no partial snapshot or source changes were written.
-- Existing npm advisories include a recommended Tailwind major upgrade; dependency remediation is separate work and should precede release.
-- Copy, translations, renamed repo links, new projects, and previews require review in the draft PR. Live-demo-only changes without GitHub metadata/push changes are not detected.
-- GitHub can delay scheduled runs or disable them after 60 days of inactivity in public repositories. Pending-branch merge conflicts require manual resolution.
+- Parser 7 is outside the parent packages' requested major range; this deliberate security override is supported by the regression, full build/browser suite, and identical generated CSS. Recheck compatibility when changing the Tailwind toolchain.
+- Five existing high dependency findings remain in the separate braces/chokidar/micromatch/fast-glob/Tailwind chain; no patched braces version is currently listed.
+- Monthly scan authenticated execution and repository PR creation permission remain unverified; the workflow is published.
 
 ### Next Session Should
 
-1. Enable Actions PR creation if needed; manually run Monthly Project Maintenance to establish the baseline and verify the authenticated scan.
-2. Review findings, curate bilingual content/previews, and accept the baseline together before merging the draft PR to publish through Pages.
-3. Address the current dependency advisories without folding an unreviewed major migration into project maintenance.
+1. Keep the security override until the parent toolchain supports a patched parser; do not merge the Dependabot Tailwind 4 proposal without a complete migration.
+2. Address the separate braces chain as a scoped toolchain change.
+3. Run Monthly Project Maintenance manually to establish the repository baseline and verify Actions PR creation.
 
 ## Update Contract
 
@@ -134,3 +134,16 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Final checks: Git Bash syntax passed for all 6 workflow run steps; npm run validate:harness passed (9 feature records); git diff --check passed. No lint script is configured; TypeScript static checking passed through the build. GitHub-specific YAML/schema acceptance is pending the first Actions run.
 - Commit/push follow-up: user authorized publishing the workflow to main. Fetched and incorporated upstream Dependabot merges for baseline-browser-mapping, browserslist, and postcss-selector-parser before pushing; npm ci, unit/build/E2E checks rerun on the combined result. Audit now reports 5 high Tailwind-toolchain vulnerabilities; no major dependency migration attempted.
 - Follow-up browser check: sandbox web-server startup stalled; reran the same E2E command with approved subprocess access. Final result: 24/24 tests, 17/17 tracked coverage.
+
+### 2026-10-06 — Fix Dependabot selector-parser alert #6
+
+- Source: authenticated alert https://github.com/LEO0331/portfolio/security/dependabot/6; GitHub advisory GHSA-rj75-hqrm-r3gf and upstream parser 7.0.0/7.1.6 release notes; published npm package metadata.
+- Affected dependency: Tailwind 3.4.19 and postcss-nested 6.2.0 resolve postcss-selector-parser 6.1.4. Patched version: 7.1.6.
+- Rejected Dependabot PR #14's Tailwind 4.3.3 dependency-only proposal for this fix because it requires a PostCSS/CSS configuration migration. Used an explicit override of the existing parser instead; no new dependency or application abstraction.
+- Changed files: package.json, package-lock.json, tools/selector-parser-security.test.mjs, README.md, README.zh-TW.md, feature_list.json, progress.md, session-handoff.md.
+- Regression: parse/serialize a 400 KB flat selector in an isolated child with a 12-second termination budget. Failed on 6.1.4 by timeout; passed on 7.1.6 in 278 ms. The test verifies exact selector serialization as well as bounded CPU time.
+- Verification: npm ci passed; unit tests 15/15; TypeScript/build passed; browser tests 24/24 and 100% tracked coverage. Generated CSS byte-identical to the pre-fix baseline (SHA256 F944DC93A5FFF7FF98450C10BA63395D1DE3BB2D1DBBD10165474D602C7DB60E).
+- npm ls confirms every installed selector parser is 7.1.6. npm audit --json confirms no selector-parser advisory; 5 high findings in the separate braces chain remain. No Tailwind migration or audit-force update performed.
+- Scope: fixes the requested advisory without changing site CSS/content. Remote alert closure is verified after pushing the dependency fix.
+- Final local lifecycle checks: npm run validate:harness passed (10 feature records), git diff --check passed. No lint script is configured; TypeScript static analysis ran through npm run build.
+- Incorporated the newly merged upstream source-map-js 1.2.2 patch before publication and repeated the full verification; parser regression passed in 264 ms and production CSS remained byte-identical.

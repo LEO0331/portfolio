@@ -2,35 +2,35 @@
 
 **Last updated:** 2026-10-06
 
-**Current objective:** Monthly GitHub Actions project maintenance.
+**Current objective:** Fix portfolio Dependabot alert #6.
 
-**Current status:** Implemented with monthly/manual scan, change detection, draft review PRs, and verification against current upstream main. User authorized commit/push; repository PR permission and the first authenticated Actions run remain unverified.
+**Current status:** Targeted parser override and regression verified. Publication and remote alert closure are checked at the end of this task.
 
 ## Blockers
 
-- No code blocker. Live unauthenticated scan hit the API rate limit; authenticated Actions run and remote PR creation remain unverified.
+- None for the requested selector-parser fix.
 
 ## Files Relevant to the Next Update
 
-- .github/workflows/project-maintenance.yml
-- tools/scan-project-changes.mjs and tools/scan-project-changes.test.mjs
+- package.json and package-lock.json
+- tools/selector-parser-security.test.mjs
 - README.md and README.zh-TW.md
 - feature_list.json, progress.md, session-handoff.md
-- Generated on first successful scan: .github/project-scan-state.json and .github/project-scan-report.md
 
 ## Recommended Next Step
 
-Verify Settings → Actions → General → Allow GitHub Actions to create and approve pull requests, and manually run Monthly Project Maintenance. Review the baseline/findings with curated English/Chinese copy and loaded previews before merging. Existing Pages deployment publishes merges to main.
+Keep postcss-selector-parser pinned through the npm override at 7.1.6 until parent packages adopt a patched release. Treat a Tailwind 4 migration as separate work; the dependency-only Dependabot PR #14 does not migrate the PostCSS/CSS integration. Also verify the published monthly maintenance workflow through a manual Actions run.
 
 ## Verification
 
-- npm ci passed; unit tests 14/14; TypeScript/build passed; E2E 24/24, 17/17 tracked coverage.
-- Scan fixtures cover all 38 entries, unchanged repeat runs, pagination, redirects, missing repos, unsafe homepages, escaping, failures, and monorepo links.
-- Bash syntax, harness validation, and diff checks recorded in progress.md.
-- npm audit after incorporating upstream Dependabot updates: 5 high vulnerabilities in the existing Tailwind toolchain. The workflow records audit results separately without suppressing scan findings.
+- Security regression failed before (12-second timeout) and passed after (278 ms).
+- npm ci; 15/15 unit tests; TypeScript/build; 24/24 E2E, tracked coverage 17/17.
+- Production CSS byte-identical before/after; installed parser tree contains only 7.1.6.
+- npm audit no longer reports the targeted parser; 5 high braces-chain findings remain.
+- Harness and diff checks recorded in progress.md.
 
 ## Remaining Risks
 
-- GitHub workflow and remote PR creation have not executed yet; authenticated scan uses the built-in token.
-- Dependency remediation, including a possible Tailwind major upgrade, remains separate work before release.
-- Copy and previews require curation; live-demo-only changes are not detected. Schedules can be delayed/disabled for inactivity, and pending-branch conflicts stop the workflow for review.
+- Explicit major-version override needs compatibility review on future parent dependency changes; current generated CSS and browser behavior are verified.
+- Separate braces-chain advisories remain; no patched braces release is currently listed.
+- First authenticated monthly scan/PR creation remains unverified.

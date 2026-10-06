@@ -41,6 +41,8 @@ npm run dev
 
 ## 建置與測試
 
+既有 Tailwind 3 工具鏈透過 npm override 使用 `postcss-selector-parser` **7.1.6**，修復 [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf)，不需遷移至 Tailwind 4。請保留 override，直到上游相依套件本身要求已修補版本；變更時重新產生 lockfile 並執行完整驗證。子程序回歸測試涵蓋惡意平面選擇器的 CPU 耗盡案例。
+
 ```bash
 npm run validate:harness
 npm ci
