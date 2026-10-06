@@ -98,6 +98,18 @@ node tools/capture-project-previews.mjs
 - 缺少 `repoUrl` 時，不顯示 GitHub Repo 按鈕。
 - 缺少圖片時，專案卡片會顯示安全的預設佔位內容。
 
+## 每月專案維護
+
+[Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) 於每月 1 日 **台北時間 09:17** 執行，也可在 Actions → Monthly Project Maintenance → Run workflow 手動啟動。推送至預設分支後排程才會生效；請在 Settings → Actions → General 啟用 **Allow GitHub Actions to create and approve pull requests**，不需要額外 API 金鑰。
+
+掃描會比較儲存庫推送時間、正式網址、描述、首頁、預設分支、封存狀態與根目錄 README 雜湊，支援儲存庫轉址及 monorepo 連結，並分頁查詢未收錄的公開儲存庫。首次執行會建立基準並開啟草稿 PR；後續有變更時才建立或更新 PR。現有維護分支會保留人工整理的內容，不強制推送；合併衝突會停止工作供人工處理。
+
+既有根儲存庫專案的核准 Demo 網址可自動提出更新。名稱、改名後的儲存庫連結、中英文描述、新專案與預覽圖仍須在草稿 PR 中核對整理。沒有 GitHub 推送或中繼資料變更的線上畫面變動不會被偵測。整理完成後合併至 `main`，既有 Pages 工作流程會發布更新。
+
+推送前執行 harness、單元測試、TypeScript／建置、E2E 及 diff 檢查。相依套件 audit 結果會附在 PR／工作紀錄供審查，避免安全公告阻擋專案變更報告；發布前仍須處理公告。API 錯誤會使掃描失敗且不寫入不完整基準。報告及 audit 輸出會上傳為 artifacts。GitHub 排程可能延遲，公開儲存庫 60 天無活動時會停用排程，屆時需在 Actions 重新啟用。內建 token 觸發的其他工作流程可能需要核准，因此驗證直接在此工作中執行。
+
+本機可執行 `node tools/scan-project-changes.mjs`，並選擇設定 `GITHUB_TOKEN` 避免公開 API 限流。工具會寫入 `.github/project-scan-state.json`、`.github/project-scan-report.md` 及建議的 Demo 網址，接受基準前請一起審查。
+
 ## 文件
 
 - 英文 README：[README.md](./README.md)

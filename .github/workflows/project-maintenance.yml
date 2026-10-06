@@ -1,0 +1,132 @@
+name: Monthly Project Maintenance
+
+on:
+  schedule:
+    # First of each month at 09:17 Asia/Taipei (01:17 UTC).
+    - cron: '17 1 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: monthly-project-maintenance
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_REPO: ${{ github.repository }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+
+      - name: Prepare review branch without discarding pending curation
+        id: branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          branch=$(gh pr list --state open --base "$DEFAULT_BRANCH" --json headRefName --jq '[.[] | select(.headRefName | startswith("codex/project-scan-"))][0].headRefName // empty')
+          if [ -n "$branch" ]; then
+            [[ "$branch" =~ ^codex/project-scan-[0-9]+$ ]] || { echo 'Unexpected maintenance branch name'; exit 1; }
+            git fetch origin "$branch"
+            git switch --track "origin/$branch"
+            git merge "origin/$DEFAULT_BRANCH" -m 'Keep pending project review compatible with the current portfolio'
+          else
+            branch="codex/project-scan-$GITHUB_RUN_ID"
+            git switch -c "$branch"
+          fi
+          echo "name=$branch" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Scan repositories and propose approved demo links
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node tools/scan-project-changes.mjs
+
+      - name: Verify proposed portfolio
+        run: |
+          npm run validate:harness
+          npm run test:unit
+          npm run build
+          npx playwright install --with-deps chromium
+          npm run test:e2e
+          git diff --check
+
+      - name: Report dependency advisories
+        id: audit
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -o pipefail
+          npm audit 2>&1 | tee "$RUNNER_TEMP/project-scan-audit.txt"
+
+      - name: Open or update draft maintenance PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REVIEW_BRANCH: ${{ steps.branch.outputs.name }}
+          AUDIT_OUTCOME: ${{ steps.audit.outcome }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- .github/project-scan-state.json .github/project-scan-report.md src/data/projects.ts
+          if ! git diff --cached --quiet; then
+            cat > "$RUNNER_TEMP/project-scan-commit.txt" <<'MESSAGE'
+          Keep portfolio links and review signals aligned with source repositories
+
+          Record repository changes and propose approved demo URLs for curated review.
+
+          Constraint: Curated bilingual copy and preview images require source and visual review
+          Confidence: high
+          Scope-risk: narrow
+          Tested: Harness, unit tests, TypeScript/build, E2E, diff integrity; audit reported separately
+          Not-tested: Live demo appearance and unpublished product copy
+          MESSAGE
+            git commit --file "$RUNNER_TEMP/project-scan-commit.txt"
+          fi
+          # Also push a successful merge from main, even if the scan had no new findings.
+          if git diff --quiet "origin/$DEFAULT_BRANCH" HEAD; then
+            echo 'No project changes detected.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git push origin "HEAD:refs/heads/$REVIEW_BRANCH"
+          cp .github/project-scan-report.md "$RUNNER_TEMP/project-scan-pr.md"
+          printf '\nDependency audit outcome: %s. See the workflow audit log/artifact; resolve advisories before release.\n' "$AUDIT_OUTCOME" >> "$RUNNER_TEMP/project-scan-pr.md"
+          pr=$(gh pr list --state open --head "$REVIEW_BRANCH" --base "$DEFAULT_BRANCH" --json number --jq '.[0].number // empty')
+          if [ -n "$pr" ]; then
+            gh pr edit "$pr" --body-file "$RUNNER_TEMP/project-scan-pr.md"
+          else
+            gh pr create --draft --base "$DEFAULT_BRANCH" --head "$REVIEW_BRANCH" --title 'Review monthly portfolio repository changes' --body-file "$RUNNER_TEMP/project-scan-pr.md"
+          fi
+          echo 'Project changes are available in the draft maintenance PR. All verification ran in this workflow; additional PR workflows may require approval.' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Summarize dependency findings
+        if: always() && steps.audit.outcome == 'failure'
+        run: echo 'Dependency audit found advisories or could not complete. Review the audit log/artifact before releasing; repository-change scanning remains available.' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload scan report and baseline
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: project-scan
+          path: |
+            .github/project-scan-report.md
+            .github/project-scan-state.json
+            ${{ runner.temp }}/project-scan-audit.txt
+          if-no-files-found: ignore

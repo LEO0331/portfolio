@@ -2,50 +2,41 @@
 
 ## Current State
 
-**Last updated:** 2026-10-01
+**Last updated:** 2026-10-06
 
-**Active work:** Complete Traditional Chinese project localization
+**Active work:** Monthly GitHub Actions project maintenance
 
-**Status:** Chinese cards and detail drawers verified for all 38 projects; local changes ready for deployment
+**Status:** Implemented and verified against current upstream main; repository PR permission and the first authenticated Actions run remain unverified.
 
 ### Completed
 
-- Filled all ten missing Taipei Chinese content records, restored AssistantHub challenge/outcome translations, and added 33 localized descriptive titles. All 38 current projects now have Chinese card and detail copy.
-
-- Audited all 38 displayed projects against the public GitHub owner listing, resolved repository redirects, current READMEs, package metadata where stacks changed, and public demos.
-- Updated 28 display names and curated outdated English/Traditional Chinese descriptions, roles, stacks, categories, and features.
-- Resolved four renamed repositories without adding duplicates: sharpface → cna-practice; amazon-app → family-cabinet; email_website → competition-practice; RobotFriends → Gridline.
-- Preserved project IDs/slugs so existing portfolio detail links remain stable.
-- Refreshed 29 visually reviewed live-demo PNG previews and their preferred WebP versions, including all renamed display entries, CraftFocus, and Taipei Public Records Explorer.
-- Updated existing browser-test copy expectations to match current project names and localized wording.
+- Added monthly/manual repository scan and a verified draft-PR workflow. Scans repository push timestamps, canonical URLs, metadata, root README hashes, and unlisted public repository candidates.
+- Proposes only approved demo URL changes for root-repository projects; preserves curated bilingual content, stable IDs/slugs, monorepo demo links, and pending PR curation.
+- Previous 38-project content/localization audit remains complete.
 
 ### Verification Evidence
 
-- Chinese-localization regression: failed before the fix, passed after; final browser suite 24/24, with 17/17 tracked flows.
-- Production checks verified Chinese safety, real-estate, and religious-group cards and detail drawers, preserving their original project slugs.
-
-- Initial and final GitHub sync dry runs reviewed; final: 0 existing updates, 0 new candidates, no missing repository warnings.
-- npm ci and npm audit: passed, 0 vulnerabilities.
-- npm run test:unit: 7/7 passed.
-- npm run build: passed, including TypeScript checking and static route generation.
-- npm run test:e2e: 23/23 passed; 17/17 tracked flows (100%).
-- Data validation: 38 unique IDs and slugs; all demo/repository URLs and preview references valid; localized keys resolve to existing projects.
-- Visual review: 29 loaded public-demo captures passed at 97/100; loading-only and Render wake-up captures were rejected and replaced after initialization.
-- Harness and diff checks: recorded in the dated history entry after final verification.
+- npm ci passed; unit tests 14/14; TypeScript/production build passed; E2E 24/24, tracked flows 17/17 (100%).
+- Full-catalogue fixture verifies all 38 entries and an unchanged repeat scan; targeted regressions cover pagination, renames, missing repos, unsafe links, monorepo URLs, escaping, and API failure.
+- Workflow Bash syntax checked; harness and diff checks recorded below.
+- After incorporating upstream Dependabot updates, npm audit reports 5 high vulnerabilities in the existing Tailwind toolchain. Workflow audit is advisory and visible in logs/artifacts/PR; build/test failures still block PR publication.
 
 ### Blockers
 
-- None. Initial sandbox subprocess restrictions were resolved through approved build/browser execution.
+- No implementation blocker. GitHub activation requires pushing the workflow to the default branch and enabling Actions to create pull requests in repository settings.
 
 ### Remaining Risks
 
-- Public demos can load slowly or cold-start; screenshots are verified snapshots from 2026-10-01.
-- Changes are local and have not been published to GitHub Pages.
+- End-to-end GitHub push/PR creation and authenticated scan have not run in Actions yet. Local unauthenticated scan hit HTTP 403 rate limiting; no partial snapshot or source changes were written.
+- Existing npm advisories include a recommended Tailwind major upgrade; dependency remediation is separate work and should precede release.
+- Copy, translations, renamed repo links, new projects, and previews require review in the draft PR. Live-demo-only changes without GitHub metadata/push changes are not detected.
+- GitHub can delay scheduled runs or disable them after 60 days of inactivity in public repositories. Pending-branch merge conflicts require manual resolution.
 
 ### Next Session Should
 
-1. Review the local catalogue and refreshed images, then deploy through the existing GitHub Pages workflow when requested.
-2. Continue checking READMEs/live titles and GitHub redirects alongside sync: the existing sync only updates demo URLs and does not detect product-name or description changes.
+1. Enable Actions PR creation if needed; manually run Monthly Project Maintenance to establish the baseline and verify the authenticated scan.
+2. Review findings, curate bilingual content/previews, and accept the baseline together before merging the draft PR to publish through Pages.
+3. Address the current dependency advisories without folding an unreviewed major migration into project maintenance.
 
 ## Update Contract
 
@@ -128,3 +119,18 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Evidence: production build/typecheck passed; 7/7 unit tests; 24/24 Playwright tests; tracked coverage 17/17 (100%); npm audit 0 vulnerabilities. Production browser spot checks passed for the three highlighted cards and drawers; visual review passed.
 - Simplification: reused zhProjectContent and the existing localization helper; no new dependencies or parallel localization layer.
 - Remaining risks: changes are local and require the existing deployment workflow to reach GitHub Pages. No known untranslated description/detail fields remain in current records.
+
+### 2026-10-06 — Monthly GitHub Actions repository maintenance
+
+- Sources checked: repository maintenance scripts/data, GitHub official scheduled-event and GITHUB_TOKEN documentation, public GitHub metadata/README API during partial live validation.
+- Changed files: .github/workflows/project-maintenance.yml, tools/scan-project-changes.mjs, tools/scan-project-changes.test.mjs, README.md, README.zh-TW.md, feature_list.json, progress.md, session-handoff.md.
+- Schedule: first of month 09:17 Asia/Taipei, plus manual dispatch. Uses existing pinned actions and GitHub CLI; no new dependencies, API keys, commits, pushes, or deployments in this session.
+- Simplifications: reused the canonical project parser, existing approved-host policy, source setter, and source validation; metadata/README comparison avoids automatically rewriting curated copy or inserting placeholders.
+- Workflow reuses an open scan branch and merges current default-branch changes without force-pushing; conflicts stop the run rather than discarding manual review work. Authenticated scanning completes before saving state; verified proposals are opened as draft PRs.
+- Verification: npm ci passed after retrying with network access; npm run test:unit 14/14; npm run build passed with TypeScript; npm run test:e2e 24/24 and 100% tracked coverage. Initial build ran before the failed sandbox install completed and was rerun successfully after installation.
+- npm audit returned 8 existing vulnerabilities (1 low, 1 moderate, 6 high); no dependency migration attempted. The workflow preserves scan reporting while surfacing audit failures separately, including service errors.
+- Live scan identified the monorepo URL shape; regression added and support fixed. Retry reached GitHub unauthenticated API rate limit (403 on taipei-real-estate-dashboard README); no partial baseline saved. Authenticated Actions execution/PR permissions remain unverified until activation.
+- No project display content or images changed. Remaining risks and activation steps are listed in Current State.
+- Final checks: Git Bash syntax passed for all 6 workflow run steps; npm run validate:harness passed (9 feature records); git diff --check passed. No lint script is configured; TypeScript static checking passed through the build. GitHub-specific YAML/schema acceptance is pending the first Actions run.
+- Commit/push follow-up: user authorized publishing the workflow to main. Fetched and incorporated upstream Dependabot merges for baseline-browser-mapping, browserslist, and postcss-selector-parser before pushing; npm ci, unit/build/E2E checks rerun on the combined result. Audit now reports 5 high Tailwind-toolchain vulnerabilities; no major dependency migration attempted.
+- Follow-up browser check: sandbox web-server startup stalled; reran the same E2E command with approved subprocess access. Final result: 24/24 tests, 17/17 tracked coverage.

@@ -187,6 +187,29 @@
         "npm run build passed; npm run test:unit passed 7/7; npm run test:e2e passed 24/24 (17/17 tracked coverage)",
         "npm audit: zero vulnerabilities; visual verdict passed"
       ]
+    },
+    {
+      "id": "monthly-project-maintenance-2026-10",
+      "name": "Scan source repositories monthly through GitHub Actions",
+      "description": "Track repository and README changes, propose approved demo URLs in a verified draft PR, and preserve manual bilingual and visual curation.",
+      "status": "complete",
+      "dependencies": [
+        "next-github-project-sync"
+      ],
+      "doneCriteria": [
+        "Monthly and manual workflow exists",
+        "Change detection preserves curated content and pending PR edits",
+        "Regression and portfolio verification results recorded",
+        "Activation requirements and remaining risks documented"
+      ],
+      "evidence": [
+        "First of month 09:17 Asia/Taipei schedule plus workflow_dispatch",
+        "14/14 unit tests, including all 38 catalogue entries and unchanged repeat scan",
+        "TypeScript/build passed; 24/24 E2E, 17/17 tracked flows",
+        "npm ci passed after incorporating upstream Dependabot updates; npm audit reports 5 high Tailwind-toolchain vulnerabilities, reported separately by workflow",
+        "Live public API scan reached unauthenticated rate limit with no partial state saved; Actions uses built-in authenticated token",
+        "Workflow Bash syntax and final harness/diff checks recorded in progress.md"
+      ]
     }
   ]
 }
