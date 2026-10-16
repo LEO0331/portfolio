@@ -14,6 +14,7 @@ Use this repository as a reusable, recruiter-friendly portfolio template. `AGENT
 - Project entries in `src/data/projects.ts`
 - Optional Traditional Chinese overrides in `src/data/projects.zh.ts`
 - Repository base path in `vite.config.ts`
+- Optional GovTech content: follow the [specification](./docs/govtech-case-study-v1.0.zh-TW.md) and [case template](./docs/govtech-case-study-template.md); explicitly retain or curate the included personal case when reusing this template.
 
 ## Workflow
 
@@ -21,7 +22,8 @@ Use this repository as a reusable, recruiter-friendly portfolio template. `AGENT
 2. Read `AGENTS.md`, `progress.md`, and `feature_list.json`.
 3. Update identity, skills, project data, localization, previews, resume, and Vite base path as needed.
 4. Follow the review-only project sync and progress-recording rules in `AGENTS.md`.
-5. Run `bash init.sh`, then push to `main` and enable GitHub Pages through GitHub Actions.
+5. Review the styled site with `npm run build` and `npm run preview`; the existing CSP blocks Vite dev style injection. E2E builds its own production preview.
+6. Run `bash init.sh`, then publish reviewed changes and enable GitHub Pages through GitHub Actions. The script stops at any failed gate, including audit; record failures rather than claiming the whole script passed. The 2026-10-16 audit findings and separately run checks are in the [verification report](./docs/govtech-verification.md).
 
 ## Done criteria
 - `bash init.sh` passes

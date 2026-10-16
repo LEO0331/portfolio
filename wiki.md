@@ -36,8 +36,9 @@ gh repo create <your-new-repo> \
 cd <your-new-repo>
 npm install
 
-# 4) Run locally
-npm run dev
+# 4) Review the styled production output
+npm run build
+npm run preview
 ```
 
 ## Template checklist
@@ -62,6 +63,12 @@ npm run dev
 - Ensure files exist in `src/assets/images/projects/`
 - Ensure `image` field names in project data match file names exactly
 
+### Local styles and verification
+- Use `npm run build` and `npm run preview` for styled review; the existing CSP blocks Vite dev style injection.
+- E2E builds its own production preview; keep port 4175 free and install Chromium with `npx playwright install chromium`.
+- `bash init.sh` currently stops at the five recorded high audit findings; see the dated [verification report](./docs/govtech-verification.md) for separately run checks.
+- GovTech additions follow the [specification](./docs/govtech-case-study-v1.0.zh-TW.md) and [case template](./docs/govtech-case-study-template.md).
+
 ### E2E failures in CI
 - Re-run locally with `npm run test:e2e`
-- If selector changed, update affected test case in `tests/e2e/smoke.spec.ts`
+- Diagnose the failure in the corresponding `tests/e2e/` spec; preserve existing assertions and the coverage gate.

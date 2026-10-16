@@ -35,9 +35,12 @@
 ## 快速開始
 
 ```bash
-npm install
-npm run dev
+npm ci
+npm run build
+npm run preview
 ```
+
+Preview 在 `/portfolio/` 提供建置後的網站。開發時仍可使用 `npm run dev`，但目前 CSP 會阻擋 Vite 注入的樣式；目視驗證請使用 production preview。首次執行 E2E 前先執行 `npx playwright install chromium`。
 
 ## 建置與測試
 
@@ -47,9 +50,13 @@ npm run dev
 npm run validate:harness
 npm ci
 npm audit
+npm run test:unit
 npm run build
 npm run test:e2e
+git diff --check
 ```
+
+截至 2026-10-16，`npm audit` 在既有 Tailwind／braces 工具鏈回報五項 high 問題。`bash init.sh` 會在 audit 非零結束時停止；[驗證報告](./docs/govtech-verification.md) 中的建置與測試結果為分別執行的紀錄。功能完成不代表安全稽核無問題。
 
 ## 部署至 GitHub Pages
 
@@ -130,6 +137,8 @@ node tools/capture-project-previews.mjs
 - 範本使用指南：[wiki.md](./wiki.md)
 
 ## GovTech 案例展示
+
+功能已於 2026-10-16 隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main。
 
 個人 [市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 展示公共資料工程與可解釋決策原型。[臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 是第一個已完成案例；其他政策延伸明確標為規劃中，不暗示政府背書或正式營運認證。
 

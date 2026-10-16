@@ -282,7 +282,8 @@
         "Four direct/refresh/locale routes verified at root and /portfolio/; static metadata/sitemap fixtures pass for both bases",
         "Desktop/mobile/light/dark visual review passed 95/100; no overflow at 320/390/768/1024/1440",
         "Canonical specification, template, source audit, screenshots, verification report and lifecycle records updated",
-        "Draft PR #16 created and verified on GitHub: https://github.com/LEO0331/portfolio/pull/16; not merged"
+        "PR #16 merged on 2026-10-16 at 13:48 Asia/Taipei: https://github.com/LEO0331/portfolio/pull/16; merge 1db5e24ac26862b79030dbfff246bfbf27506eca",
+        "2026-10-16 documentation reconciliation: 13 Markdown files, 58 relative links, four routes and 12 specification sections verified; harness/diff passed; PR #15/#16 merge status corrected; documentation follow-up draft PR #17: https://github.com/LEO0331/portfolio/pull/17"
       ]
     }
   ]

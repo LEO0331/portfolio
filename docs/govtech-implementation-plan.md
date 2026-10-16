@@ -1,5 +1,7 @@
 # GovTech showcase implementation plan
 
+Status: completed and merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16. This is the original implementation plan; results and documentation checks are in the [verification report](./govtech-verification.md).
+
 Scope: portfolio presentation only; one completed Bin Allocation decision-support POC. No dashboard repository changes, operations workflow, dependencies, or pin-selection changes.
 
 1. Audit repository routes, locale, static entrypoints, curated project data and current verification baseline; create `codex/govtech-showcase-v1`.
