@@ -624,11 +624,11 @@ export const projects: Project[] = [
     id: "taipei-bin-map",
     slug: "taipei-bin-map",
     name: "Taipei Public Amenities Map",
-    tagline: "Find Taipei public amenities across official datasets",
+    tagline: "Explore public amenities and explainable bin-allocation scenarios",
     shortDescription:
-      "A mobile-first bilingual map and directory for Taipei public amenities, with source-specific filters and nearby sorting.",
+      "A bilingual public-amenities explorer and completed bin-allocation decision-support POC with governed data and explainable scenarios.",
     fullDescription:
-      "Taipei Public Amenities Map combines official local datasets, Leaflet maps, accessible directories and tables, CSV exports, and offline-friendly caching to help visitors inspect published facility records.",
+      "Taipei Public Amenities Map retains official facility maps, accessible directories, nearby sorting and offline-friendly caching. Its completed decision-support POC adds bin-coverage allocation, source reconciliation, policy-oriented category weighting, scenario comparison, sensitivity analysis, explainable field-review candidates and JSON/CSV evidence export. Policy weights are analytical assumptions, and candidate sites require field verification.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["React", "TypeScript", "Vite", "Leaflet"],
@@ -637,11 +637,16 @@ export const projects: Project[] = [
       "Public-amenity maps and directories",
       "District and source-specific filters",
       "Nearby sorting and address lookup",
-      "CSV export and offline-friendly caching"
+      "CSV export and offline-friendly caching",
+      "Bin-allocation coverage and explainable field-review candidates",
+      "Data governance and source reconciliation",
+      "Policy category weighting and sensitivity analysis",
+      "Scenario comparison and JSON/CSV evidence export"
     ],
     image: "/src/assets/images/projects/taipei-bin-map.png",
     demoUrl: "https://taipei-bin-map.vercel.app/",
     repoUrl: "https://github.com/LEO0331/taipei-bin-map",
+    govtechCaseId: "bin-policy",
     status: "live",
     featured: false
   },

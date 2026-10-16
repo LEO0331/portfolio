@@ -257,6 +257,33 @@
         "npm audit retains 5 separate high braces-chain findings; authenticated workflow run recorded separately in progress.md",
         "Live homepage verified; authenticated Actions run 37396328563 succeeded and automatically opened draft PR #15 with the saved profile pin order unchanged"
       ]
+    },
+    {
+      "id": "govtech-showcase-v1-2026-10",
+      "name": "Present bilingual GovTech decision-support case studies",
+      "description": "Add one source-backed Bin Policy POC, civic-domain catalogue, bilingual routes, internal navigation, static SEO and reusable case documentation.",
+      "status": "complete",
+      "dependencies": [
+        "github-pinned-homepage-2026-10"
+      ],
+      "doneCriteria": [
+        "Four bilingual GovTech routes and static metadata work",
+        "One fully curated Bin Policy case references pinned evidence and limitations",
+        "Civic catalogue maturity and planned extensions match actual source capabilities",
+        "Project identities, filters and GitHub pin order remain intact",
+        "Documentation, source audit, lifecycle records and reviewable PR are present",
+        "Build, unit, E2E, visual, harness and diff checks pass; audit findings recorded"
+      ],
+      "evidence": [
+        "Source audit pinned to taipei-bin-map 1280011b086f498404abf138c29f64041963e14c; exact counts, scenarios, capabilities and limitations verified",
+        "npm ci passed; audit reports 5 pre-existing high Tailwind/braces-chain findings; dependencies unchanged",
+        "22/22 unit tests and TypeScript/production build passed",
+        "36/36 Playwright tests passed; existing tracked flows 17/17 (100%)",
+        "Four direct/refresh/locale routes verified at root and /portfolio/; static metadata/sitemap fixtures pass for both bases",
+        "Desktop/mobile/light/dark visual review passed 95/100; no overflow at 320/390/768/1024/1440",
+        "Canonical specification, template, source audit, screenshots, verification report and lifecycle records updated",
+        "Draft PR #16 created and verified on GitHub: https://github.com/LEO0331/portfolio/pull/16; not merged"
+      ]
     }
   ]
 }

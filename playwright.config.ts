@@ -29,9 +29,9 @@ export default defineConfig({
     }
   ],
   webServer: {
-    command: `npm run dev -- --host ${E2E_HOST} --port ${E2E_PORT} --strictPort`,
+    command: `npm run build && npm run preview -- --host ${E2E_HOST} --port ${E2E_PORT} --strictPort`,
     url: `${E2E_ORIGIN}${E2E_BASE_PATH}/`,
-    reuseExistingServer: !process.env.CI,
+    reuseExistingServer: false,
     timeout: 120000
   }
 });

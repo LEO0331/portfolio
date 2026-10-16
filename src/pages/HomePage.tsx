@@ -23,6 +23,18 @@ export function HomePage(): JSX.Element {
       <Hero />
       <IntroBlurb />
       <FeaturedProjects />
+      <Section className="py-4 sm:py-6">
+        <div className="panel flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="eyebrow">GovTech</p>
+            <h2 className="mt-2 text-xl font-bold text-slate-900 dark:text-slate-100">{text.home.govtechTitle}</h2>
+            <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-300">{text.home.govtechDescription}</p>
+          </div>
+          <Link to={toLocalePath("/govtech")} className={getButtonClassName("secondary")}>
+            {text.home.exploreGovtech}
+          </Link>
+        </div>
+      </Section>
       <SkillsOverview />
 
       <Section className="pt-2 sm:pt-4">

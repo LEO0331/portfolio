@@ -9,11 +9,39 @@ const sourceIndex = path.join(distDir, "index.html");
 const routeConfigPath = path.join(root, "src", "routes", "routeConfig.json");
 const viteConfigPath = path.join(root, "vite.config.ts");
 
+function escapeHtml(value) {
+  return value.replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  })[character]);
+}
+
 function renderRouteEntry(source, siteUrl, route) {
-  const canonicalUrl = route.path === "/" ? `${siteUrl}/` : `${siteUrl}${route.path}`;
+  const canonicalUrl = escapeHtml(route.path === "/" ? `${siteUrl}/` : `${siteUrl}${route.path}`);
   let output = source
-    .replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${canonicalUrl}" />`)
-    .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`);
+    .replace(/<meta property="og:url" content="[^"]*" \/>/, () => `<meta property="og:url" content="${canonicalUrl}" />`)
+    .replace(/<link rel="canonical" href="[^"]*" \/>/, () => `<link rel="canonical" href="${canonicalUrl}" />`);
+
+  if (route.title) {
+    const title = escapeHtml(route.title);
+    output = output
+      .replace(/<title>[^<]*<\/title>/, () => `<title>${title}</title>`)
+      .replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/>/, () => `<meta property="og:title" content="${title}" />`)
+      .replace(/<meta\s+name="twitter:title"\s+content="[^"]*"\s*\/>/, () => `<meta name="twitter:title" content="${title}" />`);
+  }
+
+  if (route.description) {
+    const description = escapeHtml(route.description);
+    output = output
+      .replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/>/, () => `<meta name="description" content="${description}" />`)
+      .replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/>/, () => `<meta property="og:description" content="${description}" />`)
+      .replace(/<meta\s+name="twitter:description"\s+content="[^"]*"\s*\/>/, () => `<meta name="twitter:description" content="${description}" />`);
+  }
+
+  output = output.replace(/<html lang="[^"]*">/, () => `<html lang="${route.path === "/zh" || route.path.startsWith("/zh/") ? "zh-Hant" : "en"}">`);
 
   if (!route.indexable) {
     output = output.replace(/<meta name="robots" content="[^"]*" \/>/, '<meta name="robots" content="noindex, nofollow" />');

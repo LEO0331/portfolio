@@ -18,6 +18,7 @@ export interface Project {
   demoUrl?: string;
   repoUrl?: string;
   caseStudyUrl?: string;
+  govtechCaseId?: "bin-policy";
   status: ProjectStatus;
   featured: boolean;
   startDate?: string;
