@@ -4,9 +4,9 @@
 
 **Last updated:** 2026-10-16
 
-**Active work:** GovTech Case Study & Decision Support Showcase v1.0
+**Active work:** Documentation consistency after the GovTech showcase merge
 
-**Status:** GovTech merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is complete locally on codex/govtech-docs-current, based on current main.
+**Status:** GovTech merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is complete and published as draft PR #17 (https://github.com/LEO0331/portfolio/pull/17) on codex/govtech-docs-current, based on current main.
 
 ### Completed
 
@@ -185,3 +185,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Updated both READMEs, AGENTS verification commands, wiki.md, skill.md, the five GovTech Markdown docs, progress.md, session-handoff.md and feature_list.json. Consolidated superseded reachability warnings and clarified production-preview/CSP, audit-stop behavior and next-case page/drawer integration steps.
 - Verification: 58 local links across all 13 Markdown files resolve; four route rows and 12 specification sections match; bilingual command blocks and completion ledger agree; harness and diff checks pass. No application/dependency changes or new application-test claims. Generated scan report and prior evidence preserved as historical records.
 - Next: review the documentation-only follow-up; then continue with separately scoped taipei-1999-map #3 or audit remediation. No further merge review is needed for PR #15/#16.
+
+- Publication: documentation corrections committed as 6d5e17b; draft PR #17 created and attached: https://github.com/LEO0331/portfolio/pull/17. It remains unmerged.

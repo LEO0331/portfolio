@@ -71,3 +71,5 @@ Reviewed all 13 tracked Markdown files, the feature ledger, package scripts, ini
 Corrected current merge/handoff status; consolidated the final successful demo reachability record; aligned English/Chinese quick start, verification commands, browser installation and CSP/production-preview guidance; documented init.sh stopping at the recorded audit failure; and made next-case instructions explicit about page selection and drawer runtime validation. The original generated scan report and dated progress/test records remain historical evidence.
 
 Verification for this documentation-only follow-up: all 13 Markdown files inspected; 58 relative Markdown links resolve; all four GovTech routes match the specification; all 12 required specification headings exist; bilingual verification commands and completed feature state agree; npm run validate:harness and git diff --check pass. Application code and dependencies are unchanged. No new build/E2E/audit or deployment result is claimed in this follow-up.
+
+Documentation follow-up: draft PR #17 (https://github.com/LEO0331/portfolio/pull/17), created and verified unmerged on codex/govtech-docs-current.

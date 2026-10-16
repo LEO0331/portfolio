@@ -2,9 +2,9 @@
 
 **Last updated:** 2026-10-16
 
-**Current objective:** GovTech Case Study & Decision Support Showcase v1.0.
+**Current objective:** Documentation consistency after the GovTech showcase merge.
 
-**Current status:** GovTech implementation merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is on codex/govtech-docs-current, based on current main. Maintenance PR #15 was merged on 2026-10-06 (c6dbb3f).
+**Current status:** GovTech implementation merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is published as draft PR #17 (https://github.com/LEO0331/portfolio/pull/17), unmerged, on codex/govtech-docs-current based on current main. Maintenance PR #15 was merged on 2026-10-06 (c6dbb3f).
 
 ## Blockers
 
