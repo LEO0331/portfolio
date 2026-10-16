@@ -1,6 +1,6 @@
 # GovTech showcase verification — 2026-10-16
 
-Branch: `codex/govtech-showcase-v1`. Scope: portfolio only; no dashboard repository, dependency, pin snapshot or maintenance workflow edits. Source version: `taipei-bin-map@1280011b086f498404abf138c29f64041963e14c`.
+Draft PR: [#16](https://github.com/LEO0331/portfolio/pull/16), created and verified Draft, not merged. Branch: `codex/govtech-showcase-v1`. Scope: portfolio only; no dashboard repository, dependency, pin snapshot or maintenance workflow edits. Source version: `taipei-bin-map@1280011b086f498404abf138c29f64041963e14c`.
 
 ## Results
 

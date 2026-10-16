@@ -6,7 +6,7 @@
 
 **Active work:** GovTech Case Study & Decision Support Showcase v1.0
 
-**Status:** Implemented and locally verified on codex/govtech-showcase-v1; preparing the requested reviewable draft PR. No automatic merge.
+**Status:** Complete and published on codex/govtech-showcase-v1 as draft PR #16 (https://github.com/LEO0331/portfolio/pull/16). The PR is verified Draft and remains unmerged.
 
 ### Completed
 
@@ -25,7 +25,7 @@
 
 ### Blockers
 
-- None for implementation. Draft PR publication and final ledger status are the remaining handoff steps.
+- None. Draft PR #16 is created, attached and verified; human review/merge is the next step.
 
 ### Remaining Risks
 
@@ -176,3 +176,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Audit: 5 pre-existing high findings (braces, chokidar, fast-glob, micromatch, tailwindcss; GHSA-vfj7-8cjw-p6xm). No dependency or lockfile modifications. No lint command exists; build includes TypeScript static analysis.
 - Read-only project sync: zero existing updates; one review-only WanderStamp candidate; warmthfromafar absent from public owner listing. All eleven cited demo pages returned HTTP200, with Render requiring a longer retry; no blanket functional-availability claim.
 - Remaining limitations: upstream scenario/tests inspected, not independently rerun; research status review_required, missing tourism/commercial geometry, older bus baseline, assumed weights and field-review requirement all disclosed. v1.3 operations indefinitely deferred. Next: publish the reviewable draft PR, then recommend taipei-1999-map #3 as a separate case.
+
+- Publication: implementation commit f240b31 pushed to codex/govtech-showcase-v1. Connector PR creation returned Resource not accessible by integration (403); signed-in GitHub browser successfully created draft PR #16, verified Draft and unmerged. https://github.com/LEO0331/portfolio/pull/16. Final lifecycle-only follow-up records completion and links the PR; full application verification remains valid.

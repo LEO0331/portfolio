@@ -4,7 +4,7 @@
 
 **Current objective:** GovTech Case Study & Decision Support Showcase v1.0.
 
-**Current status:** Implementation and local verification complete on codex/govtech-showcase-v1. Draft PR publication is next; do not merge automatically.
+**Current status:** Complete on codex/govtech-showcase-v1. Draft PR #16: https://github.com/LEO0331/portfolio/pull/16 — verified Draft and unmerged. Implementation commit f240b31; lifecycle completion recorded in the follow-up commit.
 
 ## Blockers
 
