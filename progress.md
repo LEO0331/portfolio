@@ -6,7 +6,7 @@
 
 **Active work:** GovTech Case Study & Decision Support Showcase v1.0
 
-**Status:** Complete and published on codex/govtech-showcase-v1 as draft PR #16 (https://github.com/LEO0331/portfolio/pull/16). The PR is verified Draft and remains unmerged.
+**Status:** GovTech merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is complete locally on codex/govtech-docs-current, based on current main.
 
 ### Completed
 
@@ -25,20 +25,20 @@
 
 ### Blockers
 
-- None. Draft PR #16 is created, attached and verified; human review/merge is the next step.
+- None for documentation verification. The documentation follow-up is ready for review; the implementation is already merged.
 
 ### Remaining Risks
 
 - npm audit exits 1 with five existing high Tailwind/braces-chain findings; no dependency changes were introduced.
 - Source research data remain review_required with older bus references, unavailable tourism/commercial scoring inputs and assumed weights. Coverage is not measured policy effectiveness; candidate locations need field review.
 - Remote demo availability can change; HTTP200 is reachability only. The existing production CSP still blocks injected dev styles; E2E intentionally exercises production output.
-- Existing maintenance draft PR #15 remains separate and unmerged.
+- Maintenance PR #15 was merged on 2026-10-06 (c6dbb3f); its generated scan report remains historical evidence.
 
 ### Next Session Should
 
-1. Review the GovTech draft PR and its specification/source audit/screenshots; deploy only through a reviewed merge.
+1. Review the documentation follow-up. GovTech PR #16 is already merged; verify deployment separately before claiming live release.
 2. Keep source versions and actual/planned capability labels current; next roadmap repository is taipei-1999-map #3.
-3. Independently review maintenance PR #15 and the existing braces-chain advisories.
+3. Address the existing braces-chain advisories in a separate toolchain change; maintenance PR #15 needs no further merge review.
 
 ## Update Contract
 
@@ -178,3 +178,10 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Remaining limitations: upstream scenario/tests inspected, not independently rerun; research status review_required, missing tourism/commercial geometry, older bus baseline, assumed weights and field-review requirement all disclosed. v1.3 operations indefinitely deferred. Next: publish the reviewable draft PR, then recommend taipei-1999-map #3 as a separate case.
 
 - Publication: implementation commit f240b31 pushed to codex/govtech-showcase-v1. Connector PR creation returned Resource not accessible by integration (403); signed-in GitHub browser successfully created draft PR #16, verified Draft and unmerged. https://github.com/LEO0331/portfolio/pull/16. Final lifecycle-only follow-up records completion and links the PR; full application verification remains valid.
+
+### 2026-10-16 — Documentation reconciliation after GovTech merge
+
+- Checked all 13 tracked Markdown documents and feature state against current main (1db5e24), code contracts, routes, scripts and GitHub metadata. PR #16 merged on 2026-10-16 at 13:48 Asia/Taipei; PR #15 merged on 2026-10-06 at 09:07 Asia/Taipei. Prior draft/unmerged statements are historical, superseded by current state.
+- Updated both READMEs, AGENTS verification commands, wiki.md, skill.md, the five GovTech Markdown docs, progress.md, session-handoff.md and feature_list.json. Consolidated superseded reachability warnings and clarified production-preview/CSP, audit-stop behavior and next-case page/drawer integration steps.
+- Verification: 58 local links across all 13 Markdown files resolve; four route rows and 12 specification sections match; bilingual command blocks and completion ledger agree; harness and diff checks pass. No application/dependency changes or new application-test claims. Generated scan report and prior evidence preserved as historical records.
+- Next: review the documentation-only follow-up; then continue with separately scoped taipei-1999-map #3 or audit remediation. No further merge review is needed for PR #15/#16.

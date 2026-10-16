@@ -90,15 +90,10 @@ Every listed repository already exists in the curated portfolio. Stable project 
 
 Gridline retains the legacy stable ID `robotfriends` and existing display name Gridline. Catalogue statuses such as `live` describe deployment separately from `public-data-explorer`, `decision-support-poc` and `planned-decision-support` maturity. README verification and pinned commit provenance do not establish live service availability.
 
-## Final link and availability checks
+## Final link and availability checks — 2026-10-16
 
 The pinned Git tree confirms `tests/`, `tests/e2e/policy-priority.spec.js`, `src/lib/binPolicyDecision.test.ts` and `src/lib/policyBalancedCoverage.test.ts` exist. The general tests-directory evidence link is valid; the pure algorithm tests live under `src/lib`.
 
-Read-only homepage GET checks for the eleven catalogue demos were attempted on 2026-10-16. This execution environment could not resolve `leo0331.github.io`, `publicsafetydashboard.onrender.com` or `taipei-bin-map.vercel.app`; no HTTP status was obtained. A separate web retrieval fallback also could not open the 1999, food, Feitsui or safety demos. These retrieval limits do not establish that the deployments are offline. Live availability remains unverified in this audit.
+All eleven cited demo entry pages returned HTTP 200 during the recorded check: Bin Map, Gridline, the eight other GitHub Pages civic explorers, and publicsafetydashboard. The Render-hosted page required a longer retry after an initial 20-second timeout. Earlier sandbox DNS and web-retrieval failures were environment limitations resolved by network-enabled requests.
 
-
-## Subsequent deployment reachability check
-
-The primary agent retried read-only public GETs with network access. HTTP200 returned for taipei-bin-map, Gridline and all eight listed GitHub Pages civic explorers. The publicsafetydashboard Render URL timed out after20seconds; its current availability remains unverified. HTTP200 establishes page reachability, not a full interactive or policy validation. The earlier DNS failures above were environment limitations, superseded for these ten responding pages.
-
-The subsequent longer Render retry returned HTTP200 for publicsafetydashboard as well. All eleven cited demo entry pages responded; interactive capability verification remains based on the pinned source audit.
+HTTP success establishes entry-page reachability at the recorded time, not complete interactive behavior, policy validation or continued availability. Capabilities remain supported by the pinned source audit. This check does not change the separate research-source acquisition limitations, including the tourism API's HTTP 403.

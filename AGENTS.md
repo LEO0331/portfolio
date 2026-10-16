@@ -40,6 +40,7 @@ Run the smallest relevant checks, and run the full gate for project-data, depend
 npm run validate:harness
 npm ci
 npm audit
+npm run test:unit
 npm run build
 npm run test:e2e
 git diff --check

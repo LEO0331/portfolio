@@ -1,5 +1,7 @@
 # GovTech Case Study & Decision Support Showcase v1.0
 
+狀態：已於 2026-10-16 透過 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main；實作驗證與文件複查見 [驗證報告](./govtech-verification.md)。
+
 ## 1. 專案目標與定位
 
 本功能是個人 GovTech 作品集與 POC 展示，不是政府正式專案、委託案、合作關係或核可系統。核心主張：「我不只是將政府開放資料視覺化，而是將公共政策問題轉化為可分析、可比較、可追溯、可驗證的決策支援原型。」
@@ -92,7 +94,7 @@ N_k 是選定區域該類別固定有效母體，包含原本已覆蓋的參考�
 
 `src/types/govtechCase.ts` 定義穩定 ID、slug、政策領域、來源 repo、既有 project ID、成熟度、政策問題、使用者、已實作能力、方法、情境、工程亮點、限制、證據、資產與未來延伸。`src/data/govtechCases.ts` 與 `.zh.ts` 分離展示文案與 JSX。領域與目錄引用既有 project ID，不複製全目錄；只在有足夠完整證據時新增完整案例。
 
-新增下一案例：先用 [文件模板](./govtech-case-study-template.md) 固定來源與界線；核對既有 project ID；補中英文型別化資料與證據；新增對應路由與靜態 metadata、drawer 關係（有需要才擴充型別）；測試兩語直接載入／刷新／切換、base path、sitemap、限制與行動版；更新 feature_list、progress、handoff。一般專案同步與人工策展流程維持不變。
+新增下一案例：先用 [文件模板](./govtech-case-study-template.md) 固定來源與界線；核對既有 project ID；補中英文型別化資料與證據；新增路由、AppRouter 頁面映射與靜態 metadata；目前案例頁以固定 bin-policy ID 取資料，新增案例時須明確指定新頁的案例 ID 或擴充頁面介面；更新 drawer 關係及執行期檢查（有需要才擴充型別）；測試兩語直接載入／刷新／切換、base path、sitemap、限制與行動版；更新 feature_list、progress、handoff。一般專案同步與人工策展流程維持不變。
 
 ## 11. 後續市政 Dashboard Roadmap
 
@@ -118,4 +120,6 @@ N_k 是選定區域該類別固定有效母體，包含原本已覆蓋的參考�
 
 驗收涵蓋四條路由、深層刷新與 locale 保留、Navbar／首頁／drawer 入口、來源 PR／限制、行動版鍵盤與無水平溢出、暗色可讀性、既有 filters／pin order、sitemap／canonical／靜態 metadata；根路徑與 /portfolio/ 基底皆須可產生有效入口。來源證據變更時固定新 commit，逐筆檢查數據定義、研究狀態與假設，不透過同步自動覆寫策展內容。
 
-已知安全風險獨立記錄，不隱藏 audit。不得自動合併；以 reviewable draft PR 交付。
+E2E 會自動建置並啟動 production preview，保留正式 CSP；4175 port 須空閒，首次執行先安裝 Chromium。目視檢查請使用 `npm run build` 與 `npm run preview`，因既有 CSP 會阻擋開發伺服器注入的樣式。`bash init.sh` 採失敗即停止，目前會因已記錄的五項 high audit 問題中止；不能把分別通過的測試稱為完整 script 通過。
+
+已知安全風險獨立記錄，不隱藏 audit。原交付為可審查的 draft PR；PR #16 現已合併。後續變更仍透過 PR 審查，不由 agent 自動合併。

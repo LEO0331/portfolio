@@ -44,6 +44,6 @@ Explicitly planned capabilities, repository ownership and dependencies. No impli
 
 ## Portfolio integration checklist
 
-Add equivalent English/Traditional Chinese data; add fixed locale routes and static metadata; add validated internal relationship if needed; preserve existing project identity and pins. Verify direct refresh, language switching, base paths, sitemap, evidence/limitations, mobile keyboard/no-overflow and dark mode. Run full repository gate and update feature_list.json, progress.md and session-handoff.md.
+Add equivalent English/Traditional Chinese data; add fixed locale routes, AppRouter page mappings and static metadata; explicitly select the new case ID in its page (the launch page currently selects bin-policy); extend the typed drawer relation and its runtime check if needed; preserve existing project identity and pins. Verify direct refresh, language switching, base paths, sitemap, evidence/limitations, mobile keyboard/no-overflow and dark mode. Run full repository gate and update feature_list.json, progress.md and session-handoff.md.
 
 Reproducible links: source commit, data snapshot, report, methodology, tests, PRs and optional attributed preview assets.

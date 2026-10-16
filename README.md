@@ -31,9 +31,12 @@ A production-ready, recruiter-friendly portfolio for LEO0331. The site is driven
 
 ## Quick start
 ```bash
-npm install
-npm run dev
+npm ci
+npm run build
+npm run preview
 ```
+
+The preview serves the built site under `/portfolio/`. `npm run dev` remains available for development, but the current CSP blocks Vite’s injected styles; use production preview for styled manual review. Install Chromium once with `npx playwright install chromium` before E2E.
 
 ## Build and test
 The existing Tailwind 3 toolchain uses an npm override for `postcss-selector-parser` **7.1.6** to fix [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) without a Tailwind 4 migration. Keep the override until the parent dependencies request a patched version themselves; regenerate the lockfile and run the full gate when changing it. A subprocess regression checks the malicious flat-selector case.
@@ -42,9 +45,13 @@ The existing Tailwind 3 toolchain uses an npm override for `postcss-selector-par
 npm run validate:harness
 npm ci
 npm audit
+npm run test:unit
 npm run build
 npm run test:e2e
+git diff --check
 ```
+
+As recorded on 2026-10-16, `npm audit` reports five high findings in the existing Tailwind/braces toolchain. `bash init.sh` stops at that nonzero audit result; successful build/test results in the [verification report](./docs/govtech-verification.md) were run separately. Feature completion does not imply a clean security audit.
 
 ## Deploy to GitHub Pages
 1. Confirm `base` in `vite.config.ts` matches the deployed repo path.
@@ -118,6 +125,8 @@ GitHub references: [scheduled workflow behavior](https://docs.github.com/en/acti
 - Template usage guide: [wiki.md](./wiki.md)
 
 ## GovTech case studies
+
+Implemented in [merged PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16.
 
 The independent [GovTech showcase](https://leo0331.github.io/portfolio/govtech) presents public-data engineering and explainable decision-support POCs. [Public Bin Allocation](https://leo0331.github.io/portfolio/govtech/bin-policy) is the first completed case; other policy extensions are explicitly planned. There is no government endorsement or operational certification implied.
 
