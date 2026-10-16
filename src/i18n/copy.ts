@@ -8,6 +8,7 @@ const localizedCopy = {
     nav: {
       home: "Home",
       projects: "Projects",
+      govtech: "GovTech",
       about: "About",
       contact: "Contact",
       github: "GitHub",
@@ -40,6 +41,9 @@ const localizedCopy = {
       selectedWorkEyebrow: "Selected Work",
       featuredProjects: "Featured Projects",
       featuredDescription: "Selected from my GitHub profile pins, with direct links to demos and repositories.",
+      govtechTitle: "Public data, explainable decisions",
+      govtechDescription: "Explore civic data engineering and a completed bin-allocation decision-support POC, with transparent methods and evidence.",
+      exploreGovtech: "Explore GovTech",
       viewAllProjects: "View All Projects",
       skillsEyebrow: "Skill Matrix",
       skillsOverview: "Skills Overview",
@@ -94,6 +98,7 @@ const localizedCopy = {
       outcomes: "Outcomes",
       links: "Links",
       caseStudy: "Case Study",
+      govtechCaseStudy: "GovTech Case Study",
       present: "Present"
     },
     about: {
@@ -154,6 +159,7 @@ const localizedCopy = {
     nav: {
       home: "首頁",
       projects: "專案",
+      govtech: "市政科技",
       about: "關於",
       contact: "聯絡",
       github: "GitHub",
@@ -186,6 +192,9 @@ const localizedCopy = {
       selectedWorkEyebrow: "精選作品",
       featuredProjects: "重點專案",
       featuredDescription: "依我的 GitHub 置頂專案順序展示，提供 Demo 與原始碼連結。",
+      govtechTitle: "讓公共資料支援可解釋的決策",
+      govtechDescription: "探索市政資料工程與已完成的清潔箱配置決策支援 POC，檢視透明的方法、資料治理與工程證據。",
+      exploreGovtech: "探索市政科技",
       viewAllProjects: "查看全部專案",
       skillsEyebrow: "技能矩陣",
       skillsOverview: "技能總覽",
@@ -239,6 +248,7 @@ const localizedCopy = {
       outcomes: "成果",
       links: "連結",
       caseStudy: "案例研究",
+      govtechCaseStudy: "市政科技案例研究",
       present: "至今"
     },
     about: {

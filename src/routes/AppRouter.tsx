@@ -5,6 +5,8 @@ import { Navbar } from "../components/layout/Navbar";
 import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
 import { HomePage } from "../pages/HomePage";
+import { GovTechPage } from "../pages/GovTechPage";
+import { GovTechCaseStudyPage } from "../pages/GovTechCaseStudyPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
 import { ProjectsPage } from "../pages/ProjectsPage";
 import routeConfig from "./routeConfig.json";
@@ -12,6 +14,8 @@ import routeConfig from "./routeConfig.json";
 const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   home: <HomePage />,
   projects: <ProjectsPage />,
+  govtech: <GovTechPage />,
+  "govtech-bin-policy": <GovTechCaseStudyPage />,
   about: <AboutPage />,
   contact: <ContactPage />,
   "not-found": <NotFoundPage />

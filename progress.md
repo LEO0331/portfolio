@@ -2,41 +2,43 @@
 
 ## Current State
 
-**Last updated:** 2026-10-06
+**Last updated:** 2026-10-16
 
-**Active work:** GitHub-pinned homepage project selection
+**Active work:** GovTech Case Study & Decision Support Showcase v1.0
 
-**Status:** Complete and deployed. Live homepage selection verified; authenticated maintenance run 37396328563 succeeded and automatically opened draft PR #15.
+**Status:** Implemented and locally verified on codex/govtech-showcase-v1; preparing the requested reviewable draft PR. No automatic merge.
 
 ### Completed
 
-- Homepage uses saved stable project IDs in GitHub pin order, identical in English/Chinese. Existing featured flags are synchronized too.
-- Saved six public repository pins, with five catalogue matches: taipei-real-estate-dashboard, taipei-civic-groups-map, publicsafetydashboard, sharpface (CNA Practice), robotfriends (Gridline). The portfolio self-pin is an unmatched review item, not a project card.
-- Added authenticated GraphQL pin sync to monthly maintenance and npm run sync:pins. Failed queries preserve the cache; unlisted/ambiguous pins never create placeholder records; private repository names are excluded.
-- Selector-parser alert #6 remains fixed; parser override preserved.
+- Four bilingual landing/case routes, one source-backed completed Bin Policy POC, six policy domains and clearly planned extensions referencing existing project IDs.
+- Bin Map project copy preserves amenities discovery and stable identity; local case navigation, homepage CTA and Navbar access added without pin-selection changes.
+- Reusable case data, static metadata/sitemap, canonical Chinese specification, source audit, next-case template and review screenshots are present.
+- Detailed file list, evidence and reproduction steps: docs/govtech-verification.md.
 
 ### Verification Evidence
 
-- 20/20 unit tests and TypeScript/build passed; browser tests 26/26, tracked flows 17/17 (100%). Actual homepage card order checked in both languages.
-- GraphQL fixtures cover successful/public-only responses, missing token, HTTP errors, errors in HTTP 200, null users, invalid/duplicate lists. Source tests cover renames, monorepo ambiguity, stale flag clearing, repeat runs and no placeholders.
-- Initial public pins verified using the authenticated GitHub profile UI on 2026-10-06.
-- npm ci passed; audit still reports 5 high findings in the separate braces toolchain. Harness/diff and authenticated Actions verification recorded in history.
+- npm ci passed. TypeScript/build passed. Unit tests 22/22. Browser tests 36/36 with existing coverage 17/17 (100%). Harness valid with 12 features; diff check passed.
+- Browser suite now builds/serves production preview because existing CSP blocks Vite development style injection; production CSP is unchanged. No existing test or coverage rule changed.
+- Both root and /portfolio/ metadata generation verified; browser direct/refresh/locale checks pass at both bases. No overflow at 320/390/768/1024/1440; visual verdict 95/100 after fixing dark links.
+- Read-only sync: zero existing updates, one review-only WanderStamp candidate; no auto-curation. All eleven cited demo entry pages returned HTTP200 (Render required a longer retry).
+- Source evidence pinned to taipei-bin-map 1280011b086f498404abf138c29f64041963e14c; upstream engine/tests were not independently rerun.
 
 ### Blockers
 
-- None. The user approved enabling Actions PR creation after the initial scan was blocked by the repository setting.
+- None for implementation. Draft PR publication and final ledger status are the remaining handoff steps.
 
 ### Remaining Risks
 
-- Pin changes reach the static site after a successful monthly/manual scan and review PR merge, rather than immediately on GitHub profile edits.
-- Five existing braces-chain audit findings remain. No dependency changes added by this feature.
-- Empty pins show zero cards; unmatched/ambiguous pins are omitted and flagged for curation. Current self-pin results in five cards.
+- npm audit exits 1 with five existing high Tailwind/braces-chain findings; no dependency changes were introduced.
+- Source research data remain review_required with older bus references, unavailable tourism/commercial scoring inputs and assumed weights. Coverage is not measured policy effectiveness; candidate locations need field review.
+- Remote demo availability can change; HTTP200 is reachability only. The existing production CSP still blocks injected dev styles; E2E intentionally exercises production output.
+- Existing maintenance draft PR #15 remains separate and unmerged.
 
 ### Next Session Should
 
-1. Review draft PR #15's initial scan baseline and proposed WanderStamp demo URL before merging; authenticated pin sync and automatic PR creation are verified.
-2. Keep future project IDs stable and curate any unlisted pinned project before accepting the sync.
-3. Address the separate braces-chain advisories as a scoped toolchain change.
+1. Review the GovTech draft PR and its specification/source audit/screenshots; deploy only through a reviewed merge.
+2. Keep source versions and actual/planned capability labels current; next roadmap repository is taipei-1999-map #3.
+3. Independently review maintenance PR #15 and the existing braces-chain advisories.
 
 ## Update Contract
 
@@ -162,3 +164,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Automatic PR creation failed because repository Actions PR creation was disabled. User explicitly approved enabling that setting; saved state was verified in GitHub settings. Added same-run branch recovery so retrying a post-push PR failure preserves the scan branch rather than failing a non-fast-forward push.
 - Final live verification: https://github.com/LEO0331/portfolio/actions/runs/37396328563 completed successfully on dbb0854, including authenticated scan, 20 unit tests, 26 browser tests, TypeScript/build, harness/diff checks, and automatic creation of draft PR #15 (https://github.com/LEO0331/portfolio/pull/15). Existing audit findings were surfaced separately as designed. GitHub's pin order matched the saved snapshot exactly.
 - Final local checks: harness valid with 11 feature records; git diff --check passed; workflow Bash syntax passed for all six run steps. No lint script is configured; TypeScript static checking passed through build. Implementation and copy/workflow recovery are published on main; PR #15 retains the reviewed-scan baseline for user review rather than automatic merging.
+
+### 2026-10-16 — GovTech showcase v1.0
+
+- Source: pinned Bin Map main 1280011b086f498404abf138c29f64041963e14c and merged PRs #11/#14/#15; eleven civic source READMEs inspected. Exact snapshot, count units, scenario and limitations recorded in docs/govtech-source-audit.md.
+- Added four bilingual routes, reusable single-case data, landing/case components, six policy domains, source evidence and explicitly planned extensions. Existing stable IDs, URLs, pin snapshot/order and filters retained. Bin Map adds the validated internal case relationship without losing amenities features.
+- Documentation: canonical Chinese specification, next-case template, implementation plan, source audit, verification report, visual verdict and six portfolio screenshots; both READMEs updated. All changed paths appear in docs/govtech-verification.md.
+- Simplifications: existing catalogue references instead of duplicated projects, one structured case instead of a giant JSX article, ordered text architecture instead of fabricated diagrams/screenshots, existing router/locale/SEO and external-link safety retained. No dependency or backend added.
+- Baseline attempts exposed sandbox DNS/browser access restrictions; retries with network/installed-browser access succeeded. The original CSP blocked Vite's injected development stylesheet; full E2E now builds/serves production preview under unchanged CSP. No existing tests were bypassed. New tests isolate locale preferences; early failures and resolution are in the verification report.
+- Verified: npm ci; TypeScript/build; 22/22 unit tests; 36/36 Playwright tests and 17/17 tracked coverage; root and /portfolio/ static metadata plus runtime deep-route/refresh/locale checks; responsive no-overflow at five widths; dark/light visual review 95/100; harness and diff checks.
+- Audit: 5 pre-existing high findings (braces, chokidar, fast-glob, micromatch, tailwindcss; GHSA-vfj7-8cjw-p6xm). No dependency or lockfile modifications. No lint command exists; build includes TypeScript static analysis.
+- Read-only project sync: zero existing updates; one review-only WanderStamp candidate; warmthfromafar absent from public owner listing. All eleven cited demo pages returned HTTP200, with Render requiring a longer retry; no blanket functional-availability claim.
+- Remaining limitations: upstream scenario/tests inspected, not independently rerun; research status review_required, missing tourism/commercial geometry, older bus baseline, assumed weights and field-review requirement all disclosed. v1.3 operations indefinitely deferred. Next: publish the reviewable draft PR, then recommend taipei-1999-map #3 as a separate case.

@@ -243,12 +243,12 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   },
   "taipei-bin-map": {
     name: "台北公共便利設施地圖",
-    tagline: "跨官方資料集查找台北公共設施",
-    shortDescription: "行動優先雙語地圖與目錄，整合台北公共設施資料，支援來源專屬篩選與附近排序。",
-    fullDescription: "Taipei Public Amenities Map 結合官方本機資料、Leaflet 地圖、無障礙目錄與表格、CSV 匯出及離線友善快取，協助檢視公開設施紀錄。",
+    tagline: "探索公共設施與可解釋的清潔箱配置情境",
+    shortDescription: "雙語公共設施探索工具與已完成的清潔箱配置決策支援 POC，提供資料治理與可解釋情境。",
+    fullDescription: "保留官方設施地圖、無障礙目錄、附近排序及離線友善快取。已完成的決策支援 POC 加入清潔箱覆蓋配置、來源對帳、政策類別權重、情境比較、敏感度分析、可解釋現勘候選點及 JSON／CSV 證據匯出；權重屬分析假設，候選點仍需現勘確認。",
     role: "前端／公民科技開發者",
     categories: ["Web 應用", "地圖工具", "公民科技"],
-    features: ["公共設施地圖與目錄", "行政區與來源專屬篩選", "附近排序與地址查詢", "CSV 匯出與離線友善快取"]
+    features: ["公共設施地圖與目錄", "行政區與來源專屬篩選", "附近排序與地址查詢", "CSV 匯出與離線友善快取", "清潔箱覆蓋配置與可解釋現勘候選點", "資料治理與來源對帳", "政策類別權重與敏感度分析", "情境比較與 JSON／CSV 證據匯出"]
   },
   "taipei-crash-map": {
     name: "台北交通事故熱點地圖",

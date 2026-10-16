@@ -116,3 +116,13 @@ GitHub references: [scheduled workflow behavior](https://docs.github.com/en/acti
 - Full verification entrypoint for Git Bash/CI (`bash init.sh`): [init.sh](./init.sh)
 - Workflow skill template: [skill.md](./skill.md)
 - Template usage guide: [wiki.md](./wiki.md)
+
+## GovTech case studies
+
+The independent [GovTech showcase](https://leo0331.github.io/portfolio/govtech) presents public-data engineering and explainable decision-support POCs. [Public Bin Allocation](https://leo0331.github.io/portfolio/govtech/bin-policy) is the first completed case; other policy extensions are explicitly planned. There is no government endorsement or operational certification implied.
+
+See the [canonical Traditional Chinese specification](./docs/govtech-case-study-v1.0.zh-TW.md), [pinned source audit](./docs/govtech-source-audit.md), and [next-case template](./docs/govtech-case-study-template.md). To add a case, verify the source commit and actual capabilities, reference an existing project ID, add equivalent English/Chinese structured data, register both routes and static metadata in routeConfig.json, then test direct refresh, locale/base paths, evidence and mobile layout. Update the feature ledger and handoff with actual verification. Generic project syncing and manual curation remain unchanged.
+
+GovTech routes use the existing SEO hook and static entrypoint generator, including route-specific titles/descriptions, Open Graph and sitemap entries. Chinese pages are available at [/zh/govtech](https://leo0331.github.io/portfolio/zh/govtech) and [/zh/govtech/bin-policy](https://leo0331.github.io/portfolio/zh/govtech/bin-policy). Future transit and congestion modules stay within taipei-crash-map; Bin Map v1.3 operational workflows are deferred indefinitely.
+
+E2E runs build and serve the production preview automatically, so responsive styles and generated deep-route entrypoints are tested under the production CSP. The server uses port 4175; keep it free. Detailed GovTech results and screenshots: [verification report](./docs/govtech-verification.md).

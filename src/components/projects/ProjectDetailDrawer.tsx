@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import type { Project } from "../../types/project";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
@@ -67,7 +68,7 @@ function ListSection({ title, items, itemKeyPrefix }: ListSectionProps): JSX.Ele
 }
 
 export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerProps): JSX.Element {
-  const { locale } = useLocale();
+  const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
   const [imageFailed, setImageFailed] = useState(false);
   const dialogRef = useRef<HTMLElement | null>(null);
@@ -76,6 +77,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
+  const govtechCasePath = project.govtechCaseId === "bin-policy" ? toLocalePath("/govtech/bin-policy") : undefined;
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
 
   useEffect(() => {
@@ -217,7 +219,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
               <ListSection title={text.projects.challenges} items={project.challenges} itemKeyPrefix={`${project.id}-challenge`} />
               <ListSection title={text.projects.outcomes} items={project.outcomes} itemKeyPrefix={`${project.id}-outcome`} />
 
-              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl ? (
+              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl || govtechCasePath ? (
                 <section className="space-y-1.5 border-t border-slate-200 pt-4">
                   <h3 className="text-sm font-semibold text-slate-900">{text.projects.links}</h3>
                   <div className="flex flex-wrap gap-3 text-sm">
@@ -235,6 +237,11 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                       <ExternalLink href={safeCaseStudyUrl} label={`Open case study for ${project.name}`}>
                         {text.projects.caseStudy}
                       </ExternalLink>
+                    ) : null}
+                    {govtechCasePath ? (
+                      <Link to={govtechCasePath} onClick={onClose}>
+                        {text.projects.govtechCaseStudy}
+                      </Link>
                     ) : null}
                   </div>
                 </section>

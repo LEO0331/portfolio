@@ -18,6 +18,7 @@ export function Navbar(): JSX.Element {
   const navItems = [
     { to: "/", label: text.nav.home },
     { to: "/projects", label: text.nav.projects },
+    { to: "/govtech", label: text.nav.govtech },
     { to: "/about", label: text.nav.about },
     { to: "/contact", label: text.nav.contact }
   ];
@@ -51,7 +52,7 @@ export function Navbar(): JSX.Element {
               end={item.to === "/"}
               className={({ isActive }) =>
                 cn(
-                  "rounded-full px-3 py-1.5 text-sm font-semibold text-slate-700 transition dark:text-slate-200",
+                  "rounded-full px-2 py-1.5 text-sm font-semibold text-slate-700 transition dark:text-slate-200 lg:px-3",
                   isActive ? "bg-brand-700 text-white dark:bg-brand-500 dark:text-slate-950" : "hover:bg-slate-100 dark:hover:bg-slate-800"
                 )
               }
