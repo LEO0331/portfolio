@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
 import baseline from "../fixtures/govtech-bin-baseline.json" with { type: "json" };
+import civicBaseline from "../fixtures/govtech-civic-baseline.json" with { type: "json" };
 
 // Normalize only the reusable template's structural migration; preserve every
 // pre-existing Bin001 copy, source, evidence, weight and scenario cell verbatim.
@@ -28,6 +29,9 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
     expect(bin).toBeDefined();
     expect(originalBinRecord(bin)).toEqual(baseline[locale]);
   });
+  test(`Civic002 ${locale} preserves the complete frozen v1.1 record`, () => {
+    expect(records.find((record) => record.id === "civic-1999")).toEqual(civicBaseline[locale]);
+  });
 }
 
 import { projects } from "../../src/data/projects";
@@ -37,7 +41,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases } from "../..
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness"]);
     for (const key of ["id", "slug", "displayNumber", "projectId"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }

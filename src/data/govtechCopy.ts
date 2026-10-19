@@ -5,7 +5,7 @@ const domainsEn: GovTechDomain[] = [
   { title: "Citizen Services & Public Health", projectIds: ["taipei-1999-map", "taipei-friendly-food-map"], planned: "General 1999 civic decision support is a completed POC. Rodent-specific investigation remains future and evidence-dependent; no authoritative rodent-specific case series was validated." },
   { title: "Transportation & Mobility", projectIds: ["taipei-crash-map"], planned: "Congestion and transit: two planned modules inside taipei-crash-map; no separate transit repository." },
   { title: "Housing & Urban Resilience", projectIds: ["taipei-real-estate-dashboard"], planned: "Aging buildings and urban renewal: planned decision scenarios; district context does not determine building safety." },
-  { title: "Disaster Preparedness & Public Safety", projectIds: ["taipei-feitsui-water-map", "taipei-safety-map"], planned: "Water/disaster preparedness: planned scenario extension; current resource maps do not provide live warnings or resource availability." },
+  { title: "Disaster Preparedness & Public Safety", projectIds: ["taipei-feitsui-water-map", "taipei-safety-map"], planned: "Heavy-rain infrastructure evidence review, GIS validation and balanced capacity scenarios are a completed POC. Reservoir/ecology modules remain explorers; taipei-safety-map enhancements remain planned. No live warning or availability assessment." },
   { title: "Digital Inclusion & Data Governance", projectIds: ["taipei-free-wifi-map", "taipei-civic-groups-map", "publicsafetydashboard"], planned: "Wi-Fi service allocation is a future case. Existing directory and PDF-review projects provide reusable governance patterns." }
 ];
 
@@ -14,7 +14,7 @@ const domainsZh: GovTechDomain[] = [
   { title: "市民服務與公共衛生", projectIds: domainsEn[1].projectIds, planned: "一般 1999 市政決策支援 POC 已完成；鼠患專項調查仍為依證據而定的未來能力，尚未驗證權威鼠患專屬案件序列。" },
   { title: "交通運輸與移動", projectIds: domainsEn[2].projectIds, planned: "壅塞與公共運輸：同一 taipei-crash-map 內的兩個規劃模組，不另建運輸儲存庫。" },
   { title: "住宅與都市韌性", projectIds: domainsEn[3].projectIds, planned: "老屋與都市更新：規劃決策情境；行政區脈絡不等於建築安全判定。" },
-  { title: "防災整備與公共安全", projectIds: domainsEn[4].projectIds, planned: "水務與防災：規劃情境擴充，目前資源地圖不提供即時警報或資源可用狀態。" },
+  { title: "防災整備與公共安全", projectIds: domainsEn[4].projectIds, planned: "豪雨防汛設施證據查核、GIS 驗證與地理均衡名額情境已完成 POC；水庫／生態模組仍為資料探索，taipei-safety-map 決策擴充仍在規劃。不提供即時警報或可用狀態判定。" },
   { title: "數位包容與資料治理", projectIds: domainsEn[5].projectIds, planned: "Wi-Fi 服務配置為未來案例；既有目錄與 PDF 複核專案提供可重用治理模式。" }
 ];
 
@@ -22,7 +22,7 @@ export const civicProjectIds = [...new Set(domainsEn.flatMap((domain) => domain.
 export const civicSourceReadmes: Record<string, string> = {
   "taipei-1999-map": "taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/README.md",
   "taipei-friendly-food-map": "taipei-friendly-food-map/blob/6f2e68604430c5e47cee09d88706a2dde4d01929/README.md",
-  "taipei-feitsui-water-map": "taipei-feitsui-water-map/blob/00701287b2d5914137b8bf181111f14df601daa8/README.md",
+  "taipei-feitsui-water-map": "taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/README.md",
   "taipei-safety-map": "taipei-safety-map/blob/0fddde3521d023d571e5dae2ca33db4c4c5e2db4/README.md",
   "taipei-real-estate-dashboard": "taipei-real-estate-dashboard/blob/46cb34d502131ff365da6cf46485e5e41af8c681/README.md",
   "taipei-crash-map": "taipei-crash-map/blob/0f620e3820eebac1b3dea6c0602abe346f756ffa/README.md",
@@ -43,7 +43,7 @@ export const govtechCopy = {
     explorers: "Existing Public Data Explorers",
     explorerIntro: "Current capabilities come from existing curated project records and inspected source READMEs. Deployment status and policy maturity are separate: a public demo does not mean a planned decision module is implemented.",
     planned: "Planned Decision-Support Extensions",
-    plannedIntro: "Bin allocation and general 1999 civic decision support are completed POCs. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
+    plannedIntro: "Bin allocation, general 1999 civic investigation and heavy-rain preparedness review are three completed POCs. Next: Aging Buildings & Urban Renewal Decision Support in taipei-real-estate-dashboard. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
     principlesTitle: "Engineering & Governance Principles",
     principles: ["Open Data ETL with schema validation", "GIS integration with explicit coordinate systems", "Data quality checks and source provenance", "Versioned snapshots and reproducible inputs", "Explainable algorithms and candidate reasons", "Scenario modelling and sensitivity analysis", "Privacy, information security and scoped public records", "Testing and reproducibility before publication"],
     limitations: "Limitations and Responsible Use",
@@ -62,7 +62,7 @@ export const govtechCopy = {
     explorers: "既有公共資料探索工具",
     explorerIntro: "現有功能取自既有策展專案紀錄及已查閱的來源 README。部署狀態與政策成熟度分開：公開 Demo 不代表規劃中的決策模組已完成。",
     planned: "規劃中的決策支援擴充",
-    plannedIntro: "清潔箱配置與一般 1999 市政決策支援 POC 均已完成。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
+    plannedIntro: "清潔箱配置、一般 1999 市政調查與豪雨防汛整備查核三個 POC 已完成；下一案為 taipei-real-estate-dashboard 老屋與都市更新決策支援。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
     principlesTitle: "工程與治理原則",
     principles: ["開放資料 ETL 與結構驗證", "GIS 整合與明確座標系統", "資料品質檢查與來源追溯", "版本快照與可重現輸入", "可解釋演算法與候選理由", "情境建模與敏感度分析", "隱私、資訊安全與公開紀錄範圍管理", "發布前測試與可重現驗證"],
     limitations: "限制與負責任使用",

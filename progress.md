@@ -4,41 +4,40 @@
 
 **Last updated:** 2026-10-19
 
-**Active work:** Portfolio GovTech Showcase v1.1 — Civic1999 Case002
+**Active work:** Portfolio GovTech Showcase v1.2 — Heavy-Rain Preparedness Case003.
 
-**Status:** Complete and published as draft PR18 (https://github.com/LEO0331/portfolio/pull/18), verified open/unmerged on codex/govtech-civic-1999-v1-1. Based on merged PR17/main10e426d; no automatic merge. GovTech v1.0 PR16 and documentation PR17 are both merged.
+**Status:** Complete and published as draft PR19 (https://github.com/LEO0331/portfolio/pull/19), verified open/unmerged on codex/govtech-heavy-rain-v1-2. Implementation4c1dd3e, based on merged main ddc0303 (Portfolio PR18). No automatic merge.
 
 ### Completed
 
-- Two completed bilingual decision-support cases: Bin001 spatial allocation and Civic002 historical dispatch investigation priorities.
-- Shared typed methodology union, data-driven scenario tables, display numbers, content slots and validated case/project lookup; no case-ID rendering branches.
-- Existing1999 project identity, four data modules and discovery functionality retained; completed POC and local drawer navigation added. Pin snapshot/order and filters unchanged.
-- Pinned Civic source352dbebe0057f62817e4ee08572e1a4d207a5b5a and snapshot4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f. Fixed source audit, canonical Case002 doc, updated roadmap/template and versioned verification are present.
+- Three bilingual completed POCs: Bin001 allocation, Civic002 historical investigation and HeavyRain003 infrastructure evidence review. Shared methodology/scenario renderer reused without new variants or case branches.
+- Feitsui project relationship/copy, bilingual routes/SEO/sitemap and domain capability copy updated; ID/slug, external URLs, preview, tech stack, filters and homepage pin order preserved.
+- Source commit195e63111d32ad564291545ff9d8b230b025b055, snapshotsha256-d67edc57254ee273, methodheavy-rain-preparedness-review-v1, config1.0.0 verified. Original Bin/Civic case content unchanged and fixture-protected.
+- Pinned source audit,14-section Chinese specification, Case004 template, READMEs, v1.2 verification and local visual evidence present. PR5 and Portfolio PR18 merge states confirmed by public API.
 
 ### Verification Evidence
 
-- Baseline before app edits: npm ci passed after resolving a stale Portfolio-only process lock;22 unit, TypeScript/build and36 Playwright checks passed (2026-10-16).
-- Final2026-10-19:22 Node unit and51 Playwright checks pass; existing coverage17/17 (100%); TypeScript/build passes with14 indexable sitemap routes. Bin001 EN/ZH full semantic fixture remains unchanged and passes.
-- Both cases at root and /portfolio/ support direct refresh, metadata, locale and safe unknown-slug404. Mobile keyboard-scrolling tables and dark/light views pass; no page overflow at320/390/768/1024/1440. Visual review95/100; independent read-only review found no actionable issues.
-- Current npm audit: five pre-existing high Tailwind/braces-chain findings; no dependency/lockfile changes. Read-only project sync:0 existing updates,1 review-only candidate, no writes.
-- Full sources, changed paths, reproduction, screenshots and limitations: docs/govtech-v1.1-verification.md. Upstream96 tests/16 files are recorded source evidence, not independently rerun here.
+- Clean baseline: harness, npm ci,22unit, TypeScript/build,51Playwright/17trackedflows and diff passed; initial sandbox DNS/install errors recovered with clean network-enabled install.
+- Final:22unit,64Playwright/17trackedflows(100%), TypeScript/build and16indexable static routes passed. Both-base static metadata plus actual root/Pages direct/refresh/canonical/locale/404 checks passed.
+- No body overflow at320/390/768/1024/1440; mobile light/dark, table captions and keyboard scrolling passed. Visual94/100; read-only integration/source review found no actionable issues.
+- Exact source scenario reproduced: gaps5=2districts/12candidate-level questions/5A; balanced5=5districts/15/2A3B. Upstream65tests remain recorded evidence, not independently rerun full suite.
+- npm audit retains5existing high Tailwind/braces-chain findings. No dependencies, lockfile, pin files or upstream repository changes. Full details: docs/govtech-v1.2-verification.md.
 
 ### Blockers
 
-- None for implementation or publication. Draft PR18 is ready for human review; existing audit findings remain disclosed.
+- None for implementation/publication. Draft PR19 is ready for human review; audit advisories remain separately disclosed.
 
 ### Remaining Risks
 
-- Five high dependency findings remain and cause init.sh to stop at audit; all downstream checks were executed separately.
-- Civic completeness is limited to six audited original months (April–September2026). Counts are recorded dispatch activity, not incidence/severity/resolution/effects; thresholds are advisory. Rodent-specific analysis remains unsupported and planned.
-- Aggregate suppression is not an unconditional privacy guarantee. No separate raw-source inventory, upstream modifications or history rewrite was performed.
-- Existing Bin001 research data/source limitations remain unchanged. No live deployment certification is claimed.
+- Existing audit findings cause init.sh to stop at audit; downstream verification ran separately.
+- Partial official reference geography; historical dates/coverage conflict; strict mode excludes limited history. Missing operational and service-linkage evidence is not asset failure; no forecast, risk score, readiness certification or drainage-capacity measure.
+- Current deployment is not claimed updated before human merge. Prior case limitations remain unchanged.
 
 ### Next Session Should
 
-1. Review the Showcase v1.1 PR and versioned evidence, then merge only through human review.
-2. Use the shared template for Case003; next roadmap repository is taipei-feitsui-water-map #7, still planned.
-3. Address existing audit findings as a separate toolchain change. PR15/16/17 already merged; no outstanding merge review for them.
+1. Review the Case003 PR and versioned evidence, then merge only through human review.
+2. Next planned case: taipei-real-estate-dashboard — Aging Buildings & Urban Renewal Decision Support; follow Case004 template and source audit first.
+3. Address existing toolchain advisories separately; preserve source/evidence scope and homepage pins.
 
 ## Update Contract
 
@@ -201,3 +200,13 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Metadata dry run0existing updates/1review-only WanderStamp candidate; warmthfromafar absent from public listing; no sync writes. Next: publish one reviewable PR without merging; next separate case roadmap is Feitsui#7.
 
 - Publication: implementation3efa4b1 pushed; draft PR18 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18. Connector403 and browser-control initialization failure were recovered using GitHub API with existing Git credentials kept in memory/out of output. Final lifecycle-only commit records completion; app verification remains valid.
+
+### 2026-10-19 — GovTech Showcase v1.2 Case003
+
+- Audited all mandatory pinned Feitsui docs/code/snapshot/tests and three screenshots; reproduced exact strategy/capacity/mode evidence with pinned pure functions. No upstream modifications.
+- Added source-backed bilingual case data, existing Feitsui project relationship/copy, domain maturity, explicit routes/metadata and sitemap. Shared renderer unchanged; Bin/Civic records and pins preserved.
+- Added full Civic fixture and heavy-rain data/browser/static regressions; final22unit,64Playwright,17/17trackedcoverage, TypeScript/build, both-base checks, visual94/100 and diff passed. Responsive test locale-origin setup failures corrected and full suite rerun.
+- Files: data/types/routes, tests/fixture, README pair, source audit/Chinese specification/template/v1.2 verification/verdict, five local screenshots, ledger/progress/handoff and generated sitemap.
+- Five pre-existing high audit advisories remain; no dependency/lockfile changes. Publication pending; next separate policy case is Aging Buildings & Urban Renewal.
+
+- Publication completed: implementation4c1dd3e pushed; draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19. Connector403 recovered through GitHub API with existing Git credentials kept in memory/out of output. Lifecycle-only follow-up records completion.

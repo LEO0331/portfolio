@@ -1,0 +1,1052 @@
+{
+  "en": {
+    "id": "civic-1999",
+    "slug": "civic-1999",
+    "displayNumber": "002",
+    "projectId": "taipei-1999-map",
+    "policyDomain": "Citizen Services & Public Health",
+    "sourceRepository": "https://github.com/LEO0331/taipei-1999-map",
+    "sourceVersion": "352dbebe0057f62817e4ee08572e1a4d207a5b5a",
+    "snapshotVersion": "4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f",
+    "title": "Taipei 1999 Citizen Service Decision Support",
+    "summary": "From historical service requests to explainable municipal investigation priorities.",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "Completed decision-support POC",
+    "reviewNote": "Frozen historical scenario from the merged source release, reviewed 16 October 2026. This page does not fetch or recalculate civic data.",
+    "intendedUsers": "Municipal analysts and environmental service teams reviewing historical district/topic patterns under limited investigation capacity.",
+    "implementedCapabilities": [
+      "Verified historical dispatch trends and source completeness",
+      "Explainable A/B/C investigation priorities",
+      "Capacity scenarios and threshold sensitivity",
+      "Privacy-preserving aggregates and JSON/CSV briefings"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "Policy Problem",
+        "paragraphs": [
+          "Given a limited number of investigation slots, which district/service-topic combinations warrant additional review under transparent assumptions? Total historical dispatch counts alone cannot answer that question.",
+          "Analysts must consider time periods, administrative districts, service categories, changes in recorded activity, persistence across months, source completeness and available investigation resources. Recorded dispatch frequency, underlying problem incidence, public-health severity and actual government case resolution are distinct measures."
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "Existing System to Decision-Support POC",
+        "paragraphs": [
+          "The original explorer provides historical 1999 dispatch records, district summaries, aggregated hotspots, time/category filters and a bilingual interface. Sanitized public records, year-partitioned loading and static deployment support browsing.",
+          "The merged decision-support v1.0 adds completeness auditing, verified comparable periods, privacy-safe monthly aggregates, versioned classification, explainable priority rules, investigation capacity scenarios, threshold sensitivity and JSON/CSV manager briefings."
+        ],
+        "links": [
+          {
+            "label": "Merged civic decision-support implementation · PR #8",
+            "url": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+          }
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "System Architecture",
+        "content": "architecture",
+        "paragraphs": [
+          "Node.js prepares a versioned static snapshot; a pure TypeScript engine supplies a lazy-loaded React dashboard. Vite/GitHub Pages deployment requires no running application backend or database and does not track live municipal workflows."
+        ],
+        "bullets": [
+          "Discover historical resources and distinguish original downloaded-byte hashes from API-reserialized-data hashes.",
+          "Validate dates and source periods, handle duplicate IDs and create fixed monthly aggregates before the explorer's browser record cap.",
+          "Validate static snapshot identity and schema; keep deterministic calculations testable and compatible with existing cache/PWA behavior."
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "Data Governance",
+        "paragraphs": [
+          "Only the six original monthly resources for April–September 2026 passed the documented complete-month checks. Earlier historical records have unknown original integrity/completeness and remain descriptive. A complete published source month does not establish completeness of all 1999 complaints or municipal problems.",
+          "The audit records 129 source files and 1,731,307 parsed input rows across overlapping retained/original sources; 373,232 duplicate IDs were excluded, and 2,905 rows were invalid. Another 184 deduplicated otherwise valid records had unknown districts and were excluded from district analysis. These figures describe different populations, are not additive or independent outcome totals, and cannot produce a resolution rate.",
+          "The snapshot publishes 12,960 fixed month/district/item cells. Mapping civic-exact-items-1.0.0 matches reviewed official item labels exactly, with one topic per item; unknown or out-of-scope labels are excluded. Original records, verified complete months, historical observations and published aggregate cells have different meanings. Decision aggregates are built before the explorer's latest-record cap of 150,000.",
+          "Provenance retains resource identities, original and retained-byte SHA256 hashes, provider publication/update times, retrieval times and processing times. The six original resources were retrieved at 2026-10-16T06:02:19.089Z and processed at 2026-10-16T06:08:26.089Z; provider timestamps vary by resource. Missing months stay unavailable, protected cells stay suppressed, and incompatible snapshot or mapping versions are rejected."
+        ],
+        "links": [
+          {
+            "label": "Pinned source audit and provenance definitions",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-source-audit.md"
+          },
+          {
+            "label": "Exact official-item category mapping",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicCategoryMapping.ts"
+          }
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "Decision Methodology",
+        "content": "methodology",
+        "paragraphs": [
+          "civic-investigation-priority-v1 compares the most recent three verified complete months with the immediately preceding three verified complete months. Periods must be equal-length, contiguous, adjacent and nonoverlapping; incomplete or missing months cannot be substituted silently.",
+          "Recent and previous counts sum disjoint selected official-item cells. Increase = recent − previous; growth = increase / previous × 100 only when previous > 0. Active months count positive recent monthly observations. These configurable analytical screening rules are not government-approved severity thresholds or a public-health risk score."
+        ],
+        "links": [
+          {
+            "label": "Priority methodology and assumptions",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md"
+          }
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "Reproducible Real Scenario",
+        "content": "scenarios",
+        "paragraphs": [
+          "Frozen source example: environment_pollution, official item 污染舉發, all 12 Taipei administrative districts. Previous: April–June 2026. Recent: July–September 2026. Thresholds: 10 / 2 / 5 / 25%. Capacity: five district/topic combinations.",
+          "The default five rows and 1,334 represented recent dispatch records match the pinned delivery report and source snapshot regression assertions. Every selected group has three active recent months. Capacity 10 represents 2,608 records; the less restrictive 8 / 1 / 4 / 20% configuration represents 1,200 records and changes the five-slot shortlist.",
+          "The less restrictive ordering is Songshan, Wenshan, Xinyi, Nangang and Shilin, all A: Shilin enters, Zhongshan leaves and Xinyi moves from B to A. Tiers precede increase in ranking, so threshold changes affect ordering. No scenario is asserted objectively better.",
+          "Represented records are recent recorded dispatch activity in selected disjoint district/topic groups, not people served, cases resolved, confirmed pollution incidents or intervention effects. Capacity-10 and inclusion changes are documented upstream; comparative totals were also checked against the pinned aggregate. The 1,200 sensitivity total is checked aggregate arithmetic, not a separately asserted source snapshot regression result."
+        ],
+        "links": [
+          {
+            "label": "Pinned delivery scenario and comparison evidence",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-delivery.md"
+          },
+          {
+            "label": "Real-snapshot default-scenario regression",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicSnapshot.test.ts"
+          }
+        ]
+      },
+      {
+        "id": "protection",
+        "title": "Data Protection and Responsible Use",
+        "paragraphs": [
+          "Decision analysis uses fixed monthly/district/official-item aggregates. Decision outputs contain no exact complaint coordinates; briefing exports contain no case IDs or original addresses. Counts 1–4 are suppressed, with complementary suppression of the largest otherwise publishable cell in an affected month. Sparse months without a count of at least five are fully withheld, including zeros.",
+          "Any selected suppressed cell propagates unavailable counts, rates, changes and priorities; it is never converted to zero. Export validation rejects unexpected record-level fields. CSV quoting and formula-prefix guards protect briefing exports from formula injection.",
+          "Five is an analytical disclosure threshold, not an unconditional privacy guarantee. Public-source linkage and cross-release differencing remain limitations. This case presents existing safeguards; no separate raw-data privacy inventory or history rewriting was undertaken."
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Important Limitations",
+        "paragraphs": [
+          "Independent personal engineering POC with no official government endorsement, partnership or commissioned deployment. Historical screening outputs support analyst review."
+        ],
+        "bullets": [
+          "The source contains dispatched 1999 service requests, not every citizen petition.",
+          "Only April–September 2026 have the documented verified-complete original monthly resources for this scenario.",
+          "Older historical data cannot automatically support comparable priority claims.",
+          "Recorded dispatches do not measure environmental severity or underlying incidence.",
+          "Growth is descriptive, not proof of statistical significance.",
+          "Dispatch categories follow reviewed official item labels; classification does not establish a confirmed incident.",
+          "No authoritative rodent-specific case series was validated.",
+          "Pollution reports are not confirmed rodent incidents.",
+          "The analysis does not estimate resolution rates or operational efficiency.",
+          "Investigation priorities are advisory analytical results, not government work orders."
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "Engineering Evidence",
+        "content": "evidence",
+        "paragraphs": [
+          "Source-repository implementation evidence records 96 tests passed across 16 files, TypeScript/Vite production and GitHub Pages builds passed, source-record/privacy safeguards tested, and bilingual responsive browser checks recorded. The portfolio task reviewed this evidence; it did not independently rerun the source application's full test suite.",
+          "Pinned tests cover tiers, zero baselines, persistence, missing months/cells, suppression propagation, deterministic ordering, capacity, sensitivity, export validation and CSV formula protection. Snapshot tests preserve the six complete sources and the documented default scenario."
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "What This Project Demonstrates",
+        "content": "future",
+        "paragraphs": [
+          "Public-data ETL, source provenance, completeness verification, temporal aggregation, privacy-aware modelling, pure deterministic decision logic, configurable business rules, scenario sensitivity, exportable evidence, static deployment and TypeScript regression controls form a reproducible decision-support workflow.",
+          "Case 001 explores GIS resource allocation and policy-weighted coverage. Case 002 explores verified historical dispatch patterns and explainable investigation priorities. Together they connect data engineering, governance, analysis, scenario comparison and decision evidence."
+        ]
+      }
+    ],
+    "architecture": [
+      "Official Taipei Open Data",
+      "Node.js Source Acquisition",
+      "Source Audit / Validation",
+      "Original-Source Identity / Hash Verification",
+      "Deduplication / Category Mapping",
+      "Privacy-Preserving Monthly Aggregates",
+      "Versioned Static Snapshot",
+      "Pure TypeScript Decision Engine",
+      "React Dashboard",
+      "Scenario Comparison / Briefing Export"
+    ],
+    "architectureNote": "Historical source preparation and static analysis; no running backend, database or live municipal workflow monitoring.",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "civic-investigation-priority-v1",
+      "explanation": "Default illustrative thresholds apply to each three-month district/topic comparison. All required months and aggregate cells must support valid comparable evidence before prioritization.",
+      "thresholds": {
+        "caption": "Default three-month analytical thresholds",
+        "columns": [
+          {
+            "key": "criterion",
+            "label": "Criterion"
+          },
+          {
+            "key": "value",
+            "label": "Threshold"
+          }
+        ],
+        "rows": [
+          {
+            "id": "recent",
+            "cells": {
+              "criterion": "Recent recorded dispatches",
+              "value": "≥ 10"
+            }
+          },
+          {
+            "id": "active",
+            "cells": {
+              "criterion": "Active recent months",
+              "value": "≥ 2"
+            }
+          },
+          {
+            "id": "baseline",
+            "cells": {
+              "criterion": "Comparable previous records",
+              "value": "≥ 5"
+            }
+          },
+          {
+            "id": "growth",
+            "cells": {
+              "criterion": "Growth versus previous period",
+              "value": "≥ 25%"
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "Explainable investigation tiers",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "Tier"
+          },
+          {
+            "key": "rule",
+            "label": "Rule"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — Earlier Investigation Review",
+              "rule": "All four thresholds pass with valid comparable evidence."
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — Routine Investigation Review",
+              "rule": "Outside A: volume AND persistence, OR eligible positive baseline AND growth. Persistent volume can include decreasing activity."
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — Monitor",
+              "rule": "Valid nonzero comparable observations exist but A/B rules do not pass; eligible if capacity remains."
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "Insufficient Evidence",
+              "rule": "Invalid periods, missing category/cell evidence, any selected suppressed value, or no valid activity across both periods: metrics withheld and candidate excluded."
+            }
+          }
+        ]
+      },
+      "notes": [
+        "Deterministic ordering: tier A/B/C, descending absolute increase, recent monthly rate, active months, then ascending stable district/topic identifiers. Known metrics precede unavailable metrics.",
+        "Capacity truncates eligible ordered groups without changing tiers: zero selects none; null is unlimited. A zero baseline cannot support percentage growth, but persistent volume may support B.",
+        "For other equal period lengths n, volume/baseline thresholds scale by n/3 and active months by ceil(configured active months × n/3). This is an analytical assumption."
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "Documented default shortlist · July–September versus April–June 2026 · pollution dispatches",
+        "columns": [
+          {
+            "key": "rank",
+            "label": "Rank"
+          },
+          {
+            "key": "district",
+            "label": "District"
+          },
+          {
+            "key": "tier",
+            "label": "Tier"
+          },
+          {
+            "key": "recent",
+            "label": "Recent"
+          },
+          {
+            "key": "previous",
+            "label": "Previous"
+          },
+          {
+            "key": "increase",
+            "label": "Increase"
+          },
+          {
+            "key": "growth",
+            "label": "Growth"
+          }
+        ],
+        "rows": [
+          {
+            "id": "songshan",
+            "cells": {
+              "rank": "1",
+              "district": "Songshan · 松山區",
+              "tier": "A",
+              "recent": "289",
+              "previous": "201",
+              "increase": "+88",
+              "growth": "43.8%"
+            }
+          },
+          {
+            "id": "wenshan",
+            "cells": {
+              "rank": "2",
+              "district": "Wenshan · 文山區",
+              "tier": "A",
+              "recent": "217",
+              "previous": "144",
+              "increase": "+73",
+              "growth": "50.7%"
+            }
+          },
+          {
+            "id": "nangang",
+            "cells": {
+              "rank": "3",
+              "district": "Nangang · 南港區",
+              "tier": "A",
+              "recent": "167",
+              "previous": "126",
+              "increase": "+41",
+              "growth": "32.5%"
+            }
+          },
+          {
+            "id": "xinyi",
+            "cells": {
+              "rank": "4",
+              "district": "Xinyi · 信義區",
+              "tier": "B",
+              "recent": "287",
+              "previous": "231",
+              "increase": "+56",
+              "growth": "24.2%"
+            }
+          },
+          {
+            "id": "zhongshan",
+            "cells": {
+              "rank": "5",
+              "district": "Zhongshan · 中山區",
+              "tier": "B",
+              "recent": "374",
+              "previous": "333",
+              "increase": "+41",
+              "growth": "12.3%"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Frozen capacity and threshold sensitivity comparison · same periods/topic/candidate population",
+        "columns": [
+          {
+            "key": "scenario",
+            "label": "Scenario"
+          },
+          {
+            "key": "thresholds",
+            "label": "Thresholds"
+          },
+          {
+            "key": "capacity",
+            "label": "Capacity"
+          },
+          {
+            "key": "eligible",
+            "label": "Eligible"
+          },
+          {
+            "key": "shortlisted",
+            "label": "Shortlisted"
+          },
+          {
+            "key": "districts",
+            "label": "Districts"
+          },
+          {
+            "key": "represented",
+            "label": "Represented records"
+          }
+        ],
+        "rows": [
+          {
+            "id": "default",
+            "cells": {
+              "scenario": "Default",
+              "thresholds": "10 / 2 / 5 / 25%",
+              "capacity": "5",
+              "eligible": "12",
+              "shortlisted": "5",
+              "districts": "5",
+              "represented": "1,334"
+            }
+          },
+          {
+            "id": "capacity-10",
+            "cells": {
+              "scenario": "Capacity change",
+              "thresholds": "10 / 2 / 5 / 25%",
+              "capacity": "10",
+              "eligible": "12",
+              "shortlisted": "10",
+              "districts": "10",
+              "represented": "2,608"
+            }
+          },
+          {
+            "id": "less-restrictive",
+            "cells": {
+              "scenario": "Less restrictive",
+              "thresholds": "8 / 1 / 4 / 20%",
+              "capacity": "5",
+              "eligible": "12",
+              "shortlisted": "5",
+              "districts": "5",
+              "represented": "1,200"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Selection changes under explicit assumptions",
+        "columns": [
+          {
+            "key": "scenario",
+            "label": "Scenario"
+          },
+          {
+            "key": "change",
+            "label": "Change from default"
+          }
+        ],
+        "rows": [
+          {
+            "id": "capacity-additions",
+            "cells": {
+              "scenario": "Capacity 10",
+              "change": "Adds Shilin, Neihu, Zhongzheng, Beitou and Daan; tiers unchanged."
+            }
+          },
+          {
+            "id": "threshold-changes",
+            "cells": {
+              "scenario": "8 / 1 / 4 / 20%, capacity 5",
+              "change": "Shilin enters; Zhongshan leaves. Xinyi becomes A. Order: Songshan, Wenshan, Xinyi, Nangang, Shilin."
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "Merged decision-support implementation · PR #8",
+        "url": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+      },
+      {
+        "label": "Pinned merged source commit",
+        "url": "https://github.com/LEO0331/taipei-1999-map/commit/352dbebe0057f62817e4ee08572e1a4d207a5b5a"
+      },
+      {
+        "label": "Source completeness and provenance audit",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-source-audit.md"
+      },
+      {
+        "label": "Investigation-priority methodology",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md"
+      },
+      {
+        "label": "Delivery evidence and reproducible scenario",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-delivery.md"
+      },
+      {
+        "label": "Decision-support scope and responsible-use boundaries",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-mvp.zh-Hant.md"
+      },
+      {
+        "label": "Pure TypeScript decision engine",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicDecision.ts"
+      },
+      {
+        "label": "Versioned exact-item category mapping",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicCategoryMapping.ts"
+      },
+      {
+        "label": "Scenario validation and export implementation",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicScenario.ts"
+      },
+      {
+        "label": "Snapshot builder and source processing",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/scripts/buildCivicDecisionSnapshot.ts"
+      },
+      {
+        "label": "Decision logic, sensitivity and privacy regression tests",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicDecision.test.ts"
+      },
+      {
+        "label": "Reproducible real-snapshot scenario regression tests",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicSnapshot.test.ts"
+      },
+      {
+        "label": "Versioned aggregate snapshot",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/public/data/civic-decision/snapshot.json"
+      }
+    ],
+    "previewAssets": [],
+    "futureExtensions": [
+      "Future governance work can extend reviewed original-month coverage and versioned official-item mapping with explicit provenance. Rodent-specific analysis remains evidence-dependent: no authoritative rodent case series or rodent prediction is implemented."
+    ]
+  },
+  "zh": {
+    "id": "civic-1999",
+    "slug": "civic-1999",
+    "displayNumber": "002",
+    "projectId": "taipei-1999-map",
+    "policyDomain": "民生服務與公共衛生",
+    "sourceRepository": "https://github.com/LEO0331/taipei-1999-map",
+    "sourceVersion": "352dbebe0057f62817e4ee08572e1a4d207a5b5a",
+    "snapshotVersion": "4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f",
+    "title": "臺北市 1999 民生通報與環境治理決策支援",
+    "summary": "從歷史派工資料，建立可解釋、可比較的市政調查優先順序。",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "已完成的決策支援 POC",
+    "reviewNote": "取自已合併來源版本的固定歷史情境，於 2026 年 10 月 16 日複核。本頁不擷取或重新計算民生派工資料。",
+    "intendedUsers": "在有限調查名額下，複核歷史行政區／服務主題趨勢的市政分析人員與環境服務團隊。",
+    "implementedCapabilities": [
+      "已驗證的歷史派工趨勢與來源完整性",
+      "可解釋的 A／B／C 調查優先順序",
+      "名額情境與門檻敏感度",
+      "保護個資的彙總與 JSON／CSV 簡報"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "政策問題",
+        "paragraphs": [
+          "在調查名額有限時，哪些行政區／服務主題組合值得依透明假設進一步複核？僅憑歷史派工總數，無法回答這個問題。",
+          "分析人員須同時考量期間、行政區、服務類別、已記錄活動的變化、跨月持續性、來源完整性及可用調查資源。已記錄派工頻率、實際問題發生率、公共衛生嚴重程度與政府實際結案情形是不同指標。"
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "從資料瀏覽器到決策支援 POC",
+        "paragraphs": [
+          "原有 Data Explorer 提供歷史 1999 派工紀錄、行政區摘要、彙總熱點、時間／類別篩選與雙語介面。經清理的公開紀錄、依年度分割載入與靜態部署支援資料瀏覽。",
+          "已合併的決策支援 v1.0 新增完整性稽核、可比較的已驗證期間、保護個資的月彙總、版本化分類、可解釋規則、調查名額情境、門檻敏感度，以及 JSON／CSV 主管簡報匯出。"
+        ],
+        "links": [
+          {
+            "label": "已合併的民生決策支援實作 · PR #8",
+            "url": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+          }
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "系統架構",
+        "content": "architecture",
+        "paragraphs": [
+          "Node.js 預先產製版本化靜態快照，純 TypeScript 決策引擎供延遲載入的 React 儀表板使用。Vite／GitHub Pages 部署不需常駐應用後端或資料庫，也不追蹤即時市政工作流程。"
+        ],
+        "bullets": [
+          "發現歷史資源，區別原始下載位元組雜湊與 API 重新序列化資料雜湊。",
+          "驗證日期與來源期間、處理重複 ID，並在瀏覽器紀錄上限之前建立固定月彙總。",
+          "驗證靜態快照識別與結構，保持確定性計算可測試，並相容既有快取／PWA 行為。"
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "資料治理",
+        "paragraphs": [
+          "只有 2026 年 4–9 月的六份原始月資源通過來源實作記錄的完整月份檢查。較早歷史資料的原始完整性未知，僅供描述。已發布來源月份完整，不等於所有 1999 陳情或市政問題均已完整記錄。",
+          "稽核記錄 129 份來源檔案及 1,731,307 筆解析輸入列，涵蓋互有重疊的保留與原始來源；排除 373,232 個重複 ID，另有 2,905 筆無效列。184 筆去重後其他條件有效、但行政區未知的紀錄不納入行政區分析。這些數字對應不同母體，不是可相加或互相獨立的成果總數，也不能推算結案率。",
+          "快照發布 12,960 個固定月份／行政區／派工項目儲存格。civic-exact-items-1.0.0 以精確比對經複核的官方項目名稱分類，每個項目只屬於一個主題；未知及範圍外標籤排除。原始紀錄、完整月份、歷史觀察與已發布彙總儲存格的意義不同。決策彙總在瀏覽器最新 150,000 筆紀錄上限之前建立。",
+          "來源脈絡保存資源識別、原始與保留位元組的 SHA256、提供者發布／更新時間、擷取及處理時間。六份原始資源擷取於 2026-10-16T06:02:19.089Z，處理於 2026-10-16T06:08:26.089Z；提供者時間依資源而異。缺月維持不可用，受保護儲存格維持隱匿，不相容的快照或分類版本會被拒絕。"
+        ],
+        "links": [
+          {
+            "label": "固定來源稽核與來源脈絡定義",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-source-audit.md"
+          },
+          {
+            "label": "官方項目精確分類對照",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicCategoryMapping.ts"
+          }
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "調查優先順序方法",
+        "content": "methodology",
+        "paragraphs": [
+          "civic-investigation-priority-v1 比較最近三個已驗證完整月份與緊接之前的三個已驗證完整月份。兩期間須等長、連續、相鄰且不重疊；不得默默以不完整或缺漏月份替代。",
+          "近期與前期筆數加總不重疊的選定官方項目儲存格。增加量＝近期－前期；僅在前期大於零時計算成長率＝增加量／前期 × 100。活躍月數為近期有正值觀察的月份數。這些可調分析篩選規則不是政府核定的嚴重度門檻，也不是公共衛生風險分數。"
+        ],
+        "links": [
+          {
+            "label": "優先順序方法與假設",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md"
+          }
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "可重現的實際情境",
+        "content": "scenarios",
+        "paragraphs": [
+          "固定來源範例：environment_pollution，官方項目「污染舉發」，臺北市全部 12 個行政區。前期為 2026 年 4–6 月，近期為 7–9 月；門檻為 10／2／5／25%，名額為五個行政區／主題組合。",
+          "預設五列及其代表的 1,334 筆近期派工，與固定版本交付報告及來源快照回歸斷言一致。五組近期均有三個活躍月份。名額 10 代表 2,608 筆；較寬鬆的 8／1／4／20% 設定代表 1,200 筆，並改變五席名單。",
+          "較寬鬆設定的順序為松山、文山、信義、南港、士林，均為 A：士林進入、中山退出，信義由 B 轉為 A。排序先看層級、再看增加量，因此門檻會改變順序。不宣稱任何情境客觀較佳。",
+          "代表筆數指選定且不重疊行政區／主題群組的近期已記錄派工活動，不是服務人數、結案件數、確認污染事件或介入成效。名額 10 與名單變化有上游文件記錄，比較總數亦以固定彙總檢查。1,200 是經檢查的彙總算術結果，不是來源快照測試另行斷言的總數。"
+        ],
+        "links": [
+          {
+            "label": "固定交付情境與比較證據",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-delivery.md"
+          },
+          {
+            "label": "實際快照預設情境回歸測試",
+            "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicSnapshot.test.ts"
+          }
+        ]
+      },
+      {
+        "id": "protection",
+        "title": "資料保護與負責任使用",
+        "paragraphs": [
+          "決策分析使用固定月份／行政區／官方項目彙總。決策輸出不含精確通報座標；簡報匯出不含案件 ID 或原始地址。筆數 1–4 隱匿；受影響月份另隱匿最大且原本可發布的儲存格作互補保護。若稀疏月份沒有至少五筆的儲存格，整月包含零值一併隱匿。",
+          "只要選定儲存格有隱匿值，筆數、比率、變化與優先順序皆傳遞為不可用，不得當成零。匯出驗證拒絕非預期的逐筆紀錄欄位。CSV 引號處理及公式前綴防護降低簡報匯出的公式注入風險。",
+          "五筆是分析揭露門檻，不是無條件的隱私保證。公開來源連結及跨版本差分仍有限制。本案例呈現既有防護，未另行盤點原始資料隱私或改寫儲存庫歷史。"
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "重要限制",
+        "paragraphs": [
+          "此為獨立個人工程 POC，並無政府官方背書、合作或委託部署。歷史篩選結果供分析人員複核。"
+        ],
+        "bullets": [
+          "來源為 1999 已派工服務請求，不是所有市民陳情。",
+          "本情境只有 2026 年 4–9 月具有已記錄且驗證完整的原始月資源。",
+          "較早歷史資料不能自動支援可比較的優先順序主張。",
+          "派工筆數不衡量環境嚴重程度或實際問題發生率。",
+          "成長率僅為描述，不代表統計顯著。",
+          "分類依經複核的官方項目名稱；分類不等於確認事件。",
+          "未驗證具權威性的鼠害專屬案件時間序列。",
+          "污染舉發不是確認的鼠害事件。",
+          "分析不估計結案率或營運效率。",
+          "調查優先順序是分析建議，不是政府工作指派。"
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "工程證據",
+        "content": "evidence",
+        "paragraphs": [
+          "來源儲存庫的實作證據記錄：16 個檔案共 96 項測試通過，TypeScript／Vite 正式建置及 GitHub Pages 建置通過，來源紀錄與隱私防護經測試，並記錄雙語及響應式瀏覽器檢查。本作品集任務複核這些證據，並未獨立重跑來源應用完整測試套件。",
+          "固定版本測試涵蓋層級、零基期、持續性、缺月／缺格、隱匿傳遞、確定性排序、名額、敏感度、匯出驗證及 CSV 公式防護。快照測試鎖定六份完整來源與預設實際情境。"
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "本案例展現的能力",
+        "content": "future",
+        "paragraphs": [
+          "公開資料 ETL、來源追溯、完整性驗證、時間彙總、具隱私意識的資料模型、純確定性決策邏輯、可調業務規則、情境敏感度、可匯出證據、靜態部署及 TypeScript 回歸控制，共同構成可重現的決策支援流程。",
+          "案例 001 探討 GIS 資源配置與政策加權覆蓋；案例 002 探討已驗證的歷史派工趨勢與可解釋調查優先順序。兩者串連資料工程、資料治理、分析、情境比較與決策證據。"
+        ]
+      }
+    ],
+    "architecture": [
+      "臺北市政府開放資料",
+      "Node.js 來源擷取",
+      "來源稽核／驗證",
+      "原始來源識別／雜湊驗證",
+      "去重／類別對照",
+      "保護個資的月彙總",
+      "版本化靜態快照",
+      "純 TypeScript 決策引擎",
+      "React 儀表板",
+      "情境比較／簡報匯出"
+    ],
+    "architectureNote": "歷史來源前處理與靜態分析；不需常駐後端或資料庫，也不監控即時市政流程。",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "civic-investigation-priority-v1",
+      "explanation": "預設示例門檻套用於每個三個月行政區／主題比較。所有必要月份與彙總儲存格須先具備有效可比較證據，才能判定優先順序。",
+      "thresholds": {
+        "caption": "預設三個月分析門檻",
+        "columns": [
+          {
+            "key": "criterion",
+            "label": "條件"
+          },
+          {
+            "key": "value",
+            "label": "門檻"
+          }
+        ],
+        "rows": [
+          {
+            "id": "recent",
+            "cells": {
+              "criterion": "近期已記錄派工",
+              "value": "≥ 10"
+            }
+          },
+          {
+            "id": "active",
+            "cells": {
+              "criterion": "近期活躍月份",
+              "value": "≥ 2"
+            }
+          },
+          {
+            "id": "baseline",
+            "cells": {
+              "criterion": "可比較前期筆數",
+              "value": "≥ 5"
+            }
+          },
+          {
+            "id": "growth",
+            "cells": {
+              "criterion": "相對前期成長率",
+              "value": "≥ 25%"
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "可解釋調查層級",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "層級"
+          },
+          {
+            "key": "rule",
+            "label": "規則"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — 優先調查複核",
+              "rule": "具有效可比較證據，且四項門檻全部通過。"
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — 例行調查複核",
+              "rule": "排除 A 後：（筆數且持續性）或（合格正值基期且成長率）成立。持續量能可包含下降趨勢。"
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — 持續觀察",
+              "rule": "具有效且非全零的可比較觀察，未達 A／B；若名額有餘仍可入選。"
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "證據不足",
+              "rule": "期間無效、缺分類／儲存格證據、任一選定值被隱匿，或兩期間均無有效活動：不提供指標並排除候選。"
+            }
+          }
+        ]
+      },
+      "notes": [
+        "確定性排序：A／B／C 層級、增加量遞減、近期月均筆數、活躍月數，最後依穩定行政區／主題識別字串遞增。已知指標排在不可用指標之前。",
+        "名額只截取合格排序組合，不改變層級：零席不選取，null 表示不限。零基期無法支持百分比成長，但持續量能可支持 B。",
+        "其他等長 n 月期間：筆數／基期門檻乘 n／3，活躍月份取 ceil（設定活躍月數 × n／3）。此為分析假設。"
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "已記錄預設名單 · 2026 年 7–9 月相對 4–6 月 · 污染舉發派工",
+        "columns": [
+          {
+            "key": "rank",
+            "label": "排名"
+          },
+          {
+            "key": "district",
+            "label": "行政區"
+          },
+          {
+            "key": "tier",
+            "label": "層級"
+          },
+          {
+            "key": "recent",
+            "label": "近期"
+          },
+          {
+            "key": "previous",
+            "label": "前期"
+          },
+          {
+            "key": "increase",
+            "label": "增加量"
+          },
+          {
+            "key": "growth",
+            "label": "成長率"
+          }
+        ],
+        "rows": [
+          {
+            "id": "songshan",
+            "cells": {
+              "rank": "1",
+              "district": "松山區",
+              "tier": "A",
+              "recent": "289",
+              "previous": "201",
+              "increase": "+88",
+              "growth": "43.8%"
+            }
+          },
+          {
+            "id": "wenshan",
+            "cells": {
+              "rank": "2",
+              "district": "文山區",
+              "tier": "A",
+              "recent": "217",
+              "previous": "144",
+              "increase": "+73",
+              "growth": "50.7%"
+            }
+          },
+          {
+            "id": "nangang",
+            "cells": {
+              "rank": "3",
+              "district": "南港區",
+              "tier": "A",
+              "recent": "167",
+              "previous": "126",
+              "increase": "+41",
+              "growth": "32.5%"
+            }
+          },
+          {
+            "id": "xinyi",
+            "cells": {
+              "rank": "4",
+              "district": "信義區",
+              "tier": "B",
+              "recent": "287",
+              "previous": "231",
+              "increase": "+56",
+              "growth": "24.2%"
+            }
+          },
+          {
+            "id": "zhongshan",
+            "cells": {
+              "rank": "5",
+              "district": "中山區",
+              "tier": "B",
+              "recent": "374",
+              "previous": "333",
+              "increase": "+41",
+              "growth": "12.3%"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "固定名額與門檻敏感度比較 · 相同期間、主題及候選母體",
+        "columns": [
+          {
+            "key": "scenario",
+            "label": "情境"
+          },
+          {
+            "key": "thresholds",
+            "label": "門檻"
+          },
+          {
+            "key": "capacity",
+            "label": "名額"
+          },
+          {
+            "key": "eligible",
+            "label": "合格"
+          },
+          {
+            "key": "shortlisted",
+            "label": "入選"
+          },
+          {
+            "key": "districts",
+            "label": "行政區數"
+          },
+          {
+            "key": "represented",
+            "label": "代表派工筆數"
+          }
+        ],
+        "rows": [
+          {
+            "id": "default",
+            "cells": {
+              "scenario": "預設",
+              "thresholds": "10 / 2 / 5 / 25%",
+              "capacity": "5",
+              "eligible": "12",
+              "shortlisted": "5",
+              "districts": "5",
+              "represented": "1,334"
+            }
+          },
+          {
+            "id": "capacity-10",
+            "cells": {
+              "scenario": "名額變更",
+              "thresholds": "10 / 2 / 5 / 25%",
+              "capacity": "10",
+              "eligible": "12",
+              "shortlisted": "10",
+              "districts": "10",
+              "represented": "2,608"
+            }
+          },
+          {
+            "id": "less-restrictive",
+            "cells": {
+              "scenario": "較寬鬆門檻",
+              "thresholds": "8 / 1 / 4 / 20%",
+              "capacity": "5",
+              "eligible": "12",
+              "shortlisted": "5",
+              "districts": "5",
+              "represented": "1,200"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "明確假設下的入選變化",
+        "columns": [
+          {
+            "key": "scenario",
+            "label": "情境"
+          },
+          {
+            "key": "change",
+            "label": "相對預設的變化"
+          }
+        ],
+        "rows": [
+          {
+            "id": "capacity-additions",
+            "cells": {
+              "scenario": "名額 10",
+              "change": "新增士林、內湖、中正、北投及大安；層級不變。"
+            }
+          },
+          {
+            "id": "threshold-changes",
+            "cells": {
+              "scenario": "8／1／4／20%，名額 5",
+              "change": "士林進入、中山退出；信義轉為 A。順序：松山、文山、信義、南港、士林。"
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "已合併決策支援實作 · PR #8",
+        "url": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+      },
+      {
+        "label": "固定已合併來源 commit",
+        "url": "https://github.com/LEO0331/taipei-1999-map/commit/352dbebe0057f62817e4ee08572e1a4d207a5b5a"
+      },
+      {
+        "label": "來源完整性與來源脈絡稽核",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-source-audit.md"
+      },
+      {
+        "label": "調查優先順序方法",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md"
+      },
+      {
+        "label": "交付證據與可重現情境",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-delivery.md"
+      },
+      {
+        "label": "決策支援範圍與負責任使用界線",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-mvp.zh-Hant.md"
+      },
+      {
+        "label": "純 TypeScript 決策引擎",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicDecision.ts"
+      },
+      {
+        "label": "版本化官方項目精確分類",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicCategoryMapping.ts"
+      },
+      {
+        "label": "情境驗證與匯出實作",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicScenario.ts"
+      },
+      {
+        "label": "快照建立器與來源處理",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/scripts/buildCivicDecisionSnapshot.ts"
+      },
+      {
+        "label": "決策邏輯、敏感度與隱私回歸測試",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicDecision.test.ts"
+      },
+      {
+        "label": "可重現實際快照情境回歸測試",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicSnapshot.test.ts"
+      },
+      {
+        "label": "版本化彙總快照",
+        "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/public/data/civic-decision/snapshot.json"
+      }
+    ],
+    "previewAssets": [],
+    "futureExtensions": [
+      "後續資料治理可擴充經複核的原始完整月份與版本化官方項目分類，並保存明確來源。鼠害專屬分析仍取決於證據：尚未實作具權威性鼠害案件時間序列或鼠害預測。"
+    ]
+  }
+}

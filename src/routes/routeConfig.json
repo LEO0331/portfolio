@@ -5,6 +5,7 @@
     { "key": "govtech", "path": "/govtech", "indexable": true, "changefreq": "monthly", "priority": 0.9, "title": "GovTech & Civic Decision Systems | Leo Chen", "description": "Exploring how public data becomes explainable, traceable, and reproducible decision-support tools for urban governance." },
     { "key": "govtech-bin-policy", "path": "/govtech/bin-policy", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Public Bin Allocation Decision Support | Leo Chen", "description": "A completed independent decision-support POC: spatial bin allocation, governed public-data snapshots, policy weights, and explainable scenarios." },
     { "key": "govtech-civic-1999", "path": "/govtech/civic-1999", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Taipei 1999 Citizen Service Decision Support | Leo Chen", "description": "From historical service requests to explainable municipal investigation priorities." },
+    { "key": "govtech-heavy-rain-preparedness", "path": "/govtech/heavy-rain-preparedness", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Heavy-Rain Preparedness & Infrastructure Review | Leo Chen", "description": "From fragmented flood-related records to explainable preparedness review priorities." },
     { "key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9 },
@@ -12,6 +13,7 @@
     { "key": "govtech-zh", "path": "/zh/govtech", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "市政資料治理與決策支援系統 | Leo Chen", "description": "探索如何將政府開放資料轉化為可解釋、可追溯、可重現的市政治理決策支援工具。" },
     { "key": "govtech-bin-policy-zh", "path": "/zh/govtech/bin-policy", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市清潔箱配置決策支援 | Leo Chen", "description": "已完成的個人決策支援 POC：整合清潔箱空間配置、資料治理、政策權重與可解釋情境分析，供討論及現地評估。" },
     { "key": "govtech-civic-1999-zh", "path": "/zh/govtech/civic-1999", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市 1999 民生通報與環境治理決策支援 | Leo Chen", "description": "從歷史派工資料，建立可解釋、可比較的市政調查優先順序。" },
+    { "key": "govtech-heavy-rain-preparedness-zh", "path": "/zh/govtech/heavy-rain-preparedness", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "豪雨防汛整備與設施查核決策支援 | Leo Chen", "description": "從防汛設施與歷史積水資料，建立可追溯、可比較的整備查核優先順序。" },
     { "key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "not-found", "path": "/404", "indexable": false }
