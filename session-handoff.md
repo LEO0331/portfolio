@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.1 — Citizen Service & Environmental Governance Case002.
 
-**Current status:** Implementation/local verification complete on codex/govtech-civic-1999-v1-1, based on main10e426d. One reviewable PR is being prepared; do not merge automatically. Prior PR15/16/17 are merged.
+**Current status:** Complete and published as draft PR18: https://github.com/LEO0331/portfolio/pull/18 (verified open/unmerged). Branch codex/govtech-civic-1999-v1-1, implementation commit3efa4b1, based on main10e426d. Do not merge automatically. Prior PR15/16/17 are merged.
 
 ## Blockers
 

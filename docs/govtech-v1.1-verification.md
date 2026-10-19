@@ -79,3 +79,7 @@ Five existing dependency advisories remain. Source completeness covers the six a
 To add Case003, follow the [updated template](./govtech-case-study-template.md): add ID/number, equivalent locale data, supported methodology and table definitions, route metadata/mapping and existing project relationship. The shared renderer needs no source-specific branches. The next roadmap repository is taipei-feitsui-water-map #7; it remains planned, and no implementation is required for this release.
 
 Final documentation consistency:17 Markdown files,87 local links,13 required Case002 headings and two new static-route metadata entries verified. Dependency manifests, lockfile and pin-related files are unchanged.
+
+## Publication
+
+[Draft PR18](https://github.com/LEO0331/portfolio/pull/18) is created, attached and verified open/unmerged. Implementation commit3efa4b1 is pushed on codex/govtech-civic-1999-v1-1. The connector returned403; browser controls could not initialize after reconnect; GitHub API creation through the existing Git credential helper succeeded with credentials kept in memory and excluded from files/output. The lifecycle-only follow-up records completion; application verification above still applies. No automatic merge.

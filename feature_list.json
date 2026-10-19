@@ -290,7 +290,7 @@
       "id": "govtech-civic-1999-v1-1-2026-10",
       "name": "Present completed Civic1999 decision support as Case002",
       "description": "Generalize GovTech methodology/scenario rendering, preserve Bin001 and add frozen bilingual Civic1999 investigation priorities, source evidence and privacy limits.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-showcase-v1-2026-10"
       ],
@@ -310,7 +310,8 @@
         "Exact Bin001 EN/ZH semantic fixture passed unchanged; source SHA,weights,scenario,evidence preserved",
         "Visual verdict95/100; independent read-only review found no actionable issues",
         "17Markdown files and87local links verified; canonical13-section Case002 doc,template,roadmap,source audit,versioned results andscreenshots updated",
-        "Current npm audit retains5pre-existing high Tailwind/braces-chain findings; dependencies/lockfile/pin files unchanged; init.sh stops at audit"
+        "Current npm audit retains5pre-existing high Tailwind/braces-chain findings; dependencies/lockfile/pin files unchanged; init.sh stops at audit",
+        "Draft PR18 created and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18; implementation3efa4b1; source audit/spec/screenshots/versionedverification and handoff published"
       ]
     }
   ]

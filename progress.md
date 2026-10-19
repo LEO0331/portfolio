@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio GovTech Showcase v1.1 — Civic1999 Case002
 
-**Status:** Implementation and local verification complete on codex/govtech-civic-1999-v1-1, based on merged PR17/main10e426d. Preparing one reviewable PR; no automatic merge. GovTech v1.0 PR16 and documentation PR17 are both merged.
+**Status:** Complete and published as draft PR18 (https://github.com/LEO0331/portfolio/pull/18), verified open/unmerged on codex/govtech-civic-1999-v1-1. Based on merged PR17/main10e426d; no automatic merge. GovTech v1.0 PR16 and documentation PR17 are both merged.
 
 ### Completed
 
@@ -25,7 +25,7 @@
 
 ### Blockers
 
-- None for implementation. PR publication is the remaining delivery step.
+- None for implementation or publication. Draft PR18 is ready for human review; existing audit findings remain disclosed.
 
 ### Remaining Risks
 
@@ -199,3 +199,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Source default5groups=1334records; capacity10=2608; lessrestrictive8/1/4/20%=1200 with士林 entering and中山 leaving. Pinned source regression asserts default rows; comparison arithmetic separately checked against committed aggregate, not misrepresented as upstream regression assertions. Upstream96tests/16files are recorded evidence only.
 - Current audit5pre-existing high findings: braces/chokidar/fast-glob/micromatch/tailwindcss, GHSA-vfj7-8cjw-p6xm. init.sh stops at audit; later successful checks ran separately. No lint script; build includes TypeScript static analysis.
 - Metadata dry run0existing updates/1review-only WanderStamp candidate; warmthfromafar absent from public listing; no sync writes. Next: publish one reviewable PR without merging; next separate case roadmap is Feitsui#7.
+
+- Publication: implementation3efa4b1 pushed; draft PR18 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18. Connector403 and browser-control initialization failure were recovered using GitHub API with existing Git credentials kept in memory/out of output. Final lifecycle-only commit records completion; app verification remains valid.
