@@ -15,7 +15,9 @@ const pages = [
   ["/govtech/bin-policy", "Public Bin Allocation Decision Support"],
   ["/zh/govtech/bin-policy", "臺北市清潔箱配置決策支援"],
   ["/govtech/civic-1999", "Taipei 1999 Citizen Service Decision Support"],
-  ["/zh/govtech/civic-1999", "臺北市 1999 民生通報與環境治理決策支援"]
+  ["/zh/govtech/civic-1999", "臺北市 1999 民生通報與環境治理決策支援"],
+  ["/govtech/heavy-rain-preparedness", "Heavy-Rain Preparedness & Infrastructure Review"],
+  ["/zh/govtech/heavy-rain-preparedness", "豪雨防汛整備與設施查核決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {

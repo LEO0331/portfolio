@@ -311,7 +311,32 @@
         "Visual verdict95/100; independent read-only review found no actionable issues",
         "17Markdown files and87local links verified; canonical13-section Case002 doc,template,roadmap,source audit,versioned results andscreenshots updated",
         "Current npm audit retains5pre-existing high Tailwind/braces-chain findings; dependencies/lockfile/pin files unchanged; init.sh stops at audit",
-        "Draft PR18 created and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18; implementation3efa4b1; source audit/spec/screenshots/versionedverification and handoff published"
+        "Draft PR18 created and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18; implementation3efa4b1; source audit/spec/screenshots/versionedverification and handoff published",
+        "2026-10-19: PR18 merged to main ddc0303dc24c5f743d0c2ffa0dd702bbc7bd3c38; prior draft state above is historical."
+      ]
+    },
+    {
+      "id": "govtech-heavy-rain-v1-2-2026-10",
+      "name": "Present source-backed heavy-rain preparedness as Case003",
+      "description": "Add bilingual infrastructure evidence review, pinned GIS/source provenance and frozen capacity/balancing scenarios using the shared case renderer.",
+      "status": "in-progress",
+      "dependencies": [
+        "govtech-civic-1999-v1-1-2026-10"
+      ],
+      "doneCriteria": [
+        "Three bilingual cases with preserved Bin/Civic evidence and homepage pins",
+        "Pinned Feitsui source and reproducible scenario with responsible-use limits",
+        "Project links, routes, SEO, documentation and complete executed verification",
+        "One reviewable PR without automatic merge"
+      ],
+      "evidence": [
+        "Source audit pinned to Feitsui PR5/195e63111d32ad564291545ff9d8b230b025b055; snapshot sha256-d67edc57254ee273, method heavy-rain-preparedness-review-v1 config1.0.0",
+        "Baseline22unit/51Playwright passed before app edits; final22unit/64Playwright,17/17trackedcoverage, TypeScript/build,16indexable routes passed",
+        "Gaps5=2districts/12candidate questions/5A; balanced5=5districts/15/2A3B; reproduced with pinned functions",
+        "Both-base direct/refresh/metadata/locale/404 and five widths passed; keyboard tables/light/dark; visual94/100; independent review no actionable issues",
+        "Existing Bin/Civic complete content preserved via fixtures; pins, external URLs, preview and stack unchanged",
+        "Five existing high Tailwind/braces-chain advisories remain; no dependency/lockfile changes",
+        "Publication pending; do not merge automatically"
       ]
     }
   ]

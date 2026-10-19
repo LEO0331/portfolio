@@ -138,14 +138,22 @@ node tools/capture-project-previews.mjs
 
 ## GovTech 案例展示
 
-功能已於 2026-10-16 隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main。
+**Portfolio GovTech Showcase v1.2** 延伸已隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併的展示。案例 002 的 [PR #18](https://github.com/LEO0331/portfolio/pull/18) 已合併，本版以 main `ddc0303` 為基準。
 
-個人 [市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 展示公共資料工程與可解釋決策原型。目前有兩個已完成 POC：[臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置；[臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工模式及調查優先順序。鼠患專項分析與其他未來延伸仍明確標為規劃中，不暗示政府背書或正式營運認證。
+個人[市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 依序呈現三個已完成 POC：[001 — 臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置及政策加權參考涵蓋；[002 — 臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工、調查優先順序與容量情境；[003 — 豪雨防汛整備與設施查核決策支援](https://leo0331.github.io/portfolio/zh/govtech/heavy-rain-preparedness) 展示設施證據缺口、官方參考 GIS 驗證及地理均衡查核。這些是個人工程 POC，不由臺北市政府營運或背書，未進行官方營運整備認證。
+
+案例 003 呈現已合併的 [Feitsui PR #5](https://github.com/LEO0331/taipei-feitsui-water-map/pull/5)，固定來源為 [`195e63111d32ad564291545ff9d8b230b025b055`](https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055)、快照 `sha256-d67edc57254ee273`、方法 `heavy-rain-preparedness-review-v1`、設定 `1.0.0`，來源查核日 2026-10-19。水質／生態等模組仍為探索功能，已完成的豪雨整備模組提供此專案的決策支援 POC 能力。
+
+相同嚴格證據範圍與容量 5 下，缺口優先選入 2 區、5 個 A 候選及 12 個候選層級問題；地理均衡選入 5 區、2 A／3 B 及 15 個問題。兩者皆選北投／士林機具候選。來源共通問題可跨候選重複，不代表淹水風險、防護效果或政策績效。嚴格模式不採計帶限制的歷史來源；695 筆為轉換納入觀測數，並非嚴格情境貢獻。因缺少已驗證排水服務關係而採行政區 × 類別查核；官方參考地理部分涵蓋、歷史日期矛盾及沉砂池面積單位仍是限制。本案例不是警報或預報，不確立排水能力、機具目前可用性、實際整備或防淹保障。
+
+本版文件：[案例 003 規格](./docs/govtech-case-study-003.zh-TW.md)、[豪雨固定來源稽核](./docs/govtech-heavy-rain-source-audit.md) 及 [Portfolio v1.2 驗證](./docs/govtech-v1.2-verification.md)。[上游驗證紀錄](https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/verification.md) 為另行引用的既有結果，不宣稱本次 Portfolio 完整重跑上游應用。
 
 Showcase v1.1 新增 [案例 002 規格](./docs/govtech-case-study-002.zh-TW.md)、[1999 固定來源稽核](./docs/govtech-civic-1999-source-audit.md) 及 [v1.1 驗證](./docs/govtech-v1.1-verification.md)。來源固定為 352dbebe0057f62817e4ee08572e1a4d207a5b5a；作品集呈現凍結彙總情境，不即時請求民生資料。
 
-參閱 [正式功能規格](./docs/govtech-case-study-v1.0.zh-TW.md)、[固定版本來源查核](./docs/govtech-source-audit.md) 與 [下一案例模板](./docs/govtech-case-study-template.md)。新增案例時先核對來源 commit 與實際能力，引用既有 project ID，補齊中英文結構化資料，登錄雙語路由、AppRouter 頁面映射與 routeConfig.json 靜態 metadata，再驗證直接載入／刷新、語言與 base path、來源限制與行動版。最後以實際測試結果更新 feature ledger、progress 與 handoff；一般專案同步及人工策展流程維持不變。
+歷史文件維持原版：[v1.0 規格](./docs/govtech-case-study-v1.0.zh-TW.md)、[清潔箱固定來源查核](./docs/govtech-source-audit.md)、v1.0／v1.1 驗證。參閱 [新增案例 004 模板](./docs/govtech-case-study-template.md)：先核對來源 commit 與實際能力，引用既有 project ID，補齊中英文結構化資料，登錄雙語路由、AppRouter 映射與 routeConfig.json 靜態 metadata，再驗證直接載入／刷新、語言與 base path、來源限制與行動版。保留前三案 baseline fixtures 及首頁精選置頂順序，以實際測試結果更新 feature ledger、progress 與 handoff；一般專案同步及人工策展流程維持不變。
 
-新頁沿用 SEO hook 與靜態入口產生器，包含各頁標題／描述、Open Graph 與 sitemap。[英文首頁](https://leo0331.github.io/portfolio/govtech) 與 [英文案例](https://leo0331.github.io/portfolio/govtech/bin-policy) 同步提供。未來壅塞及大眾運輸模組維持在 taipei-crash-map，同一 repo 即可；Bin Map v1.3 政府作業流程無限期延後。
+新頁沿用 SEO hook 與靜態入口產生器，包含各頁標題／描述、Open Graph 與 sitemap。同步提供[英文首頁](https://leo0331.github.io/portfolio/govtech)、[清潔箱案例](https://leo0331.github.io/portfolio/govtech/bin-policy)、[1999 案例](https://leo0331.github.io/portfolio/govtech/civic-1999) 及[豪雨案例](https://leo0331.github.io/portfolio/govtech/heavy-rain-preparedness)。
 
-E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應式樣式與深層靜態入口；請保留 4175 port 供測試使用。GovTech 實際測試結果與截圖見 [v1.0 歷史紀錄](./docs/govtech-verification.md) 及 [v1.1 驗證](./docs/govtech-v1.1-verification.md)。
+下一個規劃政策專案為 **`taipei-real-estate-dashboard` — Aging Buildings & Urban Renewal Decision Support（老屋與都市更新決策支援）**，預計為案例 004，本版不實作。原路線圖保留：鼠患專項及 `taipei-safety-map` 擴充仍規劃中；壅塞／大眾運輸模組仍在 `taipei-crash-map` 內；Bin Map v1.3 政府作業流程無限期延後。
+
+E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應式樣式與深層靜態入口；請保留 4175 port。結果與截圖見 [v1.0 歷史紀錄](./docs/govtech-verification.md)、[v1.1 歷史紀錄](./docs/govtech-v1.1-verification.md) 及 [v1.2 驗證](./docs/govtech-v1.2-verification.md)。

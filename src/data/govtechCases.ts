@@ -1,3 +1,4 @@
+import { heavyRainCase } from "./govtechHeavyRain";
 import type { GovTechCase } from "../types/govtechCase";
 import { civic1999Case } from "./govtechCivic1999";
 
@@ -121,4 +122,4 @@ export const binPolicyCase = {
   futureExtensions: ["Tree/shade equity is a planned module in the same Bin Map repository; it is not an implemented decision-support feature."]
 } satisfies GovTechCase;
 
-export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case];
+export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase];

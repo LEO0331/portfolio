@@ -734,11 +734,11 @@ export const projects: Project[] = [
     id: "taipei-feitsui-water-map",
     slug: "taipei-feitsui-water-map",
     name: "Taipei Feitsui Water Map",
-    tagline: "Water-quality and ecology dashboard for the Feitsui Reservoir system",
+    tagline: "Water/environment exploration and explainable heavy-rain preparedness review",
     shortDescription:
-      "A bilingual map and dashboard for exploring Feitsui Reservoir water quality, hydrometeorology, operations, and related ecology datasets.",
+      "A bilingual water-quality and ecology explorer with a completed heavy-rain infrastructure evidence-review decision-support POC.",
     fullDescription:
-      "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. It demonstrates careful public-data transformation, geospatial visualization, charting, and transparent interpretation limits.",
+      "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. Its completed heavy-rain preparedness module adds official infrastructure source integration, flood-context GIS validation, provenance and data-quality checks, A/B/C evidence-review priorities, capacity and geographic-balancing scenarios, deterministic sensitivity and JSON/CSV briefings. Priorities describe documentary or field verification needs, not flood forecasts, current equipment availability or operational readiness. Reservoir and ecology modules remain public-data exploration capabilities.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
@@ -747,11 +747,16 @@ export const projects: Project[] = [
       "Water-quality monitoring dashboard",
       "Reservoir and river map layers",
       "Operations and hydrometeorology views",
-      "Historical ecology data explorers"
+      "Historical ecology data explorers",
+      "Heavy-rain infrastructure evidence review and official flood-context GIS validation",
+      "Versioned provenance and explainable A/B/C review priorities",
+      "Capacity, geographic balancing and deterministic sensitivity scenarios",
+      "JSON/CSV preparedness review briefings"
     ],
     image: "/src/assets/images/projects/taipei-feitsui-water-map.png",
     demoUrl: "https://leo0331.github.io/taipei-feitsui-water-map/",
     repoUrl: "https://github.com/LEO0331/taipei-feitsui-water-map",
+    govtechCaseId: "heavy-rain-preparedness",
     status: "live",
     featured: false
   },
