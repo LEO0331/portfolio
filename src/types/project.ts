@@ -1,3 +1,5 @@
+import type { GovTechCaseId } from "./govtechCase";
+
 export type ProjectStatus = "live" | "archived" | "in-progress";
 
 export interface Project {
@@ -18,7 +20,7 @@ export interface Project {
   demoUrl?: string;
   repoUrl?: string;
   caseStudyUrl?: string;
-  govtechCaseId?: "bin-policy";
+  govtechCaseId?: GovTechCaseId;
   status: ProjectStatus;
   featured: boolean;
   startDate?: string;

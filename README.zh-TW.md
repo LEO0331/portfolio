@@ -56,7 +56,7 @@ npm run test:e2e
 git diff --check
 ```
 
-截至 2026-10-16，`npm audit` 在既有 Tailwind／braces 工具鏈回報五項 high 問題。`bash init.sh` 會在 audit 非零結束時停止；[驗證報告](./docs/govtech-verification.md) 中的建置與測試結果為分別執行的紀錄。功能完成不代表安全稽核無問題。
+截至 2026-10-19，`npm audit` 在既有 Tailwind／braces 工具鏈回報五項 high 問題。`bash init.sh` 會在 audit 非零結束時停止；[驗證報告](./docs/govtech-verification.md) 中的建置與測試結果為分別執行的紀錄。功能完成不代表安全稽核無問題。
 
 ## 部署至 GitHub Pages
 
@@ -140,10 +140,12 @@ node tools/capture-project-previews.mjs
 
 功能已於 2026-10-16 隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main。
 
-個人 [市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 展示公共資料工程與可解釋決策原型。[臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 是第一個已完成案例；其他政策延伸明確標為規劃中，不暗示政府背書或正式營運認證。
+個人 [市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 展示公共資料工程與可解釋決策原型。目前有兩個已完成 POC：[臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置；[臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工模式及調查優先順序。鼠患專項分析與其他未來延伸仍明確標為規劃中，不暗示政府背書或正式營運認證。
 
-參閱 [正式功能規格](./docs/govtech-case-study-v1.0.zh-TW.md)、[固定版本來源查核](./docs/govtech-source-audit.md) 與 [下一案例模板](./docs/govtech-case-study-template.md)。新增案例時先核對來源 commit 與實際能力，引用既有 project ID，補齊中英文結構化資料，在 routeConfig.json 登錄雙語路由與靜態 metadata，再驗證直接載入／刷新、語言與 base path、來源限制與行動版。最後以實際測試結果更新 feature ledger、progress 與 handoff；一般專案同步及人工策展流程維持不變。
+Showcase v1.1 新增 [案例 002 規格](./docs/govtech-case-study-002.zh-TW.md)、[1999 固定來源稽核](./docs/govtech-civic-1999-source-audit.md) 及 [v1.1 驗證](./docs/govtech-v1.1-verification.md)。來源固定為 352dbebe0057f62817e4ee08572e1a4d207a5b5a；作品集呈現凍結彙總情境，不即時請求民生資料。
+
+參閱 [正式功能規格](./docs/govtech-case-study-v1.0.zh-TW.md)、[固定版本來源查核](./docs/govtech-source-audit.md) 與 [下一案例模板](./docs/govtech-case-study-template.md)。新增案例時先核對來源 commit 與實際能力，引用既有 project ID，補齊中英文結構化資料，登錄雙語路由、AppRouter 頁面映射與 routeConfig.json 靜態 metadata，再驗證直接載入／刷新、語言與 base path、來源限制與行動版。最後以實際測試結果更新 feature ledger、progress 與 handoff；一般專案同步及人工策展流程維持不變。
 
 新頁沿用 SEO hook 與靜態入口產生器，包含各頁標題／描述、Open Graph 與 sitemap。[英文首頁](https://leo0331.github.io/portfolio/govtech) 與 [英文案例](https://leo0331.github.io/portfolio/govtech/bin-policy) 同步提供。未來壅塞及大眾運輸模組維持在 taipei-crash-map，同一 repo 即可；Bin Map v1.3 政府作業流程無限期延後。
 
-E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應式樣式與深層靜態入口；請保留 4175 port 供測試使用。GovTech 實際測試結果與截圖見 [驗證報告](./docs/govtech-verification.md)。
+E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應式樣式與深層靜態入口；請保留 4175 port 供測試使用。GovTech 實際測試結果與截圖見 [v1.0 歷史紀錄](./docs/govtech-verification.md) 及 [v1.1 驗證](./docs/govtech-v1.1-verification.md)。

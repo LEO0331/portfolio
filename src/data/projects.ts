@@ -704,11 +704,11 @@ export const projects: Project[] = [
     id: "taipei-1999-map",
     slug: "taipei-1999-map",
     name: "Taipei 1999 Service Request Map",
-    tagline: "Privacy-aware dashboard for Taipei 1999 service request data",
+    tagline: "Historical dispatch explorer and explainable civic investigation priorities",
     shortDescription:
-      "A bilingual map and dashboard for exploring Taipei 1999 dispatched service requests alongside related public-works datasets.",
+      "A bilingual Taipei 1999 dispatch explorer with a completed decision-support POC for verified historical trends, investigation capacity scenarios, and privacy-preserving aggregate briefings.",
     fullDescription:
-      "Taipei 1999 Service Request Map presents public service-request data through district, time, category, and location filters while deliberately removing private address details. It also connects streetlight maintenance, construction audits, and stop/resume-work records in a mobile-first interface.",
+      "Taipei 1999 Service Request Map retains its four explorer modules: historical dispatched service requests, streetlight maintenance, construction audits, and stop/resume-work records. The completed civic decision-support POC adds source completeness auditing, versioned monthly district/item aggregates, explainable A/B/C investigation rules, editable thresholds, capacity and sensitivity scenarios, and JSON/CSV manager briefings. The frozen comparison uses verified complete April–September 2026 source months. Decision outputs suppress protected cells and exclude case IDs, addresses, and exact complaint coordinates. These are advisory historical screening results, not confirmed incidents, resolution rates, operational efficiency, or rodent-specific predictions.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Papa Parse"],
@@ -717,11 +717,16 @@ export const projects: Project[] = [
       "1999 service-request map and filters",
       "Privacy-aware location processing",
       "Related public-works data modules",
-      "Bilingual responsive experience"
+      "Bilingual responsive experience",
+      "Completed civic decision-support POC with source completeness and versioned provenance",
+      "Explainable investigation priorities with editable thresholds and capacity scenarios",
+      "Threshold sensitivity and privacy-preserving monthly district/item aggregates",
+      "JSON/CSV manager briefings without case IDs, addresses, or exact complaint coordinates"
     ],
     image: "/src/assets/images/projects/taipei-1999-map.png",
     demoUrl: "https://leo0331.github.io/taipei-1999-map/",
     repoUrl: "https://github.com/LEO0331/taipei-1999-map",
+    govtechCaseId: "civic-1999",
     status: "live",
     featured: false
   },

@@ -2,43 +2,43 @@
 
 ## Current State
 
-**Last updated:** 2026-10-16
+**Last updated:** 2026-10-19
 
-**Active work:** Documentation consistency after the GovTech showcase merge
+**Active work:** Portfolio GovTech Showcase v1.1 — Civic1999 Case002
 
-**Status:** GovTech merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is complete and published as draft PR #17 (https://github.com/LEO0331/portfolio/pull/17) on codex/govtech-docs-current, based on current main.
+**Status:** Implementation and local verification complete on codex/govtech-civic-1999-v1-1, based on merged PR17/main10e426d. Preparing one reviewable PR; no automatic merge. GovTech v1.0 PR16 and documentation PR17 are both merged.
 
 ### Completed
 
-- Four bilingual landing/case routes, one source-backed completed Bin Policy POC, six policy domains and clearly planned extensions referencing existing project IDs.
-- Bin Map project copy preserves amenities discovery and stable identity; local case navigation, homepage CTA and Navbar access added without pin-selection changes.
-- Reusable case data, static metadata/sitemap, canonical Chinese specification, source audit, next-case template and review screenshots are present.
-- Detailed file list, evidence and reproduction steps: docs/govtech-verification.md.
+- Two completed bilingual decision-support cases: Bin001 spatial allocation and Civic002 historical dispatch investigation priorities.
+- Shared typed methodology union, data-driven scenario tables, display numbers, content slots and validated case/project lookup; no case-ID rendering branches.
+- Existing1999 project identity, four data modules and discovery functionality retained; completed POC and local drawer navigation added. Pin snapshot/order and filters unchanged.
+- Pinned Civic source352dbebe0057f62817e4ee08572e1a4d207a5b5a and snapshot4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f. Fixed source audit, canonical Case002 doc, updated roadmap/template and versioned verification are present.
 
 ### Verification Evidence
 
-- npm ci passed. TypeScript/build passed. Unit tests 22/22. Browser tests 36/36 with existing coverage 17/17 (100%). Harness valid with 12 features; diff check passed.
-- Browser suite now builds/serves production preview because existing CSP blocks Vite development style injection; production CSP is unchanged. No existing test or coverage rule changed.
-- Both root and /portfolio/ metadata generation verified; browser direct/refresh/locale checks pass at both bases. No overflow at 320/390/768/1024/1440; visual verdict 95/100 after fixing dark links.
-- Read-only sync: zero existing updates, one review-only WanderStamp candidate; no auto-curation. All eleven cited demo entry pages returned HTTP200 (Render required a longer retry).
-- Source evidence pinned to taipei-bin-map 1280011b086f498404abf138c29f64041963e14c; upstream engine/tests were not independently rerun.
+- Baseline before app edits: npm ci passed after resolving a stale Portfolio-only process lock;22 unit, TypeScript/build and36 Playwright checks passed (2026-10-16).
+- Final2026-10-19:22 Node unit and51 Playwright checks pass; existing coverage17/17 (100%); TypeScript/build passes with14 indexable sitemap routes. Bin001 EN/ZH full semantic fixture remains unchanged and passes.
+- Both cases at root and /portfolio/ support direct refresh, metadata, locale and safe unknown-slug404. Mobile keyboard-scrolling tables and dark/light views pass; no page overflow at320/390/768/1024/1440. Visual review95/100; independent read-only review found no actionable issues.
+- Current npm audit: five pre-existing high Tailwind/braces-chain findings; no dependency/lockfile changes. Read-only project sync:0 existing updates,1 review-only candidate, no writes.
+- Full sources, changed paths, reproduction, screenshots and limitations: docs/govtech-v1.1-verification.md. Upstream96 tests/16 files are recorded source evidence, not independently rerun here.
 
 ### Blockers
 
-- None for documentation verification. The documentation follow-up is ready for review; the implementation is already merged.
+- None for implementation. PR publication is the remaining delivery step.
 
 ### Remaining Risks
 
-- npm audit exits 1 with five existing high Tailwind/braces-chain findings; no dependency changes were introduced.
-- Source research data remain review_required with older bus references, unavailable tourism/commercial scoring inputs and assumed weights. Coverage is not measured policy effectiveness; candidate locations need field review.
-- Remote demo availability can change; HTTP200 is reachability only. The existing production CSP still blocks injected dev styles; E2E intentionally exercises production output.
-- Maintenance PR #15 was merged on 2026-10-06 (c6dbb3f); its generated scan report remains historical evidence.
+- Five high dependency findings remain and cause init.sh to stop at audit; all downstream checks were executed separately.
+- Civic completeness is limited to six audited original months (April–September2026). Counts are recorded dispatch activity, not incidence/severity/resolution/effects; thresholds are advisory. Rodent-specific analysis remains unsupported and planned.
+- Aggregate suppression is not an unconditional privacy guarantee. No separate raw-source inventory, upstream modifications or history rewrite was performed.
+- Existing Bin001 research data/source limitations remain unchanged. No live deployment certification is claimed.
 
 ### Next Session Should
 
-1. Review the documentation follow-up. GovTech PR #16 is already merged; verify deployment separately before claiming live release.
-2. Keep source versions and actual/planned capability labels current; next roadmap repository is taipei-1999-map #3.
-3. Address the existing braces-chain advisories in a separate toolchain change; maintenance PR #15 needs no further merge review.
+1. Review the Showcase v1.1 PR and versioned evidence, then merge only through human review.
+2. Use the shared template for Case003; next roadmap repository is taipei-feitsui-water-map #7, still planned.
+3. Address existing audit findings as a separate toolchain change. PR15/16/17 already merged; no outstanding merge review for them.
 
 ## Update Contract
 
@@ -187,3 +187,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Next: review the documentation-only follow-up; then continue with separately scoped taipei-1999-map #3 or audit remediation. No further merge review is needed for PR #15/#16.
 
 - Publication: documentation corrections committed as 6d5e17b; draft PR #17 created and attached: https://github.com/LEO0331/portfolio/pull/17. It remains unmerged.
+
+### 2026-10-19 — GovTech Showcase v1.1 / Case Study002
+
+- Scope: Portfolio presentation only. Source audit begun2026-10-16 pinned taipei-1999-map PR8/352dbebe0057f62817e4ee08572e1a4d207a5b5a and aggregate snapshot4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f; all13 required files inspected. No upstream files/raw sources/algorithms changed or separate privacy inventory initiated.
+- Refactor plan recorded before code; Bin001 EN/ZH semantic fixture captured before migration. Replaced source-specific page selection, number and table columns with shared typed identity/lookup, methodology union, scenario table definitions and content slots. Existing Bin content/method/source/rows/evidence remain exact under regression normalization.
+- Added full bilingual Civic002, completed-maturity landing cards, two static routes/SEO, existing1999 project/drawer relation, privacy/source limits and frozen scenario. Existing four1999 data modules, stable identity, pins, filters, CSP and Case001 routes preserved. No dependencies/backend added.
+- Documentation includes13-heading Case002 specification, pinned audit, updated template/roadmap, bilingual READMEs, versioned verification/visual verdict and six new screenshots. Full affected-file list and simplifications: docs/govtech-v1.1-verification.md.
+- Baseline2026-10-16: harness12 records, clean install after stopping verified stale Portfolio Vite binary lock, audit5high,22unit/36Playwright/17tracked, build. Separate targeted fixture Playwright attempt failed on Windows generator EPERM before test execution; independent data comparison was green before edits.
+- Final2026-10-19:22unit,51Playwright and17/17coverage pass; TypeScript/build and14route metadata/sitemap entries pass. Both-base direct/refresh/locale/404 tests, mobile table keyboard scroll, light/dark,5responsive widths and visual95/100 pass. Root static generator sandbox EPERM retried successfully outside sandbox. Independent read-only reviewer found no actionable issues. No test/coverage/CSP bypass.
+- Source default5groups=1334records; capacity10=2608; lessrestrictive8/1/4/20%=1200 with士林 entering and中山 leaving. Pinned source regression asserts default rows; comparison arithmetic separately checked against committed aggregate, not misrepresented as upstream regression assertions. Upstream96tests/16files are recorded evidence only.
+- Current audit5pre-existing high findings: braces/chokidar/fast-glob/micromatch/tailwindcss, GHSA-vfj7-8cjw-p6xm. init.sh stops at audit; later successful checks ran separately. No lint script; build includes TypeScript static analysis.
+- Metadata dry run0existing updates/1review-only WanderStamp candidate; warmthfromafar absent from public listing; no sync writes. Next: publish one reviewable PR without merging; next separate case roadmap is Feitsui#7.

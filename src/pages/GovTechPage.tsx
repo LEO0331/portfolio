@@ -2,8 +2,7 @@ import { Link } from "react-router-dom";
 import { Section } from "../components/layout/Section";
 import { GovTechCaseCard } from "../components/govtech/GovTechCaseCard";
 import { evidenceLinkClass } from "../components/govtech/CaseStudySection";
-import { govtechCases } from "../data/govtechCases";
-import { govtechCasesZh } from "../data/govtechCases.zh";
+import { getGovTechCases } from "../utils/govtechCase";
 import { civicProjectIds, civicSourceReadmes, govtechCopy } from "../data/govtechCopy";
 import { projects } from "../data/projects";
 import { useLocale } from "../i18n/LocaleContext";
@@ -14,7 +13,8 @@ import routeConfig from "../routes/routeConfig.json";
 export function GovTechPage(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const text = govtechCopy[locale];
-  const cases = locale === "zh" ? govtechCasesZh : govtechCases;
+  const cases = getGovTechCases(locale);
+  const completedProjectIds = new Set(cases.map((study) => study.projectId));
   const catalogue = getLocalizedProjects(projects, locale);
   const routePath = toLocalePath("/govtech");
   usePageSeo(text.title, { routePath, description: routeConfig.routes.find((route) => route.path === routePath)?.description ?? text.intro });
@@ -31,7 +31,7 @@ export function GovTechPage(): JSX.Element {
       </section>
       <section aria-labelledby="govtech-cases"><h2 id="govtech-cases" className="mb-5 text-2xl font-bold">{text.completed}</h2>{cases.map((study) => <GovTechCaseCard key={study.id} study={study} />)}</section>
       <section aria-labelledby="govtech-explorers"><h2 id="govtech-explorers" className="text-2xl font-bold">{text.explorers}</h2><p className="mb-5 mt-3 max-w-4xl leading-relaxed text-slate-600">{text.explorerIntro}</p>
-        <div className="grid gap-4 md:grid-cols-2">{civicProjectIds.map((id) => { const project = catalogue.find((item) => item.id === id); return project ? <article className="panel p-5" key={id}>
+        <div className="grid gap-4 md:grid-cols-2">{civicProjectIds.filter((id) => !completedProjectIds.has(id)).map((id) => { const project = catalogue.find((item) => item.id === id); return project ? <article className="panel p-5" key={id}>
           <p className="eyebrow">{text.explorerLabel}</p><h3 className="mt-2 text-lg font-bold">{project.name}</h3><p className="mt-2 text-sm leading-relaxed text-slate-600">{project.shortDescription}</p>
           <div className="mt-4 flex flex-wrap gap-x-5 gap-y-3 text-sm"><Link className={evidenceLinkClass} to={toLocalePath(`/projects?project=${project.slug}`)}>{text.project}</Link>{project.demoUrl && <a className={evidenceLinkClass} href={project.demoUrl} target="_blank" rel="noopener noreferrer">{text.demo}</a>}<a className={evidenceLinkClass} href={`https://github.com/LEO0331/${civicSourceReadmes[id]}`} target="_blank" rel="noopener noreferrer">{text.evidence}</a></div>
         </article> : null; })}</div>

@@ -5,6 +5,7 @@ import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { resolveProjectImageSources } from "../../utils/projectImage";
 import { toSafeExternalHref } from "../../utils/urlSafety";
+import { getGovTechCasePath } from "../../utils/govtechCase";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
@@ -77,7 +78,8 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
-  const govtechCasePath = project.govtechCaseId === "bin-policy" ? toLocalePath("/govtech/bin-policy") : undefined;
+  const casePath = getGovTechCasePath(project.govtechCaseId, project.id);
+  const govtechCasePath = casePath ? toLocalePath(casePath) : undefined;
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
 
   useEffect(() => {
