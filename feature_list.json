@@ -319,7 +319,7 @@
       "id": "govtech-heavy-rain-v1-2-2026-10",
       "name": "Present source-backed heavy-rain preparedness as Case003",
       "description": "Add bilingual infrastructure evidence review, pinned GIS/source provenance and frozen capacity/balancing scenarios using the shared case renderer.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-civic-1999-v1-1-2026-10"
       ],
@@ -336,7 +336,7 @@
         "Both-base direct/refresh/metadata/locale/404 and five widths passed; keyboard tables/light/dark; visual94/100; independent review no actionable issues",
         "Existing Bin/Civic complete content preserved via fixtures; pins, external URLs, preview and stack unchanged",
         "Five existing high Tailwind/braces-chain advisories remain; no dependency/lockfile changes",
-        "Publication pending; do not merge automatically"
+        "Draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19; implementation4c1dd3e pushed on codex/govtech-heavy-rain-v1-2"
       ]
     }
   ]

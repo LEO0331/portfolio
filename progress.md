@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio GovTech Showcase v1.2 — Heavy-Rain Preparedness Case003.
 
-**Status:** Implementation and verification complete on codex/govtech-heavy-rain-v1-2, based on merged main ddc0303 (Portfolio PR18). Reviewable PR publication pending; no automatic merge.
+**Status:** Complete and published as draft PR19 (https://github.com/LEO0331/portfolio/pull/19), verified open/unmerged on codex/govtech-heavy-rain-v1-2. Implementation4c1dd3e, based on merged main ddc0303 (Portfolio PR18). No automatic merge.
 
 ### Completed
 
@@ -25,7 +25,7 @@
 
 ### Blockers
 
-- None for implementation. Publication is the final pending step; audit advisories remain separately disclosed.
+- None for implementation/publication. Draft PR19 is ready for human review; audit advisories remain separately disclosed.
 
 ### Remaining Risks
 
@@ -208,3 +208,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Added full Civic fixture and heavy-rain data/browser/static regressions; final22unit,64Playwright,17/17trackedcoverage, TypeScript/build, both-base checks, visual94/100 and diff passed. Responsive test locale-origin setup failures corrected and full suite rerun.
 - Files: data/types/routes, tests/fixture, README pair, source audit/Chinese specification/template/v1.2 verification/verdict, five local screenshots, ledger/progress/handoff and generated sitemap.
 - Five pre-existing high audit advisories remain; no dependency/lockfile changes. Publication pending; next separate policy case is Aging Buildings & Urban Renewal.
+
+- Publication completed: implementation4c1dd3e pushed; draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19. Connector403 recovered through GitHub API with existing Git credentials kept in memory/out of output. Lifecycle-only follow-up records completion.

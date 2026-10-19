@@ -63,3 +63,7 @@ Five existing high advisories: braces, chokidar, fast-glob, micromatch and tailw
 Source limits include partial official reference geography, historical date/coverage discrepancies, missing machinery record dates and current operating/availability evidence, unresolved basin area units, and no verified drainage-service linkage. These independent personal POCs are not official warning/forecast/dispatch/readiness systems. Live deployment after a human merge is separate from local verification. Next planned project: `taipei-real-estate-dashboard` — Aging Buildings & Urban Renewal Decision Support; no implementation in this PR.
 
 Documentation consistency: 14 Markdown documents, 106 local links and all 14 required Case003 headings verified. Dependency manifests, lockfile, pin snapshot and original Bin/Civic case data were confirmed unchanged.
+
+## Publication
+
+[Draft PR19](https://github.com/LEO0331/portfolio/pull/19) created, attached and verified open/unmerged. Implementation commit4c1dd3e2aa842f6fd3ef122baa205c6c1092ebb5 pushed on codex/govtech-heavy-rain-v1-2. The connector returned403; GitHub API creation using existing Git credentials succeeded with credentials kept in memory, excluded from files and output. This lifecycle-only follow-up records completion; application verification remains valid. No automatic merge.

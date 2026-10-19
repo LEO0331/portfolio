@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.2 — Heavy-Rain Preparedness Case003.
 
-**Current status:** Implementation and verification complete; PR publication pending on codex/govtech-heavy-rain-v1-2, based on main ddc0303 (merged Portfolio PR18). Do not merge automatically.
+**Current status:** Complete and published as draft PR19: https://github.com/LEO0331/portfolio/pull/19 (verified open/unmerged). Branch codex/govtech-heavy-rain-v1-2, implementation4c1dd3e, based on main ddc0303 (merged Portfolio PR18). Do not merge automatically.
 
 ## Blockers
 
