@@ -1,49 +1,53 @@
 # GovTech case-study template
 
-Use this template only when source evidence supports the actual maturity. A live demo does not establish decision-support maturity. Link existing project IDs rather than creating duplicate root projects.
+Current contract: Showcase v1.1 supports weighted coverage and rule-based priorities through one shared page. Keep source evidence pinned and deployment status separate from analytical maturity. Do not infer government approval from a live demo or technical acceptance.
 
 ## Identity and maturity
 
-Stable case ID / slug; existing portfolio project ID; policy domain; source repository and inspected commit; locale routes; deployment status separately from public-data-explorer / decision-support-poc / planned-decision-support.
+Choose a stable case ID/slug and explicit displayNumber; reference an existing portfolio project ID. Record policy domain, intended users, source repository/commit, optional snapshotVersion, title/summary and actual maturity. Keep identity/order equal across English and Traditional Chinese.
 
 ## Policy problem and intended decision maker
 
-What decision is being explored? Who would discuss the output? Separate facility availability, reference demand, feasibility and measured outcomes. State independent POC status.
+State the decision question and audience. Separate recorded activity, potential need, feasibility, severity and measured outcomes. Describe the independent POC boundary.
 
 ## Data sources and provenance
 
-Source URLs, acquisition/publication dates (unknown where applicable), hashes, versions, coordinate systems, valid/excluded counts and their exact units. Distinguish accepted and research datasets.
+Record original-source identity, publication/retrieval/processing dates, hashes, versions, completeness, exclusions and exact count units. Distinguish historical observations, verified sources and published aggregates. Do not fill missing or suppressed values with zero.
 
 ## Current actual capabilities
 
-List implemented behavior with code/merged PR links. Separate future extensions. Never imply official approval or operational deployment from technical acceptance.
+Link implemented behavior to pinned code and merged PRs. Describe existing explorer capabilities separately from decision support and planned extensions. Preserve the existing root project identity.
 
 ## Analysis methodology
 
-Algorithm IDs, objective, formula in accessible text, fixed denominators, assumptions, unavailable categories, tie-breaking, constraints, heuristic limits and explainability.
+Use GovTechMethodology.kind = weighted-coverage for formula, normalization and category availability, or rule-based-priority for method ID, threshold/tier tables, ordering, capacity and unavailable evidence. Reuse a supported variant; add a new analytical variant only when a future method actually requires one. Never branch the page on source/case IDs.
 
 ## Scenario comparison
 
-Pinned reproducible output; area, radius, baseline, proposed additions, budget/separation conditions, incremental coverage and assumption changes. Define units and avoid incomparable score/effectiveness claims.
+Use scenarioTables with captions, typed column definitions and rows containing stable IDs/cell keys. Every row must contain exactly the configured keys. Define periods/area, baseline, thresholds, constraints, capacity, units and sensitivity. Include only committed reproducible results; distinguish source regression assertions from independently checked arithmetic. Explain which outcome claims the data cannot support.
 
 ## Evidence and tests
 
-Merged PRs, pinned methodology/audit/code/tests/reports. Label upstream recorded results separately from independently executed verification. Use only reviewed screenshots with alt text, attribution and context, or present text evidence.
+Provide pinned methodology, audits, implementations, source tests, aggregate outputs, merged PR and source commit. Use HTTPS links with readable labels. Distinguish upstream recorded test results from the portfolio's executed tests. Use attributed reviewed screenshots or text-based evidence; never invent dashboards.
 
 ## Data limitations and responsible use
 
-Missing inputs, staleness, blocked APIs, incomplete geometry, uncertainty, field checks, privacy, security and prohibited inference.
+Disclose incomplete periods, suppressed cells, staleness, source gaps, uncertainty, privacy/security boundaries and unsupported inferences. Protected aggregates do not create unconditional privacy guarantees.
 
 ## Governance and reproducibility
 
-ETL → validation → versioned snapshots → analysis → UI/export. Separate monitoring from reviewed publication; identify actual services and storage without inventing infrastructure. Provide commands against the pinned source.
+Explain the actual preparation/validation/snapshot/analysis/UI/export architecture without inventing backend services. Separate monitoring from reviewed publication where implemented. Preserve deterministic assumptions and source identity.
 
 ## Planned next steps
 
-Explicitly planned capabilities, repository ownership and dependencies. No implicit commitment to implement all roadmap items.
+State future capabilities and required evidence explicitly. Completion of a general civic POC does not establish rodent-specific or other unsupported modules.
 
-## Portfolio integration checklist
+## Add Case Study 003
 
-Add equivalent English/Traditional Chinese data; add fixed locale routes, AppRouter page mappings and static metadata; explicitly select the new case ID in its page (the launch page currently selects bin-policy); extend the typed drawer relation and its runtime check if needed; preserve existing project identity and pins. Verify direct refresh, language switching, base paths, sitemap, evidence/limitations, mobile keyboard/no-overflow and dark mode. Run full repository gate and update feature_list.json, progress.md and session-handoff.md.
-
-Reproducible links: source commit, data snapshot, report, methodology, tests, PRs and optional attributed preview assets.
+1. Add the stable ID to GOVTECH_CASE_IDS in src/types/govtechCase.ts. Create equivalent EN/ZH GovTechCase data with displayNumber 003 and append them to govtechCases/govtechCasesZh. The lookup utility sorts and resolves these records.
+2. Use generic section content slots (architecture, methodology, scenarios, evidence, future) to place shared rendered content; other sections use paragraphs/bullets/links. Section IDs remain anchor identities, not renderer conditionals.
+3. Add both fixed locale entries with metadata in routeConfig.json and an AppRouter page mapping using GovTechCaseStudyPage slug. No source-specific renderer changes are needed for supported methodology types or new scenario columns.
+4. Set the existing project's govtechCaseId. The shared lookup validates the case and owning project before returning its local path; the drawer localizes it. Preserve external caseStudyUrl behavior.
+5. Update domain/capability copy and evidence references; completed case projects are automatically excluded from the generic explorer list. Preserve all unrelated planned statuses, project filters and pin order.
+6. Add data identity/locale/table-key/source-link tests and browser tests for routes, refresh, locale/back/drawer, methodology/columns, evidence/limitations, keyboard table scrolling, mobile/dark mode and both base paths. Keep the immutable Bin001 fixture unchanged.
+7. Run the full repository gate, preserve old verification reports, add versioned evidence/screenshots and update the ledger/progress/handoff. Publish one reviewable PR without automatically merging.

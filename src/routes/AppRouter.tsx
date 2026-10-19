@@ -15,7 +15,8 @@ const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   home: <HomePage />,
   projects: <ProjectsPage />,
   govtech: <GovTechPage />,
-  "govtech-bin-policy": <GovTechCaseStudyPage />,
+  "govtech-bin-policy": <GovTechCaseStudyPage slug="bin-policy" />,
+  "govtech-civic-1999": <GovTechCaseStudyPage slug="civic-1999" />,
   about: <AboutPage />,
   contact: <ContactPage />,
   "not-found": <NotFoundPage />

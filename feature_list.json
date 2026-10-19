@@ -285,6 +285,34 @@
         "PR #16 merged on 2026-10-16 at 13:48 Asia/Taipei: https://github.com/LEO0331/portfolio/pull/16; merge 1db5e24ac26862b79030dbfff246bfbf27506eca",
         "2026-10-16 documentation reconciliation: 13 Markdown files, 58 relative links, four routes and 12 specification sections verified; harness/diff passed; PR #15/#16 merge status corrected; documentation follow-up draft PR #17: https://github.com/LEO0331/portfolio/pull/17"
       ]
+    },
+    {
+      "id": "govtech-civic-1999-v1-1-2026-10",
+      "name": "Present completed Civic1999 decision support as Case002",
+      "description": "Generalize GovTech methodology/scenario rendering, preserve Bin001 and add frozen bilingual Civic1999 investigation priorities, source evidence and privacy limits.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-showcase-v1-2026-10"
+      ],
+      "doneCriteria": [
+        "Shared typed renderer supports two cases and methodology types without case-ID branches",
+        "Case001 bilingual content, evidence, weights and scenario semantics are preserved",
+        "Case002 bilingual pages contain verified source snapshot, priority rules, scenario, privacy controls and limits",
+        "Existing1999 identity/modules and local drawer relationship work; landing maturity reflects two completed POCs",
+        "Static routes, metadata, both base paths and localization work",
+        "Documentation and actual full verification evidence are current; one reviewable PR is prepared"
+      ],
+      "evidence": [
+        "Baseline2026-10-16: npm ci,22Node unit,TypeScript/build,36Playwright checks and17/17coverage passed before app changes",
+        "Pinned Civic source PR8/352dbebe0057f62817e4ee08572e1a4d207a5b5a and snapshot4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f verified; no upstream changes",
+        "Final2026-10-19:22Node unit and51Playwright checks passed,17/17trackedcoverage; TypeScript/build and14indexable static sitemap routes passed",
+        "Both cases EN/ZH direct/refresh/canonical/locale and404 verified at root and /portfolio/; mobile keyboard scrolling/light/dark and five widths passed",
+        "Exact Bin001 EN/ZH semantic fixture passed unchanged; source SHA,weights,scenario,evidence preserved",
+        "Visual verdict95/100; independent read-only review found no actionable issues",
+        "17Markdown files and87local links verified; canonical13-section Case002 doc,template,roadmap,source audit,versioned results andscreenshots updated",
+        "Current npm audit retains5pre-existing high Tailwind/braces-chain findings; dependencies/lockfile/pin files unchanged; init.sh stops at audit",
+        "Draft PR18 created and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/18; implementation3efa4b1; source audit/spec/screenshots/versionedverification and handoff published"
+      ]
     }
   ]
 }

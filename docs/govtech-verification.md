@@ -72,4 +72,8 @@ Corrected current merge/handoff status; consolidated the final successful demo r
 
 Verification for this documentation-only follow-up: all 13 Markdown files inspected; 58 relative Markdown links resolve; all four GovTech routes match the specification; all 12 required specification headings exist; bilingual verification commands and completed feature state agree; npm run validate:harness and git diff --check pass. Application code and dependencies are unchanged. No new build/E2E/audit or deployment result is claimed in this follow-up.
 
-Documentation follow-up: draft PR #17 (https://github.com/LEO0331/portfolio/pull/17), created and verified unmerged on codex/govtech-docs-current.
+Documentation follow-up PR #17 (https://github.com/LEO0331/portfolio/pull/17) was created as a draft and subsequently merged as 10e426d7cfd0fabe2ad688a13270a2f50e36315b. The draft state described above is historical.
+
+## Current release verification
+
+This document retains v1.0 results and the subsequent documentation-only checks. Showcase v1.1 adds completed Case002; current results, shared-renderer regression evidence and next-case instructions are in [v1.1 verification](./govtech-v1.1-verification.md). The v1.0 recommendation to develop Civic1999 is historical; its general decision-support POC is now presented, while rodent-specific capabilities remain planned.

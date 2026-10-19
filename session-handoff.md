@@ -1,41 +1,39 @@
 # Session Handoff
 
-**Last updated:** 2026-10-16
+**Last updated:** 2026-10-19
 
-**Current objective:** Documentation consistency after the GovTech showcase merge.
+**Current objective:** Portfolio GovTech Showcase v1.1 — Citizen Service & Environmental Governance Case002.
 
-**Current status:** GovTech implementation merged through [PR #16](https://github.com/LEO0331/portfolio/pull/16) on 2026-10-16 at 13:48 Asia/Taipei (1db5e24). Documentation reconciliation is published as draft PR #17 (https://github.com/LEO0331/portfolio/pull/17), unmerged, on codex/govtech-docs-current based on current main. Maintenance PR #15 was merged on 2026-10-06 (c6dbb3f).
+**Current status:** Complete and published as draft PR18: https://github.com/LEO0331/portfolio/pull/18 (verified open/unmerged). Branch codex/govtech-civic-1999-v1-1, implementation commit3efa4b1, based on main10e426d. Do not merge automatically. Prior PR15/16/17 are merged.
 
 ## Blockers
 
-- None for implementation. Five existing high audit findings remain separately documented.
+None for implementation. Five pre-existing high toolchain audit findings remain separately documented.
 
 ## Files Relevant to the Next Update
 
-- src/data/govtechCases.ts, govtechCases.zh.ts, govtechCopy.ts; src/types/govtechCase.ts.
-- src/pages/GovTechPage.tsx, GovTechCaseStudyPage.tsx; src/components/govtech/*.
-- Existing Bin Map records, typed Project.govtechCaseId, drawer Link, Navbar/HomePage, copy and route config.
-- tools/generate-route-entrypoints.mjs, playwright.config.ts, tests/e2e/govtech.spec.ts, tools/govtech.test.mjs, public/sitemap.xml.
-- docs/govtech-case-study-v1.0.zh-TW.md, govtech-source-audit.md, govtech-case-study-template.md, govtech-verification.md, visual verdict and screenshots.
-- Both READMEs, feature_list.json, progress.md.
+- src/types/govtechCase.ts and src/utils/govtechCase.ts: ID/slug, number, methodology union, generic tables/content slots and locale/project lookup.
+- src/data/govtechCases.ts/.zh.ts and new govtechCivic1999.ts/.zh.ts; govtechCopy.ts.
+- Shared GovTechCaseStudyPage, MethodologyDetails, CaseStudyTable, case card, GovTechPage and existing1999 drawer/type/catalogue/route integration.
+- tests/e2e/govtech-case-data.spec.ts, govtech-civic-1999.spec.ts; immutable tests/fixtures/govtech-bin-baseline.json; tools/govtech.test.mjs.
+- docs/govtech-case-study-002.zh-TW.md, govtech-civic-1999-source-audit.md, govtech-v1.1-verification.md, updated template and prior historical docs; screenshots under docs/images.
+- README.md, README.zh-TW.md, feature_list.json and progress.md.
 
 ## Recommended Next Step
 
-Review the documentation follow-up, then continue with the next independently scoped case. The showcase implementation is already merged. No production acceptance is required to present Bin Map's completed POC. Next policy case: taipei-1999-map #3, beginning with the template and privacy/aggregation boundaries. Maintenance PR #15 is already merged; do not reopen its completed review. Keep future congestion/transit modules in taipei-crash-map and tree/shade work in taipei-bin-map.
+Review the v1.1 PR, source-backed scenario and screenshots; merge only through human review. Case003 can use the shared contract/renderer without case-specific branches for supported models. Next roadmap repository: taipei-feitsui-water-map #7, still planned. Rodent-specific analysis remains evidence-dependent; no separate raw-source privacy work or upstream edits are authorized by this showcase task.
 
 ## Verification
 
-- npm ci passed; unit 22/22; TypeScript/build; E2E 36/36, tracked 17/17; harness 12 records; diff check.
-- E2E now builds and serves the production preview on 4175, preserving production CSP. Do not reuse an unrelated dev server. Install Chromium if absent.
-- Four direct routes/refreshes and locale/canonical behavior verified at root and /portfolio/; sitemap/static metadata fixture tests cover both bases.
-- Mobile keyboard/nav, all locale pages light/dark, no overflow at 320/390/768/1024/1440; visual 95/100. Screenshots in docs/images.
-- Source main pinned at 1280011b086f498404abf138c29f64041963e14c; source engine/tests not independently rerun. Eleven demo entry pages HTTP200, not full deployment certification.
+- Baseline2026-10-16: npm ci,22unit,36Playwright,17/17coverage, TypeScript/build;5existing high audit findings.
+- Final2026-10-19:22unit,51Playwright,17/17coverage, TypeScript/build;14indexable routes with both-base static metadata. Exact EN/ZH Bin001 semantic fixture passes unchanged.
+- Root and /portfolio/ direct/refresh/canonical/locale/404 checks pass; mobile light/dark, keyboard table scroll, no overflow at320/390/768/1024/1440; visual95/100.
+- Source evidence includes96upstream tests/16files, not a full source suite independently rerun. Default scenario asserted upstream; comparison arithmetic checked separately.
+- See docs/govtech-v1.1-verification.md for detailed commands, errors/retries, complete changed-file list, source/snapshot IDs, screenshots and reproduction.
 
 ## Remaining Risks
 
-- Five high Tailwind/braces-chain advisories predate this task; dependency/lockfile unchanged.
-- review_required research snapshot, unavailable inputs, older bus baseline, assumptions and field-review limits are disclosed in both languages.
-- Existing CSP blocks Vite dev style injection; use production preview for accurate styled manual review.
-- Source/demos can change after pinned review. No official government endorsement or installation approval implied. Bin Map v1.3 operations are deferred indefinitely.
-
-Documentation recheck (2026-10-16): all 13 tracked Markdown files inspected; 58 relative links, four route rows and 12 specification sections checked; harness and diff pass. Prior application results above are retained evidence, not tests rerun for this documentation-only change. Both READMEs now use production preview for styled review and document Chromium setup/audit-stop behavior.
+- Five high Tailwind/braces-chain findings remain; dependency/lockfile unchanged. init.sh stops at audit; downstream commands passed separately. No lint command exists; TypeScript runs in build.
+- Only April–September2026 original months support this comparable Civic scenario. Dispatch counts are not public-health risk, incident counts, resolution rates or policy outcomes. Suppression is not an unconditional privacy guarantee.
+- Bin001 source/research limitations are preserved. Both cases are independent engineering POCs with no government endorsement or work-order authority.
+- No live civic fetches, new backend, algorithm implementation, upstream changes or deployment certification. Human merge/deployment remains separate from local verification.

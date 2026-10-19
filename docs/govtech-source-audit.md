@@ -72,7 +72,7 @@ Source [desktop](https://github.com/LEO0331/taipei-bin-map/blob/1280011b086f4984
 
 ## Existing civic catalogue mapping
 
-Every listed repository already exists in the curated portfolio. Stable project IDs below refer to existing records; no root record or transit repository is created. The sole fully curated case study is bin allocation. Other entries are existing public-data explorers or engineering references, with extensions explicitly planned.
+Every listed repository already exists in the curated portfolio. Stable project IDs below refer to existing records; no root record or transit repository is created. At the v1.0 audit, the sole fully curated case was bin allocation. Showcase v1.1 also includes the completed Civic1999 case; see the separate pinned audit below. Other entries are existing public-data explorers or engineering references, with extensions explicitly planned.
 
 | Existing project ID | Source README at inspected commit | Verified current capability | Boundary / planned direction |
 | --- | --- | --- | --- |
@@ -97,3 +97,7 @@ The pinned Git tree confirms `tests/`, `tests/e2e/policy-priority.spec.js`, `src
 All eleven cited demo entry pages returned HTTP 200 during the recorded check: Bin Map, Gridline, the eight other GitHub Pages civic explorers, and publicsafetydashboard. The Render-hosted page required a longer retry after an initial 20-second timeout. Earlier sandbox DNS and web-retrieval failures were environment limitations resolved by network-enabled requests.
 
 HTTP success establishes entry-page reachability at the recorded time, not complete interactive behavior, policy validation or continued availability. Capabilities remain supported by the pinned source audit. This check does not change the separate research-source acquisition limitations, including the tourism API's HTTP 403.
+
+## Case Study 002 addition — 2026-10-19
+
+The original Bin001 evidence above is unchanged. [Civic1999 source audit](./govtech-civic-1999-source-audit.md) reviews the thirteen required files and committed aggregate snapshot at taipei-1999-map commit 352dbebe0057f62817e4ee08572e1a4d207a5b5a (merged PR #8). General civic decision support is now a completed POC, not merely a planned explorer extension. The older f08cb1b5 README row above records the original catalogue audit; the new audit supersedes its general decision-support maturity. Rodent-specific investigation remains future and evidence-dependent. Portfolio source tests were inspected rather than independently rerun; the default scenario matches source regression assertions, while comparison totals were separately checked against fixed aggregate arithmetic. See the [Case002 specification](./govtech-case-study-002.zh-TW.md) and [v1.1 verification](./govtech-v1.1-verification.md).

@@ -13,7 +13,9 @@ const pages = [
   ["/govtech", "GovTech & Civic Decision Systems"],
   ["/zh/govtech", "市政資料治理與決策支援系統"],
   ["/govtech/bin-policy", "Public Bin Allocation Decision Support"],
-  ["/zh/govtech/bin-policy", "臺北市清潔箱配置決策支援"]
+  ["/zh/govtech/bin-policy", "臺北市清潔箱配置決策支援"],
+  ["/govtech/civic-1999", "Taipei 1999 Citizen Service Decision Support"],
+  ["/zh/govtech/civic-1999", "臺北市 1999 民生通報與環境治理決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {
