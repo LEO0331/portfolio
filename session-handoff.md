@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Evidence Case004.
 
-**Current status:** Implementation/verification complete; PR publication pending on codex/govtech-urban-renewal-v1-3, based on mergedmaina39f900 (PortfolioPR19). Do not merge automatically.
+**Current status:** Complete and published as draft PR #20: https://github.com/LEO0331/portfolio/pull/20 (verified open/unmerged). Branch codex/govtech-urban-renewal-v1-3, implementation a985054, based on merged main a39f900 (Portfolio PR #19). Do not merge automatically.
 
 ## Blockers
 

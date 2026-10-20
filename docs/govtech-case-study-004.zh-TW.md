@@ -1,6 +1,6 @@
 # Portfolio GovTech Showcase v1.3 — Case Study 004
 
-**臺北市老舊建築與都市更新決策支援**  
+**臺北市老舊建築與都市更新決策支援**
 從建物屋齡統計與都市更新行政資料，建立可追溯、可比較的政策查核優先順序。
 
 Portfolio 來源查核日：2026-10-20；上游來源稽核及固定分析日：2026-10-19，未重新刷新上游資料。案例 ID／slug：`urban-renewal`；既有專案：`taipei-real-estate-dashboard`；成熟度：`decision-support-poc`；領域：Housing & Urban Resilience。雙語路由：`/govtech/urban-renewal`、`/zh/govtech/urban-renewal`；Pages 部署前綴為 `/portfolio/`。
@@ -158,4 +158,3 @@ Source Reconciliation Focus 也相同，因每一候選都具有具體缺少後�
 建議下一個 GovTech 主題為原有規劃中的 **公共 Wi-Fi 服務配置決策支援**，先查核服務據點／使用量／涵蓋與可用性定義；這是下一題建議，不是已核准新增範圍，本版不實作。Case Study 005 接續方式見[共用模板](./govtech-case-study-template.md)。
 
 原有路線圖保留：鼠患專項與其他 Civic1999 延伸、`taipei-safety-map` 決策擴充仍規劃中；壅塞／大眾運輸留在 `taipei-crash-map`；Bin Map v1.3 政府作業流程無限期延後。既有三案資料及歷史證據保持原義。
-

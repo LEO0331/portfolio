@@ -344,7 +344,7 @@
       "id": "govtech-urban-renewal-v1-3-2026-10",
       "name": "Present urban-renewal evidence review as Case004",
       "description": "Add bilingual administrative-data reconciliation, source semantics and frozen capacity/strategy research scenarios using the shared GovTech renderer.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-heavy-rain-v1-2-2026-10"
       ],
@@ -360,7 +360,8 @@
         "All3previouscases fixture-preserved; pin order,existingprojectIDs/URLs/preview/stack/featured unchanged",
         "Pinned functions reproduced11A,capacity5/10/unlimited=5/10/11districts,2distinctdimensions1verifiedsource,identical3strategyoutputs",
         "Actualroot/Pages deep-route/refresh/metadata/locale/404 and fivewidths/keyboard/mobile/light/dark passed; visual95/100; read-onlyreview no remaining issues",
-        "Fiveexisting high Tailwind/braces advisories; no dependency/lockfile changes; publication pending"
+        "Fiveexisting high Tailwind/braces advisories; no dependency/lockfile changes",
+        "Draft PR20 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/20; implementation a985054 on codex/govtech-urban-renewal-v1-3"
       ]
     }
   ]

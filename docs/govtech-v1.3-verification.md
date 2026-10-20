@@ -68,3 +68,9 @@ Recommended next topic: existing planned Wi-Fi service-allocation research in ta
 Upstream verification distinction: the pinned source records 63 tests, TypeScript/Vite production build, source audit/offline deterministic conversion and browser/download/retry checks. Source npm ci reported five existing vulnerabilities (one moderate / four high); live audit was unavailable due DNS. These source results are separate from Portfolio 77 tests and Portfolio five high audit findings; the full upstream suite was not independently rerun.
 
 Documentation checks: 17 Markdown documents, 140 local links (zero broken), and all 16 required Case004 headings verified. Dependency manifests, lockfile, pin snapshot, three previous case data records and prior verification reports remain unchanged.
+
+Final staging review found a Markdown hard-break trailing space and an extra end-of-file blank line in the new Chinese specification (previously untracked). Both were removed; git diff origin/main --check passed over the complete feature. No application change or test rerun was needed for whitespace-only corrections.
+
+## Publication
+
+[Draft PR #20](https://github.com/LEO0331/portfolio/pull/20) created, attached and verified open/unmerged. Implementation a985054e1c6538071d37644be1d7080fa3633157 is pushed on codex/govtech-urban-renewal-v1-3. Connector creation returned403; the GitHub API succeeded using existing Git credentials held in memory and excluded from files/output. This lifecycle/documentation follow-up does not change the verified application. No automatic merge.

@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Case004.
 
-**Status:** Implementation and verification complete on codex/govtech-urban-renewal-v1-3; reviewable PR publication pending. Based on maina39f900 (merged PortfolioPR19). No automatic merge.
+**Status:** Complete and published as draft PR #20 (https://github.com/LEO0331/portfolio/pull/20), verified open and unmerged on codex/govtech-urban-renewal-v1-3. Implementation a985054, based on main a39f900 (merged Portfolio PR #19). No automatic merge.
 
 ### Completed
 
@@ -25,7 +25,7 @@
 
 ### Blockers
 
-- None for implementation. PR publication is the final pending step; existing audit advisories disclosed separately.
+- None for implementation or publication. Draft PR #20 is ready for human review; existing audit advisories remain disclosed.
 
 ### Remaining Risks
 
@@ -218,3 +218,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Changed groups: new case data,types,registration,routes/project/domain copy; source/scenario/static/browser tests and HeavyRainfixture; READMEpair,Case004spec/audit/v1.3verification/verdict/screenshots,template/current-status notices,ledger/progress/handoff,sitemap.
 - Final22unit77Playwright17/17coverage,TypeScript/build,18indexableroutes,bothbasebrowser,fivewidths/keyboard/dark,visual95/100,harness/diff pass. E2E first discovery requiredJSONtypeattribute in newtest; full rerunpassed. Source2012numeric assignment omitted after snapshot/prose discrepancy review.
 - Five pre-existing high audit findings remain; no dependencychanges. Publication pending; next recommended research topic is existing planned Wi-Fiserviceallocation, outside this release.
+
+- Publication: implementation a985054 pushed; draft PR #20 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/20. GitHub connector403 recovered using existing Git authentication through the API, with credentials kept in memory and excluded from output/files. Final documentation whitespace was corrected and complete branch diff check passed.
