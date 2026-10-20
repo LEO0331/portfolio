@@ -1,34 +1,32 @@
 # Session Handoff
 
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-20
 
-**Current objective:** Portfolio GovTech Showcase v1.2 — Heavy-Rain Preparedness Case003.
+**Current objective:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Evidence Case004.
 
-**Current status:** Complete and published as draft PR19: https://github.com/LEO0331/portfolio/pull/19 (verified open/unmerged). Branch codex/govtech-heavy-rain-v1-2, implementation4c1dd3e, based on main ddc0303 (merged Portfolio PR18). Do not merge automatically.
+**Current status:** Implementation/verification complete; PR publication pending on codex/govtech-urban-renewal-v1-3, based on mergedmaina39f900 (PortfolioPR19). Do not merge automatically.
 
 ## Blockers
 
-None for implementation/publication. Five pre-existing high Tailwind/braces-chain advisories remain separately documented.
+None for implementation/publication. Five pre-existing high Tailwind/braces-chain advisories remain separately disclosed.
 
 ## Files Relevant to the Next Update
 
-- src/data/govtechHeavyRain.ts/.zh.ts:11 fully bilingual sections, pinned provenance/method, frozen same-scope comparison and capacity sensitivity.
-- src/types/govtechCase.ts, govtechCases.ts/.zh.ts, govtechCopy.ts, projects.ts/.zh.ts, routes/AppRouter.tsx and routeConfig.json; generated public/sitemap.xml.
-- tests/e2e/govtech-heavy-rain.spec.ts, govtech-case-data.spec.ts, govtech-civic-1999.spec.ts, tools/govtech.test.mjs and full Civic baseline fixture. Original Bin fixture retained.
-- docs/govtech-case-study-003.zh-TW.md, govtech-heavy-rain-source-audit.md, govtech-v1.2-verification.md, template/verdict, five docs/images captures; both READMEs and lifecycle records.
+- src/data/govtechUrbanRenewal.ts/.zh.ts:12localized sections, sourcesA-G, exact11question population, capacities/strategies, source-date/statistical/legal limits.
+- CaseID/type/registration,govtechCopy,RealEstateprojectcopy/relationship,AppRouter/routeConfig and generatedsitemap.
+- tests/e2e/govtech-urban-renewal.spec.ts,case-data/Civic/HeavyRaincatalog expectations,tools/govtech.test.mjs and fullHeavyRainfixture. Original Bin/Civicfixtures and all3case data unchanged.
+- docs/govtech-case-study-004.zh-TW.md,govtech-urban-renewal-source-audit.md,govtech-v1.3-verification.md,visualverdict/fivescreenshots; READMEpair,Case005template,currentstatusnotes and lifecyclefiles.
 
 ## Recommended Next Step
 
-Review the Case003 PR and versioned verification; merge only after human review. Next planned policy project is taipei-real-estate-dashboard — Aging Buildings & Urban Renewal Decision Support, using the Case004 guide. Rodent-specific work, safety-map enhancements and crash-map transit/congestion remain planned; Bin operational workflows deferred indefinitely.
+Review Case004 PR and pinned evidence, then merge only through human review. Consider existing planned publicWi-Fiserviceallocation for Case005 after source feasibility audit; recommendation only, no implementation here. Preserve rodent-specific/safety-map/transit-congestion planned work and deferred Binoperations.
 
 ## Verification
 
-- Baseline22unit/51Playwright; final22unit/64Playwright,17/17trackedflows(100%), TypeScript/build,16indexable routes, harness/diff passed.
-- Actual root and Pages builds: all3cases EN/ZH direct/refresh/canonical/lang; Case003 locale/404; widths320/390/768/1024/1440 no overflow; mobile light/dark and keyboard table scrolling.
-- Visual94/100 and independent read-only factual/integration review found no actionable issues; screenshot-only sticky-overlay artifact recaptured.
-- Source195e63111d32ad564291545ff9d8b230b025b055, snapshotsha256-d67edc57254ee273, methodheavy-rain-preparedness-review-v1/config1.0.0. Pinned pure functions independently reproduce gaps5(2districts,12questions,5A) and balanced5(5districts,15questions,2A3B).
-- Upstream65tests/build/browser results attributed as recorded evidence; full source suite not rerun. See versioned verification for errors/recoveries and exact commands.
+Baseline22unit64Playwright; final22unit77Playwright17/17trackedflows(100%),TypeScript/build,18indexableroutes,harness/diff. All4casesEN/ZH actualroot/Pages generateddeepentries direct/refresh/canonical/lang,Case004locale/404,fivewidths320-1440,keyboard/mobile/light/dark. Visual95/100; independent read-only review no remaining actionable issues. No new source-data runtime request; dependencies/pins unchanged.
+
+Pinnedsourcee3f37ff91816b4d51223ab686097a6cef542ca31,snapshoture-c81e4ef44e6c9868,methodurban-renewal-evidence-review-v1/config1.0.0,analysis2026-10-19. Purefunctionreproduction:11A,each2dimensions/1verifiedsource;5/10/unlimited selects5/10/11districts,excludes6/1/0. Three strategies same; strictness/permitcontext changes scope but not recorded selection; excludeB noeligible. Upstream63tests are recorded evidence, not independently rerun suite.
 
 ## Remaining Risks
 
-Five existing high toolchain advisories; no dependency/lockfile/pin changes. init.sh stops at audit; downstream checks passed separately. No lint script; TypeScript runs during build. Source geography/date/operational/service-linkage limitations remain explicit. Review tasks are not flood risk, readiness or policy outcomes. No government operation/endorsement or official certification. Deployment after human merge is separate.
+Five existing high toolchain advisories;init.sh stops at audit, downstream checks passed separately. No lintscript;buildrunsTypeScript. Citywideage/flow/designation/stage/context/retained-law-version distinctions remain essential. Missingfollowup is not inactivity;858days describes resourceage. No propertysafety/legaleligibility/consent/investment model,governmentendorsement or postmerge deployment certification. Full evidence and recovery notes in versionedverification.

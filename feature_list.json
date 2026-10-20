@@ -336,7 +336,31 @@
         "Both-base direct/refresh/metadata/locale/404 and five widths passed; keyboard tables/light/dark; visual94/100; independent review no actionable issues",
         "Existing Bin/Civic complete content preserved via fixtures; pins, external URLs, preview and stack unchanged",
         "Five existing high Tailwind/braces-chain advisories remain; no dependency/lockfile changes",
-        "Draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19; implementation4c1dd3e pushed on codex/govtech-heavy-rain-v1-2"
+        "Draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19; implementation4c1dd3e pushed on codex/govtech-heavy-rain-v1-2",
+        "2026-10-20 verification: PR19 already merged2026-10-19T06:14:00Z to a39f900bf0b67d403e5ce5268657fd7472e40770; previous draft state is historical."
+      ]
+    },
+    {
+      "id": "govtech-urban-renewal-v1-3-2026-10",
+      "name": "Present urban-renewal evidence review as Case004",
+      "description": "Add bilingual administrative-data reconciliation, source semantics and frozen capacity/strategy research scenarios using the shared GovTech renderer.",
+      "status": "in-progress",
+      "dependencies": [
+        "govtech-heavy-rain-v1-2-2026-10"
+      ],
+      "doneCriteria": [
+        "Four bilingual completed cases; earlier case evidence and homepage pins preserved",
+        "Pinned urban-renewal facts and exact11-candidate scenario with legal/safety boundaries",
+        "Routes,project relationship,documentation and complete executed verification",
+        "One reviewable PR without automatic merge"
+      ],
+      "evidence": [
+        "Pinned real-estatePR5/e3f37ff91816b4d51223ab686097a6cef542ca31 audited; ure-c81e4ef44e6c9868 / urban-renewal-evidence-review-v1 config1.0.0",
+        "Baseline22unit64Playwright; final22unit77Playwright,17/17trackedcoverage,TypeScript/build,18indexableroutes passed",
+        "All3previouscases fixture-preserved; pin order,existingprojectIDs/URLs/preview/stack/featured unchanged",
+        "Pinned functions reproduced11A,capacity5/10/unlimited=5/10/11districts,2distinctdimensions1verifiedsource,identical3strategyoutputs",
+        "Actualroot/Pages deep-route/refresh/metadata/locale/404 and fivewidths/keyboard/mobile/light/dark passed; visual95/100; read-onlyreview no remaining issues",
+        "Fiveexisting high Tailwind/braces advisories; no dependency/lockfile changes; publication pending"
       ]
     }
   ]

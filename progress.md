@@ -2,42 +2,42 @@
 
 ## Current State
 
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-20
 
-**Active work:** Portfolio GovTech Showcase v1.2 — Heavy-Rain Preparedness Case003.
+**Active work:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Case004.
 
-**Status:** Complete and published as draft PR19 (https://github.com/LEO0331/portfolio/pull/19), verified open/unmerged on codex/govtech-heavy-rain-v1-2. Implementation4c1dd3e, based on merged main ddc0303 (Portfolio PR18). No automatic merge.
+**Status:** Implementation and verification complete on codex/govtech-urban-renewal-v1-3; reviewable PR publication pending. Based on maina39f900 (merged PortfolioPR19). No automatic merge.
 
 ### Completed
 
-- Three bilingual completed POCs: Bin001 allocation, Civic002 historical investigation and HeavyRain003 infrastructure evidence review. Shared methodology/scenario renderer reused without new variants or case branches.
-- Feitsui project relationship/copy, bilingual routes/SEO/sitemap and domain capability copy updated; ID/slug, external URLs, preview, tech stack, filters and homepage pin order preserved.
-- Source commit195e63111d32ad564291545ff9d8b230b025b055, snapshotsha256-d67edc57254ee273, methodheavy-rain-preparedness-review-v1, config1.0.0 verified. Original Bin/Civic case content unchanged and fixture-protected.
-- Pinned source audit,14-section Chinese specification, Case004 template, READMEs, v1.2 verification and local visual evidence present. PR5 and Portfolio PR18 merge states confirmed by public API.
+- Four bilingual completed POCs: Bin001,Civic002,HeavyRain003,UrbanRenewal004. Reused shared case renderer/rule-based methodology/scenario tables without case branches or new analytical variants.
+- New case cites pinned real-estate PR5/e3f37ff91816b4d51223ab686097a6cef542ca31, snapshoture-c81e4ef44e6c9868, methodurban-renewal-evidence-review-v1/config1.0.0; fixed analysis2026-10-19, Portfolioverification2026-10-20.
+- Real Estate Dashboard existing project relationship/copy, bilingual routes/SEO/sitemap and housing domain maturity updated; ID/slug/demo/repo/image/stack/featured=true, original explorers and pin order preserved.
+-16-section Chinese specification, concise pinned-source audit, v1.3verification/screenshots/verdict, README pair, Case005template and current-status notes updated. Historical verification and three earlier case records unchanged.
 
 ### Verification Evidence
 
-- Clean baseline: harness, npm ci,22unit, TypeScript/build,51Playwright/17trackedflows and diff passed; initial sandbox DNS/install errors recovered with clean network-enabled install.
-- Final:22unit,64Playwright/17trackedflows(100%), TypeScript/build and16indexable static routes passed. Both-base static metadata plus actual root/Pages direct/refresh/canonical/locale/404 checks passed.
-- No body overflow at320/390/768/1024/1440; mobile light/dark, table captions and keyboard scrolling passed. Visual94/100; read-only integration/source review found no actionable issues.
-- Exact source scenario reproduced: gaps5=2districts/12candidate-level questions/5A; balanced5=5districts/15/2A3B. Upstream65tests remain recorded evidence, not independently rerun full suite.
-- npm audit retains5existing high Tailwind/braces-chain findings. No dependencies, lockfile, pin files or upstream repository changes. Full details: docs/govtech-v1.2-verification.md.
+- Baseline before app edits: cleaninstall,harness,22unit,TypeScript/build,64Playwright/17trackedflows,diff passed;5existing high audit advisories.
+- Final:22unit,77Playwright/17trackedflows(100%),TypeScript/build,18indexable routes,harness/diff passed. Existing Bin/Civic fixtures and new full HeavyRain EN/ZH fixture pass.
+- Actual root/Pages generated entries:all4casesEN/ZH direct/refresh/canonical/lang; Case004locale/404; widths320/390/768/1024/1440no overflow; keyboard tables/mobile/light/dark passed. Visual95/100; independent factual/integration review found no remaining actionable issues.
+- Pinned pure functions reproduce11eligibleA questions; capacities5/10/unlimited select5/10/11districts, capacity excludes6/1/0,2distinct dimension types and1verified source type. Gaps/balanced/reconciliation identical; no invented differentiation.
+- No dependency/lockfile/upstream changes. Five existing high Tailwind/braces-chain findings remain; full details and test-only JSON import discovery correction in docs/govtech-v1.3-verification.md.
 
 ### Blockers
 
-- None for implementation/publication. Draft PR19 is ready for human review; audit advisories remain separately disclosed.
+- None for implementation. PR publication is the final pending step; existing audit advisories disclosed separately.
 
 ### Remaining Risks
 
-- Existing audit findings cause init.sh to stop at audit; downstream verification ran separately.
-- Partial official reference geography; historical dates/coverage conflict; strict mode excludes limited history. Missing operational and service-linkage evidence is not asset failure; no forecast, risk score, readiness certification or drainage-capacity measure.
-- Current deployment is not claimed updated before human merge. Prior case limitations remain unchanged.
+- Source building age is citywide with missing early breakdowns and2012mismatch; district designation coverage/status remain limited. Stocks,flows,legal stages and retained regulation versions cannot form an inferred redevelopment pipeline.
+-858days is source-version age, not case inactivity. Priorities are research work, not structural safety, legal eligibility, owner consent, investment value or official recommendations.
+- Five existing audit findings stop init.sh at audit; downstream commands passed separately. Local delivery does not certify deployment or government endorsement.
 
 ### Next Session Should
 
-1. Review the Case003 PR and versioned evidence, then merge only through human review.
-2. Next planned case: taipei-real-estate-dashboard — Aging Buildings & Urban Renewal Decision Support; follow Case004 template and source audit first.
-3. Address existing toolchain advisories separately; preserve source/evidence scope and homepage pins.
+1. Review Case004 PR and versioned evidence; merge only through human review.
+2. Consider existing planned Wi-Fi service-allocation topic for Case005, subject to source feasibility audit and prioritization. No new policy implementation authorized by this release.
+3. Address existing toolchain advisories separately; preserve earlier source evidence and homepage pins.
 
 ## Update Contract
 
@@ -210,3 +210,11 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Five pre-existing high audit advisories remain; no dependency/lockfile changes. Publication pending; next separate policy case is Aging Buildings & Urban Renewal.
 
 - Publication completed: implementation4c1dd3e pushed; draft PR19 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/19. Connector403 recovered through GitHub API with existing Git credentials kept in memory/out of output. Lifecycle-only follow-up records completion.
+
+### 2026-10-20 — GovTech Showcase v1.3 Case004
+
+- Source audit verified merged real-estatePR5 at e3f37ff91816b4d51223ab686097a6cef542ca31 and PortfolioPR19 mergedmaina39f900. Mandatory docs/code/tests/snapshot and screenshots inspected; no upstream writes.
+- Added bilingual administrative-data reconciliation case using existing renderer, exact11candidate/5-10-unlimited capacity results and identical strategy finding. Project identity/image/stack/pins and previous3cases preserved.
+- Changed groups: new case data,types,registration,routes/project/domain copy; source/scenario/static/browser tests and HeavyRainfixture; READMEpair,Case004spec/audit/v1.3verification/verdict/screenshots,template/current-status notices,ledger/progress/handoff,sitemap.
+- Final22unit77Playwright17/17coverage,TypeScript/build,18indexableroutes,bothbasebrowser,fivewidths/keyboard/dark,visual95/100,harness/diff pass. E2E first discovery requiredJSONtypeattribute in newtest; full rerunpassed. Source2012numeric assignment omitted after snapshot/prose discrepancy review.
+- Five pre-existing high audit findings remain; no dependencychanges. Publication pending; next recommended research topic is existing planned Wi-Fiserviceallocation, outside this release.

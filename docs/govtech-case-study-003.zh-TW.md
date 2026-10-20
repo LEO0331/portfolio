@@ -137,4 +137,4 @@ Node 取得腳本在五個來源都驗證成功後才替換 manifest；原始基
 
 防汛後續須先取得權威設備運作／維護、機具可用性、逐筆日期與穩定排水服務識別，再評估可支持的查核粒度，不用推測補齊服務區。新來源應有獨立版本、資格與重現證據。
 
-下一個預計政策專案是 **`taipei-real-estate-dashboard` — Aging Buildings & Urban Renewal Decision Support（老屋與都市更新決策支援）**，作為 Case Study 004 規劃，本次不實作。新增方式見[案例模板](./govtech-case-study-template.md)。原路線圖仍保留：民生通報鼠患專項及其他政策延伸待驗證、`taipei-safety-map` 決策擴充仍規劃中、交通壅塞／大眾運輸維持 `taipei-crash-map` 內，Bin Map v1.3 政府作業流程無限期延後。
+v1.2 發布時將 `taipei-real-estate-dashboard` 老屋與都市更新列為下一案例；該規劃已於 Showcase v1.3 完成 [Case Study 004](./govtech-case-study-004.zh-TW.md)，來源及統計單位限制見[專屬稽核](./govtech-urban-renewal-source-audit.md)。這不改變本案固定的防汛方法、資料或情境。後續 Case005 新增方式見[案例模板](./govtech-case-study-template.md)。原路線圖仍保留：民生通報鼠患專項及其他政策延伸待驗證、`taipei-safety-map` 決策擴充仍規劃中、交通壅塞／大眾運輸維持 `taipei-crash-map` 內，Bin Map v1.3 政府作業流程無限期延後。

@@ -889,11 +889,11 @@ export const projects: Project[] = [
     id: "taipei-real-estate-dashboard",
     slug: "taipei-real-estate-dashboard",
     name: "Taipei Real Estate & Demographics Dashboard",
-    tagline: "Real-price, housing, and demographic insights across Taipei",
+    tagline: "Real-estate exploration and explainable urban-renewal evidence review",
     shortDescription:
-      "A mobile-first bilingual dashboard for exploring Taipei real-price records, market trends, land and development data, and demographic context.",
+      "A bilingual real-estate and demographic explorer with a completed urban-renewal policy-research decision-support POC.",
     fullDescription:
-      "Taipei Real Estate & Demographics Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. It demonstrates an extensive static-data pipeline and recruiter-visible analytical UI with careful methodology notes.",
+      "Taipei Real Estate & Demographics Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. The completed urban-renewal evidence module adds citywide building-age context, district administrative evidence, source and statistical-unit validation, versioned provenance, deterministic review priorities, research-capacity and source-reconciliation comparisons, and reproducible JSON/CSV briefings. Citywide stocks remain separate from district designation records and permit flows. These are administrative research questions, not building-safety grades, legal eligibility decisions or redevelopment recommendations.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Recharts", "Open Data"],
@@ -902,11 +902,16 @@ export const projects: Project[] = [
       "Real-price and market trend analysis",
       "District and quarterly comparisons",
       "Land, development, and housing datasets",
-      "Demographic context and data-status views"
+      "Demographic context and data-status views",
+      "Citywide building-age context and district urban-renewal evidence",
+      "Statistical-unit validation and versioned source provenance",
+      "Deterministic research priorities and capacity/source-reconciliation scenarios",
+      "Reproducible JSON/CSV research briefings"
     ],
     image: "/src/assets/images/projects/taipei-real-estate-dashboard.png",
     demoUrl: "https://leo0331.github.io/taipei-real-estate-dashboard/",
     repoUrl: "https://github.com/LEO0331/taipei-real-estate-dashboard",
+    govtechCaseId: "urban-renewal",
     status: "live",
     featured: true
   },

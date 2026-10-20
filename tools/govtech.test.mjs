@@ -17,7 +17,9 @@ const pages = [
   ["/govtech/civic-1999", "Taipei 1999 Citizen Service Decision Support"],
   ["/zh/govtech/civic-1999", "臺北市 1999 民生通報與環境治理決策支援"],
   ["/govtech/heavy-rain-preparedness", "Heavy-Rain Preparedness & Infrastructure Review"],
-  ["/zh/govtech/heavy-rain-preparedness", "豪雨防汛整備與設施查核決策支援"]
+  ["/zh/govtech/heavy-rain-preparedness", "豪雨防汛整備與設施查核決策支援"],
+  ["/govtech/urban-renewal", "Aging Buildings & Urban Renewal Evidence Decision Support"],
+  ["/zh/govtech/urban-renewal", "臺北市老舊建築與都市更新決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {

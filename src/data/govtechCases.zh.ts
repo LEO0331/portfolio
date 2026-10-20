@@ -1,3 +1,4 @@
+import { urbanRenewalCaseZh } from "./govtechUrbanRenewal.zh";
 import { heavyRainCaseZh } from "./govtechHeavyRain.zh";
 import type { GovTechCase } from "../types/govtechCase";
 import { binSource, binPolicyCase } from "./govtechCases";
@@ -53,4 +54,4 @@ export const binPolicyCaseZh = {
   futureExtensions: ["樹蔭公平性為同一 Bin Map 儲存庫內的規劃模組，目前尚未實作為決策支援功能。"]
 } satisfies GovTechCase;
 
-export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh];
+export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh];
