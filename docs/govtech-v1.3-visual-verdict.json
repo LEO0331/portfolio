@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case004 adds source-governance prose and a seven-column capacity table within the established case layout."
+  ],
+  "suggestions": [],
+  "reasoning": "The fourth card, bilingual case headings, scenario tables and mobile dark view retain existing typography, spacing, colors and navigation. Exact district selections and identical strategy findings remain readable; responsive tables scroll locally."
+}

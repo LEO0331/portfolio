@@ -1,5 +1,7 @@
 # GovTech Case Study & Decision Support Showcase v1.0
 
+> 目前狀態（2026-10-20）：Showcase v1.3 已有四個獨立決策支援 POC；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
+
 狀態：已於 2026-10-16 透過 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main；實作驗證與文件複查見 [驗證報告](./govtech-verification.md)。
 
 v1.1 更新（2026-10-19）：目前已加入第二個完整案例 [1999 民生通報與環境治理](./govtech-case-study-002.zh-TW.md)。本文件保留案例 001 的原始來源、方法與數據；v1.0 啟用時僅一例的描述屬歷史範圍。新增兩條路由 `/govtech/civic-1999` 與 `/zh/govtech/civic-1999`，現有完整案例共兩個，詳見 [v1.1 驗證](./govtech-v1.1-verification.md)。

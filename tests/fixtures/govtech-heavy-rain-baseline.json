@@ -1,0 +1,1012 @@
+{
+  "en": {
+    "id": "heavy-rain-preparedness",
+    "slug": "heavy-rain-preparedness",
+    "displayNumber": "003",
+    "projectId": "taipei-feitsui-water-map",
+    "policyDomain": "Disaster Preparedness & Public Safety",
+    "sourceRepository": "https://github.com/LEO0331/taipei-feitsui-water-map",
+    "sourceVersion": "195e63111d32ad564291545ff9d8b230b025b055",
+    "snapshotVersion": "sha256-d67edc57254ee273",
+    "title": "Heavy-Rain Preparedness & Infrastructure Review",
+    "summary": "From fragmented flood-related records to explainable preparedness review priorities.",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "Completed decision-support POC",
+    "reviewNote": "Independent decision-support POC — not an official flood warning or operational readiness assessment. Pinned source verified 19 October 2026; recorded outputs, with no live calculation on this page.",
+    "intendedUsers": "Municipal infrastructure planners, preparedness analysts, and teams reviewing documentary evidence or planning field inspections.",
+    "implementedCapabilities": [
+      "Official source auditing and GIS validation",
+      "Versioned infrastructure evidence and historical context",
+      "Explainable A/B/C evidence-review priorities",
+      "Capacity, geographic balancing and deterministic sensitivity",
+      "JSON/CSV review briefings"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "Policy Problem",
+        "paragraphs": [
+          "With limited preparation-review capacity, which districts and infrastructure categories should receive earlier documentary or field verification? This is a planning and evidence-review question.",
+          "An infrastructure map shows where facilities were recorded. It does not establish current equipment condition, pumping capacity, operational readiness, drainage-service relationships, emergency deployment availability, present flood risk or future inundation depth."
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "Existing Explorer to Decision Support",
+        "paragraphs": [
+          "The original Feitsui Water Map explores reservoir water quality, hydrometeorology, reservoir operation, river water quality, pumping stations, sedimentation basins, contracted heavy-rain machinery, historical ecology and related water-service datasets.",
+          "The merged module reuses the static application and adds source auditing, KML validation, provenance, versioned snapshots, infrastructure evidence modelling, historical inundation context, review tiers, capacity scenarios, geographic balancing, sensitivity and JSON/CSV briefings. Reservoir and ecology exploration remain separate capabilities; those datasets do not all enter this decision model."
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "System Architecture",
+        "content": "architecture",
+        "paragraphs": [
+          "Node scripts acquire selected official resources and validate original bytes before building a reviewed static snapshot. The browser checks snapshot validity and source identity, then runs pure TypeScript scenarios against a fixed source population through a lazy-loaded React/Leaflet module.",
+          "There is no application backend, database, live API polling or operational integration. Snapshot processing time fixes publication age; the browser clock does not change the ranking."
+        ]
+      },
+      {
+        "id": "sources",
+        "title": "Verified Sources and Publication Dates",
+        "paragraphs": [
+          "Pumping stations: 88 source rows, 88 admitted, 0 excluded; published 2026-06-25. Contracted heavy-rain machinery: 73 rows, 73 admitted, 0 excluded; 2026 edition only, published 2026-07-21. Sedimentation basins: 67 rows, 67 admitted, 0 excluded; published 2024-12-18. These are inventory records, not measured service capacity.",
+          "Official flood-prone reference geography: 9 KML polygons, 9 admitted, 0 excluded; published 2025-06-03. Four refer to Beitou and five to Shilin. This is partial published reference geography: no polygon in another district does not establish that the district cannot flood.",
+          "Historical inundation: 739 source placemarks, 695 admitted observations, 44 excluded placemarks; published 2026-09-30. Validated observation dates span 1991-06-19 to 2025-10-19. Catalogue coverage states 2015-05-01 to 2026-09-11, while the embedded KML name contains 1140307. These inconsistencies remain visible; publication dates and filenames do not replace observation dates. Counts are recorded observations, not independent storms or unique flood events.",
+          "All 73 machinery records lack an interpretable individual record date; annual resource publication does not fill that gap or establish current availability. Pumping establishment age is not maintenance evidence. Basin catchment-area units remain unresolved: area is excluded from scoring and never interpreted as detention storage volume."
+        ],
+        "links": [
+          {
+            "label": "Official pumping-station dataset",
+            "url": "https://data.taipei/dataset/detail?id=026cc0fa-cecc-4c78-b986-ead3b0c8b95b"
+          },
+          {
+            "label": "Official 2026 contracted machinery dataset",
+            "url": "https://data.taipei/dataset/detail?id=cdbc2677-7f23-42e5-9b83-a57ab9bee39c"
+          },
+          {
+            "label": "Official sedimentation-basin dataset",
+            "url": "https://data.taipei/dataset/detail?id=03db6e0d-c6a6-400a-9e52-9b821c404c38"
+          },
+          {
+            "label": "Official flood-prone reference dataset",
+            "url": "https://data.taipei/dataset/detail?id=08101966-7aca-48e0-a028-6da02ba1192e"
+          },
+          {
+            "label": "Official historical inundation dataset",
+            "url": "https://data.taipei/dataset/detail?id=8377b584-81e9-432d-b902-5b4e9978e6bc"
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "Data Governance and GIS Engineering",
+        "paragraphs": [
+          "Source contracts retain dataset/resource identities, original source-byte SHA256, publication dates, retrieval and processing timestamps, selected resource editions, eligibility and exclusion reasons. Immutable source bytes support reproducible offline rebuilding. Failed acquisition, invalid hashes, edition mixes or malformed schemas preserve the last-known-good manifest and snapshot; the browser consumes one cohesive snapshot.",
+          "KML Polygon/MultiPolygon parsing validates WGS84 coordinates, closed geometry, bounds and self intersections. Pumping and basin coordinates use the documented TWD97-TM2 / EPSG:3826 conversion. Polygon holes and touching, overlapping or contained multipart components are excluded conservatively; duplicate geometry identity ignores ring starting point and orientation. Historical dates and source-reported district labels are validated. Bounds checks are not independent district-boundary verification.",
+          "A nearby pumping station does not prove a drainage-service relationship. District × infrastructure category is the review unit because authoritative service relationships are unavailable. Missing operational evidence means a question to verify, not equipment failure. Historical flooded locations do not become future hazard polygons. Unsupported/excluded records and their reasons remain auditable.",
+          "Principal drainage catchment KML was inspected but excluded from service linkage: multi-station names and missing stable cross-file identifiers did not establish a verified pumping-service model. Historical rainfall was not acquired or integrated. No proximity join, rainfall attribution or certified flood model is claimed."
+        ],
+        "links": [
+          {
+            "label": "Pinned source audit and exclusions",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+          }
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "Decision Methodology",
+        "content": "methodology",
+        "paragraphs": [
+          "heavy-rain-preparedness-review-v1, configuration 1.0.0, considers 12 administrative districts × 3 categories (pumping, machinery, basin): 36 possible candidates before filters and evidence eligibility. These are district/category combinations, not 36 high-risk districts or flood locations.",
+          "Each distinct review-question dimension counts once per candidate. Duplicate fields and rows cannot inflate it; unavailable essential infrastructure collapses downstream missing fields into one source_failure. Questions are documentary dimensions, not statistically independent predictors or an environmental risk score."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "Reproducible Real Scenario",
+        "content": "scenarios",
+        "paragraphs": [
+          "Recorded source outputs: snapshot sha256-d67edc57254ee273, processed 2026-10-19T01:14:54.464Z, method heavy-rain-preparedness-review-v1, configuration 1.0.0. Shared evidence scope: evidence review mode, strict evidence requirements, all 12 districts, all three infrastructure categories, include unknown/stale publication-age sources with visible review questions, 730-day stale threshold, capacity 5.",
+          "Both strategies select 北投區:machinery and 士林區:machinery. Evidence Gaps First concentrates five tasks in two districts; Balanced Geographic Review takes one candidate per district per round and spreads five tasks across five districts. Ordered candidate IDs below are preserved exactly from the source.",
+          "Fifteen versus twelve candidate-level evidence questions does not mean greater flood risk, better preparedness, more independently verified deficiencies or better policy performance. The same source-wide question can recur across district/category candidates. These are recorded outputs, not live calculations or policy outcomes.",
+          "Sensitivity reproduced from the pinned snapshot and pure decision functions: with the same evidence scope, gaps capacity 10 selects 10 tasks across 6 districts, 26 questions (6 A / 4 B); balanced capacity 10 covers 10 districts, 30 questions (2 A / 8 B). Capacity changes selections, not candidate tiers.",
+          "Strict versus permissive evidence and flood-context versus general evidence modes have different evidence-scope keys. On this pinned snapshot, capacity-5 gaps and balanced shortlists and question totals stay unchanged across those modes; all 36 candidates remain eligible. That numerical stability does not make the scopes interchangeable: permissive rules can admit limited evidence and flood mode requires eligible flood context. Changes in source eligibility or geography must not be attributed to selection strategy alone."
+        ],
+        "links": [
+          {
+            "label": "Recorded methodology and real shortlist",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+          },
+          {
+            "label": "Chinese specification and source scenario",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+          }
+        ]
+      },
+      {
+        "id": "briefings",
+        "title": "Review Briefings and Data Protection",
+        "paragraphs": [
+          "JSON/CSV briefings retain selected and excluded candidate explanations, snapshot/source versions, capacity, evidence-scope assumptions, limitations and agency verification questions. Exports use explicit aggregate/source allowlists and omit facility names, responsible-officer names, phone numbers and contractor contacts.",
+          "Historical output aggregates source-reported district/date observations; household-scale historical geometry, addresses, depth and area values are not republished or scored. CSV quotes cells and guards formula-leading/control-prefixed values. These safeguards support documentary review; they do not establish operational readiness."
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Important Limitations and Responsible Use",
+        "paragraphs": [
+          "This independent personal engineering POC is not operated or endorsed by Taipei City Government. It is not a flood warning service or flood forecast, and no official operational-readiness certification was performed.",
+          "The model does not measure drainage capacity, establish current machinery or pumping availability, assess actual infrastructure readiness or certify protection against inundation. Candidate priorities describe evidence-review needs, not emergency risk. Missing operating-status evidence does not establish asset failure."
+        ],
+        "bullets": [
+          "Administrative district × infrastructure category is not a property, predicted flood zone, verified pumping-service catchment, actual emergency deployment location or hydrologically validated service area.",
+          "Historical inundation observations are not predictions; the source has unresolved date/coverage discrepancies.",
+          "Official flood-prone polygons cover only part of published geography. Beitou/Shilin coverage does not rank them as the city's most dangerous districts.",
+          "No verified catchment-to-pumping-station service model or flood hazard probability is generated.",
+          "Feitsui Reservoir catchment rainfall is not used to determine urban district flooding."
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "Engineering Verification and Source Evidence",
+        "content": "evidence",
+        "paragraphs": [
+          "Upstream recorded implementation results: 65 passing tests; TypeScript checking; Vite production and GitHub Pages base-path builds; GIS/source reproducibility, decision tiers, capacity/scenarios, snapshot validation, JSON/CSV export, source-specific privacy and export checks. Browser review records desktop and 390×844 mobile, loading and retry behavior. These are source-repository recorded results, not a claim that this Portfolio task independently reran its full suite.",
+          "The source verification records no new dependencies, zero production advisories under npm audit --omit=dev, existing development dependency advisories and an existing large main-bundle warning. The preparedness module is lazy-loaded. Pinned screenshots show local development verification; the retry image intentionally demonstrates failure/retry, not a government operation."
+        ],
+        "links": [
+          {
+            "label": "Local development capture · desktop source verification",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-desktop.jpg"
+          },
+          {
+            "label": "Local development capture · mobile source verification",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-mobile.jpg"
+          },
+          {
+            "label": "Local development capture · intentional failure/retry demonstration",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-retry.jpg"
+          }
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "What This Project Demonstrates",
+        "content": "future",
+        "paragraphs": [
+          "Source contracts, defensive GIS conversion, auditable exclusions, fixed snapshots, deterministic rules and geographic capacity comparisons connect open-data engineering to explainable documentary review.",
+          "Case 001 explores spatial facility allocation and policy-weighted coverage; Case 002 explores historical dispatch patterns and investigation triage; Case 003 explores GIS/source validation, infrastructure evidence gaps and balanced review capacity. Each is an independent technical POC."
+        ]
+      }
+    ],
+    "architecture": [
+      "Official Taipei Open Data",
+      "Selected Source Acquisition",
+      "SHA256 and Metadata Validation",
+      "CSV/KML/GIS Conversion",
+      "Quality and Eligibility Checks",
+      "Versioned Static Preparedness Snapshot",
+      "Pure TypeScript Decision Engine",
+      "React/Leaflet Interface",
+      "Scenario Comparison and Briefing Export"
+    ],
+    "architectureNote": "Node source preparation → reviewed static browser snapshot → lazy-loaded analysis. No application backend, database or real-time source polling.",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "heavy-rain-preparedness-review-v1",
+      "explanation": "Configuration 1.0.0: transparent tier-based documentary/field-review prioritization. No weighted-coverage calculation or flood-risk score.",
+      "thresholds": {
+        "caption": "Independent evidence-gap dimensions · each counted at most once per candidate",
+        "columns": [
+          {
+            "key": "dimension",
+            "label": "Dimension"
+          },
+          {
+            "key": "meaning",
+            "label": "Review question"
+          }
+        ],
+        "rows": [
+          {
+            "id": "source_failure",
+            "cells": {
+              "dimension": "source_failure",
+              "meaning": "Essential source unavailable, invalid or excluded; downstream missing fields collapse into this one question."
+            }
+          },
+          {
+            "id": "inventory_coverage",
+            "cells": {
+              "dimension": "inventory_coverage",
+              "meaning": "No eligible source record for the district/category; absence does not establish no protection."
+            }
+          },
+          {
+            "id": "identity_geography",
+            "cells": {
+              "dimension": "identity_geography",
+              "meaning": "Coordinate or source-identity issue; repeated flags count once."
+            }
+          },
+          {
+            "id": "temporal_version",
+            "cells": {
+              "dimension": "temporal_version",
+              "meaning": "Publication age, individual record date or version question; publication is not a substitute record date."
+            }
+          },
+          {
+            "id": "operational_evidence",
+            "cells": {
+              "dimension": "operational_evidence",
+              "meaning": "Actual operating condition or machinery availability unknown."
+            }
+          },
+          {
+            "id": "service_relationship",
+            "cells": {
+              "dimension": "service_relationship",
+              "meaning": "No verified drainage-service relationship."
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "Evidence-review tiers · not emergency risk classifications",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "Tier"
+          },
+          {
+            "key": "rule",
+            "label": "Rule"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — Verify First / 優先核實",
+              "rule": "Eligible source evidence, verified official flood-prone reference designation and at least two distinct material review-question dimensions."
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — Review / 查核",
+              "rule": "Eligible official context or at least one material review question, without qualifying for A."
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — Routine Inventory Review / 例行盤點",
+              "rule": "Eligible source-backed routine inventory without A/B conditions."
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "Insufficient Evidence",
+              "rule": "Essential source eligibility or selected flood-context requirements are unmet. Excluded from selection; does not imply zero risk."
+            }
+          }
+        ]
+      },
+      "notes": [
+        "Deterministic ordering: A/B/C tier; descending distinct question count; descending verified contributing source types; unresolved version first; descending known source publication age; ascending stable candidate ID. Unknown age follows known ages at that tie-break.",
+        "Publication age uses snapshot processing time, never today's browser clock. Default stale-source threshold: 730 days; include unknown/stale sources by default with visible questions.",
+        "Strict accepts verified sources; permissive can also accept limited infrastructure/historical evidence. Limited history never becomes a verified contributing source type; official flood-prone designation requires verification in both modes.",
+        "Capacity is a hypothetical number of documentary/field-review tasks (5, 10 or unlimited), capped by eligible population. Balanced selects one ranked candidate per district per round. Neither strategy asserts better flood protection."
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "Recorded same-scope comparison · snapshot sha256-d67edc57254ee273 · strict evidence mode · capacity 5",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "Strategy"
+          },
+          {
+            "key": "capacity",
+            "label": "Review capacity"
+          },
+          {
+            "key": "selected",
+            "label": "Selected candidate IDs · ordered"
+          },
+          {
+            "key": "districts",
+            "label": "Districts represented"
+          },
+          {
+            "key": "questions",
+            "label": "Candidate-level questions"
+          },
+          {
+            "key": "tiers",
+            "label": "Priority tiers"
+          },
+          {
+            "key": "overlap",
+            "label": "Overlapping selections"
+          },
+          {
+            "key": "unique",
+            "label": "Unique selections"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps",
+            "cells": {
+              "strategy": "Evidence Gaps First (gaps)",
+              "capacity": "5",
+              "selected": "北投區:machinery → 士林區:machinery → 北投區:basin → 士林區:basin → 北投區:pumping",
+              "districts": "2",
+              "questions": "12",
+              "tiers": "5 A",
+              "overlap": "北投區:machinery → 士林區:machinery",
+              "unique": "北投區:basin → 士林區:basin → 北投區:pumping"
+            }
+          },
+          {
+            "id": "balanced",
+            "cells": {
+              "strategy": "Balanced Geographic Review (balanced)",
+              "capacity": "5",
+              "selected": "北投區:machinery → 士林區:machinery → 中山區:machinery → 信義區:machinery → 內湖區:machinery",
+              "districts": "5",
+              "questions": "15",
+              "tiers": "2 A / 3 B",
+              "overlap": "北投區:machinery → 士林區:machinery",
+              "unique": "中山區:machinery → 信義區:machinery → 內湖區:machinery"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Reproduced capacity sensitivity · same snapshot and evidence scope · 36 eligible candidates",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "Strategy"
+          },
+          {
+            "key": "capacity",
+            "label": "Capacity"
+          },
+          {
+            "key": "districts",
+            "label": "Districts"
+          },
+          {
+            "key": "questions",
+            "label": "Candidate-level questions"
+          },
+          {
+            "key": "tiers",
+            "label": "Tiers"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps-10",
+            "cells": {
+              "strategy": "gaps",
+              "capacity": "10",
+              "districts": "6",
+              "questions": "26",
+              "tiers": "6 A / 4 B"
+            }
+          },
+          {
+            "id": "balanced-10",
+            "cells": {
+              "strategy": "balanced",
+              "capacity": "10",
+              "districts": "10",
+              "questions": "30",
+              "tiers": "2 A / 8 B"
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "Merged preparedness implementation · PR #5",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/pull/5"
+      },
+      {
+        "label": "Pinned source merge commit",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055"
+      },
+      {
+        "label": "Methodology and recorded scenario",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+      },
+      {
+        "label": "Chinese MVP specification",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+      },
+      {
+        "label": "Source audit and GIS limitations",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+      },
+      {
+        "label": "Implementation plan",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-implementation-plan.md"
+      },
+      {
+        "label": "Versioned static snapshot",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/public/data/preparedness-decision/snapshot.json"
+      },
+      {
+        "label": "Pure decision engine",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessDecision.ts"
+      },
+      {
+        "label": "GIS validation",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessSpatial.ts"
+      },
+      {
+        "label": "Decision input types",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/types/preparedness.ts"
+      },
+      {
+        "label": "Lazy-loaded preparedness panel",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/PreparednessDecisionPanel.tsx"
+      },
+      {
+        "label": "Source acquisition and audit",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/auditPreparednessSources.ts"
+      },
+      {
+        "label": "Offline snapshot builder",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/buildPreparednessDecisionSnapshot.ts"
+      },
+      {
+        "label": "Decision, scenario and export tests",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessDecision.test.ts"
+      },
+      {
+        "label": "GIS and reproducibility tests",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessSpatial.test.ts"
+      },
+      {
+        "label": "Recorded tests and browser verification",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/verification.md"
+      }
+    ],
+    "previewAssets": [
+      {
+        "label": "Local development capture · desktop source verification",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-desktop.jpg"
+      },
+      {
+        "label": "Local development capture · mobile source verification",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-mobile.jpg"
+      },
+      {
+        "label": "Local development capture · intentional failure/retry demonstration",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-retry.jpg"
+      }
+    ],
+    "futureExtensions": [
+      "Additional precision requires authoritative operating/availability records and validated drainage-service relationships, with explicit provenance and new evidence scope. Do not infer protection zones from proximity.",
+      "Next planned policy project: taipei-real-estate-dashboard — Aging Buildings & Urban Renewal Decision Support; outside this release."
+    ]
+  },
+  "zh": {
+    "id": "heavy-rain-preparedness",
+    "slug": "heavy-rain-preparedness",
+    "displayNumber": "003",
+    "projectId": "taipei-feitsui-water-map",
+    "policyDomain": "防災整備與公共安全",
+    "sourceRepository": "https://github.com/LEO0331/taipei-feitsui-water-map",
+    "sourceVersion": "195e63111d32ad564291545ff9d8b230b025b055",
+    "snapshotVersion": "sha256-d67edc57254ee273",
+    "title": "豪雨防汛整備與設施查核決策支援",
+    "summary": "從防汛設施與歷史積水資料，建立可追溯、可比較的整備查核優先順序。",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "已完成的決策支援 POC",
+    "reviewNote": "獨立決策支援 POC，並非官方洪水警報或實際整備狀態評估。固定來源於 2026 年 10 月 19 日複核；本頁呈現已記錄輸出，不執行即時計算。",
+    "intendedUsers": "市政設施規劃人員、防汛整備分析人員，以及負責書面證據查核或規劃現地巡檢的團隊。",
+    "implementedCapabilities": [
+      "官方來源稽核與 GIS 驗證",
+      "版本化設施證據與歷史背景",
+      "可解釋的 A／B／C 證據查核優先順序",
+      "查核容量、地理均衡與確定性敏感度",
+      "JSON／CSV 查核簡報"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "政策問題",
+        "paragraphs": [
+          "在整備查核量能有限時，哪些行政區與設施類別應優先進行書面或現地核實？這是規劃與證據查核問題。",
+          "設施地圖只能呈現設施曾被記錄的位置，無法證明目前設備狀況、抽水容量、實際整備狀態、排水服務關係、緊急調度可用性、當前淹水風險或未來積淹水深度。"
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "從原有資料探索到決策支援",
+        "paragraphs": [
+          "原有翡翠水庫水環境地圖涵蓋水庫水質、水文氣象、水庫運轉、河川水質、抽水站、沉砂池、豪雨搶修合約機具、歷史生態及相關水務資料。",
+          "已合併模組沿用既有靜態應用，新增官方來源稽核、KML 驗證、來源脈絡、版本快照、設施證據模型、歷史積淹水背景、查核層級、容量情境、地理均衡、敏感度及 JSON／CSV 簡報。水庫與生態仍屬資料探索功能，並非所有資料都進入本決策模型。"
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "系統架構",
+        "content": "architecture",
+        "paragraphs": [
+          "Node 腳本擷取選定官方資源，驗證原始位元組後建置經複核的靜態快照。瀏覽器檢查快照有效性與來源身分，再由延遲載入的 React／Leaflet 模組，針對固定來源母體執行純 TypeScript 情境。",
+          "系統沒有應用後端、資料庫、即時 API 輪詢或作業整合。發布年齡以快照處理時間固定計算，不會隨瀏覽器時鐘改變排序。"
+        ]
+      },
+      {
+        "id": "sources",
+        "title": "已驗證來源與發布日期",
+        "paragraphs": [
+          "抽水站：88 筆來源列，納入 88、排除 0，發布於 2026-06-25。豪雨搶修合約機具：73 筆，納入 73、排除 0，僅採 2026 年度，發布於 2026-07-21。沉砂池：67 筆，納入 67、排除 0，發布於 2024-12-18。這些是設施盤點紀錄，不是實測服務容量。",
+          "官方易淹水參考範圍：9 個 KML 多邊形，納入 9、排除 0，發布於 2025-06-03。北投區 4 個、士林區 5 個，僅屬部分已發布參考地理範圍；其他行政區沒有多邊形，不代表該區不會淹水。",
+          "歷史積淹水：739 個來源地標，納入 695 筆觀察、排除 44 個地標，發布於 2026-09-30。有效觀察日期為 1991-06-19 至 2025-10-19；目錄記載涵蓋 2015-05-01 至 2026-09-11，KML 內嵌名稱含 1140307。這些矛盾保留為明示限制，不以發布日期或檔名替代實際觀察日期。筆數是已記錄觀察，不是獨立暴雨或唯一淹水事件。",
+          "全部 73 筆機具紀錄缺乏可判讀的個別紀錄日期；年度資源發布日不能填補該缺口，也不能證明目前可用。抽水站設立年齡不是維修證據。沉砂池集水面積單位尚未釐清，因此完全排除於評分，不解讀為滯洪蓄水體積。"
+        ],
+        "links": [
+          {
+            "label": "官方抽水站資料集",
+            "url": "https://data.taipei/dataset/detail?id=026cc0fa-cecc-4c78-b986-ead3b0c8b95b"
+          },
+          {
+            "label": "官方 2026 年度搶修機具資料集",
+            "url": "https://data.taipei/dataset/detail?id=cdbc2677-7f23-42e5-9b83-a57ab9bee39c"
+          },
+          {
+            "label": "官方沉砂池資料集",
+            "url": "https://data.taipei/dataset/detail?id=03db6e0d-c6a6-400a-9e52-9b821c404c38"
+          },
+          {
+            "label": "官方易淹水參考範圍資料集",
+            "url": "https://data.taipei/dataset/detail?id=08101966-7aca-48e0-a028-6da02ba1192e"
+          },
+          {
+            "label": "官方歷史積淹水資料集",
+            "url": "https://data.taipei/dataset/detail?id=8377b584-81e9-432d-b902-5b4e9978e6bc"
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "資料治理與 GIS 工程",
+        "paragraphs": [
+          "來源契約保存資料集／資源身分、原始位元組 SHA256、發布日期、擷取及處理時間、年度版本選擇、納入資格與排除理由。不可變原始資料支援可重現的離線重建；擷取失敗、雜湊錯誤、年度混用或結構異常時保留前次有效清單與快照，瀏覽器只讀取一致的單一快照。",
+          "KML Polygon／MultiPolygon 解析檢查 WGS84 座標、封閉幾何、邊界與自交。抽水站及沉砂池依文件使用 TWD97-TM2／EPSG:3826 轉換。對多邊形孔洞及互相接觸、重疊或包含的多部件採保守排除；重複幾何判讀不受環起點或方向影響。歷史日期與來源行政區標籤亦經驗證；座標範圍檢查不等於獨立行政區界驗證。",
+          "抽水站靠近積水區不代表服務該區。因缺乏權威服務關係，採行政區 × 設施類別為查核單位。缺乏運轉證據代表待核實問題，不代表設備失效；歷史淹水位置不自動轉成未來危害多邊形。不支持或排除的紀錄及原因仍可稽核。",
+          "已檢視主要排水集水區 KML，但多站名稱及缺乏穩定跨檔識別碼，未能建立經驗證的抽水服務關係，因此未納入服務連結。歷史雨量未擷取或整合；不進行鄰近推論、降雨歸因，也不宣稱為認證淹水模型。"
+        ],
+        "links": [
+          {
+            "label": "固定來源稽核與排除理由",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+          }
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "查核優先順序方法",
+        "content": "methodology",
+        "paragraphs": [
+          "heavy-rain-preparedness-review-v1，設定版本 1.0.0，考慮 12 個行政區 × 3 類設施（pumping 抽水站、machinery 機具、basin 沉砂池），篩選與證據資格判定前共有 36 個可能候選。這是行政區／類別組合，不是 36 個高風險行政區或淹水位置。",
+          "每個獨立查核問題維度在同一候選最多計一次，重複欄位或資料列不能膨脹問題數。必要設施來源不可用時，後續缺漏收斂為單一 source_failure。問題是書面證據維度，不是統計獨立預測因子，也不是環境風險分數。"
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "可重現的實際情境",
+        "content": "scenarios",
+        "paragraphs": [
+          "已記錄來源輸出：快照 sha256-d67edc57254ee273，處理時間 2026-10-19T01:14:54.464Z，方法 heavy-rain-preparedness-review-v1，設定 1.0.0。共同證據範圍：一般證據查核模式、嚴格證據要求、全部 12 區與三類設施、納入發布年齡未知／過舊來源但保留可見問題、過舊門檻 730 天、容量 5。",
+          "兩種策略均選取北投區:machinery 與士林區:machinery。缺口優先將五個任務集中於兩區；地理均衡每輪每區取一個候選，將五個任務分散至五區。下表候選識別碼順序完整保留來源輸出。",
+          "15 與 12 個候選層級證據問題，不代表較高淹水風險、較佳整備、更多獨立確認缺失或較佳政策成效。同一來源共同問題可能在多個行政區／類別候選重複出現。這是已記錄輸出，並非即時計算或政策成果。",
+          "以固定快照與純決策函式重現敏感度：相同證據範圍下，缺口優先容量 10 選取 10 個任務、涵蓋 6 區、26 個問題（6 A／4 B）；地理均衡容量 10 涵蓋 10 區、30 個問題（2 A／8 B）。容量改變名單，不改變候選層級。",
+          "嚴格／寬鬆證據，以及淹水背景／一般證據模式，各有不同證據範圍鍵。在此固定快照，兩種策略容量 5 的名單與問題數於上述模式皆相同，36 個候選皆符合資格。數字相同不表示範圍可互換：寬鬆規則可納入有限證據，淹水模式需要合格淹水背景。來源資格或地理範圍變動的效果，不得只歸因於選取策略。"
+        ],
+        "links": [
+          {
+            "label": "已記錄方法與實際名單",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+          },
+          {
+            "label": "中文規格與來源情境",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+          }
+        ]
+      },
+      {
+        "id": "briefings",
+        "title": "查核簡報與資料保護",
+        "paragraphs": [
+          "JSON／CSV 簡報保留選取及排除候選的解釋、快照／來源版本、容量、證據範圍假設、限制及機關待核實問題。匯出採明確彙總／來源欄位白名單，不含設施名稱、承辦姓名、電話或承包商聯絡資訊。",
+          "歷史輸出依來源行政區與日期彙總觀察，不重新發布或評分住戶尺度歷史幾何、地址、深度及面積。CSV 以引號處理儲存格，並防護公式起始字元及控制字元前綴。這些措施支援書面查核，不證明實際整備狀態。"
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "重要限制與負責任使用",
+        "paragraphs": [
+          "此為獨立個人工程 POC，並非臺北市政府營運或背書，不是洪水警報服務或淹水預測，也未進行官方作業整備認證。",
+          "模型不量測排水容量、不證明機具或抽水設備目前可用、不判定實際設施整備狀態，也不認證免於積淹水。候選優先順序描述證據查核需求，不是緊急風險；缺乏運轉狀態證據不等於設施失效。"
+        ],
+        "bullets": [
+          "行政區 × 設施類別不是個別房產、預測淹水區、已驗證抽水服務集水區、實際緊急部署位置或水文驗證服務範圍。",
+          "歷史積淹水觀察不是預測；來源日期與涵蓋期間差異仍未解決。",
+          "官方易淹水多邊形只涵蓋部分已發布地理範圍；北投／士林有資料不表示它們是全市最危險行政區。",
+          "未實作已驗證的集水區對抽水站服務模型，也不產生淹水危害機率。",
+          "不以翡翠水庫集水區降雨判定都市行政區淹水。"
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "工程驗證與來源證據",
+        "content": "evidence",
+        "paragraphs": [
+          "上游已記錄實作結果包括 65 項測試通過、TypeScript 檢查、Vite 正式及 GitHub Pages 基底路徑建置，以及 GIS／來源可重現性、決策層級、容量／情境、快照驗證、JSON／CSV 匯出、來源特定隱私及匯出檢查。瀏覽器紀錄包括桌面、390×844 行動版、載入與重試行為。這些是來源儲存庫記錄，並非本作品集任務獨立重跑上游完整套件的宣稱。",
+          "來源驗證記錄未新增套件、npm audit --omit=dev 正式依賴零警示，以及既有開發依賴警示與主包過大警告。防汛整備模組採延遲載入。固定截圖是本機開發驗證；重試圖刻意示範失敗／重試，不是政府作業畫面。"
+        ],
+        "links": [
+          {
+            "label": "本機開發擷取 · 桌面來源驗證畫面",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-desktop.jpg"
+          },
+          {
+            "label": "本機開發擷取 · 行動版來源驗證畫面",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-mobile.jpg"
+          },
+          {
+            "label": "本機開發擷取 · 刻意失敗與重試示範",
+            "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-retry.jpg"
+          }
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "本案例展現的能力",
+        "content": "future",
+        "paragraphs": [
+          "來源契約、防禦性 GIS 轉換、可稽核排除、固定快照、確定性規則與地理容量比較，將公開資料工程連結至可解釋的書面證據查核。",
+          "案例 001 探討空間設施配置與政策加權覆蓋；案例 002 探討歷史派工與調查分流；案例 003 探討 GIS／來源驗證、設施證據缺口與均衡查核容量。三者皆為獨立技術 POC。"
+        ]
+      }
+    ],
+    "architecture": [
+      "臺北市官方開放資料",
+      "選定來源擷取",
+      "SHA256 與中繼資料驗證",
+      "CSV／KML／GIS 轉換",
+      "品質與資格檢查",
+      "版本化防汛整備靜態快照",
+      "純 TypeScript 決策引擎",
+      "React／Leaflet 介面",
+      "情境比較與查核簡報匯出"
+    ],
+    "architectureNote": "Node 來源前處理 → 經複核靜態瀏覽器快照 → 延遲載入分析；不需應用後端、資料庫或即時來源輪詢。",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "heavy-rain-preparedness-review-v1",
+      "explanation": "設定 1.0.0：透明的分層書面／現地查核優先順序；不計算加權覆蓋或淹水風險分數。",
+      "thresholds": {
+        "caption": "獨立證據缺口維度 · 每個候選各維度最多計一次",
+        "columns": [
+          {
+            "key": "dimension",
+            "label": "維度"
+          },
+          {
+            "key": "meaning",
+            "label": "待查核問題"
+          }
+        ],
+        "rows": [
+          {
+            "id": "source_failure",
+            "cells": {
+              "dimension": "source_failure",
+              "meaning": "必要來源不可用、無效或遭排除；後續缺漏收斂為這一個問題。"
+            }
+          },
+          {
+            "id": "inventory_coverage",
+            "cells": {
+              "dimension": "inventory_coverage",
+              "meaning": "行政區／類別沒有合格來源紀錄；缺紀錄不代表沒有保護。"
+            }
+          },
+          {
+            "id": "identity_geography",
+            "cells": {
+              "dimension": "identity_geography",
+              "meaning": "座標或來源身分問題；重複旗標只計一次。"
+            }
+          },
+          {
+            "id": "temporal_version",
+            "cells": {
+              "dimension": "temporal_version",
+              "meaning": "發布年齡、個別紀錄日期或版本疑問；發布日不能替代紀錄日期。"
+            }
+          },
+          {
+            "id": "operational_evidence",
+            "cells": {
+              "dimension": "operational_evidence",
+              "meaning": "實際運轉狀況或機具可用性未知。"
+            }
+          },
+          {
+            "id": "service_relationship",
+            "cells": {
+              "dimension": "service_relationship",
+              "meaning": "缺乏已驗證的排水服務關係。"
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "證據查核層級 · 並非緊急風險分類",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "層級"
+          },
+          {
+            "key": "rule",
+            "label": "規則"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — 優先核實",
+              "rule": "合格來源證據、已驗證官方易淹水參考指定，以及至少兩個不同重大查核問題維度。"
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — 查核",
+              "rule": "具合格官方背景或至少一個重大查核問題，但不符合 A。"
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — 例行盤點",
+              "rule": "具合格來源的例行設施盤點，且未符合 A／B。"
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "證據不足",
+              "rule": "必要來源資格或選定淹水背景要求未滿足，排除於選取，不代表零風險。"
+            }
+          }
+        ]
+      },
+      "notes": [
+        "確定性排序：A／B／C 層級、不同問題數遞減、已驗證貢獻來源類型數遞減、未解版本問題優先、已知來源發布年齡遞減，最後依穩定候選識別碼遞增。年齡未知於該排序步驟排在已知之後。",
+        "發布年齡依快照處理時間計算，不採今日瀏覽器時鐘。預設過舊門檻 730 天；預設納入未知／過舊來源並明示問題。",
+        "嚴格模式接受已驗證來源；寬鬆模式可另納入有限設施／歷史證據。有限歷史不成為已驗證貢獻來源類型；兩種模式的官方易淹水指定皆須驗證。",
+        "容量是書面／現地查核的假設任務數（5、10 或不限），以合格母體為上限。均衡策略每輪每區選一個排序候選；兩種策略均不宣稱較佳防洪保護。"
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "已記錄的同範圍比較 · 快照 sha256-d67edc57254ee273 · 嚴格證據模式 · 容量 5",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "策略"
+          },
+          {
+            "key": "capacity",
+            "label": "查核容量"
+          },
+          {
+            "key": "selected",
+            "label": "選取候選識別碼 · 依序"
+          },
+          {
+            "key": "districts",
+            "label": "涵蓋行政區"
+          },
+          {
+            "key": "questions",
+            "label": "候選層級問題數"
+          },
+          {
+            "key": "tiers",
+            "label": "優先層級"
+          },
+          {
+            "key": "overlap",
+            "label": "共同選取"
+          },
+          {
+            "key": "unique",
+            "label": "各自選取"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps",
+            "cells": {
+              "strategy": "缺口優先（gaps）",
+              "capacity": "5",
+              "selected": "北投區:machinery → 士林區:machinery → 北投區:basin → 士林區:basin → 北投區:pumping",
+              "districts": "2",
+              "questions": "12",
+              "tiers": "5 A",
+              "overlap": "北投區:machinery → 士林區:machinery",
+              "unique": "北投區:basin → 士林區:basin → 北投區:pumping"
+            }
+          },
+          {
+            "id": "balanced",
+            "cells": {
+              "strategy": "地理均衡（balanced）",
+              "capacity": "5",
+              "selected": "北投區:machinery → 士林區:machinery → 中山區:machinery → 信義區:machinery → 內湖區:machinery",
+              "districts": "5",
+              "questions": "15",
+              "tiers": "2 A / 3 B",
+              "overlap": "北投區:machinery → 士林區:machinery",
+              "unique": "中山區:machinery → 信義區:machinery → 內湖區:machinery"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "重現的容量敏感度 · 相同快照與證據範圍 · 36 個合格候選",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "策略"
+          },
+          {
+            "key": "capacity",
+            "label": "容量"
+          },
+          {
+            "key": "districts",
+            "label": "行政區"
+          },
+          {
+            "key": "questions",
+            "label": "候選層級問題數"
+          },
+          {
+            "key": "tiers",
+            "label": "層級"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps-10",
+            "cells": {
+              "strategy": "缺口優先（gaps）",
+              "capacity": "10",
+              "districts": "6",
+              "questions": "26",
+              "tiers": "6 A / 4 B"
+            }
+          },
+          {
+            "id": "balanced-10",
+            "cells": {
+              "strategy": "地理均衡（balanced）",
+              "capacity": "10",
+              "districts": "10",
+              "questions": "30",
+              "tiers": "2 A / 8 B"
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "已合併的防汛整備實作 · PR #5",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/pull/5"
+      },
+      {
+        "label": "固定來源合併提交",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055"
+      },
+      {
+        "label": "方法與已記錄實際情境",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+      },
+      {
+        "label": "繁體中文 MVP 規格",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+      },
+      {
+        "label": "來源稽核與 GIS 限制",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+      },
+      {
+        "label": "實作計畫",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-implementation-plan.md"
+      },
+      {
+        "label": "版本化靜態快照",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/public/data/preparedness-decision/snapshot.json"
+      },
+      {
+        "label": "純 TypeScript 決策引擎",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessDecision.ts"
+      },
+      {
+        "label": "GIS 驗證",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessSpatial.ts"
+      },
+      {
+        "label": "決策輸入型別",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/types/preparedness.ts"
+      },
+      {
+        "label": "延遲載入的防汛整備面板",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/PreparednessDecisionPanel.tsx"
+      },
+      {
+        "label": "來源擷取與稽核",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/auditPreparednessSources.ts"
+      },
+      {
+        "label": "離線快照建置器",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/buildPreparednessDecisionSnapshot.ts"
+      },
+      {
+        "label": "決策、情境與匯出測試",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessDecision.test.ts"
+      },
+      {
+        "label": "GIS 與可重現性測試",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessSpatial.test.ts"
+      },
+      {
+        "label": "已記錄測試與瀏覽器驗證",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/verification.md"
+      }
+    ],
+    "previewAssets": [
+      {
+        "label": "本機開發擷取 · 桌面來源驗證畫面",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-desktop.jpg"
+      },
+      {
+        "label": "本機開發擷取 · 行動版來源驗證畫面",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-mobile.jpg"
+      },
+      {
+        "label": "本機開發擷取 · 刻意失敗與重試示範",
+        "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/preparedness-retry.jpg"
+      }
+    ],
+    "futureExtensions": [
+      "提高精度需先取得權威運轉／可用性紀錄及已驗證排水服務關係，明示來源脈絡並建立新證據範圍，不應以鄰近關係推定保護區。",
+      "下一個規劃中的政策專案：taipei-real-estate-dashboard — 高齡建物與都市更新決策支援；不在本次版本實作。"
+    ]
+  }
+}
