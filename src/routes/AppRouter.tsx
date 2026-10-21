@@ -1,15 +1,18 @@
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
-import { LocaleProvider } from "../i18n/LocaleContext";
+import { LocaleProvider, useLocale } from "../i18n/LocaleContext";
+import { copy } from "../i18n/copy";
 import { Footer } from "../components/layout/Footer";
 import { Navbar } from "../components/layout/Navbar";
 import { AboutPage } from "../pages/AboutPage";
 import { ContactPage } from "../pages/ContactPage";
 import { HomePage } from "../pages/HomePage";
-import { GovTechPage } from "../pages/GovTechPage";
-import { GovTechCaseStudyPage } from "../pages/GovTechCaseStudyPage";
 import { NotFoundPage } from "../pages/NotFoundPage";
-import { ProjectsPage } from "../pages/ProjectsPage";
 import routeConfig from "./routeConfig.json";
+
+const ProjectsPage = lazy(() => import("../pages/ProjectsPage").then((module) => ({ default: module.ProjectsPage })));
+const GovTechPage = lazy(() => import("../pages/GovTechPage").then((module) => ({ default: module.GovTechPage })));
+const GovTechCaseStudyPage = lazy(() => import("../pages/GovTechCaseStudyPage").then((module) => ({ default: module.GovTechCaseStudyPage })));
 
 const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   home: <HomePage />,
@@ -19,6 +22,7 @@ const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   "govtech-civic-1999": <GovTechCaseStudyPage slug="civic-1999" />,
   "govtech-heavy-rain-preparedness": <GovTechCaseStudyPage slug="heavy-rain-preparedness" />,
   "govtech-urban-renewal": <GovTechCaseStudyPage slug="urban-renewal" />,
+  "govtech-shade-equity": <GovTechCaseStudyPage slug="shade-equity" />,
   about: <AboutPage />,
   contact: <ContactPage />,
   "not-found": <NotFoundPage />
@@ -34,13 +38,18 @@ function getPageElementForRouteKey(routeKey: string): JSX.Element | undefined {
   return undefined;
 }
 
+function RouteLoading(): JSX.Element {
+  const { locale } = useLocale();
+  return <p role="status" className="mx-auto max-w-6xl px-4 py-12">{copy[locale].nav.loadingPage}</p>;
+}
+
 function AppShell(): JSX.Element {
   return (
     <LocaleProvider>
       <div className="flex min-h-screen flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
         <Navbar />
         <main id="main-content" className="flex-1" tabIndex={-1}>
-          <Outlet />
+          <Suspense fallback={<RouteLoading />}><Outlet /></Suspense>
         </main>
         <Footer />
       </div>

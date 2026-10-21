@@ -361,7 +361,32 @@
         "Pinned functions reproduced11A,capacity5/10/unlimited=5/10/11districts,2distinctdimensions1verifiedsource,identical3strategyoutputs",
         "Actualroot/Pages deep-route/refresh/metadata/locale/404 and fivewidths/keyboard/mobile/light/dark passed; visual95/100; read-onlyreview no remaining issues",
         "Fiveexisting high Tailwind/braces advisories; no dependency/lockfile changes",
-        "Draft PR20 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/20; implementation a985054 on codex/govtech-urban-renewal-v1-3"
+        "Draft PR20 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/20; implementation a985054 on codex/govtech-urban-renewal-v1-3",
+        "2026-10-20: Portfolio PR20 merged to bbe90d946a576f713639075c955bee69bc1c9809; prior draft state is historical."
+      ]
+    },
+    {
+      "id": "govtech-shade-equity-v1-4-2026-10",
+      "name": "Present GIS evidence-readiness Shade Equity as Case005",
+      "description": "Add bilingual verified source/GIS tables and gated zero-ranked scenarios, plus backward-compatible multiple case links per project.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-urban-renewal-v1-3-2026-10"
+      ],
+      "doneCriteria": [
+        "Five bilingual cases with original technical evidence and homepage pins preserved",
+        "One Bin Map project resolves two validated localized internal case links; legacy single cases/external links intact",
+        "Pinned Shade source/GIS/performance evidence, zero-ranking gate and tolerance scopes accurately represented",
+        "Documentation, source audit, regression/visual/both-base verification and one reviewable PR; no automatic merge"
+      ],
+      "evidence": [
+        "Source audit pinned to Bin PR19/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9; source and derived snapshot IDs, normalized hash and recorded metrics verified",
+        "Baseline22unit/77Playwright; final2026-10-21:22unit/92Playwright/17trackedflows,TypeScript/build,20indexable routes passed",
+        "One Bin Map project with two validated localized case links; array precedence,dedup,unknown/foreign IDs and legacy fallback tested",
+        "Bin001 technical fixture preserved with only explicitly authorized roadmap update; Civic/HeavyRain/Urban complete fixtures pass; pins and external project identities unchanged",
+        "Actual both-base direct/refresh/metadata/locale/404,five widths,mobile/light/dark,keyboard tables and visual95/100 passed; main307.85kB with case narratives deferred",
+        "Six high audit package findings on unchanged dependencies: previous five Tailwind/braces plus newly reported Vite group; source suite/ETL not rerun",
+        "Draft PR21 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21; implementation c7ab0ca on codex/govtech-shade-equity-v1-4"
       ]
     }
   ]

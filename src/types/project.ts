@@ -21,6 +21,7 @@ export interface Project {
   repoUrl?: string;
   caseStudyUrl?: string;
   govtechCaseId?: GovTechCaseId;
+  govtechCaseIds?: GovTechCaseId[];
   status: ProjectStatus;
   featured: boolean;
   startDate?: string;

@@ -36,6 +36,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://leo0331.github.io/portfolio/govtech/shade-equity</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://leo0331.github.io/portfolio/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -77,6 +82,11 @@
   </url>
   <url>
     <loc>https://leo0331.github.io/portfolio/zh/govtech/urban-renewal</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://leo0331.github.io/portfolio/zh/govtech/shade-equity</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

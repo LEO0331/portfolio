@@ -54,7 +54,10 @@ test.describe("GovTech showcase", () => {
       await page.goto(locale === "en" ? "./projects" : "./zh/projects");
       const card = page.locator("article").filter({ has: page.locator('a[href="https://github.com/LEO0331/taipei-bin-map"]') });
       await card.getByRole("button", { name: locale === "en" ? "View Details" : "查看詳情", exact: true }).click();
-      const link = page.getByRole("dialog").getByRole("link", { name: locale === "en" ? "GovTech Case Study" : "市政科技案例研究", exact: true });
+      const dialog = page.getByRole("dialog");
+      const link = dialog.locator(`a[href="/portfolio/${locale === "zh" ? "zh/" : ""}govtech/bin-policy"]`);
+      await expect(link).toHaveText(`${locale === "en" ? pages[2].title : pages[3].title} — ${locale === "en" ? "Case Study" : "案例"} 001`);
+      await expect(dialog.locator(`a[href="/portfolio/${locale === "zh" ? "zh/" : ""}govtech/shade-equity"]`)).toHaveCount(1);
       await expect(link).toHaveAttribute("href", `/portfolio/${locale === "zh" ? "zh/" : ""}govtech/bin-policy`);
       expect(await link.getAttribute("target")).toBeNull();
       await link.click();
@@ -68,8 +71,8 @@ test.describe("GovTech showcase", () => {
     const main = page.getByRole("main");
     for (const pr of [11, 14, 15]) {
       const links = main.locator(`a[href="https://github.com/LEO0331/taipei-bin-map/pull/${pr}"]`);
-      expect(await links.count()).toBeGreaterThan(0);
       await expect(links.first()).toBeVisible();
+      expect(await links.count()).toBeGreaterThan(0);
       await expect(links.first()).toHaveAttribute("rel", /noopener/);
     }
     expect(await main.locator('a[href*="/taipei-bin-map/blob/"][href*="docs/"]').count()).toBeGreaterThan(0);

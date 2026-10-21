@@ -9,6 +9,7 @@ const localizedCopy = {
       home: "Home",
       projects: "Projects",
       govtech: "GovTech",
+      loadingPage: "Loading page…",
       about: "About",
       contact: "Contact",
       github: "GitHub",
@@ -42,7 +43,7 @@ const localizedCopy = {
       featuredProjects: "Featured Projects",
       featuredDescription: "Selected from my GitHub profile pins, with direct links to demos and repositories.",
       govtechTitle: "Public data, explainable decisions",
-      govtechDescription: "Explore civic data engineering and a completed bin-allocation decision-support POC, with transparent methods and evidence.",
+      govtechDescription: "Explore five civic engineering cases with transparent methods, source governance and explainable evidence, including a GIS inventory POC with ranked shade-review candidates intentionally gated.",
       exploreGovtech: "Explore GovTech",
       viewAllProjects: "View All Projects",
       skillsEyebrow: "Skill Matrix",
@@ -99,6 +100,7 @@ const localizedCopy = {
       links: "Links",
       caseStudy: "Case Study",
       govtechCaseStudy: "GovTech Case Study",
+      govtechCaseNumber: "Case Study",
       present: "Present"
     },
     about: {
@@ -160,6 +162,7 @@ const localizedCopy = {
       home: "首頁",
       projects: "專案",
       govtech: "市政科技",
+      loadingPage: "正在載入頁面…",
       about: "關於",
       contact: "聯絡",
       github: "GitHub",
@@ -193,7 +196,7 @@ const localizedCopy = {
       featuredProjects: "重點專案",
       featuredDescription: "依我的 GitHub 置頂專案順序展示，提供 Demo 與原始碼連結。",
       govtechTitle: "讓公共資料支援可解釋的決策",
-      govtechDescription: "探索市政資料工程與已完成的清潔箱配置決策支援 POC，檢視透明的方法、資料治理與工程證據。",
+      govtechDescription: "探索五個市政工程案例，檢視透明方法、來源治理與可解釋證據，包含已完成 GIS 盤點、但刻意停用未驗證樹蔭查核排序的 POC。",
       exploreGovtech: "探索市政科技",
       viewAllProjects: "查看全部專案",
       skillsEyebrow: "技能矩陣",
@@ -249,6 +252,7 @@ const localizedCopy = {
       links: "連結",
       caseStudy: "案例研究",
       govtechCaseStudy: "市政科技案例研究",
+      govtechCaseNumber: "案例",
       present: "至今"
     },
     about: {

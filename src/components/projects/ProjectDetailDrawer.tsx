@@ -5,7 +5,7 @@ import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { resolveProjectImageSources } from "../../utils/projectImage";
 import { toSafeExternalHref } from "../../utils/urlSafety";
-import { getGovTechCasePath } from "../../utils/govtechCase";
+import { getProjectGovTechCases } from "../../utils/govtechCase";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
@@ -78,8 +78,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
-  const casePath = getGovTechCasePath(project.govtechCaseId, project.id);
-  const govtechCasePath = casePath ? toLocalePath(casePath) : undefined;
+  const govtechCases = getProjectGovTechCases(project, locale);
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
 
   useEffect(() => {
@@ -221,7 +220,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
               <ListSection title={text.projects.challenges} items={project.challenges} itemKeyPrefix={`${project.id}-challenge`} />
               <ListSection title={text.projects.outcomes} items={project.outcomes} itemKeyPrefix={`${project.id}-outcome`} />
 
-              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl || govtechCasePath ? (
+              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl || govtechCases.length > 0 ? (
                 <section className="space-y-1.5 border-t border-slate-200 pt-4">
                   <h3 className="text-sm font-semibold text-slate-900">{text.projects.links}</h3>
                   <div className="flex flex-wrap gap-3 text-sm">
@@ -240,11 +239,11 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                         {text.projects.caseStudy}
                       </ExternalLink>
                     ) : null}
-                    {govtechCasePath ? (
-                      <Link to={govtechCasePath} onClick={onClose}>
-                        {text.projects.govtechCaseStudy}
+                    {govtechCases.map((study) => (
+                      <Link key={study.id} to={toLocalePath(`/govtech/${study.slug}`)} onClick={onClose}>
+                        {govtechCases.length === 1 ? text.projects.govtechCaseStudy : `${study.title} — ${text.projects.govtechCaseNumber} ${study.displayNumber}`}
                       </Link>
-                    ) : null}
+                    ))}
                   </div>
                 </section>
               ) : null}

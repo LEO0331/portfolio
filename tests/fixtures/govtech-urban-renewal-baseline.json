@@ -1,0 +1,1000 @@
+{
+  "en": {
+    "id": "urban-renewal",
+    "slug": "urban-renewal",
+    "displayNumber": "004",
+    "projectId": "taipei-real-estate-dashboard",
+    "policyDomain": "Housing & Urban Resilience",
+    "sourceRepository": "https://github.com/LEO0331/taipei-real-estate-dashboard",
+    "sourceVersion": "e3f37ff91816b4d51223ab686097a6cef542ca31",
+    "snapshotVersion": "ure-c81e4ef44e6c9868",
+    "title": "Aging Buildings & Urban Renewal Evidence Decision Support",
+    "summary": "From fragmented building and administrative records to explainable urban-renewal research priorities.",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "Completed decision-support POC",
+    "reviewNote": "Independent policy-research POC — not a building-safety assessment, legal eligibility determination, or official redevelopment recommendation. Recorded analysis date: 19 October 2026.",
+    "intendedUsers": "Urban planning researchers, municipal housing-policy analysts, public-data teams, and administrative staff reviewing renewal-related records.",
+    "implementedCapabilities": [
+      "Official source feasibility and statistical-unit reconciliation",
+      "Citywide building-age context and district administrative evidence",
+      "Versioned static snapshots and deterministic review tiers",
+      "Capacity, strategy and evidence-scope comparisons",
+      "Reproducible JSON/CSV research briefings"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "Policy Problem",
+        "paragraphs": [
+          "Given limited research capacity, which administrative evidence questions should be reviewed first, using valid source definitions and reproducible assumptions? Existing building stock, age groups, historical use permits, approved renewal units, floor-area incentives, proceedings and actual current case status describe different populations and stages.",
+          "These records cannot simply become one redevelopment pipeline. Older buildings are not automatically unsafe; approved renewal-unit designation does not establish redevelopment completion. Urban renewal and accelerated dangerous/old-building reconstruction are separate legal pathways. This project does not predict which properties should be demolished.",
+          "Intended users are urban planning researchers, municipal housing-policy analysts, public-data teams and administrative staff reviewing renewal-related records."
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "From Explorer to Decision Support",
+        "paragraphs": [
+          "The original Real Estate Dashboard explores real-price transactions, residential price/rent indexes, district comparisons, building-use permits, land-use controls, urban-renewal regulations, social housing, demographic/income context, public administrative records, freshness and coverage.",
+          "The completed module adds official source feasibility auditing, statistical-unit reconciliation, citywide age context, district renewal evidence, versioned snapshots, deterministic research-review priorities, capacity/alternative-strategy scenarios, sensitivity and evidence-scope checks, and JSON/CSV briefings. Existing market and housing datasets do not all contribute to the ranking."
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "System Architecture",
+        "content": "architecture",
+        "paragraphs": [
+          "Scoped Node.js scripts acquire and convert evidence outside the browser. Identity, original-byte SHA256, schema, ROC dates, geography and units are validated before publishing a versioned static decision snapshot. Failed validation preserves the previous known-good snapshot.",
+          "The browser reads the static snapshot and loads the pure TypeScript review engine and React decision module on demand. Inputs and configuration are versioned. There is no new application backend, database dependency or official administrative API integration; Portfolio does not fetch live source data."
+        ]
+      },
+      {
+        "id": "sources",
+        "title": "Verified Official Sources and Statistical Meaning",
+        "paragraphs": [
+          "A — Existing building stock, context_only: 50 citywide annual records for 1976–2025, unit buildings. No verified district-level age breakdown exists. Age fields in 1976–2006 are unavailable, never zero old buildings. The 2012 age categories do not reconcile with the overall building total; that discrepancy remains explicit. Only 18 annual age breakdowns are comparable. Citywide counts are not allocated to districts or treated as district redevelopment demand.",
+          "B — Approved self-designated renewal units, verified_analysis within designation scope: 75 source records and 75 unique document identifiers across 11 represented districts, reporting months February 2023–June 2024 (action dates 2023-02-01–2024-06-05). No verified row exists for 信義區 / Xinyi; missing coverage does not establish zero actual cases. Only designation approval is established. Current later-stage status is unknown; case-name matching is not an authoritative cross-stage identifier.",
+          "C — Incentive statistics, context_only: 24 citywide annual records for 2002–2025. Approved incentive cases and bonus floor area in square metres are separate statistical units. Neither is a district case-status series or a valid denominator for B; they do not join B's candidate population.",
+          "D — Existing use-permit aggregates, context_only: 8,855 records for 2001–2026, with 8,830 attributed to districts and 25 without validated district attribution. Issuance is an administrative flow, not existing building stock; no authoritative link to B is established. E — Proceedings, context_only: 117 dated meeting rows. Agenda/record metadata does not establish approval, rejection or completion.",
+          "F — Official progress lookup, context_only: human parcel/address/road verification, not a validated supported bulk API. No automatic current legal-case status retrieval is implemented. G — Regulations and official FAQ, context_only: legal reference for separate renewal and dangerous/old-building reconstruction processes, not an eligibility or current-law determination.",
+          "G has differing retained versions: inspected raw CSV contains 37 dated rows spanning 2008-07-30–2024-11-26; the separately shipped existing directory has 37 rows spanning 1997-07-30–2023-06-16. These dates must not be combined into a synchronized register of effective law. Original retrieval of retained D/G is unknown; 2026-10-19T06:32:25.000Z records their inspection, not original acquisition."
+        ],
+        "links": [
+          {
+            "label": "A · Existing building stock",
+            "url": "https://data.taipei/dataset/detail?id=7889e8a0-a71e-44e0-95c7-2213a7db1474"
+          },
+          {
+            "label": "B · Approved self-designated renewal units",
+            "url": "https://data.taipei/dataset/detail?id=4bf19a69-86e7-40cb-93e2-a45dc7037f34"
+          },
+          {
+            "label": "C · Urban renewal incentive statistics",
+            "url": "https://data.taipei/dataset/detail?id=cda6b568-0035-420b-bd05-6ca9bfd4bda0"
+          },
+          {
+            "label": "D · Building use permits",
+            "url": "https://data.taipei/dataset/detail?id=c876ff02-af2e-4eb8-bd33-d444f5052733"
+          },
+          {
+            "label": "E · Urban renewal proceedings",
+            "url": "https://data.taipei/dataset/detail?id=dbe02285-8d6e-4b3d-97d7-700047cbe4da"
+          },
+          {
+            "label": "F · Official human progress lookup",
+            "url": "https://gis.uro.taipei/r_progress.aspx"
+          },
+          {
+            "label": "G · Regulations directory dataset",
+            "url": "https://data.taipei/dataset/detail?id=6bc30ace-9322-412c-9092-aa151bdf4a03"
+          },
+          {
+            "label": "Official explanation of distinct legal pathways",
+            "url": "https://uro.gov.taipei/News_Content.aspx?n=5E79553CBBAE8DFB&s=0245995C5DF74EF8&sms=87415A8B9CE81B16"
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "Data Governance and Evidence Eligibility",
+        "paragraphs": [
+          "The source feasibility gate precedes ranking. Stock versus flow, citywide versus district, designation versus later legal stages, resource update versus case action, verified versus contextual evidence, and missing versus zero remain separate. This is an evidence-aware administrative review process, not a weighted score combining unrelated public records.",
+          "verified_analysis permits analysis within validated identity, schema, unit, geography and period. context_only supports separate explanation. limited permits bounded questions only under explicitly permissive quality. unavailable discloses missing essential evidence; excluded preserves incompatible evidence and its reason. Neither unavailable nor excluded creates invented observations; essential identity/geography/definition/period requirements remain mandatory.",
+          "Provenance retains official dataset/resource IDs, original-byte SHA256, ordered schemas, retrieval/resource-update/processing dates, units, coverage and exclusions. Audited snapshot ure-c81e4ef44e6c9868 fixes analysis date 2026-10-19 and processing 2026-10-19T06:32:25.000Z. Original publication is independently unknown, not relabelled from catalogue metadata update or resource modification.",
+          "Public inputs contain district aggregates and annual city context. Missing periods are not imputed; property names, fuzzy addresses and ownership inference do not repair missing cross-stage identity. An unknown public follow-up record does not show that authorities lack internal records."
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "Decision Methodology",
+        "content": "methodology",
+        "paragraphs": [
+          "urban-renewal-evidence-review-v1, configuration 1.0.0, allocates documentary research slots. The unit is Administrative District × Administrative Review Question, not a building, parcel, household or redevelopment project. The actual source supports one designation_follow_up question in each of 11 represented districts; no synthetic Xinyi candidate is created.",
+          "The five review dimensions form a deduplicated set. Repeated missing fields or multiple documents about one case do not create independent dimensions or verified source types. In the audited population every candidate has status_traceability and temporal_freshness, one unresolved status question and one verified independent source type (B), irrespective of record volume.",
+          "Default source-age threshold is 365 days. B's resource update 2024-06-13 is 858 days before fixed analysis date 2026-10-19. This resource-version age is not individual case inactivity; first publication is unknown and catalogue metadata update is a separate date."
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "Recorded Scenario: Capacity without Artificial Differentiation",
+        "content": "scenarios",
+        "paragraphs": [
+          "Recorded snapshot ure-c81e4ef44e6c9868; method urban-renewal-evidence-review-v1; configuration 1.0.0; analysis date 2026-10-19. Fixed conditions: all districts/categories, strict quality, priority threshold C, source B included, optional permit context included, Evidence Gaps First (gaps). Exactly 11 eligible questions represent 11 districts; all are A.",
+          "The capacity table preserves the source comparator's district order. Capacity 10 retains the first five and adds five; 文山區 / Wenshan is excluded only by that cutoff and appears with unlimited capacity. Two dimensions means the union status_traceability and temporal_freshness, not a sum of per-candidate counts. One verified source type means B, not five or ten independent sources.",
+          "Direct interpretation: this order is an evidence-review comparator and stable tie-break result. It does not rank dangerous buildings, oldest districts, redevelopment need, public safety risk, developer opportunity or resident benefit. Selected counts are research questions, not buildings or completed projects.",
+          "Evidence Gaps First and Balanced District Coverage select the same candidates in the same order. Each district has one equally qualified question, so round-robin geographic balancing adds no differentiation. Source Reconciliation Focus also selects the same candidates because all carry a concrete missing later-stage linkage question. A credible decision-support system should show when different strategies produce the same answer and explain why; no strategy is demonstrated better."
+        ],
+        "links": [
+          {
+            "label": "Pinned real scenario and comparator explanation",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-methodology.md"
+          }
+        ]
+      },
+      {
+        "id": "sensitivity",
+        "title": "Sensitivity and Evidence-Scope Limits",
+        "paragraphs": [
+          "Capacity 5 versus 10 and gaps versus balanced/reconciliation fix one snapshot and candidate population. Each district has one equally qualified question. The full ranking remains unchanged here; capacity changes only the cutoff. These are same-scope comparisons of research allocation, not policy performance.",
+          "Strict versus permissive quality leaves the observed selection unchanged because source B is verified. The quality setting changes the evidence-scope definition, so equality does not establish a pure strategy effect or improved ranking. Removing optional permit context changes briefing scope, not candidate ranking. Excluding source B leaves no eligible district questions.",
+          "Only one audited source version exists. Historical source-version sensitivity is unavailable; changing date labels cannot manufacture an older snapshot. Source, geography, category, eligibility or context changes must be labelled different evidence scopes. None measures changing physical condition, legal entitlement, owner consent or redevelopment feasibility."
+        ]
+      },
+      {
+        "id": "briefings",
+        "title": "Research Briefings and Reproducibility",
+        "paragraphs": [
+          "Pure functions buildReviewCandidates, runReviewScenario and compareReviewScenarios preserve deterministic selection. buildReviewBriefing and briefingToCsv retain source/version provenance, applied filters, capacity, strategy, selected questions, reasons, comparison scope, unresolved unit/stage discrepancies and limitations.",
+          "JSON and CSV include reproducible metadata; CSV has a metadata row even with an empty shortlist and protects formula-leading cells. Exports omit unnecessary addresses, owner identities, professionals' names and inferred coordinates. These are research briefings, not legal opinions or work orders."
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "Legal, Safety and Interpretation Limits",
+        "paragraphs": [
+          "Independent personal engineering POC, not an official government-endorsed decision system. Older buildings are not automatically unsafe, and building age alone is not a structural-safety assessment. No property-level structural or hazard score, demolition recommendation or dangerous-address ranking is produced.",
+          "Renewal-unit designation approval does not establish business-plan or rights-transformation approval, permit issuance, commencement, completion, current legal status or owner consent. Proceedings metadata does not establish current government case status. Missing public follow-up does not prove inactivity.",
+          "Use permits are flows, not standing building stock. Citywide building-age statistics were not allocated to districts. Administrative record counts do not establish redevelopment demand, legal eligibility, feasibility, investment value or resident benefit. Urban renewal and accelerated dangerous/old-building reconstruction are separate legal processes; historical regulation references do not determine present validity or individual eligibility."
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "Engineering Evidence",
+        "content": "evidence",
+        "paragraphs": [
+          "Upstream recorded verification reports 63 tests passed, scoped source audit/offline conversion, TypeScript/Vite production build, deterministic snapshot reproduction, JSON/CSV downloads, Chinese/English desktop/mobile checks, snapshot-loading failure/retry, and sampled existing market/use-permit/dashboard regressions. These are recorded source results, not a claim that Portfolio independently reran the upstream suite.",
+          "Browser evidence records local development at the GitHub Pages base path, including 390×844 mobile and table-local scrolling. Upstream screenshots below are local-development verification evidence, not government production-system screenshots or exhaustive device/accessibility certification."
+        ],
+        "links": [
+          {
+            "label": "Upstream local-development verification · Chinese desktop",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-desktop-zh.png"
+          },
+          {
+            "label": "Upstream local-development verification · English mobile",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-en.png"
+          },
+          {
+            "label": "Upstream local-development verification · Chinese mobile",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-zh.png"
+          }
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "What This Case Demonstrates",
+        "content": "future",
+        "paragraphs": [
+          "Administrative-data reconciliation, legal-stage semantics, conservative source contracts, missing-data discipline and deterministic capacity comparisons provide a fourth engineering approach alongside spatial allocation, historical investigation and infrastructure evidence review.",
+          "Public Data → Source Governance → Valid Statistical Meaning → Explainable Decisions → Reproducible Evidence. The central lesson is that an older building is not automatically unsafe and an approved renewal designation is not completed redevelopment."
+        ]
+      }
+    ],
+    "architecture": [
+      "Official Taipei Open Data",
+      "Scoped Node.js Acquisition",
+      "Source Identity and SHA256 Validation",
+      "Schema / ROC Date / Geography / Unit Validation",
+      "Versioned Static Decision Snapshot",
+      "Pure TypeScript Review Engine",
+      "React Decision Dashboard",
+      "Scenario Comparison",
+      "JSON/CSV Review Briefing"
+    ],
+    "architectureNote": "Static reviewed evidence, on-demand browser module and deterministic review allocation; no new backend, database or live government status integration.",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "urban-renewal-evidence-review-v1",
+      "explanation": "Configuration 1.0.0. Documentary research tiers depend on eligible evidence and distinct questions; they are not building-safety grades or geospatial weighted coverage.",
+      "thresholds": {
+        "caption": "Independent review dimensions · each underlying issue counted once",
+        "columns": [
+          {
+            "key": "dimension",
+            "label": "Dimension"
+          },
+          {
+            "key": "meaning",
+            "label": "Meaning"
+          }
+        ],
+        "rows": [
+          {
+            "id": "source_integrity",
+            "cells": {
+              "dimension": "source_integrity",
+              "meaning": "Source identity, duplication, definition or schema question."
+            }
+          },
+          {
+            "id": "status_traceability",
+            "cells": {
+              "dimension": "status_traceability",
+              "meaning": "A subsequent official administrative stage cannot be established."
+            }
+          },
+          {
+            "id": "temporal_freshness",
+            "cells": {
+              "dimension": "temporal_freshness",
+              "meaning": "Source version or resource update timing needs rechecking; distinct from case-action age."
+            }
+          },
+          {
+            "id": "scope_comparability",
+            "cells": {
+              "dimension": "scope_comparability",
+              "meaning": "Units, legal procedures, periods or populations cannot be directly reconciled."
+            }
+          },
+          {
+            "id": "geographic_completeness",
+            "cells": {
+              "dimension": "geographic_completeness",
+              "meaning": "Supported district question has missing or uncertain attribution/coverage."
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "Research priorities · not physical-danger classifications",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "Tier"
+          },
+          {
+            "key": "rule",
+            "label": "Rule"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — Verify First",
+              "rule": "Verified eligible official district evidence and at least two distinct material review dimensions."
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — Review",
+              "rule": "Eligible evidence with one material dimension."
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — Contextual Monitoring",
+              "rule": "Verified context without a qualifying material review question."
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "Insufficient Evidence",
+              "rule": "Essential source evidence cannot be validated; excluded with reasons rather than assigned a low research priority."
+            }
+          }
+        ]
+      },
+      "notes": [
+        "Ordering: priority tier; more distinct dimensions; more independent verified source types; more unresolved status questions; older known resource version; stable district ID; stable question ID. Unknown ages sort after known ages.",
+        "Age uses resourceUpdatedAt and fixed analysis date 2026-10-19, not the browser clock, catalogue metadata update, unknown first publication or individual case-action date. Default threshold: 365 days.",
+        "B resource update 2024-06-13 is 858 days old at analysis. This is source-version age, not evidence that any individual case was inactive for 858 days.",
+        "Capacity counts eligible research questions (5, 10, custom positive integer or unlimited). Case-record volume does not increase rank; all current 11 candidates are A with two dimensions and one source type."
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "Recorded capacity comparison · same snapshot and scope · 11 eligible district review questions",
+        "columns": [
+          {
+            "key": "capacity",
+            "label": "Capacity"
+          },
+          {
+            "key": "selected",
+            "label": "Selected districts · ordered"
+          },
+          {
+            "key": "districts",
+            "label": "Districts represented"
+          },
+          {
+            "key": "excluded",
+            "label": "Excluded by capacity"
+          },
+          {
+            "key": "tiers",
+            "label": "Selected tiers"
+          },
+          {
+            "key": "dimensions",
+            "label": "Distinct dimensions · union"
+          },
+          {
+            "key": "sources",
+            "label": "Verified source types"
+          }
+        ],
+        "rows": [
+          {
+            "id": "capacity-5",
+            "cells": {
+              "capacity": "5",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "districts": "5",
+              "excluded": "6",
+              "tiers": "5 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          },
+          {
+            "id": "capacity-10",
+            "cells": {
+              "capacity": "10",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區 → 萬華區 → 士林區 → 北投區 → 內湖區 → 南港區",
+              "districts": "10",
+              "excluded": "1",
+              "tiers": "10 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          },
+          {
+            "id": "unlimited",
+            "cells": {
+              "capacity": "Unlimited",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區 → 萬華區 → 士林區 → 北投區 → 內湖區 → 南港區 → 文山區",
+              "districts": "11",
+              "excluded": "0",
+              "tiers": "11 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "Observed strategy equality · capacity 5 · same audited population",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "Strategy"
+          },
+          {
+            "key": "selected",
+            "label": "Selected districts · ordered"
+          },
+          {
+            "key": "finding",
+            "label": "Observed finding"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps",
+            "cells": {
+              "strategy": "Evidence Gaps First (gaps)",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "Comparator ties resolve through stable district order; no danger or demand ranking."
+            }
+          },
+          {
+            "id": "balanced",
+            "cells": {
+              "strategy": "Balanced District Coverage (balanced)",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "Same selection and order: one equally qualified question per district; no additional differentiation."
+            }
+          },
+          {
+            "id": "reconciliation",
+            "cells": {
+              "strategy": "Source Reconciliation Focus (reconciliation)",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "Same selection and order: every candidate has a concrete missing later-stage linkage question."
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "Merged urban-renewal implementation · PR #5",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/pull/5"
+      },
+      {
+        "label": "Pinned source merge commit",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/commit/e3f37ff91816b4d51223ab686097a6cef542ca31"
+      },
+      {
+        "label": "Official source feasibility audit",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-source-audit.md"
+      },
+      {
+        "label": "Methodology and recorded scenario",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-methodology.md"
+      },
+      {
+        "label": "Chinese MVP specification and executed verification",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-mvp.zh-TW.md"
+      },
+      {
+        "label": "Versioned static snapshot",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/public/data/urban-renewal-decision/snapshot.json"
+      },
+      {
+        "label": "Pure evidence-review engine",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalDecision.ts"
+      },
+      {
+        "label": "Scenario comparisons and briefings",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalScenario.ts"
+      },
+      {
+        "label": "Source validation tests",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalSources.test.ts"
+      },
+      {
+        "label": "Decision and actual-snapshot scenario tests",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalDecision.test.ts"
+      },
+      {
+        "label": "Recorded browser verification",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-browser-review.md"
+      },
+      {
+        "label": "Offline snapshot builder",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/buildUrbanRenewalDecisionSnapshot.ts"
+      },
+      {
+        "label": "Decision types and source-suitability contract",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/types/urbanRenewalDecision.ts"
+      },
+      {
+        "label": "On-demand React decision panel",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/UrbanRenewalDecisionPanel.tsx"
+      }
+    ],
+    "previewAssets": [
+      {
+        "label": "Upstream local-development verification · Chinese desktop",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-desktop-zh.png"
+      },
+      {
+        "label": "Upstream local-development verification · English mobile",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-en.png"
+      },
+      {
+        "label": "Upstream local-development verification · Chinese mobile",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-zh.png"
+      }
+    ],
+    "futureExtensions": [
+      "Future research requires authoritative stable identifiers linking legal stages, validated district building-age stock, complete district/period coverage and additional genuinely audited source versions. Additional precision must follow evidence, not synthetic building-risk scores."
+    ]
+  },
+  "zh": {
+    "id": "urban-renewal",
+    "slug": "urban-renewal",
+    "displayNumber": "004",
+    "projectId": "taipei-real-estate-dashboard",
+    "policyDomain": "住宅與都市韌性",
+    "sourceRepository": "https://github.com/LEO0331/taipei-real-estate-dashboard",
+    "sourceVersion": "e3f37ff91816b4d51223ab686097a6cef542ca31",
+    "snapshotVersion": "ure-c81e4ef44e6c9868",
+    "title": "臺北市老舊建築與都市更新決策支援",
+    "summary": "從建物屋齡統計與都市更新行政資料，建立可追溯、可比較的政策查核優先順序。",
+    "maturity": "decision-support-poc",
+    "maturityLabel": "已完成的決策支援 POC",
+    "reviewNote": "獨立政策研究 POC，並非建築安全評估、法律資格判定或官方重建建議。已記錄分析日期：2026 年 10 月 19 日。",
+    "intendedUsers": "都市規劃研究人員、市政住宅政策分析人員、公開資料團隊及查核更新相關紀錄的行政人員。",
+    "implementedCapabilities": [
+      "官方來源可行性與統計單位調和",
+      "全市屋齡背景及行政區更新證據",
+      "版本化靜態快照與確定性查核層級",
+      "容量、策略與證據範圍比較",
+      "可重現的 JSON／CSV 研究簡報"
+    ],
+    "sections": [
+      {
+        "id": "problem",
+        "title": "政策問題",
+        "paragraphs": [
+          "在研究量能有限時，應依有效的來源定義與可重現假設，優先查核哪些行政證據問題？既有建物存量、屋齡級距、歷史使照、更新單元核准、容積獎勵、會議紀錄與實際目前案件狀態，分屬不同母體與階段。",
+          "這些紀錄不能直接拼成單一重建流程。老舊建物不自動等於不安全；更新單元劃定核准不代表重建完成。都市更新與危老加速重建是不同法律途徑；本專案不預測哪些房產應拆除。",
+          "預期使用者為都市規劃研究人員、市政住宅政策分析人員、公開資料團隊，以及查核更新相關紀錄的行政人員。"
+        ]
+      },
+      {
+        "id": "evolution",
+        "title": "從不動產探索到決策支援",
+        "paragraphs": [
+          "原有不動產儀表板探索實價登錄、住宅價格／租金指數、行政區比較、建築使照、土地使用管制、都市更新法規、社會住宅、人口／所得背景、公開行政紀錄，以及資料新鮮度與涵蓋情形。",
+          "已完成模組新增官方來源可行性稽核、統計單位調和、全市屋齡背景、行政區更新證據、版本快照、確定性研究查核優先順序、容量／替代策略情境、敏感度與證據範圍檢查，以及 JSON／CSV 簡報。既有市場與住宅資料並非全部參與排序。"
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": "系統架構",
+        "content": "architecture",
+        "paragraphs": [
+          "限定範圍的 Node.js 腳本在瀏覽器外擷取及轉換證據。發布版本化靜態決策快照前，檢查身分、原始位元組 SHA256、結構、民國日期、地理及統計單位；驗證失敗保留前次有效快照。",
+          "瀏覽器讀取靜態快照，按需載入純 TypeScript 查核引擎與 React 決策模組，輸入及設定均具版本。沒有新增應用後端、資料庫依賴或官方行政 API 整合；作品集不即時擷取來源資料。"
+        ]
+      },
+      {
+        "id": "sources",
+        "title": "官方來源與統計意義",
+        "paragraphs": [
+          "A — 既有建築物存量，context_only：1976–2025 共 50 筆全市年度紀錄，單位為棟。沒有經驗證的行政區屋齡分布。1976–2006 的屋齡欄位不可用，不能當成老屋零棟。2012 年屋齡分類無法與總建物數調和，明示保留差異；僅 18 個年度屋齡分布可比較。全市數字不分攤至行政區，也不作為行政區更新需求。",
+          "B — 自行劃定更新單元核准資料，在劃定範圍內為 verified_analysis：75 筆來源紀錄、75 個唯一文件識別碼、涵蓋 11 個行政區，報表月份為 2023 年 2 月至 2024 年 6 月，行政行為日期為 2023-02-01–2024-06-05。信義區沒有已驗證資料列，缺乏涵蓋不代表實際零案件。僅確認單元劃定核准，後續目前狀態未知；案件名稱比對不是權威跨階段識別碼。",
+          "C — 容積獎勵統計，context_only：2002–2025 共 24 筆全市年度紀錄。核准獎勵案件與獎勵樓地板面積（平方公尺）是不同統計單位，不是行政區案件狀態序列，也不是 B 的有效分母，不加入 B 的候選母體。",
+          "D — 既有使照彙總，context_only：2001–2026 共 8,855 筆，8,830 筆可歸屬行政區、25 筆未經有效行政區歸屬。核發是行政流量，不是現存建物存量，也未建立與 B 的權威連結。E — 審議紀錄，context_only：117 筆具日期會議紀錄；議程／紀錄中繼資料不證明核准、駁回或完工。",
+          "F — 官方進度查詢，context_only：供人工依地號／地址／道路核實，未驗證為支援批次操作的 API，也未自動擷取目前法律案件狀態。G — 法規與官方問答，context_only：支援區分都市更新與危老重建的法律背景，不判定資格或現行法效力。",
+          "G 保留版本有差異：此次檢視原始 CSV 有 37 筆日期紀錄，涵蓋 2008-07-30–2024-11-26；另外既有已產製目錄的 37 筆涵蓋 1997-07-30–2023-06-16。不得合併日期為同步有效法規清冊。保留 D／G 的原始擷取時間未知；2026-10-19T06:32:25.000Z 是本次檢視時間，不是原始取得時間。"
+        ],
+        "links": [
+          {
+            "label": "A · 既有建築物存量",
+            "url": "https://data.taipei/dataset/detail?id=7889e8a0-a71e-44e0-95c7-2213a7db1474"
+          },
+          {
+            "label": "B · 自行劃定更新單元核准資料",
+            "url": "https://data.taipei/dataset/detail?id=4bf19a69-86e7-40cb-93e2-a45dc7037f34"
+          },
+          {
+            "label": "C · 都市更新容積獎勵統計",
+            "url": "https://data.taipei/dataset/detail?id=cda6b568-0035-420b-bd05-6ca9bfd4bda0"
+          },
+          {
+            "label": "D · 建築使用執照",
+            "url": "https://data.taipei/dataset/detail?id=c876ff02-af2e-4eb8-bd33-d444f5052733"
+          },
+          {
+            "label": "E · 都市更新審議紀錄",
+            "url": "https://data.taipei/dataset/detail?id=dbe02285-8d6e-4b3d-97d7-700047cbe4da"
+          },
+          {
+            "label": "F · 官方人工進度查詢",
+            "url": "https://gis.uro.taipei/r_progress.aspx"
+          },
+          {
+            "label": "G · 法規目錄資料集",
+            "url": "https://data.taipei/dataset/detail?id=6bc30ace-9322-412c-9092-aa151bdf4a03"
+          },
+          {
+            "label": "官方都市更新與危老程序區分說明",
+            "url": "https://uro.gov.taipei/News_Content.aspx?n=5E79553CBBAE8DFB&s=0245995C5DF74EF8&sms=87415A8B9CE81B16"
+          }
+        ]
+      },
+      {
+        "id": "governance",
+        "title": "資料治理與證據資格",
+        "paragraphs": [
+          "來源可行性關卡先於排序。存量與流量、全市與行政區、單元劃定與後續法律階段、資源更新與個案行為、已驗證與背景證據，以及缺漏與零值，都須區分。這是考量證據的行政查核流程，不是把無關公開紀錄混成加權分數。",
+          "verified_analysis 在已驗證身分、結構、單位、地理及期間內可供分析；context_only 供獨立背景說明；limited 僅在明示寬鬆品質下支援有界問題；unavailable 揭露必要證據不可用；excluded 保留不相容證據及原因。不可用或排除皆不創造觀察；必要身分／地理／定義／期間仍須有效。",
+          "來源脈絡保存官方資料集／資源 ID、原始位元組 SHA256、欄位順序、擷取／資源更新／處理日期、單位、涵蓋與排除原因。已稽核快照 ure-c81e4ef44e6c9868 固定分析日期 2026-10-19、處理時間 2026-10-19T06:32:25.000Z。首次發布日期獨立維持未知，不以目錄中繼資料更新或資源修改日期代替。",
+          "公開輸入僅含行政區彙總與年度全市背景，不填補缺漏期間，不以房產名稱、模糊地址或所有權推測修補跨階段識別。公開後續資料未知，不代表機關缺乏內部作業紀錄。"
+        ]
+      },
+      {
+        "id": "methodology",
+        "title": "決策查核方法",
+        "content": "methodology",
+        "paragraphs": [
+          "urban-renewal-evidence-review-v1，設定 1.0.0，配置書面研究名額。單位為「行政區 × 行政查核問題」，不是建築、地號、家戶或重建專案。實際來源在 11 個有資料行政區各支援一個 designation_follow_up 問題，不為信義區建立合成候選。",
+          "五個查核維度採去重集合。重複缺漏欄位或同案多文件不產生獨立維度或驗證來源類型。已稽核母體每個候選都有 status_traceability、temporal_freshness、一個未解狀態問題及一種獨立已驗證來源（B），不受資料列數影響。",
+          "預設來源年齡門檻為 365 天。B 的資源更新日 2024-06-13 距固定分析日 2026-10-19 為 858 天；這是資源版本年齡，不是個案停滯期間。首次發布未知，目錄中繼資料更新日期另列。"
+        ]
+      },
+      {
+        "id": "scenarios",
+        "title": "實際情境：容量與不製造差異的比較",
+        "content": "scenarios",
+        "paragraphs": [
+          "已記錄快照 ure-c81e4ef44e6c9868；方法 urban-renewal-evidence-review-v1；設定 1.0.0；分析日期 2026-10-19。固定條件：全部行政區／類別、嚴格品質、優先門檻 C、納入來源 B、納入選擇性使照背景、缺口優先（gaps）。恰有 11 個合格問題代表 11 區，均為 A。",
+          "容量表保留來源比較器的行政區順序。容量 10 保留前五並新增五區；文山區只因該容量上限排除，不限容量時納入。兩個維度指 status_traceability 與 temporal_freshness 的聯集，不是加總候選維度次數；一種已驗證來源指 B，不是五個或十個獨立來源。",
+          "直接解讀：此順序來自證據查核比較器及穩定同分排序，不是危險建物、最老行政區、更新需求、公共安全風險、開發機會或居民利益排名。選取數是研究問題，不是建築棟數或完工專案數。",
+          "缺口優先與行政區均衡選取相同候選、順序也相同。每區只有一個同等資格問題，輪流選取不增加地理差異。來源調和策略也相同，因所有候選都有具體後續行政階段連結缺口。可信的決策支援系統應呈現不同策略何時得到相同答案，並說明原因；未證明任何策略較佳。"
+        ],
+        "links": [
+          {
+            "label": "固定實際情境與比較器說明",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-methodology.md"
+          }
+        ]
+      },
+      {
+        "id": "sensitivity",
+        "title": "敏感度與證據範圍限制",
+        "paragraphs": [
+          "容量 5 與 10，以及缺口優先與均衡／來源調和比較，固定同一快照及候選母體；每區一個同等資格問題。本次完整排序不變，容量只改變截取位置。這是同範圍研究資源配置比較，不是政策績效。",
+          "嚴格與寬鬆品質的實際選取相同，因來源 B 已驗證。品質設定改變證據範圍定義，結果相同不能解讀為純策略效果或排序改善。移除選擇性使照背景改變簡報範圍，不改變候選排序；排除來源 B 後，沒有合格行政區問題。",
+          "只有一個已稽核來源版本，無法展示歷史版本敏感度；修改日期標籤不能製造較舊快照。來源、地理、類別、資格或背景變動須標示不同證據範圍，皆不量測實體狀況、法律權利、所有權人同意或重建可行性變化。"
+        ]
+      },
+      {
+        "id": "briefings",
+        "title": "研究簡報與可重現性",
+        "paragraphs": [
+          "純函式 buildReviewCandidates、runReviewScenario 與 compareReviewScenarios 保持確定性選取。buildReviewBriefing 與 briefingToCsv 保存來源／版本脈絡、篩選、容量、策略、選取問題、理由、比較範圍、未解單位／階段差異及限制。",
+          "JSON／CSV 含可重現中繼資料；即使名單為空，CSV 仍保留中繼資料列並防護公式起始儲存格。匯出不含不必要地址、所有權人身分、專業人員姓名或推定座標。這是研究簡報，不是法律意見或工作命令。"
+        ]
+      },
+      {
+        "id": "limitations",
+        "title": "法律、安全與解讀限制",
+        "paragraphs": [
+          "此為獨立個人工程 POC，不是政府官方背書的決策系統。老舊建築不自動等於不安全，屋齡本身不是結構安全評估。不產生房產層級結構／危害分數、拆除建議或危險地址排名。",
+          "更新單元劃定核准不證明事業計畫或權利變換核准、使照核發、開工、完工、目前法律狀態或所有權人同意。會議中繼資料不證明目前政府案件狀態；缺乏公開後續資訊不代表停滯。",
+          "使照是流量，不是現存建物存量；全市屋齡數字未分攤至行政區。行政紀錄數不證明更新需求、法律資格、可行性、投資價值或居民利益。都市更新與危老加速重建是不同法律程序；歷史法規參考不能判定現行效力或個別資格。"
+        ]
+      },
+      {
+        "id": "evidence",
+        "title": "工程證據",
+        "content": "evidence",
+        "paragraphs": [
+          "上游驗證記錄 63 項測試通過、限定來源稽核／離線轉換、TypeScript／Vite 正式建置、確定性快照重現、JSON／CSV 下載、中英文桌面／行動版、快照載入失敗與重試，以及既有市場／使照／儀表板回歸抽查。這些是來源記錄，並非本作品集獨立重跑上游完整測試套件的宣稱。",
+          "瀏覽器證據來自 GitHub Pages 基底路徑的本機開發，包括 390×844 行動版與表格區域捲動。以下上游截圖為本機開發驗證證據，不是政府正式作業系統畫面，也不是全面裝置／無障礙認證。"
+        ],
+        "links": [
+          {
+            "label": "上游本機開發驗證證據 · 中文桌面",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-desktop-zh.png"
+          },
+          {
+            "label": "上游本機開發驗證證據 · 英文行動版",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-en.png"
+          },
+          {
+            "label": "上游本機開發驗證證據 · 中文行動版",
+            "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-zh.png"
+          }
+        ]
+      },
+      {
+        "id": "demonstrates",
+        "title": "本案例展現的能力",
+        "content": "future",
+        "paragraphs": [
+          "行政資料調和、法律階段語意、保守來源契約、缺漏資料紀律與確定性容量比較，構成空間配置、歷史調查與設施證據查核以外的第四種工程方法。",
+          "公開資料 → 來源治理 → 有效統計意義 → 可解釋決策 → 可重現證據。核心觀念是老舊建物不自動等於不安全，更新劃定核准也不等於重建完成。"
+        ]
+      }
+    ],
+    "architecture": [
+      "臺北市官方開放資料",
+      "限定範圍 Node.js 擷取",
+      "來源身分與 SHA256 驗證",
+      "結構／民國日期／地理／單位驗證",
+      "版本化靜態決策快照",
+      "純 TypeScript 查核引擎",
+      "React 決策儀表板",
+      "情境比較",
+      "JSON／CSV 查核簡報"
+    ],
+    "architectureNote": "經複核靜態證據、按需瀏覽器模組與確定性研究配置；沒有新增後端、資料庫或即時政府狀態整合。",
+    "methodology": {
+      "kind": "rule-based-priority",
+      "methodId": "urban-renewal-evidence-review-v1",
+      "explanation": "設定 1.0.0。書面研究層級依合格證據及不同問題決定，不是建築安全等級或地理加權覆蓋。",
+      "thresholds": {
+        "caption": "獨立查核維度 · 同一根本問題只計一次",
+        "columns": [
+          {
+            "key": "dimension",
+            "label": "維度"
+          },
+          {
+            "key": "meaning",
+            "label": "意義"
+          }
+        ],
+        "rows": [
+          {
+            "id": "source_integrity",
+            "cells": {
+              "dimension": "source_integrity",
+              "meaning": "來源身分、重複、定義或結構問題。"
+            }
+          },
+          {
+            "id": "status_traceability",
+            "cells": {
+              "dimension": "status_traceability",
+              "meaning": "無法確認後續官方行政階段。"
+            }
+          },
+          {
+            "id": "temporal_freshness",
+            "cells": {
+              "dimension": "temporal_freshness",
+              "meaning": "來源版本或資源更新時間待確認，不等於個案行為年齡。"
+            }
+          },
+          {
+            "id": "scope_comparability",
+            "cells": {
+              "dimension": "scope_comparability",
+              "meaning": "單位、法律程序、期間或母體無法直接調和。"
+            }
+          },
+          {
+            "id": "geographic_completeness",
+            "cells": {
+              "dimension": "geographic_completeness",
+              "meaning": "有證據支持的行政區問題，其歸屬／涵蓋缺漏或不確定。"
+            }
+          }
+        ]
+      },
+      "tiers": {
+        "caption": "研究優先順序 · 不是實體危險分類",
+        "columns": [
+          {
+            "key": "tier",
+            "label": "層級"
+          },
+          {
+            "key": "rule",
+            "label": "規則"
+          }
+        ],
+        "rows": [
+          {
+            "id": "a",
+            "cells": {
+              "tier": "A — 優先複核",
+              "rule": "已驗證且合格的官方行政區證據，具至少兩個不同重大查核維度。"
+            }
+          },
+          {
+            "id": "b",
+            "cells": {
+              "tier": "B — 例行複核",
+              "rule": "合格證據具一個重大維度。"
+            }
+          },
+          {
+            "id": "c",
+            "cells": {
+              "tier": "C — 脈絡觀察",
+              "rule": "已驗證背景，沒有符合的重大查核問題。"
+            }
+          },
+          {
+            "id": "insufficient",
+            "cells": {
+              "tier": "證據不足",
+              "rule": "必要來源證據無法驗證，附理由排除，不當成最低研究優先順序。"
+            }
+          }
+        ]
+      },
+      "notes": [
+        "排序依序為優先層級、不同維度較多、獨立已驗證來源類型較多、未解狀態問題較多、已知資源版本較舊、穩定行政區 ID、穩定問題 ID。未知年齡排在已知之後。",
+        "年齡採 resourceUpdatedAt 與固定分析日 2026-10-19，不採瀏覽器時鐘、目錄中繼資料更新、未知首次發布或個別行政行為日期。預設門檻 365 天。",
+        "B 資源更新日 2024-06-13 距分析日 858 天，是來源版本年齡，不表示任何個案停滯 858 天。",
+        "容量計算合格研究問題（5、10、自訂正整數或不限），資料列數不提高名次。目前 11 個候選均為 A，具兩個維度及一種來源。"
+      ]
+    },
+    "scenarioTables": [
+      {
+        "caption": "已記錄容量比較 · 相同快照與範圍 · 11 個合格行政區查核問題",
+        "columns": [
+          {
+            "key": "capacity",
+            "label": "容量"
+          },
+          {
+            "key": "selected",
+            "label": "選取行政區 · 依序"
+          },
+          {
+            "key": "districts",
+            "label": "涵蓋行政區"
+          },
+          {
+            "key": "excluded",
+            "label": "因容量排除"
+          },
+          {
+            "key": "tiers",
+            "label": "選取層級"
+          },
+          {
+            "key": "dimensions",
+            "label": "不同維度 · 聯集"
+          },
+          {
+            "key": "sources",
+            "label": "已驗證來源類型"
+          }
+        ],
+        "rows": [
+          {
+            "id": "capacity-5",
+            "cells": {
+              "capacity": "5",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "districts": "5",
+              "excluded": "6",
+              "tiers": "5 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          },
+          {
+            "id": "capacity-10",
+            "cells": {
+              "capacity": "10",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區 → 萬華區 → 士林區 → 北投區 → 內湖區 → 南港區",
+              "districts": "10",
+              "excluded": "1",
+              "tiers": "10 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          },
+          {
+            "id": "unlimited",
+            "cells": {
+              "capacity": "不限",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區 → 萬華區 → 士林區 → 北投區 → 內湖區 → 南港區 → 文山區",
+              "districts": "11",
+              "excluded": "0",
+              "tiers": "11 A",
+              "dimensions": "2",
+              "sources": "1"
+            }
+          }
+        ]
+      },
+      {
+        "caption": "實際策略相同 · 容量 5 · 相同已稽核母體",
+        "columns": [
+          {
+            "key": "strategy",
+            "label": "策略"
+          },
+          {
+            "key": "selected",
+            "label": "選取行政區 · 依序"
+          },
+          {
+            "key": "finding",
+            "label": "實際發現"
+          }
+        ],
+        "rows": [
+          {
+            "id": "gaps",
+            "cells": {
+              "strategy": "缺口優先（gaps）",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "比較器同分依穩定行政區順序處理，不是危險或需求排名。"
+            }
+          },
+          {
+            "id": "balanced",
+            "cells": {
+              "strategy": "行政區均衡（balanced）",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "選取及順序相同：每區一個同等資格問題，不增加差異。"
+            }
+          },
+          {
+            "id": "reconciliation",
+            "cells": {
+              "strategy": "來源調和（reconciliation）",
+              "selected": "中正區 → 大同區 → 中山區 → 松山區 → 大安區",
+              "finding": "選取及順序相同：所有候選都有具體後續階段連結缺口。"
+            }
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "label": "已合併的都市更新決策實作 · PR #5",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/pull/5"
+      },
+      {
+        "label": "固定來源合併提交",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/commit/e3f37ff91816b4d51223ab686097a6cef542ca31"
+      },
+      {
+        "label": "官方來源可行性稽核",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-source-audit.md"
+      },
+      {
+        "label": "方法與已記錄情境",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-methodology.md"
+      },
+      {
+        "label": "中文 MVP 規格與已執行驗證",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-mvp.zh-TW.md"
+      },
+      {
+        "label": "版本化靜態快照",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/public/data/urban-renewal-decision/snapshot.json"
+      },
+      {
+        "label": "純證據查核引擎",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalDecision.ts"
+      },
+      {
+        "label": "情境比較與簡報",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalScenario.ts"
+      },
+      {
+        "label": "來源驗證測試",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalSources.test.ts"
+      },
+      {
+        "label": "決策與實際快照情境測試",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalDecision.test.ts"
+      },
+      {
+        "label": "已記錄瀏覽器驗證",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-browser-review.md"
+      },
+      {
+        "label": "離線快照建置器",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/buildUrbanRenewalDecisionSnapshot.ts"
+      },
+      {
+        "label": "決策型別與來源適用性契約",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/types/urbanRenewalDecision.ts"
+      },
+      {
+        "label": "按需載入的 React 決策面板",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/UrbanRenewalDecisionPanel.tsx"
+      }
+    ],
+    "previewAssets": [
+      {
+        "label": "上游本機開發驗證證據 · 中文桌面",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-desktop-zh.png"
+      },
+      {
+        "label": "上游本機開發驗證證據 · 英文行動版",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-en.png"
+      },
+      {
+        "label": "上游本機開發驗證證據 · 中文行動版",
+        "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/evidence/urban-renewal-mobile-zh.png"
+      }
+    ],
+    "futureExtensions": [
+      "後續研究需權威且穩定的跨法律階段識別碼、經驗證行政區屋齡存量、完整行政區／期間涵蓋，以及真正新增且經稽核的來源版本。精度應隨證據提升，不製造合成建物風險分數。"
+    ]
+  }
+}

@@ -1,32 +1,33 @@
 # Session Handoff
 
-**Last updated:** 2026-10-20
+**Last updated:** 2026-10-21
 
-**Current objective:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Evidence Case004.
+**Current objective:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
 
-**Current status:** Complete and published as draft PR #20: https://github.com/LEO0331/portfolio/pull/20 (verified open/unmerged). Branch codex/govtech-urban-renewal-v1-3, implementation a985054, based on merged main a39f900 (Portfolio PR #19). Do not merge automatically.
+**Current status:** Complete and published as draft PR #21: https://github.com/LEO0331/portfolio/pull/21 (verified open/unmerged). Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). Do not merge automatically.
 
 ## Blockers
 
-None for implementation/publication. Five pre-existing high Tailwind/braces-chain advisories remain separately disclosed.
+None for implementation/publication. Six high package audit findings remain separately documented.
 
 ## Files Relevant to the Next Update
 
-- src/data/govtechUrbanRenewal.ts/.zh.ts:12localized sections, sourcesA-G, exact11question population, capacities/strategies, source-date/statistical/legal limits.
-- CaseID/type/registration,govtechCopy,RealEstateprojectcopy/relationship,AppRouter/routeConfig and generatedsitemap.
-- tests/e2e/govtech-urban-renewal.spec.ts,case-data/Civic/HeavyRaincatalog expectations,tools/govtech.test.mjs and fullHeavyRainfixture. Original Bin/Civicfixtures and all3case data unchanged.
-- docs/govtech-case-study-004.zh-TW.md,govtech-urban-renewal-source-audit.md,govtech-v1.3-verification.md,visualverdict/fivescreenshots; READMEpair,Case005template,currentstatusnotes and lifecyclefiles.
+- src/data/govtechShadeEquity.ts/.zh.ts:14 bilingual sections, gate14,896inventory/0eligible, source/admission/matching/capacity/tolerance tables and pinned evidence.
+- Project.govtechCaseIds and getProjectGovTechCases(project,locale): explicit-array precedence, ordered deduplication and ownership validation; Bin Map has two cases, other owners retain legacy single fields.
+- Drawer/localized labels, case ID/registration, project/domain/i18n copy, AppRouter/static metadata, generic section wrapping and route lazy loading.
+- Tests include new Shade suite, Urban full fixture, four prior case preservation, relation edge cases, dual links, static metadata and homepage narrative deferral. Original fixtures remain unchanged.
+- docs/govtech-case-study-005.zh-TW.md, govtech-shade-equity-source-audit.md, govtech-v1.4-verification.md, visual verdict and seven local screenshots; template/READMEs/current-status/lifecycle and generated sitemap.
 
 ## Recommended Next Step
 
-Review Case004 PR and pinned evidence, then merge only through human review. Consider existing planned publicWi-Fiserviceallocation for Case005 after source feasibility audit; recommendation only, no implementation here. Preserve rodent-specific/safety-map/transit-congestion planned work and deferred Binoperations.
+Review the Case005 PR and evidence; merge only through human review. Follow Case006 template for potential public Wi-Fi service-allocation research after source audit; no new policy implementation is included. Preserve the original planned roadmap and deferred Bin operations.
 
 ## Verification
 
-Baseline22unit64Playwright; final22unit77Playwright17/17trackedflows(100%),TypeScript/build,18indexableroutes,harness/diff. All4casesEN/ZH actualroot/Pages generateddeepentries direct/refresh/canonical/lang,Case004locale/404,fivewidths320-1440,keyboard/mobile/light/dark. Visual95/100; independent read-only review no remaining actionable issues. No new source-data runtime request; dependencies/pins unchanged.
+Baseline on2026-10-20:22 unit/77 Playwright, clean install, build/harness/diff and17 tracked flows. Final2026-10-21:22 unit/92 Playwright,17/17coverage, TypeScript/build,20 indexable routes, both-base static metadata plus actual ten bilingual case URLs per base, locale/404, five widths, keyboard/mobile/light/dark and visual95/100. Main script307.85kB/98.93kB gzip; full narrative catalogue deferred. See versioned verification for exact failures, fixes, captures and reproduction.
 
-Pinnedsourcee3f37ff91816b4d51223ab686097a6cef542ca31,snapshoture-c81e4ef44e6c9868,methodurban-renewal-evidence-review-v1/config1.0.0,analysis2026-10-19. Purefunctionreproduction:11A,each2dimensions/1verifiedsource;5/10/unlimited selects5/10/11districts,excludes6/1/0. Three strategies same; strictness/permitcontext changes scope but not recorded selection; excludeB noeligible. Upstream63tests are recorded evidence, not independently rerun suite.
+Source612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9; sourceIDshade-source-v1-078b91443dc33e45; derivedIDshade-equity-v1-8e4cfb4029d0831d; methodshade-equity-evidence-review-v1/config1.0.0. Source generation2026-10-20T00:41:41.554Z. All14,896 units fail verified-length admission;0eligible/0selected at5/10/balanced5. Tolerance0/2/5 changes associations and evidence scope, not real trees or shade. Source471tests/160E2E/performance are recorded upstream results, not rerun here.
 
 ## Remaining Risks
 
-Five existing high toolchain advisories;init.sh stops at audit, downstream checks passed separately. No lintscript;buildrunsTypeScript. Citywideage/flow/designation/stage/context/retained-law-version distinctions remain essential. Missingfollowup is not inactivity;858days describes resourceage. No propertysafety/legaleligibility/consent/investment model,governmentendorsement or postmerge deployment certification. Full evidence and recovery notes in versionedverification.
+Six high package audit findings: five Tailwind/braces-chain entries plus Vite8.2.2 newly reported launch-editor advisories. No manifest/lockfile/pin change; init.sh stops at audit and downstream commands ran separately. No standalone lint script; TypeScript runs in build. Measurement/coverage, canopy/heat, occupancy/vacancy and planting feasibility remain unverified; no official endorsement or live deployment certification. Earlier case boundaries remain preserved.

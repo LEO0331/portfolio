@@ -2,42 +2,43 @@
 
 ## Current State
 
-**Last updated:** 2026-10-20
+**Last updated:** 2026-10-21
 
-**Active work:** Portfolio GovTech Showcase v1.3 — Aging Buildings & Urban Renewal Case004.
+**Active work:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
 
-**Status:** Complete and published as draft PR #20 (https://github.com/LEO0331/portfolio/pull/20), verified open and unmerged on codex/govtech-urban-renewal-v1-3. Implementation a985054, based on main a39f900 (merged Portfolio PR #19). No automatic merge.
+**Status:** Complete and published as draft PR #21 (https://github.com/LEO0331/portfolio/pull/21), verified open and unmerged. Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). No automatic merge.
 
 ### Completed
 
-- Four bilingual completed POCs: Bin001,Civic002,HeavyRain003,UrbanRenewal004. Reused shared case renderer/rule-based methodology/scenario tables without case branches or new analytical variants.
-- New case cites pinned real-estate PR5/e3f37ff91816b4d51223ab686097a6cef542ca31, snapshoture-c81e4ef44e6c9868, methodurban-renewal-evidence-review-v1/config1.0.0; fixed analysis2026-10-19, Portfolioverification2026-10-20.
-- Real Estate Dashboard existing project relationship/copy, bilingual routes/SEO/sitemap and housing domain maturity updated; ID/slug/demo/repo/image/stack/featured=true, original explorers and pin order preserved.
--16-section Chinese specification, concise pinned-source audit, v1.3verification/screenshots/verdict, README pair, Case005template and current-status notes updated. Historical verification and three earlier case records unchanged.
+- Five bilingual cases reference four existing projects. Bin Map intentionally owns Cases001/005 through an ordered array; legacy single-case projects retain their existing contract. One localized normalizer validates ownership and deduplicates references.
+- Shade GIS inventory/evidence-readiness POC is complete; 14,896 admitted sidewalk features yield zero eligible ranked candidates pending measurement/comparability verification. Actual matching, capacity and tolerance tables are source-backed, with no fictional shortlist or measured shade/heat claim.
+- Source pinned to Bin Map PR #19 /612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9; source snapshot shade-source-v1-078b91443dc33e45, derived shade-equity-v1-8e4cfb4029d0831d, method shade-equity-evidence-review-v1 /config1.0.0. Source generation stays2026-10-20T00:41:41.554Z.
+- Full Chinese/English case,17-section specification, pinned source audit, updated template/READMEs/status copy and local production screenshots are present. Prior case technical values, source versions and original fixtures are preserved; only the obsolete Bin001 future roadmap changed.
+- Catalogue-dependent pages load on demand; homepage main JavaScript is307.85kB (98.93kB gzip), and no full case narrative is fetched initially. Shared prose wraps long hashes on mobile.
 
 ### Verification Evidence
 
-- Baseline before app edits: cleaninstall,harness,22unit,TypeScript/build,64Playwright/17trackedflows,diff passed;5existing high audit advisories.
-- Final:22unit,77Playwright/17trackedflows(100%),TypeScript/build,18indexable routes,harness/diff passed. Existing Bin/Civic fixtures and new full HeavyRain EN/ZH fixture pass.
-- Actual root/Pages generated entries:all4casesEN/ZH direct/refresh/canonical/lang; Case004locale/404; widths320/390/768/1024/1440no overflow; keyboard tables/mobile/light/dark passed. Visual95/100; independent factual/integration review found no remaining actionable issues.
-- Pinned pure functions reproduce11eligibleA questions; capacities5/10/unlimited select5/10/11districts, capacity excludes6/1/0,2distinct dimension types and1verified source type. Gaps/balanced/reconciliation identical; no invented differentiation.
-- No dependency/lockfile/upstream changes. Five existing high Tailwind/braces-chain findings remain; full details and test-only JSON import discovery correction in docs/govtech-v1.3-verification.md.
+- Baseline2026-10-20: clean install, harness,22 unit, TypeScript/build,77 Playwright and17/17 tracked coverage passed; five existing high audit findings.
+- Final2026-10-21:22 unit,92 Playwright,17/17 tracked flows (100%), TypeScript/build with20 indexable routes, both-base static metadata and actual root/Pages direct/refresh/canonical/locale/404 passed.
+- No body overflow at320/390/768/1024/1440; localized mobile light/dark, keyboard tables/cards, dual drawer links, malformed/deduplicated/foreign relationship cases and homepage deferred loading passed.
+- Visual95/100 after correcting the long-hash overflow; source review corrected20m wording to default setting. Source471 tests/160E2E are attributed recorded evidence, not independently rerun. No GIS ETL or source engine ran in Portfolio.
+- Refreshed audit now reports six high package findings: five prior Tailwind/braces-chain findings plus newly reported Vite advisories against the unchanged locked version. No dependency/lockfile or pin changes. Detailed failures/recoveries and evidence: docs/govtech-v1.4-verification.md.
 
 ### Blockers
 
-- None for implementation or publication. Draft PR #20 is ready for human review; existing audit advisories remain disclosed.
+None for implementation or publication. Draft PR #21 is ready for human review; dependency advisories remain disclosed separately.
 
 ### Remaining Risks
 
-- Source building age is citywide with missing early breakdowns and2012mismatch; district designation coverage/status remain limited. Stocks,flows,legal stages and retained regulation versions cannot form an inferred redevelopment pipeline.
--858days is source-version age, not case inactivity. Priorities are research work, not structural safety, legal eligibility, owner consent, investment value or official recommendations.
-- Five existing audit findings stop init.sh at audit; downstream commands passed separately. Local delivery does not certify deployment or government endorsement.
+- Unverified sidewalk-length semantics, measurement units and comparable source coverage keep ranked selection unavailable. Registered trees are not canopy/shade, pits are not vacancies, and tolerance changes are not ecological improvement.
+- Six high audit findings remain; init.sh stops at audit and downstream verification ran separately. Dependency remediation remains a separate scoped change.
+- Independent personal POCs have no official government endorsement, planting approval or post-merge deployment certification. Earlier case limitations remain unchanged.
 
 ### Next Session Should
 
-1. Review Case004 PR and versioned evidence; merge only through human review.
-2. Consider existing planned Wi-Fi service-allocation topic for Case005, subject to source feasibility audit and prioritization. No new policy implementation authorized by this release.
-3. Address existing toolchain advisories separately; preserve earlier source evidence and homepage pins.
+1. Review Case005 PR, bilingual evidence and multiple-case relationship, then merge only through human review.
+2. Consider public Wi-Fi service-allocation research for Case006 after a source-feasibility audit; this remains a recommendation, not implemented work.
+3. Address the existing dependency advisories separately, preserving current evidence and homepage pins.
 
 ## Update Contract
 
@@ -220,3 +221,14 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Five pre-existing high audit findings remain; no dependencychanges. Publication pending; next recommended research topic is existing planned Wi-Fiserviceallocation, outside this release.
 
 - Publication: implementation a985054 pushed; draft PR #20 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/20. GitHub connector403 recovered using existing Git authentication through the API, with credentials kept in memory and excluded from output/files. Final documentation whitespace was corrected and complete branch diff check passed.
+
+### 2026-10-21 — GovTech Showcase v1.4 Case005 completion
+
+- Resumed saved work after the2026-10-20 account usage interruption; retained audit, tests, English content and multi-case integration. Finished Chinese data, documentation and all verification.
+- Added backward-compatible project case arrays, one ownership-validating localized normalizer, two distinguishable Bin Map drawer links and the fifth source-backed case. No duplicated root project, source ETL, GIS engine or dependency addition.
+- New GIS/capacity/tolerance tables preserve raw/admitted/associated/eligible stages; all14,896 real units remain ineligible. Conditional nonempty synthetic tests remain distinct from actual Taipei results.
+- Final22 unit /92 Playwright /17 tracked flows, TypeScript/build,20 indexable routes, both bases, five widths, keyboard/dark-mode and visual95/100 passed. Hash overflow and wording-sensitive scope assertion corrected; lazy routes reduced main bundle from523.58kB to307.85kB. Existing immediate-count tests now await visible content; no tests disabled.
+- Changed groups: case data/types/lookup, project/drawer/i18n/domain/route integration, generic prose wrapping and route loading; relationship/source/scenario/static/browser tests plus Urban fixture; README/template/spec/audit/verdict/screenshots, sitemap and lifecycle.
+- Today's audit reports six high package findings (five prior toolchain plus newly reported Vite group), with unchanged manifests/lockfile. Source471tests/160E2E and performance remain recorded upstream evidence. Publication pending; suggested next topic is existing planned Wi-Fi service allocation.
+
+- Publication: implementation c7ab0ca pushed; draft PR #21 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21. Connector403 recovered through GitHub API with existing Git credentials kept in memory and excluded from output/files. Lifecycle-only follow-up records completion; application verification remains valid.
