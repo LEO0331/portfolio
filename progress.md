@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
 
-**Status:** Implementation and verification complete on codex/govtech-shade-equity-v1-4, based on merged main bbe90d9 (Portfolio PR #20). Reviewable PR publication pending. No automatic merge.
+**Status:** Complete and published as draft PR #21 (https://github.com/LEO0331/portfolio/pull/21), verified open and unmerged. Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). No automatic merge.
 
 ### Completed
 
@@ -26,7 +26,7 @@
 
 ### Blockers
 
-None for implementation. Publication is the final pending step; dependency advisories remain disclosed separately.
+None for implementation or publication. Draft PR #21 is ready for human review; dependency advisories remain disclosed separately.
 
 ### Remaining Risks
 
@@ -230,3 +230,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Final22 unit /92 Playwright /17 tracked flows, TypeScript/build,20 indexable routes, both bases, five widths, keyboard/dark-mode and visual95/100 passed. Hash overflow and wording-sensitive scope assertion corrected; lazy routes reduced main bundle from523.58kB to307.85kB. Existing immediate-count tests now await visible content; no tests disabled.
 - Changed groups: case data/types/lookup, project/drawer/i18n/domain/route integration, generic prose wrapping and route loading; relationship/source/scenario/static/browser tests plus Urban fixture; README/template/spec/audit/verdict/screenshots, sitemap and lifecycle.
 - Today's audit reports six high package findings (five prior toolchain plus newly reported Vite group), with unchanged manifests/lockfile. Source471tests/160E2E and performance remain recorded upstream evidence. Publication pending; suggested next topic is existing planned Wi-Fi service allocation.
+
+- Publication: implementation c7ab0ca pushed; draft PR #21 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21. Connector403 recovered through GitHub API with existing Git credentials kept in memory and excluded from output/files. Lifecycle-only follow-up records completion; application verification remains valid.

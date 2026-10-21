@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
 
-**Current status:** Implementation and verification complete; PR publication pending on codex/govtech-shade-equity-v1-4, based on merged main bbe90d9 (Portfolio PR #20). Do not merge automatically.
+**Current status:** Complete and published as draft PR #21: https://github.com/LEO0331/portfolio/pull/21 (verified open/unmerged). Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). Do not merge automatically.
 
 ## Blockers
 

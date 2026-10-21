@@ -369,7 +369,7 @@
       "id": "govtech-shade-equity-v1-4-2026-10",
       "name": "Present GIS evidence-readiness Shade Equity as Case005",
       "description": "Add bilingual verified source/GIS tables and gated zero-ranked scenarios, plus backward-compatible multiple case links per project.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-urban-renewal-v1-3-2026-10"
       ],
@@ -386,7 +386,7 @@
         "Bin001 technical fixture preserved with only explicitly authorized roadmap update; Civic/HeavyRain/Urban complete fixtures pass; pins and external project identities unchanged",
         "Actual both-base direct/refresh/metadata/locale/404,five widths,mobile/light/dark,keyboard tables and visual95/100 passed; main307.85kB with case narratives deferred",
         "Six high audit package findings on unchanged dependencies: previous five Tailwind/braces plus newly reported Vite group; source suite/ETL not rerun",
-        "Publication pending; do not merge automatically"
+        "Draft PR21 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21; implementation c7ab0ca on codex/govtech-shade-equity-v1-4"
       ]
     }
   ]

@@ -80,3 +80,7 @@ The 2026-10-20 baseline reported five high Tailwind/braces-chain findings. The r
 Suggested next topic remains the existing planned public Wi-Fi service-allocation research, subject to source-feasibility review; no new policy work is implemented here.
 
 Documentation consistency:20 Markdown documents,171 local links with zero broken targets, and all17 required Case005 headings verified. Newly added text files were also checked for whitespace before staging. Dependency manifests,lockfile,pin snapshot,original baseline fixtures,Case002–004 data and historical verification reports are unchanged.
+
+## Publication
+
+[Draft PR #21](https://github.com/LEO0331/portfolio/pull/21) created, attached and verified open/unmerged. Implementation c7ab0ca88d530bad3b400c662730e09fbd4ae5cc is pushed on codex/govtech-shade-equity-v1-4. Connector creation returned403; the GitHub API succeeded using existing Git credentials held in memory and excluded from files/output. This lifecycle-only follow-up does not change the verified application. No automatic merge.
