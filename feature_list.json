@@ -394,7 +394,7 @@
       "id": "govtech-neihu-congestion-v1-5-2026-10",
       "name": "Present Neihu traffic observation readiness as Case006",
       "description": "Add bilingual detector/source-quality review and the gated historical performance result with pinned capacity scenarios, using the shared case renderer and project relation.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-shade-equity-v1-4-2026-10"
       ],
@@ -411,7 +411,7 @@
         "All five previous cases and original fixtures preserved; completeShadefixture added; Bin dual relation/pins/lazy loading and Crash identity preserved",
         "Actualroot/Pages direct/refresh/metadata/locale/404,five widths,keyboard/mobile/dark passed; visual95/100; read-only factual review clear",
         "Six existing high dependency package findings; no manifests/lockfile changes; Policy5 remains planned",
-        "Publication pending; do not merge automatically"
+        "Draft PR22 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/22; implementation5a82186 on codex/govtech-neihu-congestion-v1-5"
       ]
     }
   ]

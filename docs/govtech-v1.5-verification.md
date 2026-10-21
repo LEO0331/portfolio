@@ -73,3 +73,7 @@ Six existing high dependency package findings (braces,chokidar,fast-glob,microma
 Quality-review selection is useful engineering work but does not establish traffic severity, worst bottlenecks, travel-time savings, causal crash/congestion relations or effective interventions. Historical observations, sampling, timezones, continuity, geography and source semantics remain unverified. Synthetic fixtures demonstrate conditional logic only. Independent personal POC, not government traffic operations or official deployment acceptance. Policy5 remains future work; Case007 must reuse the existing project relation after source verification.
 
 Documentation consistency:23 Markdown documents,203 local links with zero broken targets,and all18 required Case006 headings verified. Newly added text files were checked for whitespace before staging. Dependency manifests,lockfile,pins,all five prior case data,original fixtures,normalizer/drawer and historical verification reports are unchanged.
+
+## Publication
+
+[Draft PR #22](https://github.com/LEO0331/portfolio/pull/22) created, attached and verified open/unmerged. Implementation5a82186a5353bf5a2e460203f1042d2862d657f6 is pushed on codex/govtech-neihu-congestion-v1-5. Connector creation returned403; the GitHub API succeeded using existing Git credentials held in memory and excluded from files/output. This lifecycle-only follow-up does not change the verified application. No automatic merge.

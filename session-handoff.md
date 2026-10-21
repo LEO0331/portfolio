@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Congestion & Observation Readiness Case006.
 
-**Current status:** Implementation and verification complete; PR publication pending on codex/govtech-neihu-congestion-v1-5, based on merged main b629614 (Portfolio PR #21). Do not merge automatically.
+**Current status:** Complete and published as draft PR #22: https://github.com/LEO0331/portfolio/pull/22 (verified open/unmerged). Branch codex/govtech-neihu-congestion-v1-5, implementation5a82186, based on merged main b629614 (Portfolio PR #21). Do not merge automatically.
 
 ## Blockers
 

@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Observation Readiness Case006.
 
-**Status:** Implementation and verification complete on codex/govtech-neihu-congestion-v1-5, based on merged main b629614 (Portfolio PR #21). Reviewable PR publication pending; no automatic merge.
+**Status:** Complete and published as draft PR #22 (https://github.com/LEO0331/portfolio/pull/22), verified open and unmerged. Branch codex/govtech-neihu-congestion-v1-5, implementation5a82186, based on merged main b629614 (Portfolio PR #21). No automatic merge.
 
 ### Completed
 
@@ -26,7 +26,7 @@
 
 ### Blockers
 
-None for implementation. PR publication is the final pending step; six existing high dependency findings remain disclosed separately.
+None for implementation or publication. Draft PR #22 is ready for human review; six existing high dependency findings remain separately disclosed.
 
 ### Remaining Risks
 
@@ -241,3 +241,5 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Changed groups: new data,caseID/registration,routes/project/domain/home CTA copy,sitemap; data/static/browser regressions and Shade fixture; spec/audit/template/README/current-status/verification/verdict/screenshots and lifecycle.
 - Full baseline22unit92Playwright; final22unit105Playwright,17/17coverage,TypeScript/build22routes,both bases,five widths,keyboard/dark and visual95/100 passed on first integration run. Existing five case records/fixtures,pins and dependencies remain unchanged.
 - Six existing high audit package findings remain. Publication pending; Policy5 bus-network/service research is planned next in the same Crash Map repository, outside this release.
+
+- Publication: implementation5a82186 pushed; draft PR #22 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/22. Connector403 recovered through GitHub API with existing Git credentials held in memory and excluded from output/files. Lifecycle-only follow-up records completion; app verification remains valid.
