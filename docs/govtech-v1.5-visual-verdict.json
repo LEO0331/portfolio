@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case006 adds a source matrix and objective-labelled quality/performance tables within the established case layout."
+  ],
+  "suggestions": [],
+  "reasoning": "The six-case landing, source-quality shortlist, prominently empty historical-performance gate and bilingual mobile dark view preserve Portfolio typography, spacing and colors. Scenario tables remain locally scrollable and unknown measurements stay explicit."
+}

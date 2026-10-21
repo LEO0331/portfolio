@@ -23,6 +23,7 @@ const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   "govtech-heavy-rain-preparedness": <GovTechCaseStudyPage slug="heavy-rain-preparedness" />,
   "govtech-urban-renewal": <GovTechCaseStudyPage slug="urban-renewal" />,
   "govtech-shade-equity": <GovTechCaseStudyPage slug="shade-equity" />,
+  "govtech-neihu-congestion": <GovTechCaseStudyPage slug="neihu-congestion" />,
   about: <AboutPage />,
   contact: <ContactPage />,
   "not-found": <NotFoundPage />

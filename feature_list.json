@@ -386,7 +386,32 @@
         "Bin001 technical fixture preserved with only explicitly authorized roadmap update; Civic/HeavyRain/Urban complete fixtures pass; pins and external project identities unchanged",
         "Actual both-base direct/refresh/metadata/locale/404,five widths,mobile/light/dark,keyboard tables and visual95/100 passed; main307.85kB with case narratives deferred",
         "Six high audit package findings on unchanged dependencies: previous five Tailwind/braces plus newly reported Vite group; source suite/ETL not rerun",
-        "Draft PR21 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21; implementation c7ab0ca on codex/govtech-shade-equity-v1-4"
+        "Draft PR21 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21; implementation c7ab0ca on codex/govtech-shade-equity-v1-4",
+        "2026-10-21: PortfolioPR21 merged to b629614b75dce4acc3ccac4bde826f448ebda256; earlier draft state is historical."
+      ]
+    },
+    {
+      "id": "govtech-neihu-congestion-v1-5-2026-10",
+      "name": "Present Neihu traffic observation readiness as Case006",
+      "description": "Add bilingual detector/source-quality review and the gated historical performance result with pinned capacity scenarios, using the shared case renderer and project relation.",
+      "status": "in-progress",
+      "dependencies": [
+        "govtech-shade-equity-v1-4-2026-10"
+      ],
+      "doneCriteria": [
+        "Six bilingual cases, preserved earlier technical evidence and homepage pins",
+        "Pinned source statuses,58quality/0performance populations and exact capacity5/10 device selections",
+        "Existing Crash Map project array relationship, routes/SEO/localization/lazy loading and Policy5planned status",
+        "Updated documentation and executed full/both-base/visual verification; one reviewable PR without merging"
+      ],
+      "evidence": [
+        "Pinned CrashPR7/deb28d5d5b4e608eb04d89743bc3fea632d74c8a, snapshotneihu-readiness-49f28aaa55758ffe and exact120789B SHA256 verified",
+        "Offline unchanged pure functions reproduced quality5/10 IDs and3/5roads;58quality27urgent31review0ready,0performance; no source ETL/history aggregation",
+        "Baseline22unit92Playwright; final22unit105Playwright17trackedflows,TypeScript/build22indexableroutes,harness/diff passed",
+        "All five previous cases and original fixtures preserved; completeShadefixture added; Bin dual relation/pins/lazy loading and Crash identity preserved",
+        "Actualroot/Pages direct/refresh/metadata/locale/404,five widths,keyboard/mobile/dark passed; visual95/100; read-only factual review clear",
+        "Six existing high dependency package findings; no manifests/lockfile changes; Policy5 remains planned",
+        "Publication pending; do not merge automatically"
       ]
     }
   ]

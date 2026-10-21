@@ -5,6 +5,7 @@ import baseline from "../fixtures/govtech-bin-baseline.json" with { type: "json"
 import civicBaseline from "../fixtures/govtech-civic-baseline.json" with { type: "json" };
 import heavyRainBaseline from "../fixtures/govtech-heavy-rain-baseline.json" with { type: "json" };
 import urbanBaseline from "../fixtures/govtech-urban-renewal-baseline.json" with { type: "json" };
+import shadeBaseline from "../fixtures/govtech-shade-equity-baseline.json" with { type: "json" };
 
 // Normalize only the reusable template's structural migration; preserve every
 // pre-existing Bin001 copy, source, evidence, weight and scenario cell verbatim.
@@ -47,6 +48,9 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
   test(`UrbanRenewal004 ${locale} preserves the complete frozen v1.3 record`, () => {
     expect(records.find((record) => record.id === "urban-renewal")).toEqual(urbanBaseline[locale]);
   });
+  test(`Shade005 ${locale} preserves the complete frozen v1.4 record`, () => {
+    expect(records.find((record) => record.id === "shade-equity")).toEqual(shadeBaseline[locale]);
+  });
 }
 
 import { projects } from "../../src/data/projects";
@@ -56,7 +60,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases, getProjectGo
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion"]);
     for (const key of ["id", "slug", "displayNumber"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }
@@ -114,6 +118,10 @@ test("project case normalization validates ownership, precedence, duplicates and
     const bin = bins[0];
     expect(bin.govtechCaseId).toBeUndefined();
     expect(bin.govtechCaseIds).toEqual(["bin-policy", "shade-equity"]);
+    const crash = catalogue.find(({ id }) => id === "taipei-crash-map")!;
+    expect(crash.govtechCaseId).toBeUndefined();
+    expect(crash.govtechCaseIds).toEqual(["neihu-congestion"]);
+    expect(getProjectGovTechCases(crash, locale)).toEqual(getGovTechCases(locale).filter(({ id }) => id === "neihu-congestion"));
     expect(getProjectGovTechCases(bin, locale)).toEqual(getGovTechCases(locale).filter(({ id }) => id === "bin-policy" || id === "shade-equity"));
     const normalize = (overrides: Record<string, unknown>) => getProjectGovTechCases({ ...bin, ...overrides } as typeof bin, locale).map(({ id }) => id);
     expect(normalize({ govtechCaseIds: ["shade-equity", "unknown", "bin-policy", "shade-equity", "civic-1999"] })).toEqual(["shade-equity", "bin-policy"]);

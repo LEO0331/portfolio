@@ -2,32 +2,31 @@
 
 **Last updated:** 2026-10-21
 
-**Current objective:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
+**Current objective:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Congestion & Observation Readiness Case006.
 
-**Current status:** Complete and published as draft PR #21: https://github.com/LEO0331/portfolio/pull/21 (verified open/unmerged). Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). Do not merge automatically.
+**Current status:** Implementation and verification complete; PR publication pending on codex/govtech-neihu-congestion-v1-5, based on merged main b629614 (Portfolio PR #21). Do not merge automatically.
 
 ## Blockers
 
-None for implementation/publication. Six high package audit findings remain separately documented.
+None for implementation/publication. Six pre-existing high dependency package findings remain separately recorded.
 
 ## Files Relevant to the Next Update
 
-- src/data/govtechShadeEquity.ts/.zh.ts:14 bilingual sections, gate14,896inventory/0eligible, source/admission/matching/capacity/tolerance tables and pinned evidence.
-- Project.govtechCaseIds and getProjectGovTechCases(project,locale): explicit-array precedence, ordered deduplication and ownership validation; Bin Map has two cases, other owners retain legacy single fields.
-- Drawer/localized labels, case ID/registration, project/domain/i18n copy, AppRouter/static metadata, generic section wrapping and route lazy loading.
-- Tests include new Shade suite, Urban full fixture, four prior case preservation, relation edge cases, dual links, static metadata and homepage narrative deferral. Original fixtures remain unchanged.
-- docs/govtech-case-study-005.zh-TW.md, govtech-shade-equity-source-audit.md, govtech-v1.4-verification.md, visual verdict and seven local screenshots; template/READMEs/current-status/lifecycle and generated sitemap.
+- src/data/govtechNeihuCongestion.ts/.zh.ts:16bilingual sections,3population gate,dual-objective tiers,source/quality/capacity/performance tables and pinned evidence.
+- Case ID/registration,Crash project array/copy,domain/home CTA,AppRouter/routeConfig and sitemap. Existing normalizer,drawer,lazy loader and old case data unchanged.
+- tests/e2e/govtech-neihu-congestion.spec.ts,case-data/Civic/othercase counts,tools/govtech.test.mjs and new fullShadefixture; original fixtures unchanged.
+- docs/govtech-case-study-006.zh-TW.md,govtech-neihu-congestion-source-audit.md,govtech-v1.5-verification.md,visualverdict/eightlocal screenshots; READMEs,Case007template,current-status and lifecycle.
 
 ## Recommended Next Step
 
-Review the Case005 PR and evidence; merge only through human review. Follow Case006 template for potential public Wi-Fi service-allocation research after source audit; no new policy implementation is included. Preserve the original planned roadmap and deferred Bin operations.
+Review the Case006 PR, exact quality selections and explicitly empty historical performance. Human merge only. Policy5 bus-network/service analysis is the next planned topic in taipei-crash-map; append a Case007 ID to its existing array only after verified source completion. No transit placeholder or separate repository. Other original roadmap topics remain planned.
 
 ## Verification
 
-Baseline on2026-10-20:22 unit/77 Playwright, clean install, build/harness/diff and17 tracked flows. Final2026-10-21:22 unit/92 Playwright,17/17coverage, TypeScript/build,20 indexable routes, both-base static metadata plus actual ten bilingual case URLs per base, locale/404, five widths, keyboard/mobile/light/dark and visual95/100. Main script307.85kB/98.93kB gzip; full narrative catalogue deferred. See versioned verification for exact failures, fixes, captures and reproduction.
+Baseline22unit/92Playwright; final22unit/105Playwright,17/17trackedflows(100%),TypeScript/build22indexable routes,harness/diff. Actual root/Pages builds:12bilingual case URLs direct/refresh/canonical/lang,Neihu locale/back/404,five widths320–1440,no overflow,keyboard/mobile/light/dark; visual95/100. First integrated suite passed; source review found no remaining actionable issue. Main JS310.27kB/99.78kB gzip,case narratives deferred.
 
-Source612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9; sourceIDshade-source-v1-078b91443dc33e45; derivedIDshade-equity-v1-8e4cfb4029d0831d; methodshade-equity-evidence-review-v1/config1.0.0. Source generation2026-10-20T00:41:41.554Z. All14,896 units fail verified-length admission;0eligible/0selected at5/10/balanced5. Tolerance0/2/5 changes associations and evidence scope, not real trees or shade. Source471tests/160E2E/performance are recorded upstream results, not rerun here.
+Source deb28d5d5b4e608eb04d89743bc3fea632d74c8a; snapshot neihu-readiness-49f28aaa55758ffe; method neihu-traffic-observation-review-v1/config1.0.0; generated2026-10-21T01:43:13.322Z. Full snapshotSHA256 e54b852d17388683eddc16b46c930178451df4af78a4802663eaef579ccf3441. Cached unchanged pure functions independently validated snapshot and reproduced quality5/10 (58eligible,5/10selected,3/5roads), both performance strategies0/0. No ETL or historical aggregation; full upstream66tests/5integration not rerun.
 
 ## Remaining Risks
 
-Six high package audit findings: five Tailwind/braces-chain entries plus Vite8.2.2 newly reported launch-editor advisories. No manifest/lockfile/pin change; init.sh stops at audit and downstream commands ran separately. No standalone lint script; TypeScript runs in build. Measurement/coverage, canopy/heat, occupancy/vacancy and planting feasibility remain unverified; no official endorsement or live deployment certification. Earlier case boundaries remain preserved.
+No admitted historical observations,period/cadence or verified study geography.31single links establish only published metadata;27multi-link devices unresolved. Quality27urgent/31review/0ready is not traffic severity; null ratios are unknown. No traffic benefit,causality or official/PWA acceptance claim. Six existing high findings on unchanged dependency/lockfile;init.sh stops at audit,downstream steps ran separately. Details and source advisories8(3moderate/5high) remain distinct in versioned verification.
