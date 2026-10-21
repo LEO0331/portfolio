@@ -53,6 +53,7 @@ test.describe("Portfolio smoke", () => {
   test("[COV-05] projects filters by category, technology, and status", async ({ page }) => {
     await page.goto("./projects");
 
+    await expect(page.locator("article h2").first()).toBeVisible();
     const initialCount = await page.locator("article h2").count();
     await page.getByLabel("Category").selectOption("tools-utilities");
     await page.getByLabel("Technology").selectOption("web-fundamentals");
@@ -68,6 +69,7 @@ test.describe("Portfolio smoke", () => {
     await page.goto("./projects");
 
     const cardHeadings = page.locator("article h2");
+    await expect(cardHeadings.first()).toBeVisible();
     const initialCount = await cardHeadings.count();
     expect(initialCount).toBeGreaterThan(5);
 

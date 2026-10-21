@@ -1,6 +1,6 @@
 # GovTech Case Study & Decision Support Showcase v1.0
 
-> 目前狀態（2026-10-20）：Showcase v1.3 已有四個獨立決策支援 POC；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
+> 目前狀態（2026-10-20）：Showcase v1.4 已有五個案例（四個既有 POC 加上排序候選受測量定義限制的樹蔭 GIS 證據整備 POC）；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示，[案例005樹蔭公平](./govtech-case-study-005.zh-TW.md) 已完成 GIS 盤點，但未發布實測遮蔭或排序植樹候選。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
 
 狀態：已於 2026-10-16 透過 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main；實作驗證與文件複查見 [驗證報告](./govtech-verification.md)。
 
@@ -18,7 +18,7 @@ v1.1 更新（2026-10-19）：目前已加入第二個完整案例 [1999 民生�
 
 | Repository／既有 ID | 目前能力 | 規劃方向／界線 |
 | --- | --- | --- |
-| taipei-bin-map | 公共設施探索與 #2 清潔箱配置決策 POC | #1 樹蔭／植樹公平性仍為同一 repo 的規劃 |
+| taipei-bin-map | 公共設施探索與 #2 清潔箱配置決策 POC | #1 已完成樹蔭 GIS 證據整備；排序現勘仍受長度測量定義限制，詳 Case005 |
 | taipei-1999-map | 既有去識別化探索及 v1.1 已展示的一般民生決策支援 POC | 歷史派工調查優先順序已完成；鼠患專項仍為未來且取決於適切證據 |
 | taipei-friendly-food-map | 友善商家、補水、商業與市場來源探索 | 支援商業／飲食環境脈絡，不保證營業現況 |
 | taipei-feitsui-water-map | 水質、水庫、水文及防災設備資料 | #7 水與災害準備情境尚未實作，非即時預警 |
@@ -109,7 +109,7 @@ N_k 是選定區域該類別固定有效母體，包含原本已覆蓋的參考�
 3. taipei-1999-map #3：一般民生通報與環境治理調查優先順序 POC 已完成，於 Showcase v1.1 展示；鼠患專項維持未來方向。
 4. taipei-feitsui-water-map #7：水與災害準備。
 5. taipei-real-estate-dashboard #6：老屋與都市更新。
-6. taipei-bin-map #1：樹蔭與植樹公平性，同一 repo。
+6. taipei-bin-map #1：樹蔭 GIS 盤點與證據整備已完成為 Case005；排序現勘與植樹可行性須另有驗證，同一 repo。
 7. taipei-crash-map #4：交通壅塞。
 8. taipei-crash-map #5：大眾運輸／公車，同一 repo，無需新增 repository。
 9. taipei-free-wifi-map：數位包容。

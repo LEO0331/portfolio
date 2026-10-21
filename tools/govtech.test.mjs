@@ -19,7 +19,9 @@ const pages = [
   ["/govtech/heavy-rain-preparedness", "Heavy-Rain Preparedness & Infrastructure Review"],
   ["/zh/govtech/heavy-rain-preparedness", "豪雨防汛整備與設施查核決策支援"],
   ["/govtech/urban-renewal", "Aging Buildings & Urban Renewal Evidence Decision Support"],
-  ["/zh/govtech/urban-renewal", "臺北市老舊建築與都市更新決策支援"]
+  ["/zh/govtech/urban-renewal", "臺北市老舊建築與都市更新決策支援"],
+  ["/govtech/shade-equity", "Shade Equity & Urban Heat Preparedness"],
+  ["/zh/govtech/shade-equity", "樹蔭公平與都市熱環境整備決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {

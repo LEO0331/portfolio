@@ -1,3 +1,4 @@
+import { shadeEquityCase } from "./govtechShadeEquity";
 import { urbanRenewalCase } from "./govtechUrbanRenewal";
 import { heavyRainCase } from "./govtechHeavyRain";
 import type { GovTechCase } from "../types/govtechCase";
@@ -120,7 +121,7 @@ export const binPolicyCase = {
     { label: "Reviewed upstream mobile capture — local research interface; external map tiles blocked", url: binSource("docs/images/bin-policy-v1.2-controls-mobile.png") }
   ],
   previewAssets: [],
-  futureExtensions: ["Tree/shade equity is a planned module in the same Bin Map repository; it is not an implemented decision-support feature."]
+  futureExtensions: ["Shade Equity GIS inventory and evidence-readiness POC is completed in this repository as Case005. Ranked field-review candidates remain unavailable until sidewalk measurement definitions and comparability are verified; no measured shade or planting feasibility is claimed."]
 } satisfies GovTechCase;
 
-export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase];
+export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase, shadeEquityCase];

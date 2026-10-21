@@ -624,11 +624,11 @@ export const projects: Project[] = [
     id: "taipei-bin-map",
     slug: "taipei-bin-map",
     name: "Taipei Public Amenities Map",
-    tagline: "Explore public amenities and explainable bin-allocation scenarios",
+    tagline: "Explore public amenities, bin allocation and Shade Equity GIS evidence",
     shortDescription:
-      "A bilingual public-amenities explorer and completed bin-allocation decision-support POC with governed data and explainable scenarios.",
+      "A bilingual public-amenities explorer with completed bin-allocation and Shade Equity GIS evidence-readiness POCs; shade-review ranking remains gated.",
     fullDescription:
-      "Taipei Public Amenities Map retains official facility maps, accessible directories, nearby sorting and offline-friendly caching. Its completed decision-support POC adds bin-coverage allocation, source reconciliation, policy-oriented category weighting, scenario comparison, sensitivity analysis, explainable field-review candidates and JSON/CSV evidence export. Policy weights are analytical assumptions, and candidate sites require field verification.",
+      "Taipei Public Amenities Map retains official facility maps, accessible directories, nearby sorting and offline-friendly caching. Its completed decision-support POC adds bin-coverage allocation, source reconciliation, policy-oriented category weighting, scenario comparison, sensitivity analysis, explainable field-review candidates and JSON/CSV evidence export. Policy weights are analytical assumptions, and candidate sites require field verification. The separate Shade Equity module integrates official roadside trees, sidewalks and tree pits using EPSG:3826 validation, stable source snapshots, spatial indexing and offline associations. Ambiguity/exclusion audits, conditional review rules, capacity/tolerance comparisons and JSON/CSV briefings are implemented. Its 14,896 admitted sidewalk inventory units produce zero eligible ranked survey candidates because source length semantics remain unverified and comparable coverage is not established; no canopy, heat exposure, shade deficit or planting feasibility is inferred. Protected Trees remains a distinct legal subset.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["React", "TypeScript", "Vite", "Leaflet"],
@@ -641,12 +641,17 @@ export const projects: Project[] = [
       "Bin-allocation coverage and explainable field-review candidates",
       "Data governance and source reconciliation",
       "Policy category weighting and sensitivity analysis",
-      "Scenario comparison and JSON/CSV evidence export"
+      "Scenario comparison and JSON/CSV evidence export",
+      "Official roadside-tree, sidewalk and tree-pit GIS integration",
+      "EPSG:3826 validation, stable provenance and offline spatial indexing",
+      "Unique associations with ambiguity and exclusion auditing",
+      "Conditional evidence-review gate and capacity/tolerance sensitivity",
+      "Shade Equity aggregate JSON/CSV research briefings"
     ],
     image: "/src/assets/images/projects/taipei-bin-map.png",
     demoUrl: "https://taipei-bin-map.vercel.app/",
     repoUrl: "https://github.com/LEO0331/taipei-bin-map",
-    govtechCaseId: "bin-policy",
+    govtechCaseIds: ["bin-policy", "shade-equity"],
     status: "live",
     featured: false
   },

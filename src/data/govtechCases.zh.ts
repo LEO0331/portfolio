@@ -1,3 +1,4 @@
+import { shadeEquityCaseZh } from "./govtechShadeEquity.zh";
 import { urbanRenewalCaseZh } from "./govtechUrbanRenewal.zh";
 import { heavyRainCaseZh } from "./govtechHeavyRain.zh";
 import type { GovTechCase } from "../types/govtechCase";
@@ -51,7 +52,7 @@ export const binPolicyCaseZh = {
     rows: english.scenarioTables[0].rows.map((row, index) => ({ ...row, cells: { ...row.cells, metric: ["既有覆蓋參考實體", "假設新增清潔箱", "新增覆蓋參考實體", "新增後總覆蓋", "bus-1210 候選排序"][index] } }))
   }],
   evidence: english.evidence.map((link, index) => ({ ...link, label: ["MVP 範圍與方法", "原始覆蓋方法", "公車 StopLocation 來源比較", "v1.2 來源清單", "v1.2 稽核與已記錄驗證", "決策演算法實作", "來源測試", "已複核來源桌面截圖：本機研究介面，外部地圖圖磚被封鎖", "已複核來源行動截圖：本機研究介面，外部地圖圖磚被封鎖"][index] })),
-  futureExtensions: ["樹蔭公平性為同一 Bin Map 儲存庫內的規劃模組，目前尚未實作為決策支援功能。"]
+  futureExtensions: ["同一儲存庫的 Case005 已完成樹蔭公平 GIS 盤點與證據整備 POC；正式排序現勘候選仍待人行道測量定義與可比性驗證，不宣稱實測遮蔭或植樹可行性。"]
 } satisfies GovTechCase;
 
-export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh];
+export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh, shadeEquityCaseZh];

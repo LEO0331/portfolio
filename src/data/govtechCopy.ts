@@ -1,7 +1,7 @@
 import type { GovTechDomain } from "../types/govtechCase";
 
 const domainsEn: GovTechDomain[] = [
-  { title: "Urban Services & Environment", projectIds: ["taipei-bin-map"], planned: "Tree/shade equity: a planned extension in the same Bin Map repository." },
+  { title: "Urban Services & Environment", projectIds: ["taipei-bin-map"], planned: "Shade Equity GIS inventory and evidence-readiness POC is completed. Ranked field-review candidates remain unavailable pending verified sidewalk-length semantics and comparable coverage. No measured canopy, heat exposure or planting feasibility is claimed." },
   { title: "Citizen Services & Public Health", projectIds: ["taipei-1999-map", "taipei-friendly-food-map"], planned: "General 1999 civic decision support is a completed POC. Rodent-specific investigation remains future and evidence-dependent; no authoritative rodent-specific case series was validated." },
   { title: "Transportation & Mobility", projectIds: ["taipei-crash-map"], planned: "Congestion and transit: two planned modules inside taipei-crash-map; no separate transit repository." },
   { title: "Housing & Urban Resilience", projectIds: ["taipei-real-estate-dashboard"], planned: "Urban-renewal administrative evidence review is a completed decision-support POC. Building-age statistics remain citywide context; building-level and legal-stage research require authoritative evidence. No building-safety assessment or certified eligibility determination." },
@@ -10,7 +10,7 @@ const domainsEn: GovTechDomain[] = [
 ];
 
 const domainsZh: GovTechDomain[] = [
-  { title: "都市服務與環境", projectIds: domainsEn[0].projectIds, planned: "樹蔭公平性：規劃於同一 Bin Map 儲存庫內擴充。" },
+  { title: "都市服務與環境", projectIds: domainsEn[0].projectIds, planned: "樹蔭公平 GIS 盤點與證據整備 POC 已完成；正式排序現勘候選仍待人行道長度定義與涵蓋可比性驗證。不宣稱實測樹冠、熱暴露或植樹可行性。" },
   { title: "市民服務與公共衛生", projectIds: domainsEn[1].projectIds, planned: "一般 1999 市政決策支援 POC 已完成；鼠患專項調查仍為依證據而定的未來能力，尚未驗證權威鼠患專屬案件序列。" },
   { title: "交通運輸與移動", projectIds: domainsEn[2].projectIds, planned: "壅塞與公共運輸：同一 taipei-crash-map 內的兩個規劃模組，不另建運輸儲存庫。" },
   { title: "住宅與都市韌性", projectIds: domainsEn[3].projectIds, planned: "老舊建築與都市更新行政證據查核已完成決策支援 POC。屋齡統計維持全市脈絡；建物層級與法律階段研究須另有權威證據，不提供建築安全評估或法定資格認定。" },
@@ -43,7 +43,7 @@ export const govtechCopy = {
     explorers: "Existing Public Data Explorers",
     explorerIntro: "Current capabilities come from existing curated project records and inspected source READMEs. Deployment status and policy maturity are separate: a public demo does not mean a planned decision module is implemented.",
     planned: "Planned Decision-Support Extensions",
-    plannedIntro: "Bin allocation, civic investigation, heavy-rain preparedness and urban-renewal evidence review are four completed POCs. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
+    plannedIntro: "Five cases cover bin allocation, civic investigation, heavy-rain preparedness, urban renewal and Shade Equity GIS evidence readiness. Shade ranked field-review candidates remain gated by source measurement definitions. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
     principlesTitle: "Engineering & Governance Principles",
     principles: ["Open Data ETL with schema validation", "GIS integration with explicit coordinate systems", "Data quality checks and source provenance", "Versioned snapshots and reproducible inputs", "Explainable algorithms and candidate reasons", "Scenario modelling and sensitivity analysis", "Privacy, information security and scoped public records", "Testing and reproducibility before publication"],
     limitations: "Limitations and Responsible Use",
@@ -62,7 +62,7 @@ export const govtechCopy = {
     explorers: "既有公共資料探索工具",
     explorerIntro: "現有功能取自既有策展專案紀錄及已查閱的來源 README。部署狀態與政策成熟度分開：公開 Demo 不代表規劃中的決策模組已完成。",
     planned: "規劃中的決策支援擴充",
-    plannedIntro: "清潔箱配置、市政調查、防汛整備與都市更新證據查核四個 POC 已完成。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
+    plannedIntro: "五個案例涵蓋清潔箱配置、市政調查、防汛整備、都市更新及樹蔭公平 GIS 證據整備；樹蔭排序現勘候選仍受來源測量定義限制。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
     principlesTitle: "工程與治理原則",
     principles: ["開放資料 ETL 與結構驗證", "GIS 整合與明確座標系統", "資料品質檢查與來源追溯", "版本快照與可重現輸入", "可解釋演算法與候選理由", "情境建模與敏感度分析", "隱私、資訊安全與公開紀錄範圍管理", "發布前測試與可重現驗證"],
     limitations: "限制與負責任使用",

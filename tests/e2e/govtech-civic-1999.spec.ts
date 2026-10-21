@@ -30,10 +30,10 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       }
     });
 
-    test(`${locale} landing has four completed cards and all project drawers navigate locally`, async ({ page }) => {
+    test(`${locale} landing has five completed cards and all project drawers navigate locally`, async ({ page }) => {
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(4);
+      await expect(completed.locator("article")).toHaveCount(5);
       for (const study of records[locale]) {
         const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
         await expect(card).toContainText(study.displayNumber);
@@ -47,7 +47,10 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
         await page.goto(`./${prefix}projects`);
         const projectCard = page.locator("article").filter({ has: page.locator(`a[href="${study.sourceRepository}"]`) });
         await projectCard.getByRole("button", { name: locale === "en" ? "View Details" : "查看詳情", exact: true }).click();
-        const link = page.getByRole("dialog").getByRole("link", { name: locale === "en" ? "GovTech Case Study" : "市政科技案例研究", exact: true });
+        const label = study.projectId === "taipei-bin-map"
+          ? `${study.title} — ${locale === "en" ? "Case Study" : "案例"} ${study.displayNumber}`
+          : locale === "en" ? "GovTech Case Study" : "市政科技案例研究";
+        const link = page.getByRole("dialog").getByRole("link", { name: label, exact: true });
         await expect(link).toHaveAttribute("href", `/portfolio/${prefix}govtech/${study.slug}`);
         expect(await link.getAttribute("target")).toBeNull();
         await link.click();

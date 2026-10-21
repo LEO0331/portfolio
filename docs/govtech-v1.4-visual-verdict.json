@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "The new case adds source, association and gated-selection tables within the established case layout."
+  ],
+  "suggestions": [],
+  "reasoning": "Desktop tables preserve exact stages and readable captions; mobile dark view retains existing typography and spacing, and long source hashes now wrap without body overflow."
+}
