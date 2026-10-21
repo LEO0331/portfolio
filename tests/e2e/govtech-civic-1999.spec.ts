@@ -30,10 +30,10 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       }
     });
 
-    test(`${locale} landing has five completed cards and all project drawers navigate locally`, async ({ page }) => {
+    test(`${locale} landing has six completed cards and all project drawers navigate locally`, async ({ page }) => {
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(5);
+      await expect(completed.locator("article")).toHaveCount(6);
       for (const study of records[locale]) {
         const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
         await expect(card).toContainText(study.displayNumber);
@@ -58,7 +58,7 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
         await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
         await page.goto(`./${prefix}govtech`);
       }
-      for (const project of ["taipei-1999-map", "taipei-feitsui-water-map", "taipei-real-estate-dashboard"]) {
+      for (const project of ["taipei-1999-map", "taipei-feitsui-water-map", "taipei-real-estate-dashboard", "taipei-crash-map"]) {
         await expect(page.locator('section[aria-labelledby="govtech-explorers"]').locator(`a[href*="${project}"]`)).toHaveCount(0);
       }
     });

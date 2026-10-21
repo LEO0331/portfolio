@@ -659,11 +659,11 @@ export const projects: Project[] = [
     id: "taipei-crash-map",
     slug: "taipei-crash-map",
     name: "Taipei Traffic Accident Hotspot Map",
-    tagline: "Bilingual dashboard for exploring Taipei traffic accident hotspots",
+    tagline: "Historical crash exploration and traffic-observation readiness review",
     shortDescription:
-      "A mobile-first map and dashboard for exploring historical Taipei A1/A2 crash points, intersection hotspots, and traffic-safety statistics.",
+      "A bilingual historical crash explorer with a completed Neihu traffic-observation readiness POC; historical congestion ranking remains unavailable.",
     fullDescription:
-      "Taipei Traffic Accident Hotspot Map turns public traffic-accident records into an accessible bilingual exploration tool. It combines location and time filters, clustered and heat-map views, aggregate factor charts, and procedural traffic datasets in a responsive PWA-ready interface.",
+      "Taipei Traffic Accident Hotspot Map turns public traffic-accident records into an accessible bilingual exploration tool. It retains A1/A2 points, intersection hotspots, location/time/district filters, crash-factor charts, traffic-violation reporting aggregates, appraisal/reconsideration records and static JSON/PWA delivery. Its separate lazy-loaded traffic module adds official VD source auditing, detector inventory, link/direction identity validation, source freshness and historical-observation eligibility checks, independent quality-review tiers, deterministic capacity5/10 equipment-investigation scenarios and JSON/CSV evidence briefings. The 58 road-name-filtered devices all retain unverified study geography; no accepted operational observation history or congestion-performance ranking is published. Accident hotspots are not congestion measurements. Policy5 bus-network/service analysis remains planned in this same repository.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
@@ -672,11 +672,17 @@ export const projects: Project[] = [
       "A1/A2 crash point and hotspot visualization",
       "Time, district, crash-type, and location filters",
       "Aggregate crash-factor charts",
-      "Bilingual responsive interface"
+      "Bilingual responsive interface",
+      "Traffic violations and appraisal/reconsideration aggregates",
+      "Official VD source audit and detector/link/direction inventory",
+      "Historical observation eligibility and source freshness checks",
+      "Independent quality tiers and capacity5/10 equipment review",
+      "Deterministic scenarios,JSON/CSV briefings and lazy-loaded traffic module"
     ],
     image: "/src/assets/images/projects/taipei-crash-map.png",
     demoUrl: "https://leo0331.github.io/taipei-crash-map/",
     repoUrl: "https://github.com/LEO0331/taipei-crash-map",
+    govtechCaseIds: ["neihu-congestion"],
     status: "live",
     featured: false
   },

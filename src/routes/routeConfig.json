@@ -8,6 +8,7 @@
     { "key": "govtech-heavy-rain-preparedness", "path": "/govtech/heavy-rain-preparedness", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Heavy-Rain Preparedness & Infrastructure Review | Leo Chen", "description": "From fragmented flood-related records to explainable preparedness review priorities." },
     { "key": "govtech-urban-renewal", "path": "/govtech/urban-renewal", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Aging Buildings & Urban Renewal Evidence Decision Support | Leo Chen", "description": "From fragmented building and administrative records to explainable urban-renewal research priorities." },
     { "key": "govtech-shade-equity", "path": "/govtech/shade-equity", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Shade Equity & Urban Heat Preparedness | Leo Chen", "description": "From official street-tree and sidewalk records to reproducible GIS evidence review — without inventing measured shade or planting priorities." },
+    { "key": "govtech-neihu-congestion", "path": "/govtech/neihu-congestion", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Neihu Traffic Congestion & Observation Readiness | Leo Chen", "description": "From official traffic detector records to explainable data-quality review — without inventing historical congestion measurements." },
     { "key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9 },
@@ -18,6 +19,7 @@
     { "key": "govtech-heavy-rain-preparedness-zh", "path": "/zh/govtech/heavy-rain-preparedness", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "豪雨防汛整備與設施查核決策支援 | Leo Chen", "description": "從防汛設施與歷史積水資料，建立可追溯、可比較的整備查核優先順序。" },
     { "key": "govtech-urban-renewal-zh", "path": "/zh/govtech/urban-renewal", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市老舊建築與都市更新決策支援 | Leo Chen", "description": "從建物屋齡統計與都市更新行政資料，建立可追溯、可比較的政策查核優先順序。" },
     { "key": "govtech-shade-equity-zh", "path": "/zh/govtech/shade-equity", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "樹蔭公平與都市熱環境整備決策支援 | Leo Chen", "description": "整合行道樹、人行道及樹穴圖資，建立可追溯的 GIS 盤點與證據查核，同時避免未經驗證的遮蔭與植樹推論。" },
+    { "key": "govtech-neihu-congestion-zh", "path": "/zh/govtech/neihu-congestion", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "內湖交通壅塞與觀測資料就緒度決策支援 | Leo Chen", "description": "整合官方車流偵測器、道路識別與來源品質，建立可解釋的設備資料查核優先順序，並避免未經驗證的壅塞推論。" },
     { "key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "not-found", "path": "/404", "indexable": false }

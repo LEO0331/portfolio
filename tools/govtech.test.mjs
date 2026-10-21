@@ -21,7 +21,9 @@ const pages = [
   ["/govtech/urban-renewal", "Aging Buildings & Urban Renewal Evidence Decision Support"],
   ["/zh/govtech/urban-renewal", "臺北市老舊建築與都市更新決策支援"],
   ["/govtech/shade-equity", "Shade Equity & Urban Heat Preparedness"],
-  ["/zh/govtech/shade-equity", "樹蔭公平與都市熱環境整備決策支援"]
+  ["/zh/govtech/shade-equity", "樹蔭公平與都市熱環境整備決策支援"],
+  ["/govtech/neihu-congestion", "Neihu Traffic Congestion & Observation Readiness"],
+  ["/zh/govtech/neihu-congestion", "內湖交通壅塞與觀測資料就緒度決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {

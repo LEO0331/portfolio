@@ -1,6 +1,6 @@
 # GovTech Case Study & Decision Support Showcase v1.0
 
-> 目前狀態（2026-10-20）：Showcase v1.4 已有五個案例（四個既有 POC 加上排序候選受測量定義限制的樹蔭 GIS 證據整備 POC）；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示，[案例005樹蔭公平](./govtech-case-study-005.zh-TW.md) 已完成 GIS 盤點，但未發布實測遮蔭或排序植樹候選。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
+> 目前狀態（2026-10-20）：Showcase v1.5 已有六個案例，包含排序受測量定義限制的樹蔭 GIS 證據整備，以及歷史交通表現仍受觀測資格限制的交通資料就緒度 POC；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示，[案例005樹蔭公平](./govtech-case-study-005.zh-TW.md) 已完成 GIS 盤點，但未發布實測遮蔭或排序植樹候選。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
 
 狀態：已於 2026-10-16 透過 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main；實作驗證與文件複查見 [驗證報告](./govtech-verification.md)。
 
@@ -24,7 +24,7 @@ v1.1 更新（2026-10-19）：目前已加入第二個完整案例 [1999 民生�
 | taipei-feitsui-water-map | 水質、水庫、水文及防災設備資料 | #7 水與災害準備情境尚未實作，非即時預警 |
 | taipei-safety-map | 緊急資源目錄與歷史公共安全資料 | 支援探索，非派遣或綜合安全分數 |
 | taipei-real-estate-dashboard | 房價、租金、土地、建照、人口脈絡 | #6 老屋／都市更新決策尚未實作 |
-| taipei-crash-map | 歷史事故、路口熱點、因素圖表 | #4 壅塞與 #5 大眾運輸為同 repo 未來模組，不新增運輸 repo |
+| taipei-crash-map | 歷史事故、路口熱點、因素圖表 | #4 交通觀測就緒度已完成 Case006，歷史壅塞仍受證據限制；#5 公車服務維持同 repo 規劃，不新增 repo |
 | taipei-free-wifi-map | 熱點、附近與來源篩選 | 數位包容配置仍為未來案例，非即時連線品質 |
 | taipei-civic-groups-map | 雙語目錄、來源日期、CSV、資料信任提示 | 公共資源規劃與可重用資料治理參考 |
 | publicsafetydashboard | PDF 擷取、篩選、CSV、解析複核 | 文件工程與人工複核治理參考，非個人風險評分 |
@@ -110,7 +110,7 @@ N_k 是選定區域該類別固定有效母體，包含原本已覆蓋的參考�
 4. taipei-feitsui-water-map #7：水與災害準備。
 5. taipei-real-estate-dashboard #6：老屋與都市更新。
 6. taipei-bin-map #1：樹蔭 GIS 盤點與證據整備已完成為 Case005；排序現勘與植樹可行性須另有驗證，同一 repo。
-7. taipei-crash-map #4：交通壅塞。
+7. taipei-crash-map #4：觀測資料就緒度已完成為 Case006；歷史壅塞表現仍待可比較觀測。
 8. taipei-crash-map #5：大眾運輸／公車，同一 repo，無需新增 repository。
 9. taipei-free-wifi-map：數位包容。
 10. taipei-civic-groups-map：公共資源與資料治理。

@@ -4,41 +4,41 @@
 
 **Last updated:** 2026-10-21
 
-**Active work:** Portfolio GovTech Showcase v1.4 — Shade Equity Case005.
+**Active work:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Observation Readiness Case006.
 
-**Status:** Complete and published as draft PR #21 (https://github.com/LEO0331/portfolio/pull/21), verified open and unmerged. Branch codex/govtech-shade-equity-v1-4, implementation c7ab0ca, based on merged main bbe90d9 (Portfolio PR #20). No automatic merge.
+**Status:** Complete and published as draft PR #22 (https://github.com/LEO0331/portfolio/pull/22), verified open and unmerged. Branch codex/govtech-neihu-congestion-v1-5, implementation5a82186, based on merged main b629614 (Portfolio PR #21). No automatic merge.
 
 ### Completed
 
-- Five bilingual cases reference four existing projects. Bin Map intentionally owns Cases001/005 through an ordered array; legacy single-case projects retain their existing contract. One localized normalizer validates ownership and deduplicates references.
-- Shade GIS inventory/evidence-readiness POC is complete; 14,896 admitted sidewalk features yield zero eligible ranked candidates pending measurement/comparability verification. Actual matching, capacity and tolerance tables are source-backed, with no fictional shortlist or measured shade/heat claim.
-- Source pinned to Bin Map PR #19 /612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9; source snapshot shade-source-v1-078b91443dc33e45, derived shade-equity-v1-8e4cfb4029d0831d, method shade-equity-evidence-review-v1 /config1.0.0. Source generation stays2026-10-20T00:41:41.554Z.
-- Full Chinese/English case,17-section specification, pinned source audit, updated template/READMEs/status copy and local production screenshots are present. Prior case technical values, source versions and original fixtures are preserved; only the obsolete Bin001 future roadmap changed.
-- Catalogue-dependent pages load on demand; homepage main JavaScript is307.85kB (98.93kB gzip), and no full case narrative is fetched initially. Shared prose wraps long hashes on mobile.
+- Six bilingual cases reference five existing projects. Crash Map owns only neihu-congestion through its case array; existing normalizer/drawer and Bin001/005 relationship are unchanged. No transit placeholder or duplicate root project.
+- Case006 presents58 detector/source-quality reviews (27urgent/31review/0ready) independently from0eligible historical performance rankings. All58 road-name research scopes remain unverified. Exact capacity5/10 selections and3/5road representation were checked against pinned pure functions offline.
+- SourcePR7 is merged at deb28d5d5b4e608eb04d89743bc3fea632d74c8a; snapshot neihu-readiness-49f28aaa55758ffe, method neihu-traffic-observation-review-v1/config1.0.0. Snapshot generation2026-10-21T01:43:13.322Z; full SHA256 validated independently.
+- Bilingual case,18-section Chinese specification, source audit, Case007 template, README pair, source-accurate project/domain copy, explicit routes/SEO and local production visual evidence are present. Earlier five case data and historical verification remain unchanged.
+- Crash Map accident/factor/violation/appraisal functionality, ID/slug/URLs/image/stack/featured flag, filters, homepage pin order and lazy loading are preserved. Policy5 bus-network/service analysis stays planned in the same repository.
 
 ### Verification Evidence
 
-- Baseline2026-10-20: clean install, harness,22 unit, TypeScript/build,77 Playwright and17/17 tracked coverage passed; five existing high audit findings.
-- Final2026-10-21:22 unit,92 Playwright,17/17 tracked flows (100%), TypeScript/build with20 indexable routes, both-base static metadata and actual root/Pages direct/refresh/canonical/locale/404 passed.
-- No body overflow at320/390/768/1024/1440; localized mobile light/dark, keyboard tables/cards, dual drawer links, malformed/deduplicated/foreign relationship cases and homepage deferred loading passed.
-- Visual95/100 after correcting the long-hash overflow; source review corrected20m wording to default setting. Source471 tests/160E2E are attributed recorded evidence, not independently rerun. No GIS ETL or source engine ran in Portfolio.
-- Refreshed audit now reports six high package findings: five prior Tailwind/braces-chain findings plus newly reported Vite advisories against the unchanged locked version. No dependency/lockfile or pin changes. Detailed failures/recoveries and evidence: docs/govtech-v1.4-verification.md.
+- Baseline: clean install,harness,22unit,TypeScript/build,92Playwright/17trackedflows and diff passed; six existing high audit package findings.
+- Final:22unit,105Playwright/17trackedflows(100%),TypeScript/build with22indexable routes,harness/diff passed. All five earlier case fixtures and Bin dual-link regression pass; new complete Shade fixture protects its exact evidence.
+- Actual root/Pages generated routes:all6cases EN/ZH direct/refresh/canonical/lang,Neihu locale/back/404, five widths320/390/768/1024/1440 with no body overflow. Keyboard tables/cards and mobile light/dark pass; visual95/100. No live traffic source requests.
+- Source/integration read-only review found no remaining actionable issues. Bounded cached pure-function verification selects existing readiness candidates only; no source acquisition,ETL,historical aggregation or speeds generated. Upstream66tests/5integration remain recorded evidence, not a full suite rerun.
+- Main script310.27kB/99.78kB gzip; case catalogue deferred. No dependency/lockfile/pin changes. Full evidence: docs/govtech-v1.5-verification.md.
 
 ### Blockers
 
-None for implementation or publication. Draft PR #21 is ready for human review; dependency advisories remain disclosed separately.
+None for implementation or publication. Draft PR #22 is ready for human review; six existing high dependency findings remain separately disclosed.
 
 ### Remaining Risks
 
-- Unverified sidewalk-length semantics, measurement units and comparable source coverage keep ranked selection unavailable. Registered trees are not canopy/shade, pits are not vacancies, and tolerance changes are not ecological improvement.
-- Six high audit findings remain; init.sh stops at audit and downstream verification ran separately. Dependency remediation remains a separate scoped change.
-- Independent personal POCs have no official government endorsement, planting approval or post-merge deployment certification. Earlier case limitations remain unchanged.
+- No accepted operational traffic observations or historical period/cadence. Quality urgency is metadata verification, not congestion or danger.31published single links do not validate study geography or older detector continuity;27multi-link devices remain unresolved.
+- Source periods,timezones,units,link/geography and comparability require new reviewed evidence. No worst-bottleneck ranking,travel-time saving,crash-congestion causality or traffic intervention benefit is established.
+- Six high package findings remain; init.sh stops at audit and downstream checks ran separately. No official government endorsement or post-merge deployment/physical-device PWA certification.
 
 ### Next Session Should
 
-1. Review Case005 PR, bilingual evidence and multiple-case relationship, then merge only through human review.
-2. Consider public Wi-Fi service-allocation research for Case006 after a source-feasibility audit; this remains a recommendation, not implemented work.
-3. Address the existing dependency advisories separately, preserving current evidence and homepage pins.
+1. Review Case006 PR and source-backed quality/performance distinction, then merge only through human review.
+2. Next planned policy topic: Policy5 bus-network/service decision support in the same taipei-crash-map, following the Case007 guide after verified source completion. Do not add a placeholder case now.
+3. Address existing dependency findings separately; preserve earlier case evidence, normalizer semantics and homepage pins.
 
 ## Update Contract
 
@@ -232,3 +232,14 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Today's audit reports six high package findings (five prior toolchain plus newly reported Vite group), with unchanged manifests/lockfile. Source471tests/160E2E and performance remain recorded upstream evidence. Publication pending; suggested next topic is existing planned Wi-Fi service allocation.
 
 - Publication: implementation c7ab0ca pushed; draft PR #21 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/21. Connector403 recovered through GitHub API with existing Git credentials kept in memory and excluded from output/files. Lifecycle-only follow-up records completion; application verification remains valid.
+
+### 2026-10-21 — GovTech Showcase v1.5 Case006
+
+- Audited pinned Crash Map PR7 source docs/code/tests/snapshot and both Chinese production-preview screenshots. Source merge and PortfolioPR21/mainb629614 verified; snapshot120789B SHA256 independently checked. No upstream changes.
+- Added bilingual quality-readiness case, separate performance/quality objectives and exact5/10device tables; preserved null historical fields and explicitly unverified geography. Reused existing case renderer, project-array normalizer and lazy routes.
+- Offline pinned pure functions validated the cached snapshot and reproduced all10selectedIDs,3/5candidate roads and empty slowdown/balanced5/10 outputs. No ETL,acquisition,historical aggregation or traffic metrics generated.
+- Changed groups: new data,caseID/registration,routes/project/domain/home CTA copy,sitemap; data/static/browser regressions and Shade fixture; spec/audit/template/README/current-status/verification/verdict/screenshots and lifecycle.
+- Full baseline22unit92Playwright; final22unit105Playwright,17/17coverage,TypeScript/build22routes,both bases,five widths,keyboard/dark and visual95/100 passed on first integration run. Existing five case records/fixtures,pins and dependencies remain unchanged.
+- Six existing high audit package findings remain. Publication pending; Policy5 bus-network/service research is planned next in the same Crash Map repository, outside this release.
+
+- Publication: implementation5a82186 pushed; draft PR #22 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/22. Connector403 recovered through GitHub API with existing Git credentials held in memory and excluded from output/files. Lifecycle-only follow-up records completion; app verification remains valid.
