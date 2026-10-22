@@ -1,0 +1,74 @@
+{
+  "bases": [
+    {
+      "base": "/portfolio",
+      "directRefreshLanguageCanonical": [
+        "/portfolio/govtech/bin-policy",
+        "/portfolio/zh/govtech/bin-policy",
+        "/portfolio/govtech/civic-1999",
+        "/portfolio/zh/govtech/civic-1999",
+        "/portfolio/govtech/heavy-rain-preparedness",
+        "/portfolio/zh/govtech/heavy-rain-preparedness",
+        "/portfolio/govtech/urban-renewal",
+        "/portfolio/zh/govtech/urban-renewal",
+        "/portfolio/govtech/shade-equity",
+        "/portfolio/zh/govtech/shade-equity",
+        "/portfolio/govtech/neihu-congestion",
+        "/portfolio/zh/govtech/neihu-congestion",
+        "/portfolio/govtech/bus-service",
+        "/portfolio/zh/govtech/bus-service",
+        "/portfolio/govtech/wifi-allocation",
+        "/portfolio/zh/govtech/wifi-allocation"
+      ],
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "unknownCase": true
+    },
+    {
+      "base": "/",
+      "directRefreshLanguageCanonical": [
+        "/govtech/bin-policy",
+        "/zh/govtech/bin-policy",
+        "/govtech/civic-1999",
+        "/zh/govtech/civic-1999",
+        "/govtech/heavy-rain-preparedness",
+        "/zh/govtech/heavy-rain-preparedness",
+        "/govtech/urban-renewal",
+        "/zh/govtech/urban-renewal",
+        "/govtech/shade-equity",
+        "/zh/govtech/shade-equity",
+        "/govtech/neihu-congestion",
+        "/zh/govtech/neihu-congestion",
+        "/govtech/bus-service",
+        "/zh/govtech/bus-service",
+        "/govtech/wifi-allocation",
+        "/zh/govtech/wifi-allocation"
+      ],
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440
+      ],
+      "unknownCase": true
+    }
+  ],
+  "screenshots": [
+    "en-desktop.png",
+    "zh-desktop.png",
+    "en-mobile.png",
+    "zh-mobile-dark.png",
+    "en-scenarios.png",
+    "zh-scenarios-mobile-dark.png",
+    "en-architecture.png"
+  ],
+  "errors": [],
+  "sourceRequests": [],
+  "consoleErrors": []
+}

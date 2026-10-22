@@ -1,0 +1,10 @@
+  ok 122 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:107:3 › Civic002 frozen bilingual decision-support case › mobile light and dark pages fit the viewport and tables support keyboard scrolling (947ms)
+  ok 124 [chromium] › tests\e2e\smoke.spec.ts:161:3 › Portfolio smoke › [COV-13] detail drawer supports Escape and backdrop close (1.8s)
+  ok 125 [chromium] › tests\e2e\smoke.spec.ts:179:3 › Portfolio smoke › [COV-14] deep-link query opens project drawer on initial load (565ms)
+  ok 126 [chromium] › tests\e2e\smoke.spec.ts:184:3 › Portfolio smoke › [COV-15] mobile drawer opens and preserves filter/search state (446ms)
+  ok 127 [chromium] › tests\e2e\smoke.spec.ts:206:3 › Portfolio smoke › [COV-16] traditional chinese route renders localized project content (528ms)
+  ok 128 [chromium] › tests\e2e\smoke.spec.ts:215:3 › Portfolio smoke › [COV-17] canonical and social metadata use crawlable deployment paths (509ms)
+
+  128 passed (30.5s)
+E2E functional coverage: 17/17 (100.0%)
+Coverage threshold met (>= 85%).

@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case008 has a longer contents list and wider evidence tables than Case007; both fit the existing layout."
+  ],
+  "suggestions": [],
+  "reasoning": "Final desktop/mobile captures match established Case007 typography, spacing and hierarchy. Actual light/dark controls, both languages and locally scrolling tables remain usable without body overflow."
+}
