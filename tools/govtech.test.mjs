@@ -24,6 +24,8 @@ const pages = [
   ["/zh/govtech/shade-equity", "樹蔭公平與都市熱環境整備決策支援"],
   ["/govtech/neihu-congestion", "Neihu Traffic Congestion & Observation Readiness"],
   ["/zh/govtech/neihu-congestion", "內湖交通壅塞與觀測資料就緒度決策支援"],
+  ["/govtech/wifi-allocation", "Public Wi-Fi Allocation & Digital Inclusion Decision Support"],
+  ["/zh/govtech/wifi-allocation", "臺北市公共 Wi-Fi 資源配置與數位近用決策支援"],
   ["/govtech/bus-service", "Taipei Bus Network & Service Coverage Decision Support"],
   ["/zh/govtech/bus-service", "臺北市公車路網與服務涵蓋決策支援"]
 ];
