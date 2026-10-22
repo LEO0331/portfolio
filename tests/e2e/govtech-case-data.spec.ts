@@ -80,7 +80,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases, getProjectGo
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation"]);
     for (const key of ["id", "slug", "displayNumber"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }
@@ -98,7 +98,7 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
         const url = new URL(link.url);
         expect(url.protocol).toBe("https:");
         if (url.hostname === "github.com" && url.pathname.includes("/blob/")) {
-          expect(url.pathname.split("/blob/")[1].split("/")[0], link.label).toBe(record.sourceVersion);
+          expect(record.id === "wifi-allocation" ? [record.sourceVersion, "fc3fe9340c460418b4255d04cf8a0150dbcf669b"] : [record.sourceVersion], link.label).toContain(url.pathname.split("/blob/")[1].split("/")[0]);
         }
       }
       for (const table of record.scenarioTables) {

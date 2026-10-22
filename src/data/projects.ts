@@ -852,13 +852,14 @@ export const projects: Project[] = [
   },
   {
     id: "taipei-free-wifi-map",
+    govtechCaseIds: ["wifi-allocation"],
     slug: "taipei-free-wifi-map",
     name: "Taipei Free Wi-Fi Map",
     tagline: "Nearby public Wi-Fi finder with more than 3,000 listed hotspots",
     shortDescription:
       "A bilingual mobile-first map for finding Taipei Free Wi-Fi hotspots by district, type, agency, vendor, and nearby distance.",
     fullDescription:
-      "Taipei Free Wi-Fi Map turns the city hotspot registry into an easier nearby-search experience. It combines marker clustering, browser geolocation, distance sorting, rich filters, a paginated directory, and distribution summaries in a static deployment.",
+      "Taipei Free Wi-Fi Map retains its bilingual 3,000+ record explorer, nearby search, marker clustering, filters, directory and static pipeline. Independent Policy #8 adds source reconciliation, evidence-quality capacity scenarios, official GIS validation, experimental facility proximity research and provenance-rich JSON/CSV exports. Coordinate assumptions and self-reference limits remain explicit; operational network quality and digital-inclusion outcomes are not measured.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "MarkerCluster"],

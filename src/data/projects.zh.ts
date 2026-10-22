@@ -317,7 +317,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "台北免費 Wi-Fi 熱點地圖",
     tagline: "查找附近公共 Wi-Fi，收錄超過 3,000 個熱點",
     shortDescription: "以雙語行動優先地圖，依行政區、類別、機關、業者與距離查找 Taipei Free Wi-Fi 熱點。",
-    fullDescription: "將市府熱點名冊轉為方便的附近查詢介面，整合地圖群聚、瀏覽器定位、距離排序、進階篩選、分頁目錄及分布摘要，並以靜態網站部署。",
+    fullDescription: "保留超過 3,000 筆紀錄的雙語探索工具、附近搜尋、群聚地圖、篩選、目錄與靜態管線。獨立 Policy #8 加入來源版本對帳、證據品質名額情境、官方 GIS 驗證、實驗設施近鄰研究及可追溯 JSON／CSV 匯出；明示座標假設與自身參考限制，未實測營運網路品質或數位近用成果。",
     role: "前端／公民科技開發者",
     categories: ["Web 應用", "地圖工具", "公民科技"],
     features: ["收錄超過 3,000 個熱點的群聚地圖", "附近查詢與距離排序", "行政區、類別、機關與業者篩選", "雙語熱點目錄"]
