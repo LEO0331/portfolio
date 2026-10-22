@@ -100,3 +100,7 @@ Recorded source performance: manifest83,384B +initial index563,601B =646,985bus 
 Current Portfolio audit has five existing high package findings (braces,chokidar,fast-glob,micromatch,tailwindcss),GHSA-vfj7-8cjw-p6xm. Vite8.3.5 was updated in the base PR24,not by Case007. Manifests/lockfile are unchanged in this feature. No standalone lint script exists; build runs TypeScript static analysis.
 
 Missing accepted directional schedule assignment,actual operational history,calendar/geometry row freshness,passenger demand,walking access and population denominators remain limits. Network records and investigation diversity do not establish shortage,reliability,missed trips,equity,route-overlap inefficiency or benefits of cuts/investments. Independent personal POC,not government endorsement or procurement. Future source improvements require new auditable evidence; no operational claims are manufactured.
+
+## Publication
+
+Exactly one reviewable draft [PR25](https://github.com/LEO0331/portfolio/pull/25) was created against main,attached to this chat and verified open/unmerged. Implementation44a0e3b on codex/govtech-bus-service-case-007; Portfolio base7c7ace1b97a334e0b618b78f7f018dc0c0a150bd. No merge or post-merge deployment performed. Lifecycle-only follow-up records this publication; human review/manual merge recommended.

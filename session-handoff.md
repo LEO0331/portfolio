@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Current status:** Implementation and verification complete; publishing one reviewable PR on codex/govtech-bus-service-case-007, based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+**Current status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
 
 ### Completed
 
