@@ -413,6 +413,29 @@
         "Six existing high dependency package findings; no manifests/lockfile changes; Policy5 remains planned",
         "Draft PR22 created/attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/22; implementation5a82186 on codex/govtech-neihu-congestion-v1-5"
       ]
+    },
+    {
+      "id": "govtech-bus-service-v1-6-2026-10",
+      "name": "Present bus network and published-service review as Case007",
+      "description": "Add bilingual evidence-grounded route/stop/variant modelling and actual capacity/sensitivity tables, preserving separate directional/history gates and existing shared project relationships.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-neihu-congestion-v1-5-2026-10"
+      ],
+      "doneCriteria": [
+        "Seven complete bilingual engineering cases with prior technical evidence and homepage pins preserved",
+        "Pinned Policy5 merge,manifest/schema/hash and bounded artifact/scenario validation independently recorded",
+        "Crash Map links to006and007; Bin001/005,normalizer,lazy routes,SEO andresponsiveness intact",
+        "Source-accurate documentation,unit/build/E2E/both-base/visual/harness evidence and exactly one reviewable unmerged PR"
+      ],
+      "evidence": [
+        "Clean baseline22unit105Playwright17trackedflows,TypeScript/build,harness/diff passed;5existing high findings onVite8.3.5 base",
+        "Pinned bus artifacts independently verified in ignored .omx/source-bus-service; plan saved before app edits",
+        "Final22unit/118Playwright17trackedflows(100%),TypeScript/build24routes,harness18features,diff and both-base14bilingualURLs/five widths passed; visual95/100",
+        "Independent original pure functions:1241qualityA163B927C151,0directional,0history;capacity5/10 exact ordered IDs and3/5set differences verified",
+        "Actual Git Bash init.sh rerun passes harness/install then stops at5existing high audit findings; downstream checks pass separately; no dependencies changed",
+        "Exactly one draft PR25 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/25; implementation44a0e3b on codex/govtech-bus-service-case-007"
+      ]
     }
   ]
 }

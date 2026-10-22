@@ -2,43 +2,39 @@
 
 ## Current State
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-10-22
 
-**Active work:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Observation Readiness Case006.
+**Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Status:** Complete and published as draft PR #22 (https://github.com/LEO0331/portfolio/pull/22), verified open and unmerged. Branch codex/govtech-neihu-congestion-v1-5, implementation5a82186, based on merged main b629614 (Portfolio PR #21). No automatic merge.
+**Status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
 
 ### Completed
 
-- Six bilingual cases reference five existing projects. Crash Map owns only neihu-congestion through its case array; existing normalizer/drawer and Bin001/005 relationship are unchanged. No transit placeholder or duplicate root project.
-- Case006 presents58 detector/source-quality reviews (27urgent/31review/0ready) independently from0eligible historical performance rankings. All58 road-name research scopes remain unverified. Exact capacity5/10 selections and3/5road representation were checked against pinned pure functions offline.
-- SourcePR7 is merged at deb28d5d5b4e608eb04d89743bc3fea632d74c8a; snapshot neihu-readiness-49f28aaa55758ffe, method neihu-traffic-observation-review-v1/config1.0.0. Snapshot generation2026-10-21T01:43:13.322Z; full SHA256 validated independently.
-- Bilingual case,18-section Chinese specification, source audit, Case007 template, README pair, source-accurate project/domain copy, explicit routes/SEO and local production visual evidence are present. Earlier five case data and historical verification remain unchanged.
-- Crash Map accident/factor/violation/appraisal functionality, ID/slug/URLs/image/stack/featured flag, filters, homepage pin order and lazy loading are preserved. Policy5 bus-network/service analysis stays planned in the same repository.
+- Seven bilingual cases reference five projects through existing shared rendering and relationships. Crash Map owns006/007; Bin001/005,homepage pins and earlier technical evidence remain preserved. No new dependency,backend or runtime bus fetch/calculation.
+- Case007 has18bilingual sections,six scenario tables and exact ranked capacity5/10 IDs. Separate gates show1,241quality candidates(A163/B927/C151),0directional published comparisons and0historical performance. Quality priorities do not establish service shortage or benefits.
+- Pinned sourcePR9/e01b651d66cedfb5106c263088dc99fbc5d5e3b8,snapshotpto-bus-0b70f80504e5b952,methodbus-network-service-evidence-review-v1/config1.0.0. Exact83,384B manifest SHA256 verified;420reference contracts and six representative bodies independently checked with original pure functions. No all416detail download,ETL or upstream full-suite replay.
+- READMEs,18-section Chinese specification,source audit,Case008 template,verification/visual artifacts and lifecycle updated. Case006 changes limited to two obsolete bus roadmap strings per language; frozen complete fixture protects other fields.
 
 ### Verification Evidence
 
-- Baseline: clean install,harness,22unit,TypeScript/build,92Playwright/17trackedflows and diff passed; six existing high audit package findings.
-- Final:22unit,105Playwright/17trackedflows(100%),TypeScript/build with22indexable routes,harness/diff passed. All five earlier case fixtures and Bin dual-link regression pass; new complete Shade fixture protects its exact evidence.
-- Actual root/Pages generated routes:all6cases EN/ZH direct/refresh/canonical/lang,Neihu locale/back/404, five widths320/390/768/1024/1440 with no body overflow. Keyboard tables/cards and mobile light/dark pass; visual95/100. No live traffic source requests.
-- Source/integration read-only review found no remaining actionable issues. Bounded cached pure-function verification selects existing readiness candidates only; no source acquisition,ETL,historical aggregation or speeds generated. Upstream66tests/5integration remain recorded evidence, not a full suite rerun.
-- Main script310.27kB/99.78kB gzip; case catalogue deferred. No dependency/lockfile/pin changes. Full evidence: docs/govtech-v1.5-verification.md.
+- Baseline22unit/105Playwright; final22unit/118Playwright/17trackedflows(100%),TypeScript/Vite8.3.5 build,harness18features and diff checks passed.24indexable routes.
+- Actual root/Pages14bilingualcase URLs each:direct/refresh/canonical/language,locale/404 and five320–1440widths passed,zero page errors/overflow. Desktop/mobile/light/dark visual95/100. Main312.72kB/100.63kB gzip,case catalogue deferred.
+- Capacity5:gaps5selected/2routes versus balanced5/5routes,3added/3removed. Capacity10:10/5versus10/10,5added/5removed. Unlimited1,241/416each; broader ambiguity assumption changes scope but not quality population or selected IDs.
+- Actual Git Bash init.sh rerun passed harness/install then stopped at five existing high Tailwind/braces-chain findings. Downstream checks passed separately. No standalone lint script; TypeScript build supplies static analysis. Details: docs/govtech-v1.6-verification.md.
 
 ### Blockers
 
-None for implementation or publication. Draft PR #22 is ready for human review; six existing high dependency findings remain separately disclosed.
+None for implementation/publication. Existing audit findings keep the complete init.sh gate red and need separate dependency remediation.
 
 ### Remaining Risks
 
-- No accepted operational traffic observations or historical period/cadence. Quality urgency is metadata verification, not congestion or danger.31published single links do not validate study geography or older detector continuity;27multi-link devices remain unresolved.
-- Source periods,timezones,units,link/geography and comparability require new reviewed evidence. No worst-bottleneck ranking,travel-time saving,crash-congestion causality or traffic intervention benefit is established.
-- Six high package findings remain; init.sh stops at audit and downstream checks ran separately. No official government endorsement or post-merge deployment/physical-device PWA certification.
+No accepted directional schedule assignment,actual executed-trip history,passenger demand,walking-access/population denominators or verified service adequacy. No shortage,reliability,equity,route-cut/investment benefit or official endorsement claim. Only six artifact bodies were independently hashed; upstream99tests/11integration checks remain recorded evidence. Five existing high dependency findings; no post-merge deployment claim.
 
 ### Next Session Should
 
-1. Review Case006 PR and source-backed quality/performance distinction, then merge only through human review.
-2. Next planned policy topic: Policy5 bus-network/service decision support in the same taipei-crash-map, following the Case007 guide after verified source completion. Do not add a placeholder case now.
-3. Address existing dependency findings separately; preserve earlier case evidence, normalizer semantics and homepage pins.
+1. Review Case007 PR and evidence gates; merge only through human review.
+2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
+3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.
 
 ## Update Contract
 
@@ -243,3 +239,39 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 - Six existing high audit package findings remain. Publication pending; Policy5 bus-network/service research is planned next in the same Crash Map repository, outside this release.
 
 - Publication: implementation5a82186 pushed; draft PR #22 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/22. Connector403 recovered through GitHub API with existing Git credentials held in memory and excluded from output/files. Lifecycle-only follow-up records completion; app verification remains valid.
+
+### 2026-10-22 — GovTech Case007 bus evidence review
+
+**Last updated:** 2026-10-22
+
+**Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
+
+**Status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+
+### Completed
+
+- Seven bilingual cases reference five projects through existing shared rendering and relationships. Crash Map owns006/007; Bin001/005,homepage pins and earlier technical evidence remain preserved. No new dependency,backend or runtime bus fetch/calculation.
+- Case007 has18bilingual sections,six scenario tables and exact ranked capacity5/10 IDs. Separate gates show1,241quality candidates(A163/B927/C151),0directional published comparisons and0historical performance. Quality priorities do not establish service shortage or benefits.
+- Pinned sourcePR9/e01b651d66cedfb5106c263088dc99fbc5d5e3b8,snapshotpto-bus-0b70f80504e5b952,methodbus-network-service-evidence-review-v1/config1.0.0. Exact83,384B manifest SHA256 verified;420reference contracts and six representative bodies independently checked with original pure functions. No all416detail download,ETL or upstream full-suite replay.
+- READMEs,18-section Chinese specification,source audit,Case008 template,verification/visual artifacts and lifecycle updated. Case006 changes limited to two obsolete bus roadmap strings per language; frozen complete fixture protects other fields.
+
+### Verification Evidence
+
+- Baseline22unit/105Playwright; final22unit/118Playwright/17trackedflows(100%),TypeScript/Vite8.3.5 build,harness18features and diff checks passed.24indexable routes.
+- Actual root/Pages14bilingualcase URLs each:direct/refresh/canonical/language,locale/404 and five320–1440widths passed,zero page errors/overflow. Desktop/mobile/light/dark visual95/100. Main312.72kB/100.63kB gzip,case catalogue deferred.
+- Capacity5:gaps5selected/2routes versus balanced5/5routes,3added/3removed. Capacity10:10/5versus10/10,5added/5removed. Unlimited1,241/416each; broader ambiguity assumption changes scope but not quality population or selected IDs.
+- Actual Git Bash init.sh rerun passed harness/install then stopped at five existing high Tailwind/braces-chain findings. Downstream checks passed separately. No standalone lint script; TypeScript build supplies static analysis. Details: docs/govtech-v1.6-verification.md.
+
+### Blockers
+
+None for implementation/publication. Existing audit findings keep the complete init.sh gate red and need separate dependency remediation.
+
+### Remaining Risks
+
+No accepted directional schedule assignment,actual executed-trip history,passenger demand,walking-access/population denominators or verified service adequacy. No shortage,reliability,equity,route-cut/investment benefit or official endorsement claim. Only six artifact bodies were independently hashed; upstream99tests/11integration checks remain recorded evidence. Five existing high dependency findings; no post-merge deployment claim.
+
+### Next Session Should
+
+1. Review Case007 PR and evidence gates; merge only through human review.
+2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
+3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.

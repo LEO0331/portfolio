@@ -127,7 +127,7 @@ test.describe("HeavyRain003 source-backed bilingual decision support", () => {
       const study = records[locale].find(({ id }) => id === "heavy-rain-preparedness")!;
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(6);
+      await expect(completed.locator("article")).toHaveCount(7);
       const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
       await expect(card).toContainText("003");
       const link = card.locator(`a[href="/portfolio/${prefix}govtech/heavy-rain-preparedness"]`);

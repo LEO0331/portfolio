@@ -6,6 +6,7 @@ import civicBaseline from "../fixtures/govtech-civic-baseline.json" with { type:
 import heavyRainBaseline from "../fixtures/govtech-heavy-rain-baseline.json" with { type: "json" };
 import urbanBaseline from "../fixtures/govtech-urban-renewal-baseline.json" with { type: "json" };
 import shadeBaseline from "../fixtures/govtech-shade-equity-baseline.json" with { type: "json" };
+import neihuBaseline from "../fixtures/govtech-neihu-congestion-baseline.json" with { type: "json" };
 
 // Normalize only the reusable template's structural migration; preserve every
 // pre-existing Bin001 copy, source, evidence, weight and scenario cell verbatim.
@@ -25,6 +26,15 @@ function originalBinRecord(record: unknown) {
     }));
     delete current.scenarioTables;
   }
+  return current;
+}
+
+// v1.6 permits correcting only the obsolete Policy #5 roadmap. Keep the
+// future section's engineering chain and every other technical field frozen.
+function originalNeihuRecord(record: unknown) {
+  const current = structuredClone(record) as Record<string, any>;
+  current.futureExtensions[1] = "[authorized roadmap correction]";
+  current.sections.find((section: { id: string }) => section.id === "future").paragraphs[1] = "[authorized roadmap correction]";
   return current;
 }
 
@@ -51,6 +61,16 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
   test(`Shade005 ${locale} preserves the complete frozen v1.4 record`, () => {
     expect(records.find((record) => record.id === "shade-equity")).toEqual(shadeBaseline[locale]);
   });
+  test(`Neihu006 ${locale} preserves its frozen v1.5 technical record and updates only the completed bus roadmap`, () => {
+    const neihu = records.find((record) => record.id === "neihu-congestion")!;
+    expect(originalNeihuRecord(neihu)).toEqual(originalNeihuRecord(neihuBaseline[locale]));
+    expect(neihu.futureExtensions[0]).toBe(neihuBaseline[locale].futureExtensions[0]);
+    const roadmap = [...neihu.futureExtensions, neihu.sections.find(({ id }) => id === "future")!.paragraphs[1]].join(" ");
+    expect(roadmap).toMatch(/007/);
+    expect(roadmap).toMatch(locale === "en" ? /bus/i : /公車/);
+    expect(roadmap).toMatch(locale === "en" ? /complet|implemented/i : /完成/);
+    expect(roadmap).not.toMatch(locale === "en" ? /bus.{0,80}remains planned/i : /公車.{0,50}仍.{0,10}規劃/);
+  });
 }
 
 import { projects } from "../../src/data/projects";
@@ -60,7 +80,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases, getProjectGo
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service"]);
     for (const key of ["id", "slug", "displayNumber"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }
@@ -118,10 +138,12 @@ test("project case normalization validates ownership, precedence, duplicates and
     const bin = bins[0];
     expect(bin.govtechCaseId).toBeUndefined();
     expect(bin.govtechCaseIds).toEqual(["bin-policy", "shade-equity"]);
-    const crash = catalogue.find(({ id }) => id === "taipei-crash-map")!;
+    const crashes = catalogue.filter(({ id }) => id === "taipei-crash-map");
+    expect(crashes).toHaveLength(1);
+    const crash = crashes[0];
     expect(crash.govtechCaseId).toBeUndefined();
-    expect(crash.govtechCaseIds).toEqual(["neihu-congestion"]);
-    expect(getProjectGovTechCases(crash, locale)).toEqual(getGovTechCases(locale).filter(({ id }) => id === "neihu-congestion"));
+    expect(crash.govtechCaseIds).toEqual(["neihu-congestion", "bus-service"]);
+    expect(getProjectGovTechCases(crash, locale)).toEqual(getGovTechCases(locale).filter(({ id }) => id === "neihu-congestion" || id === "bus-service"));
     expect(getProjectGovTechCases(bin, locale)).toEqual(getGovTechCases(locale).filter(({ id }) => id === "bin-policy" || id === "shade-equity"));
     const normalize = (overrides: Record<string, unknown>) => getProjectGovTechCases({ ...bin, ...overrides } as typeof bin, locale).map(({ id }) => id);
     expect(normalize({ govtechCaseIds: ["shade-equity", "unknown", "bin-policy", "shade-equity", "civic-1999"] })).toEqual(["shade-equity", "bin-policy"]);
