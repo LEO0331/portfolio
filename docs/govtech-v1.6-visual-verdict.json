@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case007 adds three objective gates and six source-backed scenario tables within the established case layout."
+  ],
+  "suggestions": [],
+  "reasoning": "Desktop evidence tables and Chinese mobile dark layout preserve Case006 typography, spacing and colors. Quality counts and empty directional/history gates remain prominent; wide tables scroll locally without body overflow."
+}

@@ -96,7 +96,7 @@ export const neihuCongestionCaseZh: GovTechCase = {
     ], links: previews },
     { id: "future", title: "下一步證據需求", content: "future", paragraphs: [
       "交通來源整合 → 設備身分驗證 → 時間證據資格 → 可解釋觀測就緒度 → 查核容量情境 → 可重現工程證據。",
-      "有用系統先建立哪些量測可比較；歷史未通過仍能指出待調查來源及設備關係。Policy #5 公車路網／服務決策支援仍規劃於同一 taipei-crash-map 儲存庫，供未來案例 007，不在此實作。"
+      "有用系統先建立哪些量測可比較；歷史未通過仍能指出待調查來源及設備關係。同一 taipei-crash-map 的 Policy #5 路網盤點與公告服務文件查核現已完成為案例 007；方向性服務比較與實際公車表現仍受證據限制。共用專案的案例連結可前往兩個獨立模組。"
     ] }
   ],
   architecture: ["臺北官方交通來源", "限定離線來源擷取", "原始位元組 SHA256 驗證", "結構與中繼資料驗證", "偵測器／路段／方向稽核", "觀測資格檢查", "版本化靜態就緒度快照", "純 TypeScript 決策函式", "React 交通就緒度儀表板", "容量情境", "JSON／CSV 證據簡報"],
@@ -146,5 +146,5 @@ export const neihuCongestionCaseZh: GovTechCase = {
   ],
   evidence: neihuCongestionCase.evidence.map((link, index) => ({ ...link, label: evidenceLabels[index] })),
   previewAssets: previews,
-  futureExtensions: ["取得權威研究邊界與方向路段／Section 對照，再透過新稽核快照採用具有已驗證單位、車道身分、頻率、涵蓋與同日參考的可比較時間歷史。", "Policy #5 大眾運輸服務／公車路網仍規劃於 taipei-crash-map；未來完成案例 007 可附加案例關聯，不複製根專案。"]
+  futureExtensions: ["取得權威研究邊界與方向路段／Section 對照，再透過新稽核快照採用具有已驗證單位、車道身分、頻率、涵蓋與同日參考的可比較時間歷史。", "同一 taipei-crash-map 的 Policy #5 公車路網與公告服務文件查核已完成為案例 007；同一專案提供兩案連結，方向性服務比較與實際歷史仍受證據限制。"]
 };

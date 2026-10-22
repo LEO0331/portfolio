@@ -206,3 +206,11 @@ Portfolio 只提供敘事、typed 表格與 pinned evidence，不嵌 raw XML／�
 目前根專案只設定 `govtechCaseIds: ['neihu-congestion']`，不建立 `transit-service` placeholder 或第二根 project。沿用既有 `getProjectGovTechCases(project, locale)`：新陣列有定義時優先（含空陣列）、去重／順序／所屬 project 驗證、未知 ID 過濾及 legacy fallback，無新增 renderer 或 normalization。Policy #5 source-backed completion 後再 append 真正 case ID，維持 006 連結及 Bin 001／005 既有關係。
 
 新增方式見[案例模板](./govtech-case-study-template.md)。原路線圖仍保留 Wi-Fi 服務配置與鼠患專項等規劃、`taipei-safety-map` 延伸、同 repo 公車／交通議題；Bin Map v1.3 政府作業流程無限期延後。上述題目不因本次發布改成完成。
+
+### v1.6 現況補註 — 2026-10-22
+
+本案發布時的 Policy #5 規劃已由[案例007公車路網與公告服務查核](./govtech-case-study-007.zh-TW.md)完成。其方向性公告服務比較與實際營運歷史仍受證據限制；不改變本案58品質候選、零交通表現候選、方法、快照或固定來源版本。同一 Crash Map 專案的既有陣列依序連結006／007；不複製根專案。原 v1.5 驗證保留當時脈絡。
+
+### v1.6 現況補註 — 2026-10-22
+
+本案發布時的 Policy #5 規劃已完成為[案例007公車路網與公告服務文件查核](./govtech-case-study-007.zh-TW.md)。方向性公告服務比較與實際營運歷史仍受證據限制；不改變本案58品質候選、零交通表現候選、方法、快照或固定來源版本。同一 Crash Map 的既有案例陣列依序連結006／007。原 v1.5 驗證保留當時脈絡。

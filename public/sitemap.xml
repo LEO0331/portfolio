@@ -46,6 +46,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://leo0331.github.io/portfolio/govtech/bus-service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://leo0331.github.io/portfolio/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -97,6 +102,11 @@
   </url>
   <url>
     <loc>https://leo0331.github.io/portfolio/zh/govtech/neihu-congestion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://leo0331.github.io/portfolio/zh/govtech/bus-service</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

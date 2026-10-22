@@ -659,11 +659,11 @@ export const projects: Project[] = [
     id: "taipei-crash-map",
     slug: "taipei-crash-map",
     name: "Taipei Traffic Accident Hotspot Map",
-    tagline: "Historical crash exploration and traffic-observation readiness review",
+    tagline: "Crash exploration, traffic readiness and bus-network evidence review",
     shortDescription:
-      "A bilingual historical crash explorer with a completed Neihu traffic-observation readiness POC; historical congestion ranking remains unavailable.",
+      "A bilingual crash explorer with completed Neihu observation-readiness and bus network/published-service review POCs; operational performance remains evidence-gated.",
     fullDescription:
-      "Taipei Traffic Accident Hotspot Map turns public traffic-accident records into an accessible bilingual exploration tool. It retains A1/A2 points, intersection hotspots, location/time/district filters, crash-factor charts, traffic-violation reporting aggregates, appraisal/reconsideration records and static JSON/PWA delivery. Its separate lazy-loaded traffic module adds official VD source auditing, detector inventory, link/direction identity validation, source freshness and historical-observation eligibility checks, independent quality-review tiers, deterministic capacity5/10 equipment-investigation scenarios and JSON/CSV evidence briefings. The 58 road-name-filtered devices all retain unverified study geography; no accepted operational observation history or congestion-performance ranking is published. Accident hotspots are not congestion measurements. Policy5 bus-network/service analysis remains planned in this same repository.",
+      "Taipei Traffic Accident Hotspot Map turns public traffic-accident records into an accessible bilingual exploration tool. It retains A1/A2 points, intersection hotspots, location/time/district filters, crash-factor charts, traffic-violation reporting aggregates, appraisal/reconsideration records and static JSON/PWA delivery. Its separate lazy-loaded traffic module adds official VD source auditing, detector inventory, link/direction identity validation, source freshness and historical-observation eligibility checks, independent quality-review tiers, deterministic capacity5/10 equipment-investigation scenarios and JSON/CSV evidence briefings. The 58 road-name-filtered devices all retain unverified study geography; no accepted operational observation history or congestion-performance ranking is published. Accident hotspots are not congestion measurements. The independent bus module adds eight official PTO source contracts, main-route/variant/operator and stop-post/location/sequence resolution, qualitative A/B/C documentation tiers, capacity and route-balancing scenarios, immutable indexed artifacts and JSON/CSV briefings. Its 1,241 quality-review units do not qualify for direction-specific published-service comparison or actual historical-service performance. Published schedules are not achieved headways, passenger demand, service shortages or transport equity.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
@@ -677,12 +677,16 @@ export const projects: Project[] = [
       "Official VD source audit and detector/link/direction inventory",
       "Historical observation eligibility and source freshness checks",
       "Independent quality tiers and capacity5/10 equipment review",
-      "Deterministic scenarios,JSON/CSV briefings and lazy-loaded traffic module"
+      "Deterministic scenarios,JSON/CSV briefings and lazy-loaded traffic module",
+      "Official PTO bus route/variant/stop identity and sequence modelling",
+      "Published timetable/headway evidence with unresolved directional eligibility",
+      "A/B/C investigation tiers and main-route-balanced capacity scenarios",
+      "Versioned bus manifests, indexed route details and research briefings"
     ],
     image: "/src/assets/images/projects/taipei-crash-map.png",
     demoUrl: "https://leo0331.github.io/taipei-crash-map/",
     repoUrl: "https://github.com/LEO0331/taipei-crash-map",
-    govtechCaseIds: ["neihu-congestion"],
+    govtechCaseIds: ["neihu-congestion", "bus-service"],
     status: "live",
     featured: false
   },

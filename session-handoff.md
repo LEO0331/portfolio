@@ -1,32 +1,40 @@
 # Session Handoff
 
-**Last updated:** 2026-10-21
+**Last updated:** 2026-10-22
 
-**Current objective:** Portfolio GovTech Showcase v1.5 — Neihu Traffic Congestion & Observation Readiness Case006.
+**Current objective:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Current status:** Complete and published as draft PR #22: https://github.com/LEO0331/portfolio/pull/22 (verified open/unmerged). Branch codex/govtech-neihu-congestion-v1-5, implementation5a82186, based on merged main b629614 (Portfolio PR #21). Do not merge automatically.
+**Current status:** Implementation and verification complete; publishing one reviewable PR on codex/govtech-bus-service-case-007, based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
 
-## Blockers
+### Completed
 
-None for implementation/publication. Six pre-existing high dependency package findings remain separately recorded.
+- Seven bilingual cases reference five projects through existing shared rendering and relationships. Crash Map owns006/007; Bin001/005,homepage pins and earlier technical evidence remain preserved. No new dependency,backend or runtime bus fetch/calculation.
+- Case007 has18bilingual sections,six scenario tables and exact ranked capacity5/10 IDs. Separate gates show1,241quality candidates(A163/B927/C151),0directional published comparisons and0historical performance. Quality priorities do not establish service shortage or benefits.
+- Pinned sourcePR9/e01b651d66cedfb5106c263088dc99fbc5d5e3b8,snapshotpto-bus-0b70f80504e5b952,methodbus-network-service-evidence-review-v1/config1.0.0. Exact83,384B manifest SHA256 verified;420reference contracts and six representative bodies independently checked with original pure functions. No all416detail download,ETL or upstream full-suite replay.
+- READMEs,18-section Chinese specification,source audit,Case008 template,verification/visual artifacts and lifecycle updated. Case006 changes limited to two obsolete bus roadmap strings per language; frozen complete fixture protects other fields.
 
-## Files Relevant to the Next Update
+### Verification Evidence
 
-- src/data/govtechNeihuCongestion.ts/.zh.ts:16bilingual sections,3population gate,dual-objective tiers,source/quality/capacity/performance tables and pinned evidence.
-- Case ID/registration,Crash project array/copy,domain/home CTA,AppRouter/routeConfig and sitemap. Existing normalizer,drawer,lazy loader and old case data unchanged.
-- tests/e2e/govtech-neihu-congestion.spec.ts,case-data/Civic/othercase counts,tools/govtech.test.mjs and new fullShadefixture; original fixtures unchanged.
-- docs/govtech-case-study-006.zh-TW.md,govtech-neihu-congestion-source-audit.md,govtech-v1.5-verification.md,visualverdict/eightlocal screenshots; READMEs,Case007template,current-status and lifecycle.
+- Baseline22unit/105Playwright; final22unit/118Playwright/17trackedflows(100%),TypeScript/Vite8.3.5 build,harness18features and diff checks passed.24indexable routes.
+- Actual root/Pages14bilingualcase URLs each:direct/refresh/canonical/language,locale/404 and five320–1440widths passed,zero page errors/overflow. Desktop/mobile/light/dark visual95/100. Main312.72kB/100.63kB gzip,case catalogue deferred.
+- Capacity5:gaps5selected/2routes versus balanced5/5routes,3added/3removed. Capacity10:10/5versus10/10,5added/5removed. Unlimited1,241/416each; broader ambiguity assumption changes scope but not quality population or selected IDs.
+- Actual Git Bash init.sh rerun passed harness/install then stopped at five existing high Tailwind/braces-chain findings. Downstream checks passed separately. No standalone lint script; TypeScript build supplies static analysis. Details: docs/govtech-v1.6-verification.md.
+
+### Blockers
+
+None for implementation/publication. Existing audit findings keep the complete init.sh gate red and need separate dependency remediation.
+
+### Remaining Risks
+
+No accepted directional schedule assignment,actual executed-trip history,passenger demand,walking-access/population denominators or verified service adequacy. No shortage,reliability,equity,route-cut/investment benefit or official endorsement claim. Only six artifact bodies were independently hashed; upstream99tests/11integration checks remain recorded evidence. Five existing high dependency findings; no post-merge deployment claim.
 
 ## Recommended Next Step
 
-Review the Case006 PR, exact quality selections and explicitly empty historical performance. Human merge only. Policy5 bus-network/service analysis is the next planned topic in taipei-crash-map; append a Case007 ID to its existing array only after verified source completion. No transit placeholder or separate repository. Other original roadmap topics remain planned.
+1. Review Case007 PR and evidence gates; merge only through human review.
+2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
+3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.
 
-## Verification
 
-Baseline22unit/92Playwright; final22unit/105Playwright,17/17trackedflows(100%),TypeScript/build22indexable routes,harness/diff. Actual root/Pages builds:12bilingual case URLs direct/refresh/canonical/lang,Neihu locale/back/404,five widths320–1440,no overflow,keyboard/mobile/light/dark; visual95/100. First integrated suite passed; source review found no remaining actionable issue. Main JS310.27kB/99.78kB gzip,case narratives deferred.
+## Files Relevant to the Next Update
 
-Source deb28d5d5b4e608eb04d89743bc3fea632d74c8a; snapshot neihu-readiness-49f28aaa55758ffe; method neihu-traffic-observation-review-v1/config1.0.0; generated2026-10-21T01:43:13.322Z. Full snapshotSHA256 e54b852d17388683eddc16b46c930178451df4af78a4802663eaef579ccf3441. Cached unchanged pure functions independently validated snapshot and reproduced quality5/10 (58eligible,5/10selected,3/5roads), both performance strategies0/0. No ETL or historical aggregation; full upstream66tests/5integration not rerun.
-
-## Remaining Risks
-
-No admitted historical observations,period/cadence or verified study geography.31single links establish only published metadata;27multi-link devices unresolved. Quality27urgent/31review/0ready is not traffic severity; null ratios are unknown. No traffic benefit,causality or official/PWA acceptance claim. Six existing high findings on unchanged dependency/lockfile;init.sh stops at audit,downstream steps ran separately. Details and source advisories8(3moderate/5high) remain distinct in versioned verification.
+src/data/govtechBusService.ts/.zh.ts; case registration/types/routes/SEO; Crash project/domain/home copy; two Case006 roadmap strings per language; bus/previous-case E2E and Neihu fixture; README pair,Case007 specification/source audit/verification/visual artifacts,Case008 template,current status and lifecycle. Shared renderer,normalizer,drawer,dependencies and older technical fixtures unchanged.

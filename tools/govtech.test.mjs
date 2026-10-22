@@ -23,7 +23,9 @@ const pages = [
   ["/govtech/shade-equity", "Shade Equity & Urban Heat Preparedness"],
   ["/zh/govtech/shade-equity", "樹蔭公平與都市熱環境整備決策支援"],
   ["/govtech/neihu-congestion", "Neihu Traffic Congestion & Observation Readiness"],
-  ["/zh/govtech/neihu-congestion", "內湖交通壅塞與觀測資料就緒度決策支援"]
+  ["/zh/govtech/neihu-congestion", "內湖交通壅塞與觀測資料就緒度決策支援"],
+  ["/govtech/bus-service", "Taipei Bus Network & Service Coverage Decision Support"],
+  ["/zh/govtech/bus-service", "臺北市公車路網與服務涵蓋決策支援"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {

@@ -108,7 +108,7 @@ export const neihuCongestionCase: GovTechCase = {
     ] },
     { id: "future", title: "Next Evidence Requirements", content: "future", paragraphs: [
       "Traffic Source Integration → Detector Identity Validation → Temporal Evidence Eligibility → Explainable Observation Readiness → Review-Capacity Scenarios → Reproducible Engineering Evidence.",
-      "A useful system first establishes which measurements are comparable. When history fails validation, it can still identify source and detector relationships to investigate. Policy #5 bus-network/transit service decision support remains planned in this same taipei-crash-map repository for future Case 007, not implemented here."
+      "A useful system first establishes which measurements are comparable. When history fails validation, it can still identify source and detector relationships to investigate. Policy #5 network inventory and published-service documentation review is now completed as Case 007 in this same taipei-crash-map repository; direction-specific comparison and actual bus performance remain evidence-gated. The shared project case links provide access to both independent modules."
     ] }
   ],
   architecture: ["Official Taipei Traffic Sources", "Scoped Offline Source Acquisition", "Original-Byte SHA256 Verification", "Schema and Metadata Validation", "Detector / Link / Direction Auditing", "Observation Eligibility Checks", "Versioned Static Readiness Snapshot", "Pure TypeScript Decision Functions", "React Traffic Readiness Dashboard", "Capacity Scenarios", "JSON/CSV Evidence Briefing"],
@@ -186,5 +186,5 @@ export const neihuCongestionCase: GovTechCase = {
     { label: "Local production-preview verification · Chinese desktop", url: neihuCongestionSource("docs/images/neihu-congestion-desktop.jpg") },
     { label: "Local production-preview verification · Chinese mobile", url: neihuCongestionSource("docs/images/neihu-congestion-mobile.jpg") }
   ],
-  futureExtensions: ["Obtain an authoritative study boundary and directional-link/section crosswalk, then adopt comparable timestamped history with verified units, lane identity, cadence, coverage and same-day references through a new audited snapshot.", "Policy #5 transit-service/bus-network decision support remains planned in taipei-crash-map; a future completed Case 007 can append its case relationship without a duplicate root project."]
+  futureExtensions: ["Obtain an authoritative study boundary and directional-link/section crosswalk, then adopt comparable timestamped history with verified units, lane identity, cadence, coverage and same-day references through a new audited snapshot.", "Policy #5 bus network and published-service documentation review is completed as Case 007 in taipei-crash-map. The same project now links to both cases; directional service comparison and actual service history remain gated."]
 };
