@@ -2,39 +2,30 @@
 
 **Last updated:** 2026-10-22
 
-**Current objective:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
+**Current objective:** GovTech Showcase v1.7 — combined Wi-Fi Case008.
 
-**Current status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+**Current status:** Implementation and local verification complete; preparing one unmerged PR on `codex/govtech-wifi-allocation-case-008`, base `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. The isolated worktree is attached to this chat; original main remains unchanged.
 
-### Completed
+## Completed and Verification
 
-- Seven bilingual cases reference five projects through existing shared rendering and relationships. Crash Map owns006/007; Bin001/005,homepage pins and earlier technical evidence remain preserved. No new dependency,backend or runtime bus fetch/calculation.
-- Case007 has18bilingual sections,six scenario tables and exact ranked capacity5/10 IDs. Separate gates show1,241quality candidates(A163/B927/C151),0directional published comparisons and0historical performance. Quality priorities do not establish service shortage or benefits.
-- Pinned sourcePR9/e01b651d66cedfb5106c263088dc99fbc5d5e3b8,snapshotpto-bus-0b70f80504e5b952,methodbus-network-service-evidence-review-v1/config1.0.0. Exact83,384B manifest SHA256 verified;420reference contracts and six representative bodies independently checked with original pure functions. No all416detail download,ETL or upstream full-suite replay.
-- READMEs,18-section Chinese specification,source audit,Case008 template,verification/visual artifacts and lifecycle updated. Case006 changes limited to two obsolete bus roadmap strings per language; frozen complete fixture protects other fields.
+Eight bilingual cases; Case008 has 18 sections and 11 tables. Wi-Fi owns008, Bin001/005 and Crash006/007 are preserved. Original v1.0 merge is `fc3fe9340c460418b4255d04cf8a0150dbcf669b`; v1.1 merge is `8e01a2bd8d762b51fae979d32fd477e378d1876b`; geographic version is `wifi-geo-da9f69f501af4d6e1d3f9122`. Full identities, hashes and requirement mapping are in docs/govtech-v1.7-verification.md.
 
-### Verification Evidence
+Independently checked14 files, reproduced288 full Mode B outputs and checked12 Mode A combinations. Final22 unit/128 Playwright tests and17/17 tracked flows (100%) passed, along with TypeScript/build26 routes, harness19 features, diff checks and both-base browser verification. Sixteen bilingual case URLs per base, five widths, keyboard tables and real light/dark controls passed; visual95/100. Seven captures, a reference and the portable verifier are under docs/evidence/govtech-v1.7. Main increased1.17kB/0.34gzip; no runtime policy data, dependencies or upstream writes.
 
-- Baseline22unit/105Playwright; final22unit/118Playwright/17trackedflows(100%),TypeScript/Vite8.3.5 build,harness18features and diff checks passed.24indexable routes.
-- Actual root/Pages14bilingualcase URLs each:direct/refresh/canonical/language,locale/404 and five320–1440widths passed,zero page errors/overflow. Desktop/mobile/light/dark visual95/100. Main312.72kB/100.63kB gzip,case catalogue deferred.
-- Capacity5:gaps5selected/2routes versus balanced5/5routes,3added/3removed. Capacity10:10/5versus10/10,5added/5removed. Unlimited1,241/416each; broader ambiguity assumption changes scope but not quality population or selected IDs.
-- Actual Git Bash init.sh rerun passed harness/install then stopped at five existing high Tailwind/braces-chain findings. Downstream checks passed separately. No standalone lint script; TypeScript build supplies static analysis. Details: docs/govtech-v1.6-verification.md.
+## Blockers
 
-### Blockers
+No feature blocker. Five existing high dependency findings stop actual Git Bash init.sh at npm audit; downstream checks pass separately.
 
-None for implementation/publication. Existing audit findings keep the complete init.sh gate red and need separate dependency remediation.
+## Remaining Risks
 
-### Remaining Risks
-
-No accepted directional schedule assignment,actual executed-trip history,passenger demand,walking-access/population denominators or verified service adequacy. No shortage,reliability,equity,route-cut/investment benefit or official endorsement claim. Only six artifact bodies were independently hashed; upstream99tests/11integration checks remain recorded evidence. Five existing high dependency findings; no post-merge deployment claim.
+Mode B has verified0, assumption-tested87 and unresolved4 facilities. Other-reference gain is0 and optimization is unavailable; all-slots18/2/0 increments are self-only. No operation, access, RF, demand or digital-inclusion evidence. Full Python ETL and upstream suite were not rerun; no post-merge deployment claim.
 
 ## Recommended Next Step
 
-1. Review Case007 PR and evidence gates; merge only through human review.
-2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
-3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.
-
+1. Human review and manual merge of Case008 PR; do not enable automatic merge.
+2. Remediate dependency findings separately.
+3. Preserve source-version boundaries and earlier cases. Upstream PR6 and Portfolio Case007 PR25 are already merged; older draft status is historical.
 
 ## Files Relevant to the Next Update
 
-src/data/govtechBusService.ts/.zh.ts; case registration/types/routes/SEO; Crash project/domain/home copy; two Case006 roadmap strings per language; bus/previous-case E2E and Neihu fixture; README pair,Case007 specification/source audit/verification/visual artifacts,Case008 template,current status and lifecycle. Shared renderer,normalizer,drawer,dependencies and older technical fixtures unchanged.
+Bilingual govtechWifiAllocation data; case registry/types; Wi-Fi project copy/relation; GovTech copy; routing/static SEO; focused/regression tests and source/Bus007 fixtures; README pair, template, Case008 specification/audit/verification/evidence; feature ledger, progress and handoff. Shared renderer, normalizer, dependencies, lockfile, pins and previous case data are unchanged.
