@@ -4,37 +4,36 @@
 
 **Last updated:** 2026-10-22
 
-**Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
+**Active work:** Portfolio GovTech Showcase v1.7 — combined Wi-Fi Case008.
 
-**Status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. One reviewable PR is being prepared. No automatic merge.
 
 ### Completed
 
-- Seven bilingual cases reference five projects through existing shared rendering and relationships. Crash Map owns006/007; Bin001/005,homepage pins and earlier technical evidence remain preserved. No new dependency,backend or runtime bus fetch/calculation.
-- Case007 has18bilingual sections,six scenario tables and exact ranked capacity5/10 IDs. Separate gates show1,241quality candidates(A163/B927/C151),0directional published comparisons and0historical performance. Quality priorities do not establish service shortage or benefits.
-- Pinned sourcePR9/e01b651d66cedfb5106c263088dc99fbc5d5e3b8,snapshotpto-bus-0b70f80504e5b952,methodbus-network-service-evidence-review-v1/config1.0.0. Exact83,384B manifest SHA256 verified;420reference contracts and six representative bodies independently checked with original pure functions. No all416detail download,ETL or upstream full-suite replay.
-- READMEs,18-section Chinese specification,source audit,Case008 template,verification/visual artifacts and lifecycle updated. Case006 changes limited to two obsolete bus roadmap strings per language; frozen complete fixture protects other fields.
+- Eight bilingual cases use the existing shared renderer. Case008 has 18 sections and 11 tables; the existing Wi-Fi project owns Case008. Bin001/005, Crash006/007, homepage pins and prior case data are preserved.
+- Upstream PR6 merged at `8e01a2bd8d762b51fae979d32fd477e378d1876b`. Original v1.0 and geographic identities remain separate. Independently checked 14 files, reproduced all 288 Mode B outputs exactly and checked 12 Mode A combinations.
+- Mode A has 3,316 candidates (A63/B57/C3,196), strict eligible 3,293. Mode B has verified0 / assumption-tested87 / unresolved4, 12 polygons and zero non-self gain; optimization remains unavailable. Mode C still lacks operational and demand evidence.
 
 ### Verification Evidence
 
-- Baseline22unit/105Playwright; final22unit/118Playwright/17trackedflows(100%),TypeScript/Vite8.3.5 build,harness18features and diff checks passed.24indexable routes.
-- Actual root/Pages14bilingualcase URLs each:direct/refresh/canonical/language,locale/404 and five320–1440widths passed,zero page errors/overflow. Desktop/mobile/light/dark visual95/100. Main312.72kB/100.63kB gzip,case catalogue deferred.
-- Capacity5:gaps5selected/2routes versus balanced5/5routes,3added/3removed. Capacity10:10/5versus10/10,5added/5removed. Unlimited1,241/416each; broader ambiguity assumption changes scope but not quality population or selected IDs.
-- Actual Git Bash init.sh rerun passed harness/install then stopped at five existing high Tailwind/braces-chain findings. Downstream checks passed separately. No standalone lint script; TypeScript build supplies static analysis. Details: docs/govtech-v1.6-verification.md.
+- Baseline: 22 unit and 118 Playwright tests. Final: 22 unit and 128 Playwright tests, 17/17 tracked flows (100%), TypeScript/build, 26 routes, harness19 features and diff checks passed.
+- Both bases: 16 bilingual case URLs each passed direct loading, refresh, language and canonical checks; unknown404, five widths, keyboard tables and light/dark controls passed. Zero page/console errors or upstream policy requests. Visual95/100; seven captures plus a design reference are saved.
+- Main313.89kB/100.97gzip versus baseline312.72/100.63. Deferred case catalogue357.23/114.68. No runtime GIS, policy payload, dependency or upstream change.
+- npm ci passed. Actual Git Bash init.sh passed harness/install, then exited1 at five existing high audit findings. Downstream checks passed separately. See docs/govtech-v1.7-verification.md.
 
 ### Blockers
 
-None for implementation/publication. Existing audit findings keep the complete init.sh gate red and need separate dependency remediation.
+None for the feature PR. Existing dependency findings keep the complete init.sh gate red.
 
 ### Remaining Risks
 
-No accepted directional schedule assignment,actual executed-trip history,passenger demand,walking-access/population denominators or verified service adequacy. No shortage,reliability,equity,route-cut/investment benefit or official endorsement claim. Only six artifact bodies were independently hashed; upstream99tests/11integration checks remain recorded evidence. Five existing high dependency findings; no post-merge deployment claim.
+Facility datum, position, operation, access, physical identity and current boundary currency remain unverified. No nontrivial optimization, RF coverage, usage, population denominator or digital-inclusion result is established. Full Python ETL and upstream suite were not independently replayed. No public deployment claim.
 
 ### Next Session Should
 
-1. Review Case007 PR and evidence gates; merge only through human review.
-2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
-3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.
+1. Review the Case008 PR and merge manually after human acceptance.
+2. Address dependency findings separately.
+3. Preserve both source-phase identities, negative findings, prior cases and project ownership.
 
 ## Update Contract
 
@@ -275,3 +274,7 @@ No accepted directional schedule assignment,actual executed-trip history,passeng
 1. Review Case007 PR and evidence gates; merge only through human review.
 2. Address dependency findings separately. Case008 WiFi is a feasibility recommendation requiring verified source completion,not an implemented placeholder.
 3. Preserve source identities,earlier case evidence,shared relationship semantics and homepage pins.
+
+### 2026-10-22 — GovTech v1.7 combined Wi-Fi Case008
+
+Verified upstream PR6 merge before implementation. Added bilingual18-sectionCase008,source/geometry/scenarioevidence,projectrelationship,26staticroutes,source-pinnedlinks,Chinese specification,audit,verification,screenshots andportableNode replay. All288ModeBoutputs exactly reproduced;14filehashes and12ModeAruns checked. Final22unit/128Playwright/17flows,build,harness,bothbases/fivewidths anddiff passed. Fiveexistinghighauditfindings stopinit.sh;no dependencieschanged. One human-reviewPR,no automaticmerge.

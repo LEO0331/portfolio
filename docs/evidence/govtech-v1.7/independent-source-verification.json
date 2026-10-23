@@ -1,0 +1,141 @@
+{
+  "runtime": "v24.14.1",
+  "checkedFiles": [
+    {
+      "path": "data/raw/wifi-policy/A-2026-07-01.csv",
+      "bytes": 1630629,
+      "sha256": "09c150e7b8a75e1477413ddcc37059fe97b3c2353ac9f8799069e65d8f81cc55"
+    },
+    {
+      "path": "data/raw/wifi-policy/B-2026-06-10.csv",
+      "bytes": 7185,
+      "sha256": "82f4e1aedafd3b68a9b6adc619fdd5e00e4871c3c94100201eefdb12070e0847"
+    },
+    {
+      "path": "data/raw/wifi-policy/C-2025-12-18.ods",
+      "bytes": 6466,
+      "sha256": "368778b0c649f24b05cc0383172afb0e1b804c332541e2d33a2117d7d83834a0"
+    },
+    {
+      "path": "data/raw/wifi-policy/D-2026-03-02.csv",
+      "bytes": 1527,
+      "sha256": "23c5ce0906358d8f95b2f1a8e1b019487cd7fa564b2cf188681648d23c89b11c"
+    },
+    {
+      "path": "data/raw/wifi-policy/E-2024-09-16.zip",
+      "bytes": 174449,
+      "sha256": "77bcc347b503b8ff8a43f7e1afaaedb18877a6222282587b145adaba69afd2d9"
+    },
+    {
+      "path": "data/raw/wifi-hotspots/Taipei_Free_AP_總表1141218.csv",
+      "bytes": 1626772,
+      "sha256": "c230610998a33309677fa235ec11b05d047bf3c9379dc6a7683ff3645a422c15"
+    },
+    {
+      "path": "public/data/wifi-policy/wifi-policy-c250791e7736ed5bca2882ea.json",
+      "bytes": 1707558,
+      "sha256": "91b28d7b375e7fb14ee42bfbe179d792c9e0ed0992f273582dd1e03e6bac8a82"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/boundaries.geojson",
+      "bytes": 437741,
+      "sha256": "de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/coordinate-audit.json",
+      "bytes": 153937,
+      "sha256": "df804c49ee6d086261b235ae82ea05d2390e65abc041d5284af36a73e022a113"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/excluded.json",
+      "bytes": 6434,
+      "sha256": "674f26e06a7bbf1d38c0826f08f9859e3388741bce06eb8c42cabef1a79fab0b"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/hotspot-audit.json",
+      "bytes": 1626904,
+      "sha256": "61dcfd21c402ee7d21c7da4cc5443b561d2f24e012292c0cef58a92552236515"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/references.json",
+      "bytes": 4004,
+      "sha256": "2e3407d846692a80befb65b67857090bbddfa7c81ed00f9eb482d9a5ce3227ff"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/wifi-geo-da9f69f501af4d6e1d3f9122/snapshot.json",
+      "bytes": 158672,
+      "sha256": "0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f"
+    },
+    {
+      "path": "public/data/wifi-policy/geographic-v1.1/scenarios-b3b7a6fb2f1b5d1067bb4eae.json",
+      "bytes": 3154696,
+      "sha256": "b3b7a6fb2f1b5d1067bb4eae10f3beb12ecf250b48e02cb0e4e42f6f004d22a0"
+    }
+  ],
+  "modeBExactScenarioMatches": 288,
+  "modeAChecks": 12,
+  "modeB": [
+    {
+      "radius": 100,
+      "baseline": 69,
+      "increment": 18,
+      "own": 18,
+      "other": 0
+    },
+    {
+      "radius": 250,
+      "baseline": 85,
+      "increment": 2,
+      "own": 2,
+      "other": 0
+    },
+    {
+      "radius": 500,
+      "baseline": 87,
+      "increment": 0,
+      "own": 0,
+      "other": 0
+    }
+  ],
+  "modeBStrategyOverlap": [
+    {
+      "capacity": 5,
+      "shared": 5,
+      "added": 0,
+      "removed": 0
+    },
+    {
+      "capacity": 10,
+      "shared": 5,
+      "added": 5,
+      "removed": 5
+    },
+    {
+      "capacity": "all",
+      "shared": 87,
+      "added": 0,
+      "removed": 0
+    }
+  ],
+  "modeAStrategyOverlap": [
+    {
+      "capacity": 5,
+      "shared": 1,
+      "added": 4,
+      "removed": 4
+    },
+    {
+      "capacity": 10,
+      "shared": 2,
+      "added": 8,
+      "removed": 8
+    },
+    {
+      "capacity": "all",
+      "shared": 3293,
+      "added": 0,
+      "removed": 0
+    }
+  ],
+  "limitation": "Pure-function and retained-byte checks; no GIS regeneration or browser/public-host measurements."
+}

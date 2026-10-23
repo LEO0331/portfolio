@@ -113,7 +113,7 @@ test.describe("Shade005 bilingual source-backed GIS readiness", () => {
       const study = records[locale].find(({ id }) => id === "shade-equity")!;
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(7);
+      await expect(completed.locator("article")).toHaveCount(8);
       const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
       await expect(card).toContainText("005");
       const link = card.locator(`a[href="/portfolio/${prefix}govtech/shade-equity"]`);

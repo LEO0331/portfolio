@@ -436,6 +436,26 @@
         "Actual Git Bash init.sh rerun passes harness/install then stops at5existing high audit findings; downstream checks pass separately; no dependencies changed",
         "Exactly one draft PR25 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/25; implementation44a0e3b on codex/govtech-bus-service-case-007"
       ]
+    },
+    {
+      "id": "govtech-wifi-allocation-v1-7-2026-10",
+      "name": "Present combined Wi-Fi source governance and experimental GIS as Case008",
+      "description": "One bilingual case for Policy8 v1.0 and merged v1.1 with explicit negative optimization result.",
+      "status": "in-progress",
+      "dependencies": [
+        "govtech-bus-service-v1-6-2026-10"
+      ],
+      "doneCriteria": [
+        "Eight cases and preserved previous evidence/relationships",
+        "Pinned original and geographic identities and reproduced actual scenarios",
+        "Bilingual static routes, SEO, visual and full verification",
+        "One reviewable PR against main without merging"
+      ],
+      "evidence": [
+        "Upstream PR6 independently verified merged at 8e01a2bd8d762b51fae979d32fd477e378d1876b",
+        "Original pure functions reproduce all288 published ModeB outputs and12ModeA runs",
+        "All six geographic artifact body hashes and five original source hashes checked"
+      ]
     }
   ]
 }

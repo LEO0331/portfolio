@@ -6,7 +6,7 @@ const domainsEn: GovTechDomain[] = [
   { title: "Transportation & Mobility", projectIds: ["taipei-crash-map"], planned: "Neihu traffic-observation readiness and bus network/published-service documentation review are two completed POCs in taipei-crash-map. Historical congestion remains gated; bus direction-specific service comparison and actual service performance also remain unverified. Network inventory does not establish service shortage, reliability or equity." },
   { title: "Housing & Urban Resilience", projectIds: ["taipei-real-estate-dashboard"], planned: "Urban-renewal administrative evidence review is a completed decision-support POC. Building-age statistics remain citywide context; building-level and legal-stage research require authoritative evidence. No building-safety assessment or certified eligibility determination." },
   { title: "Disaster Preparedness & Public Safety", projectIds: ["taipei-feitsui-water-map", "taipei-safety-map"], planned: "Heavy-rain infrastructure evidence review, GIS validation and balanced capacity scenarios are a completed POC. Reservoir/ecology modules remain explorers; taipei-safety-map enhancements remain planned. No live warning or availability assessment." },
-  { title: "Digital Inclusion & Data Governance", projectIds: ["taipei-free-wifi-map", "taipei-civic-groups-map", "publicsafetydashboard"], planned: "Wi-Fi service allocation is a future case. Existing directory and PDF-review projects provide reusable governance patterns." }
+  { title: "Digital Inclusion & Data Governance", projectIds: ["taipei-free-wifi-map", "taipei-civic-groups-map", "publicsafetydashboard"], planned: "Wi-Fi source reconciliation and evidence review are completed, extended with geographic evidence validation and experimental facility proximity research. Assumptions are explicit; non-self optimization and measured service/digital-inclusion outcomes remain unavailable." }
 ];
 
 const domainsZh: GovTechDomain[] = [
@@ -15,7 +15,7 @@ const domainsZh: GovTechDomain[] = [
   { title: "交通運輸與移動", projectIds: domainsEn[2].projectIds, planned: "同一 taipei-crash-map 已完成內湖交通觀測整備與公車路網／公告服務文件查核兩個 POC。歷史壅塞仍受證據限制；公車方向性服務比較與實際營運表現也尚未驗證。路網盤點不等於服務不足、可靠度或公平性判定。" },
   { title: "住宅與都市韌性", projectIds: domainsEn[3].projectIds, planned: "老舊建築與都市更新行政證據查核已完成決策支援 POC。屋齡統計維持全市脈絡；建物層級與法律階段研究須另有權威證據，不提供建築安全評估或法定資格認定。" },
   { title: "防災整備與公共安全", projectIds: domainsEn[4].projectIds, planned: "豪雨防汛設施證據查核、GIS 驗證與地理均衡名額情境已完成 POC；水庫／生態模組仍為資料探索，taipei-safety-map 決策擴充仍在規劃。不提供即時警報或可用狀態判定。" },
-  { title: "數位包容與資料治理", projectIds: domainsEn[5].projectIds, planned: "Wi-Fi 服務配置為未來案例；既有目錄與 PDF 複核專案提供可重用治理模式。" }
+  { title: "數位近用與資料治理", projectIds: domainsEn[5].projectIds, planned: "Wi-Fi 來源對帳與證據查核已完成，延伸至地理證據驗證與實驗設施近鄰研究；明示假設，非自身最佳化及實際服務／數位近用成果仍不可用。" }
 ];
 
 export const civicProjectIds = [...new Set(domainsEn.flatMap((domain) => domain.projectIds))].filter((id) => id !== "taipei-bin-map");
@@ -26,7 +26,7 @@ export const civicSourceReadmes: Record<string, string> = {
   "taipei-safety-map": "taipei-safety-map/blob/0fddde3521d023d571e5dae2ca33db4c4c5e2db4/README.md",
   "taipei-real-estate-dashboard": "taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/README.md",
   "taipei-crash-map": "taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/README.md",
-  "taipei-free-wifi-map": "taipei-free-wifi-map/blob/fbc91994a8cad7dbbc140bb2ffcdc55553af2266/README.md",
+  "taipei-free-wifi-map": "taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/README.md",
   "taipei-civic-groups-map": "taipei-civic-groups-map/blob/39511fa0580b82083597facc8e6e330889c959b2/README.md",
   publicsafetydashboard: "publicsafetydashboard/blob/f96ae2933f9ea6e96f5628cb68ba45d3fcf5547c/README.md",
   robotfriends: "Gridline/blob/948525c23cb834d0a8be302d9ff3a9b4f7d01c64/README.md"
@@ -43,7 +43,7 @@ export const govtechCopy = {
     explorers: "Existing Public Data Explorers",
     explorerIntro: "Current capabilities come from existing curated project records and inspected source READMEs. Deployment status and policy maturity are separate: a public demo does not mean a planned decision module is implemented.",
     planned: "Planned Decision-Support Extensions",
-    plannedIntro: "Seven cases cover bin allocation, civic investigation, heavy-rain preparedness, urban renewal, Shade Equity, Neihu observation readiness and bus network/published-service review. Shade, historical congestion, directional bus-service comparison and actual service-performance evidence gates remain explicit. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
+    plannedIntro: "Eight cases cover bin allocation, civic investigation, heavy-rain preparedness, urban renewal, Shade Equity, Neihu observation readiness, bus network/published-service review and Wi-Fi evidence/geographic research. Shade, historical congestion, directional bus-service comparison and actual service-performance evidence gates remain explicit. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
     principlesTitle: "Engineering & Governance Principles",
     principles: ["Open Data ETL with schema validation", "GIS integration with explicit coordinate systems", "Data quality checks and source provenance", "Versioned snapshots and reproducible inputs", "Explainable algorithms and candidate reasons", "Scenario modelling and sensitivity analysis", "Privacy, information security and scoped public records", "Testing and reproducibility before publication"],
     limitations: "Limitations and Responsible Use",
@@ -62,7 +62,7 @@ export const govtechCopy = {
     explorers: "既有公共資料探索工具",
     explorerIntro: "現有功能取自既有策展專案紀錄及已查閱的來源 README。部署狀態與政策成熟度分開：公開 Demo 不代表規劃中的決策模組已完成。",
     planned: "規劃中的決策支援擴充",
-    plannedIntro: "七個案例涵蓋清潔箱配置、市政調查、防汛整備、都市更新、樹蔭公平、內湖觀測整備與公車路網／公告服務查核；保留樹蔭、歷史壅塞、公車方向比較及實際營運表現的證據閘門。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
+    plannedIntro: "八個案例涵蓋清潔箱配置、市政調查、防汛整備、都市更新、樹蔭公平、內湖觀測整備、公車路網／公告服務查核與 Wi-Fi 證據／地理研究；保留樹蔭、歷史壅塞、公車方向比較及實際營運表現的證據閘門。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
     principlesTitle: "工程與治理原則",
     principles: ["開放資料 ETL 與結構驗證", "GIS 整合與明確座標系統", "資料品質檢查與來源追溯", "版本快照與可重現輸入", "可解釋演算法與候選理由", "情境建模與敏感度分析", "隱私、資訊安全與公開紀錄範圍管理", "發布前測試與可重現驗證"],
     limitations: "限制與負責任使用",
