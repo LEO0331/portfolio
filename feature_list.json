@@ -441,7 +441,7 @@
       "id": "govtech-wifi-allocation-v1-7-2026-10",
       "name": "Present combined Wi-Fi source governance and experimental GIS as Case008",
       "description": "One bilingual case for Policy8 v1.0 and merged v1.1 with explicit negative optimization result.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-bus-service-v1-6-2026-10"
       ],
@@ -452,9 +452,13 @@
         "One reviewable PR against main without merging"
       ],
       "evidence": [
-        "Upstream PR6 independently verified merged at 8e01a2bd8d762b51fae979d32fd477e378d1876b",
-        "Original pure functions reproduce all288 published ModeB outputs and12ModeA runs",
-        "All six geographic artifact body hashes and five original source hashes checked"
+        "Verified upstream PR6 merge 8e01a2bd8d762b51fae979d32fd477e378d1876b; historical v1.0 identity retained separately",
+        "14 original/derived files independently hashed, including legacy; all288 Mode B outputs and12 Mode A combinations reproduced with original functions",
+        "Final22 unit/128 Playwright tests,17/17 tracked flows100%,TypeScript/build26routes,harness19features and diff checks passed",
+        "Actual root and Pages16bilingualURLs per base,refresh/lang/canonical/404,five widths,keyboard tables and real light/dark controls passed;visual95/100",
+        "Five existing high Tailwind/braces findings stop init.sh at npm audit;no dependency or lockfile changes;full upstream Python ETL/suite not rerun",
+        "Exactly one PR26 created and attached: https://github.com/LEO0331/portfolio/pull/26; externally merged at 2443e769e38171e99e3fe2603c37401b72518aba using implementation a987dcc. Agent did not merge. Later lifecycle updates remain only on the feature branch.",
+        "Merged commit2443e769:GitHub E2E39894167897,Lighthouse39894167979 andPages39894167931 allsuccess;actual public EN/ZH Case008 HTTP200,title/lang verified. Later lifecycle-only records remain on feature branch."
       ]
     }
   ]

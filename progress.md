@@ -2,11 +2,11 @@
 
 ## Current State
 
-**Last updated:** 2026-10-22
+**Last updated:** 2026-10-23
 
 **Active work:** Portfolio GovTech Showcase v1.7 — combined Wi-Fi Case008.
 
-**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. One reviewable PR is being prepared. No automatic merge.
+**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. [PR26](https://github.com/LEO0331/portfolio/pull/26) was externally merged at `2443e769e38171e99e3fe2603c37401b72518aba` on2026-10-23T03:16:56Z. This agent did not merge it. Later lifecycle-only updates remain on this branch.
 
 ### Completed
 
@@ -31,7 +31,7 @@ Facility datum, position, operation, access, physical identity and current bound
 
 ### Next Session Should
 
-1. Review the Case008 PR and merge manually after human acceptance.
+1. Case008 PR26 is already externally merged. Review the later lifecycle-only branch updates separately; do not open another PR without a new request.
 2. Address dependency findings separately.
 3. Preserve both source-phase identities, negative findings, prior cases and project ownership.
 
@@ -278,3 +278,15 @@ No accepted directional schedule assignment,actual executed-trip history,passeng
 ### 2026-10-22 — GovTech v1.7 combined Wi-Fi Case008
 
 Verified upstream PR6 merge before implementation. Added bilingual18-sectionCase008,source/geometry/scenarioevidence,projectrelationship,26staticroutes,source-pinnedlinks,Chinese specification,audit,verification,screenshots andportableNode replay. All288ModeBoutputs exactly reproduced;14filehashes and12ModeAruns checked. Final22unit/128Playwright/17flows,build,harness,bothbases/fivewidths anddiff passed. Fiveexistinghighauditfindings stopinit.sh;no dependencieschanged. One human-reviewPR,no automaticmerge.
+
+### 2026-10-23 — Case008 review PR publication
+
+Created and attached exactly one draft [PR26](https://github.com/LEO0331/portfolio/pull/26) against main. The initial usage-limit approval error cleared on resume; the GitHub connector then returned403 because its integration lacks PR-write permission. Existing local Git authentication created the requested PR through the GitHub API without saving or printing credentials. GitHub metadata confirms open/unmerged/mergeable; source/main were not modified. Feature ledger marked complete; remaining dependency and analytical limits remain documented.
+
+### External merge reconciliation — 2026-10-23
+
+Fresh GitHub metadata confirms PR26 merged externally at `2443e769e38171e99e3fe2603c37401b72518aba`, using implementation head `a987dcc7ce139403371beba43f1715cdd064434f`. This agent issued no merge/auto-merge operation. The later publication-status follow-up is only on `codex/govtech-wifi-allocation-case-008`, affecting four lifecycle/evidence files; no application difference remains versus main. GitHub Pages deployment for the merge succeeded; other CI checks were still running at this inspection. No second PR or main write was performed.
+
+### Final GitHub and live checks — 2026-10-23
+
+All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/runs/39894167897), [Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/runs/39894167979) and [Pages deployment](https://github.com/LEO0331/portfolio/actions/runs/39894167931). The E2E browser installation and test step both completed successfully. Actual public EN/ZH Case008 routes returned HTTP200 and rendered the expected title and html language. This supersedes the earlier pending-CI observation. The implementation is on main; these later lifecycle records remain only on the feature branch. No second PR, direct main write or agent merge occurred.
