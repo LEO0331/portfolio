@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 5,
+      "critical": 0,
+      "total": 5
+    },
+    "dependencies": {
+      "prod": 10,
+      "dev": 127,
+      "optional": 28,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 136
+    }
+  },
+  "vulnerablePackages": [
+    "braces",
+    "chokidar",
+    "fast-glob",
+    "micromatch",
+    "tailwindcss"
+  ]
+}

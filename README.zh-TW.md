@@ -142,7 +142,7 @@ node tools/capture-project-previews.mjs
 
 盤點區分 416 主路線、731 附屬路線、28,826 路線站牌、5,376 實體站位及 43,447 站次。1,241 品質候選為 A163／B927／C151；公告方向比較及歷史實際表現皆零合格，不是零服務。容量 5 缺口優先涵蓋二主路線、均衡五；容量 10 為五／十；不限全選 1,241、416 主路線。策略選取差異是容量 5 每邊新增／移除各三、容量 10 各五。Strict／broader 不改母體或選入，卻仍屬不同證據範圍。這是身分／站序／文件調查，非減班、短缺、需求或運輸公平評等。
 
-Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus-service']`，保留事故探索與兩條在地化 drawer 連結；Bin Map 001／005 及首頁置頂順序不變，八個案例不需要八個根專案。獨立稽核用原 source pure functions 驗 pinned manifest、四份 index／reports 及兩份代表 route details，不宣稱重跑上游全套測試、抓全部 416 details 或另做官方 ETL。
+Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus-service']`，保留事故探索與兩條在地化 drawer 連結；Bin Map 001／005 及首頁置頂順序不變，九個案例不需要九個根專案。獨立稽核用原 source pure functions 驗 pinned manifest、四份 index／reports 及兩份代表 route details，不宣稱重跑上游全套測試、抓全部 416 details 或另做官方 ETL。
 
 案例 006 呈現已合併的 [Crash Map PR #7](https://github.com/LEO0331/taipei-crash-map/pull/7)，合併時間 `2026-10-21T02:12:06Z`，固定 commit [`deb28d5d5b4e608eb04d89743bc3fea632d74c8a`](https://github.com/LEO0331/taipei-crash-map/commit/deb28d5d5b4e608eb04d89743bc3fea632d74c8a)，取代來源文件合併前 pending 狀態。Snapshot `neihu-readiness-49f28aaa55758ffe`、方法 `neihu-traffic-observation-review-v1`、設定 `1.0.0`、生成 `2026-10-21T01:43:13.322Z`。見[案例 006 規格](./docs/govtech-case-study-006.zh-TW.md)、[來源稽核](./docs/govtech-neihu-congestion-source-audit.md)、[v1.5 歷史驗證](./docs/govtech-v1.5-verification.md) 及 [v1.6 驗證](./docs/govtech-v1.6-verification.md)。
 
@@ -150,7 +150,7 @@ Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus
 
 **Portfolio GovTech Showcase v1.6（歷史基準）** 延伸已隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併的展示。案例 002 [PR #18](https://github.com/LEO0331/portfolio/pull/18)、案例 003 [PR #19](https://github.com/LEO0331/portfolio/pull/19)、案例 004 [PR #20](https://github.com/LEO0331/portfolio/pull/20)、案例 005 [PR #21](https://github.com/LEO0331/portfolio/pull/21) 及案例 006 [PR #22](https://github.com/LEO0331/portfolio/pull/22) 均已合併，本版以 main `7c7ace1b97a334e0b618b78f7f018dc0c0a150bd` 為基準，已包含 [PR #24](https://github.com/LEO0331/portfolio/pull/24) 的 Vite 8.3.5；本案例不宣稱完成該先前依賴更新。
 
-個人[市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 依序呈現八個已完成工程 POC：[001 — 臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置及政策加權參考涵蓋；[002 — 臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工與調查查核；[003 — 豪雨防汛整備與設施查核決策支援](https://leo0331.github.io/portfolio/zh/govtech/heavy-rain-preparedness) 展示設施證據缺口及 GIS 驗證；[004 — 臺北市老舊建築與都市更新決策支援](https://leo0331.github.io/portfolio/zh/govtech/urban-renewal) 展示行政核對及法律階段語義；[005 — 樹蔭公平與都市熱環境整備決策支援](https://leo0331.github.io/portfolio/zh/govtech/shade-equity) 已完成 GIS 盤點及證據就緒原型，排序現勘能力仍受資格閘門限制；[006 — 內湖交通壅塞與觀測資料就緒度決策支援](https://leo0331.github.io/portfolio/zh/govtech/neihu-congestion) 完成設備／來源品質查核，歷史壅塞排名仍待合格觀測；[007 — 臺北市公車路網與服務涵蓋決策支援](https://leo0331.github.io/portfolio/zh/govtech/bus-service) 完成路網／公告文件查核，方向服務比較與歷史實際表現仍不可用。這些是個人工程 POC，不由臺北市政府營運或背書，未進行官方營運整備認證。
+個人[市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 依序呈現九個已完成工程 POC：[001 — 臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置及政策加權參考涵蓋；[002 — 臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工與調查查核；[003 — 豪雨防汛整備與設施查核決策支援](https://leo0331.github.io/portfolio/zh/govtech/heavy-rain-preparedness) 展示設施證據缺口及 GIS 驗證；[004 — 臺北市老舊建築與都市更新決策支援](https://leo0331.github.io/portfolio/zh/govtech/urban-renewal) 展示行政核對及法律階段語義；[005 — 樹蔭公平與都市熱環境整備決策支援](https://leo0331.github.io/portfolio/zh/govtech/shade-equity) 已完成 GIS 盤點及證據就緒原型，排序現勘能力仍受資格閘門限制；[006 — 內湖交通壅塞與觀測資料就緒度決策支援](https://leo0331.github.io/portfolio/zh/govtech/neihu-congestion) 完成設備／來源品質查核，歷史壅塞排名仍待合格觀測；[007 — 臺北市公車路網與服務涵蓋決策支援](https://leo0331.github.io/portfolio/zh/govtech/bus-service) 完成路網／公告文件查核，方向服務比較與歷史實際表現仍不可用。[008 — 公共 Wi-Fi 資源配置與數位近用](https://leo0331.github.io/portfolio/zh/govtech/wifi-allocation) 呈現來源對帳及非自身增益為零的實驗地理研究；[009 — 橋梁檢測與維護](https://leo0331.github.io/portfolio/zh/govtech/bridge-inspection) 呈現保守資產對帳及受限行政調查。這些是個人工程 POC，不由臺北市政府營運或背書，未進行官方營運整備認證。
 
 案例 005 呈現已合併的 [Bin Map PR #19](https://github.com/LEO0331/taipei-bin-map/pull/19)，合併時間 `2026-10-20T07:14:40Z`，固定 commit [`612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9`](https://github.com/LEO0331/taipei-bin-map/commit/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9)；此 metadata 取代舊來源交接「無法建立 PR」的歷史狀態。Source snapshot `shade-source-v1-078b91443dc33e45` 與 derived snapshot `shade-equity-v1-8e4cfb4029d0831d` 為不同識別；方法 `shade-equity-evidence-review-v1`、設定 `1.0.0`、凍結生成 `2026-10-20T00:41:41.554Z`。見[案例 005 規格](./docs/govtech-case-study-005.zh-TW.md)、[來源稽核](./docs/govtech-shade-equity-source-audit.md)、[v1.4 歷史驗證](./docs/govtech-v1.4-verification.md)、[v1.5 歷史驗證](./docs/govtech-v1.5-verification.md) 及 [v1.6 驗證](./docs/govtech-v1.6-verification.md)。
 
@@ -183,3 +183,9 @@ E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應�
 單一雙語 Wi-Fi 案例整合已合併 Policy #8 v1.0 來源對帳及 v1.1 地理研究。91 筆設施中已驗證0／假設經測試87／尚未釐清4；非自身增益皆0，最佳化仍不可用。模式C 仍缺營運與需求證據，保留原探索工具身分及既有案例。
 
 [Case008](./docs/govtech-case-study-008.zh-TW.md) · [Source audit](./docs/govtech-wifi-allocation-source-audit.md) · [Verification](./docs/govtech-v1.7-verification.md).
+
+## GovTech Showcase v1.8 — Case009
+
+九個完整雙語案例。新增橋梁檢測與維護文件查核，416來源列／415分組、612清冊列，接受216研究對應，其中194地理准入；分級23／393／0。公開紀錄不能認證橋梁安全或確定逾期。保留既有安全探索工具、前八案、專案關聯與依賴。
+
+[Case009](./docs/govtech-case-study-009.zh-TW.md) · [Source audit](./docs/govtech-bridge-inspection-source-audit.md) · [Verification](./docs/govtech-v1.8-verification.md).

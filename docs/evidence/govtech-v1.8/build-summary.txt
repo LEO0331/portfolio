@@ -1,0 +1,14 @@
+dist/assets/taipei-crash-map-DHbFeiWg.png                           1,080.30 kB
+dist/assets/taipei-bin-map-Qm4GsR4_.png                             1,104.99 kB
+dist/assets/taipei-safety-map-B3WUgOl-.png                          1,156.40 kB
+dist/assets/index-CiRKysa7.css                                         28.50 kB │ gzip:   6.04 kB
+dist/assets/GovTechCaseStudyPage-agAb4mDu.js                            5.62 kB │ gzip:   1.81 kB
+dist/assets/GovTechPage-WssZUdBH.js                                     5.78 kB │ gzip:   1.55 kB
+dist/assets/govtechCopy-Cad3NZyN.js                                    11.88 kB │ gzip:   5.71 kB
+dist/assets/ProjectsPage-9CUxaqau.js                                   12.72 kB │ gzip:   3.90 kB
+dist/assets/index-DqFsrakT.js                                         314.89 kB │ gzip: 101.21 kB
+dist/assets/govtechCase-DECy1ca8.js                                   427.19 kB │ gzip: 135.80 kB
+
+✓ built in 942ms
+[generate-route-entrypoints] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[generate-route-entrypoints] Wrote 28 route entrypoints and dist/404.html
