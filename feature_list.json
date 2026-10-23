@@ -457,7 +457,7 @@
         "Final22 unit/128 Playwright tests,17/17 tracked flows100%,TypeScript/build26routes,harness19features and diff checks passed",
         "Actual root and Pages16bilingualURLs per base,refresh/lang/canonical/404,five widths,keyboard tables and real light/dark controls passed;visual95/100",
         "Five existing high Tailwind/braces findings stop init.sh at npm audit;no dependency or lockfile changes;full upstream Python ETL/suite not rerun",
-        "Exactly one draft PR26 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/26;implementation a987dcc on codex/govtech-wifi-allocation-case-008"
+        "Exactly one PR26 created and attached: https://github.com/LEO0331/portfolio/pull/26; externally merged at 2443e769e38171e99e3fe2603c37401b72518aba using implementation a987dcc. Agent did not merge. Later lifecycle updates remain only on the feature branch."
       ]
     }
   ]

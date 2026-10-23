@@ -91,3 +91,7 @@ Risks:fiveexisting high dependency findings;unknown facility datum/physical accu
 ## Publication — 2026-10-23
 
 Exactly one draft [PR26](https://github.com/LEO0331/portfolio/pull/26) targets main. Implementation head `a987dcc7ce139403371beba43f1715cdd064434f`; five Lore commits separate case data, routes, project/tests, evidence and lifecycle. PR metadata confirms open, unmerged and mergeable; no auto-merge was enabled. A documentation follow-up records publication status. Local tests above were executed on22October; publication on23October does not relabel those measurements as new runs. Connector403 was resolved using existing Git authentication and the authorized GitHub API action. Original main checkout remains clean.
+
+## External merge reconciliation — 2026-10-23
+
+A fresh GitHub check confirms PR26 was externally merged at `2443e769e38171e99e3fe2603c37401b72518aba` at2026-10-23T03:16:56Z, before the lifecycle-only publication follow-up was pushed. This agent performed no merge or auto-merge operation. Main contains the complete implementation head `a987dcc7ce139403371beba43f1715cdd064434f`. Only this report, feature ledger, progress and handoff differ on the later branch; those updates are not in main. No second PR or direct main write was made. GitHub Pages deployment succeeded; E2E and Lighthouse were still running when first checked. Earlier open/unmerged metadata above accurately records the creation-time state.
