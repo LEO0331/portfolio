@@ -1,3 +1,4 @@
+import { openTechnicalEvidence } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -55,7 +56,7 @@ test("UrbanRenewal004 source statistics and legal/population boundaries remain e
   const study = govtechCases.find(({ id }) => id === "urban-renewal")!;
   const section = (id: string) => study.sections.find((item) => item.id === id)!.paragraphs.join(" ");
   const sources = section("sources");
-  for (const fact of [/\b50\b/, /1976.{0,4}2025/, /1976.{0,4}2006/, /\b2012\b/, /\b18\b/, /\b75\b/, /\b11\b/, /2023/, /2024/, /\b24\b/, /2002.{0,4}2025/, /8,?855/, /8,?830/, /\b25\b/, /\b117\b/, /citywide/i, /buildings/i, /permit/i, /信義區/, /verified_analysis/, /context_only/]) expect(sources).toMatch(fact);
+  for (const fact of [/\b50\b/, /1976.{0,4}2025/, /1976.{0,4}2006/, /\b2012\b/, /\b18\b/, /\b75\b/, /\b11\b/, /2023/, /2024/, /\b24\b/, /2002.{0,4}2025/, /8,?855/, /8,?830/, /\b25\b/, /\b117\b/, /citywide/i, /buildings/i, /permit/i, /Xinyi/, /verified_analysis/, /context_only/]) expect(sources).toMatch(fact);
   const methodCopy = section("methodology");
   for (const fact of [/designation_follow_up/, /365/, /858/, /2024-06-13/, /2026-10-19/]) expect(methodCopy).toMatch(fact);
   const scenarioCopy = section("scenarios");
@@ -122,6 +123,7 @@ test.describe("UrbanRenewal004 bilingual recorded policy-research case", () => {
       }
       // Require the qualifications as visible section prose, not only IDs in a
       // table or words in the contents navigation.
+      await openTechnicalEvidence(page);
       for (const section of study.sections) {
         const rendered = page.locator(`#${section.id}`);
         await expect(rendered.getByRole("heading", { level: 2 })).toHaveText(section.title);
@@ -168,10 +170,10 @@ test.describe("UrbanRenewal004 bilingual recorded policy-research case", () => {
         await page.evaluate((value) => localStorage.setItem("portfolio-locale", value), locale);
         await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/urban-renewal`);
         for (const dark of [false, true]) {
-          if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
           await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-          if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         }
         if (width === 390) {
           const region = page.getByRole("table", { name: study.scenarioTables[0].caption, exact: true }).locator("..");

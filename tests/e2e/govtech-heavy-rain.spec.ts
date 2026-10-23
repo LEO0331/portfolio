@@ -1,3 +1,4 @@
+import { openTechnicalEvidence } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -112,6 +113,7 @@ test.describe("HeavyRain003 source-backed bilingual decision support", () => {
       }
       // Check disclosures in their section paragraphs, so tables or navigation
       // cannot accidentally satisfy the narrative's responsible-use contract.
+      await openTechnicalEvidence(page);
       for (const section of study.sections) {
         const rendered = page.locator(`#${section.id}`);
         await expect(rendered.getByRole("heading", { level: 2 })).toHaveText(section.title);
@@ -160,10 +162,10 @@ test.describe("HeavyRain003 source-backed bilingual decision support", () => {
         await page.evaluate((value) => localStorage.setItem("portfolio-locale", value), locale);
         await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/heavy-rain-preparedness`);
         for (const dark of [false, true]) {
-          if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
           await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-          if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         }
         if (width === 390) {
           const region = page.getByRole("table", { name: study.scenarioTables[0].caption, exact: true }).locator("..");

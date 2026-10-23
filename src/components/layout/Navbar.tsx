@@ -15,6 +15,7 @@ export function Navbar(): JSX.Element {
   const { isDark, toggleTheme } = useTheme();
   const { locale, toLocalePath, switchLocale } = useLocale();
   const text = copy[locale];
+  const themeLabel = locale === "zh" ? (isDark ? "淺色" : "深色") : (isDark ? "Light" : "Dark");
   const navItems = [
     { to: "/", label: text.nav.home },
     { to: "/projects", label: text.nav.projects },
@@ -43,7 +44,7 @@ export function Navbar(): JSX.Element {
 
         <nav
           className="hidden items-center gap-1 rounded-full border border-slate-200 bg-white/90 p-1 dark:border-slate-700 dark:bg-slate-900/90 md:flex"
-          aria-label="Primary"
+          aria-label={locale === "zh" ? "主要導覽" : "Primary"}
         >
           {navItems.map((item) => (
             <NavLink
@@ -69,9 +70,9 @@ export function Navbar(): JSX.Element {
           <Button
             variant="secondary"
             size="sm"
-            onClick={toggleTheme}
+            data-theme-toggle onClick={toggleTheme}
           >
-            {isDark ? "Light" : "Dark"}
+            {themeLabel}
           </Button>
           {safeGithubUrl ? (
             <ExternalLink
@@ -95,9 +96,9 @@ export function Navbar(): JSX.Element {
           <Button
             variant="secondary"
             size="sm"
-            onClick={toggleTheme}
+            data-theme-toggle onClick={toggleTheme}
           >
-            {isDark ? "Light" : "Dark"}
+            {themeLabel}
           </Button>
           <Button
             variant="ghost"

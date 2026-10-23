@@ -1,3 +1,4 @@
+import { openTechnicalEvidence, restorePresentation } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -32,7 +33,7 @@ for (const locale of ["en", "zh"] as const) {
     expect(tables[8].rows.map(({cells:c})=>[c.denominator,c.r100,c.r250,c.r500].map(Number))).toEqual([[69,61,67,69],[9,8,9,9],[9,0,9,9],[87,69,85,87],[0,0,0,0]]);
     expect(tables[9].rows.map(({cells:c})=>[c.edition,c.sha256])).toEqual(fixture.rawHashes);
     expect(tables[10].rows.map(({cells:c})=>[c.artifact,Number(c.bytes),c.sha256])).toEqual(fixture.artifactHashes);
-    expect(records[locale].find(({id})=>id==="bus-service")).toEqual(busBaseline[locale]);
+    expect(restorePresentation(records[locale].find(({id})=>id==="bus-service"), locale)).toEqual(busBaseline[locale]);
     const wifi = projects.filter(({id})=>id==="taipei-free-wifi-map");
     expect(wifi).toHaveLength(1);
     expect(wifi[0].govtechCaseIds).toEqual(["wifi-allocation"]);
@@ -42,7 +43,7 @@ for (const locale of ["en", "zh"] as const) {
     expect(study.reviewNote).toMatch(locale==="en"?/non-self.*unavailable/i:/非自身.*不可用/);
     for (const link of [...study.evidence,...study.previewAssets]) if(link.url.includes("/blob/")) expect(link.url).toMatch(new RegExp(`/blob/(${fixture.v10Sha}|${fixture.v11Sha})/`));
   });
-  test(`WiFi008 ${locale} direct loading, refresh and metadata avoid upstream dataset requests`, async ({ page }) => {
+  test(`WiFi008 ${locale} direct loading, refresh and metadata avoid upstream dataset requests`, async ({ page, baseURL }) => {
     const errors:string[]=[],requests:string[]=[];
     page.on("pageerror",e=>errors.push(e.message));
     page.on("request",r=>{if(/data\.taipei|raw\.githubusercontent|api\.github|\/data\/wifi-policy/.test(r.url())) requests.push(r.url());});
@@ -50,14 +51,18 @@ for (const locale of ["en", "zh"] as const) {
     await expect(page.getByRole("heading",{level:1})).toHaveText(study.title);
     await expect(page.locator("html")).toHaveAttribute("lang",locale==="zh"?"zh-Hant":"en");
     await expect(page).toHaveTitle(`${study.title} | Leo Chen`);
-    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",new URL(`./${prefix}govtech/wifi-allocation`, "http://127.0.0.1:4175/portfolio/").href);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",new URL(`./${prefix}govtech/wifi-allocation`, baseURL).href);
     await page.reload();
     await expect(page.getByRole("heading",{level:1})).toHaveText(study.title);
     expect(errors).toEqual([]);expect(requests).toEqual([]);
   });
   test(`WiFi008 ${locale} exposes negative findings, historical results and pinned evidence`, async ({page})=>{
     await page.goto(`./${prefix}govtech/wifi-allocation`);
-    for(const table of study.scenarioTables) await expect(page.getByRole("table",{name:table.caption,exact:true})).toBeVisible();
+    await openTechnicalEvidence(page);
+    for(const table of study.scenarioTables) {
+      const rendered = page.getByRole("table",{name:table.caption,exact:true});
+      await expect(rendered).toBeVisible();
+    }
     for(const id of ["self-count","coordinates","limitations"]) await expect(page.locator(`#${id}`)).toContainText(study.sections.find(s=>s.id===id)!.paragraphs[0]);
     for(const path of ["docs/wifi-allocation-v1.1-coordinate-contract.md","docs/wifi-allocation-v1.1-methodology.md","public/data/wifi-policy/geographic-v1.1/scenarios-manifest.json"]) await expect(page.locator(`a[href="${repo}/blob/${fixture.v11Sha}/${path}"]`).first()).toHaveAttribute("rel",/noopener/);
     await expect(page.getByRole("main")).toContainText("optimizationAvailable");

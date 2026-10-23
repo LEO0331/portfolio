@@ -1,3 +1,4 @@
+import { openTechnicalEvidence } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -89,7 +90,7 @@ test.describe("Shade005 bilingual source-backed GIS readiness", () => {
       const eligibility = page.locator("#eligibility");
       await expect(eligibility.locator("p").filter({ hasText: /14,896/ }).first()).toBeVisible();
       await expect(eligibility.locator("p").filter({ hasText: locale === "en" ? /0.{0,50}eligible|eligible.{0,50}0/i : /0/ }).first()).toBeVisible();
-      for (const file of ["docs/shade-equity-source-audit.md", "docs/shade-equity-methodology.md", "docs/shade-equity-delivery.md", "src/lib/shadeEquitySpatial.ts", "src/lib/shadeEquityDecision.ts", "public/data/shade-equity/snapshot.json", "public/data/shade-equity/spatial-quality.json", "reports/shade-equity/performance.json"]) {
+      for (const file of ["docs/shade-equity-source-audit.md", "docs/shade-equity-methodology.md", "reports/shade-equity/example-analysis.json", "src/lib/shadeEquitySpatial.ts", "src/lib/shadeEquityDecision.ts", "public/data/shade-equity/snapshot.json", "public/data/shade-equity/spatial-quality.json", "reports/shade-equity/performance.json"]) {
         const link = main.locator(`a[href="${repo}/blob/${sha}/${file}"]`).first();
         await expect(link).toBeVisible();
         await expect(link).toHaveAttribute("rel", /noopener/);
@@ -102,6 +103,7 @@ test.describe("Shade005 bilingual source-backed GIS readiness", () => {
         await expect(rendered.getByRole("row")).toHaveCount(table.rows.length + 1);
         for (const [index, { cells }] of table.rows.entries()) await expect(rendered.getByRole("row").nth(index + 1).locator("td, th[scope='row']")).toHaveText(table.columns.map(({ key }) => cells[key]));
       }
+      await openTechnicalEvidence(page);
       for (const section of study.sections) {
         const rendered = page.locator(`#${section.id}`);
         await expect(rendered.getByRole("heading", { level: 2 })).toHaveText(section.title);
@@ -144,10 +146,10 @@ test.describe("Shade005 bilingual source-backed GIS readiness", () => {
         await page.evaluate((value) => localStorage.setItem("portfolio-locale", value), locale);
         await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/shade-equity`);
         for (const dark of [false, true]) {
-          if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
           await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-          if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         }
         if (width === 390) {
           const region = page.getByRole("table", { name: study.scenarioTables[3].caption, exact: true }).locator("..");

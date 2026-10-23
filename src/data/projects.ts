@@ -628,7 +628,7 @@ export const projects: Project[] = [
     shortDescription:
       "A bilingual public-amenities explorer with completed bin-allocation and Shade Equity GIS evidence-readiness POCs; shade-review ranking remains gated.",
     fullDescription:
-      "Taipei Public Amenities Map retains official facility maps, accessible directories, nearby sorting and offline-friendly caching. Its completed decision-support POC adds bin-coverage allocation, source reconciliation, policy-oriented category weighting, scenario comparison, sensitivity analysis, explainable field-review candidates and JSON/CSV evidence export. Policy weights are analytical assumptions, and candidate sites require field verification. The separate Shade Equity module integrates official roadside trees, sidewalks and tree pits using EPSG:3826 validation, stable source snapshots, spatial indexing and offline associations. Ambiguity/exclusion audits, conditional review rules, capacity/tolerance comparisons and JSON/CSV briefings are implemented. Its 14,896 admitted sidewalk inventory units produce zero eligible ranked survey candidates because source length semantics remain unverified and comparable coverage is not established; no canopy, heat exposure, shade deficit or planting feasibility is inferred. Protected Trees remains a distinct legal subset.",
+      "Taipei Public Amenities Map retains official facility maps, accessible directories, nearby sorting and offline-friendly caching. Its completed decision-support proof of concept adds bin-coverage allocation, source reconciliation, policy-oriented category weighting, scenario comparison, sensitivity analysis, explainable field-review candidates and JSON/CSV evidence export. Policy weights are analytical assumptions, and candidate sites require field verification. The separate Shade Equity module integrates official roadside trees, sidewalks and tree pits using EPSG:3826 validation, stable source snapshots, spatial indexing and offline associations. Ambiguity/exclusion audits, conditional review rules, capacity/tolerance comparisons and JSON/CSV briefings are implemented. Its 14,896 admitted sidewalk inventory units produce zero eligible ranked survey candidates because source length semantics remain unverified and comparable coverage is not established; no canopy, heat exposure, shade deficit or planting feasibility is inferred. Protected Trees remains a distinct legal subset.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["React", "TypeScript", "Vite", "Leaflet"],
@@ -721,9 +721,9 @@ export const projects: Project[] = [
     name: "Taipei 1999 Service Request Map",
     tagline: "Historical dispatch explorer and explainable civic investigation priorities",
     shortDescription:
-      "A bilingual Taipei 1999 dispatch explorer with a completed decision-support POC for verified historical trends, investigation capacity scenarios, and privacy-preserving aggregate briefings.",
+      "A bilingual Taipei 1999 dispatch explorer with a completed decision-support proof of concept for verified historical trends, investigation capacity scenarios, and privacy-preserving aggregate briefings.",
     fullDescription:
-      "Taipei 1999 Service Request Map retains its four explorer modules: historical dispatched service requests, streetlight maintenance, construction audits, and stop/resume-work records. The completed civic decision-support POC adds source completeness auditing, versioned monthly district/item aggregates, explainable A/B/C investigation rules, editable thresholds, capacity and sensitivity scenarios, and JSON/CSV manager briefings. The frozen comparison uses verified complete April–September 2026 source months. Decision outputs suppress protected cells and exclude case IDs, addresses, and exact complaint coordinates. These are advisory historical screening results, not confirmed incidents, resolution rates, operational efficiency, or rodent-specific predictions.",
+      "Taipei 1999 Service Request Map retains its four explorer modules: historical dispatched service requests, streetlight maintenance, construction audits, and stop/resume-work records. The completed civic decision-support proof of concept adds source completeness auditing, versioned monthly district/item aggregates, explainable A/B/C investigation rules, editable thresholds, capacity and sensitivity scenarios, and JSON/CSV manager briefings. The frozen comparison uses verified complete April–September 2026 source months. Decision outputs suppress protected cells and exclude case IDs, addresses, and exact complaint coordinates. These are advisory historical screening results, not confirmed incidents, resolution rates, operational efficiency, or rodent-specific predictions.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Papa Parse"],
@@ -733,7 +733,7 @@ export const projects: Project[] = [
       "Privacy-aware location processing",
       "Related public-works data modules",
       "Bilingual responsive experience",
-      "Completed civic decision-support POC with source completeness and versioned provenance",
+      "Completed civic decision-support proof of concept with source completeness and versioned provenance",
       "Explainable investigation priorities with editable thresholds and capacity scenarios",
       "Threshold sensitivity and privacy-preserving monthly district/item aggregates",
       "JSON/CSV manager briefings without case IDs, addresses, or exact complaint coordinates"
@@ -751,7 +751,7 @@ export const projects: Project[] = [
     name: "Taipei Feitsui Water Map",
     tagline: "Water/environment exploration and explainable heavy-rain preparedness review",
     shortDescription:
-      "A bilingual water-quality and ecology explorer with a completed heavy-rain infrastructure evidence-review decision-support POC.",
+      "A bilingual water-quality and ecology explorer with a completed heavy-rain infrastructure evidence-review decision-support proof of concept.",
     fullDescription:
       "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. Its completed heavy-rain preparedness module adds official infrastructure source integration, flood-context GIS validation, provenance and data-quality checks, A/B/C evidence-review priorities, capacity and geographic-balancing scenarios, deterministic sensitivity and JSON/CSV briefings. Priorities describe documentary or field verification needs, not flood forecasts, current equipment availability or operational readiness. Reservoir and ecology modules remain public-data exploration capabilities.",
     role: "Frontend / Data Dashboard Developer",
@@ -908,7 +908,7 @@ export const projects: Project[] = [
     name: "Taipei Real Estate & Demographics Dashboard",
     tagline: "Real-estate exploration and explainable urban-renewal evidence review",
     shortDescription:
-      "A bilingual real-estate and demographic explorer with a completed urban-renewal policy-research decision-support POC.",
+      "A bilingual real-estate and demographic explorer with a completed urban-renewal policy-research decision-support proof of concept.",
     fullDescription:
       "Taipei Real Estate & Demographics Dashboard brings together transaction records, monthly and quarterly price indexes, rents, district comparisons, permits, land values, income, demographics, and public-service records. The completed urban-renewal evidence module adds citywide building-age context, district administrative evidence, source and statistical-unit validation, versioned provenance, deterministic review priorities, research-capacity and source-reconciliation comparisons, and reproducible JSON/CSV briefings. Citywide stocks remain separate from district designation records and permit flows. These are administrative research questions, not building-safety grades, legal eligibility decisions or redevelopment recommendations.",
     role: "Frontend / Data Dashboard Developer",

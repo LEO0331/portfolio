@@ -1,3 +1,4 @@
+import { restorePresentation } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -43,27 +44,27 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
     const bin = records.find((record) => record.id === "bin-policy");
     expect(bin).toBeDefined();
     const { futureExtensions: _roadmap, ...frozenTechnicalRecord } = baseline[locale];
-    expect(originalBinRecord(bin)).toEqual(frozenTechnicalRecord);
+    expect(originalBinRecord(restorePresentation(bin, locale))).toEqual(frozenTechnicalRecord);
     const roadmap = bin!.futureExtensions.join(" ");
     expect(roadmap).toMatch(locale === "en" ? /shade/i : /樹蔭/);
     expect(roadmap).toMatch(locale === "en" ? /complet|implemented/i : /完成/);
     expect(roadmap).toMatch(locale === "en" ? /gat|unavailable|insufficient/i : /停用|不足|門檻|未開放|仍待/);
   });
   test(`Civic002 ${locale} preserves the complete frozen v1.1 record`, () => {
-    expect(records.find((record) => record.id === "civic-1999")).toEqual(civicBaseline[locale]);
+    expect(restorePresentation(records.find((record) => record.id === "civic-1999"), locale)).toEqual(civicBaseline[locale]);
   });
   test(`HeavyRain003 ${locale} preserves the complete frozen v1.2 record`, () => {
-    expect(records.find((record) => record.id === "heavy-rain-preparedness")).toEqual(heavyRainBaseline[locale]);
+    expect(restorePresentation(records.find((record) => record.id === "heavy-rain-preparedness"), locale)).toEqual(heavyRainBaseline[locale]);
   });
   test(`UrbanRenewal004 ${locale} preserves the complete frozen v1.3 record`, () => {
-    expect(records.find((record) => record.id === "urban-renewal")).toEqual(urbanBaseline[locale]);
+    expect(restorePresentation(records.find((record) => record.id === "urban-renewal"), locale)).toEqual(urbanBaseline[locale]);
   });
   test(`Shade005 ${locale} preserves the complete frozen v1.4 record`, () => {
-    expect(records.find((record) => record.id === "shade-equity")).toEqual(shadeBaseline[locale]);
+    expect(restorePresentation(records.find((record) => record.id === "shade-equity"), locale)).toEqual(shadeBaseline[locale]);
   });
   test(`Neihu006 ${locale} preserves its frozen v1.5 technical record and updates only the completed bus roadmap`, () => {
     const neihu = records.find((record) => record.id === "neihu-congestion")!;
-    expect(originalNeihuRecord(neihu)).toEqual(originalNeihuRecord(neihuBaseline[locale]));
+    expect(originalNeihuRecord(restorePresentation(neihu, locale))).toEqual(originalNeihuRecord(neihuBaseline[locale]));
     expect(neihu.futureExtensions[0]).toBe(neihuBaseline[locale].futureExtensions[0]);
     const roadmap = [...neihu.futureExtensions, neihu.sections.find(({ id }) => id === "future")!.paragraphs[1]].join(" ");
     expect(roadmap).toMatch(/007/);
@@ -181,7 +182,7 @@ test("Civic002 freezes the pinned priority scenario and keeps both analytical mo
   expect(civic.sourceVersion).toBe("352dbebe0057f62817e4ee08572e1a4d207a5b5a");
   expect(civic.methodology.kind).toBe("rule-based-priority");
   expect(govtechCases.find(({ id }) => id === "bin-policy")?.methodology.kind).toBe("weighted-coverage");
-  const tables = civic.scenarioTables;
+  const tables = restorePresentation(civic, "en").scenarioTables;
   expect(tables[0].rows.map(({ id, cells }) => ({ id, ...cells }))).toEqual([
     { id: "songshan", rank: "1", district: "Songshan · 松山區", tier: "A", recent: "289", previous: "201", increase: "+88", growth: "43.8%" },
     { id: "wenshan", rank: "2", district: "Wenshan · 文山區", tier: "A", recent: "217", previous: "144", increase: "+73", growth: "50.7%" },

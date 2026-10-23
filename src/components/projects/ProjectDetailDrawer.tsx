@@ -5,7 +5,7 @@ import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { resolveProjectImageSources } from "../../utils/projectImage";
 import { toSafeExternalHref } from "../../utils/urlSafety";
-import { getProjectGovTechCases } from "../../utils/govtechCase";
+import { getProjectGovTechCaseLinks } from "../../utils/govtechCaseLinks";
 import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
@@ -78,7 +78,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
-  const govtechCases = getProjectGovTechCases(project, locale);
+  const govtechCases = getProjectGovTechCaseLinks(project, locale);
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
 
   useEffect(() => {

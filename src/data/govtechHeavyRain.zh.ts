@@ -2,7 +2,7 @@ import type { GovTechCase } from "../types/govtechCase";
 import { heavyRainCase, heavyRainSource, HEAVY_RAIN_METHOD_ID } from "./govtechHeavyRain";
 
 const sourceLinks = ["官方抽水站資料集", "官方 2026 年度搶修機具資料集", "官方沉砂池資料集", "官方易淹水參考範圍資料集", "官方歷史積淹水資料集"];
-const evidenceLabels = ["已合併的防汛整備實作 · PR #5", "固定來源合併提交", "方法與已記錄實際情境", "繁體中文 MVP 規格", "來源稽核與 GIS 限制", "實作計畫", "版本化靜態快照", "純 TypeScript 決策引擎", "GIS 驗證", "決策輸入型別", "延遲載入的防汛整備面板", "來源擷取與稽核", "離線快照建置器", "決策、情境與匯出測試", "GIS 與可重現性測試", "已記錄測試與瀏覽器驗證"];
+
 const previews = [
   { label: "本機開發擷取 · 桌面來源驗證畫面", url: heavyRainSource("docs/evidence/preparedness-desktop.jpg") },
   { label: "本機開發擷取 · 行動版來源驗證畫面", url: heavyRainSource("docs/evidence/preparedness-mobile.jpg") },
@@ -14,8 +14,8 @@ export const heavyRainCaseZh: GovTechCase = {
   policyDomain: "防災整備與公共安全",
   title: "豪雨防汛整備與設施查核決策支援",
   summary: "從防汛設施與歷史積水資料，建立可追溯、可比較的整備查核優先順序。",
-  maturityLabel: "已完成的決策支援 POC",
-  reviewNote: "獨立決策支援 POC，並非官方洪水警報或實際整備狀態評估。固定來源於 2026 年 10 月 19 日複核；本頁呈現已記錄輸出，不執行即時計算。",
+  maturityLabel: "已完成的決策支援概念驗證",
+  reviewNote: "獨立決策支援概念驗證，並非官方洪水警報或實際整備狀態評估。固定來源於 2026 年 10 月 19 日複核；本頁呈現已記錄輸出，不執行即時計算。",
   intendedUsers: "市政設施規劃人員、防汛整備分析人員，以及負責書面證據查核或規劃現地巡檢的團隊。",
   implementedCapabilities: ["官方來源稽核與 GIS 驗證", "版本化設施證據與歷史背景", "可解釋的 A／B／C 證據查核優先順序", "查核容量、地理均衡與確定性敏感度", "JSON／CSV 查核簡報"],
   sections: [
@@ -25,7 +25,7 @@ export const heavyRainCaseZh: GovTechCase = {
     ] },
     { id: "evolution", title: "從原有資料探索到決策支援", paragraphs: [
       "原有翡翠水庫水環境地圖涵蓋水庫水質、水文氣象、水庫運轉、河川水質、抽水站、沉砂池、豪雨搶修合約機具、歷史生態及相關水務資料。",
-      "已合併模組沿用既有靜態應用，新增官方來源稽核、KML 驗證、來源脈絡、版本快照、設施證據模型、歷史積淹水背景、查核層級、容量情境、地理均衡、敏感度及 JSON／CSV 簡報。水庫與生態仍屬資料探索功能，並非所有資料都進入本決策模型。"
+      "模組沿用既有靜態應用，新增官方來源稽核、KML 驗證、來源脈絡、版本快照、設施證據模型、歷史積淹水背景、查核層級、容量情境、地理均衡、敏感度及 JSON／CSV 簡報。水庫與生態仍屬資料探索功能，並非所有資料都進入本決策模型。"
     ] },
     { id: "architecture", title: "系統架構", content: "architecture", paragraphs: [
       "Node 腳本擷取選定官方資源，驗證原始位元組後建置經複核的靜態快照。瀏覽器檢查快照有效性與來源身分，再由延遲載入的 React／Leaflet 模組，針對固定來源母體執行純 TypeScript 情境。",
@@ -59,7 +59,7 @@ export const heavyRainCaseZh: GovTechCase = {
       "歷史輸出依來源行政區與日期彙總觀察，不重新發布或評分住戶尺度歷史幾何、地址、深度及面積。CSV 以引號處理儲存格，並防護公式起始字元及控制字元前綴。這些措施支援書面查核，不證明實際整備狀態。"
     ] },
     { id: "limitations", title: "重要限制與負責任使用", paragraphs: [
-      "此為獨立個人工程 POC，並非臺北市政府營運或背書，不是洪水警報服務或淹水預測，也未進行官方作業整備認證。",
+      "此為獨立個人工程概念驗證，並非臺北市政府營運或背書，不是洪水警報服務或淹水預測，也未進行官方作業整備認證。",
       "模型不量測排水容量、不證明機具或抽水設備目前可用、不判定實際設施整備狀態，也不認證免於積淹水。候選優先順序描述證據查核需求，不是緊急風險；缺乏運轉狀態證據不等於設施失效。"
     ], bullets: [
       "行政區 × 設施類別不是個別房產、預測淹水區、已驗證抽水服務集水區、實際緊急部署位置或水文驗證服務範圍。",
@@ -74,7 +74,7 @@ export const heavyRainCaseZh: GovTechCase = {
     ], links: previews },
     { id: "demonstrates", title: "本案例展現的能力", content: "future", paragraphs: [
       "來源契約、防禦性 GIS 轉換、可稽核排除、固定快照、確定性規則與地理容量比較，將公開資料工程連結至可解釋的書面證據查核。",
-      "案例 001 探討空間設施配置與政策加權覆蓋；案例 002 探討歷史派工與調查分流；案例 003 探討 GIS／來源驗證、設施證據缺口與均衡查核容量。三者皆為獨立技術 POC。"
+      "案例 001 探討空間設施配置與政策加權覆蓋；案例 002 探討歷史派工與調查分流；案例 003 探討 GIS／來源驗證、設施證據缺口與均衡查核容量。三者皆為獨立技術概念驗證。"
     ] }
   ],
   architecture: ["臺北市官方開放資料", "選定來源擷取", "SHA256 與中繼資料驗證", "CSV／KML／GIS 轉換", "品質與資格檢查", "版本化防汛整備靜態快照", "純 TypeScript 決策引擎", "React／Leaflet 介面", "情境比較與查核簡報匯出"],
@@ -106,10 +106,63 @@ export const heavyRainCaseZh: GovTechCase = {
   scenarioTables: [
     { caption: "已記錄的同範圍比較 · 快照 sha256-d67edc57254ee273 · 嚴格證據模式 · 容量 5", columns: [
       { key: "strategy", label: "策略" }, { key: "capacity", label: "查核容量" }, { key: "selected", label: "選取候選識別碼 · 依序" }, { key: "districts", label: "涵蓋行政區" }, { key: "questions", label: "候選層級問題數" }, { key: "tiers", label: "優先層級" }, { key: "overlap", label: "共同選取" }, { key: "unique", label: "各自選取" }
-    ], rows: heavyRainCase.scenarioTables[0].rows.map((row) => ({ ...row, cells: { ...row.cells, strategy: row.id === "gaps" ? "缺口優先（gaps）" : "地理均衡（balanced）" } })) },
-    { caption: "重現的容量敏感度 · 相同快照與證據範圍 · 36 個合格候選", columns: [{ key: "strategy", label: "策略" }, { key: "capacity", label: "容量" }, { key: "districts", label: "行政區" }, { key: "questions", label: "候選層級問題數" }, { key: "tiers", label: "層級" }], rows: heavyRainCase.scenarioTables[1].rows.map((row) => ({ ...row, cells: { ...row.cells, strategy: row.id === "gaps-10" ? "缺口優先（gaps）" : "地理均衡（balanced）" } })) }
+    ], rows: heavyRainCase.scenarioTables[0].rows.map((row) => ({ ...row, cells: { ...row.cells, strategy: row.id === "gaps" ? "缺口優先" : "地理均衡" } })) },
+    { caption: "重現的容量敏感度 · 相同快照與證據範圍 · 36 個合格候選", columns: [{ key: "strategy", label: "策略" }, { key: "capacity", label: "容量" }, { key: "districts", label: "行政區" }, { key: "questions", label: "候選層級問題數" }, { key: "tiers", label: "層級" }], rows: heavyRainCase.scenarioTables[1].rows.map((row) => ({ ...row, cells: { ...row.cells, strategy: row.id === "gaps-10" ? "缺口優先" : "地理均衡" } })) }
   ],
-  evidence: heavyRainCase.evidence.map((link, index) => ({ ...link, label: evidenceLabels[index] })),
+  evidence: [
+  {
+    "label": "方法與已記錄實際情境",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+  },
+  {
+    "label": "繁體中文 原型規格",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "來源稽核與 GIS 限制",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+  },
+  {
+    "label": "版本化靜態快照",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/public/data/preparedness-decision/snapshot.json"
+  },
+  {
+    "label": "純 TypeScript 決策引擎",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessDecision.ts"
+  },
+  {
+    "label": "GIS 驗證",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessSpatial.ts"
+  },
+  {
+    "label": "決策輸入型別",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/types/preparedness.ts"
+  },
+  {
+    "label": "延遲載入的防汛整備面板",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/PreparednessDecisionPanel.tsx"
+  },
+  {
+    "label": "來源擷取與稽核",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/auditPreparednessSources.ts"
+  },
+  {
+    "label": "離線快照建置器",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/buildPreparednessDecisionSnapshot.ts"
+  },
+  {
+    "label": "決策、情境與匯出測試",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessDecision.test.ts"
+  },
+  {
+    "label": "GIS 與可重現性測試",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessSpatial.test.ts"
+  },
+  {
+    "label": "已記錄測試與瀏覽器驗證",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/verification.md"
+  }
+],
   previewAssets: previews,
-  futureExtensions: ["提高精度需先取得權威運轉／可用性紀錄及已驗證排水服務關係，明示來源脈絡並建立新證據範圍，不應以鄰近關係推定保護區。", "下一個規劃中的政策專案：taipei-real-estate-dashboard — 高齡建物與都市更新決策支援；不在本次版本實作。"]
+  futureExtensions: ["提高精度需先取得權威運轉／可用性紀錄及已驗證排水服務關係，明示來源脈絡並建立新證據範圍，不應以鄰近關係推定保護區。", "案例 004 已完成老屋與都市更新決策支援；法定資格、建物安全與實際工程評估仍須獨立證據。"]
 };

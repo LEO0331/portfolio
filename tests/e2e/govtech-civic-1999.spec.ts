@@ -69,8 +69,8 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       await page.goto(`./${prefix}govtech/civic-1999`);
       const main = page.getByRole("main");
       for (const identity of [sha, snapshot, "civic-investigation-priority-v1", "civic-exact-items-1.0.0", "environment_pollution", "污染舉發", "1,334", "2,608", "1,200"]) await expect(main).toContainText(identity);
-      await expect(main.locator('a[href="https://github.com/LEO0331/taipei-1999-map/pull/8"]').first()).toBeVisible();
-      for (const file of ["docs/civic-source-audit.md", "docs/civic-decision-methodology.md", "docs/civic-decision-delivery.md", "src/lib/civicDecision.ts", "src/lib/civicCategoryMapping.ts", "tests/civicSnapshot.test.ts", "public/data/civic-decision/snapshot.json"]) {
+      await expect(main.locator('a[href*="/pull/"]')).toHaveCount(0);
+      for (const file of ["docs/civic-source-audit.md", "docs/civic-decision-methodology.md", "src/lib/civicDecision.ts", "src/lib/civicCategoryMapping.ts", "tests/civicSnapshot.test.ts", "public/data/civic-decision/snapshot.json"]) {
         const link = main.locator(`a[href="https://github.com/LEO0331/taipei-1999-map/blob/${sha}/${file}"]`).first();
         await expect(link).toBeVisible();
         await expect(link).toHaveAttribute("rel", /noopener/);
@@ -79,7 +79,7 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       await expect(shortlist.getByRole("row")).toHaveCount(6);
       for (const [index, expected] of [["1", "松山區", "A", "289", "201", "+88", "43.8%"], ["2", "文山區", "A", "217", "144", "+73", "50.7%"], ["3", "南港區", "A", "167", "126", "+41", "32.5%"], ["4", "信義區", "B", "287", "231", "+56", "24.2%"], ["5", "中山區", "B", "374", "333", "+41", "12.3%"]].entries()) {
         const row = shortlist.getByRole("row").nth(index + 1);
-        for (const value of expected) await expect(row).toContainText(value);
+        for (const [cellIndex, value] of expected.entries()) await expect(row).toContainText(locale === "en" && cellIndex === 1 ? ["Songshan", "Wenshan", "Nangang", "Xinyi", "Zhongshan"][index] : value);
       }
       const methodology = page.locator("#methodology");
       await expect(methodology).toContainText("25%");
@@ -111,10 +111,10 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       const civic = records[locale].find(({ id }) => id === "civic-1999")!;
       await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/civic-1999`);
       for (const dark of [false, true]) {
-        if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+        if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
         await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-        if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+        if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
       }
       const table = page.getByRole("table", { name: civic.scenarioTables[0].caption, exact: true });
       const scrollRegion = table.locator("..");

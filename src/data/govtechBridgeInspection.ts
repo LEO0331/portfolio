@@ -22,7 +22,7 @@ export const bridgeInspectionCase: GovTechCase = {
   "title": "Bridge Inspection & Maintenance Decision Support",
   "summary": "From official bridge records to conservative asset reconciliation, bounded geographic admission and reproducible documentation-review scenarios.",
   "maturity": "decision-support-poc",
-  "maturityLabel": "Completed evidence-review and bounded geographic investigation POC",
+  "maturityLabel": "Completed evidence-review and bounded geographic investigation proof of concept",
   "reviewNote": "216 within-edition research associations; 194 pass geographic admission. No official A↔B crosswalk; Mode C structural assessment remains unavailable.",
   "intendedUsers": "Infrastructure data stewards, public works analysts, asset administrators, inspection documentation teams and civic engineering researchers.",
   "implementedCapabilities": [
@@ -46,7 +46,7 @@ export const bridgeInspectionCase: GovTechCase = {
       "title": "From Public-Safety Explorer to Policy #9",
       "paragraphs": [
         "The existing bilingual taipei-safety-map organizes emergency/resource, infrastructure and historical public-safety datasets without a combined safety score. Its independent bridge transparency directory has 416 published rows and 415 within-source groups, without validated inspection-linked geography.",
-        "Policy #9 adds two-source acquisition, original-byte governance, conservative asset reconciliation, geographic screening, deterministic evidence tiers, 5/10/all scenarios and auditable exports. The historical explorer and its source edition remain separate. PR #6 is merged at the pinned source commit; pre-merge delivery wording about blocked PR creation is historical."
+        "Policy #9 adds two-source acquisition, original-byte governance, conservative asset reconciliation, geographic screening, deterministic evidence tiers, 5/10/all scenarios and auditable exports. The historical explorer and its source edition remain separate."
       ]
     },
     {
@@ -913,7 +913,7 @@ export const bridgeInspectionCase: GovTechCase = {
         {
           "id": "0",
           "cells": {
-            "identity": "Git merge",
+            "identity": "Source revision",
             "value": "deb812b3472c078b5879727953e85d2850f0a82c"
           }
         },
@@ -1330,135 +1330,127 @@ export const bridgeInspectionCase: GovTechCase = {
     }
   ],
   "evidence": [
-    {
-      "label": "Merged Policy #9 PR #6",
-      "url": "https://github.com/LEO0331/taipei-safety-map/pull/6"
-    },
-    {
-      "label": "Official catalogue A",
-      "url": "https://data.taipei/dataset/detail?id=27135efa-d43e-406d-a3e4-fcb07efb3982"
-    },
-    {
-      "label": "Official catalogue B",
-      "url": "https://data.taipei/dataset/detail?id=866a9982-0a63-421f-b120-9144fc6ce732"
-    },
-    {
-      "label": "Source audit",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-source-audit.md"
-    },
-    {
-      "label": "Identity contract",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-identity-contract.md"
-    },
-    {
-      "label": "Geographic contract",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-geographic-evidence.md"
-    },
-    {
-      "label": "Methodology",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-methodology.md"
-    },
-    {
-      "label": "Chinese decision specification",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-decision-mvp.zh-TW.md"
-    },
-    {
-      "label": "Delivery and recorded checks",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-delivery.md"
-    },
-    {
-      "label": "Actual results and full ordered IDs",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-results.json"
-    },
-    {
-      "label": "Accepted source manifest",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/data/raw/bridge-policy/sources.json"
-    },
-    {
-      "label": "Snapshot pointer",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/current.json"
-    },
-    {
-      "label": "Immutable snapshot",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a.json"
-    },
-    {
-      "label": "Source parsing and admission",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.ts"
-    },
-    {
-      "label": "Bounded staged acquisition",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/fetchBridgePolicySources.ts"
-    },
-    {
-      "label": "Source integrity audit",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/auditBridgePolicySources.ts"
-    },
-    {
-      "label": "Snapshot publication",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/buildBridgePolicySnapshot.ts"
-    },
-    {
-      "label": "Deterministic verification and measurements",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/verifyBridgePolicy.ts"
-    },
-    {
-      "label": "Typed source contracts",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/types/bridgePolicy.ts"
-    },
-    {
-      "label": "Identity implementation",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.ts"
-    },
-    {
-      "label": "Geographic screening",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.ts"
-    },
-    {
-      "label": "Tier and temporal rules",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicy.ts"
-    },
-    {
-      "label": "Scenarios and export safeguards",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.ts"
-    },
-    {
-      "label": "Browser integrity loader",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/loadBridgePolicy.ts"
-    },
-    {
-      "label": "Bilingual dashboard",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyDashboard.tsx"
-    },
-    {
-      "label": "Bounded research map",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyMap.tsx"
-    },
-    {
-      "label": "Source tests",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.test.ts"
-    },
-    {
-      "label": "Identity tests",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.test.ts"
-    },
-    {
-      "label": "Geographic tests",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.test.ts"
-    },
-    {
-      "label": "Scenario tests",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.test.ts"
-    },
-    {
-      "label": "Browser network evidence",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
-    },
-    {
-      "label": "Official district boundary edition · Department of Civil Affairs",
-      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
-    }
-  ],
+  {
+    "label": "Official catalogue A",
+    "url": "https://data.taipei/dataset/detail?id=27135efa-d43e-406d-a3e4-fcb07efb3982"
+  },
+  {
+    "label": "Official catalogue B",
+    "url": "https://data.taipei/dataset/detail?id=866a9982-0a63-421f-b120-9144fc6ce732"
+  },
+  {
+    "label": "Source audit",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-source-audit.md"
+  },
+  {
+    "label": "Identity contract",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-identity-contract.md"
+  },
+  {
+    "label": "Geographic contract",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-geographic-evidence.md"
+  },
+  {
+    "label": "Methodology",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-methodology.md"
+  },
+  {
+    "label": "Chinese decision specification",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "Actual results and full ordered IDs",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-results.json"
+  },
+  {
+    "label": "Accepted source manifest",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/data/raw/bridge-policy/sources.json"
+  },
+  {
+    "label": "Snapshot pointer",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/current.json"
+  },
+  {
+    "label": "Immutable snapshot",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a.json"
+  },
+  {
+    "label": "Source parsing and admission",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.ts"
+  },
+  {
+    "label": "Bounded staged acquisition",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/fetchBridgePolicySources.ts"
+  },
+  {
+    "label": "Source integrity audit",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/auditBridgePolicySources.ts"
+  },
+  {
+    "label": "Snapshot publication",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/buildBridgePolicySnapshot.ts"
+  },
+  {
+    "label": "Deterministic verification and measurements",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/verifyBridgePolicy.ts"
+  },
+  {
+    "label": "Typed source contracts",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/types/bridgePolicy.ts"
+  },
+  {
+    "label": "Identity implementation",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.ts"
+  },
+  {
+    "label": "Geographic screening",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.ts"
+  },
+  {
+    "label": "Tier and temporal rules",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicy.ts"
+  },
+  {
+    "label": "Scenarios and export safeguards",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.ts"
+  },
+  {
+    "label": "Browser integrity loader",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/loadBridgePolicy.ts"
+  },
+  {
+    "label": "Bilingual dashboard",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyDashboard.tsx"
+  },
+  {
+    "label": "Bounded research map",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyMap.tsx"
+  },
+  {
+    "label": "Source tests",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.test.ts"
+  },
+  {
+    "label": "Identity tests",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.test.ts"
+  },
+  {
+    "label": "Geographic tests",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.test.ts"
+  },
+  {
+    "label": "Scenario tests",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.test.ts"
+  },
+  {
+    "label": "Browser network evidence",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
+  },
+  {
+    "label": "Official district boundary edition · Department of Civil Affairs",
+    "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
+  }
+],
   "previewAssets": [
     {
       "label": "Upstream local preview · desktop evidence-review controls",
