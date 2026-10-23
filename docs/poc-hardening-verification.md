@@ -86,3 +86,9 @@ Exactly one [human-review PR](https://github.com/LEO0331/portfolio/pull/30) targ
 GitHub verification2026-10-23: implementation head78a0518 passed E2E39932482791 and Lighthouse39932482820. This final update records those checks and changes documentation only. PR30 remains for human review; agent did not merge.
 
 [Machine CI evidence](./evidence/poc-hardening/github-ci.json), [E2E](https://github.com/LEO0331/portfolio/actions/runs/39932482791), [Lighthouse](https://github.com/LEO0331/portfolio/actions/runs/39932482820).
+
+## Observed external merge and live verification
+
+PR30 was externally merged by LEO0331 at2026-10-23T09:31:44Z,merge 778e183105cd80db464728bf971bc589d0e168e9,containing implementation head78a0518392ac4584818604529298c7282d4738a0. Agent did not merge. Merged E2E39932522389,Lighthouse39932522588 andPages39932522770 allsuccess. Actual public EN/ZH mobile pages returnHTTP200,render the supplementary official-polygon table,andhave zero page errors/body overflow. The later CI-record commit48841a0 andthis post-merge lifecycle evidence remain on the feature branch; no second PR or direct-main write.
+
+[Merged E2E](https://github.com/LEO0331/portfolio/actions/runs/39932522389), [Lighthouse](https://github.com/LEO0331/portfolio/actions/runs/39932522588), [Pages](https://github.com/LEO0331/portfolio/actions/runs/39932522770), [actual public browser verification](./evidence/poc-hardening/live-verification.json).

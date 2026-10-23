@@ -15,5 +15,28 @@
       "url": "https://github.com/LEO0331/portfolio/actions/runs/39932482820"
     }
   ],
-  "scope": "Implementation and PR delivery head; following commit records this CI evidence and adjusts documentation only. No automatic merge."
+  "scope": "Implementation and PR delivery head; following commit records this CI evidence and adjusts documentation only. No automatic merge.",
+  "observedMerge": {
+    "sha": "778e183105cd80db464728bf971bc589d0e168e9",
+    "mergedBy": "LEO0331",
+    "mergedAt": "2026-10-23T09:31:44Z",
+    "agentMerged": false,
+    "checks": [
+      {
+        "runId": 39932522389,
+        "name": "E2E Smoke Tests",
+        "conclusion": "success"
+      },
+      {
+        "runId": 39932522588,
+        "name": "Lighthouse Audit",
+        "conclusion": "success"
+      },
+      {
+        "runId": 39932522770,
+        "name": "Deploy Portfolio to GitHub Pages",
+        "conclusion": "success"
+      }
+    ]
+  }
 }
