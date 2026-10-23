@@ -1,0 +1,19 @@
+{
+  "headSha": "78a0518392ac4584818604529298c7282d4738a0",
+  "verifiedAt": "2026-10-23",
+  "checks": [
+    {
+      "name": "E2E Smoke Tests",
+      "runId": 39932482791,
+      "conclusion": "success",
+      "url": "https://github.com/LEO0331/portfolio/actions/runs/39932482791"
+    },
+    {
+      "name": "Lighthouse Audit",
+      "runId": 39932482820,
+      "conclusion": "success",
+      "url": "https://github.com/LEO0331/portfolio/actions/runs/39932482820"
+    }
+  ],
+  "scope": "Implementation and PR delivery head; following commit records this CI evidence and adjusts documentation only. No automatic merge."
+}
