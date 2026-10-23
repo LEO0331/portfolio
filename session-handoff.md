@@ -4,7 +4,7 @@
 
 **Current objective:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
 
-**Current status:** Complete implementation and local acceptance;preparing one review PR on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Original main checkout is untouched. Earlier Case008 lifecycle follow-up is now included through merged PR27.
+**Current status:** Complete implementation and local acceptance;review PR https://github.com/LEO0331/portfolio/pull/28 opened against main on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Original main checkout is untouched. Earlier Case008 lifecycle follow-up is now included through merged PR27.
 
 ## Completed and Verification
 
@@ -31,3 +31,5 @@ No feature blocker. npm audit has5existing high Tailwind/braces findings;actual 
 ## Files Relevant to the Next Update
 
 govtechBridgeInspection.ts/.zh.ts;case registration/types;existing safety-project description/relation;GovTech domain/source pin;static routes/SEO;bridge tests/source fixture/prior-case hash fixture;README pair,template,Case009 specification/audit/verification/evidence;featureledger/progress/handoff. Shared renderer/normalizer,pins,dependencies andpriorcase data unchanged.
+
+Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.

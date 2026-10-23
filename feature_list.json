@@ -465,7 +465,7 @@
       "id": "govtech-bridge-inspection-v1-8-2026-10",
       "name": "Present source-backed bridge documentation and geographic investigation as Case009",
       "description": "Conservative A/B reconciliation, original-byte lineage, real capacity/sensitivity and structural-safety gates.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-wifi-allocation-v1-7-2026-10"
       ],
@@ -479,7 +479,11 @@
       "evidence": [
         "GitHub PR6 independently verified merged at deb812b3472c078b5879727953e85d2850f0a82c",
         "Original raw parsers/reconciliation rebuilt416candidates and612inventory matching snapshot",
-        "12published scenarios,4published sensitivities and96expanded configurations independently executed"
+        "12published scenarios,4published sensitivities and96expanded configurations independently executed",
+        "Final 22 unit tests,140 Playwright tests,17/17 tracked flows,12 alternate-port tests,20-feature harness,TypeScript/build28routes anddiff checks passed",
+        "Root/Pages direct/reload/language/canonical/404,five widths,themes,keyboard andvisual95/100 passed;no upstream runtime requests",
+        "Five existing high dependency findings remain;no dependency changes;upstream full suite/publication replay not rerun",
+        "Exactly one review PR created against main: https://github.com/LEO0331/portfolio/pull/28; no automatic merge"
       ]
     }
   ]

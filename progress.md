@@ -294,3 +294,5 @@ All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0
 ### 2026-10-23 — Case009 bridge evidence review
 
 Added a20-section bilingual case,13small tables,source-pinned evidence,existing safety-project relation,28routes,regressions andcomplete documentation. Original parsers/reconciliation match416A/612Bobjects;12defaultscenarios,4published sensitivities and96expanded configurations verified. Source prose contradictions documented. Final22unit/140Playwright/17flows,alternateport12tests,bothbases/fivewidths,visual95/100,harness/build/diff passed. Five existing high audit findings remain;no dependency changes. One reviewPR is being prepared;no agent merge.
+
+Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.
