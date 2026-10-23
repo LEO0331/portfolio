@@ -2,38 +2,34 @@
 
 **Last updated:** 2026-10-23
 
-**Current objective:** GovTech Showcase v1.7 — combined Wi-Fi Case008.
+**Current objective:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
 
-**Current status:** Complete: [PR26](https://github.com/LEO0331/portfolio/pull/26) was externally merged at `2443e769e38171e99e3fe2603c37401b72518aba`; this agent did not perform the merge. Later lifecycle-only updates remain on this branch. Branch `codex/govtech-wifi-allocation-case-008`, base `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. The isolated worktree is attached to this chat; original main remains unchanged.
+**Current status:** Complete implementation and local acceptance;review PR https://github.com/LEO0331/portfolio/pull/28 opened against main on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Original main checkout is untouched. Earlier Case008 lifecycle follow-up is now included through merged PR27.
 
 ## Completed and Verification
 
-Eight bilingual cases; Case008 has 18 sections and 11 tables. Wi-Fi owns008, Bin001/005 and Crash006/007 are preserved. Original v1.0 merge is `fc3fe9340c460418b4255d04cf8a0150dbcf669b`; v1.1 merge is `8e01a2bd8d762b51fae979d32fd477e378d1876b`; geographic version is `wifi-geo-da9f69f501af4d6e1d3f9122`. Full identities, hashes and requirement mapping are in docs/govtech-v1.7-verification.md.
+Case009 has20bilingual sections and13bounded tables. Existing safety project owns009;all8previous records hash-identical. Source merge deb812b3472c078b5879727953e85d2850f0a82c;method bridge-inspection-evidence-review-v1;snapshot bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a;exacthash a580fb3356a84fc86fe4c4f4a811f115f490769ff15700bec5b69f88008b7782.
 
-Independently checked14 files, reproduced288 full Mode B outputs and checked12 Mode A combinations. Final22 unit/128 Playwright tests and17/17 tracked flows (100%) passed, along with TypeScript/build26 routes, harness19 features, diff checks and both-base browser verification. Sixteen bilingual case URLs per base, five widths, keyboard tables and real light/dark controls passed; visual95/100. Seven captures, a reference and the portable verifier are under docs/evidence/govtech-v1.7. Main increased1.17kB/0.34gzip; no runtime policy data, dependencies or upstream writes.
+Original raw parsers/reconciliation rebuild416candidates/612inventory objects matching snapshot;12scenarios,4published sensitivities,96expanded configurations andnewline equivalence verified. Sensitivity uses code/results over wrong prose:accepted/geographic same5;broader selects5ambiguousTierA;critical-only keepsdefault5.
+
+Final22unit/140Playwright/17trackedflows100%,alternateport12tests,TypeScript/build28routes,harness20features,diff,root/Pages18bilingualcaseURLs perbase,fivewidths,themes/keyboard andvisual95/100passed. Seven captures andtwo references under docs/evidence/govtech-v1.8. Full proof: docs/govtech-v1.8-verification.md.
 
 ## Blockers
 
-No feature blocker. Five existing high dependency findings stop actual Git Bash init.sh at npm audit; downstream checks pass separately.
+No feature blocker. npm audit has5existing high Tailwind/braces findings;actual GitBash init.sh stops there afterharness/install. Downstream tests/build passed separately.
 
 ## Remaining Risks
 
-Mode B has verified0, assumption-tested87 and unresolved4 facilities. Other-reference gain is0 and optimization is unavailable; all-slots18/2/0 increments are self-only. No operation, access, RF, demand or digital-inclusion evidence. Full Python ETL and upstream suite were not rerun; no post-merge deployment claim.
+216within-edition research associations are not official identities;194mapped records are not safe/unsafe bridge judgments. No certifieddatum/polygons/surveyedgeometry,completeeventdates,intervalapplicability,engineeringreports orcurrentstatus. Full upstreamsuite/publication/browser replay not rerun. No automatic merge orpublicdeployment claim.
 
 ## Recommended Next Step
 
-1. Case008 PR26 is already externally merged. Later updates affect only verification, ledger, progress and handoff; they are not in main. No second PR was created.
-2. Remediate dependency findings separately.
-3. Preserve source-version boundaries and earlier cases. Upstream PR6 and Portfolio Case007 PR25 are already merged; older draft status is historical.
+1. Review Case009 PR and manually merge after human acceptance.
+2. Treat audit remediation andnew source/engineering evidence as separate work.
+3. Keep accepted/broader sensitivity distinction andoriginal CRLF versus GitLF lineage intact.
 
 ## Files Relevant to the Next Update
 
-Bilingual govtechWifiAllocation data; case registry/types; Wi-Fi project copy/relation; GovTech copy; routing/static SEO; focused/regression tests and source/Bus007 fixtures; README pair, template, Case008 specification/audit/verification/evidence; feature ledger, progress and handoff. Shared renderer, normalizer, dependencies, lockfile, pins and previous case data are unchanged.
+govtechBridgeInspection.ts/.zh.ts;case registration/types;existing safety-project description/relation;GovTech domain/source pin;static routes/SEO;bridge tests/source fixture/prior-case hash fixture;README pair,template,Case009 specification/audit/verification/evidence;featureledger/progress/handoff. Shared renderer/normalizer,pins,dependencies andpriorcase data unchanged.
 
-### External merge reconciliation — 2026-10-23
-
-Fresh GitHub metadata confirms PR26 merged externally at `2443e769e38171e99e3fe2603c37401b72518aba`, using implementation head `a987dcc7ce139403371beba43f1715cdd064434f`. This agent issued no merge/auto-merge operation. The later publication-status follow-up is only on `codex/govtech-wifi-allocation-case-008`, affecting four lifecycle/evidence files; no application difference remains versus main. GitHub Pages deployment for the merge succeeded; other CI checks were still running at this inspection. No second PR or main write was performed.
-
-### Final GitHub and live checks — 2026-10-23
-
-All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/runs/39894167897), [Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/runs/39894167979) and [Pages deployment](https://github.com/LEO0331/portfolio/actions/runs/39894167931). The E2E browser installation and test step both completed successfully. Actual public EN/ZH Case008 routes returned HTTP200 and rendered the expected title and html language. This supersedes the earlier pending-CI observation. The implementation is on main; these later lifecycle records remain only on the feature branch. No second PR, direct main write or agent merge occurred.
+Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.

@@ -1,0 +1,15 @@
+  ok 136 [chromium] › tests\e2e\smoke.spec.ts:161:3 › Portfolio smoke › [COV-13] detail drawer supports Escape and backdrop close (1.5s)
+  ok 137 [chromium] › tests\e2e\smoke.spec.ts:179:3 › Portfolio smoke › [COV-14] deep-link query opens project drawer on initial load (1.0s)
+  ok 138 [chromium] › tests\e2e\smoke.spec.ts:184:3 › Portfolio smoke › [COV-15] mobile drawer opens and preserves filter/search state (477ms)
+  ok 139 [chromium] › tests\e2e\smoke.spec.ts:206:3 › Portfolio smoke › [COV-16] traditional chinese route renders localized project content (491ms)
+  ok 140 [chromium] › tests\e2e\smoke.spec.ts:215:3 › Portfolio smoke › [COV-17] canonical and social metadata use crawlable deployment paths (464ms)
+
+  140 passed (31.6s)
+E2E functional coverage: 17/17 (100.0%)
+Coverage threshold met (>= 85%).
+
+Alternate-port focused suite:
+  ok 11 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:95:1 › Bridge009 locale switch preserves route and back navigation (654ms)
+  ok 12 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:101:1 › Bridge009 five widths, real light/dark controls and keyboard-scrollable tables (2.6s)
+
+  12 passed (15.8s)

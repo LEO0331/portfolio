@@ -1,4 +1,4 @@
-export const GOVTECH_CASE_IDS = ["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation"] as const;
+export const GOVTECH_CASE_IDS = ["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation", "bridge-inspection"] as const;
 export type GovTechCaseId = (typeof GOVTECH_CASE_IDS)[number];
 export type PolicyMaturity = "public-data-explorer" | "decision-support-poc" | "planned-decision-support";
 

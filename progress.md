@@ -4,36 +4,36 @@
 
 **Last updated:** 2026-10-23
 
-**Active work:** Portfolio GovTech Showcase v1.7 — combined Wi-Fi Case008.
+**Active work:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
 
-**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. [PR26](https://github.com/LEO0331/portfolio/pull/26) was externally merged at `2443e769e38171e99e3fe2603c37401b72518aba` on2026-10-23T03:16:56Z. This agent did not merge it. Later lifecycle-only updates remain on this branch.
+**Status:** Implementation and local acceptance complete on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Preparing exactly one review PR to main;no automatic merge.
 
 ### Completed
 
-- Eight bilingual cases use the existing shared renderer. Case008 has 18 sections and 11 tables; the existing Wi-Fi project owns Case008. Bin001/005, Crash006/007, homepage pins and prior case data are preserved.
-- Upstream PR6 merged at `8e01a2bd8d762b51fae979d32fd477e378d1876b`. Original v1.0 and geographic identities remain separate. Independently checked 14 files, reproduced all 288 Mode B outputs exactly and checked 12 Mode A combinations.
-- Mode A has 3,316 candidates (A63/B57/C3,196), strict eligible 3,293. Mode B has verified0 / assumption-tested87 / unresolved4, 12 polygons and zero non-self gain; optimization remains unavailable. Mode C still lacks operational and demand evidence.
+- Nine complete bilingual cases. Case009 has20sections/13tables;the existing safety explorer owns009. All8earlier complete records match frozen pre-edit hashes. Bin001/005,Crash006/007,WiFi008,pins anddependencies preserved.
+- Source PR6 merge `deb812b3472c078b5879727953e85d2850f0a82c` verified;exact A/B,snapshot andhistoricalLF hashes checked. Original parsers/reconciliation rebuilt416candidates and612inventory objects;12scenarios/4published sensitivities/96expanded configurations independently executed.
+- Accepted216research associations,194geographic documentation records;tiers23/393/0;no official crosswalk,CRS/boundary certification,safety oroverdue claims. Actual sensitivity corrects contradictory source prose.
 
 ### Verification Evidence
 
-- Baseline: 22 unit and 118 Playwright tests. Final: 22 unit and 128 Playwright tests, 17/17 tracked flows (100%), TypeScript/build, 26 routes, harness19 features and diff checks passed.
-- Both bases: 16 bilingual case URLs each passed direct loading, refresh, language and canonical checks; unknown404, five widths, keyboard tables and light/dark controls passed. Zero page/console errors or upstream policy requests. Visual95/100; seven captures plus a design reference are saved.
-- Main313.89kB/100.97gzip versus baseline312.72/100.63. Deferred case catalogue357.23/114.68. No runtime GIS, policy payload, dependency or upstream change.
-- npm ci passed. Actual Git Bash init.sh passed harness/install, then exited1 at five existing high audit findings. Downstream checks passed separately. See docs/govtech-v1.7-verification.md.
+- Final22unit/140Playwright,17/17trackedflows(100%),TypeScript/build28routes,harness20features anddiff checks passed. Focused12tests also pass on alternateport4189.
+- Root/Pages18bilingualcaseURLs each:direct/refresh/lang/canonical,unknown404,fivewidths,realthemes andkeyboardtables passed. Zero page/console errors orpolicy requests;visual95/100. Seven captures plus Case007/008 references saved.
+- Main314.89kB/101.21gzip,deferredcase427.19/135.80. No snapshot/runtimeengine,newdependency orupstream write.
+- Baseline had one navigation timeout with unchanged isolated retry passing. Initial full acceptance had two concurrent-build navigation timeouts;isolated finalfull run passed. Actual GitBash init.sh passesharness/install andstops at5existing high audit findings;downstream checks pass separately.
 
 ### Blockers
 
-None for the feature PR. Existing dependency findings keep the complete init.sh gate red.
+None for feature publication. Existing dependency advisories keep the full init.sh gate red.
 
 ### Remaining Risks
 
-Facility datum, position, operation, access, physical identity and current boundary currency remain unverified. No nontrivial optimization, RF coverage, usage, population denominator or digital-inclusion result is established. Full Python ETL and upstream suite were not independently replayed. No public deployment claim.
+No official bridge crosswalk,physical count,certifiedCRS/polygons,surveyedalignment,completeeventdates,verifiedintervals/engineeringterminology orcurrentfieldstatus. No structural-safety ordefinitiveoverdue inference. Full upstream88-tests/build/publication/browser replay not performed.
 
 ### Next Session Should
 
-1. Case008 PR26 is already externally merged. Review the later lifecycle-only branch updates separately; do not open another PR without a new request.
-2. Address dependency findings separately.
-3. Preserve both source-phase identities, negative findings, prior cases and project ownership.
+1. Human review of the Case009 PR;merge manually only after acceptance.
+2. Address existing dependency findings separately.
+3. Preserve actual sensitivity,source-byte lineage,previous cases andproject ownership.
 
 ## Update Contract
 
@@ -290,3 +290,9 @@ Fresh GitHub metadata confirms PR26 merged externally at `2443e769e38171e99e3fe2
 ### Final GitHub and live checks — 2026-10-23
 
 All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/runs/39894167897), [Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/runs/39894167979) and [Pages deployment](https://github.com/LEO0331/portfolio/actions/runs/39894167931). The E2E browser installation and test step both completed successfully. Actual public EN/ZH Case008 routes returned HTTP200 and rendered the expected title and html language. This supersedes the earlier pending-CI observation. The implementation is on main; these later lifecycle records remain only on the feature branch. No second PR, direct main write or agent merge occurred.
+
+### 2026-10-23 — Case009 bridge evidence review
+
+Added a20-section bilingual case,13small tables,source-pinned evidence,existing safety-project relation,28routes,regressions andcomplete documentation. Original parsers/reconciliation match416A/612Bobjects;12defaultscenarios,4published sensitivities and96expanded configurations verified. Source prose contradictions documented. Final22unit/140Playwright/17flows,alternateport12tests,bothbases/fivewidths,visual95/100,harness/build/diff passed. Five existing high audit findings remain;no dependency changes. One reviewPR is being prepared;no agent merge.
+
+Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.

@@ -1,0 +1,70 @@
+{
+  "en": [
+    {
+      "id": "bin-policy",
+      "sha256": "0dc53d9f662ac24a7025c72e71314e22b0a543aa636582eaa957988e1161e417"
+    },
+    {
+      "id": "civic-1999",
+      "sha256": "a23adc72f681026335bd774baaf2e4fdb1d790424e7a52442088bf5f914416f7"
+    },
+    {
+      "id": "heavy-rain-preparedness",
+      "sha256": "b35edeb7ca88c7813ea659881f634c041c7ea2d3c46ea75d97d84908d55a18cb"
+    },
+    {
+      "id": "urban-renewal",
+      "sha256": "e4bf465628c560c9270ff9c3de11e33facd915b091b92d9cd131fda21efd9b45"
+    },
+    {
+      "id": "shade-equity",
+      "sha256": "137be82fcb3f1ebad195f750242260b579dbcc4e311e3ba3d5757123c1f11c01"
+    },
+    {
+      "id": "neihu-congestion",
+      "sha256": "95ce1f16430b731c0ad4db04c71491aefb4edb5a2f7ace81957188c2a29cdd19"
+    },
+    {
+      "id": "bus-service",
+      "sha256": "60dd3e2d97ba37cec56109b966c7ac378bba0f69d5f9333c75a51b80406ff0c4"
+    },
+    {
+      "id": "wifi-allocation",
+      "sha256": "44df1d20a77537e15a1947a2268ee7d4f2bcd673302fa6d3a6f7c00b7f910ae7"
+    }
+  ],
+  "zh": [
+    {
+      "id": "bin-policy",
+      "sha256": "d68f5e813cf458403e75798a0e0536ccdb23d65792d00819218880c06e425a58"
+    },
+    {
+      "id": "civic-1999",
+      "sha256": "d3f0ae24b78cd4f209510a252af1cb51931cfb507e0a79376e943abb6c6b0a0b"
+    },
+    {
+      "id": "heavy-rain-preparedness",
+      "sha256": "d36a44373a217620ded9752a72367e41e888716b7a36e1a7df0e71c250873a67"
+    },
+    {
+      "id": "urban-renewal",
+      "sha256": "759c3977db10ebf7ccfa6e8e9b8d89ff6a797128de6d8f69f9d2f765c25f27d1"
+    },
+    {
+      "id": "shade-equity",
+      "sha256": "aa9ebddb1b49354933a6f7b5e4ecec5c44b0f287f34c9c95a052de48e38baa4d"
+    },
+    {
+      "id": "neihu-congestion",
+      "sha256": "70b2b611a6b26c763561ab97c326cdeda481679462bb1822f5adaaf29deb1ed8"
+    },
+    {
+      "id": "bus-service",
+      "sha256": "53fd23ae88be75247221b6dee409195e126e92809b5fa25c3ecb88a032819e28"
+    },
+    {
+      "id": "wifi-allocation",
+      "sha256": "fa06c3b1b0cf89907b73b5eb15f24d45de759e26ed30e22acad95e32737770b2"
+    }
+  ]
+}

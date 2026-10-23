@@ -802,13 +802,14 @@ export const projects: Project[] = [
   },
   {
     id: "taipei-safety-map",
+    govtechCaseIds: ["bridge-inspection"],
     slug: "taipei-safety-map",
     name: "Taipei Public Safety Map",
     tagline: "Multi-dataset public safety map and resource dashboard for Taipei",
     shortDescription:
       "A bilingual map and dashboard for exploring Taipei emergency resources, infrastructure, and carefully scoped historical safety records.",
     fullDescription:
-      "Taipei Public Safety Map organizes public emergency, medical, fire, traffic, environmental, and historical incident datasets without producing a misleading combined safety score. It showcases large-scale data ingestion, geospatial layers, privacy-aware presentation, and responsible data communication.",
+      "Taipei Public Safety Map retains its bilingual emergency/resource, infrastructure and historical-record explorer and independent bridge inspection directory. Policy #9 adds official-source reconciliation, 216 within-edition research associations, 194 geographically eligible inspection documentation records, evidence tiers, capacity scenarios, static provenance and auditable JSON/CSV exports. It does not certify structural safety, overdue status or maintenance schedules.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Vitest"],
