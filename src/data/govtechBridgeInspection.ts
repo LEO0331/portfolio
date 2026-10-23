@@ -102,7 +102,9 @@ export const bridgeInspectionCase: GovTechCase = {
       "title": "Geographic Evidence Screening and Admission",
       "paragraphs": [
         "B exposes Obj_Longitude/Obj_Latitude separately from Longitude_start/Latitude_start and Longitude_end/Latitude_end. Finite scalar numeric pairs are screened against Taiwan119–123°E/21–26°N and the object against broad Taipei121.4–121.7°E/24.9–25.3°N; CountyCode63000 and recognized AreaCode labels are required. Reversed axes, empty strings, arrays and booleans cannot become coordinates.",
-        "Available object/endpoints are checked independently for gross contradictions: object-to-endpoint over12km or endpoint separation over15km excludes the record. Missing endpoints remain limitations without automatically rejecting a coherent object point. All612 B coordinate sets are plausible in this edition;32 non-bridge categories (28culverts/4other) leave580 inventory reference points. Accepted216 minus22 category/geographic exclusions yields194 mapped documentation records;222 of416 A rows lack admitted inspection geography."
+        "Available object/endpoints are checked independently for gross contradictions: object-to-endpoint over12km or endpoint separation over15km excludes the record. Missing endpoints remain limitations without automatically rejecting a coherent object point. All612 B coordinate sets are plausible in this edition;32 non-bridge categories (28culverts/4other) leave580 inventory reference points. Accepted216 minus22 category/geographic exclusions yields194 mapped documentation records;222 of416 A rows lack admitted inspection geography.",
+        "Supplementary Portfolio verification on2026-10-23 retains the official Department of Civil Affairs twelve-district boundary ZIP (20220915 edition), its exact bytes and actual TWD97 / TM2 121°E PRJ definition (EPSG:3826). Under the explicit hypothesis that bridge longitude/latitude is EPSG:4326, an offline polygon check evaluates object, start and end separately; holes, disconnected parts, edges and multiple hits remain explicit.",
+        "Among the original194 ModeB documentation records,192 object points are inside the retained city polygons and2 outside;180 interior points agree with the published inventory district and12 fall in a different district. Start/end inside counts are192/187;24 object points are within a20m boundary review band. These are supplementary flags, not automatic source corrections or new exclusions. Original boundaryValidated:false and the194-record cohort remain unchanged. The bridge catalogue does not declare a datum; polygon checks do not certify it, surveyed alignment, a current boundary or administrative responsibility."
       ]
     },
     {
@@ -177,9 +179,9 @@ export const bridgeInspectionCase: GovTechCase = {
       "id": "verification",
       "title": "Verification, Performance and Reproducibility",
       "paragraphs": [
-        "Upstream records7test files/88passing tests, TypeScript production build, no added dependencies and two deterministic rebuilds. Coverage includes schema/hash failures, refresh/atomic publication failure, identity collisions, unaccepted joins without coordinates, year-only semantics, geographic screening, tiers, capacity/balancing, sensitivity, incompatible comparisons and CSV formula safety. The existing approximately891kB main-bundle warning remains.",
+        "Portfolio subsequently executed the complete unmodified pinned upstream suite:7test files/88tests passed, TypeScript production build passed, and the original publication verifier rebuilt twice with byte-identical snapshot and current pointer. Accepted A/B original bytes were rechecked. These were local immutable-snapshot/atomic-pointer publications, without a remote release or changed policy edition. Coverage includes source/atomic failure, identity collisions, year semantics, geographic gates, scenarios and CSV safety; the existing approximately891kB upstream bundle warning remains.",
         "Recorded snapshot is1912829bytes/142453gzip; lazy policy dashboard approximately34kB minified/11.9kB gzip. A100-iteration local Node balanced benchmark is approximately0.202ms mean; all-selected JSON245553bytes andCSV107549bytes. These are upstream measurements, not independently rerun timing or public-host latency guarantees. Initial local preview had zero policy requests; first entry had four, and the historical directory/filter state was preserved.",
-        "Portfolio independently hashes pinned raw/derived artifacts and reruns original pure functions against published results, separately from upstream recorded tests, rebuilds and browser QA. Source screenshots were inspected desktop/mobile research captures; they show bilingual mode controls and evidence review, not engineering acceptance. Portfolio’s own routes, regressions, responsive/theme behavior and bundle changes are measured separately."
+        "The independent source replay retains exact commands, logs, rebuilt results and a portable verifier. Its generated benchmark report is retained separately before restoring the upstream checkout clean; policy inputs and source code are unchanged. Original desktop/mobile browser and network observations remain attributed upstream evidence. Portfolio separately verifies dependency audits, routes, responsive themes and supplementary official-polygon accounting; it does not claim a fresh upstream browser or remote deployment replay."
       ],
       "content": "evidence",
       "links": [
@@ -1169,6 +1171,162 @@ export const bridgeInspectionCase: GovTechCase = {
           }
         }
       ]
+    },
+    {
+      "caption": "Supplementary official-polygon check · conditional coordinate hypothesis",
+      "columns": [
+        {
+          "key": "population",
+          "label": "Population"
+        },
+        {
+          "key": "point",
+          "label": "Point"
+        },
+        {
+          "key": "records",
+          "label": "Records"
+        },
+        {
+          "key": "inside",
+          "label": "Inside"
+        },
+        {
+          "key": "outside",
+          "label": "Outside"
+        },
+        {
+          "key": "agrees",
+          "label": "District agrees"
+        },
+        {
+          "key": "differs",
+          "label": "District differs"
+        },
+        {
+          "key": "near",
+          "label": "Within20m"
+        }
+      ],
+      "rows": [
+        {
+          "id": "allInventory-object",
+          "cells": {
+            "population": "All inventory",
+            "point": "Object",
+            "records": "612",
+            "inside": "607",
+            "outside": "5",
+            "agrees": "543",
+            "differs": "64",
+            "near": "60"
+          }
+        },
+        {
+          "id": "allInventory-start",
+          "cells": {
+            "population": "All inventory",
+            "point": "Start",
+            "records": "612",
+            "inside": "608",
+            "outside": "4",
+            "agrees": "554",
+            "differs": "54",
+            "near": "43"
+          }
+        },
+        {
+          "id": "allInventory-end",
+          "cells": {
+            "population": "All inventory",
+            "point": "End",
+            "records": "612",
+            "inside": "602",
+            "outside": "10",
+            "agrees": "542",
+            "differs": "60",
+            "near": "46"
+          }
+        },
+        {
+          "id": "admittedInventory-object",
+          "cells": {
+            "population": "Original admitted inventory",
+            "point": "Object",
+            "records": "580",
+            "inside": "576",
+            "outside": "4",
+            "agrees": "513",
+            "differs": "63",
+            "near": "56"
+          }
+        },
+        {
+          "id": "admittedInventory-start",
+          "cells": {
+            "population": "Original admitted inventory",
+            "point": "Start",
+            "records": "580",
+            "inside": "576",
+            "outside": "4",
+            "agrees": "522",
+            "differs": "54",
+            "near": "41"
+          }
+        },
+        {
+          "id": "admittedInventory-end",
+          "cells": {
+            "population": "Original admitted inventory",
+            "point": "End",
+            "records": "580",
+            "inside": "571",
+            "outside": "9",
+            "agrees": "512",
+            "differs": "59",
+            "near": "43"
+          }
+        },
+        {
+          "id": "linkedModeB-object",
+          "cells": {
+            "population": "Original linked ModeB",
+            "point": "Object",
+            "records": "194",
+            "inside": "192",
+            "outside": "2",
+            "agrees": "180",
+            "differs": "12",
+            "near": "24"
+          }
+        },
+        {
+          "id": "linkedModeB-start",
+          "cells": {
+            "population": "Original linked ModeB",
+            "point": "Start",
+            "records": "194",
+            "inside": "192",
+            "outside": "2",
+            "agrees": "182",
+            "differs": "10",
+            "near": "18"
+          }
+        },
+        {
+          "id": "linkedModeB-end",
+          "cells": {
+            "population": "Original linked ModeB",
+            "point": "End",
+            "records": "194",
+            "inside": "187",
+            "outside": "7",
+            "agrees": "178",
+            "differs": "9",
+            "near": "20"
+          }
+        }
+      ]
     }
   ],
   "evidence": [
@@ -1295,6 +1453,10 @@ export const bridgeInspectionCase: GovTechCase = {
     {
       "label": "Browser network evidence",
       "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
+    },
+    {
+      "label": "Official district boundary edition · Department of Civil Affairs",
+      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
     }
   ],
   "previewAssets": [

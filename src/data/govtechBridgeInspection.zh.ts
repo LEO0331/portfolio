@@ -92,7 +92,9 @@ export const bridgeInspectionCaseZh: GovTechCase = {
       "title": "地理證據篩查與准入",
       "paragraphs": [
         "B 分別發布 Obj_Longitude／Obj_Latitude、Longitude_start／Latitude_start、Longitude_end／Latitude_end。有限純量數值須在臺灣東經119–123／北緯21–26，物件點另限臺北粗範圍東經121.4–121.7／北緯24.9–25.3，且 CountyCode63000 與 AreaCode 須可辨識。軸向反置、空字串、陣列與布林不能轉成座標。",
-        "可用物件／端點各自檢查粗略矛盾：物件至端點超過12公里或兩端點超過15公里即排除。端點缺漏保留限制，不自動排除其他條件合理的物件點。本版612組座標均合理；排除32筆非橋梁類型（28箱涵／4其他）後為580清冊參考點。接受216減22筆類型／地理排除，得194筆可繪圖文件紀錄；416筆 A 中222筆沒有准入檢測地理。"
+        "可用物件／端點各自檢查粗略矛盾：物件至端點超過12公里或兩端點超過15公里即排除。端點缺漏保留限制，不自動排除其他條件合理的物件點。本版612組座標均合理；排除32筆非橋梁類型（28箱涵／4其他）後為580清冊參考點。接受216減22筆類型／地理排除，得194筆可繪圖文件紀錄；416筆 A 中222筆沒有准入檢測地理。",
+        "Portfolio 於2026-10-23補做獨立地理檢查：保存民政局官方12區界ZIP（20220915版本）的原始位元組與實際PRJ；區界為TWD97／TM2中央經線121°E（EPSG:3826）。明示假設橋梁經緯度為EPSG:4326，離線分別檢查物件點、起點及終點，保留孔洞、多部件、邊界及多重命中狀態。",
+        "原194筆模式B文件紀錄中，192個物件點落在保留版市界內、2個在外；內部點180個與來源行政區一致、12個落在不同區。起／終點在市界內分別192／187個；24個物件點距區界20m內。這些是補充查核旗標，不自動更正來源或新增排除；原boundaryValidated:false及194筆母體維持不變。橋梁目錄未宣告datum，條件式落區檢查不能認證橋梁座標基準、測量線形、現行區界或行政責任。"
       ]
     },
     {
@@ -167,9 +169,9 @@ export const bridgeInspectionCaseZh: GovTechCase = {
       "id": "verification",
       "title": "驗證、效能與可重現性",
       "paragraphs": [
-        "上游記錄7個測試檔／88項通過、TypeScript正式建置、未新增依賴及兩次確定性重建。涵蓋結構／雜湊失敗、刷新／原子發布失敗、身分碰撞、未接受連結不得帶座標、年度語意、地理篩查、分級、名額／均衡、敏感度、不相容比較及 CSV 公式防護。既有約891kB主包警告仍存在。",
+        "Portfolio 後續實際執行固定版本的完整上游原始測試：7檔／88項通過、TypeScript production build通過；原始發布驗證器重建兩次，Snapshot與current pointer位元組完全一致，A／B接受版原始位元組亦重新核對。這是本機不可變快照／原子指標發布，未遠端發布或更換政策版本。測試涵蓋來源與原子失敗、識別衝突、年度語意、地理閘門、情境與CSV安全；上游既有約891kB主bundle警告仍保留。",
         "記錄快照為1912829位元組／gzip142453；延遲政策儀表板約34kB壓縮前／gzip11.9kB。100次本機 Node 均衡情境平均約0.202ms，全選 JSON245553位元組、CSV107549。這些是上游量測，不是作品集重新量測或公網延遲保證。初始本機預覽零政策請求，首次進入四個，保留歷史目錄與篩選狀態。",
-        "作品集獨立核對固定原始／衍生檔雜湊，以原始純函式對照發布結果；與上游已記錄測試、重建及瀏覽器 QA 分開。已檢視來源桌面／行動研究截圖，顯示雙語模式控制及證據查核，不代表工程驗收。作品集另測本身路由、回歸、響應／主題與套件大小變化。"
+        "獨立重播保留實際命令、日誌、重建結果與可攜驗證器。原始程式產生的效能報告另行保存後，還原該報告使上游checkout保持乾淨，未修改政策輸入或原始程式。原桌機／手機瀏覽器及網路觀察仍屬上游紀錄；Portfolio另驗證依賴稽核、路由、響應主題與官方多邊形補充統計，未宣稱重跑上游瀏覽器或遠端部署。"
       ],
       "content": "evidence",
       "links": [
@@ -1159,6 +1161,162 @@ export const bridgeInspectionCaseZh: GovTechCase = {
           }
         }
       ]
+    },
+    {
+      "caption": "官方多邊形補充檢查 · 具明示座標假設",
+      "columns": [
+        {
+          "key": "population",
+          "label": "母體"
+        },
+        {
+          "key": "point",
+          "label": "點位"
+        },
+        {
+          "key": "records",
+          "label": "紀錄"
+        },
+        {
+          "key": "inside",
+          "label": "界內"
+        },
+        {
+          "key": "outside",
+          "label": "界外"
+        },
+        {
+          "key": "agrees",
+          "label": "來源區一致"
+        },
+        {
+          "key": "differs",
+          "label": "來源區不同"
+        },
+        {
+          "key": "near",
+          "label": "距區界20m內"
+        }
+      ],
+      "rows": [
+        {
+          "id": "allInventory-object",
+          "cells": {
+            "population": "全部名冊",
+            "point": "物件點",
+            "records": "612",
+            "inside": "607",
+            "outside": "5",
+            "agrees": "543",
+            "differs": "64",
+            "near": "60"
+          }
+        },
+        {
+          "id": "allInventory-start",
+          "cells": {
+            "population": "全部名冊",
+            "point": "起點",
+            "records": "612",
+            "inside": "608",
+            "outside": "4",
+            "agrees": "554",
+            "differs": "54",
+            "near": "43"
+          }
+        },
+        {
+          "id": "allInventory-end",
+          "cells": {
+            "population": "全部名冊",
+            "point": "終點",
+            "records": "612",
+            "inside": "602",
+            "outside": "10",
+            "agrees": "542",
+            "differs": "60",
+            "near": "46"
+          }
+        },
+        {
+          "id": "admittedInventory-object",
+          "cells": {
+            "population": "原地理准入名冊",
+            "point": "物件點",
+            "records": "580",
+            "inside": "576",
+            "outside": "4",
+            "agrees": "513",
+            "differs": "63",
+            "near": "56"
+          }
+        },
+        {
+          "id": "admittedInventory-start",
+          "cells": {
+            "population": "原地理准入名冊",
+            "point": "起點",
+            "records": "580",
+            "inside": "576",
+            "outside": "4",
+            "agrees": "522",
+            "differs": "54",
+            "near": "41"
+          }
+        },
+        {
+          "id": "admittedInventory-end",
+          "cells": {
+            "population": "原地理准入名冊",
+            "point": "終點",
+            "records": "580",
+            "inside": "571",
+            "outside": "9",
+            "agrees": "512",
+            "differs": "59",
+            "near": "43"
+          }
+        },
+        {
+          "id": "linkedModeB-object",
+          "cells": {
+            "population": "原關聯模式B",
+            "point": "物件點",
+            "records": "194",
+            "inside": "192",
+            "outside": "2",
+            "agrees": "180",
+            "differs": "12",
+            "near": "24"
+          }
+        },
+        {
+          "id": "linkedModeB-start",
+          "cells": {
+            "population": "原關聯模式B",
+            "point": "起點",
+            "records": "194",
+            "inside": "192",
+            "outside": "2",
+            "agrees": "182",
+            "differs": "10",
+            "near": "18"
+          }
+        },
+        {
+          "id": "linkedModeB-end",
+          "cells": {
+            "population": "原關聯模式B",
+            "point": "終點",
+            "records": "194",
+            "inside": "187",
+            "outside": "7",
+            "agrees": "178",
+            "differs": "9",
+            "near": "20"
+          }
+        }
+      ]
     }
   ],
   "evidence": [
@@ -1285,6 +1443,10 @@ export const bridgeInspectionCaseZh: GovTechCase = {
     {
       "label": "瀏覽器網路證據",
       "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
+    },
+    {
+      "label": "民政局官方區界版本",
+      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
     }
   ],
   "previewAssets": [
