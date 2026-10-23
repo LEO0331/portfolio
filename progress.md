@@ -2,11 +2,11 @@
 
 ## Current State
 
-**Last updated:** 2026-10-22
+**Last updated:** 2026-10-23
 
 **Active work:** Portfolio GovTech Showcase v1.7 — combined Wi-Fi Case008.
 
-**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. One reviewable PR is being prepared. No automatic merge.
+**Status:** Implementation and local verification complete on `codex/govtech-wifi-allocation-case-008`, based on `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. Draft [PR26](https://github.com/LEO0331/portfolio/pull/26) is open, unmerged and mergeable. No automatic merge.
 
 ### Completed
 
@@ -278,3 +278,7 @@ No accepted directional schedule assignment,actual executed-trip history,passeng
 ### 2026-10-22 — GovTech v1.7 combined Wi-Fi Case008
 
 Verified upstream PR6 merge before implementation. Added bilingual18-sectionCase008,source/geometry/scenarioevidence,projectrelationship,26staticroutes,source-pinnedlinks,Chinese specification,audit,verification,screenshots andportableNode replay. All288ModeBoutputs exactly reproduced;14filehashes and12ModeAruns checked. Final22unit/128Playwright/17flows,build,harness,bothbases/fivewidths anddiff passed. Fiveexistinghighauditfindings stopinit.sh;no dependencieschanged. One human-reviewPR,no automaticmerge.
+
+### 2026-10-23 — Case008 review PR publication
+
+Created and attached exactly one draft [PR26](https://github.com/LEO0331/portfolio/pull/26) against main. The initial usage-limit approval error cleared on resume; the GitHub connector then returned403 because its integration lacks PR-write permission. Existing local Git authentication created the requested PR through the GitHub API without saving or printing credentials. GitHub metadata confirms open/unmerged/mergeable; source/main were not modified. Feature ledger marked complete; remaining dependency and analytical limits remain documented.

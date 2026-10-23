@@ -1,10 +1,10 @@
 # Session Handoff
 
-**Last updated:** 2026-10-22
+**Last updated:** 2026-10-23
 
 **Current objective:** GovTech Showcase v1.7 — combined Wi-Fi Case008.
 
-**Current status:** Implementation and local verification complete; preparing one unmerged PR on `codex/govtech-wifi-allocation-case-008`, base `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. The isolated worktree is attached to this chat; original main remains unchanged.
+**Current status:** Complete and published as draft [PR26](https://github.com/LEO0331/portfolio/pull/26), verified open, unmerged and mergeable. Branch `codex/govtech-wifi-allocation-case-008`, base `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`. The isolated worktree is attached to this chat; original main remains unchanged.
 
 ## Completed and Verification
 
