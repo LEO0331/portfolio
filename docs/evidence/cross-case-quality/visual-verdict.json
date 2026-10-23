@@ -1,0 +1,12 @@
+{
+  "score": 94,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Completed cases now follow the landing hero; the existing panel, typography, button and navigation styling remains consistent with baseline-govtech-desktop.png.",
+    "The inspected 390px Traditional Chinese Bridge page adds a four-field overview and closed contents disclosure; its title, body copy and panels wrap within the viewport.",
+    "Final English Bin desktop and Chinese Wi-Fi mobile dark first screens show clear localized four-field summaries, followed by closed supplementary evidence context."
+  ],
+  "suggestions": [],
+  "reasoning": "The inspected desktop landing and mobile Bridge screenshots preserve the existing restrained portfolio style while clarifying the reading order. This is a limited visual-style verdict, supported by automated no-overflow and disclosure checks on all 18 case routes at 390px; it is not a claim of complete visual coverage or semantic validation. Final supplementary-context layout inspected on 2026-10-24 after the accepted 240-combination matrix; no page overflow or clipped summary was observed."
+}

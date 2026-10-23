@@ -1,0 +1,20 @@
+[
+  {
+    "locale": "en",
+    "width": 1440,
+    "theme": "light",
+    "scrollLeft": 0,
+    "scrollWidth": 896,
+    "clientWidth": 896,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "width": 390,
+    "theme": "dark",
+    "scrollLeft": 43,
+    "scrollWidth": 640,
+    "clientWidth": 358,
+    "overflow": false
+  }
+]
