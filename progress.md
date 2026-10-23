@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio POC evidence hardening on codex/portfolio-poc-evidence-hardening; base ce9e9e6 includes merged Case009 PR28 and PR29. No OMX.
 
-**Status:** Dependency remediation and source/geographic evidence implemented. Final clean-install gate passed; preparing one human-review PR. Earlier Case009 was merged externally; agent did not merge.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ### Completed
 
@@ -245,7 +245,7 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 
 **Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ### Completed
 
@@ -300,3 +300,5 @@ Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from
 ### 2026-10-23 — POC dependency and evidence hardening
 
 Authorized dependency fixes,full upstream test/publication replay andsupplementary official-geography evidence. See current state and docs/poc-hardening-verification.md. No OMX,official crosswalk orengineering condition expansion.
+
+POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.

@@ -490,7 +490,7 @@
       "id": "poc-evidence-hardening-2026-10",
       "name": "Remove vulnerable build dependencies and close reproducibility/geography gaps",
       "description": "Tailwind4 dependency remediation, full pinned upstream tests/two-publication replay and supplemental official polygons for Case009 review POC.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-bridge-inspection-v1-8-2026-10"
       ],
@@ -505,7 +505,8 @@
         "Pinned original upstream88tests/build/source checks and two exact publications passed; clean restored checkout",
         "Official district ZIP hash77bcc347;612/580/194 populations preserved; linked194object192inside/2outside/12interior district differences",
         "Final GitBash init.sh passed clean npm ci/full audit0/26unit/TypeScript/build28routes/143browsertests36.1s/17flows100%/diff",
-        "Root/Pages36direct-reloadURLs,both404bases,10locale-widthcombinations/themes/keyboard andno payload/page/consoleerrors passed;visual96/100"
+        "Root/Pages36direct-reloadURLs,both404bases,10locale-widthcombinations/themes/keyboard andno payload/page/consoleerrors passed;visual96/100",
+        "Exactly one human-review PR against main: https://github.com/LEO0331/portfolio/pull/30; no automatic merge; full local acceptance complete"
       ]
     }
   ]

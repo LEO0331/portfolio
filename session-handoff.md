@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio POC dependency remediation, pinned upstream replay and supplemental geographic evidence.
 
-**Current status:** Implemented on codex/portfolio-poc-evidence-hardening from ce9e9e6; final consolidated gate passed; preparing one main-target review PR. Case009 PR28/29 already externally merged. No OMX.
+**Current status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ## Completed and Verification
 
@@ -25,3 +25,5 @@ Consolidated verification and evidence complete. Open one human-review PR to mai
 ## Files Relevant to the Next Update
 
 package.json/package-lock.json,vite.config.ts,src/index.css,affected utility tokens;tools/bridge-geography.mjs andverifiers/tests;tests/e2e/poc-hardening.spec.ts;Case009EN/ZH;docs/evidence/poc-hardening;READMEs,hardening plan/report,featureledger/progress/handoff. No upstream code or earlier case records changed.
+
+POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.

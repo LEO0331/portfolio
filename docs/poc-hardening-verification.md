@@ -78,3 +78,7 @@ Final main314.91kB/101.22gzip versus314.89/101.21; CSS42.71/7.63 versus28.50/6.0
 Four before/after heading rectangles, body backgrounds,overflow/error metrics match exactly. Chinese mobile dark header capture is byte-identical (SHA retained in summary); new supplemental table uses its focusable local horizontal scroll region. Visual96/100, no remaining suggestions. The original Case00913tables and all8previous EN/ZHcase records pass frozen evidence tests.
 
 Remaining limits are scoped to the review POC: conditional bridge coordinate hypothesis/retained boundary edition; unmodified source2moderate advisories and old bundle warning; no official crosswalk or engineering-condition expansion requested. Independent review found no remaining blocker after removing the no-op datum comparison. Only one PR against main is intended; no automatic merge.
+
+## PR delivery
+
+Exactly one [human-review PR](https://github.com/LEO0331/portfolio/pull/30) targets main from codex/portfolio-poc-evidence-hardening. Six atomic implementation/evidence commits plus this delivery record. Full local acceptance is complete; GitHub CI verification pending. No automatic merge. GitHub integration creation returned403; native Git authentication created the authorized PR without exposing credentials.
