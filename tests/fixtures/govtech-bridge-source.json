@@ -1,0 +1,373 @@
+{
+  "upstreamMerge": "deb812b3472c078b5879727953e85d2850f0a82c",
+  "snapshot": {
+    "snapshotId": "bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a",
+    "sha256": "a580fb3356a84fc86fe4c4f4a811f115f490769ff15700bec5b69f88008b7782",
+    "bytes": 1912829,
+    "gzipBytes": 142453
+  },
+  "diagnostics": {
+    "sourceRowsA": 416,
+    "historicalGroupsA": 415,
+    "conservativeGroupsA": 415,
+    "inventoryRowsB": 612,
+    "distinctSourceIdsB": 612,
+    "distinctBridgeIdsB": 413,
+    "uniqueValidBridgeIdsB": 404,
+    "missingBridgeIdsB": 157,
+    "acceptedA": 216,
+    "acceptedB": 216,
+    "ambiguousA": 5,
+    "rejectedA": 18,
+    "unmatchedA": 177,
+    "unassociatedB": 396,
+    "noNameCounterpartB": 374,
+    "oneToMany": 2,
+    "manyToOne": 1,
+    "validInventoryGeography": 580,
+    "acceptedGeography": 194,
+    "tierA": 23,
+    "tierB": 393,
+    "tierC": 0
+  },
+  "historical": {
+    "path": "data/raw/bridge-inspection-maintenance/records.csv",
+    "gitSha256": "ee4afe5592522651403d2d6173f59620884857b1d5129b83498b4eab0e3701fc",
+    "gitBytes": 47557,
+    "acquiredAt": null,
+    "normalizedTextEqual": true,
+    "parsedOriginalFieldsEqual": true
+  },
+  "sources": [
+    {
+      "key": "A",
+      "datasetId": "27135efa-d43e-406d-a3e4-fcb07efb3982",
+      "resourceUpdatedAt": "2025-06-23T15:55:02+08:00",
+      "acquiredAt": "2026-10-23T04:03:31.388Z",
+      "rowCount": 416,
+      "bytes": 47974,
+      "sha256": "3b6d39373759036e725412474636ea328828297902990ca319452893e05121ee",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=27135efa-d43e-406d-a3e4-fcb07efb3982"
+    },
+    {
+      "key": "B",
+      "datasetId": "866a9982-0a63-421f-b120-9144fc6ce732",
+      "resourceUpdatedAt": "2025-12-16T09:41:34+08:00",
+      "acquiredAt": "2026-10-23T04:03:32.360Z",
+      "rowCount": 612,
+      "bytes": 561387,
+      "sha256": "f9626b5f21bc392fbb3199962749d14daf73aa7840057346b648999c8cb49910",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=866a9982-0a63-421f-b120-9144fc6ce732"
+    }
+  ],
+  "scenarios": [
+    {
+      "mode": "A",
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligible": 416,
+      "tiers": {
+        "A": 5
+      },
+      "groupCount": 2,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r101-1f0b10f02644",
+        "A-3b6d39373759036e-r117-5f0a6c57cfd7",
+        "A-3b6d39373759036e-r119-406aec856765",
+        "A-3b6d39373759036e-r120-cd1d69285dce",
+        "A-3b6d39373759036e-r198-2d1d73d2ce7b"
+      ],
+      "shared": 0,
+      "added": 5,
+      "removed": 5
+    },
+    {
+      "mode": "A",
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligible": 416,
+      "tiers": {
+        "A": 2,
+        "B": 3
+      },
+      "groupCount": 5,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r325-d91a5c850dff",
+        "A-3b6d39373759036e-r299-9cf20080e8e9",
+        "A-3b6d39373759036e-r317-ecd7954835c2",
+        "A-3b6d39373759036e-r259-4e0c7a5db45a",
+        "A-3b6d39373759036e-r287-3bc609c15725"
+      ],
+      "shared": 0,
+      "added": 5,
+      "removed": 5
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligible": 416,
+      "tiers": {
+        "A": 10
+      },
+      "groupCount": 5,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r101-1f0b10f02644",
+        "A-3b6d39373759036e-r117-5f0a6c57cfd7",
+        "A-3b6d39373759036e-r119-406aec856765",
+        "A-3b6d39373759036e-r120-cd1d69285dce",
+        "A-3b6d39373759036e-r198-2d1d73d2ce7b",
+        "A-3b6d39373759036e-r200-46988b158211",
+        "A-3b6d39373759036e-r210-c3fce4eb654a",
+        "A-3b6d39373759036e-r23-55ef191cfb27",
+        "A-3b6d39373759036e-r26-eaf931e75850",
+        "A-3b6d39373759036e-r27-f91ef63883db"
+      ],
+      "shared": 1,
+      "added": 9,
+      "removed": 9
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligible": 416,
+      "tiers": {
+        "A": 4,
+        "B": 6
+      },
+      "groupCount": 10,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r325-d91a5c850dff",
+        "A-3b6d39373759036e-r299-9cf20080e8e9",
+        "A-3b6d39373759036e-r317-ecd7954835c2",
+        "A-3b6d39373759036e-r259-4e0c7a5db45a",
+        "A-3b6d39373759036e-r287-3bc609c15725",
+        "A-3b6d39373759036e-r400-f8102a15585a",
+        "A-3b6d39373759036e-r380-f3a3b6d469f0",
+        "A-3b6d39373759036e-r23-55ef191cfb27",
+        "A-3b6d39373759036e-r21-de334c487be1",
+        "A-3b6d39373759036e-r109-35a8af3f3499"
+      ],
+      "shared": 1,
+      "added": 9,
+      "removed": 9
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligible": 416,
+      "tiers": {
+        "A": 23,
+        "B": 393
+      },
+      "groupCount": 28,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r101-1f0b10f02644",
+        "A-3b6d39373759036e-r117-5f0a6c57cfd7",
+        "A-3b6d39373759036e-r119-406aec856765",
+        "A-3b6d39373759036e-r120-cd1d69285dce",
+        "A-3b6d39373759036e-r198-2d1d73d2ce7b",
+        "A-3b6d39373759036e-r200-46988b158211",
+        "A-3b6d39373759036e-r210-c3fce4eb654a",
+        "A-3b6d39373759036e-r23-55ef191cfb27",
+        "A-3b6d39373759036e-r26-eaf931e75850",
+        "A-3b6d39373759036e-r27-f91ef63883db"
+      ],
+      "shared": 416,
+      "added": 0,
+      "removed": 0,
+      "selectedCount": 416,
+      "orderedSha256": "a92cb8315966685aadf32e51012154e584172e0c1ee606ea7dc96863522d5c26",
+      "setSha256": "35b1520f9aa14a5f1abed0f5e36a2067a46df01270385ec9e4d7e09982e4dfd2"
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligible": 416,
+      "tiers": {
+        "A": 23,
+        "B": 393
+      },
+      "groupCount": 28,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r325-d91a5c850dff",
+        "A-3b6d39373759036e-r299-9cf20080e8e9",
+        "A-3b6d39373759036e-r317-ecd7954835c2",
+        "A-3b6d39373759036e-r259-4e0c7a5db45a",
+        "A-3b6d39373759036e-r287-3bc609c15725",
+        "A-3b6d39373759036e-r400-f8102a15585a",
+        "A-3b6d39373759036e-r380-f3a3b6d469f0",
+        "A-3b6d39373759036e-r23-55ef191cfb27",
+        "A-3b6d39373759036e-r21-de334c487be1",
+        "A-3b6d39373759036e-r109-35a8af3f3499"
+      ],
+      "shared": 416,
+      "added": 0,
+      "removed": 0,
+      "selectedCount": 416,
+      "orderedSha256": "d733155cba80f07cf16b9389c57eae92c62653334c9f9accf1c058ee07f3fa1d",
+      "setSha256": "35b1520f9aa14a5f1abed0f5e36a2067a46df01270385ec9e4d7e09982e4dfd2"
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligible": 194,
+      "tiers": {
+        "B": 5
+      },
+      "groupCount": 1,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r102-f9ec0a66cfb0",
+        "A-3b6d39373759036e-r103-1bd753b6b771",
+        "A-3b6d39373759036e-r104-5feabf74e299",
+        "A-3b6d39373759036e-r105-35db99ca1e56",
+        "A-3b6d39373759036e-r106-21ec0258ded7"
+      ],
+      "shared": 0,
+      "added": 5,
+      "removed": 5
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligible": 194,
+      "tiers": {
+        "B": 5
+      },
+      "groupCount": 5,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r315-ec956f1e85c4",
+        "A-3b6d39373759036e-r311-52c915771af8",
+        "A-3b6d39373759036e-r413-30ad4fc6b42c",
+        "A-3b6d39373759036e-r24-f1f96df831e2",
+        "A-3b6d39373759036e-r109-35a8af3f3499"
+      ],
+      "shared": 0,
+      "added": 5,
+      "removed": 5
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligible": 194,
+      "tiers": {
+        "B": 10
+      },
+      "groupCount": 2,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r102-f9ec0a66cfb0",
+        "A-3b6d39373759036e-r103-1bd753b6b771",
+        "A-3b6d39373759036e-r104-5feabf74e299",
+        "A-3b6d39373759036e-r105-35db99ca1e56",
+        "A-3b6d39373759036e-r106-21ec0258ded7",
+        "A-3b6d39373759036e-r108-894ee3af9faf",
+        "A-3b6d39373759036e-r109-35a8af3f3499",
+        "A-3b6d39373759036e-r110-bb7d39f41962",
+        "A-3b6d39373759036e-r112-4ce36ac40c63",
+        "A-3b6d39373759036e-r113-7438d38410d5"
+      ],
+      "shared": 2,
+      "added": 8,
+      "removed": 8
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligible": 194,
+      "tiers": {
+        "B": 10
+      },
+      "groupCount": 10,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r315-ec956f1e85c4",
+        "A-3b6d39373759036e-r311-52c915771af8",
+        "A-3b6d39373759036e-r413-30ad4fc6b42c",
+        "A-3b6d39373759036e-r24-f1f96df831e2",
+        "A-3b6d39373759036e-r109-35a8af3f3499",
+        "A-3b6d39373759036e-r30-9680e91bd471",
+        "A-3b6d39373759036e-r102-f9ec0a66cfb0",
+        "A-3b6d39373759036e-r301-04ee06fd8f75",
+        "A-3b6d39373759036e-r377-ea9b15a670d8",
+        "A-3b6d39373759036e-r384-f9d4a75d1598"
+      ],
+      "shared": 2,
+      "added": 8,
+      "removed": 8
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligible": 194,
+      "tiers": {
+        "B": 194
+      },
+      "groupCount": 12,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r102-f9ec0a66cfb0",
+        "A-3b6d39373759036e-r103-1bd753b6b771",
+        "A-3b6d39373759036e-r104-5feabf74e299",
+        "A-3b6d39373759036e-r105-35db99ca1e56",
+        "A-3b6d39373759036e-r106-21ec0258ded7",
+        "A-3b6d39373759036e-r108-894ee3af9faf",
+        "A-3b6d39373759036e-r109-35a8af3f3499",
+        "A-3b6d39373759036e-r110-bb7d39f41962",
+        "A-3b6d39373759036e-r112-4ce36ac40c63",
+        "A-3b6d39373759036e-r113-7438d38410d5"
+      ],
+      "shared": 194,
+      "added": 0,
+      "removed": 0,
+      "selectedCount": 194,
+      "orderedSha256": "3aa1fbab28b0e63bc09b8f9db37d88380d36de76cd47c4bcf47d10cf803d8f5b",
+      "setSha256": "3aa1fbab28b0e63bc09b8f9db37d88380d36de76cd47c4bcf47d10cf803d8f5b"
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligible": 194,
+      "tiers": {
+        "B": 194
+      },
+      "groupCount": 12,
+      "authorityCount": 1,
+      "selectedIds": [
+        "A-3b6d39373759036e-r315-ec956f1e85c4",
+        "A-3b6d39373759036e-r311-52c915771af8",
+        "A-3b6d39373759036e-r413-30ad4fc6b42c",
+        "A-3b6d39373759036e-r24-f1f96df831e2",
+        "A-3b6d39373759036e-r109-35a8af3f3499",
+        "A-3b6d39373759036e-r30-9680e91bd471",
+        "A-3b6d39373759036e-r102-f9ec0a66cfb0",
+        "A-3b6d39373759036e-r301-04ee06fd8f75",
+        "A-3b6d39373759036e-r377-ea9b15a670d8",
+        "A-3b6d39373759036e-r384-f9d4a75d1598"
+      ],
+      "shared": 194,
+      "added": 0,
+      "removed": 0,
+      "selectedCount": 194,
+      "orderedSha256": "9a4c8b22a8ab15cd3df565960200238036f12674fccb447369521080d23516fd",
+      "setSha256": "3aa1fbab28b0e63bc09b8f9db37d88380d36de76cd47c4bcf47d10cf803d8f5b"
+    }
+  ]
+}
