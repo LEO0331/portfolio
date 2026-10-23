@@ -81,4 +81,8 @@ Remaining limits are scoped to the review POC: conditional bridge coordinate hyp
 
 ## PR delivery
 
-Exactly one [human-review PR](https://github.com/LEO0331/portfolio/pull/30) targets main from codex/portfolio-poc-evidence-hardening. Six atomic implementation/evidence commits plus this delivery record. Full local acceptance is complete; GitHub CI verification pending. No automatic merge. GitHub integration creation returned403; native Git authentication created the authorized PR without exposing credentials.
+Exactly one [human-review PR](https://github.com/LEO0331/portfolio/pull/30) targets main from codex/portfolio-poc-evidence-hardening. Six atomic implementation/evidence commits plus this delivery record. Full local acceptance is complete; GitHub E2E and Lighthouse passed on implementation head78a0518. No automatic merge. GitHub integration creation returned403; native Git authentication created the authorized PR without exposing credentials.
+
+GitHub verification2026-10-23: implementation head78a0518 passed E2E39932482791 and Lighthouse39932482820. This final update records those checks and changes documentation only. PR30 remains for human review; agent did not merge.
+
+[Machine CI evidence](./evidence/poc-hardening/github-ci.json), [E2E](https://github.com/LEO0331/portfolio/actions/runs/39932482791), [Lighthouse](https://github.com/LEO0331/portfolio/actions/runs/39932482820).

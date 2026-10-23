@@ -6,7 +6,7 @@
 
 **Active work:** Portfolio POC evidence hardening on codex/portfolio-poc-evidence-hardening; base ce9e9e6 includes merged Case009 PR28 and PR29. No OMX.
 
-**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub E2E and Lighthouse passed on implementation head78a0518; no automatic merge. No OMX.
 
 ### Completed
 
@@ -32,7 +32,7 @@ Bridge datum unconfirmed; polygon checks are conditional on coordinate hypothesi
 
 ### Next Session Should
 
-1. Open one PR against main for human review; no automatic merge.
+1. Review PR30 and merge manually after acceptance; no automatic merge.
 2. Retain original snapshot/cohort and report geography flags separately.
 
 ## Update Contract
@@ -245,7 +245,7 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 
 **Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub E2E and Lighthouse passed on implementation head78a0518; no automatic merge. No OMX.
 
 ### Completed
 
@@ -302,3 +302,5 @@ Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from
 Authorized dependency fixes,full upstream test/publication replay andsupplementary official-geography evidence. See current state and docs/poc-hardening-verification.md. No OMX,official crosswalk orengineering condition expansion.
 
 POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.
+
+GitHub verification2026-10-23: implementation head78a0518 passed E2E39932482791 and Lighthouse39932482820. This final update records those checks and changes documentation only. PR30 remains for human review; agent did not merge.
