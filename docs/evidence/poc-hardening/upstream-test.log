@@ -1,0 +1,12 @@
+
+> taipei-safety-map@0.1.0 test
+> vitest run
+
+
+ RUN  v4.1.11 C:/Users/LeoLi/AppData/Local/Temp/portfolio-bridge-poc-20261023
+
+
+ Test Files  7 passed (7)
+      Tests  88 passed (88)
+   Start at  17:06:49
+   Duration  380ms (transform 414ms, setup 0ms, import 671ms, tests 131ms, environment 0ms)

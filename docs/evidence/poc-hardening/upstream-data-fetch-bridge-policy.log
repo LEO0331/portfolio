@@ -1,0 +1,5 @@
+
+> taipei-safety-map@0.1.0 data:fetch:bridge-policy
+> tsx scripts/fetchBridgePolicySources.ts
+
+{"status":"verified-retained","sources":[{"key":"A","sha256":"3b6d39373759036e725412474636ea328828297902990ca319452893e05121ee"},{"key":"B","sha256":"f9626b5f21bc392fbb3199962749d14daf73aa7840057346b648999c8cb49910"}],"A":416,"B":612}
