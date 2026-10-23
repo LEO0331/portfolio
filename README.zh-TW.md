@@ -207,3 +207,7 @@ npm run verify:bridge-geography -- <standalone-checkout>
 ```
 
 第一個命令執行原始完整建置／測試與兩次本機不可變發布；第二個使用保留的官方區界 ZIP 及上游 lockfile 的 proj4 做條件式離線落區檢查，不變更遠端來源或原始政策母體。詳見[範圍、命令、證據及限制](./docs/poc-hardening-verification.md)。
+
+## 市政案例 v1.8 展示品質整理
+
+GovTech 列表與專案連結使用輕量雙語摘要；詳細頁保留完整研究紀錄。原生折疊區提供精確來源識別，實際結果與限制維持可見。以 `node tools/govtech-link-audit.mjs` 執行有界來源路徑／HTTP 檢查（需 Node.js 24 以上）；正式建置後可用 `node tools/verify-govtech-quality.mjs` 檢查螢幕寬度、主題與路由。請見 [v1.8 跨案例檢視](docs/govtech-v1.8-cross-case-quality-review.md) 與 [驗證記錄](docs/govtech-v1.8-hardening-verification.md)。

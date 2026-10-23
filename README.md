@@ -195,3 +195,7 @@ npm run verify:bridge-geography -- <standalone-checkout>
 ```
 
 The first command runs the original full build/tests and two immutable local publications; the second uses the retained official district ZIP and the upstream lockfile's proj4 for conditional offline polygon checks. Neither changes the remote source or original policy population. [Scope, commands, evidence and limitations](./docs/poc-hardening-verification.md).
+
+## GovTech v1.8 presentation hardening
+
+GovTech public presentation uses a lightweight bilingual summary catalogue for landing/project links and complete records on detail routes. Native disclosures retain exact source IDs; results and limitations remain visible. Run `node tools/govtech-link-audit.mjs` for bounded path/HTTP checks (Node.js 24+) and `node tools/verify-govtech-quality.mjs` after a production build for the viewport/theme/route audit. See [v1.8 quality review](docs/govtech-v1.8-cross-case-quality-review.md) and [verification](docs/govtech-v1.8-hardening-verification.md).
