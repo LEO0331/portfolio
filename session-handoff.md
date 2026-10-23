@@ -32,3 +32,7 @@ Public Safety Dashboard demo timed out8s in final bounded audit. Preserve source
 ## Recommended Next Step
 
 User reviews the draft, accepts hosted checks, marks ready and merges manually. No further policy expansion or production certification requested. Keep all source/number/ID invariants and evidence gates.
+
+## Latest presentation follow-up
+
+Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed.

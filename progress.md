@@ -312,3 +312,8 @@ PR30 was externally merged by LEO0331 at2026-10-23T09:31:44Z,merge 778e183105cd8
 ### 2026-10-24 — GovTech v1.8 customer/HR and bilingual hardening
 
 Reviewed all9cases/18localizedrecords. Public PR references removed, language/display labels simplified and provenance made optional without changing numerical results. Retained baseline18records plus180exact presentation edits; older fixtures unchanged. Full29unit/175browser/17flows,0audit,root/Pages and240viewport checks passed. Three review documents, reproducible audits and before/after resources saved. Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.
+
+
+### 2026-10-24 — Remove unrelated landing architecture reference
+
+Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed. Updated the same draft PR #33; no hosted-check wait or merge.

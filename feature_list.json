@@ -530,7 +530,8 @@
         "29unit/175Chromium tests/17trackedflows100%; full GitBash init.sh and zero npm audit passed",
         "193pinned paths/22internal routes/38local previews exist;108external responses;one final demo timeout remains unverified",
         "240local page/locale/theme/width checks plus21root/21Pages route outcomes; source/number preservation and language checks passed",
-        "Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge."
+        "Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.",
+        "Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed."
       ]
     }
   ]

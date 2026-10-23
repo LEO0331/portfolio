@@ -28,8 +28,7 @@ export const civicSourceReadmes: Record<string, string> = {
   "taipei-crash-map": "taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/README.md",
   "taipei-free-wifi-map": "taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/README.md",
   "taipei-civic-groups-map": "taipei-civic-groups-map/blob/39511fa0580b82083597facc8e6e330889c959b2/README.md",
-  publicsafetydashboard: "publicsafetydashboard/blob/f96ae2933f9ea6e96f5628cb68ba45d3fcf5547c/README.md",
-  robotfriends: "Gridline/blob/948525c23cb834d0a8be302d9ff3a9b4f7d01c64/README.md"
+  publicsafetydashboard: "publicsafetydashboard/blob/f96ae2933f9ea6e96f5628cb68ba45d3fcf5547c/README.md"
 };
 
 export const govtechCopy = {
@@ -48,8 +47,6 @@ export const govtechCopy = {
     principles: ["Open Data ETL with schema validation", "GIS integration with explicit coordinate systems", "Data quality checks and source provenance", "Versioned snapshots and reproducible inputs", "Explainable algorithms and candidate reasons", "Scenario modelling and sensitivity analysis", "Privacy, information security and scoped public records", "Testing and reproducibility before publication"],
     limitations: "Limitations and Responsible Use",
     limitationsText: "Independent personal proof of concepts and engineering demonstrations; no official government endorsement, partnership or placement approval. Public records may be incomplete or historical. Coverage is not measured demand or policy effectiveness. Field verification remains essential. Government operations workflows are outside this showcase.",
-    referenceTitle: "Architecture Reference",
-    referenceText: "Gridline informs data-versioning and bounded scenario patterns. It is a financial/infrastructure research project, not a government system.",
     explorerLabel: "Public-data explorer", plannedLabel: "Planned decision support", readCase: "Read case study", project: "Project details", evidence: "Inspected source", demo: "Live demo", back: "All GovTech cases", contents: "Case study sections", category: "Category", weight: "Default weight", availability: "Data availability", equal: "Equal category priorities", policy: "Policy-priority defaults", metric: "Reference metric", future: "Future Extensions", sourceVersion: "Source commit", snapshotVersion: "Snapshot version", review: "Field-review evidence, not installation approval"
   },
   zh: {
@@ -67,8 +64,6 @@ export const govtechCopy = {
     principles: ["開放資料 ETL 與結構驗證", "GIS 整合與明確座標系統", "資料品質檢查與來源追溯", "版本快照與可重現輸入", "可解釋演算法與候選理由", "情境建模與敏感度分析", "隱私、資訊安全與公開紀錄範圍管理", "發布前測試與可重現驗證"],
     limitations: "限制與負責任使用",
     limitationsText: "此為獨立個人概念驗證 與工程展示，並非政府官方背書、合作或設址核准。公開紀錄可能不完整或屬歷史資料；覆蓋不等於實際需求或政策成效，仍須現勘。本案例不提供政府正式營運工作流程。",
-    referenceTitle: "架構參考",
-    referenceText: "Gridline 提供資料版本與有限情境假設的架構靈感；其定位為金融／基礎設施研究專案，並非政府系統。",
     explorerLabel: "公共資料探索工具", plannedLabel: "規劃中的決策支援", readCase: "閱讀案例", project: "專案詳情", evidence: "已查閱來源", demo: "線上展示", back: "所有市政案例", contents: "案例章節", category: "類別", weight: "預設權重", availability: "資料可用性", equal: "等類別優先權重", policy: "預設政策優先權重", metric: "參考指標", future: "後續擴充", sourceVersion: "來源版本", snapshotVersion: "快照版本", review: "現勘討論證據，非設置核准"
   }
 };

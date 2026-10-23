@@ -45,3 +45,7 @@ The default reading flow uses plain descriptions of reference locations, map fea
 Shared Chinese navigation, theme controls and accessible labels use Chinese; the landing eyebrow is localized. Both home descriptions now say nine cases instead of the stale seven. Two Bin SEO descriptions spell out the concept in the selected language. Routes, title identities and all six domain assignments stay unchanged.
 
 Latest main024ca3e (the user's merged lifecycle PR32) was integrated without changing application data/code from baseline299cfe8. Its observed deployment/history evidence is retained. The before/after comparison therefore uses the same pre-hardening application.
+
+## Follow-up: remove unrelated architecture reference
+
+Plan: remove the Gridline architecture-reference section from both GovTech landing locales and delete its unused copy/source-map entry. Keep the independent Gridline project listing intact. Verify the existing bilingual landing checks and production build, then update the same draft PR. Earlier link/performance/browser inventories remain dated snapshots from before this small deletion.

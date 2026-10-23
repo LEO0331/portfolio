@@ -55,3 +55,7 @@ Review the draft, inspect evidence and source-preservation tests, then run/accep
 ## Changed files
 
 Core:18case data files; `govtechCaseSummaries.ts`, `govtechCopy.ts`, `projects.ts`, `projects.zh.ts`; GovTech pages/components, project drawer, case helpers; Navbar/Home/About copy and Bin route descriptions. Tests: public presentation, exact migration, summary/locale parity and adapted case/theme assertions; new BEFORE/allowlist fixtures, no historical fixture edits. Tools: public-content rules, bounded link audit and browser quality runner. Documentation: this report, cross-case quality review, public presentation audit, plan, READMEs and lifecycle files. Detailed paths are reviewable in the branch diff; machine evidence/screenshots are under the directory above.
+
+## Follow-up verification: architecture reference removal
+
+Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed. Earlier inventory counts, screenshots and performance measurements describe the pre-deletion accepted snapshot; no refreshed performance claim is made for this small removal.
