@@ -460,6 +460,27 @@
         "Exactly one PR26 created and attached: https://github.com/LEO0331/portfolio/pull/26; externally merged at 2443e769e38171e99e3fe2603c37401b72518aba using implementation a987dcc. Agent did not merge. Later lifecycle updates remain only on the feature branch.",
         "Merged commit2443e769:GitHub E2E39894167897,Lighthouse39894167979 andPages39894167931 allsuccess;actual public EN/ZH Case008 HTTP200,title/lang verified. Later lifecycle-only records remain on feature branch."
       ]
+    },
+    {
+      "id": "govtech-bridge-inspection-v1-8-2026-10",
+      "name": "Present source-backed bridge documentation and geographic investigation as Case009",
+      "description": "Conservative A/B reconciliation, original-byte lineage, real capacity/sensitivity and structural-safety gates.",
+      "status": "in-progress",
+      "dependencies": [
+        "govtech-wifi-allocation-v1-7-2026-10"
+      ],
+      "doneCriteria": [
+        "Nine complete bilingual cases and preserved earlier findings",
+        "Pinned source and snapshot identities independently checked",
+        "Actual identity/geographic/tier/scenario/sensitivity results and corrected prose discrepancies",
+        "Routes,SEO,full/browser/visual verification and lifecycle documentation",
+        "Exactly one reviewable PR to main without automatic merge"
+      ],
+      "evidence": [
+        "GitHub PR6 independently verified merged at deb812b3472c078b5879727953e85d2850f0a82c",
+        "Original raw parsers/reconciliation rebuilt416candidates and612inventory matching snapshot",
+        "12published scenarios,4published sensitivities and96expanded configurations independently executed"
+      ]
     }
   ]
 }
