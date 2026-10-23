@@ -39,7 +39,7 @@ npm run preview
 The preview serves the built site under `/portfolio/`. `npm run dev` remains available for development, but the current CSP blocks Vite’s injected styles; use production preview for styled manual review. Install Chromium once with `npx playwright install chromium` before E2E.
 
 ## Build and test
-The existing Tailwind 3 toolchain uses an npm override for `postcss-selector-parser` **7.1.6** to fix [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf) without a Tailwind 4 migration. Keep the override until the parent dependencies request a patched version themselves; regenerate the lockfile and run the full gate when changing it. A subprocess regression checks the malicious flat-selector case.
+The build uses Tailwind CSS4.3.3 through its Vite plugin. The former Tailwind3/braces chain, PostCSS configuration, selector-parser override and obsolete parser regression are removed. Existing colors, responsive heading sizing and class-based dark surfaces are preserved. Browser support follows Tailwind4: Safari16.4+, Chrome111+, Firefox128+. See the [hardening verification](./docs/poc-hardening-verification.md).
 
 ```bash
 npm run validate:harness
@@ -51,7 +51,7 @@ npm run test:e2e
 git diff --check
 ```
 
-As checked on 2026-10-22, the Vite 8.3.5 baseline from merged PR #24 reports five existing high Tailwind/braces-chain package findings. Case007 does not change dependencies or claim to have fixed the previous Vite advisories. The required Git Bash init.sh passes harness/install and stops at npm audit; downstream unit/build/E2E checks are run separately. See the [v1.6 verification](./docs/govtech-v1.6-verification.md). Feature completion does not imply a clean security audit.
+The 2026-10-23 hardening change reports zero vulnerabilities in both full and production npm audits. Earlier dated verification reports preserve their historical advisory findings. The Case009 full upstream suite and two local snapshot publications have now been independently replayed; conditional official-polygon checks supplement the original cohort.
 
 ## Deploy to GitHub Pages
 1. Confirm `base` in `vite.config.ts` matches the deployed repo path.
@@ -177,3 +177,21 @@ One combined bilingual Wi-Fi case documents merged Policy #8 v1.0 source reconci
 Nine complete bilingual cases. Case009 explains416 source records/415 groups and612 inventory rows,216 accepted research associations with194 geographic admissions,and23/393/0 documentary tiers. Published records do not certify structural safety or definitive overdue status. Existing safety explorer,prior eight cases,project relationships and dependencies are preserved.
 
 [Case009](./docs/govtech-case-study-009.zh-TW.md) · [Source audit](./docs/govtech-bridge-inspection-source-audit.md) · [Verification](./docs/govtech-v1.8-verification.md).
+
+## Offline Case009 verification
+
+Use a standalone disposable checkout outside another project so parent build configuration cannot leak into the source build:
+
+```bash
+git clone https://github.com/LEO0331/taipei-safety-map.git <standalone-checkout>
+git -C <standalone-checkout> -c core.autocrlf=false checkout deb812b3472c078b5879727953e85d2850f0a82c
+```
+
+Run `npm ci` inside that checkout, then from Portfolio:
+
+```bash
+npm run verify:bridge-replay -- <standalone-checkout>
+npm run verify:bridge-geography -- <standalone-checkout>
+```
+
+The first command runs the original full build/tests and two immutable local publications; the second uses the retained official district ZIP and the upstream lockfile's proj4 for conditional offline polygon checks. Neither changes the remote source or original policy population. [Scope, commands, evidence and limitations](./docs/poc-hardening-verification.md).

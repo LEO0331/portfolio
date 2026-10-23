@@ -1,0 +1,287 @@
+{
+  "routes": [
+    {
+      "base": "/portfolio",
+      "route": "/govtech/bin-policy",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/civic-1999",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/heavy-rain-preparedness",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/urban-renewal",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/shade-equity",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/neihu-congestion",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/bus-service",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/wifi-allocation",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/govtech/bridge-inspection",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/bin-policy",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/civic-1999",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/heavy-rain-preparedness",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/urban-renewal",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/shade-equity",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/neihu-congestion",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/bus-service",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/wifi-allocation",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "/portfolio",
+      "route": "/zh/govtech/bridge-inspection",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/bin-policy",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/civic-1999",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/heavy-rain-preparedness",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/urban-renewal",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/shade-equity",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/neihu-congestion",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/bus-service",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/wifi-allocation",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/govtech/bridge-inspection",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/bin-policy",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/civic-1999",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/heavy-rain-preparedness",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/urban-renewal",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/shade-equity",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/neihu-congestion",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/bus-service",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/wifi-allocation",
+      "direct": true,
+      "reload": true
+    },
+    {
+      "base": "",
+      "route": "/zh/govtech/bridge-inspection",
+      "direct": true,
+      "reload": true
+    }
+  ],
+  "unknown404Bases": 2,
+  "viewports": [
+    {
+      "width": 320,
+      "locale": "en",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 320,
+      "locale": "zh",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 390,
+      "locale": "en",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 390,
+      "locale": "zh",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 768,
+      "locale": "en",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 768,
+      "locale": "zh",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 1024,
+      "locale": "en",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 1024,
+      "locale": "zh",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 1440,
+      "locale": "en",
+      "themes": 2,
+      "tableKeyboard": true
+    },
+    {
+      "width": 1440,
+      "locale": "zh",
+      "themes": 2,
+      "tableKeyboard": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "forbiddenRequests": [],
+  "rootFixture": "Copied current src/public/tools/index/package/Vite config with the same Tailwind4 plugin; changed only base. Metadata generated before build and entries after."
+}

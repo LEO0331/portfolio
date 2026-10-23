@@ -1,0 +1,10 @@
+{
+  "score": 96,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Tailwind4 generated CSS uses the supported Vite integration; explicit v3 color variables and responsive heading line-height preserve the existing appearance."
+  ],
+  "suggestions": [],
+  "reasoning": "Before/after desktop hierarchy and mobile dark surfaces match. Four sampled heading rectangles and body backgrounds exactly match baseline metrics; no page errors or body overflow."
+}

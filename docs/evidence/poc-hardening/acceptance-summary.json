@@ -1,0 +1,9 @@
+{
+  "fullInit": "Passed actual Git Bash init.sh with clean npm ci;full audit0;26unit;TypeScript/build28entries+404;143Playwright;17/17flows100%;diffcheck",
+  "upstream": "Passed7files88tests/build and two exact original local publications; trackedcheckoutclean",
+  "hosting": "Passed36direct/reloadbilingualcaseURLs acrossroot/Pages;unknown404bothbases;10locale/width combinations in both themes;keyboard supplemental-table scroll;0page/console/forbiddenrequests",
+  "visualScore": 96,
+  "visualMetricsExact": true,
+  "baselineMobileDarkSha256": "a80ef2875ee48790539449d99a660ec3f08dff5fed53d0947fd051b10b0fa96a",
+  "finalMobileDarkSha256": "a80ef2875ee48790539449d99a660ec3f08dff5fed53d0947fd051b10b0fa96a"
+}
