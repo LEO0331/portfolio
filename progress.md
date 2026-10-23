@@ -6,7 +6,7 @@
 
 **Active work:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
 
-**Status:** Implementation and local acceptance complete on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Preparing exactly one review PR to main;no automatic merge.
+**Status:** Implementation and local acceptance complete on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Review PR https://github.com/LEO0331/portfolio/pull/28 is open against main; no automatic merge.
 
 ### Completed
 
