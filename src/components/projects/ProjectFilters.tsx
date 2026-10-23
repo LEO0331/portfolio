@@ -36,7 +36,7 @@ export function ProjectFilters({
           <select
             value={selectedCategory}
             onChange={(event) => onCategoryChange(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-none dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-hidden dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
           >
             <option value="all">{text.projects.allCategories}</option>
             {categories.map((category) => (
@@ -52,7 +52,7 @@ export function ProjectFilters({
           <select
             value={selectedTechnology}
             onChange={(event) => onTechnologyChange(event.target.value)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-none dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-hidden dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
           >
             <option value="all">{text.projects.allTechnologies}</option>
             {technologies.map((technology) => (
@@ -68,7 +68,7 @@ export function ProjectFilters({
           <select
             value={selectedStatus}
             onChange={(event) => onStatusChange(event.target.value as "all" | ProjectStatus)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-none dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
+            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 focus:border-brand-600 focus:outline-hidden dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100"
           >
             <option value="all">{text.projects.allStatuses}</option>
             <option value="live">{text.projects.live}</option>
