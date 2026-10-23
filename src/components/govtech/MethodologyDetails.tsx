@@ -22,7 +22,7 @@ export function MethodologyDetails({ methodology, title }: { methodology: GovTec
     case "rule-based-priority":
       return <>
         <div className="panel-soft p-4 sm:p-6">
-          <p className="break-words font-mono text-sm font-semibold text-slate-900">{methodology.methodId}</p>
+          <details data-technical><summary className="cursor-pointer text-sm font-semibold">{locale === "en" ? "Method identifier" : "方法識別碼"}</summary><p className="mt-3 break-all font-mono text-sm">{methodology.methodId}</p></details>
           <p className="mt-3 text-sm leading-relaxed text-slate-600">{methodology.explanation}</p>
         </div>
         <CaseStudyTable table={methodology.thresholds} />

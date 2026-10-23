@@ -26,7 +26,7 @@ export function HomePage(): JSX.Element {
       <Section className="py-4 sm:py-6">
         <div className="panel flex flex-col gap-4 p-6 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <p className="eyebrow">GovTech</p>
+            <p className="eyebrow">{locale === "zh" ? "市政科技" : "GovTech"}</p>
             <h2 className="mt-2 text-xl font-bold text-slate-900 dark:text-slate-100">{text.home.govtechTitle}</h2>
             <p className="mt-2 max-w-2xl text-sm text-slate-600 dark:text-slate-300">{text.home.govtechDescription}</p>
           </div>
@@ -45,10 +45,10 @@ export function HomePage(): JSX.Element {
             {text.home.ctaDescription}
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2.5 sm:mt-5 sm:gap-3">
-            <Link to={toLocalePath("/projects")} aria-label="Browse projects" className={getButtonClassName("primary")}>
+            <Link to={toLocalePath("/projects")} aria-label={locale === "zh" ? "瀏覽專案" : "Browse projects"} className={getButtonClassName("primary")}>
               {text.home.browseProjects}
             </Link>
-            <Link to={toLocalePath("/contact")} aria-label="Contact Leo Chen" className={getButtonClassName("secondary")}>
+            <Link to={toLocalePath("/contact")} aria-label={locale === "zh" ? "聯絡 Leo Chen" : "Contact Leo Chen"} className={getButtonClassName("secondary")}>
               {text.home.contactMe}
             </Link>
           </div>

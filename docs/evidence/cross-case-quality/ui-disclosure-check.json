@@ -1,0 +1,161 @@
+[
+  {
+    "locale": "en",
+    "id": "bin-policy",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "civic-1999",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "heavy-rain-preparedness",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "urban-renewal",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "shade-equity",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "neihu-congestion",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "bus-service",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "wifi-allocation",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "en",
+    "id": "bridge-inspection",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "bin-policy",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "civic-1999",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "heavy-rain-preparedness",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "urban-renewal",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "shade-equity",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "neihu-congestion",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "bus-service",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "wifi-allocation",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "locale": "zh",
+    "id": "bridge-inspection",
+    "sha": null,
+    "sourceOpen": "",
+    "fourFields": 4,
+    "overflow": false
+  },
+  {
+    "landingCaseSections": 1,
+    "landingCaseCards": 9,
+    "uniqueCaseNames": 9
+  },
+  {
+    "routeFocus": {
+      "y": 0,
+      "tag": "H1",
+      "text": "Bridge Inspection & Maintenance Decision Support"
+    }
+  },
+  {
+    "malformedHashErrors": []
+  }
+]

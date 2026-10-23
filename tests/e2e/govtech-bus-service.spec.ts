@@ -1,3 +1,4 @@
+import { openTechnicalEvidence } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -132,7 +133,7 @@ test.describe("Bus007 bilingual network and published-documentation review", () 
       const main = page.getByRole("main");
       await expect(main).toContainText(study.reviewNote);
       for (const identity of [sha, snapshot, manifestDigest, method]) await expect(main).toContainText(identity);
-      for (const file of ["docs/bus-service-source-audit.md", "docs/bus-service-access-notes.md", "docs/bus-service-methodology.md", "docs/bus-service-decision-mvp.zh-TW.md", "docs/bus-service-delivery.md", "data/raw/bus-service/manifest.json", "public/data/bus-service/manifest.json", "src/types/busService.ts", "src/utils/busService.ts", "src/utils/busServiceScenarios.ts", "src/components/BusServiceDecisionDashboard.tsx", "tests/busServiceSources.test.ts", "scripts/fetchBusServiceSources.ts", "scripts/auditBusServiceSources.ts", "scripts/buildBusServiceSnapshot.ts"]) {
+      for (const file of ["docs/bus-service-source-audit.md", "docs/bus-service-access-notes.md", "docs/bus-service-methodology.md", "docs/bus-service-decision-mvp.zh-TW.md", "tests/busService.test.ts", "data/raw/bus-service/manifest.json", "public/data/bus-service/manifest.json", "src/types/busService.ts", "src/utils/busService.ts", "src/utils/busServiceScenarios.ts", "src/components/BusServiceDecisionDashboard.tsx", "tests/busServiceSources.test.ts", "scripts/fetchBusServiceSources.ts", "scripts/auditBusServiceSources.ts", "scripts/buildBusServiceSnapshot.ts"]) {
         const link = main.locator(`a[href="${repo}/blob/${sha}/${file}"]`).first();
         await expect(link).toBeVisible();
         await expect(link).toHaveAttribute("rel", /noopener/);
@@ -145,6 +146,7 @@ test.describe("Bus007 bilingual network and published-documentation review", () 
         await expect(rendered.getByRole("row")).toHaveCount(table.rows.length + 1);
         for (const [index, { cells }] of table.rows.entries()) await expect(rendered.getByRole("row").nth(index + 1).locator("td, th[scope='row']")).toHaveText(table.columns.map(({ key }) => cells[key]));
       }
+      await openTechnicalEvidence(page);
       for (const section of study.sections) {
         const rendered = page.locator(`#${section.id}`);
         await expect(rendered.getByRole("heading", { level: 2 })).toHaveText(section.title);
@@ -191,10 +193,10 @@ test.describe("Bus007 bilingual network and published-documentation review", () 
         await page.evaluate((value) => localStorage.setItem("portfolio-locale", value), locale);
         await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/bus-service`);
         for (const dark of [false, true]) {
-          if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
           await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-          if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         }
         if (width === 390) {
           const region = page.getByRole("table", { name: study.scenarioTables[2].caption, exact: true }).locator("..");

@@ -15,7 +15,7 @@ export const urbanRenewalCase: GovTechCase = {
   snapshotVersion: URBAN_RENEWAL_SNAPSHOT_VERSION,
   title: "Aging Buildings & Urban Renewal Evidence Decision Support",
   summary: "From fragmented building and administrative records to explainable urban-renewal research priorities.",
-  maturity: "decision-support-poc", maturityLabel: "Completed decision-support POC",
+  maturity: "decision-support-poc", maturityLabel: "Completed decision-support proof of concept",
   reviewNote: "Independent policy-research POC — not a building-safety assessment, legal eligibility determination, or official redevelopment recommendation. Recorded analysis date: 19 October 2026.",
   intendedUsers: "Urban planning researchers, municipal housing-policy analysts, public-data teams, and administrative staff reviewing renewal-related records.",
   implementedCapabilities: ["Official source feasibility and statistical-unit reconciliation", "Citywide building-age context and district administrative evidence", "Versioned static snapshots and deterministic review tiers", "Capacity, strategy and evidence-scope comparisons", "Reproducible JSON/CSV research briefings"],
@@ -35,7 +35,7 @@ export const urbanRenewalCase: GovTechCase = {
     ] },
     { id: "sources", title: "Verified Official Sources and Statistical Meaning", paragraphs: [
       "A — Existing building stock, context_only: 50 citywide annual records for 1976–2025, unit buildings. No verified district-level age breakdown exists. Age fields in 1976–2006 are unavailable, never zero old buildings. The 2012 age categories do not reconcile with the overall building total; that discrepancy remains explicit. Only 18 annual age breakdowns are comparable. Citywide counts are not allocated to districts or treated as district redevelopment demand.",
-      "B — Approved self-designated renewal units, verified_analysis within designation scope: 75 source records and 75 unique document identifiers across 11 represented districts, reporting months February 2023–June 2024 (action dates 2023-02-01–2024-06-05). No verified row exists for 信義區 / Xinyi; missing coverage does not establish zero actual cases. Only designation approval is established. Current later-stage status is unknown; case-name matching is not an authoritative cross-stage identifier.",
+      "B — Approved self-designated renewal units, verified_analysis within designation scope: 75 source records and 75 unique document identifiers across 11 represented districts, reporting months February 2023–June 2024 (action dates 2023-02-01–2024-06-05). No verified row exists for Xinyi; missing coverage does not establish zero actual cases. Only designation approval is established. Current later-stage status is unknown; case-name matching is not an authoritative cross-stage identifier.",
       "C — Incentive statistics, context_only: 24 citywide annual records for 2002–2025. Approved incentive cases and bonus floor area in square metres are separate statistical units. Neither is a district case-status series or a valid denominator for B; they do not join B's candidate population.",
       "D — Existing use-permit aggregates, context_only: 8,855 records for 2001–2026, with 8,830 attributed to districts and 25 without validated district attribution. Issuance is an administrative flow, not existing building stock; no authoritative link to B is established. E — Proceedings, context_only: 117 dated meeting rows. Agenda/record metadata does not establish approval, rejection or completion.",
       "F — Official progress lookup, context_only: human parcel/address/road verification, not a validated supported bulk API. No automatic current legal-case status retrieval is implemented. G — Regulations and official FAQ, context_only: legal reference for separate renewal and dangerous/old-building reconstruction processes, not an eligibility or current-law determination.",
@@ -63,7 +63,7 @@ export const urbanRenewalCase: GovTechCase = {
     ] },
     { id: "scenarios", title: "Recorded Scenario: Capacity without Artificial Differentiation", content: "scenarios", paragraphs: [
       "Recorded snapshot ure-c81e4ef44e6c9868; method urban-renewal-evidence-review-v1; configuration 1.0.0; analysis date 2026-10-19. Fixed conditions: all districts/categories, strict quality, priority threshold C, source B included, optional permit context included, Evidence Gaps First (gaps). Exactly 11 eligible questions represent 11 districts; all are A.",
-      "The capacity table preserves the source comparator's district order. Capacity 10 retains the first five and adds five; 文山區 / Wenshan is excluded only by that cutoff and appears with unlimited capacity. Two dimensions means the union status_traceability and temporal_freshness, not a sum of per-candidate counts. One verified source type means B, not five or ten independent sources.",
+      "The capacity table preserves the source comparator's district order. Capacity 10 retains the first five and adds five; Wenshan is excluded only by that cutoff and appears with unlimited capacity. Two dimensions means the union status_traceability and temporal_freshness, not a sum of per-candidate counts. One verified source type means B, not five or ten independent sources.",
       "Direct interpretation: this order is an evidence-review comparator and stable tie-break result. It does not rank dangerous buildings, oldest districts, redevelopment need, public safety risk, developer opportunity or resident benefit. Selected counts are research questions, not buildings or completed projects.",
       "Evidence Gaps First and Balanced District Coverage select the same candidates in the same order. Each district has one equally qualified question, so round-robin geographic balancing adds no differentiation. Source Reconciliation Focus also selects the same candidates because all carry a concrete missing later-stage linkage question. A credible decision-support system should show when different strategies produce the same answer and explain why; no strategy is demonstrated better."
     ], links: [{ label: "Pinned real scenario and comparator explanation", url: urbanRenewalSource("docs/urban-renewal-decision-methodology.md") }] },
@@ -132,23 +132,55 @@ export const urbanRenewalCase: GovTechCase = {
     ] }
   ],
   evidence: [
-    { label: "Merged urban-renewal implementation · PR #5", url: `${repo}/pull/5` },
-    { label: "Pinned source merge commit", url: `${repo}/commit/${URBAN_RENEWAL_SOURCE_SHA}` },
-    ...[
-      ["Official source feasibility audit", "docs/urban-renewal-source-audit.md"],
-      ["Methodology and recorded scenario", "docs/urban-renewal-decision-methodology.md"],
-      ["Chinese MVP specification and executed verification", "docs/urban-renewal-decision-mvp.zh-TW.md"],
-      ["Versioned static snapshot", "public/data/urban-renewal-decision/snapshot.json"],
-      ["Pure evidence-review engine", "src/utils/urbanRenewalDecision.ts"],
-      ["Scenario comparisons and briefings", "src/utils/urbanRenewalScenario.ts"],
-      ["Source validation tests", "scripts/urbanRenewalSources.test.ts"],
-      ["Decision and actual-snapshot scenario tests", "scripts/urbanRenewalDecision.test.ts"],
-      ["Recorded browser verification", "docs/urban-renewal-browser-review.md"],
-      ["Offline snapshot builder", "scripts/buildUrbanRenewalDecisionSnapshot.ts"],
-      ["Decision types and source-suitability contract", "src/types/urbanRenewalDecision.ts"],
-      ["On-demand React decision panel", "src/UrbanRenewalDecisionPanel.tsx"]
-    ].map(([label, path]) => ({ label, url: urbanRenewalSource(path) }))
-  ],
+  {
+    "label": "Official source feasibility audit",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-source-audit.md"
+  },
+  {
+    "label": "Methodology and recorded scenario",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-methodology.md"
+  },
+  {
+    "label": "Chinese MVP specification and executed verification",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "Versioned static snapshot",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/public/data/urban-renewal-decision/snapshot.json"
+  },
+  {
+    "label": "Pure evidence-review engine",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalDecision.ts"
+  },
+  {
+    "label": "Scenario comparisons and briefings",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/utils/urbanRenewalScenario.ts"
+  },
+  {
+    "label": "Source validation tests",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalSources.test.ts"
+  },
+  {
+    "label": "Decision and actual-snapshot scenario tests",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/urbanRenewalDecision.test.ts"
+  },
+  {
+    "label": "Recorded browser verification",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/docs/urban-renewal-browser-review.md"
+  },
+  {
+    "label": "Offline snapshot builder",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/scripts/buildUrbanRenewalDecisionSnapshot.ts"
+  },
+  {
+    "label": "Decision types and source-suitability contract",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/types/urbanRenewalDecision.ts"
+  },
+  {
+    "label": "On-demand React decision panel",
+    "url": "https://github.com/LEO0331/taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/src/UrbanRenewalDecisionPanel.tsx"
+  }
+],
   previewAssets: [
     { label: "Upstream local-development verification · Chinese desktop", url: urbanRenewalSource("docs/evidence/urban-renewal-desktop-zh.png") },
     { label: "Upstream local-development verification · English mobile", url: urbanRenewalSource("docs/evidence/urban-renewal-mobile-en.png") },

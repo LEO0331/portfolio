@@ -1,0 +1,442 @@
+[
+  {
+    "path": "en/0/sections/1/paragraphs/0",
+    "value": "Three merged milestones build a completed decision-support proof of concept. This is a portfolio engineering result, with no further production-operations acceptance phase required for presentation."
+  },
+  {
+    "path": "en/0/sections/1/links/0/label",
+    "value": "v1.0 — Spatial Decision MVP: coverage, greedy allocation, budget/radius scenarios, field-review candidates and JSON/CSV reports · PR #11"
+  },
+  {
+    "path": "en/0/sections/1/links/0/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/11"
+  },
+  {
+    "path": "en/0/sections/1/links/1/label",
+    "value": "v1.1 — Data Governance & Source Reconciliation: provenance, quality, monitoring, reviewed publication and bus-source comparison · PR #14"
+  },
+  {
+    "path": "en/0/sections/1/links/1/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/14"
+  },
+  {
+    "path": "en/0/sections/1/links/2/label",
+    "value": "v1.2 — Policy-Aligned Weighted Decision Support: versioned weights, category balancing, sensitivity and candidate explanations · PR #15"
+  },
+  {
+    "path": "en/0/sections/1/links/2/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/15"
+  },
+  {
+    "path": "en/0/sections/7/paragraphs/0",
+    "value": "Evidence links below point to the reviewed source commit. The merged PRs document implementation history; source tests and audits support engineering review. This portfolio does not claim operational certification or independently rerun source-repository test counts."
+  },
+  {
+    "path": "en/1/reviewNote",
+    "value": "Frozen historical scenario from the merged source release, reviewed 16 October 2026. This page does not fetch or recalculate civic data."
+  },
+  {
+    "path": "en/1/sections/1/paragraphs/1",
+    "value": "The merged decision-support v1.0 adds completeness auditing, verified comparable periods, privacy-safe monthly aggregates, versioned classification, explainable priority rules, investigation capacity scenarios, threshold sensitivity and JSON/CSV manager briefings."
+  },
+  {
+    "path": "en/1/sections/1/links/0/label",
+    "value": "Merged civic decision-support implementation · PR #8"
+  },
+  {
+    "path": "en/1/sections/1/links/0/url",
+    "value": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+  },
+  {
+    "path": "en/1/evidence/0/label",
+    "value": "Merged decision-support implementation · PR #8"
+  },
+  {
+    "path": "en/1/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+  },
+  {
+    "path": "en/1/evidence/1/label",
+    "value": "Pinned merged source commit"
+  },
+  {
+    "path": "en/2/sections/1/paragraphs/1",
+    "value": "The merged module reuses the static application and adds source auditing, KML validation, provenance, versioned snapshots, infrastructure evidence modelling, historical inundation context, review tiers, capacity scenarios, geographic balancing, sensitivity and JSON/CSV briefings. Reservoir and ecology exploration remain separate capabilities; those datasets do not all enter this decision model."
+  },
+  {
+    "path": "en/2/evidence/0/label",
+    "value": "Merged preparedness implementation · PR #5"
+  },
+  {
+    "path": "en/2/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-feitsui-water-map/pull/5"
+  },
+  {
+    "path": "en/2/evidence/1/label",
+    "value": "Pinned source merge commit"
+  },
+  {
+    "path": "en/3/evidence/0/label",
+    "value": "Merged urban-renewal implementation · PR #5"
+  },
+  {
+    "path": "en/3/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-real-estate-dashboard/pull/5"
+  },
+  {
+    "path": "en/3/evidence/1/label",
+    "value": "Pinned source merge commit"
+  },
+  {
+    "path": "en/4/sections/12/paragraphs/2",
+    "value": "Merged source PR #19 is the current delivery record; the earlier handoff's inability to create a PR is historical. The following inspected upstream local verification screenshots show the real gated inventory/controls, not government operation or independently verified public deployment."
+  },
+  {
+    "path": "en/4/evidence/0/label",
+    "value": "Merged Shade Equity implementation · PR #19"
+  },
+  {
+    "path": "en/4/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/19"
+  },
+  {
+    "path": "en/4/evidence/1/label",
+    "value": "Pinned merged source commit"
+  },
+  {
+    "path": "en/4/evidence/6/label",
+    "value": "Historical PR handoff · superseded by merged PR #19"
+  },
+  {
+    "path": "en/5/sections/2/paragraphs/1",
+    "value": "Policy #4 adds VD source auditing, pointers-versus-observations checks, directional identity, candidate-road inventory, freshness, static readiness snapshots, typed time windows, pure performance logic, independent quality review, research capacities, scope sensitivity, exports and a lazy bilingual tab. Existing crash analysis is preserved; accident hotspots are not merged with congestion scores."
+  },
+  {
+    "path": "en/5/sections/14/paragraphs/2",
+    "value": "Source PR #7 is merged; earlier pending wording in upstream documentation is historical. Both inspected screenshots are Chinese local production-preview verification captures, not government operations or English mobile evidence."
+  },
+  {
+    "path": "en/5/evidence/0/label",
+    "value": "Merged Policy #4 implementation · PR #7"
+  },
+  {
+    "path": "en/5/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-crash-map/pull/7"
+  },
+  {
+    "path": "en/5/evidence/1/label",
+    "value": "Pinned source merge commit"
+  },
+  {
+    "path": "en/6/sections/15/paragraphs/2",
+    "value": "PR #9 is merged as confirmed by GitHub metadata; older open-PR wording is historical. Inspected screenshots are upstream local research verification: Chinese desktop, English mobile and English selected-route detail, not government operating-system or independently accepted public-deployment captures."
+  },
+  {
+    "path": "en/6/evidence/0/label",
+    "value": "Merged Policy #5 implementation · PR #9"
+  },
+  {
+    "path": "en/6/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-crash-map/pull/9"
+  },
+  {
+    "path": "en/6/evidence/1/label",
+    "value": "Pinned source merge commit"
+  },
+  {
+    "path": "en/7/sections/1/paragraphs/1",
+    "value": "Policy #8 v1.1 adds official boundary transformation, facility-coordinate evidence classification and experimental Mode B research in the same project. This single Case 008 documents both phases. PR #4 and localization PR #5 are merged; geographic PR #6 merged on 22 October 2026. Older upstream delivery text describing an open PR is historical."
+  },
+  {
+    "path": "en/7/evidence/0/label",
+    "value": "Merged v1.0 PR #4"
+  },
+  {
+    "path": "en/7/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-free-wifi-map/pull/4"
+  },
+  {
+    "path": "en/7/evidence/1/label",
+    "value": "Merged v1.1 PR #6"
+  },
+  {
+    "path": "en/7/evidence/1/url",
+    "value": "https://github.com/LEO0331/taipei-free-wifi-map/pull/6"
+  },
+  {
+    "path": "en/8/sections/1/paragraphs/1",
+    "value": "Policy #9 adds two-source acquisition, original-byte governance, conservative asset reconciliation, geographic screening, deterministic evidence tiers, 5/10/all scenarios and auditable exports. The historical explorer and its source edition remain separate. PR #6 is merged at the pinned source commit; pre-merge delivery wording about blocked PR creation is historical."
+  },
+  {
+    "path": "en/8/evidence/0/label",
+    "value": "Merged Policy #9 PR #6"
+  },
+  {
+    "path": "en/8/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-safety-map/pull/6"
+  },
+  {
+    "path": "zh/0/sections/1/paragraphs/0",
+    "value": "三個已合併版本形成完整的決策支援概念驗證。作為個人工程作品集展示，不需另設正式營運驗收階段。"
+  },
+  {
+    "path": "zh/0/sections/1/links/0/label",
+    "value": "v1.0 — 空間決策 MVP：覆蓋分析、貪婪配置、預算／半徑情境、現勘候選點及 JSON／CSV 報告 · PR #11"
+  },
+  {
+    "path": "zh/0/sections/1/links/0/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/11"
+  },
+  {
+    "path": "zh/0/sections/1/links/1/label",
+    "value": "v1.1 — 資料治理與來源對帳：來源、品質、監測、審閱後發布及公車來源比較 · PR #14"
+  },
+  {
+    "path": "zh/0/sections/1/links/1/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/14"
+  },
+  {
+    "path": "zh/0/sections/1/links/2/label",
+    "value": "v1.2 — 政策導向加權決策：版本化權重、類別平衡、敏感度及候選點解釋 · PR #15"
+  },
+  {
+    "path": "zh/0/sections/1/links/2/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/15"
+  },
+  {
+    "path": "zh/1/reviewNote",
+    "value": "取自已合併來源版本的固定歷史情境，於 2026 年 10 月 16 日複核。本頁不擷取或重新計算民生派工資料。"
+  },
+  {
+    "path": "zh/1/sections/1/paragraphs/1",
+    "value": "已合併的決策支援 v1.0 新增完整性稽核、可比較的已驗證期間、保護個資的月彙總、版本化分類、可解釋規則、調查名額情境、門檻敏感度，以及 JSON／CSV 主管簡報匯出。"
+  },
+  {
+    "path": "zh/1/sections/1/links/0/label",
+    "value": "已合併的民生決策支援實作 · PR #8"
+  },
+  {
+    "path": "zh/1/sections/1/links/0/url",
+    "value": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+  },
+  {
+    "path": "zh/1/sections/5/paragraphs/1",
+    "value": "預設五列及其代表的 1,334 筆近期派工，與固定版本交付報告及來源快照回歸斷言一致。五組近期均有三個活躍月份。名額 10 代表 2,608 筆；較寬鬆的 8／1／4／20% 設定代表 1,200 筆，並改變五席名單。"
+  },
+  {
+    "path": "zh/1/sections/5/links/0/label",
+    "value": "固定交付情境與比較證據"
+  },
+  {
+    "path": "zh/1/evidence/0/label",
+    "value": "已合併決策支援實作 · PR #8"
+  },
+  {
+    "path": "zh/1/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-1999-map/pull/8"
+  },
+  {
+    "path": "zh/1/evidence/1/label",
+    "value": "固定已合併來源 commit"
+  },
+  {
+    "path": "zh/1/evidence/4/label",
+    "value": "交付證據與可重現情境"
+  },
+  {
+    "path": "zh/2/sections/1/paragraphs/1",
+    "value": "已合併模組沿用既有靜態應用，新增官方來源稽核、KML 驗證、來源脈絡、版本快照、設施證據模型、歷史積淹水背景、查核層級、容量情境、地理均衡、敏感度及 JSON／CSV 簡報。水庫與生態仍屬資料探索功能，並非所有資料都進入本決策模型。"
+  },
+  {
+    "path": "zh/2/evidence/0/label",
+    "value": "已合併的防汛整備實作 · PR #5"
+  },
+  {
+    "path": "zh/2/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-feitsui-water-map/pull/5"
+  },
+  {
+    "path": "zh/2/evidence/1/label",
+    "value": "固定來源合併提交"
+  },
+  {
+    "path": "zh/2/evidence/5/label",
+    "value": "實作計畫"
+  },
+  {
+    "path": "zh/3/evidence/0/label",
+    "value": "已合併的都市更新決策實作 · PR #5"
+  },
+  {
+    "path": "zh/3/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-real-estate-dashboard/pull/5"
+  },
+  {
+    "path": "zh/3/evidence/1/label",
+    "value": "固定來源合併提交"
+  },
+  {
+    "path": "zh/4/sections/12/paragraphs/0",
+    "value": "固定來源交付記錄 31 個檔案共 471 項測試通過、TypeScript／Vite 正式建置、單一瀏覽器工作者完成 160 項完整 E2E、2 項樹蔭離線測試、4 項未變更清潔箱政策離線檢查及 2 項樹蔭專案基底路徑測試。來源還原、獨立正規化快照重現與桌面／行動版複核均有記錄，未需新增依賴。這是上游結果，不是作品集執行來源測試套件。"
+  },
+  {
+    "path": "zh/4/sections/12/paragraphs/2",
+    "value": "已合併來源 PR #19 是目前交付狀態，早期交接無法建立 PR 的描述屬歷史。下列已檢視上游本機驗證截圖呈現實際受門檻限制的盤點／控制項，不是政府作業或獨立驗證公開部署。"
+  },
+  {
+    "path": "zh/4/evidence/0/label",
+    "value": "已合併的樹蔭公平實作 · PR #19"
+  },
+  {
+    "path": "zh/4/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-bin-map/pull/19"
+  },
+  {
+    "path": "zh/4/evidence/1/label",
+    "value": "固定來源合併提交"
+  },
+  {
+    "path": "zh/4/evidence/5/label",
+    "value": "已記錄交付與驗證"
+  },
+  {
+    "path": "zh/4/evidence/6/label",
+    "value": "歷史 PR 交接 · 現以已合併 PR #19 為準"
+  },
+  {
+    "path": "zh/5/sections/0/paragraphs/1",
+    "value": "有效比較需偵測器身分、道路連結、行車方向、時間戳、取樣間隔、速率／流量語意、可比較尖離峰期間、歷史涵蓋及研究地理。歷史事故型態、歷史交通表現及觀測就緒度是不同概念。本 POC 交付就緒度並條件式實作表現邏輯，不由事故推導壅塞。預期使用者為運輸資料分析人員及交通工程研究團隊。"
+  },
+  {
+    "path": "zh/5/sections/14/paragraphs/0",
+    "value": "來源交付記錄 npm ci、四個檔案共 66 項 Vitest 測試、TypeScript／Vite 與 GitHub Pages 建置、五項壅塞整合檢查、來源稽核、相同快照重建、JSON／CSV 檢視、延遲載入及桌面／行動版複核。未新增依賴。這是上游執行記錄，不是本作品集獨立重跑來源套件或接受實際壅塞估計。"
+  },
+  {
+    "path": "zh/5/sections/14/paragraphs/2",
+    "value": "來源 PR #7 已合併，上游較早待合併敘述屬歷史。兩張已檢視截圖皆為中文本機正式預覽驗證，不是政府作業畫面或英文行動版證據。"
+  },
+  {
+    "path": "zh/5/evidence/0/label",
+    "value": "已合併 Policy #4 實作 · PR #7"
+  },
+  {
+    "path": "zh/5/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-crash-map/pull/7"
+  },
+  {
+    "path": "zh/5/evidence/1/label",
+    "value": "固定來源合併提交"
+  },
+  {
+    "path": "zh/5/evidence/5/label",
+    "value": "已記錄交付、情境與驗證"
+  },
+  {
+    "path": "zh/5/evidence/6/label",
+    "value": "實作計畫"
+  },
+  {
+    "path": "zh/6/sections/9/title",
+    "value": "架構與靜態證據交付"
+  },
+  {
+    "path": "zh/6/sections/15/paragraphs/0",
+    "value": "上游交付記錄 7 個檔案共 99 項測試、11 項相關 GitHub Pages 公車／內湖整合檢查、根路徑與 Pages 建置、確定性輸出、桌面／行動版及實際 JSON／CSV 下載。未新增依賴，來源版本記錄兩項中度依賴警示。這是上游結果，與作品集驗證分開。"
+  },
+  {
+    "path": "zh/6/sections/15/paragraphs/2",
+    "value": "GitHub 中繼資料確認 PR #9 已合併，較早未合併敘述屬歷史。已檢視截圖為上游本機研究驗證：中文桌面、英文行動版、英文選定路線，不是政府作業系統或獨立驗收公開部署。"
+  },
+  {
+    "path": "zh/6/evidence/0/label",
+    "value": "已合併 Policy #5 實作 · PR #9"
+  },
+  {
+    "path": "zh/6/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-crash-map/pull/9"
+  },
+  {
+    "path": "zh/6/evidence/1/label",
+    "value": "固定來源合併提交"
+  },
+  {
+    "path": "zh/6/evidence/6/label",
+    "value": "已記錄交付與驗證"
+  },
+  {
+    "path": "zh/6/evidence/7/label",
+    "value": "實作計畫"
+  },
+  {
+    "path": "zh/7/sections/1/paragraphs/1",
+    "value": "Policy #8 v1.1 在同一專案加入官方界線轉換、設施座標證據分類及模式 B 實驗研究。本單一 Case 008 整合兩階段；PR #4、語系 PR #5 與地理 PR #6 均已合併，後者於 2026-10-22 合併。上游交付文件中仍稱 PR 未合併的內容屬歷史紀錄。"
+  },
+  {
+    "path": "zh/7/sections/14/paragraphs/0",
+    "value": "v1.0 合併 fc3fe9340c460418b4255d04cf8a0150dbcf669b、方法 wifi-allocation-evidence-review-v1 與快照 wifi-policy-c250791e7736ed5bca2882ea 分開保留。最新來源合併 8e01a2bd8d762b51fae979d32fd477e378d1876b 提供方法 wifi-geographic-proximity-experiment-v1、schema 1.1 與地理版本 wifi-geo-da9f69f501af4d6e1d3f9122。快照 SHA-256 為 0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f，幾何為 de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c。"
+  },
+  {
+    "path": "zh/7/evidence/0/label",
+    "value": "已合併 v1.0 PR #4"
+  },
+  {
+    "path": "zh/7/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-free-wifi-map/pull/4"
+  },
+  {
+    "path": "zh/7/evidence/1/label",
+    "value": "已合併 v1.1 PR #6"
+  },
+  {
+    "path": "zh/7/evidence/1/url",
+    "value": "https://github.com/LEO0331/taipei-free-wifi-map/pull/6"
+  },
+  {
+    "path": "zh/7/evidence/14/label",
+    "value": "v1.1 · 交付與已記錄驗證"
+  },
+  {
+    "path": "zh/8/sections/1/paragraphs/1",
+    "value": "Policy #9 新增雙來源擷取、原始位元組治理、保守資產對帳、地理篩查、確定性證據分級、5／10／全部情境及可稽核匯出。歷史探索工具與資料版本維持分開。PR #6 已於固定來源 commit 合併；交付文件中「PR 建立受阻」的合併前文字屬歷史。"
+  },
+  {
+    "path": "zh/8/evidence/0/label",
+    "value": "已合併 Policy #9 PR #6"
+  },
+  {
+    "path": "zh/8/evidence/0/url",
+    "value": "https://github.com/LEO0331/taipei-safety-map/pull/6"
+  },
+  {
+    "path": "zh/8/evidence/8/label",
+    "value": "交付與記錄檢查"
+  },
+  {
+    "path": "copy/en/sourceVersion",
+    "value": "Source commit"
+  },
+  {
+    "path": "projects/en/7/fullDescription",
+    "value": "Boxmatch combines a listing feed and map, enterprise posting, recipient reservations, and pickup codes to coordinate surplus-food handoffs."
+  },
+  {
+    "path": "projects/en/7/features/3",
+    "value": "Pickup handoff codes"
+  },
+  {
+    "path": "projects/zh/8/tagline",
+    "value": "線上追思、數位訃聞與服務交付流程"
+  },
+  {
+    "path": "projects/zh/8/fullDescription",
+    "value": "WarmMemo 整合可分享的追思頁與 QR Code、訃聞撰寫與匯出、規劃工具，以及訂單、供應商和交付里程碑的管理工作區。"
+  },
+  {
+    "path": "projects/zh/8/features/3",
+    "value": "供應商與交付管理"
+  },
+  {
+    "path": "projects/zh/26/fullDescription",
+    "value": "整合歷年事故點位、路口熱點、事故因素、民眾檢舉違規及車輛行車事故鑑定覆議資料，支援依時間、行政區、事故類型與地點篩選。保留雙語響應式及靜態 JSON／PWA 交付；獨立延遲載入交通模組新增官方 VD 來源稽核、設備盤點、LinkID／方向識別、來源新鮮度及歷史觀測資格、獨立品質分級、確定性容量5／10設備調查情境與 JSON／CSV 簡報。58個道路名稱篩選設備均維持研究地理未驗證，沒有採用的營運觀測歷史或壅塞表現排名；事故熱點不等於壅塞量測。獨立公車模組新增八項官方 PTO 來源契約、主路線／附屬路線／業者與站牌／實體站位／站序辨識、定性 A/B/C 文件查核層級、容量與主路線均衡情境、不可變索引產物及 JSON／CSV 簡報。1,241 個品質查核單元尚不具方向性公告服務比較或實際歷史營運表現資格；公告班表不等於達成班距、旅客需求、服務不足或運輸公平性。"
+  }
+]

@@ -23,7 +23,7 @@ export const wifiAllocationCase: GovTechCase = {
   "title": "Public Wi-Fi Allocation & Digital Inclusion Decision Support",
   "summary": "From official inventory reconciliation to traceable review scenarios, coordinate-evidence validation and bounded experimental geographic research.",
   "maturity": "decision-support-poc",
-  "maturityLabel": "Completed evidence review and experimental GIS research POC",
+  "maturityLabel": "Completed evidence review and experimental GIS research proof of concept",
   "reviewNote": "Mode B has no non-self gain and optimization is unavailable; Mode C still lacks operational and digital-inclusion evidence.",
   "intendedUsers": "Municipal data stewards, civic-data engineers and public-facility researchers.",
   "implementedCapabilities": [
@@ -47,7 +47,7 @@ export const wifiAllocationCase: GovTechCase = {
       "title": "From Wi-Fi Explorer to Evidence-Aware Decision Support",
       "paragraphs": [
         "The existing bilingual explorer retains 3,297 records, clustered mapping, nearby search, filters and a directory. Policy #8 v1.0 adds independent source acquisition, reconciliation, edition-bound identities and capacity-constrained Mode A evidence review; it does not silently migrate the explorer edition.",
-        "Policy #8 v1.1 adds official boundary transformation, facility-coordinate evidence classification and experimental Mode B research in the same project. This single Case 008 documents both phases. PR #4 and localization PR #5 are merged; geographic PR #6 merged on 22 October 2026. Older upstream delivery text describing an open PR is historical."
+        "Policy #8 v1.1 adds official boundary transformation, facility-coordinate evidence classification and experimental Mode B research in the same project. This single Case 008 documents both phases."
       ]
     },
     {
@@ -153,7 +153,7 @@ export const wifiAllocationCase: GovTechCase = {
       "id": "architecture",
       "title": "Static ETL, Integrity and Reproducible Publication",
       "paragraphs": [
-        "v1.0 merge fc3fe9340c460418b4255d04cf8a0150dbcf669b, method wifi-allocation-evidence-review-v1 and snapshot wifi-policy-c250791e7736ed5bca2882ea are retained independently. Latest source merge 8e01a2bd8d762b51fae979d32fd477e378d1876b supplies method wifi-geographic-proximity-experiment-v1, schema 1.1 and geographic generation wifi-geo-da9f69f501af4d6e1d3f9122. Snapshot SHA-256 is 0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f; geometry SHA-256 is de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c.",
+        "v1.0 source revision fc3fe9340c460418b4255d04cf8a0150dbcf669b, method wifi-allocation-evidence-review-v1 and snapshot wifi-policy-c250791e7736ed5bca2882ea are retained independently. Latest source revision 8e01a2bd8d762b51fae979d32fd477e378d1876b supplies method wifi-geographic-proximity-experiment-v1, schema 1.1 and geographic generation wifi-geo-da9f69f501af4d6e1d3f9122. Snapshot SHA-256 is 0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f; geometry SHA-256 is de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c.",
         "Immutable generation files publish before the atomic manifest pointer. Browser checks bind paths, exact bytes, SHA-256, schema, source and version before parsing. Exports retain settings, selected/excluded identities, source editions, assumptions and unavailable metrics; CSV formula-prefix defenses and escaped labels protect presentation. A matching digest establishes byte agreement, not official certification.",
         "Original v1.0 snapshot SHA-256: 91b28d7b375e7fb14ee42bfbe179d792c9e0ed0992f273582dd1e03e6bac8a82. The localized Mode A pointer separately identifies wifi-policy-e08d28277549c88787dea209 (SHA-256 cd675db75af4b65220692dc59916c7e5b88920b42613d4b82c7affcb43e0dfaa); it does not replace historical v1.0 or the v1.1 geographic generation."
       ],
@@ -1284,147 +1284,135 @@ export const wifiAllocationCase: GovTechCase = {
     }
   ],
   "evidence": [
-    {
-      "label": "Merged v1.0 PR #4",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/pull/4"
-    },
-    {
-      "label": "Merged v1.1 PR #6",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/pull/6"
-    },
-    {
-      "label": "v1.0 · Source audit",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-source-audit.md"
-    },
-    {
-      "label": "v1.0 · Mode A methodology",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-methodology.md"
-    },
-    {
-      "label": "v1.0 · Historical results",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-delivery.md"
-    },
-    {
-      "label": "v1.0 · Acquisition manifest",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/acquisition-manifest.json"
-    },
-    {
-      "label": "v1.0 · Reconciliation observations",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/reconciliation-observations.json"
-    },
-    {
-      "label": "v1.0 · Historical decision export",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/sample-decision.json"
-    },
-    {
-      "label": "v1.0 · Mode A scenarios",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/src/lib/wifiPolicyScenarios.ts"
-    },
-    {
-      "label": "v1.0 · Mode A tests",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/tests/wifiPolicy.test.ts"
-    },
-    {
-      "label": "v1.1 · Source validation",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-source-validation.md"
-    },
-    {
-      "label": "v1.1 · Coordinate contract",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-coordinate-contract.md"
-    },
-    {
-      "label": "v1.1 · Experimental methodology",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-methodology.md"
-    },
-    {
-      "label": "v1.1 · Chinese MVP",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-decision-mvp.zh-TW.md"
-    },
-    {
-      "label": "v1.1 · Delivery and recorded verification",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-delivery.md"
-    },
-    {
-      "label": "v1.1 · Actual results and selected IDs",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/results.md"
-    },
-    {
-      "label": "v1.1 · GIS builder",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographic.py"
-    },
-    {
-      "label": "v1.1 · Scenario engine",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicScenarios.ts"
-    },
-    {
-      "label": "v1.1 · Geographic tests",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/wifiGeographic.test.ts"
-    },
-    {
-      "label": "v1.1 · Artifact manifest",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/manifest.json"
-    },
-    {
-      "label": "v1.1 · 288 scenario pointer",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/scenarios-manifest.json"
-    },
-    {
-      "label": "v1.1 · Local measurements",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/measurements.json"
-    },
-    {
-      "label": "v1.1 · Browser evidence",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/browser-checks.json"
-    },
-    {
-      "label": "v1.1 · Verification log",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/verification.log"
-    },
-    {
-      "label": "v1.1 · Python GIS tests",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/geographic_test.py"
-    },
-    {
-      "label": "v1.1 · Geographic types and schema",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/types/wifiGeographicPolicy.ts"
-    },
-    {
-      "label": "v1.1 · Geographic admission, integrity and exports",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicPolicy.ts"
-    },
-    {
-      "label": "v1.1 · Published scenario generation",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographicScenarios.ts"
-    },
-    {
-      "label": "v1.1 · Reproducibility verifier",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/verifyWifiGeographic.ts"
-    },
-    {
-      "label": "Official source catalogue A",
-      "url": "https://data.taipei/dataset/detail?id=6aa6532d-652f-4c1b-814a-4646b75407af"
-    },
-    {
-      "label": "Official source catalogue B",
-      "url": "https://data.taipei/dataset/detail?id=43772803-6504-469c-894d-35904342a53b"
-    },
-    {
-      "label": "Official source catalogue C",
-      "url": "https://data.taipei/dataset/detail?id=5ed70753-73a4-4fc1-b78c-df09f7499594"
-    },
-    {
-      "label": "Official source catalogue D",
-      "url": "https://data.taipei/dataset/detail?id=80be7612-593f-4795-9935-a10ce0f7b75b"
-    },
-    {
-      "label": "Official source catalogue E",
-      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
-    },
-    {
-      "label": "v1.1 · Retained acquisition manifest",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/data/raw/wifi-policy/acquisition-manifest.json"
-    }
-  ],
+  {
+    "label": "v1.0 · Source audit",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-source-audit.md"
+  },
+  {
+    "label": "v1.0 · Mode A methodology",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-methodology.md"
+  },
+  {
+    "label": "v1.0 · Acquisition manifest",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/acquisition-manifest.json"
+  },
+  {
+    "label": "v1.0 · Reconciliation observations",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/reconciliation-observations.json"
+  },
+  {
+    "label": "v1.0 · Historical decision export",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/sample-decision.json"
+  },
+  {
+    "label": "v1.0 · Mode A scenarios",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/src/lib/wifiPolicyScenarios.ts"
+  },
+  {
+    "label": "v1.0 · Mode A tests",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/tests/wifiPolicy.test.ts"
+  },
+  {
+    "label": "v1.1 · Source validation",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-source-validation.md"
+  },
+  {
+    "label": "v1.1 · Coordinate contract",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-coordinate-contract.md"
+  },
+  {
+    "label": "v1.1 · Experimental methodology",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-methodology.md"
+  },
+  {
+    "label": "v1.1 · Chinese MVP",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "v1.1 · Actual results and selected IDs",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/results.md"
+  },
+  {
+    "label": "v1.1 · GIS builder",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographic.py"
+  },
+  {
+    "label": "v1.1 · Scenario engine",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicScenarios.ts"
+  },
+  {
+    "label": "v1.1 · Geographic tests",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/wifiGeographic.test.ts"
+  },
+  {
+    "label": "v1.1 · Artifact manifest",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/manifest.json"
+  },
+  {
+    "label": "v1.1 · 288 scenario pointer",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/scenarios-manifest.json"
+  },
+  {
+    "label": "v1.1 · Local measurements",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/measurements.json"
+  },
+  {
+    "label": "v1.1 · Browser evidence",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/browser-checks.json"
+  },
+  {
+    "label": "v1.1 · Verification log",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/verification.log"
+  },
+  {
+    "label": "v1.1 · Python GIS tests",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/geographic_test.py"
+  },
+  {
+    "label": "v1.1 · Geographic types and schema",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/types/wifiGeographicPolicy.ts"
+  },
+  {
+    "label": "v1.1 · Geographic admission, integrity and exports",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicPolicy.ts"
+  },
+  {
+    "label": "v1.1 · Published scenario generation",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographicScenarios.ts"
+  },
+  {
+    "label": "v1.1 · Reproducibility verifier",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/verifyWifiGeographic.ts"
+  },
+  {
+    "label": "Official source catalogue A",
+    "url": "https://data.taipei/dataset/detail?id=6aa6532d-652f-4c1b-814a-4646b75407af"
+  },
+  {
+    "label": "Official source catalogue B",
+    "url": "https://data.taipei/dataset/detail?id=43772803-6504-469c-894d-35904342a53b"
+  },
+  {
+    "label": "Official source catalogue C",
+    "url": "https://data.taipei/dataset/detail?id=5ed70753-73a4-4fc1-b78c-df09f7499594"
+  },
+  {
+    "label": "Official source catalogue D",
+    "url": "https://data.taipei/dataset/detail?id=80be7612-593f-4795-9935-a10ce0f7b75b"
+  },
+  {
+    "label": "Official source catalogue E",
+    "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
+  },
+  {
+    "label": "v1.1 · Retained acquisition manifest",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/data/raw/wifi-policy/acquisition-manifest.json"
+  },
+  {
+    "label": "v1.0 · Recorded local measurements",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/policy-measurements.json"
+  }
+],
   "previewAssets": [
     {
       "label": "Upstream local research · English desktop",

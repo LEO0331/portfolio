@@ -15,7 +15,7 @@ export const shadeEquityCase: GovTechCase = {
   snapshotVersion: SHADE_EQUITY_SNAPSHOT_VERSION,
   title: "Shade Equity & Urban Heat Preparedness",
   summary: "From official street-tree and sidewalk records to reproducible GIS evidence review — without inventing measured shade or planting priorities.",
-  maturity: "decision-support-poc", maturityLabel: "Completed GIS evidence-readiness / inventory-review POC",
+  maturity: "decision-support-poc", maturityLabel: "Completed GIS evidence-readiness / inventory-review proof of concept",
   reviewNote: "Spatial inventory is validated within its documented scope; ranked review candidates remain unavailable pending source measurement verification.",
   intendedUsers: "Municipal public-data, GIS, pedestrian-infrastructure and urban-greening analysts reviewing source quality before planning field investigation.",
   implementedCapabilities: ["Official tree, sidewalk and tree-pit source integration", "EPSG:3826 geometry validation and indexed spatial associations", "Ambiguity, exclusion and source-completeness auditing", "Versioned snapshots and conditional evidence-review rules", "Capacity/tolerance evidence and aggregate JSON/CSV briefings"],
@@ -95,7 +95,7 @@ export const shadeEquityCase: GovTechCase = {
     { id: "evidence", title: "Recorded Upstream Engineering Verification", content: "evidence", paragraphs: [
       "Pinned source delivery records 471 passing tests across 31 files, TypeScript/Vite production build, 160 full E2E cases passed with one browser worker, 2 Shade offline tests, 4 unchanged Bin Policy offline checks and 2 Shade project-base tests. Source restoration, independent normalized snapshot reproduction and desktop/mobile review are recorded. No new dependencies were required. These are upstream recorded results, not Portfolio executions of the source suite.",
       "A prior two-worker browser run had 159 passes and Chromium ERR_NO_BUFFER_SPACE loading an unchanged error-boundary module. The final one-worker run passed by reducing host contention; this does not prove permanent removal of environmental flakiness. No standalone lint success or independently measured browser-latency result is claimed.",
-      "Merged source PR #19 is the current delivery record; the earlier handoff's inability to create a PR is historical. The following inspected upstream local verification screenshots show the real gated inventory/controls, not government operation or independently verified public deployment."
+      "The following inspected upstream local verification screenshots show the real gated inventory/controls, not government operation or independently verified public deployment."
     ], links: [
       { label: "Upstream local verification screenshot · desktop inventory", url: shadeEquitySource("docs/images/shade-equity-inventory-desktop.png") },
       { label: "Upstream local verification screenshot · mobile controls", url: shadeEquitySource("docs/images/shade-equity-controls-mobile.png") }
@@ -155,24 +155,99 @@ export const shadeEquityCase: GovTechCase = {
     ] }
   ],
   evidence: [
-    { label: "Merged Shade Equity implementation · PR #19", url: `${repo}/pull/19` },
-    { label: "Pinned merged source commit", url: `${repo}/commit/${SHADE_EQUITY_SOURCE_SHA}` },
-    ...[
-      ["Chinese MVP specification", "docs/shade-equity-decision-mvp.zh-Hant.md"], ["Official source audit", "docs/shade-equity-source-audit.md"],
-      ["Evidence-review methodology and gate", "docs/shade-equity-methodology.md"], ["Recorded delivery and verification", "docs/shade-equity-delivery.md"],
-      ["Historical PR handoff · superseded by merged PR #19", "docs/shade-equity-pr.md"], ["Spatial relationship engine", "src/lib/shadeEquitySpatial.ts"],
-      ["Eligibility, independent questions and tiers", "src/lib/shadeEquityDecision.ts"], ["Scenario and scope comparison", "src/lib/shadeEquityScenario.ts"],
-      ["Metadata and district loader", "src/lib/shadeEquityData.ts"], ["Aggregate JSON/CSV export", "src/lib/shadeEquityExport.ts"],
-      ["Decision and source types", "src/types/shadeEquity.ts"], ["Offline snapshot builder", "scripts/buildShadeEquitySnapshot.ts"],
-      ["GIS converter and spatial audit", "scripts/convertShadeEquitySources.ts"], ["Offline actual-snapshot analysis", "scripts/analyzeShadeEquitySnapshot.ts"],
-      ["Metadata snapshot", "public/data/shade-equity/snapshot.json"], ["Source identity and health", "public/data/shade-equity/source-health.json"],
-      ["Spatial quality report", "public/data/shade-equity/spatial-quality.json"], ["Conversion and admission report", "public/data/shade-equity/conversion-report.json"],
-      ["Real empty candidate output", "public/data/shade-equity/review-candidates.json"], ["Source-bound tolerance scenarios", "public/data/shade-equity/tolerance-sensitivity.json"],
-      ["Actual capacity example and normalized hashes", "reports/shade-equity/example-analysis.json"], ["Offline performance measurements", "reports/shade-equity/performance.json"],
-      ["React decision dashboard", "src/components/ShadeEquityDecisionDashboard.tsx"], ["Inventory map", "src/components/ShadeEquityMap.tsx"],
-      ["Source-health presentation", "src/components/ShadeEquitySourceHealth.tsx"]
-    ].map(([label, path]) => ({ label, url: shadeEquitySource(path) }))
-  ],
+  {
+    "label": "Chinese MVP specification",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/docs/shade-equity-decision-mvp.zh-Hant.md"
+  },
+  {
+    "label": "Official source audit",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/docs/shade-equity-source-audit.md"
+  },
+  {
+    "label": "Evidence-review methodology and gate",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/docs/shade-equity-methodology.md"
+  },
+  {
+    "label": "Spatial relationship engine",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/lib/shadeEquitySpatial.ts"
+  },
+  {
+    "label": "Eligibility, independent questions and tiers",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/lib/shadeEquityDecision.ts"
+  },
+  {
+    "label": "Scenario and scope comparison",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/lib/shadeEquityScenario.ts"
+  },
+  {
+    "label": "Metadata and district loader",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/lib/shadeEquityData.ts"
+  },
+  {
+    "label": "Aggregate JSON/CSV export",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/lib/shadeEquityExport.ts"
+  },
+  {
+    "label": "Decision and source types",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/types/shadeEquity.ts"
+  },
+  {
+    "label": "Offline snapshot builder",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/scripts/buildShadeEquitySnapshot.ts"
+  },
+  {
+    "label": "GIS converter and spatial audit",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/scripts/convertShadeEquitySources.ts"
+  },
+  {
+    "label": "Offline actual-snapshot analysis",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/scripts/analyzeShadeEquitySnapshot.ts"
+  },
+  {
+    "label": "Metadata snapshot",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/snapshot.json"
+  },
+  {
+    "label": "Source identity and health",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/source-health.json"
+  },
+  {
+    "label": "Spatial quality report",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/spatial-quality.json"
+  },
+  {
+    "label": "Conversion and admission report",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/conversion-report.json"
+  },
+  {
+    "label": "Real empty candidate output",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/review-candidates.json"
+  },
+  {
+    "label": "Source-bound tolerance scenarios",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/public/data/shade-equity/tolerance-sensitivity.json"
+  },
+  {
+    "label": "Actual capacity example and normalized hashes",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/reports/shade-equity/example-analysis.json"
+  },
+  {
+    "label": "Offline performance measurements",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/reports/shade-equity/performance.json"
+  },
+  {
+    "label": "React decision dashboard",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/components/ShadeEquityDecisionDashboard.tsx"
+  },
+  {
+    "label": "Inventory map",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/components/ShadeEquityMap.tsx"
+  },
+  {
+    "label": "Source-health presentation",
+    "url": "https://github.com/LEO0331/taipei-bin-map/blob/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9/src/components/ShadeEquitySourceHealth.tsx"
+  }
+],
   previewAssets: [
     { label: "Upstream local verification screenshot · desktop inventory", url: shadeEquitySource("docs/images/shade-equity-inventory-desktop.png") },
     { label: "Upstream local verification screenshot · mobile controls", url: shadeEquitySource("docs/images/shade-equity-controls-mobile.png") }

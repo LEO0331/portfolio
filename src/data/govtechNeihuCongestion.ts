@@ -14,7 +14,7 @@ export const neihuCongestionCase: GovTechCase = {
   snapshotVersion: NEIHU_CONGESTION_SNAPSHOT_VERSION,
   title: "Neihu Traffic Congestion & Observation Readiness",
   summary: "From official traffic detector records to explainable data-quality review — without inventing historical congestion measurements.",
-  maturity: "decision-support-poc", maturityLabel: "Completed traffic observation evidence-readiness and quality-review POC",
+  maturity: "decision-support-poc", maturityLabel: "Completed traffic observation evidence-readiness and quality-review proof of concept",
   reviewNote: "Equipment and source-quality review is implemented; historical congestion comparison remains unavailable pending valid, comparable traffic observations.",
   intendedUsers: "Transport data analysts and traffic-engineering research teams investigating detector, directional-link and historical-source evidence.",
   implementedCapabilities: ["Official VD source auditing and equipment inventory", "Detector/link/direction identity and historical eligibility checks", "Independent observation-quality review tiers", "Deterministic capacity and evidence-scope comparison", "Lazy bilingual dashboard and reproducible JSON/CSV briefings"],
@@ -101,7 +101,7 @@ export const neihuCongestionCase: GovTechCase = {
     { id: "evidence", title: "Recorded Upstream Verification", content: "evidence", paragraphs: [
       "Source delivery records npm ci, 66 Vitest tests across four files, TypeScript/Vite and GitHub Pages builds, five congestion integration checks, source audit, identical snapshot rebuilds, JSON/CSV inspection, lazy loading and desktop/mobile browser review. No additional dependencies were introduced. These are upstream recorded executions, not this Portfolio task independently rerunning its suite or accepting real congestion estimates.",
       "The upstream release records eight existing dependency advisories: three moderate and five high. They are distinct from logic-test failures and from Portfolio's own audit results. Final browser review did not repeat a full physical-device PWA lifecycle or independent production acceptance.",
-      "Source PR #7 is merged; earlier pending wording in upstream documentation is historical. Both inspected screenshots are Chinese local production-preview verification captures, not government operations or English mobile evidence."
+      "Both inspected screenshots are Chinese local production-preview verification captures, not government operations or English mobile evidence."
     ], links: [
       { label: "Local production-preview verification · Chinese desktop", url: neihuCongestionSource("docs/images/neihu-congestion-desktop.jpg") },
       { label: "Local production-preview verification · Chinese mobile", url: neihuCongestionSource("docs/images/neihu-congestion-mobile.jpg") }
@@ -145,7 +145,7 @@ export const neihuCongestionCase: GovTechCase = {
       { id: "ready", cells: { tier: "Ready", candidates: "0", meaning: "No fully ready device in this edition" } }
     ] },
     { caption: "Recorded quality shortlist · same editions, population and objective", columns: [{ key: "rank", label: "Rank" }, { key: "device", label: "VD device" }, { key: "road", label: "Candidate road" }, { key: "tier", label: "Quality tier" }, { key: "c5", label: "Capacity 5" }, { key: "c10", label: "Capacity 10" }], rows: [
-      ["VQ6WK40", "成功路"], ["VQKWL40", "成功路"], ["VRHT660", "港墘路"], ["VSKTL00", "港墘路"], ["V6140C0", "環東大道"], ["V6151C0", "環東大道"], ["V6171C0", "環東大道"], ["VPBTD70", "舊宗路"], ["VQRTE00", "舊宗路"], ["VNUNJ20", "民權東路"]
+      ["VQ6WK40", "Chenggong Road (成功路)"], ["VQKWL40", "Chenggong Road (成功路)"], ["VRHT660", "Gangqian Road (港墘路)"], ["VSKTL00", "Gangqian Road (港墘路)"], ["V6140C0", "Huandong Boulevard (環東大道)"], ["V6151C0", "Huandong Boulevard (環東大道)"], ["V6171C0", "Huandong Boulevard (環東大道)"], ["VPBTD70", "Jiuzong Road (舊宗路)"], ["VQRTE00", "Jiuzong Road (舊宗路)"], ["VNUNJ20", "Minquan East Road (民權東路)"]
     ].map(([device, road], index) => ({ id: device, cells: { rank: String(index + 1), device, road, tier: "Urgent", c5: index < 5 ? "Yes" : "No", c10: "Yes" } })) },
     { caption: "Same-scope quality capacity comparison · only capacity changes", columns: [{ key: "capacity", label: "Capacity" }, { key: "eligible", label: "Quality eligible" }, { key: "selected", label: "Selected reviews" }, { key: "roads", label: "Candidate roads" }, { key: "excluded", label: "Unselected by capacity" }, { key: "performance", label: "Performance eligible" }], rows: [
       { id: "capacity-5", cells: { capacity: "5", eligible: "58", selected: "5", roads: "3", excluded: "53", performance: "0" } },
@@ -167,21 +167,75 @@ export const neihuCongestionCase: GovTechCase = {
     ] }
   ],
   evidence: [
-    { label: "Merged Policy #4 implementation · PR #7", url: `${repo}/pull/7` },
-    { label: "Pinned source merge commit", url: `${repo}/commit/${NEIHU_CONGESTION_SOURCE_SHA}` },
-    ...[
-      ["Chinese decision-support MVP", "docs/neihu-congestion-decision-mvp.zh-TW.md"], ["Methodology and separate objectives", "docs/neihu-congestion-methodology.md"],
-      ["Official source audit", "docs/neihu-congestion-source-audit.md"], ["Recorded delivery, scenarios and verification", "docs/neihu-congestion-delivery.md"],
-      ["Implementation plan", "docs/neihu-congestion-implementation-plan.md"], ["Static readiness snapshot", "public/data/neihu-congestion/snapshot.json"],
-      ["Pure traffic decision engine", "src/utils/trafficCongestion.ts"], ["Scenario and briefing functions", "src/utils/trafficCongestionScenarios.ts"],
-      ["Decision and temporal contracts", "src/types/trafficCongestion.ts"], ["Source validation tests", "tests/trafficCongestionSources.test.ts"],
-      ["Decision and synthetic temporal tests", "tests/trafficCongestion.test.ts"], ["Integration tests", "tests/trafficCongestionIntegration.test.ts"],
-      ["Bounded source acquisition", "scripts/fetchNeihuTrafficSources.ts"], ["Source audit script", "scripts/auditNeihuTrafficSources.ts"],
-      ["Scoped source conversion", "scripts/convertNeihuTrafficSources.ts"], ["Deterministic snapshot builder", "scripts/buildNeihuTrafficSnapshot.ts"],
-      ["Lazy traffic dashboard", "src/components/NeihuCongestionDashboard.tsx"], ["Detector point map", "src/components/TrafficCorridorMap.tsx"],
-      ["Cached snapshot loader", "src/hooks/useTrafficCongestionData.ts"]
-    ].map(([label, path]) => ({ label, url: neihuCongestionSource(path) }))
-  ],
+  {
+    "label": "Chinese decision-support MVP",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/docs/neihu-congestion-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "Methodology and separate objectives",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/docs/neihu-congestion-methodology.md"
+  },
+  {
+    "label": "Official source audit",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/docs/neihu-congestion-source-audit.md"
+  },
+  {
+    "label": "Static readiness snapshot",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/public/data/neihu-congestion/snapshot.json"
+  },
+  {
+    "label": "Pure traffic decision engine",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/utils/trafficCongestion.ts"
+  },
+  {
+    "label": "Scenario and briefing functions",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/utils/trafficCongestionScenarios.ts"
+  },
+  {
+    "label": "Decision and temporal contracts",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/types/trafficCongestion.ts"
+  },
+  {
+    "label": "Source validation tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestionSources.test.ts"
+  },
+  {
+    "label": "Decision and synthetic temporal tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestion.test.ts"
+  },
+  {
+    "label": "Integration tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestionIntegration.test.ts"
+  },
+  {
+    "label": "Bounded source acquisition",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/scripts/fetchNeihuTrafficSources.ts"
+  },
+  {
+    "label": "Source audit script",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/scripts/auditNeihuTrafficSources.ts"
+  },
+  {
+    "label": "Scoped source conversion",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/scripts/convertNeihuTrafficSources.ts"
+  },
+  {
+    "label": "Deterministic snapshot builder",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/scripts/buildNeihuTrafficSnapshot.ts"
+  },
+  {
+    "label": "Lazy traffic dashboard",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/components/NeihuCongestionDashboard.tsx"
+  },
+  {
+    "label": "Detector point map",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/components/TrafficCorridorMap.tsx"
+  },
+  {
+    "label": "Cached snapshot loader",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/src/hooks/useTrafficCongestionData.ts"
+  }
+],
   previewAssets: [
     { label: "Local production-preview verification · Chinese desktop", url: neihuCongestionSource("docs/images/neihu-congestion-desktop.jpg") },
     { label: "Local production-preview verification · Chinese mobile", url: neihuCongestionSource("docs/images/neihu-congestion-mobile.jpg") }

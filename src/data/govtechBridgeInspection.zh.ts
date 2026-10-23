@@ -12,7 +12,7 @@ export const bridgeInspectionCaseZh: GovTechCase = {
   "title": "臺北市橋梁檢測與維護決策支援",
   "summary": "從官方橋梁紀錄到保守資產對帳、受限地理准入與可重現文件查核情境。",
   "maturity": "decision-support-poc",
-  "maturityLabel": "已完成證據查核及受限地理研究 POC",
+  "maturityLabel": "已完成證據查核及受限地理研究概念驗證",
   "reviewNote": "216 筆本版研究對應，194 筆通過地理准入；沒有官方 A↔B 對照，模式 C 結構評估仍不可用。",
   "intendedUsers": "基礎設施資料管理者、工務分析人員、資產管理者、檢測文件團隊與公民工程研究者。",
   "implementedCapabilities": [
@@ -28,15 +28,15 @@ export const bridgeInspectionCaseZh: GovTechCase = {
       "title": "政策問題與決策範圍",
       "paragraphs": [
         "當市政調查量能有限，應先查核哪些公開橋梁檢測與維護紀錄的身分衝突、文件缺漏或來源差異？可搜尋表格本身不能解決紀錄的語意、身分與證據資格。",
-        "本 POC 為基礎設施資料管理者、工務分析人員、資產清冊管理者、檢測文件團隊與公民工程研究者分配行政查核名額。發布紀錄、清冊列、研究對應、地理准入與查核優先序是不同證據單位；結構安全評估需要另一組工程證據。"
+        "本概念驗證為基礎設施資料管理者、工務分析人員、資產清冊管理者、檢測文件團隊與公民工程研究者分配行政查核名額。發布紀錄、清冊列、研究對應、地理准入與查核優先序是不同證據單位；結構安全評估需要另一組工程證據。"
       ]
     },
     {
       "id": "evolution",
-      "title": "從公共安全探索工具演進至 Policy #9",
+      "title": "從公共安全探索工具演進至 案例 009",
       "paragraphs": [
         "既有雙語 taipei-safety-map 整理緊急應變／資源、基礎設施與歷史公共安全資料，不產生綜合安全分數。獨立橋梁透明目錄含 416 筆發布列、415 個來源內分組，原本沒有已驗證的檢測紀錄地理連結。",
-        "Policy #9 新增雙來源擷取、原始位元組治理、保守資產對帳、地理篩查、確定性證據分級、5／10／全部情境及可稽核匯出。歷史探索工具與資料版本維持分開。PR #6 已於固定來源 commit 合併；交付文件中「PR 建立受阻」的合併前文字屬歷史。"
+        "案例 009 新增雙來源擷取、原始位元組治理、保守資產對帳、地理篩查、確定性證據分級、5／10／全部情境及可稽核匯出。歷史探索工具與資料版本維持分開。"
       ]
     },
     {
@@ -169,9 +169,9 @@ export const bridgeInspectionCaseZh: GovTechCase = {
       "id": "verification",
       "title": "驗證、效能與可重現性",
       "paragraphs": [
-        "Portfolio 後續實際執行固定版本的完整上游原始測試：7檔／88項通過、TypeScript production build通過；原始發布驗證器重建兩次，Snapshot與current pointer位元組完全一致，A／B接受版原始位元組亦重新核對。這是本機不可變快照／原子指標發布，未遠端發布或更換政策版本。測試涵蓋來源與原子失敗、識別衝突、年度語意、地理閘門、情境與CSV安全；上游既有約891kB主bundle警告仍保留。",
+        "本作品集後續實際執行固定版本的完整上游原始測試：7檔／88項通過、TypeScript 正式版本建置通過；原始發布驗證器重建兩次，快照與目前版本指標的位元組完全一致，A／B接受版原始位元組亦重新核對。這是本機不可變快照／原子指標發布，未遠端發布或更換政策版本。測試涵蓋來源與原子失敗、識別衝突、年度語意、地理閘門、情境與CSV安全；上游既有約891kB主要程式包的大小警告仍保留。",
         "記錄快照為1912829位元組／gzip142453；延遲政策儀表板約34kB壓縮前／gzip11.9kB。100次本機 Node 均衡情境平均約0.202ms，全選 JSON245553位元組、CSV107549。這些是上游量測，不是作品集重新量測或公網延遲保證。初始本機預覽零政策請求，首次進入四個，保留歷史目錄與篩選狀態。",
-        "獨立重播保留實際命令、日誌、重建結果與可攜驗證器。原始程式產生的效能報告另行保存後，還原該報告使上游checkout保持乾淨，未修改政策輸入或原始程式。原桌機／手機瀏覽器及網路觀察仍屬上游紀錄；Portfolio另驗證依賴稽核、路由、響應主題與官方多邊形補充統計，未宣稱重跑上游瀏覽器或遠端部署。"
+        "獨立重播保留實際命令、日誌、重建結果與可攜驗證器。原始程式產生的效能報告另行保存後，還原該報告使上游工作目錄沒有留下修改，未修改政策輸入或原始程式。原桌機／手機瀏覽器及網路觀察仍屬上游紀錄；本作品集另行驗證依賴稽核、路由、響應主題與官方多邊形補充統計，未宣稱重跑上游瀏覽器或遠端部署。"
       ],
       "content": "evidence",
       "links": [
@@ -198,7 +198,7 @@ export const bridgeInspectionCaseZh: GovTechCase = {
       "title": "後續證據與負責任使用",
       "paragraphs": [
         "擴大推論前先取得官方 A↔B 對照、識別碼範圍、完整事件日、工程術語與報告語意。測量幾何、官方 CRS／界線契約可支援更精確地理研究；完全名稱規則可能漏掉真實關係，但保留追溯而不虛構涵蓋。",
-        "此獨立 POC 展示擷取治理、保守連結、靜態完整性、確定性行政查核及明確證據閘門；未建立政府合作或已採用檢測／維護決策。新來源版本須經審查准入及方法版本管理，保留不變與負面結果以供重現。"
+        "此獨立概念驗證展示擷取治理、保守連結、靜態完整性、確定性行政查核及明確證據閘門；未建立政府合作或已採用檢測／維護決策。新來源版本須經審查准入及方法版本管理，保留不變與負面結果以供重現。"
       ],
       "content": "future"
     }
@@ -903,42 +903,42 @@ export const bridgeInspectionCaseZh: GovTechCase = {
         {
           "id": "0",
           "cells": {
-            "identity": "Git merge",
+            "identity": "來源版本",
             "value": "deb812b3472c078b5879727953e85d2850f0a82c"
           }
         },
         {
           "id": "1",
           "cells": {
-            "identity": "Method",
+            "identity": "分析方法",
             "value": "bridge-inspection-evidence-review-v1"
           }
         },
         {
           "id": "2",
           "cells": {
-            "identity": "Analysis date",
+            "identity": "分析日期",
             "value": "2026-10-23"
           }
         },
         {
           "id": "3",
           "cells": {
-            "identity": "Snapshot ID",
+            "identity": "快照識別碼",
             "value": "bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a"
           }
         },
         {
           "id": "4",
           "cells": {
-            "identity": "Snapshot exact-file SHA-256",
+            "identity": "快照檔案 SHA-256",
             "value": "a580fb3356a84fc86fe4c4f4a811f115f490769ff15700bec5b69f88008b7782"
           }
         },
         {
           "id": "5",
           "cells": {
-            "identity": "Historical LF SHA-256",
+            "identity": "歷史 LF 檔案 SHA-256",
             "value": "ee4afe5592522651403d2d6173f59620884857b1d5129b83498b4eab0e3701fc"
           }
         }
@@ -1320,135 +1320,127 @@ export const bridgeInspectionCaseZh: GovTechCase = {
     }
   ],
   "evidence": [
-    {
-      "label": "已合併 Policy #9 PR #6",
-      "url": "https://github.com/LEO0331/taipei-safety-map/pull/6"
-    },
-    {
-      "label": "官方資料目錄 A",
-      "url": "https://data.taipei/dataset/detail?id=27135efa-d43e-406d-a3e4-fcb07efb3982"
-    },
-    {
-      "label": "官方資料目錄 B",
-      "url": "https://data.taipei/dataset/detail?id=866a9982-0a63-421f-b120-9144fc6ce732"
-    },
-    {
-      "label": "來源稽核",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-source-audit.md"
-    },
-    {
-      "label": "身分契約",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-identity-contract.md"
-    },
-    {
-      "label": "地理契約",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-geographic-evidence.md"
-    },
-    {
-      "label": "方法",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-methodology.md"
-    },
-    {
-      "label": "中文決策規格",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-decision-mvp.zh-TW.md"
-    },
-    {
-      "label": "交付與記錄檢查",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-delivery.md"
-    },
-    {
-      "label": "實際結果與完整排序 ID",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-results.json"
-    },
-    {
-      "label": "接受來源清單",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/data/raw/bridge-policy/sources.json"
-    },
-    {
-      "label": "快照指標",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/current.json"
-    },
-    {
-      "label": "不可變快照",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a.json"
-    },
-    {
-      "label": "來源解析與准入",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.ts"
-    },
-    {
-      "label": "有限分階段擷取",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/fetchBridgePolicySources.ts"
-    },
-    {
-      "label": "來源完整性稽核",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/auditBridgePolicySources.ts"
-    },
-    {
-      "label": "快照發布",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/buildBridgePolicySnapshot.ts"
-    },
-    {
-      "label": "確定性驗證與量測",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/verifyBridgePolicy.ts"
-    },
-    {
-      "label": "來源型別契約",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/types/bridgePolicy.ts"
-    },
-    {
-      "label": "身分實作",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.ts"
-    },
-    {
-      "label": "地理篩查",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.ts"
-    },
-    {
-      "label": "分級與時間規則",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicy.ts"
-    },
-    {
-      "label": "情境與匯出防護",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.ts"
-    },
-    {
-      "label": "瀏覽器完整性載入",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/loadBridgePolicy.ts"
-    },
-    {
-      "label": "雙語儀表板",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyDashboard.tsx"
-    },
-    {
-      "label": "受限研究地圖",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyMap.tsx"
-    },
-    {
-      "label": "來源測試",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.test.ts"
-    },
-    {
-      "label": "身分測試",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.test.ts"
-    },
-    {
-      "label": "地理測試",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.test.ts"
-    },
-    {
-      "label": "情境測試",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.test.ts"
-    },
-    {
-      "label": "瀏覽器網路證據",
-      "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
-    },
-    {
-      "label": "民政局官方區界版本",
-      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
-    }
-  ],
+  {
+    "label": "官方資料目錄 A",
+    "url": "https://data.taipei/dataset/detail?id=27135efa-d43e-406d-a3e4-fcb07efb3982"
+  },
+  {
+    "label": "官方資料目錄 B",
+    "url": "https://data.taipei/dataset/detail?id=866a9982-0a63-421f-b120-9144fc6ce732"
+  },
+  {
+    "label": "來源稽核",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-source-audit.md"
+  },
+  {
+    "label": "身分契約",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-identity-contract.md"
+  },
+  {
+    "label": "地理契約",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-geographic-evidence.md"
+  },
+  {
+    "label": "方法",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-methodology.md"
+  },
+  {
+    "label": "中文決策規格",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "實際結果與完整排序 ID",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-results.json"
+  },
+  {
+    "label": "接受來源清單",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/data/raw/bridge-policy/sources.json"
+  },
+  {
+    "label": "快照指標",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/current.json"
+  },
+  {
+    "label": "不可變快照",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/public/data/bridge-policy/bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a.json"
+  },
+  {
+    "label": "來源解析與准入",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.ts"
+  },
+  {
+    "label": "有限分階段擷取",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/fetchBridgePolicySources.ts"
+  },
+  {
+    "label": "來源完整性稽核",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/auditBridgePolicySources.ts"
+  },
+  {
+    "label": "快照發布",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/buildBridgePolicySnapshot.ts"
+  },
+  {
+    "label": "確定性驗證與量測",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/verifyBridgePolicy.ts"
+  },
+  {
+    "label": "來源型別契約",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/types/bridgePolicy.ts"
+  },
+  {
+    "label": "身分實作",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.ts"
+  },
+  {
+    "label": "地理篩查",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.ts"
+  },
+  {
+    "label": "分級與時間規則",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicy.ts"
+  },
+  {
+    "label": "情境與匯出防護",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.ts"
+  },
+  {
+    "label": "瀏覽器完整性載入",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/loadBridgePolicy.ts"
+  },
+  {
+    "label": "雙語儀表板",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyDashboard.tsx"
+  },
+  {
+    "label": "受限研究地圖",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/BridgePolicyMap.tsx"
+  },
+  {
+    "label": "來源測試",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/scripts/bridgePolicySources.test.ts"
+  },
+  {
+    "label": "身分測試",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyIdentity.test.ts"
+  },
+  {
+    "label": "地理測試",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyGeography.test.ts"
+  },
+  {
+    "label": "情境測試",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/src/lib/bridgePolicyScenarios.test.ts"
+  },
+  {
+    "label": "瀏覽器網路證據",
+    "url": "https://github.com/LEO0331/taipei-safety-map/blob/deb812b3472c078b5879727953e85d2850f0a82c/docs/bridge-policy-browser-network.json"
+  },
+  {
+    "label": "民政局官方區界版本",
+    "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
+  }
+],
   "previewAssets": [
     {
       "label": "上游本機預覽：桌面證據查核控制",

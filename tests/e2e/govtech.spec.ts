@@ -66,15 +66,15 @@ test.describe("GovTech showcase", () => {
     }
   });
 
-  test("case study exposes merged milestones, reproducible source evidence, and responsible-use limitations", async ({ page }) => {
+  test("case study exposes technical milestones, reproducible source evidence, and responsible-use limitations", async ({ page }) => {
     await page.goto("./govtech/bin-policy");
     const main = page.getByRole("main");
-    for (const pr of [11, 14, 15]) {
-      const links = main.locator(`a[href="https://github.com/LEO0331/taipei-bin-map/pull/${pr}"]`);
-      await expect(links.first()).toBeVisible();
-      expect(await links.count()).toBeGreaterThan(0);
-      await expect(links.first()).toHaveAttribute("rel", /noopener/);
+    for (const file of ["docs/bin-policy-methodology.md", "docs/bin-policy-data-governance.zh-Hant.md", "docs/bin-policy-v1.2-methodology.zh-Hant.md"]) {
+      const link = main.locator(`a[href="https://github.com/LEO0331/taipei-bin-map/blob/1280011b086f498404abf138c29f64041963e14c/${file}"]`).first();
+      await expect(link).toBeVisible();
+      await expect(link).toHaveAttribute("rel", /noopener/);
     }
+    await expect(main.locator('a[href*="/pull/"]')).toHaveCount(0);
     expect(await main.locator('a[href*="/taipei-bin-map/blob/"][href*="docs/"]').count()).toBeGreaterThan(0);
     await expect(main).toContainText("greedy-equal-reference-coverage-v1");
     await expect(main).toContainText("policy-balanced-coverage-v1");
@@ -107,9 +107,9 @@ test.describe("GovTech showcase", () => {
       await page.goto(`./${entry.path}`);
       await expect(page.getByRole("heading", { name: entry.title, level: 1 })).toBeVisible();
       for (const dark of [false, true]) {
-        if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+        if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-        if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+        if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
       }
     }
   });

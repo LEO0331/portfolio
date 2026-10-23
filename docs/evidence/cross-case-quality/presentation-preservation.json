@@ -1,0 +1,79 @@
+{
+  "reviewedAt": "2026-10-23T18:15:56.630Z",
+  "baseline": "299cfe8144e03a560b12b7428884478c2710f03f",
+  "integratedMain": "024ca3e931a2d377fd096b2bec4d2a5ebc32040d",
+  "baselineAndIntegratedMainApplicationIdentical": true,
+  "locales": 2,
+  "cases": 18,
+  "authoredPresentationEdits": 180,
+  "before": {
+    "findings": 87,
+    "prDestinationOccurrences": 26
+  },
+  "after": {
+    "findings": 0,
+    "prDestinations": 0
+  },
+  "inverseComparison": "All18 complete records match the pre-edit baseline; no field omitted",
+  "inputSha256": "dec7f4334e84da9f72239ce8b894a1cf17d50ae6d1591f13b2be8019f00a03be",
+  "languageExceptions": [
+    "Exact source/method/candidate IDs, filenames,coordinate systems and original source field quotations remain traceable",
+    "English road labels retain the official Chinese source name in parentheses; source IDs and road membership are unchanged"
+  ],
+  "checks": [
+    {
+      "case": "001",
+      "id": "bin-policy",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "002",
+      "id": "civic-1999",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "003",
+      "id": "heavy-rain-preparedness",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "004",
+      "id": "urban-renewal",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "005",
+      "id": "shade-equity",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "006",
+      "id": "neihu-congestion",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "007",
+      "id": "bus-service",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "008",
+      "id": "wifi-allocation",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    },
+    {
+      "case": "009",
+      "id": "bridge-inspection",
+      "sourceVersionUnchanged": true,
+      "recordRestored": true
+    }
+  ]
+}

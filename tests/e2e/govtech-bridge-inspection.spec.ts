@@ -1,3 +1,4 @@
+import { openTechnicalEvidence, restorePresentation } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { createHash } from "node:crypto";
 import { govtechCases } from "../../src/data/govtechCases";
@@ -16,7 +17,7 @@ for (const locale of ["en", "zh"] as const) {
   test(`Bridge009 ${locale} preserves all eight cases and exact official statistical units`, () => {
     expect(records[locale]).toHaveLength(9);
     expect(records[locale].filter(({ id }) => id === "bridge-inspection")).toHaveLength(1);
-    expect(records[locale].slice(0, 8).map(record => ({ id: record.id, sha256: createHash("sha256").update(JSON.stringify(record)).digest("hex") }))).toEqual(prior[locale]);
+    expect(records[locale].slice(0, 8).map(record => ({ id: record.id, sha256: createHash("sha256").update(JSON.stringify(restorePresentation(record, locale))).digest("hex") }))).toEqual(prior[locale]);
     expect(study).toMatchObject({ displayNumber: "009", projectId: "taipei-safety-map", sourceVersion: sha, snapshotVersion: fixture.snapshot.snapshotId, maturity: "decision-support-poc", methodology: { kind: "rule-based-priority", methodId: "bridge-inspection-evidence-review-v1" } });
     expect(study.sections).toHaveLength(20);
     const tables = study.scenarioTables;
@@ -77,7 +78,11 @@ for (const locale of ["en", "zh"] as const) {
   });
   test(`Bridge009 ${locale} renders actual tables, responsible limits and all pinned provenance`,async({page})=>{
     await page.goto(`./${prefix}govtech/bridge-inspection`);
-    for(const table of study.scenarioTables)await expect(page.getByRole('table',{name:table.caption,exact:true})).toBeVisible();
+    await openTechnicalEvidence(page);
+    for(const table of study.scenarioTables) {
+      const rendered = page.getByRole("table",{name:table.caption,exact:true});
+      await expect(rendered).toBeVisible();
+    }
     for(const id of ['lineage','identity','geography','time','mode-c'])await expect(page.locator(`#${id}`)).toContainText(study.sections.find(s=>s.id===id)!.paragraphs[0]);
     for(const path of ['docs/bridge-policy-results.json','docs/bridge-policy-identity-contract.md','src/lib/bridgePolicyScenarios.ts'])await expect(page.locator(`a[href="${repo}/blob/${sha}/${path}"]`).first()).toHaveAttribute('rel',/noopener/);
     for(const source of fixture.sources)await expect(page.locator(`a[href="${source.catalogueUrl}"]`)).toBeVisible();
@@ -104,7 +109,7 @@ test('Bridge009 five widths, real light/dark controls and keyboard-scrollable ta
     await page.setViewportSize({width,height:900});await page.goto(`./${locale==='zh'?'zh/':''}govtech/bridge-inspection`);await expect(page.locator('h1')).toBeVisible();
     for(const theme of ['dark','light']){
       const isDark=await page.locator('html').evaluate(el=>el.classList.contains('dark'));
-      if(isDark!==(theme==='dark'))await page.getByRole('button',{name:isDark?'Light':'Dark',exact:true}).filter({visible:true}).click();
+      if(isDark!==(theme==='dark'))await page.locator("button[data-theme-toggle]").filter({visible:true}).click();
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     }
     const study=records[locale].find(s=>s.id==='bridge-inspection')!;const region=page.getByRole('region',{name:study.scenarioTables[11].caption,exact:true});await region.focus();await expect(region).toBeFocused();

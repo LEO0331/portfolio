@@ -11,8 +11,8 @@ export const civic1999Case: GovTechCase = {
   snapshotVersion: CIVIC_SNAPSHOT_VERSION,
   title: "Taipei 1999 Citizen Service Decision Support",
   summary: "From historical service requests to explainable municipal investigation priorities.",
-  maturity: "decision-support-poc", maturityLabel: "Completed decision-support POC",
-  reviewNote: "Frozen historical scenario from the merged source release, reviewed 16 October 2026. This page does not fetch or recalculate civic data.",
+  maturity: "decision-support-poc", maturityLabel: "Completed decision-support proof of concept",
+  reviewNote: "Frozen historical scenario from the source release, reviewed 16 October 2026. This page does not fetch or recalculate civic data.",
   intendedUsers: "Municipal analysts and environmental service teams reviewing historical district/topic patterns under limited investigation capacity.",
   implementedCapabilities: ["Verified historical dispatch trends and source completeness", "Explainable A/B/C investigation priorities", "Capacity scenarios and threshold sensitivity", "Privacy-preserving aggregates and JSON/CSV briefings"],
   sections: [
@@ -27,9 +27,9 @@ export const civic1999Case: GovTechCase = {
       id: "evolution", title: "Existing System to Decision-Support POC",
       paragraphs: [
         "The original explorer provides historical 1999 dispatch records, district summaries, aggregated hotspots, time/category filters and a bilingual interface. Sanitized public records, year-partitioned loading and static deployment support browsing.",
-        "The merged decision-support v1.0 adds completeness auditing, verified comparable periods, privacy-safe monthly aggregates, versioned classification, explainable priority rules, investigation capacity scenarios, threshold sensitivity and JSON/CSV manager briefings."
+        "The decision-support v1.0 adds completeness auditing, verified comparable periods, privacy-safe monthly aggregates, versioned classification, explainable priority rules, investigation capacity scenarios, threshold sensitivity and JSON/CSV manager briefings."
       ],
-      links: [{ label: "Merged civic decision-support implementation · PR #8", url: `${repo}/pull/8` }]
+      links: [{ label: "Civic investigation-priority methodology and assumptions", url: "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md" }]
     },
     {
       id: "architecture", title: "System Architecture", content: "architecture",
@@ -66,7 +66,7 @@ export const civic1999Case: GovTechCase = {
         "The less restrictive ordering is Songshan, Wenshan, Xinyi, Nangang and Shilin, all A: Shilin enters, Zhongshan leaves and Xinyi moves from B to A. Tiers precede increase in ranking, so threshold changes affect ordering. No scenario is asserted objectively better.",
         "Represented records are recent recorded dispatch activity in selected disjoint district/topic groups, not people served, cases resolved, confirmed pollution incidents or intervention effects. Capacity-10 and inclusion changes are documented upstream; comparative totals were also checked against the pinned aggregate. The 1,200 sensitivity total is checked aggregate arithmetic, not a separately asserted source snapshot regression result."
       ],
-      links: [{ label: "Pinned delivery scenario and comparison evidence", url: civicSource("docs/civic-decision-delivery.md") }, { label: "Real-snapshot default-scenario regression", url: civicSource("tests/civicSnapshot.test.ts") }]
+      links: [{ label: "Versioned aggregate snapshot", url: "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/public/data/civic-decision/snapshot.json" }, { label: "Real-snapshot default-scenario regression", url: civicSource("tests/civicSnapshot.test.ts") }]
     },
     {
       id: "protection", title: "Data Protection and Responsible Use",
@@ -143,11 +143,11 @@ export const civic1999Case: GovTechCase = {
       caption: "Documented default shortlist · July–September versus April–June 2026 · pollution dispatches",
       columns: [{ key: "rank", label: "Rank" }, { key: "district", label: "District" }, { key: "tier", label: "Tier" }, { key: "recent", label: "Recent" }, { key: "previous", label: "Previous" }, { key: "increase", label: "Increase" }, { key: "growth", label: "Growth" }],
       rows: [
-        { id: "songshan", cells: { rank: "1", district: "Songshan · 松山區", tier: "A", recent: "289", previous: "201", increase: "+88", growth: "43.8%" } },
-        { id: "wenshan", cells: { rank: "2", district: "Wenshan · 文山區", tier: "A", recent: "217", previous: "144", increase: "+73", growth: "50.7%" } },
-        { id: "nangang", cells: { rank: "3", district: "Nangang · 南港區", tier: "A", recent: "167", previous: "126", increase: "+41", growth: "32.5%" } },
-        { id: "xinyi", cells: { rank: "4", district: "Xinyi · 信義區", tier: "B", recent: "287", previous: "231", increase: "+56", growth: "24.2%" } },
-        { id: "zhongshan", cells: { rank: "5", district: "Zhongshan · 中山區", tier: "B", recent: "374", previous: "333", increase: "+41", growth: "12.3%" } }
+        { id: "songshan", cells: { rank: "1", district: "Songshan", tier: "A", recent: "289", previous: "201", increase: "+88", growth: "43.8%" } },
+        { id: "wenshan", cells: { rank: "2", district: "Wenshan", tier: "A", recent: "217", previous: "144", increase: "+73", growth: "50.7%" } },
+        { id: "nangang", cells: { rank: "3", district: "Nangang", tier: "A", recent: "167", previous: "126", increase: "+41", growth: "32.5%" } },
+        { id: "xinyi", cells: { rank: "4", district: "Xinyi", tier: "B", recent: "287", previous: "231", increase: "+56", growth: "24.2%" } },
+        { id: "zhongshan", cells: { rank: "5", district: "Zhongshan", tier: "B", recent: "374", previous: "333", increase: "+41", growth: "12.3%" } }
       ]
     },
     {
@@ -169,20 +169,47 @@ export const civic1999Case: GovTechCase = {
     }
   ],
   evidence: [
-    { label: "Merged decision-support implementation · PR #8", url: `${repo}/pull/8` },
-    { label: "Pinned merged source commit", url: `${repo}/commit/${CIVIC_SOURCE_SHA}` },
-    { label: "Source completeness and provenance audit", url: civicSource("docs/civic-source-audit.md") },
-    { label: "Investigation-priority methodology", url: civicSource("docs/civic-decision-methodology.md") },
-    { label: "Delivery evidence and reproducible scenario", url: civicSource("docs/civic-decision-delivery.md") },
-    { label: "Decision-support scope and responsible-use boundaries", url: civicSource("docs/civic-decision-mvp.zh-Hant.md") },
-    { label: "Pure TypeScript decision engine", url: civicSource("src/lib/civicDecision.ts") },
-    { label: "Versioned exact-item category mapping", url: civicSource("src/lib/civicCategoryMapping.ts") },
-    { label: "Scenario validation and export implementation", url: civicSource("src/lib/civicScenario.ts") },
-    { label: "Snapshot builder and source processing", url: civicSource("scripts/buildCivicDecisionSnapshot.ts") },
-    { label: "Decision logic, sensitivity and privacy regression tests", url: civicSource("tests/civicDecision.test.ts") },
-    { label: "Reproducible real-snapshot scenario regression tests", url: civicSource("tests/civicSnapshot.test.ts") },
-    { label: "Versioned aggregate snapshot", url: civicSource("public/data/civic-decision/snapshot.json") }
-  ],
+  {
+    "label": "Source completeness and provenance audit",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-source-audit.md"
+  },
+  {
+    "label": "Investigation-priority methodology",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-methodology.md"
+  },
+  {
+    "label": "Decision-support scope and responsible-use boundaries",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/docs/civic-decision-mvp.zh-Hant.md"
+  },
+  {
+    "label": "Pure TypeScript decision engine",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicDecision.ts"
+  },
+  {
+    "label": "Versioned exact-item category mapping",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicCategoryMapping.ts"
+  },
+  {
+    "label": "Scenario validation and export implementation",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/src/lib/civicScenario.ts"
+  },
+  {
+    "label": "Snapshot builder and source processing",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/scripts/buildCivicDecisionSnapshot.ts"
+  },
+  {
+    "label": "Decision logic, sensitivity and privacy regression tests",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicDecision.test.ts"
+  },
+  {
+    "label": "Reproducible real-snapshot scenario regression tests",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/tests/civicSnapshot.test.ts"
+  },
+  {
+    "label": "Versioned aggregate snapshot",
+    "url": "https://github.com/LEO0331/taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/public/data/civic-decision/snapshot.json"
+  }
+],
   previewAssets: [],
   futureExtensions: ["Future governance work can extend reviewed original-month coverage and versioned official-item mapping with explicit provenance. Rodent-specific analysis remains evidence-dependent: no authoritative rodent case series or rodent prediction is implemented."]
 };

@@ -12,7 +12,7 @@ export const wifiAllocationCaseZh: GovTechCase = {
   "title": "臺北市公共 Wi-Fi 資源配置與數位近用決策支援",
   "summary": "從官方名冊對帳到可追溯查核情境、座標證據驗證與具有明確限制的實驗幾何研究。",
   "maturity": "decision-support-poc",
-  "maturityLabel": "已完成證據查核與實驗 GIS 研究 POC",
+  "maturityLabel": "已完成證據查核與實驗 GIS 研究概念驗證",
   "reviewNote": "模式 B 沒有非自身增益，最佳化不可用；模式 C 仍欠缺實際服務與數位近用證據。",
   "intendedUsers": "市政資料管理者、公民科技工程師與公共設施研究者。",
   "implementedCapabilities": [
@@ -35,8 +35,8 @@ export const wifiAllocationCaseZh: GovTechCase = {
       "id": "evolution",
       "title": "從熱點探索工具演進為證據感知決策支援",
       "paragraphs": [
-        "既有雙語探索工具保留 3,297 筆紀錄、群聚地圖、附近搜尋、篩選及目錄。Policy #8 v1.0 另建來源擷取、版本對帳、版本綁定身分及有限名額的模式 A 證據查核，不會暗中遷移探索工具的資料版本。",
-        "Policy #8 v1.1 在同一專案加入官方界線轉換、設施座標證據分類及模式 B 實驗研究。本單一 Case 008 整合兩階段；PR #4、語系 PR #5 與地理 PR #6 均已合併，後者於 2026-10-22 合併。上游交付文件中仍稱 PR 未合併的內容屬歷史紀錄。"
+        "既有雙語探索工具保留 3,297 筆紀錄、群聚地圖、附近搜尋、篩選及目錄。案例 008 v1.0 另建來源擷取、版本對帳、版本綁定身分及有限名額的模式 A 證據查核，不會暗中遷移探索工具的資料版本。",
+        "案例 008 v1.1 在同一專案加入官方界線轉換、設施座標證據分類及模式 B 實驗研究。本單一 案例 008 整合兩階段。"
       ]
     },
     {
@@ -142,7 +142,7 @@ export const wifiAllocationCaseZh: GovTechCase = {
       "id": "architecture",
       "title": "靜態 ETL、完整性與可重現發布",
       "paragraphs": [
-        "v1.0 合併 fc3fe9340c460418b4255d04cf8a0150dbcf669b、方法 wifi-allocation-evidence-review-v1 與快照 wifi-policy-c250791e7736ed5bca2882ea 分開保留。最新來源合併 8e01a2bd8d762b51fae979d32fd477e378d1876b 提供方法 wifi-geographic-proximity-experiment-v1、schema 1.1 與地理版本 wifi-geo-da9f69f501af4d6e1d3f9122。快照 SHA-256 為 0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f，幾何為 de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c。",
+        "v1.0 來源版本 fc3fe9340c460418b4255d04cf8a0150dbcf669b、方法 wifi-allocation-evidence-review-v1 與快照 wifi-policy-c250791e7736ed5bca2882ea 分開保留。最新來源版本 8e01a2bd8d762b51fae979d32fd477e378d1876b 提供方法 wifi-geographic-proximity-experiment-v1、資料結構版本 1.1 與地理版本 wifi-geo-da9f69f501af4d6e1d3f9122。快照 SHA-256 為 0f6a44f9df4139b060fa2b6d906380c0600e1d95aaa72cd4da03aed2926b3d8f，幾何為 de9fcacdd831d0d5c608bf3f8e5de2559c0a03cffa2014faf94bf92617899a1c。",
         "先發布不可變版本檔，最後原子替換 manifest 指標。瀏覽器解析前核對路徑、精確位元組、SHA-256、schema、來源及版本。匯出保留設定、入選／排除身分、版本、假設與不可用指標；CSV 公式前綴防護及文字跳脫維護呈現安全。雜湊一致僅證明位元組相符，不是官方認證。",
         "原始 v1.0 快照 SHA-256：91b28d7b375e7fb14ee42bfbe179d792c9e0ed0992f273582dd1e03e6bac8a82。語系修正後的模式 A 指標另指向 wifi-policy-e08d28277549c88787dea209（SHA-256 cd675db75af4b65220692dc59916c7e5b88920b42613d4b82c7affcb43e0dfaa），不能替代原始 v1.0 或 v1.1 地理版本。"
       ],
@@ -220,7 +220,7 @@ export const wifiAllocationCaseZh: GovTechCase = {
   "methodology": {
     "kind": "rule-based-priority",
     "methodId": "wifi-geographic-proximity-experiment-v1",
-    "explanation": "模式 A 使用 wifi-allocation-evidence-review-v1；模式 B 為 schema 1.1 的假設性研究，最佳化停用。",
+    "explanation": "模式 A 使用 wifi-allocation-evidence-review-v1；模式 B 為 資料結構版本 1.1 的假設性研究，最佳化停用。",
     "thresholds": {
       "caption": "資格契約",
       "columns": [
@@ -273,21 +273,21 @@ export const wifiAllocationCaseZh: GovTechCase = {
         {
           "id": "0",
           "cells": {
-            "tier": "Verified",
+            "tier": "已驗證",
             "rule": "權威 CRS、合格身分與有效幾何；本版 0"
           }
         },
         {
           "id": "1",
           "cells": {
-            "tier": "Assumption-tested",
+            "tier": "已依假設檢驗",
             "rule": "明示假設與可重現幾何／行政檢查；87"
           }
         },
         {
           "id": "2",
           "cells": {
-            "tier": "Unresolved",
+            "tier": "待釐清",
             "rule": "契約未通過，保留但排除；4"
           }
         }
@@ -1273,147 +1273,135 @@ export const wifiAllocationCaseZh: GovTechCase = {
     }
   ],
   "evidence": [
-    {
-      "label": "已合併 v1.0 PR #4",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/pull/4"
-    },
-    {
-      "label": "已合併 v1.1 PR #6",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/pull/6"
-    },
-    {
-      "label": "v1.0 · 來源稽核",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-source-audit.md"
-    },
-    {
-      "label": "v1.0 · 模式 A 方法",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-methodology.md"
-    },
-    {
-      "label": "v1.0 · 歷史結果",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-delivery.md"
-    },
-    {
-      "label": "v1.0 · 擷取清單",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/acquisition-manifest.json"
-    },
-    {
-      "label": "v1.0 · 對帳觀察",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/reconciliation-observations.json"
-    },
-    {
-      "label": "v1.0 · 歷史決策匯出",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/sample-decision.json"
-    },
-    {
-      "label": "v1.0 · 模式 A 情境",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/src/lib/wifiPolicyScenarios.ts"
-    },
-    {
-      "label": "v1.0 · 模式 A 測試",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/tests/wifiPolicy.test.ts"
-    },
-    {
-      "label": "v1.1 · 來源驗證",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-source-validation.md"
-    },
-    {
-      "label": "v1.1 · 座標契約",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-coordinate-contract.md"
-    },
-    {
-      "label": "v1.1 · 實驗方法",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-methodology.md"
-    },
-    {
-      "label": "v1.1 · 中文技術規格",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-decision-mvp.zh-TW.md"
-    },
-    {
-      "label": "v1.1 · 交付與已記錄驗證",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-delivery.md"
-    },
-    {
-      "label": "v1.1 · 實際結果與入選身分",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/results.md"
-    },
-    {
-      "label": "v1.1 · GIS 建置程式",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographic.py"
-    },
-    {
-      "label": "v1.1 · 情境引擎",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicScenarios.ts"
-    },
-    {
-      "label": "v1.1 · 地理測試",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/wifiGeographic.test.ts"
-    },
-    {
-      "label": "v1.1 · 產物清單",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/manifest.json"
-    },
-    {
-      "label": "v1.1 · 288 情境指標",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/scenarios-manifest.json"
-    },
-    {
-      "label": "v1.1 · 本機量測",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/measurements.json"
-    },
-    {
-      "label": "v1.1 · 瀏覽器證據",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/browser-checks.json"
-    },
-    {
-      "label": "v1.1 · 驗證紀錄",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/verification.log"
-    },
-    {
-      "label": "v1.1 · Python GIS 測試",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/geographic_test.py"
-    },
-    {
-      "label": "v1.1 · 地理型別與結構",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/types/wifiGeographicPolicy.ts"
-    },
-    {
-      "label": "v1.1 · 地理准入、完整性與匯出",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicPolicy.ts"
-    },
-    {
-      "label": "v1.1 · 發布情境產生",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographicScenarios.ts"
-    },
-    {
-      "label": "v1.1 · 可重現驗證器",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/verifyWifiGeographic.ts"
-    },
-    {
-      "label": "官方資料目錄 A",
-      "url": "https://data.taipei/dataset/detail?id=6aa6532d-652f-4c1b-814a-4646b75407af"
-    },
-    {
-      "label": "官方資料目錄 B",
-      "url": "https://data.taipei/dataset/detail?id=43772803-6504-469c-894d-35904342a53b"
-    },
-    {
-      "label": "官方資料目錄 C",
-      "url": "https://data.taipei/dataset/detail?id=5ed70753-73a4-4fc1-b78c-df09f7499594"
-    },
-    {
-      "label": "官方資料目錄 D",
-      "url": "https://data.taipei/dataset/detail?id=80be7612-593f-4795-9935-a10ce0f7b75b"
-    },
-    {
-      "label": "官方資料目錄 E",
-      "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
-    },
-    {
-      "label": "v1.1 · 原始來源擷取清單",
-      "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/data/raw/wifi-policy/acquisition-manifest.json"
-    }
-  ],
+  {
+    "label": "v1.0 · 來源稽核",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-source-audit.md"
+  },
+  {
+    "label": "v1.0 · 模式 A 方法",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/wifi-allocation-methodology.md"
+  },
+  {
+    "label": "v1.0 · 擷取清單",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/acquisition-manifest.json"
+  },
+  {
+    "label": "v1.0 · 對帳觀察",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/data/raw/wifi-policy/reconciliation-observations.json"
+  },
+  {
+    "label": "v1.0 · 歷史決策匯出",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/sample-decision.json"
+  },
+  {
+    "label": "v1.0 · 模式 A 情境",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/src/lib/wifiPolicyScenarios.ts"
+  },
+  {
+    "label": "v1.0 · 模式 A 測試",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/tests/wifiPolicy.test.ts"
+  },
+  {
+    "label": "v1.1 · 來源驗證",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-source-validation.md"
+  },
+  {
+    "label": "v1.1 · 座標契約",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-coordinate-contract.md"
+  },
+  {
+    "label": "v1.1 · 實驗方法",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-methodology.md"
+  },
+  {
+    "label": "v1.1 · 中文技術規格",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/wifi-allocation-v1.1-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "v1.1 · 實際結果與入選身分",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/results.md"
+  },
+  {
+    "label": "v1.1 · GIS 建置程式",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographic.py"
+  },
+  {
+    "label": "v1.1 · 情境引擎",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicScenarios.ts"
+  },
+  {
+    "label": "v1.1 · 地理測試",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/wifiGeographic.test.ts"
+  },
+  {
+    "label": "v1.1 · 產物清單",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/manifest.json"
+  },
+  {
+    "label": "v1.1 · 288 情境指標",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/public/data/wifi-policy/geographic-v1.1/scenarios-manifest.json"
+  },
+  {
+    "label": "v1.1 · 本機量測",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/measurements.json"
+  },
+  {
+    "label": "v1.1 · 瀏覽器證據",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/browser-checks.json"
+  },
+  {
+    "label": "v1.1 · 驗證紀錄",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/docs/evidence/geographic-v1.1/verification.log"
+  },
+  {
+    "label": "v1.1 · Python GIS 測試",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/tests/geographic_test.py"
+  },
+  {
+    "label": "v1.1 · 地理型別與結構",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/types/wifiGeographicPolicy.ts"
+  },
+  {
+    "label": "v1.1 · 地理准入、完整性與匯出",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/src/lib/wifiGeographicPolicy.ts"
+  },
+  {
+    "label": "v1.1 · 發布情境產生",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/buildWifiGeographicScenarios.ts"
+  },
+  {
+    "label": "v1.1 · 可重現驗證器",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/scripts/verifyWifiGeographic.ts"
+  },
+  {
+    "label": "官方資料目錄 A",
+    "url": "https://data.taipei/dataset/detail?id=6aa6532d-652f-4c1b-814a-4646b75407af"
+  },
+  {
+    "label": "官方資料目錄 B",
+    "url": "https://data.taipei/dataset/detail?id=43772803-6504-469c-894d-35904342a53b"
+  },
+  {
+    "label": "官方資料目錄 C",
+    "url": "https://data.taipei/dataset/detail?id=5ed70753-73a4-4fc1-b78c-df09f7499594"
+  },
+  {
+    "label": "官方資料目錄 D",
+    "url": "https://data.taipei/dataset/detail?id=80be7612-593f-4795-9935-a10ce0f7b75b"
+  },
+  {
+    "label": "官方資料目錄 E",
+    "url": "https://data.taipei/dataset/detail?id=1601ef3a-c253-4988-b047-943d9e786143"
+  },
+  {
+    "label": "v1.1 · 原始來源擷取清單",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/8e01a2bd8d762b51fae979d32fd477e378d1876b/data/raw/wifi-policy/acquisition-manifest.json"
+  },
+  {
+    "label": "v1.0 · 實際本機量測",
+    "url": "https://github.com/LEO0331/taipei-free-wifi-map/blob/fc3fe9340c460418b4255d04cf8a0150dbcf669b/docs/evidence/policy-measurements.json"
+  }
+],
   "previewAssets": [
     {
       "label": "上游本機研究：英文桌面",

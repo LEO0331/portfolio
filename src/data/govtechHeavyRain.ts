@@ -13,7 +13,7 @@ export const heavyRainCase: GovTechCase = {
   sourceRepository: repo, sourceVersion: HEAVY_RAIN_SOURCE_SHA, snapshotVersion: HEAVY_RAIN_SNAPSHOT_VERSION,
   title: "Heavy-Rain Preparedness & Infrastructure Review",
   summary: "From fragmented flood-related records to explainable preparedness review priorities.",
-  maturity: "decision-support-poc", maturityLabel: "Completed decision-support POC",
+  maturity: "decision-support-poc", maturityLabel: "Completed decision-support proof of concept",
   reviewNote: "Independent decision-support POC — not an official flood warning or operational readiness assessment. Pinned source verified 19 October 2026; recorded outputs, with no live calculation on this page.",
   intendedUsers: "Municipal infrastructure planners, preparedness analysts, and teams reviewing documentary evidence or planning field inspections.",
   implementedCapabilities: ["Official source auditing and GIS validation", "Versioned infrastructure evidence and historical context", "Explainable A/B/C evidence-review priorities", "Capacity, geographic balancing and deterministic sensitivity", "JSON/CSV review briefings"],
@@ -24,7 +24,7 @@ export const heavyRainCase: GovTechCase = {
     ] },
     { id: "evolution", title: "Existing Explorer to Decision Support", paragraphs: [
       "The original Feitsui Water Map explores reservoir water quality, hydrometeorology, reservoir operation, river water quality, pumping stations, sedimentation basins, contracted heavy-rain machinery, historical ecology and related water-service datasets.",
-      "The merged module reuses the static application and adds source auditing, KML validation, provenance, versioned snapshots, infrastructure evidence modelling, historical inundation context, review tiers, capacity scenarios, geographic balancing, sensitivity and JSON/CSV briefings. Reservoir and ecology exploration remain separate capabilities; those datasets do not all enter this decision model."
+      "The module reuses the static application and adds source auditing, KML validation, provenance, versioned snapshots, infrastructure evidence modelling, historical inundation context, review tiers, capacity scenarios, geographic balancing, sensitivity and JSON/CSV briefings. Reservoir and ecology exploration remain separate capabilities; those datasets do not all enter this decision model."
     ] },
     { id: "architecture", title: "System Architecture", content: "architecture", paragraphs: [
       "Node scripts acquire selected official resources and validate original bytes before building a reviewed static snapshot. The browser checks snapshot validity and source identity, then runs pure TypeScript scenarios against a fixed source population through a lazy-loaded React/Leaflet module.",
@@ -100,9 +100,9 @@ export const heavyRainCase: GovTechCase = {
       { id: "service_relationship", cells: { dimension: "service_relationship", meaning: "No verified drainage-service relationship." } }
     ] },
     tiers: { caption: "Evidence-review tiers · not emergency risk classifications", columns: [{ key: "tier", label: "Tier" }, { key: "rule", label: "Rule" }], rows: [
-      { id: "a", cells: { tier: "A — Verify First / 優先核實", rule: "Eligible source evidence, verified official flood-prone reference designation and at least two distinct material review-question dimensions." } },
-      { id: "b", cells: { tier: "B — Review / 查核", rule: "Eligible official context or at least one material review question, without qualifying for A." } },
-      { id: "c", cells: { tier: "C — Routine Inventory Review / 例行盤點", rule: "Eligible source-backed routine inventory without A/B conditions." } },
+      { id: "a", cells: { tier: "A — Verify First", rule: "Eligible source evidence, verified official flood-prone reference designation and at least two distinct material review-question dimensions." } },
+      { id: "b", cells: { tier: "B — Review", rule: "Eligible official context or at least one material review question, without qualifying for A." } },
+      { id: "c", cells: { tier: "C — Routine Inventory Review", rule: "Eligible source-backed routine inventory without A/B conditions." } },
       { id: "insufficient", cells: { tier: "Insufficient Evidence", rule: "Essential source eligibility or selected flood-context requirements are unmet. Excluded from selection; does not imply zero risk." } }
     ] },
     notes: [
@@ -125,29 +125,63 @@ export const heavyRainCase: GovTechCase = {
     ] }
   ],
   evidence: [
-    { label: "Merged preparedness implementation · PR #5", url: `${repo}/pull/5` },
-    { label: "Pinned source merge commit", url: `${repo}/commit/${HEAVY_RAIN_SOURCE_SHA}` },
-    ...[
-      ["Methodology and recorded scenario", "docs/preparedness-decision-methodology.md"],
-      ["Chinese MVP specification", "docs/preparedness-decision-mvp.zh-TW.md"],
-      ["Source audit and GIS limitations", "docs/preparedness-source-audit.md"],
-      ["Implementation plan", "docs/preparedness-implementation-plan.md"],
-      ["Versioned static snapshot", "public/data/preparedness-decision/snapshot.json"],
-      ["Pure decision engine", "src/utils/preparednessDecision.ts"],
-      ["GIS validation", "src/utils/preparednessSpatial.ts"],
-      ["Decision input types", "src/types/preparedness.ts"],
-      ["Lazy-loaded preparedness panel", "src/PreparednessDecisionPanel.tsx"],
-      ["Source acquisition and audit", "scripts/auditPreparednessSources.ts"],
-      ["Offline snapshot builder", "scripts/buildPreparednessDecisionSnapshot.ts"],
-      ["Decision, scenario and export tests", "tests/preparednessDecision.test.ts"],
-      ["GIS and reproducibility tests", "tests/preparednessSpatial.test.ts"],
-      ["Recorded tests and browser verification", "docs/evidence/verification.md"]
-    ].map(([label, path]) => ({ label, url: heavyRainSource(path) }))
-  ],
+  {
+    "label": "Methodology and recorded scenario",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-methodology.md"
+  },
+  {
+    "label": "Chinese MVP specification",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "Source audit and GIS limitations",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/preparedness-source-audit.md"
+  },
+  {
+    "label": "Versioned static snapshot",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/public/data/preparedness-decision/snapshot.json"
+  },
+  {
+    "label": "Pure decision engine",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessDecision.ts"
+  },
+  {
+    "label": "GIS validation",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/utils/preparednessSpatial.ts"
+  },
+  {
+    "label": "Decision input types",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/types/preparedness.ts"
+  },
+  {
+    "label": "Lazy-loaded preparedness panel",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/src/PreparednessDecisionPanel.tsx"
+  },
+  {
+    "label": "Source acquisition and audit",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/auditPreparednessSources.ts"
+  },
+  {
+    "label": "Offline snapshot builder",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/scripts/buildPreparednessDecisionSnapshot.ts"
+  },
+  {
+    "label": "Decision, scenario and export tests",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessDecision.test.ts"
+  },
+  {
+    "label": "GIS and reproducibility tests",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessSpatial.test.ts"
+  },
+  {
+    "label": "Recorded tests and browser verification",
+    "url": "https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/docs/evidence/verification.md"
+  }
+],
   previewAssets: [
     { label: "Local development capture · desktop source verification", url: heavyRainSource("docs/evidence/preparedness-desktop.jpg") },
     { label: "Local development capture · mobile source verification", url: heavyRainSource("docs/evidence/preparedness-mobile.jpg") },
     { label: "Local development capture · intentional failure/retry demonstration", url: heavyRainSource("docs/evidence/preparedness-retry.jpg") }
   ],
-  futureExtensions: ["Additional precision requires authoritative operating/availability records and validated drainage-service relationships, with explicit provenance and new evidence scope. Do not infer protection zones from proximity.", "Next planned policy project: taipei-real-estate-dashboard — Aging Buildings & Urban Renewal Decision Support; outside this release."]
+  futureExtensions: ["Additional precision requires authoritative operating/availability records and validated drainage-service relationships, with explicit provenance and new evidence scope. Do not infer protection zones from proximity.", "Case 004 completes Aging Buildings & Urban Renewal Decision Support; legal eligibility, building safety and actual engineering assessment still require independent evidence."]
 };

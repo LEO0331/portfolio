@@ -2,7 +2,7 @@ import type { GovTechCase } from "../types/govtechCase";
 import { busServiceCase, busServiceSource, BUS_SERVICE_METHOD_ID } from "./govtechBusService";
 
 const sourceLabels = ["公運處官方 API 文件與正式資料規格", "固定來源可行性稽核與正式資料身分", "保留原始擷取清單"];
-const evidenceLabels = ["已合併 Policy #5 實作 · PR #9", "固定來源合併提交", "來源可行性與身分稽核", "存取、授權與參考證據", "方法與實際情境", "中文 MVP 規格", "已記錄交付與驗證", "實作計畫", "原始擷取清單", "不可變資料根清單", "身分、資格與時間契約", "純證據與時間引擎", "情境與簡報", "已驗證按需資料載入", "雙語決策儀表板", "選定路線路網地圖", "決策與合成歷史測試", "來源與確定性重建測試", "公車整合測試", "有界官方來源擷取", "原始來源完整性稽核", "確定性快照與細節建置器"];
+
 const previews = [
   { label: "上游本機研究驗證 · 中文桌面", url: busServiceSource("docs/images/bus-service-desktop.jpg") },
   { label: "上游本機研究驗證 · 英文行動版", url: busServiceSource("docs/images/bus-service-mobile.jpg") },
@@ -14,7 +14,7 @@ export const busServiceCaseZh: GovTechCase = {
   policyDomain: "交通與移動",
   title: "臺北市公車路網與服務涵蓋決策支援",
   summary: "從官方路線、站牌與公告班表，建立可重現的路網文件查核優先順序。",
-  maturityLabel: "已完成路網盤點與公告服務文件查核 POC",
+  maturityLabel: "已完成路網盤點與公告服務文件查核概念驗證",
   reviewNote: "路網／文件查核已實作；方向特定的公告服務比較及歷史實際服務表現仍受證據資格限制。",
   intendedUsers: "配置有限來源／文件調查量能的市政運輸分析人員、公開資料工程師與公車路網研究人員。",
   implementedCapabilities: ["八個官方公運處資料源及原始位元組脈絡", "主路線、附屬路線、業者與站序身分調和", "條件式公告時間／日曆解讀", "確定性文件分級與主路線均衡", "內容定址靜態細節及 JSON／CSV 證據簡報"],
@@ -23,8 +23,8 @@ export const busServiceCaseZh: GovTechCase = {
       "當實際服務表現證據不足時，如何將官方公車路網與班表轉成可解釋、可重現的市政調查優先系統？僅計算路線或站牌數，無法證明服務足夠。",
       "公告設施、文件服務、實際服務、旅客需求、可及性與運輸公平，是不同母體與問題。目標是配置有限調查量能，不是建議減班或投資。預期使用者為市政運輸分析人員、公開資料工程師與公車路網研究人員。"
     ] },
-    { id: "evolution", title: "既有交通探索中的獨立 Policy #5", paragraphs: [
-      "taipei-crash-map 起於事故探索，後加入獨立 Policy #4 內湖交通觀測就緒度。Policy #5 在同一儲存庫新增獨立大眾運輸領域、來源契約、身分模型、公告時間解析與查核引擎。",
+    { id: "evolution", title: "既有交通探索中的獨立 案例 007", paragraphs: [
+      "taipei-crash-map 起於事故探索，後加入獨立 案例 006 內湖交通觀測就緒度。案例 007 在同一儲存庫新增獨立大眾運輸領域、來源契約、身分模型、公告時間解析與查核引擎。",
       "既有事故與壅塞模組維持獨立，其指標不參與公車層級；共用部署與介面不代表方法可互換。案例 006 與 007 刻意對應同一根專案。"
     ] },
     { id: "sources", title: "官方公運處擷取與八種不同紀錄單位", paragraphs: [
@@ -84,17 +84,17 @@ export const busServiceCaseZh: GovTechCase = {
       "公車儀表板 JavaScript 為 16.27 kB gzip，選定路線地圖最多繪製 140 次站點出現。均衡容量 10 在本機 10,000 次平均 0.3622 ms，清單／索引／細節讀取解析為 32.8／11.2／4.4 ms。這是上游本機量測，不是公開主機或手機訪客延遲保證。"
     ] },
     { id: "governance", title: "清單完整性、安全發布與簡報", paragraphs: [
-      "快照 pto-bus-0b70f80504e5b952、Git 合併 e01b651d66cedfb5106c263088dc99fbc5d5e3b8，以及根清單 SHA256 00c1f33198ef811a46bddc784119063b2ce3174c5dbe3224ba0b662098d02b7b 是不同物件。產製維持 2026-10-21T07:08:16.679Z，22 日確定性重建不刷新取得日期。",
+      "快照 pto-bus-0b70f80504e5b952、來源版本 e01b651d66cedfb5106c263088dc99fbc5d5e3b8，以及根清單 SHA256 00c1f33198ef811a46bddc784119063b2ce3174c5dbe3224ba0b662098d02b7b 是不同物件。產製維持 2026-10-21T07:08:16.679Z，22 日確定性重建不刷新取得日期。",
       "清單固定不可變路徑、精確位元組與 SHA256，瀏覽器先驗證位元組再解析。結構、數量、關係、官方 URL 白名單、取得日期及巢狀合成／測試標記皆檢查。校驗碼證明符合清單，不是獨立發布者簽章。原子清單發布在取得、驗證或寫入失敗時保留前次有效版本。",
       "簡報保留來源雜湊／URL、快照、篩選、納入假設、實際候選選取／排除、比較與限制。CSV 引號與公式前綴防護包含前置空白／控制字元。不發布憑證、車輛軌跡或合成正式觀測。"
     ] },
     { id: "verification", title: "已記錄驗證與獨立檢查", content: "evidence", paragraphs: [
-      "上游交付記錄 7 個檔案共 99 項測試、11 項相關 GitHub Pages 公車／內湖整合檢查、根路徑與 Pages 建置、確定性輸出、桌面／行動版及實際 JSON／CSV 下載。未新增依賴，來源版本記錄兩項中度依賴警示。這是上游結果，與作品集驗證分開。",
+      "上游驗證記錄 7 個檔案共 99 項測試、11 項相關 GitHub Pages 公車／內湖整合檢查、根路徑與 Pages 建置、確定性輸出、桌面／行動版及實際 JSON／CSV 下載。未新增依賴，來源版本記錄兩項中度依賴警示。這是上游結果，與作品集驗證分開。",
       "作品集獨立檢查精確 83,384 位元組清單雜湊、四個索引／報告參照及兩個路線細節，再以原始斷言及純函式核對實際容量、策略差異與嚴格／較廣相同結果。未驗證全部 416 個細節內容，未重跑上游 ETL／擷取或完整來源測試。",
-      "GitHub 中繼資料確認 PR #9 已合併，較早未合併敘述屬歷史。已檢視截圖為上游本機研究驗證：中文桌面、英文行動版、英文選定路線，不是政府作業系統或獨立驗收公開部署。"
+      "已檢視截圖為上游本機研究驗證：中文桌面、英文行動版、英文選定路線，不是政府作業系統或獨立驗收公開部署。"
     ], links: previews },
     { id: "limitations", title: "負責任使用與歷史證據門檻", paragraphs: [
-      "獨立工程 POC，不是政府背書或採用的運輸計畫。未證明公車服務不足、實際頻率、歷史可靠度、漏班、需求、人行可及性、有效行政區涵蓋、運輸公平、重疊無效率或減班／投資效益。班表／日曆方向與逐列幾何新鮮度仍未解。",
+      "獨立工程概念驗證，不是政府背書或採用的運輸計畫。未證明公車服務不足、實際頻率、歷史可靠度、漏班、需求、人行可及性、有效行政區涵蓋、運輸公平、重疊無效率或減班／投資效益。班表／日曆方向與逐列幾何新鮮度仍未解。",
       "歷史分析需十一個明確門檻：合法官方存取、已驗證身分、實際事件語意、時區、服務日、穩定對照、可比較時間窗、重複處理、預期／觀察完整性、例外／假日及遙測中斷處理。預估到站、GPS 位置與公告計畫不是完成服務事件。",
       "獨立型別的歷史引擎只在全部通過後，依候選／站牌／服務日／語意分組檢查實際到離站間隔，拒絕衝突事件身分。不推定漏班、已執行班次總數或可靠度分數；全門檻通過範例是合成測試，不是正式證據。"
     ] },
@@ -109,7 +109,7 @@ export const busServiceCaseZh: GovTechCase = {
     kind: "rule-based-priority", methodId: BUS_SERVICE_METHOD_ID,
     explanation: "結構／設定 1.0.0：定性證據資格與第一符合問題代碼優先規則。調查分類不是服務足夠評分或數值不足嚴重度。",
     thresholds: { caption: "公車特定證據要求 · 定性資格，不是交通速率門檻", columns: [{ key: "requirement", label: "要求" }, { key: "rule", label: "規則" }], rows: [
-      { id: "source", cells: { requirement: "可用來源證據", rule: "有來源參照且為 verified／limited；受阻、不可用或未驗證來源不合格。" } },
+      { id: "source", cells: { requirement: "可用來源證據", rule: "具有來源依據，且已驗證或限範圍使用；受阻、不可用或未驗證來源不合格。" } },
       { id: "identity", cells: { requirement: "複合身分", rule: "來源命名空間、主路線、附屬路線、方向分開；名稱不是連結鍵。" } },
       { id: "scope", cells: { requirement: "路網地理範圍", rule: "屬保留路網；跨市紀錄不證明行政區涵蓋。" } },
       { id: "inclusion", cells: { requirement: "嚴格／較廣納入", rule: "嚴格排除未知／歧義身分；較廣僅允許歧義調查，不修補連結。" } },
@@ -146,7 +146,80 @@ export const busServiceCaseZh: GovTechCase = {
     ] },
     { caption: "實際有序名單 · 第 1–5 名：容量 5 · 第 1–10 名：容量 10", columns: [{ key: "rank", label: "順位" }, { key: "gaps", label: "缺口優先 · 原始 ID" }, { key: "balanced", label: "主路線均衡 · 原始 ID" }], rows: busServiceCase.scenarioTables[5].rows.map((row) => ({ ...row, cells: { ...row.cells } })) }
   ],
-  evidence: busServiceCase.evidence.map((link, index) => ({ ...link, label: evidenceLabels[index] })),
+  evidence: [
+  {
+    "label": "來源可行性與身分稽核",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-source-audit.md"
+  },
+  {
+    "label": "存取、授權與參考證據",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-access-notes.md"
+  },
+  {
+    "label": "方法與實際情境",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-methodology.md"
+  },
+  {
+    "label": "中文 原型規格",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "原始擷取清單",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/data/raw/bus-service/manifest.json"
+  },
+  {
+    "label": "不可變資料根清單",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/public/data/bus-service/manifest.json"
+  },
+  {
+    "label": "身分、資格與時間契約",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/types/busService.ts"
+  },
+  {
+    "label": "純證據與時間引擎",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/utils/busService.ts"
+  },
+  {
+    "label": "情境與簡報",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/utils/busServiceScenarios.ts"
+  },
+  {
+    "label": "已驗證按需資料載入",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/hooks/useBusServiceData.ts"
+  },
+  {
+    "label": "雙語決策儀表板",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/components/BusServiceDecisionDashboard.tsx"
+  },
+  {
+    "label": "選定路線路網地圖",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/components/BusServiceNetworkMap.tsx"
+  },
+  {
+    "label": "決策與合成歷史測試",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busService.test.ts"
+  },
+  {
+    "label": "來源與確定性重建測試",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busServiceSources.test.ts"
+  },
+  {
+    "label": "公車整合測試",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busServiceIntegration.test.ts"
+  },
+  {
+    "label": "有界官方來源擷取",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/fetchBusServiceSources.ts"
+  },
+  {
+    "label": "原始來源完整性稽核",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/auditBusServiceSources.ts"
+  },
+  {
+    "label": "確定性快照與細節建置器",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/buildBusServiceSnapshot.ts"
+  }
+],
   previewAssets: previews,
   futureExtensions: ["公告方向服務比較需權威方向班表／日曆適用性及逐列幾何新鮮度。歷史分析前，需合法實際事件、預期服務分母、穩定對照、可比較時間窗及中斷／假日處理。", "需求、人行可及性、人口服務涵蓋及運輸公平各需有效地理、分母與證據，路線／站牌數不能替代。"]
 };

@@ -29,7 +29,7 @@ test('Tailwind migration preserves explicit dark surfaces and desktop hero line 
     const surface=page.getByRole('main').locator('..');
     for(const dark of [false,true]){
       const current=await page.locator('html').evaluate(el=>el.classList.contains('dark'));
-      if(current!==dark)await page.getByRole('button',{name:current?'Light':'Dark',exact:true}).filter({visible:true}).click();
+      if(current!==dark)await page.locator("button[data-theme-toggle]").filter({visible:true}).click();
       await expect(surface).toHaveCSS('background-color',dark?'rgb(2, 6, 23)':'rgb(248, 250, 252)');
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     }

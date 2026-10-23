@@ -510,6 +510,29 @@
         "GitHub implementation head78a0518:E2E39932482791 andLighthouse39932482820 bothsuccess;one reviewPR30,no agentmerge",
         "PR30 was externally merged by LEO0331 at2026-10-23T09:31:44Z,merge 778e183105cd80db464728bf971bc589d0e168e9,containing implementation head78a0518392ac4584818604529298c7282d4738a0. Agent did not merge. Merged E2E39932522389,Lighthouse39932522588 andPages39932522770 allsuccess. Actual public EN/ZH mobile pages returnHTTP200,render the supplementary official-polygon table,andhave zero page errors/body overflow. The later CI-record commit48841a0 andthis post-merge lifecycle evidence remain on the feature branch; no second PR or direct-main write."
       ]
+    },
+    {
+      "id": "govtech-cross-case-quality-v1-8-2026-10",
+      "name": "Make nine source-backed case studies suitable for customer and engineering review",
+      "description": "PR-free bilingual presentation, preserved research records, accessible provenance and measurable route loading improvements.",
+      "status": "complete",
+      "dependencies": [
+        "poc-evidence-hardening-2026-10"
+      ],
+      "doneCriteria": [
+        "Zero public PR/workflow references across all18cases and project drawers",
+        "Exact source/results preserved through explicit presentation migration and historical fixtures",
+        "Bounded links,local full gate,root/Pages,viewport/theme and before/after performance evidence",
+        "One draft main-target PR; user handles hosted CI and merge"
+      ],
+      "evidence": [
+        "Pre-edit18-record baseline;180explicit copy/label/evidence operations; historical goldens unchanged",
+        "29unit/175Chromium tests/17trackedflows100%; full GitBash init.sh and zero npm audit passed",
+        "193pinned paths/22internal routes/38local previews exist;108external responses;one final demo timeout remains unverified",
+        "240local page/locale/theme/width checks plus21root/21Pages route outcomes; source/number preservation and language checks passed",
+        "Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.",
+        "Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed."
+      ]
     }
   ]
 }

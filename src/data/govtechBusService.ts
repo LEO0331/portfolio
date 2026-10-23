@@ -14,7 +14,7 @@ export const busServiceCase: GovTechCase = {
   snapshotVersion: BUS_SERVICE_SNAPSHOT_VERSION,
   title: "Taipei Bus Network & Service Coverage Decision Support",
   summary: "From official route, stop and published-schedule records to reproducible network-documentation investigation priorities.",
-  maturity: "decision-support-poc", maturityLabel: "Completed network inventory and published-service documentation review POC",
+  maturity: "decision-support-poc", maturityLabel: "Completed network inventory and published-service documentation review proof of concept",
   reviewNote: "Network/documentation review is implemented; direction-specific published-service comparison and historical actual-service performance remain evidence-gated.",
   intendedUsers: "Municipal transit analysts, public-data engineers and bus-network researchers allocating limited source/documentation investigation capacity.",
   implementedCapabilities: ["Eight official PTO feeds with original-byte provenance", "Main-route, subsidiary, operator and stop-sequence identity resolution", "Conditional published-time/calendar interpretation", "Deterministic documentation tiers and main-route balancing", "Content-addressed static details and JSON/CSV evidence briefings"],
@@ -88,14 +88,14 @@ export const busServiceCase: GovTechCase = {
       "Lazy bus-dashboard JavaScript is 16.27 kB gzip; selected-route map plotting is capped at 140 occurrences. Local balanced capacity-10 computation averaged 0.3622 ms across 10,000 iterations. Local manifest/index/detail read-and-parse observations were 32.8 / 11.2 / 4.4 ms. These are upstream local measurements, not public-host or mobile visitor latency guarantees."
     ] },
     { id: "governance", title: "Manifest Integrity, Safe Publication and Briefings", paragraphs: [
-      "Snapshot pto-bus-0b70f80504e5b952, Git merge e01b651d66cedfb5106c263088dc99fbc5d5e3b8 and root manifest SHA256 00c1f33198ef811a46bddc784119063b2ce3174c5dbe3224ba0b662098d02b7b identify different objects. Generation remains 2026-10-21T07:08:16.679Z; deterministic 22 October rebuilding does not refresh the acquisition date.",
+      "Snapshot pto-bus-0b70f80504e5b952, source revision e01b651d66cedfb5106c263088dc99fbc5d5e3b8 and root manifest SHA256 00c1f33198ef811a46bddc784119063b2ce3174c5dbe3224ba0b662098d02b7b identify different objects. Generation remains 2026-10-21T07:08:16.679Z; deterministic 22 October rebuilding does not refresh the acquisition date.",
       "Manifests pin immutable paths, exact bytes and SHA256. Browser validation checks bytes before parsing; schema, counts, relationships, official URL allowlists, acquisition dates and nested synthetic/test markers are checked. A checksum proves agreement with a manifest, not an independent publisher signature. Atomic manifest publication retains the previous good edition if acquisition, validation or writing fails.",
       "Briefings retain source hashes/URLs, snapshot, filters, inclusion assumptions, selected/excluded real candidates, comparisons and limitations. CSV quoting and formula-prefix guards include leading whitespace/control characters. No credentials, vehicle traces or synthetic production observations are published."
     ] },
     { id: "verification", title: "Recorded Verification and Independent Checks", content: "evidence", paragraphs: [
       "Upstream delivery records 99 tests across 7 files, 11 relevant GitHub Pages bus/Neihu integration checks, root and Pages builds, deterministic output checks, desktop/mobile review and actual JSON/CSV downloads. No new dependencies were introduced; the source release recorded two moderate dependency advisories. These are upstream recorded results, separate from Portfolio verification.",
       "Portfolio independently checked the exact 83,384-byte manifest hash, four index/report references and two route-detail artifacts, then used original assertions and pure functions to verify actual capacities, strategy differences and strict/broader equality. This did not validate all 416 detail bodies, rerun source ETL/acquisition or rerun the full source suite.",
-      "PR #9 is merged as confirmed by GitHub metadata; older open-PR wording is historical. Inspected screenshots are upstream local research verification: Chinese desktop, English mobile and English selected-route detail, not government operating-system or independently accepted public-deployment captures."
+      "Inspected screenshots are upstream local research verification: Chinese desktop, English mobile and English selected-route detail, not government operating-system or independently accepted public-deployment captures."
     ], links: [
       { label: "Upstream local research verification · Chinese desktop", url: busServiceSource("docs/images/bus-service-desktop.jpg") },
       { label: "Upstream local research verification · English mobile", url: busServiceSource("docs/images/bus-service-mobile.jpg") },
@@ -173,23 +173,79 @@ export const busServiceCase: GovTechCase = {
     ].map(([gaps, balanced], index) => ({ id: `rank-${index + 1}`, cells: { rank: String(index + 1), gaps, balanced } })) }
   ],
   evidence: [
-    { label: "Merged Policy #5 implementation · PR #9", url: `${repo}/pull/9` },
-    { label: "Pinned source merge commit", url: `${repo}/commit/${BUS_SERVICE_SOURCE_SHA}` },
-    ...[
-      ["Source feasibility and identity audit", "docs/bus-service-source-audit.md"], ["Access, licences and reference evidence", "docs/bus-service-access-notes.md"],
-      ["Methodology and actual scenarios", "docs/bus-service-methodology.md"], ["Chinese MVP specification", "docs/bus-service-decision-mvp.zh-TW.md"],
-      ["Recorded delivery and verification", "docs/bus-service-delivery.md"], ["Implementation plan", "docs/bus-service-implementation-plan.md"],
-      ["Original acquisition manifest", "data/raw/bus-service/manifest.json"], ["Root immutable-artifact manifest", "public/data/bus-service/manifest.json"],
-      ["Identity, eligibility and time contracts", "src/types/busService.ts"], ["Pure evidence and time engine", "src/utils/busService.ts"],
-      ["Scenarios and briefings", "src/utils/busServiceScenarios.ts"], ["Validated on-demand data hook", "src/hooks/useBusServiceData.ts"],
-      ["Bilingual decision dashboard", "src/components/BusServiceDecisionDashboard.tsx"], ["Selected-route network map", "src/components/BusServiceNetworkMap.tsx"],
-      ["Decision and synthetic-history tests", "tests/busService.test.ts"], ["Source and deterministic rebuild tests", "tests/busServiceSources.test.ts"],
-      ["Bus integration tests", "tests/busServiceIntegration.test.ts"],
-      ["Bounded official-source acquisition", "scripts/fetchBusServiceSources.ts"],
-      ["Original-source integrity audit", "scripts/auditBusServiceSources.ts"],
-      ["Deterministic snapshot and detail builder", "scripts/buildBusServiceSnapshot.ts"]
-    ].map(([label, path]) => ({ label, url: busServiceSource(path) }))
-  ],
+  {
+    "label": "Source feasibility and identity audit",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-source-audit.md"
+  },
+  {
+    "label": "Access, licences and reference evidence",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-access-notes.md"
+  },
+  {
+    "label": "Methodology and actual scenarios",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-methodology.md"
+  },
+  {
+    "label": "Chinese MVP specification",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/docs/bus-service-decision-mvp.zh-TW.md"
+  },
+  {
+    "label": "Original acquisition manifest",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/data/raw/bus-service/manifest.json"
+  },
+  {
+    "label": "Root immutable-artifact manifest",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/public/data/bus-service/manifest.json"
+  },
+  {
+    "label": "Identity, eligibility and time contracts",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/types/busService.ts"
+  },
+  {
+    "label": "Pure evidence and time engine",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/utils/busService.ts"
+  },
+  {
+    "label": "Scenarios and briefings",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/utils/busServiceScenarios.ts"
+  },
+  {
+    "label": "Validated on-demand data hook",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/hooks/useBusServiceData.ts"
+  },
+  {
+    "label": "Bilingual decision dashboard",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/components/BusServiceDecisionDashboard.tsx"
+  },
+  {
+    "label": "Selected-route network map",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/src/components/BusServiceNetworkMap.tsx"
+  },
+  {
+    "label": "Decision and synthetic-history tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busService.test.ts"
+  },
+  {
+    "label": "Source and deterministic rebuild tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busServiceSources.test.ts"
+  },
+  {
+    "label": "Bus integration tests",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/tests/busServiceIntegration.test.ts"
+  },
+  {
+    "label": "Bounded official-source acquisition",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/fetchBusServiceSources.ts"
+  },
+  {
+    "label": "Original-source integrity audit",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/auditBusServiceSources.ts"
+  },
+  {
+    "label": "Deterministic snapshot and detail builder",
+    "url": "https://github.com/LEO0331/taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/scripts/buildBusServiceSnapshot.ts"
+  }
+],
   previewAssets: [
     { label: "Upstream local research verification · Chinese desktop", url: busServiceSource("docs/images/bus-service-desktop.jpg") },
     { label: "Upstream local research verification · English mobile", url: busServiceSource("docs/images/bus-service-mobile.jpg") },

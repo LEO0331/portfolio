@@ -1,3 +1,4 @@
+import { openTechnicalEvidence, restorePresentation } from "../helpers/govtechPresentation";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -36,7 +37,7 @@ for (const locale of ["en", "zh"] as const) {
     expect(performance.rows.map(({ cells }) => [cells.capacity, cells.eligible, cells.selected]))
       .toEqual([["5", "0", "0"], ["10", "0", "0"], ["5", "0", "0"], ["10", "0", "0"]]);
     expect(sources.columns.map(({ key }) => key)).toEqual(["source", "status", "records", "eligibility"]);
-    expect(sources.rows.map(({ id, cells }) => [id, cells.status])).toEqual([["A", "limited"], ["B", "excluded"], ["C", "limited"], ["D", "limited"], ["E", "excluded"], ["F", "excluded"]]);
+    expect(restorePresentation(study, locale).scenarioTables[4].rows.map(({ id, cells }) => [id, cells.status])).toEqual([["A", "limited"], ["B", "excluded"], ["C", "limited"], ["D", "limited"], ["E", "excluded"], ["F", "excluded"]]);
     if (study.methodology.kind !== "rule-based-priority") throw new Error("Neihu must reuse the tier methodology");
     const tiers = study.methodology.tiers;
     expect(tiers.columns.map(({ key }) => key)).toEqual(["objective", "tier", "rule"]);
@@ -107,7 +108,7 @@ test.describe("Neihu006 bilingual traffic evidence readiness", () => {
       const main = page.getByRole("main");
       await expect(main).toContainText(study.reviewNote);
       for (const identity of [sha, snapshot, digest, method]) await expect(main).toContainText(identity);
-      for (const file of ["docs/neihu-congestion-decision-mvp.zh-TW.md", "docs/neihu-congestion-methodology.md", "docs/neihu-congestion-source-audit.md", "docs/neihu-congestion-delivery.md", "src/utils/trafficCongestion.ts", "src/utils/trafficCongestionScenarios.ts", "public/data/neihu-congestion/snapshot.json", "tests/trafficCongestionSources.test.ts", "tests/trafficCongestionIntegration.test.ts"]) {
+      for (const file of ["docs/neihu-congestion-decision-mvp.zh-TW.md", "docs/neihu-congestion-methodology.md", "docs/neihu-congestion-source-audit.md", "src/utils/trafficCongestion.ts", "src/utils/trafficCongestionScenarios.ts", "public/data/neihu-congestion/snapshot.json", "tests/trafficCongestionSources.test.ts", "tests/trafficCongestionIntegration.test.ts"]) {
         const link = main.locator(`a[href="${repo}/blob/${sha}/${file}"]`).first();
         await expect(link).toBeVisible();
         await expect(link).toHaveAttribute("rel", /noopener/);
@@ -120,6 +121,7 @@ test.describe("Neihu006 bilingual traffic evidence readiness", () => {
         await expect(rendered.getByRole("row")).toHaveCount(table.rows.length + 1);
         for (const [index, { cells }] of table.rows.entries()) await expect(rendered.getByRole("row").nth(index + 1).locator("td, th[scope='row']")).toHaveText(table.columns.map(({ key }) => cells[key]));
       }
+      await openTechnicalEvidence(page);
       for (const section of study.sections) {
         const rendered = page.locator(`#${section.id}`);
         await expect(rendered.getByRole("heading", { level: 2 })).toHaveText(section.title);
@@ -163,10 +165,10 @@ test.describe("Neihu006 bilingual traffic evidence readiness", () => {
         await page.evaluate((value) => localStorage.setItem("portfolio-locale", value), locale);
         await page.goto(`./${locale === "zh" ? "zh/" : ""}govtech/neihu-congestion`);
         for (const dark of [false, true]) {
-          if (dark) await page.getByRole("button", { name: "Dark", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
           await expect(page.getByRole("heading", { level: 1 })).toHaveText(study.title);
           expect(await page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
-          if (dark) await page.getByRole("button", { name: "Light", exact: true }).filter({ visible: true }).click();
+          if (dark) await page.locator("button[data-theme-toggle]").filter({ visible: true }).click();
         }
         if (width === 390) {
           const region = page.getByRole("table", { name: study.scenarioTables[1].caption, exact: true }).locator("..");

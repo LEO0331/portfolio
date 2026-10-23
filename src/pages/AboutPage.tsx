@@ -58,7 +58,7 @@ export function AboutPage(): JSX.Element {
 
           <Link
             to={toLocalePath("/contact")}
-            aria-label="Go to contact page"
+            aria-label={locale === "zh" ? "前往聯絡頁面" : "Go to contact page"}
             className={getButtonClassName("primary", "md", "w-full")}
           >
             {text.about.contactMe}
