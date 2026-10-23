@@ -12,7 +12,7 @@ for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
   const study = records[locale].find(({ id }) => id === "wifi-allocation")!;
   test(`WiFi008 ${locale} preserves exact independent source facts and all published combined scenarios`, () => {
-    expect(records[locale]).toHaveLength(8);
+    expect(records[locale]).toHaveLength(9);
     expect(records[locale].filter(({ id }) => id === "wifi-allocation")).toHaveLength(1);
     expect(study).toMatchObject({ displayNumber: "008", projectId: "taipei-free-wifi-map", maturity: "decision-support-poc", sourceVersion: fixture.v11Sha, snapshotVersion: fixture.geoVersion, methodology: { methodId: fixture.method } });
     expect(study.sections).toHaveLength(18);
@@ -65,7 +65,7 @@ for (const locale of ["en", "zh"] as const) {
   test(`WiFi008 ${locale} eighth card opens by keyboard`,async({page})=>{
     await page.goto(`./${prefix}govtech`);
     const completed=page.locator('section[aria-labelledby="govtech-cases"]');
-    await expect(completed.locator("article")).toHaveCount(8);
+    await expect(completed.locator("article")).toHaveCount(9);
     const card=completed.locator("article").filter({has:page.getByRole("heading",{name:study.title,exact:true})});
     await expect(card).toContainText("008");
     const link=card.locator(`a[href="/portfolio/${prefix}govtech/wifi-allocation"]`);
@@ -77,7 +77,7 @@ test("WiFi008 locale switching retains the case",async({page})=>{
   await page.goto("./govtech/wifi-allocation");
   await page.getByRole("button",{name:"繁中",exact:true}).filter({visible:true}).click();
   await expect(page).toHaveURL(/\/zh\/govtech\/wifi-allocation$/);
-  await expect(page.getByRole("heading",{level:1})).toHaveText(records.zh.at(-1)!.title);
+  await expect(page.getByRole("heading",{level:1})).toHaveText(records.zh.find(({id})=>id==="wifi-allocation")!.title);
   await page.getByRole("button",{name:"EN",exact:true}).filter({visible:true}).click();
   await expect(page).toHaveURL(/\/portfolio\/govtech\/wifi-allocation$/);
 });
@@ -89,7 +89,7 @@ test("WiFi008 five widths, both languages and themes keep tables keyboard-scroll
       await page.evaluate(t=>document.documentElement.classList.toggle("dark",t==="dark"),theme);
       expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
     }
-    const region=page.getByRole("region",{name:records[locale].at(-1)!.scenarioTables[7].caption,exact:true});
+    const region=page.getByRole("region",{name:records[locale].find(({id})=>id==="wifi-allocation")!.scenarioTables[7].caption,exact:true});
     await region.focus();await expect(region).toBeFocused();
     if(width<768) {await region.evaluate(el=>el.scrollLeft=0);await page.keyboard.press("ArrowRight");await expect.poll(()=>region.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);}
   }
