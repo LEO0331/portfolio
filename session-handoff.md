@@ -1,35 +1,34 @@
 # Session Handoff
 
-**Last updated:** 2026-10-23
+**Last updated:** 2026-10-24
 
-**Current objective:** Portfolio POC dependency remediation, pinned upstream replay and supplemental geographic evidence.
+**Current objective:** Nine bilingual GovTech cases suitable for customer/HR review, with exact research evidence preserved.
 
-**Current status:** Complete, externally merged through PR30 at 778e183105cd80db464728bf971bc589d0e168e9. Merged E2E/Lighthouse/Pages and live bilingual checks passed. Agent did not merge. Post-merge CI/lifecycle records remain branch-only; no OMX.
+**Current status:** Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.
 
 ## Completed and Verification
 
-Tailwind4.3.3 Vite integration removes vulnerable braces chain. Full/production audits zero;26unit/143browser/17trackedflows passed. Original upstream7files/88tests/build and two exact snapshot/pointer publications independently executed; source restored clean. Official district ZIP/SHP/PRJ establishes boundary3826; conditional bridge4326polygon accounting612/580/194 retained. Case009 bilingual table14 and summaries added; original scenario cohort unchanged. Visual96/100 with appearance regressions fixed.
+180explicit presentation/locale edits across18records; historical fixtures untouched, complete inverse comparison passes. All numeric outcomes/source editions/methods/selected IDs preserved. Public PR/workflow findings0. Lightweight route data, native context/identifier disclosures, plain overviews and localized theme/accessibility copy. Full29unit/175Chromium/17flows100%,audit0,root/Pages42route outcomes and240viewport combinations passed. Baseline299cfe8 and integrated main024ca3e have identical application code; prior lifecycle/deployment evidence retained.
 
 ## Blockers
 
-None; final GitBash init/root/visual gate passed. Review PR30 is open; no feature blocker.
+None for implementation. Draft delivered.
 
 ## Remaining Risks
 
-Bridge datum unknown; retained20220915boundary is not a current-boundary certificate. No official identity crosswalk/current engineering-condition work requested. Upstream two moderate dependency findings and large-bundle warning unchanged. No remote upstream publication/browser replay claim.
-
-## Recommended Next Step
-
-Consolidated verification and evidence complete. POC hardening is merged and deployed; retain branch-only lifecycle evidence for a later documentation review. Preserve original snapshot194cohort and annotate supplementary geographic mismatches.
+Public Safety Dashboard demo timed out8s in final bounded audit. Preserve source-specific research limits, including conditional bridge coordinates/polygons, no authoritative asset crosswalk or current structural assessment. Hosted E2E/Lighthouse and merge are intentionally user-owned; do not wait or auto-merge. No OMX.
 
 ## Files Relevant to the Next Update
 
-package.json/package-lock.json,vite.config.ts,src/index.css,affected utility tokens;tools/bridge-geography.mjs andverifiers/tests;tests/e2e/poc-hardening.spec.ts;Case009EN/ZH;docs/evidence/poc-hardening;READMEs,hardening plan/report,featureledger/progress/handoff. No upstream code or earlier case records changed.
+- docs/govtech-v1.8-cross-case-quality-review.md
+- docs/govtech-v1.8-public-presentation-audit.md
+- docs/govtech-v1.8-hardening-verification.md
+- docs/evidence/cross-case-quality/
+- tests/fixtures/govtech-public-baseline.json and govtech-presentation-edits.json
+- tests/e2e/govtech-public-presentation.spec.ts and govtech-presentation-preservation.spec.ts
+- src/data/govtechCaseSummaries.ts (parity-tested); canonical18case records
+- Previous source/replay/geographic proof: docs/poc-hardening-verification.md
 
-POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.
+## Recommended Next Step
 
-GitHub verification2026-10-23: implementation head78a0518 passed E2E39932482791 and Lighthouse39932482820. This final update records those checks and changes documentation only. PR30 remains for human review; agent did not merge.
-
-## Observed merged delivery
-
-PR30 was externally merged by LEO0331 at2026-10-23T09:31:44Z,merge 778e183105cd80db464728bf971bc589d0e168e9,containing implementation head78a0518392ac4584818604529298c7282d4738a0. Agent did not merge. Merged E2E39932522389,Lighthouse39932522588 andPages39932522770 allsuccess. Actual public EN/ZH mobile pages returnHTTP200,render the supplementary official-polygon table,andhave zero page errors/body overflow. The later CI-record commit48841a0 andthis post-merge lifecycle evidence remain on the feature branch; no second PR or direct-main write.
+User reviews the draft, accepts hosted checks, marks ready and merges manually. No further policy expansion or production certification requested. Keep all source/number/ID invariants and evidence gates.

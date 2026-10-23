@@ -2,38 +2,37 @@
 
 ## Current State
 
-**Last updated:** 2026-10-23
+**Last updated:** 2026-10-24
 
-**Active work:** Portfolio POC evidence hardening on codex/portfolio-poc-evidence-hardening; base ce9e9e6 includes merged Case009 PR28 and PR29. No OMX.
+**Active work:** GovTech v1.8 cross-case and bilingual customer/HR presentation on codex/govtech-v1-8-cross-case-hardening; integrated main024ca3e, baseline299cfe8. No OMX.
 
-**Status:** Complete, externally merged through PR30 at 778e183105cd80db464728bf971bc589d0e168e9. Merged E2E/Lighthouse/Pages and live bilingual checks passed. Agent did not merge. Post-merge CI/lifecycle records remain branch-only; no OMX.
+**Status:** Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.
 
 ### Completed
 
-- Tailwind4.3.3 Vite integration; removed vulnerable build chain, obsolete PostCSS config/override/parser-only regression. Existing color palette, heading sizing and dark surfaces preserved.
-- Pinned upstream complete7files/88tests/build, accepted source verification/audit and two exact local publications passed; source checkout restored clean.
-- Official EPSG3826district ZIP retained with exact-byte provenance; conditional EPSG4326bridge-point checks cover all612/580/194populations. Original194cohort unchanged;192objectsinside/2outside/12interior district mismatches. No datum certification, crosswalk or engineering-current-state expansion.
-- Case009EN/ZH supplemental paragraphs/table14 and complete offline tools/evidence; all previous case records and original13tables preserved.
+- All9EN/ZH cases reviewed;180explicit copy/label/evidence changes;0public PR/workflow findings. Historical fixtures, numeric results, IDs/methods/source editions and negative findings preserved through full-record inverse migration.
+- Plain4-field overviews,9unique cards, optional exact provenance/review context, keyboard/focus support; Chinese shared controls/labels and English labels corrected. Home correctly says9cases.
+- Lightweight landing/project catalogue avoids loading full research data on those routes; exact parity/project-ownership regression tests.
+- Bounded193pinned paths/14trees,22internal routes and38local previews verified;108external responses, one Render demo timeout remains unverified. Prior merged lifecycle evidence retained frommain024ca3e.
 
 ### Verification Evidence
 
-- Full/production npm audits zero;26unit/143Playwrighttests passed;17/17flows100%.
-- Upstream88tests/build/two-publication replay passed; original snapshot/pointer bytes unchanged.
-- Before/after visual96/100; mobile dark reference byte-identical; new theme regression passes. Full GitBash init passed clean npm ci/audit0/26unit/build28routes/143E2E(36.1s)/17flows100%/diff;root/Pages36direct-reloadURLs andalltheme/keyboard/no-payload checks passed.
-- Full scope and evidence: docs/poc-hardening-verification.md.
+- Clean GitBash init.sh: npmci/audit0/29unit/TypeScript/build28entries+404/175Chromium/17flows100%/diff. Accepted run has0flaky/0skipped/0unexpected failures.
+-240Pages viewport/locale/theme/page checks;21root and21Pages direct/reload/metadata/language/404outcomes;0page/consoleerrors, pageoverflow, broken loaded previews or upstream research payloads. Manual screenshots/style verdict94with limitedscope.
+- Before/after resource bytes, precise preservation, link/route/browser evidence and full limitations: docs/govtech-v1.8-hardening-verification.md.
 
 ### Blockers
 
-None currently. Local acceptance complete; PR delivery pending.
+None for implementation. Draft delivered; user owns review and merge.
 
 ### Remaining Risks
 
-Bridge datum unconfirmed; polygon checks are conditional on coordinate hypothesis and20220915boundary edition. Upstream lockfile retains two moderate advisories and large-bundle warning. Crosswalk/current engineering evidence remain out of scope for this review POC.
+One external demo timed out. Public policy, source-unit, operational and coordinate assumptions remain as documented; no new official crosswalk/datum/current-engineering certification or measured policy outcomes. Local Chromium checks are not hosted Lighthouse, physical-device or screen-reader certification.
 
 ### Next Session Should
 
-1. POC hardening is merged and deployed; consolidate branch-only lifecycle records during a later documentation review if desired.
-2. Retain original snapshot/cohort and report geography flags separately.
+1. Review the draft and source-preservation/evidence documents; user handles hosted checks, marks ready and merges manually.
+2. Preserve the original research source editions/cohorts, negative findings and exact ID traceability.
 
 ## Update Contract
 
@@ -308,3 +307,8 @@ GitHub verification2026-10-23: implementation head78a0518 passed E2E39932482791 
 ## Observed merged delivery
 
 PR30 was externally merged by LEO0331 at2026-10-23T09:31:44Z,merge 778e183105cd80db464728bf971bc589d0e168e9,containing implementation head78a0518392ac4584818604529298c7282d4738a0. Agent did not merge. Merged E2E39932522389,Lighthouse39932522588 andPages39932522770 allsuccess. Actual public EN/ZH mobile pages returnHTTP200,render the supplementary official-polygon table,andhave zero page errors/body overflow. The later CI-record commit48841a0 andthis post-merge lifecycle evidence remain on the feature branch; no second PR or direct-main write.
+
+
+### 2026-10-24 — GovTech v1.8 customer/HR and bilingual hardening
+
+Reviewed all9cases/18localizedrecords. Public PR references removed, language/display labels simplified and provenance made optional without changing numerical results. Retained baseline18records plus180exact presentation edits; older fixtures unchanged. Full29unit/175browser/17flows,0audit,root/Pages and240viewport checks passed. Three review documents, reproducible audits and before/after resources saved. Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.

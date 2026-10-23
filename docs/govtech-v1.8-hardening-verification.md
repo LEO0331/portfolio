@@ -1,6 +1,6 @@
 # GovTech v1.8 hardening verification
 
-Completed locally2026-10-24. Branch `codex/govtech-v1-8-cross-case-hardening` targets main. Baseline before measurements/records: `299cfe8144e03a560b12b7428884478c2710f03f`. Integrated latest main: `024ca3e931a2d377fd096b2bec4d2a5ebc32040d` (lifecycle evidence only; application/source baseline identical). Delivery: draft PR pending creation. The user explicitly handles hosted E2E/Lighthouse, readiness and merge; no hosted-CI wait or automatic merge.
+Completed locally2026-10-24. Branch `codex/govtech-v1-8-cross-case-hardening` targets main. Baseline before measurements/records: `299cfe8144e03a560b12b7428884478c2710f03f`. Integrated latest main: `024ca3e931a2d377fd096b2bec4d2a5ebc32040d` (lifecycle evidence only; application/source baseline identical). Delivery: [Draft PR](https://github.com/LEO0331/portfolio/pull/33); open as draft against main, no automatic merge. The user explicitly handles hosted E2E/Lighthouse, readiness and merge; no hosted-CI wait or automatic merge.
 
 ## What changed and why
 
