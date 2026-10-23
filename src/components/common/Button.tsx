@@ -36,7 +36,7 @@ export function getButtonClassName(
   className?: string
 ): string {
   return cn(
-    "inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950",
+    "inline-flex items-center justify-center rounded-lg font-semibold transition-colors duration-150 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950",
     variantClasses[variant],
     sizeClasses[size],
     className

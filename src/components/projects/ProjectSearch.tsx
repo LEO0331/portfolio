@@ -19,7 +19,7 @@ export function ProjectSearch({ value, onChange }: ProjectSearchProps): JSX.Elem
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={text.projects.searchPlaceholder}
-        className="mt-2.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-brand-600 focus:outline-none dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:placeholder:text-slate-400 sm:mt-3 sm:py-2.5"
+        className="mt-2.5 w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-slate-900 placeholder:text-slate-500 focus:border-brand-600 focus:outline-hidden dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100 dark:placeholder:text-slate-400 sm:mt-3 sm:py-2.5"
       />
     </label>
   );

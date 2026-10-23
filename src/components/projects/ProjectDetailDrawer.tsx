@@ -169,7 +169,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                   />
                 </picture>
               ) : (
-                <div className="flex h-full items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
+                <div className="flex h-full items-center justify-center bg-linear-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
                   {project.name} {text.projects.previewComingSoon}
                 </div>
               )}

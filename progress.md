@@ -4,36 +4,36 @@
 
 **Last updated:** 2026-10-23
 
-**Active work:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
+**Active work:** Portfolio POC evidence hardening on codex/portfolio-poc-evidence-hardening; base ce9e9e6 includes merged Case009 PR28 and PR29. No OMX.
 
-**Status:** Implementation and local acceptance complete on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Review PR https://github.com/LEO0331/portfolio/pull/28 is open against main; no automatic merge.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ### Completed
 
-- Nine complete bilingual cases. Case009 has20sections/13tables;the existing safety explorer owns009. All8earlier complete records match frozen pre-edit hashes. Bin001/005,Crash006/007,WiFi008,pins anddependencies preserved.
-- Source PR6 merge `deb812b3472c078b5879727953e85d2850f0a82c` verified;exact A/B,snapshot andhistoricalLF hashes checked. Original parsers/reconciliation rebuilt416candidates and612inventory objects;12scenarios/4published sensitivities/96expanded configurations independently executed.
-- Accepted216research associations,194geographic documentation records;tiers23/393/0;no official crosswalk,CRS/boundary certification,safety oroverdue claims. Actual sensitivity corrects contradictory source prose.
+- Tailwind4.3.3 Vite integration; removed vulnerable build chain, obsolete PostCSS config/override/parser-only regression. Existing color palette, heading sizing and dark surfaces preserved.
+- Pinned upstream complete7files/88tests/build, accepted source verification/audit and two exact local publications passed; source checkout restored clean.
+- Official EPSG3826district ZIP retained with exact-byte provenance; conditional EPSG4326bridge-point checks cover all612/580/194populations. Original194cohort unchanged;192objectsinside/2outside/12interior district mismatches. No datum certification, crosswalk or engineering-current-state expansion.
+- Case009EN/ZH supplemental paragraphs/table14 and complete offline tools/evidence; all previous case records and original13tables preserved.
 
 ### Verification Evidence
 
-- Final22unit/140Playwright,17/17trackedflows(100%),TypeScript/build28routes,harness20features anddiff checks passed. Focused12tests also pass on alternateport4189.
-- Root/Pages18bilingualcaseURLs each:direct/refresh/lang/canonical,unknown404,fivewidths,realthemes andkeyboardtables passed. Zero page/console errors orpolicy requests;visual95/100. Seven captures plus Case007/008 references saved.
-- Main314.89kB/101.21gzip,deferredcase427.19/135.80. No snapshot/runtimeengine,newdependency orupstream write.
-- Baseline had one navigation timeout with unchanged isolated retry passing. Initial full acceptance had two concurrent-build navigation timeouts;isolated finalfull run passed. Actual GitBash init.sh passesharness/install andstops at5existing high audit findings;downstream checks pass separately.
+- Full/production npm audits zero;26unit/143Playwrighttests passed;17/17flows100%.
+- Upstream88tests/build/two-publication replay passed; original snapshot/pointer bytes unchanged.
+- Before/after visual96/100; mobile dark reference byte-identical; new theme regression passes. Full GitBash init passed clean npm ci/audit0/26unit/build28routes/143E2E(36.1s)/17flows100%/diff;root/Pages36direct-reloadURLs andalltheme/keyboard/no-payload checks passed.
+- Full scope and evidence: docs/poc-hardening-verification.md.
 
 ### Blockers
 
-None for feature publication. Existing dependency advisories keep the full init.sh gate red.
+None currently. Local acceptance complete; PR delivery pending.
 
 ### Remaining Risks
 
-No official bridge crosswalk,physical count,certifiedCRS/polygons,surveyedalignment,completeeventdates,verifiedintervals/engineeringterminology orcurrentfieldstatus. No structural-safety ordefinitiveoverdue inference. Full upstream88-tests/build/publication/browser replay not performed.
+Bridge datum unconfirmed; polygon checks are conditional on coordinate hypothesis and20220915boundary edition. Upstream lockfile retains two moderate advisories and large-bundle warning. Crosswalk/current engineering evidence remain out of scope for this review POC.
 
 ### Next Session Should
 
-1. Human review of the Case009 PR;merge manually only after acceptance.
-2. Address existing dependency findings separately.
-3. Preserve actual sensitivity,source-byte lineage,previous cases andproject ownership.
+1. Open one PR against main for human review; no automatic merge.
+2. Retain original snapshot/cohort and report geography flags separately.
 
 ## Update Contract
 
@@ -245,7 +245,7 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 
 **Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Status:** Complete and published as draft [PR25](https://github.com/LEO0331/portfolio/pull/25),verified open and unmerged. Branch codex/govtech-bus-service-case-007,implementation44a0e3b,based on main7c7ace1b97a334e0b618b78f7f018dc0c0a150bd (includes merged Case006 PR22 and Vite PR24). No automatic merge.
+**Status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ### Completed
 
@@ -296,3 +296,9 @@ All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0
 Added a20-section bilingual case,13small tables,source-pinned evidence,existing safety-project relation,28routes,regressions andcomplete documentation. Original parsers/reconciliation match416A/612Bobjects;12defaultscenarios,4published sensitivities and96expanded configurations verified. Source prose contradictions documented. Final22unit/140Playwright/17flows,alternateport12tests,bothbases/fivewidths,visual95/100,harness/build/diff passed. Five existing high audit findings remain;no dependency changes. One reviewPR is being prepared;no agent merge.
 
 Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.
+
+### 2026-10-23 — POC dependency and evidence hardening
+
+Authorized dependency fixes,full upstream test/publication replay andsupplementary official-geography evidence. See current state and docs/poc-hardening-verification.md. No OMX,official crosswalk orengineering condition expansion.
+
+POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.

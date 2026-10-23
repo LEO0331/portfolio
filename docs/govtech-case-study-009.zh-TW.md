@@ -1,5 +1,7 @@
 # Portfolio GovTech Showcase v1.8 — Case Study 009
 
+> Follow-up2026-10-23: full upstream88tests/build and two exact publication replays now passed; conditional official district-polygon checks and dependency remediation are documented in [POC hardening verification](./poc-hardening-verification.md). Statements below retain the original v1.8 acceptance scope.
+
 **臺北市橋梁檢測與維護決策支援**
 
 從官方橋梁紀錄到保守資產對帳、受限地理准入與可重現文件查核情境。

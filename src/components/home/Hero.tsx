@@ -14,7 +14,7 @@ export function Hero(): JSX.Element {
       <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-end">
         <div className="space-y-4 sm:space-y-5">
           <p className="eyebrow">{text.home.heroEyebrow}</p>
-          <h1 className="max-w-3xl text-3xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl text-3xl font-bold leading-tight text-slate-900 sm:text-5xl sm:leading-none lg:text-6xl">
             {profile.fullName}
           </h1>
           <p className="text-lg font-semibold text-brand-700 sm:text-xl">{text.home.heroTitle}</p>

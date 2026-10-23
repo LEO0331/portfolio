@@ -1,8 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" source(none);
+@source "../index.html";
+@source "./";
+
+@custom-variant dark (&:is(.dark, .dark *));
+
+/* Preserve the established v3 palette and typography during the build migration. */
+@theme {
+  --color-amber-50: #fffbeb;
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-300: #fcd34d;
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --color-amber-700: #b45309;
+  --color-amber-800: #92400e;
+  --color-amber-900: #78350f;
+  --color-amber-950: #451a03;
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-300: #93c5fd;
+  --color-blue-400: #60a5fa;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+  --color-blue-800: #1e40af;
+  --color-blue-900: #1e3a8a;
+  --color-blue-950: #172554;
+  --color-cyan-50: #ecfeff;
+  --color-cyan-100: #cffafe;
+  --color-cyan-200: #a5f3fc;
+  --color-cyan-300: #67e8f9;
+  --color-cyan-400: #22d3ee;
+  --color-cyan-500: #06b6d4;
+  --color-cyan-600: #0891b2;
+  --color-cyan-700: #0e7490;
+  --color-cyan-800: #155e75;
+  --color-cyan-900: #164e63;
+  --color-cyan-950: #083344;
+  --color-emerald-50: #ecfdf5;
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-300: #6ee7b7;
+  --color-emerald-400: #34d399;
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065f46;
+  --color-emerald-900: #064e3b;
+  --color-emerald-950: #022c22;
+  --color-slate-50: #f8fafc;
+  --color-slate-100: #f1f5f9;
+  --color-slate-200: #e2e8f0;
+  --color-slate-300: #cbd5e1;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1e293b;
+  --color-slate-900: #0f172a;
+  --color-slate-950: #020617;
+  --color-teal-50: #f0fdfa;
+  --color-teal-100: #ccfbf1;
+  --color-teal-200: #99f6e4;
+  --color-teal-300: #5eead4;
+  --color-teal-400: #2dd4bf;
+  --color-teal-500: #14b8a6;
+  --color-teal-600: #0d9488;
+  --color-teal-700: #0f766e;
+  --color-teal-800: #115e59;
+  --color-teal-900: #134e4a;
+  --color-teal-950: #042f2e;
+  --color-brand-50: #f5f8ff;
+  --color-brand-100: #ebf1ff;
+  --color-brand-500: #1e3a8a;
+  --color-brand-600: #1e40af;
+  --color-brand-700: #1e3a8a;
+  --shadow-card: 0 1px 2px rgba(15, 23, 42, 0.08);
+  --default-ring-width: 3px;
+  --default-ring-color: #3b82f6;
+}
+
+@layer base {
+  *, ::before, ::after, ::backdrop, ::file-selector-button { border-color: #e5e7eb; }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+  input::placeholder, textarea::placeholder { color: #9ca3af; }
+}
 
 :root {
   --bg: #f5f7fb;
@@ -83,68 +169,68 @@
   }
 
   .rule-accent {
-    @apply h-px bg-gradient-to-r from-brand-600 via-cyan-700/70 to-transparent dark:from-brand-500 dark:via-cyan-400/70;
+    @apply h-px bg-linear-to-r from-brand-600 via-cyan-700/70 to-transparent dark:from-brand-500 dark:via-cyan-400/70;
   }
 }
 
 @layer utilities {
-  .dark .text-slate-900 {
+  .dark :where(.text-slate-900) {
     color: rgb(241 245 249);
   }
 
-  .dark .text-slate-800 {
+  .dark :where(.text-slate-800) {
     color: rgb(226 232 240);
   }
 
-  .dark .text-slate-700 {
+  .dark :where(.text-slate-700) {
     color: rgb(203 213 225);
   }
 
-  .dark .text-slate-600 {
+  .dark :where(.text-slate-600) {
     color: rgb(148 163 184);
   }
 
-  .dark .text-slate-500 {
+  .dark :where(.text-slate-500) {
     color: rgb(148 163 184);
   }
 
-  .dark .bg-white {
+  .dark :where(.bg-white) {
     background-color: rgb(15 23 42);
   }
 
-  .dark .bg-white\/90 {
+  .dark :where(.bg-white\/90) {
     background-color: rgb(15 23 42 / 0.9);
   }
 
-  .dark .bg-white\/95 {
+  .dark :where(.bg-white\/95) {
     background-color: rgb(15 23 42 / 0.95);
   }
 
-  .dark .bg-slate-50 {
+  .dark :where(.bg-slate-50) {
     background-color: rgb(15 23 42 / 0.65);
   }
 
-  .dark .bg-slate-50\/90 {
+  .dark :where(.bg-slate-50\/90) {
     background-color: rgb(15 23 42 / 0.9);
   }
 
-  .dark .bg-slate-100 {
+  .dark :where(.bg-slate-100) {
     background-color: rgb(30 41 59);
   }
 
-  .dark .bg-slate-200 {
+  .dark :where(.bg-slate-200) {
     background-color: rgb(51 65 85);
   }
 
-  .dark .border-slate-200 {
+  .dark :where(.border-slate-200) {
     border-color: rgb(51 65 85);
   }
 
-  .dark .border-slate-200\/90 {
+  .dark :where(.border-slate-200\/90) {
     border-color: rgb(51 65 85 / 0.9);
   }
 
-  .dark .border-slate-300 {
+  .dark :where(.border-slate-300) {
     border-color: rgb(71 85 105);
   }
 }

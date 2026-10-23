@@ -1,0 +1,16 @@
+{
+  "score": 88,
+  "verdict": "revise",
+  "category_match": true,
+  "differences": [
+    "Desktop hero h1 height changed from60px to75px because Tailwind4 retains explicit leading-tight across responsive font sizes.",
+    "Default v4 OKLCH palette differs from established v3 RGB palette.",
+    "Dark fallback selectors override explicit dark background variants under the new cascade; mobile case background becomes gray."
+  ],
+  "suggestions": [
+    "Restore responsive hero line-height explicitly.",
+    "Retain used v3 color families as CSS theme variables.",
+    "Lower fallback-selector specificity and retain explicit class-based dark variant specificity."
+  ],
+  "reasoning": "Layout and mobile dark behavior remain sound; preserve the established desktop baseline before acceptance."
+}

@@ -2,34 +2,28 @@
 
 **Last updated:** 2026-10-23
 
-**Current objective:** GovTech Showcase v1.8 — Bridge Inspection & Maintenance Case009.
+**Current objective:** Portfolio POC dependency remediation, pinned upstream replay and supplemental geographic evidence.
 
-**Current status:** Complete implementation and local acceptance;review PR https://github.com/LEO0331/portfolio/pull/28 opened against main on `codex/govtech-bridge-inspection-case-009`,base`380f45fe067c5f25dc82ac24ac0c596bb518a26e`. Original main checkout is untouched. Earlier Case008 lifecycle follow-up is now included through merged PR27.
+**Current status:** Complete implementation and local acceptance; review PR https://github.com/LEO0331/portfolio/pull/30 targets main from codex/portfolio-poc-evidence-hardening. GitHub CI verification pending; no automatic merge. No OMX.
 
 ## Completed and Verification
 
-Case009 has20bilingual sections and13bounded tables. Existing safety project owns009;all8previous records hash-identical. Source merge deb812b3472c078b5879727953e85d2850f0a82c;method bridge-inspection-evidence-review-v1;snapshot bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a;exacthash a580fb3356a84fc86fe4c4f4a811f115f490769ff15700bec5b69f88008b7782.
-
-Original raw parsers/reconciliation rebuild416candidates/612inventory objects matching snapshot;12scenarios,4published sensitivities,96expanded configurations andnewline equivalence verified. Sensitivity uses code/results over wrong prose:accepted/geographic same5;broader selects5ambiguousTierA;critical-only keepsdefault5.
-
-Final22unit/140Playwright/17trackedflows100%,alternateport12tests,TypeScript/build28routes,harness20features,diff,root/Pages18bilingualcaseURLs perbase,fivewidths,themes/keyboard andvisual95/100passed. Seven captures andtwo references under docs/evidence/govtech-v1.8. Full proof: docs/govtech-v1.8-verification.md.
+Tailwind4.3.3 Vite integration removes vulnerable braces chain. Full/production audits zero;26unit/143browser/17trackedflows passed. Original upstream7files/88tests/build and two exact snapshot/pointer publications independently executed; source restored clean. Official district ZIP/SHP/PRJ establishes boundary3826; conditional bridge4326polygon accounting612/580/194 retained. Case009 bilingual table14 and summaries added; original scenario cohort unchanged. Visual96/100 with appearance regressions fixed.
 
 ## Blockers
 
-No feature blocker. npm audit has5existing high Tailwind/braces findings;actual GitBash init.sh stops there afterharness/install. Downstream tests/build passed separately.
+None; final GitBash init/root/visual gate passed. One PR delivery pending.
 
 ## Remaining Risks
 
-216within-edition research associations are not official identities;194mapped records are not safe/unsafe bridge judgments. No certifieddatum/polygons/surveyedgeometry,completeeventdates,intervalapplicability,engineeringreports orcurrentstatus. Full upstreamsuite/publication/browser replay not rerun. No automatic merge orpublicdeployment claim.
+Bridge datum unknown; retained20220915boundary is not a current-boundary certificate. No official identity crosswalk/current engineering-condition work requested. Upstream two moderate dependency findings and large-bundle warning unchanged. No remote upstream publication/browser replay claim.
 
 ## Recommended Next Step
 
-1. Review Case009 PR and manually merge after human acceptance.
-2. Treat audit remediation andnew source/engineering evidence as separate work.
-3. Keep accepted/broader sensitivity distinction andoriginal CRLF versus GitLF lineage intact.
+Consolidated verification and evidence complete. Open one human-review PR to main. Preserve original snapshot194cohort and annotate supplementary geographic mismatches.
 
 ## Files Relevant to the Next Update
 
-govtechBridgeInspection.ts/.zh.ts;case registration/types;existing safety-project description/relation;GovTech domain/source pin;static routes/SEO;bridge tests/source fixture/prior-case hash fixture;README pair,template,Case009 specification/audit/verification/evidence;featureledger/progress/handoff. Shared renderer/normalizer,pins,dependencies andpriorcase data unchanged.
+package.json/package-lock.json,vite.config.ts,src/index.css,affected utility tokens;tools/bridge-geography.mjs andverifiers/tests;tests/e2e/poc-hardening.spec.ts;Case009EN/ZH;docs/evidence/poc-hardening;READMEs,hardening plan/report,featureledger/progress/handoff. No upstream code or earlier case records changed.
 
-Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from codex/govtech-bridge-inspection-case-009. Implementation and local acceptance complete; feature ledger complete. Human review and merge remain pending. Agent did not merge.
+POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.

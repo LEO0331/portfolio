@@ -1,0 +1,82 @@
+[
+  {
+    "name": "home",
+    "width": 1440,
+    "dark": false,
+    "errors": [],
+    "overflow": false,
+    "bodyBackground": "rgb(248, 250, 252)",
+    "h1": "60px",
+    "heading": {
+      "x": 176,
+      "y": 187.71875,
+      "width": 633.59375,
+      "height": 60,
+      "top": 187.71875,
+      "right": 809.59375,
+      "bottom": 247.71875,
+      "left": 176
+    },
+    "darkApplied": false
+  },
+  {
+    "name": "home-mobile-dark",
+    "width": 390,
+    "dark": true,
+    "errors": [],
+    "overflow": false,
+    "bodyBackground": "rgba(15, 23, 42, 0.65)",
+    "h1": "30px",
+    "heading": {
+      "x": 16,
+      "y": 158.265625,
+      "width": 358,
+      "height": 37.5,
+      "top": 158.265625,
+      "right": 374,
+      "bottom": 195.765625,
+      "left": 16
+    },
+    "darkApplied": true
+  },
+  {
+    "name": "bridge",
+    "width": 1440,
+    "dark": false,
+    "errors": [],
+    "overflow": false,
+    "bodyBackground": "rgb(248, 250, 252)",
+    "h1": "36px",
+    "heading": {
+      "x": 272,
+      "y": 231.71875,
+      "width": 896,
+      "height": 40,
+      "top": 231.71875,
+      "right": 1168,
+      "bottom": 271.71875,
+      "left": 272
+    },
+    "darkApplied": false
+  },
+  {
+    "name": "bridge-mobile-dark",
+    "width": 390,
+    "dark": true,
+    "errors": [],
+    "overflow": false,
+    "bodyBackground": "rgba(15, 23, 42, 0.65)",
+    "h1": "30px",
+    "heading": {
+      "x": 16,
+      "y": 198.265625,
+      "width": 358,
+      "height": 72,
+      "top": 198.265625,
+      "right": 374,
+      "bottom": 270.265625,
+      "left": 16
+    },
+    "darkApplied": true
+  }
+]

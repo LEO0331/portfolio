@@ -1,0 +1,38 @@
+{
+  "baseline": {
+    "mainKB": 314.89,
+    "mainGzipKB": 101.21,
+    "cssKB": 28.5,
+    "cssGzipKB": 6.04,
+    "catalogueKB": 427.19,
+    "catalogueGzipKB": 135.8
+  },
+  "final": [
+    {
+      "filename": "govtechCase-CLeO5HQ4.js",
+      "bytes": 433345,
+      "standaloneGzipBytes": 137585,
+      "viteReportedGzipKB": 138.37
+    },
+    {
+      "filename": "GovTechCaseStudyPage-Cie7h0ae.js",
+      "bytes": 5620,
+      "standaloneGzipBytes": 1811,
+      "viteReportedGzipKB": 1.81
+    },
+    {
+      "filename": "index-CnLfOsbi.css",
+      "bytes": 42710,
+      "standaloneGzipBytes": 7579,
+      "viteReportedGzipKB": 7.63
+    },
+    {
+      "filename": "index-DvEl0D8T.js",
+      "bytes": 314914,
+      "standaloneGzipBytes": 100334,
+      "viteReportedGzipKB": 101.22
+    }
+  ],
+  "rawGeographicPayloadBundled": false,
+  "gzipMethod": "standalone Node gzipSync; rounded Vite report retained separately because compression implementations/options differ"
+}

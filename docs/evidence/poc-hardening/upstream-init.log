@@ -1,0 +1,46 @@
+=== Harness Initialization ===
+=== npm run build ===
+
+> taipei-safety-map@0.1.0 build
+> tsc -b && vite build
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 199 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                        0.86 kB │ gzip:   0.57 kB
+dist/assets/BridgePolicyDashboard-BdcXywlg.css         1.67 kB │ gzip:   0.59 kB
+dist/assets/index-CobvvhYW.css                        22.96 kB │ gzip:   8.74 kB
+dist/assets/BridgePolicyMap-C3PKmYhx.js                1.85 kB │ gzip:   1.09 kB
+dist/assets/BridgeInspectionMaintenance-D9P93ohV.js   20.40 kB │ gzip:   6.60 kB
+dist/assets/BridgePolicyDashboard-Dp2YC3w8.js         34.03 kB │ gzip:  11.88 kB
+dist/assets/index-Cb2qT6dd.js                        891.00 kB │ gzip: 241.15 kB
+
+✓ built in 346ms
+[plugin builtin:vite-reporter]
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+=== npm test ===
+
+> taipei-safety-map@0.1.0 test
+> vitest run
+
+
+ RUN  v4.1.11 C:/Users/LeoLi/AppData/Local/Temp/portfolio-bridge-poc-20261023
+
+
+ Test Files  7 passed (7)
+      Tests  88 passed (88)
+   Start at  16:54:57
+   Duration  388ms (transform 430ms, setup 0ms, import 676ms, tests 113ms, environment 1ms)
+
+=== Verification Complete ===
+
+Next steps:
+1. Read feature_list.json to see current feature state
+2. Pick ONE unfinished feature to work on
+3. Implement only that feature
+4. Re-run verification before claiming done

@@ -1,5 +1,7 @@
 # Independent bridge evidence audit — 2026-10-23
 
+> Follow-up2026-10-23: full upstream88tests/build and two exact publication replays now passed; conditional official district-polygon checks and dependency remediation are documented in [POC hardening verification](./poc-hardening-verification.md). Statements below retain the original v1.8 acceptance scope.
+
 Portfolio base `380f45fe067c5f25dc82ac24ac0c596bb518a26e`. GitHub independently confirms [Policy9 PR6](https://github.com/LEO0331/taipei-safety-map/pull/6) merged at `deb812b3472c078b5879727953e85d2850f0a82c` on2026-10-23T05:42:52Z. The read-only source checkout HEAD matches that merge. Pre-merge delivery text about a blocked PR is historical; no upstream files were edited.
 
 ## Independent verification

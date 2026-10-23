@@ -1,5 +1,7 @@
 # GovTech Showcase v1.8 verification — 2026-10-23
 
+> Follow-up2026-10-23: full upstream88tests/build and two exact publication replays now passed; conditional official district-polygon checks and dependency remediation are documented in [POC hardening verification](./poc-hardening-verification.md). Statements below retain the original v1.8 acceptance scope.
+
 Branch `codex/govtech-bridge-inspection-case-009`; Portfolio base `380f45fe067c5f25dc82ac24ac0c596bb518a26e`, fetched before editing and containing both merged Case008 PR26 and its lifecycle follow-up PR27. Original main checkout was clean and remains untouched. An isolated managed worktree owns this feature. Exactly one review PR against main is required; no automatic merge.
 
 ## Source gate and immutable identities

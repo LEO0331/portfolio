@@ -1,0 +1,4 @@
+
+# Retain original official evidence bytes.
+docs/evidence/poc-hardening/*-catalogue.html -text
+docs/evidence/poc-hardening/*.zip binary

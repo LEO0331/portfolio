@@ -44,7 +44,7 @@ Preview 在 `/portfolio/` 提供建置後的網站。開發時仍可使用 `npm 
 
 ## 建置與測試
 
-既有 Tailwind 3 工具鏈透過 npm override 使用 `postcss-selector-parser` **7.1.6**，修復 [GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf)，不需遷移至 Tailwind 4。請保留 override，直到上游相依套件本身要求已修補版本；變更時重新產生 lockfile 並執行完整驗證。子程序回歸測試涵蓋惡意平面選擇器的 CPU 耗盡案例。
+建置使用 Tailwind CSS4.3.3／Vite plugin，移除原 Tailwind3／braces 鏈、PostCSS 設定、selector-parser override 及不再適用的 parser 測試；保留既有色盤、響應標題與 class 暗色樣式。瀏覽器支援依 Tailwind4：Safari16.4+、Chrome111+、Firefox128+。詳見[強化驗證](./docs/poc-hardening-verification.md)。
 
 ```bash
 npm run validate:harness
@@ -56,7 +56,7 @@ npm run test:e2e
 git diff --check
 ```
 
-截至2026-10-22，已合併 PR #24 的 Vite 8.3.5 基準仍回報五個既有 Tailwind／braces 鏈 high 套件問題。案例007未變更相依，也不宣稱修復先前 Vite 公告。實際 Git Bash init.sh 通過 harness／安裝後在 npm audit 停止，後續單元／建置／E2E 分別執行，詳 [v1.6 驗證](./docs/govtech-v1.6-verification.md)。功能完成不代表安全稽核無問題。
+2026-10-23 強化變更的完整及 production npm audit 均為零漏洞；較早日期的驗證報告保留當時公告結果。案例009現已獨立重播完整上游測試及兩次本機快照發布，並以條件式官方多邊形檢查補充原有母體。
 
 ## 部署至 GitHub Pages
 
@@ -189,3 +189,21 @@ E2E 會自動建置並啟動 production preview，在正式 CSP 下檢查響應�
 九個完整雙語案例。新增橋梁檢測與維護文件查核，416來源列／415分組、612清冊列，接受216研究對應，其中194地理准入；分級23／393／0。公開紀錄不能認證橋梁安全或確定逾期。保留既有安全探索工具、前八案、專案關聯與依賴。
 
 [Case009](./docs/govtech-case-study-009.zh-TW.md) · [Source audit](./docs/govtech-bridge-inspection-source-audit.md) · [Verification](./docs/govtech-v1.8-verification.md).
+
+## 離線驗證案例009
+
+使用位於其他專案之外的獨立暫存 checkout，避免父專案建置設定影響來源驗證：
+
+```bash
+git clone https://github.com/LEO0331/taipei-safety-map.git <standalone-checkout>
+git -C <standalone-checkout> -c core.autocrlf=false checkout deb812b3472c078b5879727953e85d2850f0a82c
+```
+
+先在該 checkout 執行 `npm ci`，再從 Portfolio 執行：
+
+```bash
+npm run verify:bridge-replay -- <standalone-checkout>
+npm run verify:bridge-geography -- <standalone-checkout>
+```
+
+第一個命令執行原始完整建置／測試與兩次本機不可變發布；第二個使用保留的官方區界 ZIP 及上游 lockfile 的 proj4 做條件式離線落區檢查，不變更遠端來源或原始政策母體。詳見[範圍、命令、證據及限制](./docs/poc-hardening-verification.md)。
