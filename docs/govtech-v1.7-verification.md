@@ -95,3 +95,7 @@ Exactly one draft [PR26](https://github.com/LEO0331/portfolio/pull/26) targets m
 ## External merge reconciliation — 2026-10-23
 
 A fresh GitHub check confirms PR26 was externally merged at `2443e769e38171e99e3fe2603c37401b72518aba` at2026-10-23T03:16:56Z, before the lifecycle-only publication follow-up was pushed. This agent performed no merge or auto-merge operation. Main contains the complete implementation head `a987dcc7ce139403371beba43f1715cdd064434f`. Only this report, feature ledger, progress and handoff differ on the later branch; those updates are not in main. No second PR or direct main write was made. GitHub Pages deployment succeeded; E2E and Lighthouse were still running when first checked. Earlier open/unmerged metadata above accurately records the creation-time state.
+
+### Final GitHub and live checks — 2026-10-23
+
+All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/runs/39894167897), [Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/runs/39894167979) and [Pages deployment](https://github.com/LEO0331/portfolio/actions/runs/39894167931). The E2E browser installation and test step both completed successfully. Actual public EN/ZH Case008 routes returned HTTP200 and rendered the expected title and html language. This supersedes the earlier pending-CI observation. The implementation is on main; these later lifecycle records remain only on the feature branch. No second PR, direct main write or agent merge occurred.

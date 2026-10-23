@@ -33,3 +33,7 @@ Bilingual govtechWifiAllocation data; case registry/types; Wi-Fi project copy/re
 ### External merge reconciliation — 2026-10-23
 
 Fresh GitHub metadata confirms PR26 merged externally at `2443e769e38171e99e3fe2603c37401b72518aba`, using implementation head `a987dcc7ce139403371beba43f1715cdd064434f`. This agent issued no merge/auto-merge operation. The later publication-status follow-up is only on `codex/govtech-wifi-allocation-case-008`, affecting four lifecycle/evidence files; no application difference remains versus main. GitHub Pages deployment for the merge succeeded; other CI checks were still running at this inspection. No second PR or main write was performed.
+
+### Final GitHub and live checks — 2026-10-23
+
+All merged-commit workflows succeeded: [E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/runs/39894167897), [Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/runs/39894167979) and [Pages deployment](https://github.com/LEO0331/portfolio/actions/runs/39894167931). The E2E browser installation and test step both completed successfully. Actual public EN/ZH Case008 routes returned HTTP200 and rendered the expected title and html language. This supersedes the earlier pending-CI observation. The implementation is on main; these later lifecycle records remain only on the feature branch. No second PR, direct main write or agent merge occurred.
