@@ -1,6 +1,6 @@
 # GovTech Showcase v1.9 verification
 
-Verified 2026-10-24 (Asia/Taipei). Branch `codex/govtech-senior-community-care-case-010`, Portfolio base `bcd78c641e9e08ebf47101d21ea43725fc7e9e94`. Delivery: Draft PR pending creation, targeting main. Exactly one draft; no hosted E2E/Lighthouse wait or automatic merge.
+Verified 2026-10-24 (Asia/Taipei). Branch `codex/govtech-senior-community-care-case-010`, Portfolio base `bcd78c641e9e08ebf47101d21ea43725fc7e9e94`. Delivery: [Draft PR](https://github.com/LEO0331/portfolio/pull/34), targeting main. Exactly one draft; no hosted E2E/Lighthouse wait or automatic merge.
 
 ## Source identity and independent verification
 
