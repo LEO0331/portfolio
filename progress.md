@@ -4,35 +4,32 @@
 
 **Last updated:** 2026-10-24
 
-**Active work:** GovTech v1.8 cross-case and bilingual customer/HR presentation on codex/govtech-v1-8-cross-case-hardening; integrated main024ca3e, baseline299cfe8. No OMX.
+**Active work:** GovTech v1.9 Case 010 on codex/govtech-senior-community-care-case-010; base bcd78c641e9e08ebf47101d21ea43725fc7e9e94 includes merged v1.8. No OMX.
 
-**Status:** Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.
+**Status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge.
 
 ### Completed
 
-- All9EN/ZH cases reviewed;180explicit copy/label/evidence changes;0public PR/workflow findings. Historical fixtures, numeric results, IDs/methods/source editions and negative findings preserved through full-record inverse migration.
-- Plain4-field overviews,9unique cards, optional exact provenance/review context, keyboard/focus support; Chinese shared controls/labels and English labels corrected. Home correctly says9cases.
-- Lightweight landing/project catalogue avoids loading full research data on those routes; exact parity/project-ownership regression tests.
-- Bounded193pinned paths/14trees,22internal routes and38local previews verified;108external responses, one Render demo timeout remains unverified. Prior merged lifecycle evidence retained frommain024ca3e.
+- Ten bilingual source-grounded cases; new senior-care20sections/15tables, existing project/domain/summary/routes/metadata integration. Previous nine records and historical fixtures unchanged.
+- Pinned source a1c98e4, original A/B/C and EcanonicalLF, snapshot771155/119539,608IDs,12 baseline/9 sensitivity replays verified; PDFpages14/2. RawPDFs and vulnerable-person counts excluded from public assets.
+- Real fixed-source local previews bind299build files and exact snapshot; live source was older. PublicPR/workflow findings0; full IDs optional with visible substantive results and limits.
 
 ### Verification Evidence
 
-- Clean GitBash init.sh: npmci/audit0/29unit/TypeScript/build28entries+404/175Chromium/17flows100%/diff. Accepted run has0flaky/0skipped/0unexpected failures.
--240Pages viewport/locale/theme/page checks;21root and21Pages direct/reload/metadata/language/404outcomes;0page/consoleerrors, pageoverflow, broken loaded previews or upstream research payloads. Manual screenshots/style verdict94with limitedscope.
-- Before/after resource bytes, precise preservation, link/route/browser evidence and full limitations: docs/govtech-v1.8-hardening-verification.md.
+- Final clean GitBash init.sh: audit0,29 unit,190 Chromium,17/17 flows100%,TypeScript/build30 routes+404,diff. Final0flaky/skip/unexpected.
+-260Pages combinations,23root+23Pages route outcomes, keyboard/disclosures/long tables/locales/themes/no payloads passed. Measured loading costs, limited visual scope and detail  >500 kBwarning disclosed in docs/govtech-v1.9-verification.md.
 
 ### Blockers
 
-None for implementation. Draft delivered; user owns review and merge.
+None for implementation. Draft delivered.
 
 ### Remaining Risks
 
-One external demo timed out. Public policy, source-unit, operational and coordinate assumptions remain as documented; no new official crosswalk/datum/current-engineering certification or measured policy outcomes. Local Chromium checks are not hosted Lighthouse, physical-device or screen-reader certification.
+Mode C service capacity/access/outcomes unavailable; no compatible all-village denominator/GIS access model. SourceE is retainedGitLF, not acquiredHTTP. Python extraction/full upstream tests not rerun. Older live source deployment; detailed route payload increased; local Chromium/visual coverage is not production Lighthouse or screen-reader certification.
 
 ### Next Session Should
 
-1. Review the draft and source-preservation/evidence documents; user handles hosted checks, marks ready and merges manually.
-2. Preserve the original research source editions/cohorts, negative findings and exact ID traceability.
+Review the draft and evidence; user handles hosted E2E/Lighthouse, readiness and merge. Preserve existing source/number/privacy boundaries.
 
 ## Update Contract
 
@@ -317,3 +314,13 @@ Reviewed all9cases/18localizedrecords. Public PR references removed, language/di
 ### 2026-10-24 — Remove unrelated landing architecture reference
 
 Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed. Updated the same draft PR #33; no hosted-check wait or merge.
+
+
+### 2026-10-24 — Start GovTech v1.9 Case010
+
+Fetched main bcd78c6 and created the requested branch. Baseline CI=true Git Bash init.sh passed with29unit/175Chromium tests and17/17flows; local resource baseline saved separately under docs/evidence/govtech-v1.9. Pinned upstream source evidence retained in ignored cache for independent verification. Implementing source-grounded bilingual senior-care documentary review; no source-project edits or new policy model.
+
+
+### 2026-10-24 — Complete GovTech v1.9 Case 010
+
+Ten bilingual cases delivered locally with independently checked source evidence and real previews. Full29 unit/190 Chromium/17 flows, audit0,260viewport and46root/Pages routes passed. Existing nine records and historical fixtures retained. Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge.

@@ -1,0 +1,8 @@
+{
+  "method": "pypdf PdfReader page-tree count; no extraction or sensitive text emitted",
+  "pages": {
+    "A": 14,
+    "B": 2
+  },
+  "notExecuted": "Python pdfplumber production extraction rerun"
+}

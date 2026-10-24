@@ -1,0 +1,1005 @@
+{
+  "sourceSha": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+  "merge": {
+    "merged": true,
+    "sha": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+    "mergedAt": "2026-10-23T18:40:42Z"
+  },
+  "methodId": "senior-community-care-evidence-review-v1",
+  "schemaVersion": 1,
+  "analysisDate": "2026-10-23",
+  "referencePeriod": "2026-08",
+  "snapshot": {
+    "id": "senior-care-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+    "sha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+    "bytes": 771155,
+    "gzipBytes": 119539
+  },
+  "sources": {
+    "A": {
+      "sha256": "26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2",
+      "bytes": 467284,
+      "pages": 14,
+      "rows": 520,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "B": {
+      "sha256": "c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7",
+      "bytes": 104821,
+      "pages": 2,
+      "rows": 88,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "C": {
+      "sha256": "2e598f8d48b46a9b832dd3a661f900badb33f0ef79cc84ada48893af369b5336",
+      "bytes": 53742,
+      "pages": null,
+      "rows": null,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "E": {
+      "sha256": "db5873afbb0e5edd376f90ebb02fca975e0844cf786e09407d022be03567772f",
+      "bytes": 81697,
+      "rows": 510,
+      "byteSemantics": "canonical-retained-Git-LF-not-original-HTTP"
+    },
+    "F": {
+      "rows": 292,
+      "separateProgramme": true
+    }
+  },
+  "reconciliation": {
+    "exact": 427,
+    "normalized": 66,
+    "accepted": 493,
+    "ambiguous": 1,
+    "rejected": 9,
+    "pdfOnly": 17,
+    "retainedUnassociated": 17
+  },
+  "villageComparison": {
+    "aKeys": 368,
+    "bKeys": 88,
+    "overlap": 0
+  },
+  "tiers": {
+    "A": 1,
+    "B": 61,
+    "C": 458
+  },
+  "scenarios": [
+    {
+      "mode": "A",
+      "capacity": 5,
+      "strategy": "evidence",
+      "eligibleCount": 520,
+      "used": 5,
+      "districtCount": 3,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1"
+      ],
+      "selectedSerials": [
+        114,
+        1,
+        59,
+        60,
+        66
+      ],
+      "selectedIdsSha256": "96c10cba5eda70252145696c2d48655b31605a979916b7f6a1a6a099f8782910"
+    },
+    {
+      "mode": "A",
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 520,
+      "used": 5,
+      "districtCount": 5,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0147:ff2f1ecb38171f7e34b0f9e211d0821a0c9598ecc933952ef0696e98bb3a6023:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0190:924f47d87572beefc9ee16e6a76b8e55ad2eb91232b60b9f0a07f961f37be6d3:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0431:8491dfc6e35b16d647ac2a80ba68a8499185f9cf7b87cf9d5b0aebb89dd2472e:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0226:7bff6c57fdaad70fe074887970a1c90f00c59376b4134649b1ac4fedf8042e2c:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0319:34cd86bda144e93a76e8d245606fb6f3081bfe7ddcbf0b247b5b024f2e8fac35:1"
+      ],
+      "selectedSerials": [
+        147,
+        190,
+        431,
+        226,
+        319
+      ],
+      "selectedIdsSha256": "a63e671d627ffca9ab5d3a7cce0d7843aee5581359cc72bbdb0338e25a49c966"
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "strategy": "evidence",
+      "eligibleCount": 520,
+      "used": 10,
+      "districtCount": 3,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0070:8f2a85ac239fb4d940947ac96cd43b4dd1daf5bdba83eb841c9f885b97603bd6:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0072:8296d6596378603b882cab852ed95d3b666ad9dafd4230d01c95aafabeac5fd1:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0073:e55e57cfa6d99f99d054c0618dabc98d5ef1c528a6ff5167171ac5ff970f3485:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0089:bde34c5c7f684273d47963dd6936ef83c6e6f6fb36292e0fa414740a262eb32c:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0096:20f236a5ff60353e06f76ea5766860f9fe213e77a948f434ea3abdf0f1cc3d85:1"
+      ],
+      "selectedSerials": [
+        114,
+        1,
+        59,
+        60,
+        66,
+        70,
+        72,
+        73,
+        89,
+        96
+      ],
+      "selectedIdsSha256": "9f82ba3434be35d5d9633d6cd76238b389aea660aac17727db00522019bde468"
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 520,
+      "used": 10,
+      "districtCount": 10,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0147:ff2f1ecb38171f7e34b0f9e211d0821a0c9598ecc933952ef0696e98bb3a6023:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0190:924f47d87572beefc9ee16e6a76b8e55ad2eb91232b60b9f0a07f961f37be6d3:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0431:8491dfc6e35b16d647ac2a80ba68a8499185f9cf7b87cf9d5b0aebb89dd2472e:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0226:7bff6c57fdaad70fe074887970a1c90f00c59376b4134649b1ac4fedf8042e2c:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0319:34cd86bda144e93a76e8d245606fb6f3081bfe7ddcbf0b247b5b024f2e8fac35:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0467:4ec75a230968a5dea0fbb3fc7806aa1b848724698ba3220dbb7920f7701ff5a4:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0253:4aebde1bb6cf49d1583a521d9c54878852f10ef7e6322602b89620defbfde6fb:1"
+      ],
+      "selectedSerials": [
+        147,
+        190,
+        431,
+        226,
+        319,
+        467,
+        1,
+        59,
+        114,
+        253
+      ],
+      "selectedIdsSha256": "0e38db6f02ad501be84d1e8bb2510591982b487f7a0229741124d6778a7b30f8"
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "strategy": "evidence",
+      "eligibleCount": 520,
+      "used": 520,
+      "districtCount": 12,
+      "selectedIds": [],
+      "selectedSerials": [],
+      "selectedIdsSha256": "3a548eeca71bdfc3cb58942fda19d2232169566addef170b75b1e96d060d3b71"
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 520,
+      "used": 520,
+      "districtCount": 12,
+      "selectedIds": [],
+      "selectedSerials": [],
+      "selectedIdsSha256": "c9369ef6a464aa0f4d470f0623e91fbdcbb42029109f71b15d385582d6acdd8f"
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "strategy": "evidence",
+      "eligibleCount": 88,
+      "used": 5,
+      "districtCount": 1,
+      "selectedIds": [
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0001:54e6eeb5ea7c9c2081182d81f6e9cc468919a972592b3fa6b85bc10b2e9a7c87:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0002:8b1baca7f1aaeb0c5e02a59359595f0ffc8a2766b1abae6c2a374594814b3f2e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0003:3adbd77d18421da522e6a7d1dfab02dd9ed42fe20472aa5bacf808da454d3d6e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0004:b8fb2a9431ca506fcb24cfb6f46af9ae64ba18203d88f3efa708d4b08e352f71:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0005:336024b3b87346ad440c8b71c2b73598baa34141152c87e8d08f140e91b02103:1"
+      ],
+      "selectedSerials": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "selectedIdsSha256": "45f77dd5fde819132fd01bbad7f81f5ecef70e614c2c2f3fe03c534329bfba35"
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 88,
+      "used": 5,
+      "districtCount": 5,
+      "selectedIds": [
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0033:ec4ef1b1960bdc0a3f7c8c3ff7f98e8e7a205984e6fbd0553969cf58dabc11a6:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0041:ed2743952676a1450225ab4a093dcf4bb0929a0eb63a293747a60564ae1be162:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0075:89b3bc99e4ba63f1d813f2f7a4ff71665cf3341391529498670c17b590ade727:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0047:833cf3122c1f21f86fb96c634932b8969c3f50d4ee6e777c99eff9fb3c63f98b:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0065:32e0a80a438d88cf934f1811b88db86f4db9400c6755f260b844817cf587acd5:1"
+      ],
+      "selectedSerials": [
+        33,
+        41,
+        75,
+        47,
+        65
+      ],
+      "selectedIdsSha256": "267270b41bcff54ec055fc5812604b7d79bcc9eed538c6faec6bbffd465f8f7f"
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "strategy": "evidence",
+      "eligibleCount": 88,
+      "used": 10,
+      "districtCount": 1,
+      "selectedIds": [
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0001:54e6eeb5ea7c9c2081182d81f6e9cc468919a972592b3fa6b85bc10b2e9a7c87:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0002:8b1baca7f1aaeb0c5e02a59359595f0ffc8a2766b1abae6c2a374594814b3f2e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0003:3adbd77d18421da522e6a7d1dfab02dd9ed42fe20472aa5bacf808da454d3d6e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0004:b8fb2a9431ca506fcb24cfb6f46af9ae64ba18203d88f3efa708d4b08e352f71:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0005:336024b3b87346ad440c8b71c2b73598baa34141152c87e8d08f140e91b02103:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0006:c39d9698a09a0f4aaf457d567f4998aa377bf5331d10c8d25f3509af375c7d4e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0007:56bc4b9d20140eb2365beefa84220e0047181ebb9ec47c3a43a5cd85472cfb7f:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0008:280d7d968724898773e0f92a08748ebfc01cdc43b5294af16d675282bc5e1806:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0009:5d4e91bcb2df905858cfde048481b6c33c158405c15dfb5a6320bf0d0353742e:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0010:52a1e36d81ab90bdec50b268cfb9a5c5a5517187feaef2ea8663d7af2cbbd400:1"
+      ],
+      "selectedSerials": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "selectedIdsSha256": "f3b3f7ef3a6b6f9f6e38fbdfdea9da2667eac93de3960d11430b6118a893a00a"
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 88,
+      "used": 10,
+      "districtCount": 10,
+      "selectedIds": [
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0033:ec4ef1b1960bdc0a3f7c8c3ff7f98e8e7a205984e6fbd0553969cf58dabc11a6:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0041:ed2743952676a1450225ab4a093dcf4bb0929a0eb63a293747a60564ae1be162:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0075:89b3bc99e4ba63f1d813f2f7a4ff71665cf3341391529498670c17b590ade727:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0047:833cf3122c1f21f86fb96c634932b8969c3f50d4ee6e777c99eff9fb3c63f98b:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0065:32e0a80a438d88cf934f1811b88db86f4db9400c6755f260b844817cf587acd5:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0080:8b8d2655ceac1e592514e4ac1b9964b1b7713b4e8b67242647bd751df0468750:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0001:54e6eeb5ea7c9c2081182d81f6e9cc468919a972592b3fa6b85bc10b2e9a7c87:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0017:5346f88a9c40941d9d2b1d2677f573cf7b8997a5151a9e5ae6ce05412cf0a8af:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0022:cd803b083cb75ef7189128f99e6e6dfb6109bb28bc54257d6a00ac29f97ee3e4:1",
+        "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0059:4e00d07ace7f28d177c5af4632761c34a80329015a583cd9d18d1e70ff11607f:1"
+      ],
+      "selectedSerials": [
+        33,
+        41,
+        75,
+        47,
+        65,
+        80,
+        1,
+        17,
+        22,
+        59
+      ],
+      "selectedIdsSha256": "87106559825b975cac19d9a3a8200ebc3e7724b5ef1e662107ecfd77445374e2"
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "strategy": "evidence",
+      "eligibleCount": 88,
+      "used": 88,
+      "districtCount": 12,
+      "selectedIds": [],
+      "selectedSerials": [],
+      "selectedIdsSha256": "a836e306555adda6dae3ef3cadf5b044cfe77aadbbf9d5aed594bdb6d0a8e1d0"
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 88,
+      "used": 88,
+      "districtCount": 12,
+      "selectedIds": [],
+      "selectedSerials": [],
+      "selectedIdsSha256": "777e34f14c7781246369bed831b3f73dff61a4a20f5a74905658e55980ea5288"
+    }
+  ],
+  "overlaps": [
+    {
+      "mode": "A",
+      "capacity": 5,
+      "shared": 0
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "shared": 3
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "shared": 520
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "shared": 0
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "shared": 1
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "shared": 88
+    }
+  ],
+  "sensitivity": [
+    {
+      "sourceScope": "pdf",
+      "category": "all",
+      "population": 520,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0208:060c8b2b0bb06d0a64b4cab725e0db14deeb2591bba13d0c03becf1d46ff4754:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0229:4da94742b203ae757541860c2a98c7ca93ca4b5022e1555b04c5340e2a3ae742:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0332:c22cd356a25479c4975d0d6c17dd72164c0a3309503d90e93023696be6c44447:1"
+      ],
+      "selectedSerials": [
+        1,
+        66,
+        208,
+        229,
+        332
+      ],
+      "districtCount": 5,
+      "shared": 2,
+      "added": 3,
+      "removed": 3,
+      "populationChange": 0
+    },
+    {
+      "sourceScope": "pdf",
+      "category": "care-point",
+      "population": 463,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0208:060c8b2b0bb06d0a64b4cab725e0db14deeb2591bba13d0c03becf1d46ff4754:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0229:4da94742b203ae757541860c2a98c7ca93ca4b5022e1555b04c5340e2a3ae742:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0332:c22cd356a25479c4975d0d6c17dd72164c0a3309503d90e93023696be6c44447:1"
+      ],
+      "selectedSerials": [
+        1,
+        66,
+        208,
+        229,
+        332
+      ],
+      "districtCount": 5,
+      "shared": 2,
+      "added": 3,
+      "removed": 3,
+      "populationChange": -57
+    },
+    {
+      "sourceScope": "pdf",
+      "category": "learning",
+      "population": 57,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0012:8616f5afca584c0adf81a2f5355b024556256458898357d9607b4dd97d52ec07:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0013:f21acbd5aa0a4c9628b02ffcbc4b4802eff736d629403cfb097a41ac67443b7c:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0016:1f86652b47ab56c1385285b63a7ef1be2ab5de271139be9093b6776be2058b04:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0024:5935be152d572520133b39b7c8ed2a408a64bf068d98217f3ac27c69710eaa17:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0030:c846fbec74243965bbcd21e9353b607a0366bd62bab32d46bd0e82ef4fd8a336:1"
+      ],
+      "selectedSerials": [
+        12,
+        13,
+        16,
+        24,
+        30
+      ],
+      "districtCount": 1,
+      "shared": 0,
+      "added": 5,
+      "removed": 5,
+      "populationChange": -463
+    },
+    {
+      "sourceScope": "associated",
+      "category": "all",
+      "population": 493,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0072:8296d6596378603b882cab852ed95d3b666ad9dafd4230d01c95aafabeac5fd1:1"
+      ],
+      "selectedSerials": [
+        1,
+        59,
+        60,
+        66,
+        72
+      ],
+      "districtCount": 2,
+      "shared": 4,
+      "added": 1,
+      "removed": 1,
+      "populationChange": -27
+    },
+    {
+      "sourceScope": "associated",
+      "category": "care-point",
+      "population": 441,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0072:8296d6596378603b882cab852ed95d3b666ad9dafd4230d01c95aafabeac5fd1:1"
+      ],
+      "selectedSerials": [
+        1,
+        59,
+        60,
+        66,
+        72
+      ],
+      "districtCount": 2,
+      "shared": 4,
+      "added": 1,
+      "removed": 1,
+      "populationChange": -79
+    },
+    {
+      "sourceScope": "associated",
+      "category": "learning",
+      "population": 52,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0012:8616f5afca584c0adf81a2f5355b024556256458898357d9607b4dd97d52ec07:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0013:f21acbd5aa0a4c9628b02ffcbc4b4802eff736d629403cfb097a41ac67443b7c:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0016:1f86652b47ab56c1385285b63a7ef1be2ab5de271139be9093b6776be2058b04:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0024:5935be152d572520133b39b7c8ed2a408a64bf068d98217f3ac27c69710eaa17:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0030:c846fbec74243965bbcd21e9353b607a0366bd62bab32d46bd0e82ef4fd8a336:1"
+      ],
+      "selectedSerials": [
+        12,
+        13,
+        16,
+        24,
+        30
+      ],
+      "districtCount": 1,
+      "shared": 0,
+      "added": 5,
+      "removed": 5,
+      "populationChange": -468
+    },
+    {
+      "sourceScope": "broad",
+      "category": "all",
+      "population": 520,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1"
+      ],
+      "selectedSerials": [
+        114,
+        1,
+        59,
+        60,
+        66
+      ],
+      "districtCount": 3,
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "populationChange": 0
+    },
+    {
+      "sourceScope": "broad",
+      "category": "care-point",
+      "population": 463,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1"
+      ],
+      "selectedSerials": [
+        114,
+        1,
+        59,
+        60,
+        66
+      ],
+      "districtCount": 3,
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "populationChange": -57
+    },
+    {
+      "sourceScope": "broad",
+      "category": "learning",
+      "population": 57,
+      "selectedIds": [
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0096:20f236a5ff60353e06f76ea5766860f9fe213e77a948f434ea3abdf0f1cc3d85:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0140:88a3bcd33dbef4218bf664fc3ed9f48c65aa65ba758a61d0a5695b390ddf556a:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0147:ff2f1ecb38171f7e34b0f9e211d0821a0c9598ecc933952ef0696e98bb3a6023:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0209:75327893b27e35ca16fc99305096559ca6ac34dfe230a648748a4799a45d7943:1",
+        "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0263:5745f9dcfbd686430223b62fa008594b6613562947e8b8b91853d10239080734:1"
+      ],
+      "selectedSerials": [
+        96,
+        140,
+        147,
+        209,
+        263
+      ],
+      "districtCount": 4,
+      "shared": 0,
+      "added": 5,
+      "removed": 5,
+      "populationChange": -463
+    }
+  ],
+  "selectedExamples": {
+    "A": [
+      {
+        "id": "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0114:a382ed6d906c5c313e3bfcb4bc359db10a17ea7b4c837087184399e37e46d2fb:1",
+        "serial": 114,
+        "page": 4,
+        "district": "大安區",
+        "village": "新龍里",
+        "name": "臺北市大安區大安新龍社區發展協會",
+        "tier": "A",
+        "reasons": [
+          "ambiguous-association"
+        ]
+      },
+      {
+        "id": "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0001:93d6c283a994775d7332a327149b50dd82ddf03c0a4c4f4386de11803bda6a27:1",
+        "serial": 1,
+        "page": 1,
+        "district": "士林區",
+        "village": "三玉里",
+        "name": "士林老人服務中心(財團法人台北市中國基督教靈糧世界佈道會士林靈糧堂)",
+        "tier": "B",
+        "reasons": [
+          "session-band-unknown"
+        ]
+      },
+      {
+        "id": "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0059:a003356dfe0a02d1e43a6dfe2fa334f0cf62e80fc5842caa8e45c3cc30a93180:1",
+        "serial": 59,
+        "page": 2,
+        "district": "大同區",
+        "village": "保安里",
+        "name": "社團法人中華無齡酷活協會",
+        "tier": "B",
+        "reasons": [
+          "type-edition-discrepancy"
+        ]
+      },
+      {
+        "id": "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0060:c48ef6c5ca6a0d8102e6d531ed75abc8629162f4c964eaa159c1e6f7d3bb5433:1",
+        "serial": 60,
+        "page": 2,
+        "district": "大同區",
+        "village": "南芳里",
+        "name": "社團法人中華國際照顧發展協會",
+        "tier": "B",
+        "reasons": [
+          "type-edition-discrepancy"
+        ]
+      },
+      {
+        "id": "A:26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2:0066:c3c0cad58a6b5d482bf48262b13020204b2c3a3e8036c577699cdeebb96d6568:1",
+        "serial": 66,
+        "page": 2,
+        "district": "大同區",
+        "village": "重慶里",
+        "name": "大同老人服務暨日間照顧中心",
+        "tier": "B",
+        "reasons": [
+          "session-band-unknown"
+        ]
+      }
+    ],
+    "B": [
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0001:54e6eeb5ea7c9c2081182d81f6e9cc468919a972592b3fa6b85bc10b2e9a7c87:1",
+        "serial": 1,
+        "page": 1,
+        "district": "士林區",
+        "village": "福安里",
+        "name": "福安里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0002:8b1baca7f1aaeb0c5e02a59359595f0ffc8a2766b1abae6c2a374594814b3f2e:1",
+        "serial": 2,
+        "page": 1,
+        "district": "士林區",
+        "village": "德華里",
+        "name": "德華里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0003:3adbd77d18421da522e6a7d1dfab02dd9ed42fe20472aa5bacf808da454d3d6e:1",
+        "serial": 3,
+        "page": 1,
+        "district": "士林區",
+        "village": "社子里",
+        "name": "社子里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0004:b8fb2a9431ca506fcb24cfb6f46af9ae64ba18203d88f3efa708d4b08e352f71:1",
+        "serial": 4,
+        "page": 1,
+        "district": "士林區",
+        "village": "蘭雅里",
+        "name": "蘭雅里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0005:336024b3b87346ad440c8b71c2b73598baa34141152c87e8d08f140e91b02103:1",
+        "serial": 5,
+        "page": 1,
+        "district": "士林區",
+        "village": "天和里",
+        "name": "天和里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      }
+    ],
+    "balancedB": [
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0033:ec4ef1b1960bdc0a3f7c8c3ff7f98e8e7a205984e6fbd0553969cf58dabc11a6:1",
+        "serial": 33,
+        "page": 1,
+        "district": "中山區",
+        "village": "中庄里",
+        "name": "中庄里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0041:ed2743952676a1450225ab4a093dcf4bb0929a0eb63a293747a60564ae1be162:1",
+        "serial": 41,
+        "page": 1,
+        "district": "中正區",
+        "village": "廈安里",
+        "name": "廈安里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0075:89b3bc99e4ba63f1d813f2f7a4ff71665cf3341391529498670c17b590ade727:1",
+        "serial": 75,
+        "page": 2,
+        "district": "信義區",
+        "village": "黎安里",
+        "name": "黎安里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0047:833cf3122c1f21f86fb96c634932b8969c3f50d4ee6e777c99eff9fb3c63f98b:1",
+        "serial": 47,
+        "page": 1,
+        "district": "內湖區",
+        "village": "紫陽里",
+        "name": "紫陽里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      },
+      {
+        "id": "B:c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7:0065:32e0a80a438d88cf934f1811b88db86f4db9400c6755f260b844817cf587acd5:1",
+        "serial": 65,
+        "page": 2,
+        "district": "北投區",
+        "village": "永欣里",
+        "name": "永欣里",
+        "tier": "C",
+        "reasons": [
+          "source-order-baseline"
+        ]
+      }
+    ]
+  },
+  "pdfControls": {
+    "A": {
+      "pageBoundaries": [
+        [
+          1,
+          36
+        ],
+        [
+          37,
+          74
+        ],
+        [
+          75,
+          112
+        ],
+        [
+          113,
+          149
+        ],
+        [
+          150,
+          187
+        ],
+        [
+          188,
+          225
+        ],
+        [
+          226,
+          262
+        ],
+        [
+          263,
+          298
+        ],
+        [
+          299,
+          335
+        ],
+        [
+          336,
+          373
+        ],
+        [
+          374,
+          412
+        ],
+        [
+          413,
+          451
+        ],
+        [
+          452,
+          489
+        ],
+        [
+          490,
+          520
+        ]
+      ],
+      "districtTransitionSerials": [
+        1,
+        49,
+        80,
+        145,
+        189,
+        220,
+        253,
+        307,
+        361,
+        400,
+        451,
+        477,
+        515,
+        516,
+        517,
+        519
+      ],
+      "multilineSerials": [
+        1,
+        14,
+        17,
+        35
+      ],
+      "first": 1,
+      "last": 520
+    },
+    "B": {
+      "pageBoundaries": [
+        [
+          1,
+          48
+        ],
+        [
+          49,
+          88
+        ]
+      ],
+      "districtTransitionSerials": [
+        1,
+        17,
+        22,
+        33,
+        41,
+        47,
+        59,
+        65,
+        71,
+        75,
+        80,
+        83
+      ],
+      "crossPageSpan": {
+        "district": "內湖區",
+        "serials": [
+          47,
+          58
+        ],
+        "visibleLabelPage": 2
+      },
+      "unicodeControl": {
+        "serial": 69,
+        "rawVillage": "㇐德里",
+        "visuallyRead": "一德里"
+      },
+      "first": 1,
+      "last": 88
+    }
+  },
+  "modeB": {
+    "available": true,
+    "reason": "Validated within-edition district/village documentary identities only."
+  },
+  "modeC": {
+    "available": false,
+    "missing": [
+      "current-operation",
+      "capacity-and-staffing",
+      "utilization-and-waitlists",
+      "travel-accessibility",
+      "compatible-population-denominators",
+      "welfare-outcomes"
+    ]
+  },
+  "registry": {
+    "status": "within-edition-only",
+    "reason": "No compatible all-village registry admitted; no codes, cross-edition geographic identity or citywide coverage denominator."
+  },
+  "privacy": {
+    "candidateFieldsExcluded": [
+      "elderlyAlone",
+      "phone",
+      "address",
+      "household",
+      "latitude",
+      "longitude",
+      "vulnerability",
+      "careNeed"
+    ],
+    "villageExtractionKeys": [
+      "serial",
+      "page",
+      "district",
+      "village"
+    ]
+  },
+  "upstreamPerformance": {
+    "meanScenarioMs": 0.3556622,
+    "browserInteractionMs": 35.10000002384186,
+    "exports": [
+      {
+        "mode": "A",
+        "capacity": 5,
+        "jsonBytes": 13255,
+        "csvBytes": 36285
+      },
+      {
+        "mode": "A",
+        "capacity": 10,
+        "jsonBytes": 18069,
+        "csvBytes": 72229
+      },
+      {
+        "mode": "A",
+        "capacity": "all",
+        "jsonBytes": 526870,
+        "csvBytes": 3740225
+      },
+      {
+        "mode": "B",
+        "capacity": 5,
+        "jsonBytes": 12233,
+        "csvBytes": 36090
+      },
+      {
+        "mode": "B",
+        "capacity": 10,
+        "jsonBytes": 16391,
+        "csvBytes": 71861
+      },
+      {
+        "mode": "B",
+        "capacity": "all",
+        "jsonBytes": 81499,
+        "csvBytes": 630245
+      }
+    ]
+  },
+  "verification": {
+    "executed": [
+      "37 pinned Git blob identities",
+      "608 candidate row hashes and edition-bound IDs",
+      "original-byte hashes",
+      "Git LF retained edition hash",
+      "snapshot exact bytes and gzip",
+      "source row and privacy schemas",
+      "twelve scenarios using pinned upstream engine",
+      "nine sensitivity scenarios using pinned upstream engine",
+      "selected-ID intersections",
+      "source-edition page and Unicode controls"
+    ],
+    "notExecuted": [
+      "Python PDF extraction rerun",
+      "full upstream test suite",
+      "independent operational service verification"
+    ]
+  }
+}

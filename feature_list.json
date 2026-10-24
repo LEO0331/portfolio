@@ -533,6 +533,28 @@
         "Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.",
         "Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed."
       ]
+    },
+    {
+      "id": "govtech-senior-community-care-v1-9-2026-10",
+      "name": "Add source-grounded bilingual senior community-care Case010",
+      "description": "Official PDF source custody, conservative identity reconciliation, administrative follow-up scenarios and privacy-aware publication.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-cross-case-quality-v1-8-2026-10"
+      ],
+      "doneCriteria": [
+        "Verified pinned source and compact privacy-minimized scenario evidence",
+        "Ten bilingual cases, root project, lightweight summaries, routes and SEO",
+        "Preserve previous nine cases and historical fixtures; pass public presentation and full local gate",
+        "Real preview and responsive keyboard/runtime/performance verification; one draft PR for human review"
+      ],
+      "evidence": [
+        "Source a1c98e4/37Gitblobs/A-B-Coriginalbytes/EcanonicalLF/snapshot771155-119539/608IDs/12 baseline+9 sensitivity/PDFpages14-2 verified",
+        "Ten bilingual cases20sections15tables; existing nine records and historical fixtures preserved;0publicworkflowfindings",
+        "Real fixed-source299file localbuild previews;520/88UI and exactsnapshot hash checked",
+        "Clean finalgate29 unit/190 Chromium/17 flows100%,audit0,260matrix,46root-Pages route outcomes; measured loading costs and limits documented",
+        "Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge."
+      ]
     }
   ]
 }

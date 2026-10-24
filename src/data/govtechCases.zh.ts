@@ -1,3 +1,4 @@
+import { seniorCommunityCareCaseZh } from "./govtechSeniorCommunityCare.zh";
 import { bridgeInspectionCaseZh } from "./govtechBridgeInspection.zh";
 import { wifiAllocationCaseZh } from "./govtechWifiAllocation.zh";
 import { busServiceCaseZh } from "./govtechBusService.zh";
@@ -96,4 +97,4 @@ export const binPolicyCaseZh = {
   futureExtensions: ["同一儲存庫的 Case005 已完成樹蔭公平 GIS 盤點與證據整備概念驗證；正式排序現勘候選仍待人行道測量定義與可比性驗證，不宣稱實測遮蔭或植樹可行性。"]
 } satisfies GovTechCase;
 
-export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh, shadeEquityCaseZh, neihuCongestionCaseZh, busServiceCaseZh, wifiAllocationCaseZh, bridgeInspectionCaseZh];
+export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh, shadeEquityCaseZh, neihuCongestionCaseZh, busServiceCaseZh, wifiAllocationCaseZh, bridgeInspectionCaseZh, seniorCommunityCareCaseZh];

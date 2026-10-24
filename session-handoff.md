@@ -1,38 +1,29 @@
 # Session Handoff
 
-**Last updated:** 2026-10-24
+Updated2026-10-24. Branch codex/govtech-senior-community-care-case-010, base bcd78c641e9e08ebf47101d21ea43725fc7e9e94.
 
-**Current objective:** Nine bilingual GovTech cases suitable for customer/HR review, with exact research evidence preserved.
+**Current objective:** Ten bilingual source-grounded GovTech cases, adding Senior Community Care Case 010.
 
-**Current status:** Draft PR https://github.com/LEO0331/portfolio/pull/33; user handles hosted E2E/Lighthouse, readiness and merge. No automatic merge.
+**Current status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge.
 
-## Completed and Verification
+Completed: Case 01020bilingualsections/15tables, source/snapshot/IDverification and12+9scenario replays;10case lightweight summaries, four-field overviews, correct project/domain relationships and30static routes+404. Existing nine records/goldens unchanged. Real source previews verified against299 pinned inputs and exactsnapshot;0public workflow findings. No sourceproject changes or new dependencies.
 
-180explicit presentation/locale edits across18records; historical fixtures untouched, complete inverse comparison passes. All numeric outcomes/source editions/methods/selected IDs preserved. Public PR/workflow findings0. Lightweight route data, native context/identifier disclosures, plain overviews and localized theme/accessibility copy. Full29unit/175Chromium/17flows100%,audit0,root/Pages42route outcomes and240viewport combinations passed. Baseline299cfe8 and integrated main024ca3e have identical application code; prior lifecycle/deployment evidence retained.
+Verification: clean fullgate29 unit/190 Chromium/17 flows100%,audit0;260viewport/locale/theme checks and46root/Pages route outcomes passed. Default production build restored. See docs/govtech-v1.9-verification.md, docs/govtech-senior-community-care-source-audit.md, docs/govtech-case-study-010.zh-TW.md and docs/evidence/govtech-v1.9/.
+
+Remaining risks: documentary scope/Mode C unavailable, no authoritative all-village denominator or access model, original-versus-GitLF custody distinction, no fresh Python extraction/fullupstreamtest replay, older live source deployment, larger detailed route chunk and local-only visual/browser evidence. No implementation blocker.
 
 ## Blockers
 
-None for implementation. Draft delivered.
-
-## Remaining Risks
-
-Public Safety Dashboard demo timed out8s in final bounded audit. Preserve source-specific research limits, including conditional bridge coordinates/polygons, no authoritative asset crosswalk or current structural assessment. Hosted E2E/Lighthouse and merge are intentionally user-owned; do not wait or auto-merge. No OMX.
+None for implementation.
 
 ## Files Relevant to the Next Update
 
-- docs/govtech-v1.8-cross-case-quality-review.md
-- docs/govtech-v1.8-public-presentation-audit.md
-- docs/govtech-v1.8-hardening-verification.md
-- docs/evidence/cross-case-quality/
-- tests/fixtures/govtech-public-baseline.json and govtech-presentation-edits.json
-- tests/e2e/govtech-public-presentation.spec.ts and govtech-presentation-preservation.spec.ts
-- src/data/govtechCaseSummaries.ts (parity-tested); canonical18case records
-- Previous source/replay/geographic proof: docs/poc-hardening-verification.md
+- docs/govtech-v1.9-verification.md
+- docs/govtech-senior-community-care-source-audit.md
+- docs/govtech-case-study-010.zh-TW.md
+- src/data/govtechSeniorCommunityCare.ts and its Chinese counterpart
+- tests/e2e/govtech-senior-community-care.spec.ts
 
 ## Recommended Next Step
 
-User reviews the draft, accepts hosted checks, marks ready and merges manually. No further policy expansion or production certification requested. Keep all source/number/ID invariants and evidence gates.
-
-## Latest presentation follow-up
-
-Removed the unrelated Gridline architecture-reference section from both English and Chinese GovTech landings, including unused copy and source-map data. TypeScript/production build and both existing bilingual landing/project-drawer browser checks passed (2/2). No case-study data or Gridline project listing changed.
+User reviews draft, handles hosted E2E/Lighthouse, marks ready and merges manually. Do not wait for hosted CI or auto-merge. No OMX. Ignore historical PR33 pending language inside older dated records; it is merged into this base.

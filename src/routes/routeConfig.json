@@ -12,6 +12,7 @@
     { "key": "govtech-bus-service", "path": "/govtech/bus-service", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Taipei Bus Network & Service Coverage Decision Support | Leo Chen", "description": "Traceable route-stop modelling and published-service evidence for reproducible municipal investigation priorities, with explicit service-performance limits." },
     {"key": "govtech-wifi-allocation", "path": "/govtech/wifi-allocation", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Public Wi-Fi Allocation & Digital Inclusion Decision Support | Leo Chen", "description": "From official inventory reconciliation to traceable review scenarios, coordinate-evidence validation and bounded experimental geographic research."},
     {"key": "govtech-bridge-inspection", "path": "/govtech/bridge-inspection", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Bridge Inspection & Maintenance Decision Support | Leo Chen", "description": "From official bridge records to conservative asset reconciliation, bounded geographic admission and reproducible documentation-review scenarios."},
+    {"key": "govtech-senior-community-care", "path": "/govtech/senior-community-care", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Senior Community Care Coverage & Service Readiness | Leo Chen", "description": "Evidence-aware senior community-care source reconciliation, official village follow-up scenarios and privacy-preserving public-data engineering."},
     { "key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7 },
     { "key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9 },
@@ -26,6 +27,7 @@
     { "key": "govtech-bus-service-zh", "path": "/zh/govtech/bus-service", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市公車路網與服務涵蓋決策支援 | Leo Chen", "description": "以主路線、附屬路線、站牌及公告班表建立可重現的文件查核情境，明確揭露方向性服務比較與實際營運歷史的證據限制。" },
     {"key": "govtech-wifi-allocation-zh", "path": "/zh/govtech/wifi-allocation", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市公共 Wi-Fi 資源配置與數位近用決策支援 | Leo Chen", "description": "從官方名冊對帳到可追溯查核情境、座標證據驗證與具有明確限制的實驗幾何研究。"},
     {"key": "govtech-bridge-inspection-zh", "path": "/zh/govtech/bridge-inspection", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市橋梁檢測與維護決策支援 | Leo Chen", "description": "從官方橋梁紀錄到保守資產對帳、受限地理准入與可重現文件查核情境。"},
+    {"key": "govtech-senior-community-care-zh", "path": "/zh/govtech/senior-community-care", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援 | Leo Chen", "description": "以官方社區照顧據點名冊、尚未布建里別與跨版本對帳，建立可追溯的行政查核情境與隱私保護證據。"},
     { "key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6 },
     { "key": "not-found", "path": "/404", "indexable": false }

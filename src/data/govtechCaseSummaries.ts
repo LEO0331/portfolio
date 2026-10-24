@@ -146,6 +146,22 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "Deterministic tiers, capacities and administrative balancing",
         "Eligibility sensitivity and auditable JSON/CSV exports"
       ]
+    },
+    {
+      "id": "senior-community-care",
+      "slug": "senior-community-care",
+      "displayNumber": "010",
+      "projectId": "taipei-civic-groups-map",
+      "title": "Senior Community Care Coverage & Service Readiness",
+      "summary": "From official care-site PDFs to traceable source reconciliation, explainable administrative follow-up and privacy-aware public-data engineering.",
+      "maturityLabel": "Completed evidence review and administrative follow-up proof of concept",
+      "implementedCapabilities": [
+        "Deterministic official PDF extraction with independent page controls",
+        "Source-bound site/village identity and conservative cross-edition reconciliation",
+        "Explainable tiers and 5/10/all administrative review scenarios",
+        "Privacy-minimized immutable snapshots and reproducible JSON/CSV briefings",
+        "Explicit unavailable service-capacity and welfare-outcome evidence gate"
+      ]
     }
   ],
   "zh": [
@@ -290,6 +306,22 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "確定性分級、名額與行政均衡",
         "資格敏感度與可稽核 JSON／CSV 匯出"
       ]
+    },
+    {
+      "id": "senior-community-care",
+      "slug": "senior-community-care",
+      "displayNumber": "010",
+      "projectId": "taipei-civic-groups-map",
+      "title": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援",
+      "summary": "從官方照顧據點 PDF 到可追溯來源對帳、可解釋行政追蹤與隱私保護公共資料工程。",
+      "maturityLabel": "已完成證據查核與行政追蹤情境概念驗證",
+      "implementedCapabilities": [
+        "確定性官方 PDF 擷取與獨立分頁控制",
+        "來源綁定據點／里別身分與保守跨版本對帳",
+        "可解釋分級與 5／10／全部行政查核情境",
+        "隱私最小化不可變快照與可重現 JSON／CSV 摘要",
+        "明列不可用的服務量能與福利成果證據門檻"
+      ]
     }
   ]
 };
@@ -349,6 +381,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "Check which records refer to the same asset, keep research matches separate, and test location evidence.",
       "The sources contain 416 and 612 rows; of 216 research matches, 194 documentation units meet the geographic inclusion rules.",
       "An official asset-matching table and structural assessments remain unavailable; boundary-check results depend on stated coordinate assumptions."
+    ],
+    "senior-community-care": [
+      "Which published care-site records and officially listed unbuilt villages need further documentation review?",
+      "Validate official PDFs, reconcile source editions and compare explainable administrative follow-up lists.",
+      "Validated 520 published site rows and 88 listed villages; accepted 493 older-directory research associations and reproduced both review modes.",
+      "Published records do not establish current operation, care capacity, resident access or unmet demand."
     ]
   },
   "zh": {
@@ -405,6 +443,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "核對紀錄是否指向同一資產，區分研究配對與正式對照，再檢查位置證據。",
       "兩份來源有 416 與 612 筆資料；216 筆研究配對中，194 筆文件單元符合地理納入規則。",
       "仍缺官方資產對照與結構評估；邊界檢查結果取決於明示的座標假設。"
+    ],
+    "senior-community-care": [
+      "哪些公告照顧據點紀錄與官方列示尚未布建里別需要進一步文件查核？",
+      "驗證官方 PDF、保守核對資料版本，並比較可解釋的行政追蹤名單。",
+      "驗證 520 筆公告據點列與 88 筆官方列示里別，接受 493 筆舊目錄研究對應，並重現兩種查核模式。",
+      "公告紀錄不能證明目前營運、照顧量能、居民近用或未滿足需求。"
     ]
   }
 };
@@ -558,6 +602,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
           "0": "Original-byte identities are retained independently for sources A and B. Historical source A in Git is an LF-normalized, 47,557-byte representation; the accepted download uses CRLF. Parsed original fields are equivalent, so this difference does not demonstrate an inspection-data revision."
         }
       }
+    },
+    "senior-community-care": {
+      "paragraphs": {
+        "sources": [
+          2
+        ],
+        "governance": [
+          2
+        ]
+      },
+      "tables": [
+        2,
+        13,
+        14
+      ],
+      "summaries": {
+        "sources": {
+          "2": "Official sources retain separate original-byte identities. The older directory instead uses a canonical retained Git LF text edition; this is not an independently acquired HTTP payload."
+        },
+        "governance": {
+          "2": "The source commit, snapshot identity and exact-file hash identify separate provenance objects. For this accepted publication only, the snapshot identifier includes the same digest as the exact JSON file."
+        }
+      }
     }
   },
   "zh": {
@@ -705,6 +772,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
       "summaries": {
         "lineage": {
           "0": "來源 A 與 B 分別保留原始檔案識別。版本紀錄中的歷史來源 A 採 LF 換行格式，共 47,557 位元組；接受的下載採 CRLF 換行格式。解析後原始欄位相同，不能據此宣稱檢測資料修訂。"
+        }
+      }
+    },
+    "senior-community-care": {
+      "paragraphs": {
+        "sources": [
+          2
+        ],
+        "governance": [
+          2
+        ]
+      },
+      "tables": [
+        2,
+        13,
+        14
+      ],
+      "summaries": {
+        "sources": {
+          "2": "官方來源各自保留取得時的原始位元組識別；舊目錄則採版本庫保存的 LF 文字版本識別，不能視為另行取得的原始 HTTP 回應。"
+        },
+        "governance": {
+          "2": "來源版本、快照身分與精確檔案雜湊各自識別不同追溯物件。僅就這份已接受發布而言，快照識別包含與精確 JSON 檔案相同的摘要；此關係不能推廣至其他案例。"
         }
       }
     }

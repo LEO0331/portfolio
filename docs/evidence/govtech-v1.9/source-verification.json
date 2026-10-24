@@ -1,0 +1,158 @@
+{
+  "sourceSha": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+  "merge": {
+    "merged": true,
+    "sha": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+    "mergedAt": "2026-10-23T18:40:42Z"
+  },
+  "snapshot": {
+    "id": "senior-care-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+    "sha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+    "bytes": 771155,
+    "gzipBytes": 119539
+  },
+  "sources": {
+    "A": {
+      "sha256": "26a56351439c42d92a386bb02ad561fffe462b9c0f001776087c28223bc0bcf2",
+      "bytes": 467284,
+      "pages": 14,
+      "rows": 520,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "B": {
+      "sha256": "c66d04fd36a5f4293e86769a5a1c02b02f746f73b6581b8e1357524fe019e3a7",
+      "bytes": 104821,
+      "pages": 2,
+      "rows": 88,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "C": {
+      "sha256": "2e598f8d48b46a9b832dd3a661f900badb33f0ef79cc84ada48893af369b5336",
+      "bytes": 53742,
+      "pages": null,
+      "rows": null,
+      "byteSemantics": "acquired-original-bytes"
+    },
+    "E": {
+      "sha256": "db5873afbb0e5edd376f90ebb02fca975e0844cf786e09407d022be03567772f",
+      "bytes": 81697,
+      "rows": 510,
+      "byteSemantics": "canonical-retained-Git-LF-not-original-HTTP"
+    },
+    "F": {
+      "rows": 292,
+      "separateProgramme": true
+    }
+  },
+  "tiers": {
+    "A": 1,
+    "B": 61,
+    "C": 458
+  },
+  "reconciliation": {
+    "exact": 427,
+    "normalized": 66,
+    "accepted": 493,
+    "ambiguous": 1,
+    "rejected": 9,
+    "pdfOnly": 17,
+    "retainedUnassociated": 17
+  },
+  "villageComparison": {
+    "aKeys": 368,
+    "bKeys": 88,
+    "overlap": 0
+  },
+  "overlaps": [
+    {
+      "mode": "A",
+      "capacity": 5,
+      "shared": 0
+    },
+    {
+      "mode": "A",
+      "capacity": 10,
+      "shared": 3
+    },
+    {
+      "mode": "A",
+      "capacity": "all",
+      "shared": 520
+    },
+    {
+      "mode": "B",
+      "capacity": 5,
+      "shared": 0
+    },
+    {
+      "mode": "B",
+      "capacity": 10,
+      "shared": 1
+    },
+    {
+      "mode": "B",
+      "capacity": "all",
+      "shared": 88
+    }
+  ],
+  "scenarioCount": 12,
+  "sensitivityCount": 9,
+  "verifiedPaths": [
+    "data/raw/senior-care-policy/manifest.json",
+    "data/raw/senior-care-policy/extraction-audit.json",
+    "data/raw/senior-care-policy/extracted.json",
+    "data/raw/senior-care-policy/A.pdf",
+    "data/raw/senior-care-policy/B.pdf",
+    "data/raw/senior-care-policy/A-page.html",
+    "data/raw/senior-care-policy/B-page.html",
+    "data/raw/senior-care-policy/C-page.html",
+    "data/raw/senior-care-policy/A-attachment-url.txt",
+    "data/raw/senior-care-policy/B-attachment-url.txt",
+    "docs/senior-care-policy-source-feasibility.md",
+    "docs/senior-care-policy-pdf-extraction-audit.md",
+    "docs/senior-care-policy-identity-contract.md",
+    "docs/senior-care-policy-methodology.md",
+    "docs/senior-care-policy-decision-mvp.zh-TW.md",
+    "docs/senior-care-policy-delivery.md",
+    "docs/senior-care-policy-results.json",
+    "docs/senior-care-policy-performance.json",
+    "public/policy/senior-care-policy/current.json",
+    "public/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+    "scripts/fetchSeniorCarePolicySources.ts",
+    "scripts/auditSeniorCarePolicySources.ts",
+    "scripts/buildSeniorCarePolicySnapshot.ts",
+    "scripts/verifySeniorCarePolicy.ts",
+    "scripts/seniorCarePolicyPdf.py",
+    "scripts/seniorCarePolicyPdf.test.py",
+    "scripts/senior-care-policy-requirements.txt",
+    "src/lib/seniorCarePolicy.ts",
+    "src/lib/loadSeniorCarePolicy.ts",
+    "src/types/seniorCarePolicy.ts",
+    "src/SeniorCarePolicyDashboard.tsx",
+    "src/lib/seniorCarePolicy.test.ts",
+    "tests/e2e/senior-care-policy.spec.ts",
+    "data/raw/community-care-service-sites/source.csv",
+    "public/data/community-care-service-sites/records.json",
+    "public/data/community-integrated-care-level-c-units/records.json",
+    ".gitattributes"
+  ],
+  "verification": {
+    "executed": [
+      "37 pinned Git blob identities",
+      "608 candidate row hashes and edition-bound IDs",
+      "original-byte hashes",
+      "Git LF retained edition hash",
+      "snapshot exact bytes and gzip",
+      "source row and privacy schemas",
+      "twelve scenarios using pinned upstream engine",
+      "nine sensitivity scenarios using pinned upstream engine",
+      "selected-ID intersections",
+      "source-edition page and Unicode controls"
+    ],
+    "notExecuted": [
+      "Python PDF extraction rerun",
+      "full upstream test suite",
+      "independent operational service verification"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Real native keyboard-opened technical table and ArrowRight scrolling; manual screenshot review separate.",
+  "results": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "theme": "light",
+      "scrollLeft": 40,
+      "scrollWidth": 4280,
+      "clientWidth": 862,
+      "pageOverflow": false,
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "theme": "dark",
+      "scrollLeft": 40,
+      "scrollWidth": 4196,
+      "clientWidth": 324,
+      "pageOverflow": false,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

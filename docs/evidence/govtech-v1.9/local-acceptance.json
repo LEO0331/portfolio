@@ -1,0 +1,19 @@
+{
+  "unitTests": 29,
+  "browserStats": {
+    "startTime": "2026-10-24T02:22:03.430Z",
+    "duration": 245825.198,
+    "expected": 190,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "functionalFlows": "17/17",
+  "pagesRouteOutcomes": 23,
+  "rootRouteOutcomes": 23,
+  "viewportChecks": 260,
+  "auditVulnerabilities": 0,
+  "historicalCasesPreserved": 9,
+  "publicCaseRecords": 20,
+  "publicWorkflowFindings": 0
+}

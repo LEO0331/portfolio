@@ -1,3 +1,4 @@
+import { seniorCommunityCareCase } from "./govtechSeniorCommunityCare";
 import { bridgeInspectionCase } from "./govtechBridgeInspection";
 import { wifiAllocationCase } from "./govtechWifiAllocation";
 import { busServiceCase } from "./govtechBusService";
@@ -155,4 +156,4 @@ export const binPolicyCase = {
   futureExtensions: ["Shade Equity GIS inventory and evidence-readiness POC is completed in this repository as Case005. Ranked field-review candidates remain unavailable until sidewalk measurement definitions and comparability are verified; no measured shade or planting feasibility is claimed."]
 } satisfies GovTechCase;
 
-export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase, shadeEquityCase, neihuCongestionCase, busServiceCase, wifiAllocationCase, bridgeInspectionCase];
+export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase, shadeEquityCase, neihuCongestionCase, busServiceCase, wifiAllocationCase, bridgeInspectionCase, seniorCommunityCareCase];

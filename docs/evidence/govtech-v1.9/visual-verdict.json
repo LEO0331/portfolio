@@ -1,0 +1,12 @@
+{
+  "score": 94,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case010 has a longer two-line desktop title and a source-specific four-field overview, while retaining the existing case width, spacing, typography, panels and native disclosure controls.",
+    "The inspected390pxTraditionalChinese dark view wraps title and all four overview fields within the viewport, with substantive limits visible before supplementary evidence.",
+    "Expanded full-ID sensitivity tables are deliberately wide technical evidence: native ArrowRight scrolling advances40px inside862px desktop and324px mobile containers, with no page overflow."
+  ],
+  "suggestions": [],
+  "reasoning": "Manual comparison of Case010 English desktop and Chinese390pxdark against the existing Bridge desktop and prior mobile case styling found a consistent hierarchy and no clipped overview. This is a limited visual-style assessment, not factual, accessibility or complete-device certification. Expanded technical-table desktop/mobile captures were also inspected; primary content and the full-ID disclosure have distinct readability scopes."
+}

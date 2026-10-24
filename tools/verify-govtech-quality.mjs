@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {dirname,resolve} from 'node:path';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const base=process.env.QUALITY_BASE??'/portfolio/',port=Number(process.env.QUALITY_PORT??4196);
-const origin=`http://127.0.0.1:${port}`,out=resolve(root,'docs/evidence/cross-case-quality');mkdirSync(out,{recursive:true});
+const origin=`http://127.0.0.1:${port}`,out=resolve(root,process.env.QUALITY_OUTPUT_DIR??'docs/evidence/cross-case-quality');mkdirSync(out,{recursive:true});
 const config=JSON.parse(readFileSync(resolve(root,'src/routes/routeConfig.json')));
 const paths=['','projects','govtech',...config.routes.filter(r=>r.path.startsWith('/govtech/')).map(r=>r.path.slice(1))];
 const server=spawn(process.execPath,[resolve(root,'node_modules/vite/bin/vite.js'),'preview','--host','127.0.0.1','--port',String(port),'--strictPort','--base',base],{cwd:root,stdio:'ignore'});
@@ -28,20 +28,20 @@ try{
   const p=await context.newPage();await p.route('https://fonts.googleapis.com/**',r=>r.abort());
   p.on('pageerror',e=>errors.push({width,locale,theme,message:e.message}));
   p.on('console',m=>{if(m.type()==='error'&&!m.location().url.includes('fonts.googleapis.com'))errors.push({width,locale,theme,scope:'console',message:m.text()});});
-  p.on('request',r=>{if(/data\.taipei|raw\.githubusercontent|api\.github|\/data\/(?:wifi|bridge|bus|neihu|shade)/.test(r.url()))upstreamRequests.push(r.url());});
+  p.on('request',r=>{if(/data\.taipei|dosw\.gov|laws\.gov|www-ws\.gov|raw\.githubusercontent|api\.github|\/policy\/senior-care-policy|\/data\/(?:wifi|bridge|bus|neihu|shade)/.test(r.url()))upstreamRequests.push(r.url());});
   for(const path of paths){
    await p.goto(origin+base+(locale==='zh'?'zh/':'')+path,{waitUntil:'networkidle'});await p.locator('h1').waitFor();
-   const result=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,dark:document.documentElement.classList.contains('dark'),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i),cards:document.querySelectorAll('#govtech-cases').length?document.querySelector('#govtech-cases').parentElement.querySelectorAll('article').length:0,missingTableCaptions:[...document.querySelectorAll('table')].filter(t=>!t.querySelector('caption')).length}));
+   const result=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,dark:document.documentElement.classList.contains('dark'),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i),cards:document.querySelectorAll('#govtech-cases').length?document.querySelector('#govtech-cases').closest('section').querySelectorAll('article').length:0,missingTableCaptions:[...document.querySelectorAll('table')].filter(t=>!t.querySelector('caption')).length}));
    for(const img of await p.locator('main img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode().catch(()=>{}));}
    const brokenImages=await p.locator('main img').evaluateAll(imgs=>imgs.filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.currentSrc));
-   const pass=!result.overflow&&result.dark===(theme==='dark')&&!result.duplicateIds.length&&!result.missingTableCaptions&&!brokenImages.length&&(path!=='govtech'||result.cards===9);
+   const pass=!result.overflow&&result.dark===(theme==='dark')&&!result.duplicateIds.length&&!result.missingTableCaptions&&!brokenImages.length&&(path!=='govtech'||result.cards===config.routes.filter(r=>r.path.startsWith('/govtech/')).length);
    checks.push({width,locale,theme,path,...result,brokenImages,pass});
    const capture=(width===1440&&locale==='en'&&theme==='light')||(width===390&&locale==='zh'&&theme==='dark')||(path==='govtech'&&locale==='en'&&theme==='light');
    if(capture){await p.evaluate(()=>scrollTo(0,0));await p.screenshot({path:resolve(out,`qa-${path.replaceAll('/','-')||'home'}-${locale}-${width}-${theme}.png`)});}
    if(path.startsWith('govtech/')){
     for(const table of await p.locator('table:visible').all()){await table.scrollIntoViewIfNeeded();await table.locator('..').evaluate(e=>{e.scrollLeft=e.scrollWidth;});}
     const technical=p.locator('details[data-source-identifiers]');await technical.locator('summary').focus();await p.keyboard.press('Enter');
-    if(width===390&&locale==='zh'&&theme==='dark'&&/wifi|bridge/.test(path))await p.screenshot({path:resolve(out,`qa-evidence-${path.split('/')[1]}.png`)});
+    if(width===390&&locale==='zh'&&theme==='dark'&&/wifi|bridge|senior-community-care/.test(path))await p.screenshot({path:resolve(out,`qa-evidence-${path.split('/')[1]}.png`)});
     if(await p.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))checks.at(-1).pass=false;
    }
   }

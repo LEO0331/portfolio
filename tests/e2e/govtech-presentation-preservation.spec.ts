@@ -33,7 +33,9 @@ test("presentation allowlist protects identities, source editions, numerical met
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`all nine ${locale} records preserve the complete pre-hardening record outside reviewed copy`, () => {
-    expect(records.map(record => restorePresentation(record, locale))).toEqual(baseline[locale]);
+    const originalIds = baseline[locale].map(record => record.id);
+    expect(records.map(record => record.id)).toEqual([...originalIds, "senior-community-care"]);
+    expect(records.filter(record => originalIds.includes(record.id)).map(record => restorePresentation(record, locale))).toEqual(baseline[locale]);
   });
   test(`${locale} lightweight summaries preserve canonical fields, ordering and project ownership`, () => {
     const fields = ["id", "slug", "displayNumber", "projectId", "title", "summary", "maturityLabel", "implementedCapabilities"] as const;
