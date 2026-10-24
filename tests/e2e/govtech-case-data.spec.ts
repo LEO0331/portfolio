@@ -81,7 +81,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases, getProjectGo
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation", "bridge-inspection"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation", "bridge-inspection", "senior-community-care"]);
     for (const key of ["id", "slug", "displayNumber"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }
@@ -99,7 +99,11 @@ for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] a
         const url = new URL(link.url);
         expect(url.protocol).toBe("https:");
         if (url.hostname === "github.com" && url.pathname.includes("/blob/")) {
-          expect(record.id === "wifi-allocation" ? [record.sourceVersion, "fc3fe9340c460418b4255d04cf8a0150dbcf669b"] : [record.sourceVersion], link.label).toContain(url.pathname.split("/blob/")[1].split("/")[0]);
+          if (record.id === "senior-community-care" && record.previewAssets.some(asset => asset.url === link.url)) {
+            expect(link.url, link.label).toMatch(/^https:\/\/github\.com\/LEO0331\/portfolio\/blob\/d91640f77d9880cf01c552356e322324d8916dd0\/src\/assets\/images\/govtech\/senior-care-(?:en-1440|zh-1440|zh-390)\.png$/);
+          } else {
+            expect(record.id === "wifi-allocation" ? [record.sourceVersion, "fc3fe9340c460418b4255d04cf8a0150dbcf669b"] : [record.sourceVersion], link.label).toContain(url.pathname.split("/blob/")[1].split("/")[0]);
+          }
         }
       }
       for (const table of record.scenarioTables) {

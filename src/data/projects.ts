@@ -879,13 +879,14 @@ export const projects: Project[] = [
   },
   {
     id: "taipei-civic-groups-map",
+    govtechCaseIds: ["senior-community-care"],
     slug: "taipei-civic-groups-map",
     name: "Taipei Public Records Explorer",
     tagline: "Searchable bilingual catalogue for Taipei public-service directories",
     shortDescription:
-      "A bilingual guide to selected Taipei public records, with a searchable catalogue spanning health, care, work, culture, and city services.",
+      "A searchable bilingual public-records catalogue with reproducible senior community-care documentation review.",
     fullDescription:
-      "Taipei Public Records Explorer organizes public directories, administrative records, and descriptive summaries into topic-based views, with source-specific filters, CSV exports, comparison tools, and data-quality context.",
+      "Taipei Public Records Explorer organizes public directories, administrative records, and descriptive summaries into topic-based views, with source-specific filters, CSV exports, comparison tools, and data-quality context. Its senior community-care module adds official PDF extraction, conservative cross-edition site associations, administrative village verification, privacy-minimized transformation, reproducible site/village follow-up scenarios and JSON/CSV briefings. Existing directory editions remain separate; actual service operation, care capacity, resident access and welfare outcomes are unavailable.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Open Data"],
@@ -894,7 +895,9 @@ export const projects: Project[] = [
       "Topic-based public-record catalogue",
       "Dataset-specific search and filters",
       "Source-field details and CSV export",
-      "Data freshness and privacy guidance"
+      "Data freshness and privacy guidance",
+      "Official senior-care PDFs and conservative site/village reconciliation",
+      "Privacy-minimized administrative review and reproducible JSON/CSV briefings"
     ],
     image: "/src/assets/images/projects/taipei-civic-groups-map.png",
     demoUrl: "https://leo0331.github.io/taipei-civic-groups-map/",

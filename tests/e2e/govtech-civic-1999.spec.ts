@@ -30,11 +30,11 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       }
     });
 
-    test(`${locale} landing has nine completed cards and all project drawers navigate locally`, async ({ page }) => {
+    test(`${locale} landing has ten completed cards and all project drawers navigate locally`, async ({ page }) => {
       test.setTimeout(60000);
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(9);
+      await expect(completed.locator("article")).toHaveCount(10);
       for (const study of records[locale]) {
         const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
         await expect(card).toContainText(study.displayNumber);
