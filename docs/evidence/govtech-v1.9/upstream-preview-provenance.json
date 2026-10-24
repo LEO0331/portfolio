@@ -1,0 +1,1344 @@
+{
+  "capturedAt": "2026-10-24T02:16:38.859Z",
+  "sourceCommit": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+  "snapshotSha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+  "sourceBuild": {
+    "sourceCommit": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+    "verifiedFiles": 299,
+    "sha256": "7b9e54b0768022000106a7416ddab28511086b30ac51e7aec6281102e224639c",
+    "files": [
+      {
+        "path": ".npmrc",
+        "gitBlobSha1": "0b502a761f2998163d86149fddaf512bae90a1fb"
+      },
+      {
+        "path": "index.html",
+        "gitBlobSha1": "ebe13205bec490a412a45da6d45970d534b0665b"
+      },
+      {
+        "path": "package-lock.json",
+        "gitBlobSha1": "efab37ba77cbca80fa694e1884f4d2b778988bb9"
+      },
+      {
+        "path": "package.json",
+        "gitBlobSha1": "d5beea6b7ceefd871da56315aed1d9bf09d2e6db"
+      },
+      {
+        "path": "public/policy/senior-care-policy/current.json",
+        "gitBlobSha1": "303316b51ceef7c587b7ca92196e61fac8af08dc"
+      },
+      {
+        "path": "public/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+        "gitBlobSha1": "4eedd2b5ab9a4ae15a63472de2941262eab91f18"
+      },
+      {
+        "path": "src/AccessibleTabs.tsx",
+        "gitBlobSha1": "12594c222ff42dbde0e86aebede6460120e46daa"
+      },
+      {
+        "path": "src/AddictionTreatmentFacilitiesModule.tsx",
+        "gitBlobSha1": "62cddaa13e47549ba81e1919f543d1d7e2b0992c"
+      },
+      {
+        "path": "src/AdultInfluenzaVaccineProvidersModule.tsx",
+        "gitBlobSha1": "e468283d9c09331b145562d392982b890df7a45b"
+      },
+      {
+        "path": "src/AlternativeServiceReserveStatisticsModule.tsx",
+        "gitBlobSha1": "2c8f94640cd98a521dd5b181e8a1185ed34a0894"
+      },
+      {
+        "path": "src/AnatomicalPathologyInstitutionsModule.tsx",
+        "gitBlobSha1": "b15d7525396318e48f1f748f520ec1f815a9a3cb"
+      },
+      {
+        "path": "src/App.tsx",
+        "gitBlobSha1": "144a3a66ed1dc340c9c6fa29bccfc57dcf763b6c"
+      },
+      {
+        "path": "src/AppErrorBoundary.tsx",
+        "gitBlobSha1": "09bc743aabddd9aac5d401fee02e5091a5fd7f41"
+      },
+      {
+        "path": "src/ApprovedGasWaterHeaterInstallersModule.tsx",
+        "gitBlobSha1": "da0f8e3eabf6a9508f769676ee3c55b77f521c1b"
+      },
+      {
+        "path": "src/ArtsCulturalVenuesModule.tsx",
+        "gitBlobSha1": "451ffcd3898bcbb2aedd9cfe81f15e06e1fe7b2b"
+      },
+      {
+        "path": "src/BeautyHairdressingHygieneCertificationsModule.tsx",
+        "gitBlobSha1": "f467ff7d42a8abb5a3dcb9816a5bd4a329158f4c"
+      },
+      {
+        "path": "src/BiotechCompanyDirectoryModule.tsx",
+        "gitBlobSha1": "35050d3b3b3c92a68d54aef9fdf47907d04f2b9f"
+      },
+      {
+        "path": "src/BusinessPremisesPublicLiabilityInsuranceModule.tsx",
+        "gitBlobSha1": "19cec3980d53f9352daad65f1621fa736e782f95"
+      },
+      {
+        "path": "src/BusinessRegistrationChangesModule.tsx",
+        "gitBlobSha1": "11860ad892f23569bb8200853f1a0ae48e73a396"
+      },
+      {
+        "path": "src/CemeteryPublicFacilitiesModule.tsx",
+        "gitBlobSha1": "c1b67656f230a7341c47843ae521b780f0cc2420"
+      },
+      {
+        "path": "src/ChildMedicalSubsidyContractedProvidersModule.tsx",
+        "gitBlobSha1": "49b751f0fd7a4404032d2f41b62c8e4dd6609860"
+      },
+      {
+        "path": "src/ChildPreventiveHealthcareFacilitiesModule.tsx",
+        "gitBlobSha1": "0b69d7edeae772843602fb5e46797db4c3be6ecc"
+      },
+      {
+        "path": "src/ChildYouthFriendlyWelfareServiceSitesModule.tsx",
+        "gitBlobSha1": "11a082db29d52aadeb79cf528c457cd09e2d3f82"
+      },
+      {
+        "path": "src/ChildYouthResidentialPlacementInstitutionsModule.tsx",
+        "gitBlobSha1": "13f5dfa34d3b8b890f50cb7f43a538384049e81f"
+      },
+      {
+        "path": "src/ChildYouthWelfareInstitutionsModule.tsx",
+        "gitBlobSha1": "28a82dcf4f0538653c7b94ac3f6d71c30279b107"
+      },
+      {
+        "path": "src/CivicMap.tsx",
+        "gitBlobSha1": "452ad35ad4bd82ba102c6d410b35b8d2ea68470f"
+      },
+      {
+        "path": "src/ClinicalPathologyFacilitiesModule.tsx",
+        "gitBlobSha1": "5650356e6ee23a4379f3138b6d1d62823e1d3489"
+      },
+      {
+        "path": "src/CommunityCareServiceSitesModule.tsx",
+        "gitBlobSha1": "52895133efc0868e727fe89a5fea98902ea0cb15"
+      },
+      {
+        "path": "src/CommunityDevelopmentAssociationsModule.tsx",
+        "gitBlobSha1": "d0d5c25876c008faae1709d7d4f3ddc1f027c146"
+      },
+      {
+        "path": "src/CommunityIntegratedCareLevelCUnitsModule.tsx",
+        "gitBlobSha1": "29579bacc331025b02642176c6f72579ad652f6f"
+      },
+      {
+        "path": "src/CommunityPublicChildcareHomesModule.tsx",
+        "gitBlobSha1": "bb8a6b04281e364e3d6538c7232fa3a558cd53c0"
+      },
+      {
+        "path": "src/CompanyRegistrationChangesModule.tsx",
+        "gitBlobSha1": "c519b25d720314e18f02e36cec67fc758f0c4070"
+      },
+      {
+        "path": "src/ConsumerDisputeAbsentBusinessOperatorsModule.tsx",
+        "gitBlobSha1": "47f2dbd845a47d4cee5a9d20d581da658f1b896d"
+      },
+      {
+        "path": "src/ContractedVaccinationMedicalProvidersModule.tsx",
+        "gitBlobSha1": "cd9c2799379ade874da1bcfd92176209b7b0b2ca"
+      },
+      {
+        "path": "src/CosmeticMedicineSupervision2024Module.tsx",
+        "gitBlobSha1": "1200f15b79f9fed2b18857263ce8b7a0b67b8739"
+      },
+      {
+        "path": "src/CulturalArtsFoundationsModule.tsx",
+        "gitBlobSha1": "4cad73952ceea634a6a269ee71a33c95914fb449"
+      },
+      {
+        "path": "src/DataTrustPanel.tsx",
+        "gitBlobSha1": "cf5362aea6ca1bf0f30e209e2cccb913d5eaeef3"
+      },
+      {
+        "path": "src/DatasetFamilyFrame.tsx",
+        "gitBlobSha1": "004be16f8eeee8bf4d9090e6bb757c0e7f246f27"
+      },
+      {
+        "path": "src/DawannanIndustrialAreaCompaniesModule.tsx",
+        "gitBlobSha1": "e03bdac60d54dc8c68e03484c79fe57c21f8611c"
+      },
+      {
+        "path": "src/DentureSubsidyMedicalProvidersModule.tsx",
+        "gitBlobSha1": "1d08c59be8f2e38b8067914ba4200b6d363e613e"
+      },
+      {
+        "path": "src/DesignatedForeignerHealthExamHospitalsModule.tsx",
+        "gitBlobSha1": "f031fa37b8fd3af748bd76689cc8d72e2e807d83"
+      },
+      {
+        "path": "src/DiabetesSharedCareMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "0aa01593f8124ea62d4b77abeeb5c8e26d297593"
+      },
+      {
+        "path": "src/DisabilityDayServicesModule.tsx",
+        "gitBlobSha1": "df69b5e5629762839a75e85e19cca81688bf551f"
+      },
+      {
+        "path": "src/DisabilityEmploymentResourceMapModule.tsx",
+        "gitBlobSha1": "72e7d290626b76ab80efc2cc0573e07b88cf5be1"
+      },
+      {
+        "path": "src/DisabilityInstitutionCapacityAndVacanciesModule.tsx",
+        "gitBlobSha1": "f6eedad6312f06788229cee3c860b145d2688ede"
+      },
+      {
+        "path": "src/DistrictComparison.tsx",
+        "gitBlobSha1": "3deadb63ac24b9af9a677d64ec91acfa75d91ad2"
+      },
+      {
+        "path": "src/DomesticEmploymentAgencyEvaluationsModule.tsx",
+        "gitBlobSha1": "418a18fba551cb2cc24ca72b0690f0d7dd2ec0d7"
+      },
+      {
+        "path": "src/EarlyInterventionCommunityServicesModule.tsx",
+        "gitBlobSha1": "24b7a5dd5a7931e42e62181ca2169096ccf802ec"
+      },
+      {
+        "path": "src/EarlyInterventionMedicalProvidersModule.tsx",
+        "gitBlobSha1": "d8a2cf0e2566e2e1cb6b41097dfdd89e538de28c"
+      },
+      {
+        "path": "src/EducationVolunteerRecognitionRecordsModule.tsx",
+        "gitBlobSha1": "c8ebe634f2c72ac338f78c7d3ac005eb496ccc40"
+      },
+      {
+        "path": "src/ElderlyWelfareInstitutionsModule.tsx",
+        "gitBlobSha1": "4f4fb5ecb3cec5fdc2bc2c5e1bda916e737f2ea5"
+      },
+      {
+        "path": "src/EmergencyAssistanceProvidersModule.tsx",
+        "gitBlobSha1": "90790af117c44d217152405ecfbd9201fe28ea0e"
+      },
+      {
+        "path": "src/EmploymentAgencyIntermediaryCompaniesModule.tsx",
+        "gitBlobSha1": "c8bcc5f0594a74a41334293432d1e3a65ddb7b95"
+      },
+      {
+        "path": "src/EntFacilitiesModule.tsx",
+        "gitBlobSha1": "692993ad68c7c3bfb3de833ce8998a376f5bcb4f"
+      },
+      {
+        "path": "src/EnterpriseHeadquartersDistributionModule.tsx",
+        "gitBlobSha1": "62907e4a62849f06456634e3177734dc20643f3e"
+      },
+      {
+        "path": "src/EntrustedPublicAssetOperationsModule.tsx",
+        "gitBlobSha1": "77c008e4dcae20a03b4c3554d0a81773b19a5939"
+      },
+      {
+        "path": "src/EnvironmentalPesticideVendorsModule.tsx",
+        "gitBlobSha1": "4ada20da38c2f4772986e7b9c96a491901fdfeef"
+      },
+      {
+        "path": "src/FamilyMedicineInstitutionsModule.tsx",
+        "gitBlobSha1": "82a6e1bc8f78b5dc93191ae41d35648c7ae41dbb"
+      },
+      {
+        "path": "src/FertilitySubsidyContractedHospitalsModule.tsx",
+        "gitBlobSha1": "6978ed666772e816bbdf607599eec6e353c1a543"
+      },
+      {
+        "path": "src/FiveCancerScreeningProvidersModule.tsx",
+        "gitBlobSha1": "bd98e288410a574ace86007b5d411b4d112d1fba"
+      },
+      {
+        "path": "src/FixedSiteTemporaryChildcareModule.tsx",
+        "gitBlobSha1": "e8dc215e04a03d1da2a9ed365100bc5719ace2d2"
+      },
+      {
+        "path": "src/FuneralServiceBusinessesModule.tsx",
+        "gitBlobSha1": "520cf4c0cb1339df31fc945435f94324f45c72e1"
+      },
+      {
+        "path": "src/GbsScreeningClinicsModule.tsx",
+        "gitBlobSha1": "d86260569d9dd8bc59800c75d0f309823b4a1c63"
+      },
+      {
+        "path": "src/GenderEqualityWorkActViolationsModule.tsx",
+        "gitBlobSha1": "da67967ac4b1deb07b3ed3ae5987bf3abcd68e9c"
+      },
+      {
+        "path": "src/GeneralChineseMedicineInstitutionsModule.tsx",
+        "gitBlobSha1": "ae9be758571588c693a02368173785bbb1b35225"
+      },
+      {
+        "path": "src/GeneralDentalMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "4a11cbf7ac57082a970fba4572d0afd5c5cdb58a"
+      },
+      {
+        "path": "src/GeneratedDatasetDirectoryModule.tsx",
+        "gitBlobSha1": "3b86424838af74fd38b7076765e74f2cccc26aac"
+      },
+      {
+        "path": "src/GovernmentEthicsOfficesModule.tsx",
+        "gitBlobSha1": "aa723fa3bae84281fd9081f22a8f9a839e450e1a"
+      },
+      {
+        "path": "src/HakkaOrganizationsModule.tsx",
+        "gitBlobSha1": "be68bf70403783ba8c2542fe89540f45993d5b07"
+      },
+      {
+        "path": "src/HealthcareInstitutionDirectory.tsx",
+        "gitBlobSha1": "c2c44a5e32888cea19f493ba865c2fc96a905fc8"
+      },
+      {
+        "path": "src/HealthcareWelfareBudgetModule.tsx",
+        "gitBlobSha1": "d0214064109d39f389fab649b98928671241a900"
+      },
+      {
+        "path": "src/HearingCentersModule.tsx",
+        "gitBlobSha1": "d322dca54a43c7e7c64dcd1baf38708edef51adb"
+      },
+      {
+        "path": "src/HemodialysisMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "8a3a03bd57aa4a5e7ffb0418e32f8184b73bad0a"
+      },
+      {
+        "path": "src/HighMyopiaPreventionClinicsModule.tsx",
+        "gitBlobSha1": "4998787747d287225161f6195b7d266f8107630b"
+      },
+      {
+        "path": "src/HomeDisabledFamilyPhysicianCareProvidersModule.tsx",
+        "gitBlobSha1": "cc497b2fb6c50f3392c239af0660a614c75f731f"
+      },
+      {
+        "path": "src/HomeNursingInstitutionsModule.tsx",
+        "gitBlobSha1": "df0265944d76e7db1cfe7a332e2d85208ed3728d"
+      },
+      {
+        "path": "src/HospicePalliativeCareInstitutionsModule.tsx",
+        "gitBlobSha1": "a19256507ecb48dce8a73cac5e87a8077f9c9eb2"
+      },
+      {
+        "path": "src/HospitalDischargeLongTermCarePartnersModule.tsx",
+        "gitBlobSha1": "eb2ddea2a34e6ca03879ab72cf385b0ee5500b25"
+      },
+      {
+        "path": "src/IndigenousCommunityOrganizationsModule.tsx",
+        "gitBlobSha1": "2b71fa7082e597c05ac69bdfed996c9c57cde132"
+      },
+      {
+        "path": "src/IndustryModule.tsx",
+        "gitBlobSha1": "d17d9cf516d90b0b74b9d57612e3014035c891e1"
+      },
+      {
+        "path": "src/InfantCareCenterEvaluationResultsModule.tsx",
+        "gitBlobSha1": "067ddcf5dbb5416dc2fda834b01e3e24b3ca3d28"
+      },
+      {
+        "path": "src/InfluenzaVaccineProvidersChildren3PlusModule.tsx",
+        "gitBlobSha1": "cb4719b6264118f2da82eb8535bf2dd8375e6937"
+      },
+      {
+        "path": "src/InfluenzaVaccineProvidersUnder3Module.tsx",
+        "gitBlobSha1": "ec647078aa16dbedc25fa5343f91b4f4bcf76b39"
+      },
+      {
+        "path": "src/InternalMedicineInstitutionsModule.tsx",
+        "gitBlobSha1": "0851ecfdd1f537ca391e55db4f5a529f4b9b4bc0"
+      },
+      {
+        "path": "src/InternetAddictionServicesModule.tsx",
+        "gitBlobSha1": "1c3b66ddc077e9b815aa3c6f022cb5d115927fe8"
+      },
+      {
+        "path": "src/KidneyHealthPromotionFacilitiesModule.tsx",
+        "gitBlobSha1": "e1ca59e7f88280488d5c288263d3e1fd0838fe08"
+      },
+      {
+        "path": "src/LaborPensionActViolationsModule.tsx",
+        "gitBlobSha1": "ab624cd8faad7c24eecd8209e6af302025331044"
+      },
+      {
+        "path": "src/LaborStandardActViolationsModule.tsx",
+        "gitBlobSha1": "b69bb21dcad47351e0659a5dc543d01ff9cb4518"
+      },
+      {
+        "path": "src/LegacyTabAccessibility.tsx",
+        "gitBlobSha1": "08f2dcb673a3fb2dd216b473555497148c18a983"
+      },
+      {
+        "path": "src/LicensedAnimalMedicineSellersModule.tsx",
+        "gitBlobSha1": "1c8172b763478507f8796a46060a576773db4718"
+      },
+      {
+        "path": "src/LicensedAssistedReproductionInstitutionsModule.tsx",
+        "gitBlobSha1": "73dc7ee284cd8f6aea1597022327ba5896e9ee27"
+      },
+      {
+        "path": "src/LicensedElectronicGameArcadeOperatorsModule.tsx",
+        "gitBlobSha1": "a59af0611fbad047171a70650ae5cf230fffb6f0"
+      },
+      {
+        "path": "src/LicensedNaturalGasPipelineContractorsModule.tsx",
+        "gitBlobSha1": "5b50cd442db42e0f744aedee09e9a78adb1e3908"
+      },
+      {
+        "path": "src/LicensedPawnshopDirectoryModule.tsx",
+        "gitBlobSha1": "849743a14e86b82bfbc9f975e7c7d195cbc3167f"
+      },
+      {
+        "path": "src/LicensedSpecialEntertainmentBusinessOperatorsModule.tsx",
+        "gitBlobSha1": "0fd50b4613e834d34365ac787d8955c1795b6cf7"
+      },
+      {
+        "path": "src/LicensedWasteCookingOilCollectorsModule.tsx",
+        "gitBlobSha1": "41b9a0588869b306b108d8cacca7c15fb019aa8f"
+      },
+      {
+        "path": "src/LodgingBusinessPenaltyRecordsModule.tsx",
+        "gitBlobSha1": "0b843686ae20c4fe974ecac26eb4cf8fd48c41f6"
+      },
+      {
+        "path": "src/MajorElectricityUsersModule.tsx",
+        "gitBlobSha1": "a0a6fe92e44d3c22fcf0a684f4f6cad302df25b7"
+      },
+      {
+        "path": "src/MayorCeremonialGiftStatisticsModule.tsx",
+        "gitBlobSha1": "c1f34d7510729169e3fac93a0b87ab038a4711ac"
+      },
+      {
+        "path": "src/MedicalLaboratoriesModule.tsx",
+        "gitBlobSha1": "fbad9df25aa03a1becfc180bd5b90ffe3ea41702"
+      },
+      {
+        "path": "src/MedicalRadiologicalInstitutionsModule.tsx",
+        "gitBlobSha1": "6dbaefba3354946ff89a8543438a3247d4e5de3f"
+      },
+      {
+        "path": "src/MethadoneCrossRegionServicesModule.tsx",
+        "gitBlobSha1": "6263fb70aaa68342550a9b59dd27cca20817ffd3"
+      },
+      {
+        "path": "src/MetroProcurementModule.tsx",
+        "gitBlobSha1": "efa2930cef215e42f569f3cbe87e47f9d895dae5"
+      },
+      {
+        "path": "src/NangangSoftwareParkCompaniesModule.tsx",
+        "gitBlobSha1": "9a48a3bb5293a12ee149595aa8a039becddf3ab9"
+      },
+      {
+        "path": "src/NationwideAddictionTreatmentServicesModule.tsx",
+        "gitBlobSha1": "20bdb63b77d1866bd8418e3db3cebba1a3e5d725"
+      },
+      {
+        "path": "src/ObstetricsGynecologyInstitutionsModule.tsx",
+        "gitBlobSha1": "3d72de3a317a9105c5222f482da44449b0b63c03"
+      },
+      {
+        "path": "src/OccupationalSafetyHealthViolationsModule.tsx",
+        "gitBlobSha1": "60da81145120fbe18cd118f796c1b21444697dc0"
+      },
+      {
+        "path": "src/OccupationalTherapyClinicsModule.tsx",
+        "gitBlobSha1": "5ba5cefa8a0bb386b27a93294e8a658f941e7c99"
+      },
+      {
+        "path": "src/OphthalmologyInstitutionsModule.tsx",
+        "gitBlobSha1": "2ff621c417c6b0b8587c7586112e2f0d4ee8e15d"
+      },
+      {
+        "path": "src/OptometryInstitutionsModule.tsx",
+        "gitBlobSha1": "519eb7cac1627cf0cf3873da4931cb77b5144518"
+      },
+      {
+        "path": "src/OralMaxillofacialSurgeryFacilitiesModule.tsx",
+        "gitBlobSha1": "20d32bad02511fbe0e55eaf09b8ed084e7b112d8"
+      },
+      {
+        "path": "src/OrthopedicFacilitiesModule.tsx",
+        "gitBlobSha1": "53364a9b073406161c2262163c7c638ce77dbbd9"
+      },
+      {
+        "path": "src/PediatricMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "3f35da56d7c4c6d95ee11eb89bf11aa679e67f49"
+      },
+      {
+        "path": "src/PerformingArtsGroupsModule.tsx",
+        "gitBlobSha1": "8b3afed35d8d158e100569290f9fc179383cabcc"
+      },
+      {
+        "path": "src/PestControlBusinessesModule.tsx",
+        "gitBlobSha1": "cb285d709caaef388e2e8a753cda0d7d331020a8"
+      },
+      {
+        "path": "src/PhysicalTherapyClinicsModule.tsx",
+        "gitBlobSha1": "55603b110fe931a89f0130f5933d2d14d0ce3cd6"
+      },
+      {
+        "path": "src/PlasticSurgeryMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "f5578d7722fc30bca6d140110eacca5741cd3f7e"
+      },
+      {
+        "path": "src/PrivateCulturalHeritageSubsidiesModule.tsx",
+        "gitBlobSha1": "c22ebf23d3f860c00503111f7a929138947912fb"
+      },
+      {
+        "path": "src/PrivateSeniorResidentialLongTermCareInstitutionsModule.tsx",
+        "gitBlobSha1": "edeb9c72f4113e3e32bbe54f858fdd50fb3f76fa"
+      },
+      {
+        "path": "src/PsychiatricClinicsModule.tsx",
+        "gitBlobSha1": "bea67f016a99a04bf958b21ecf17ed0d2196326e"
+      },
+      {
+        "path": "src/PsychiatricRehabilitationAndNursingInstitutionsModule.tsx",
+        "gitBlobSha1": "bfd35dff97ef684b8f8dedf8012665b38fac8875"
+      },
+      {
+        "path": "src/PublicInfluenzaAntiviralProvidersModule.tsx",
+        "gitBlobSha1": "78344a1221d10019792f0d14c11a3be0b3133479"
+      },
+      {
+        "path": "src/PublicPneumococcalVaccineProvidersModule.tsx",
+        "gitBlobSha1": "3beefbceca836df4571beb21520bca178bf514ab"
+      },
+      {
+        "path": "src/PubliclyFundedHpvVaccinationProvidersModule.tsx",
+        "gitBlobSha1": "68f6e9182cc3b69fc9f866e2275881e05d2f29a6"
+      },
+      {
+        "path": "src/QuasiPublicInfantCareCentersModule.tsx",
+        "gitBlobSha1": "4fc654e7abdf033856997fa32067b45009e3081c"
+      },
+      {
+        "path": "src/RabiesVaccinationVeterinaryClinicsModule.tsx",
+        "gitBlobSha1": "614bef218f705deef0fd36cc28c6337aef8dc9ec"
+      },
+      {
+        "path": "src/RadiologyDiagnosticFacilitiesModule.tsx",
+        "gitBlobSha1": "e08c2a071dc791e81f744157739e4e535bb6efdb"
+      },
+      {
+        "path": "src/RegisteredAfterSchoolCareCentresModule.tsx",
+        "gitBlobSha1": "40b16917a55c04bc0f8c34ea358115f313f98988"
+      },
+      {
+        "path": "src/RegisteredAnimalHospitalsModule.tsx",
+        "gitBlobSha1": "1548ea2ff340556063b987ddeafc547d5c21c620"
+      },
+      {
+        "path": "src/RegisteredCramSchoolsModule.tsx",
+        "gitBlobSha1": "747d6a0af42172a1c55e75f4dcb9ac820fc23146"
+      },
+      {
+        "path": "src/RegisteredFactoryDistributionModule.tsx",
+        "gitBlobSha1": "ed918adad3a79273a57147fc5b2ea74160e080e0"
+      },
+      {
+        "path": "src/RegisteredHotelsModule.tsx",
+        "gitBlobSha1": "7704d661521dface20cab09b107abb965f865fc8"
+      },
+      {
+        "path": "src/RegisteredLaborUnionsModule.tsx",
+        "gitBlobSha1": "23283442e56cbae33e6bea56a8971e0a26f6fc3e"
+      },
+      {
+        "path": "src/RegisteredRecyclingBusinessOrganizationsModule.tsx",
+        "gitBlobSha1": "d82cb94cf363a40937f7d424753890fa3d0c847a"
+      },
+      {
+        "path": "src/RehabilitationMedicineInstitutionsModule.tsx",
+        "gitBlobSha1": "303c2c0bcb4ae28895b2315c75d3d7067abe68b7"
+      },
+      {
+        "path": "src/SeniorCareCapacityAndOccupancyModule.tsx",
+        "gitBlobSha1": "977235a42e2ec7984af6a2d3af8994ad0ab2abae"
+      },
+      {
+        "path": "src/SeniorCareInstitutionEvaluationsModule.tsx",
+        "gitBlobSha1": "86b7de49471356c3b76f4ceaa3d4878ba04f34bb"
+      },
+      {
+        "path": "src/SeniorCarePolicyDashboard.tsx",
+        "gitBlobSha1": "c421b36c81ccfb485a95617b22a208caa861abbb"
+      },
+      {
+        "path": "src/SeniorGroupMealServiceSitesModule.tsx",
+        "gitBlobSha1": "fe0bf511b673cce507c80cfaa3c2f2d07a08dc8c"
+      },
+      {
+        "path": "src/SeniorServiceSiteCoursesModule.tsx",
+        "gitBlobSha1": "446b5c98bb368d1b07ef9891886ac9d61079cd69"
+      },
+      {
+        "path": "src/SeniorServicesModule.tsx",
+        "gitBlobSha1": "bf973a45aec71e6f7165ed647548045ab743a8b5"
+      },
+      {
+        "path": "src/ShelteredWorkshopDirectoryModule.tsx",
+        "gitBlobSha1": "4e9ebfd632950b5f66a9d5d7668bb33f24b88f5f"
+      },
+      {
+        "path": "src/SourceFields.tsx",
+        "gitBlobSha1": "61e29e6fe05362d540ddadb3160a2fa5d2f3c2fd"
+      },
+      {
+        "path": "src/SpecificPetBusinessEvaluationResultsModule.tsx",
+        "gitBlobSha1": "dd0e3c45a5e283be9e752db0e2e842d0913bf9c0"
+      },
+      {
+        "path": "src/SportsPublicParticipationModule.tsx",
+        "gitBlobSha1": "a96614433c19bd729092ff8c63abfe6cb9692d4a"
+      },
+      {
+        "path": "src/SubsidizedSeniorResidentialPlacementInstitutionsModule.tsx",
+        "gitBlobSha1": "d953fdd6f9bc18cfea5a366e2c51856969688ae3"
+      },
+      {
+        "path": "src/TaipeiCulturalHeritageAssetsModule.tsx",
+        "gitBlobSha1": "fccc6f144a933580237928b177510e1231c8c8ee"
+      },
+      {
+        "path": "src/TaipeiGovernmentApplicationServicesModule.tsx",
+        "gitBlobSha1": "174664b7df27d621ffe033c1c2d77767e3978801"
+      },
+      {
+        "path": "src/TaipeiTravelAccommodationsZhModule.tsx",
+        "gitBlobSha1": "47c0208fc4fb357f76ee8e244a5bfcc87a0f8a35"
+      },
+      {
+        "path": "src/TbContactScreeningPartnerProvidersModule.tsx",
+        "gitBlobSha1": "f52fb943275f2679e600df52be1adca6b2546236"
+      },
+      {
+        "path": "src/TelepsychologyCounselingInstitutionsModule.tsx",
+        "gitBlobSha1": "3a2752e48d9417601292d579a78cec3ebc579772"
+      },
+      {
+        "path": "src/TravelMedicineClinicsModule.tsx",
+        "gitBlobSha1": "1b71a4eb943b66ea3029542a42fd86f765afc67e"
+      },
+      {
+        "path": "src/VeterinarianProfessionalRegistryModule.tsx",
+        "gitBlobSha1": "ac9ba85fb8db6571adc0e51f8754a2fd8c82a682"
+      },
+      {
+        "path": "src/VisuallyImpairedMassageEstablishmentsModule.tsx",
+        "gitBlobSha1": "62a341d66c75dedf4f5d479866fe196345ac08ad"
+      },
+      {
+        "path": "src/WaterPipeInstallationContractorsModule.tsx",
+        "gitBlobSha1": "b5ceea175051df312c2fbe0518592400a644bb29"
+      },
+      {
+        "path": "src/WithdrawnIllegalHotelEnforcementRecordsModule.tsx",
+        "gitBlobSha1": "4675d10700b9dd294dc5cfb95d82807e0e580a06"
+      },
+      {
+        "path": "src/XrayExaminationMedicalInstitutionsModule.tsx",
+        "gitBlobSha1": "3216a4ee9013d1c146f21eb8e1fef9a3de25f2ed"
+      },
+      {
+        "path": "src/lib/biotechCompanyDirectory.test.ts",
+        "gitBlobSha1": "d19cbfdd1bfd1f5c7073ac4099ac7c00af42f408"
+      },
+      {
+        "path": "src/lib/biotechCompanyDirectory.ts",
+        "gitBlobSha1": "b8741a38d199d9446f9dee1bff71cf9c35107180"
+      },
+      {
+        "path": "src/lib/businessPremisesPublicLiabilityInsurance.test.ts",
+        "gitBlobSha1": "af31454d0950ffd383c528265f95726dd1704a01"
+      },
+      {
+        "path": "src/lib/businessPremisesPublicLiabilityInsurance.ts",
+        "gitBlobSha1": "63c6b9f8de0a8f4600fd07eb29eda1ffe63ce42d"
+      },
+      {
+        "path": "src/lib/businessRegistrationChanges.test.ts",
+        "gitBlobSha1": "4da46df364b1468665de44e46d1e340e150ea1ac"
+      },
+      {
+        "path": "src/lib/businessRegistrationChanges.ts",
+        "gitBlobSha1": "6140747fd445f173c11ac6c309c22c7f1759bfcb"
+      },
+      {
+        "path": "src/lib/cemeteryPublicFacilities.test.ts",
+        "gitBlobSha1": "b97600e077c14a1f0ad65cadb50dd7329a69c8c0"
+      },
+      {
+        "path": "src/lib/cemeteryPublicFacilities.ts",
+        "gitBlobSha1": "ca82cde80681c5539055e25dde8657d2a8d4f5e7"
+      },
+      {
+        "path": "src/lib/childMedicalSubsidyContractedProviders.test.ts",
+        "gitBlobSha1": "3fa1412b3785fd38c89eb40636238457e2bec47b"
+      },
+      {
+        "path": "src/lib/childMedicalSubsidyContractedProviders.ts",
+        "gitBlobSha1": "e8a1ca2103628d698ab589e014d9c7010f6d9e8d"
+      },
+      {
+        "path": "src/lib/civicGroups.test.ts",
+        "gitBlobSha1": "e8e56bb935732c6504ef86a36c9c9013df12fa2a"
+      },
+      {
+        "path": "src/lib/civicGroups.ts",
+        "gitBlobSha1": "a35815338eaf19f4cc410db86dd391bd52ec676d"
+      },
+      {
+        "path": "src/lib/companyRegistrationChanges.test.ts",
+        "gitBlobSha1": "5245e5343ec39a0a37b198a321b9e75d9d4e11d2"
+      },
+      {
+        "path": "src/lib/companyRegistrationChanges.ts",
+        "gitBlobSha1": "54d33d5639d8c6cbc5221978770d891651d5fb4f"
+      },
+      {
+        "path": "src/lib/consumerDisputeAbsentBusinessOperators.test.ts",
+        "gitBlobSha1": "50957ff35cc2bd6cf9a64b70db769e0311b4ed09"
+      },
+      {
+        "path": "src/lib/consumerDisputeAbsentBusinessOperators.ts",
+        "gitBlobSha1": "b7b98273b885dbeedd80e67cbfb62d379074354a"
+      },
+      {
+        "path": "src/lib/contractedVaccinationMedicalProviders.test.ts",
+        "gitBlobSha1": "2986aea2e395877fcad11a7cb4024b9fb006f296"
+      },
+      {
+        "path": "src/lib/contractedVaccinationMedicalProviders.ts",
+        "gitBlobSha1": "26a8baf9c665f3c6ae2116a680da4e239b49ea56"
+      },
+      {
+        "path": "src/lib/dataChangeSummary.test.ts",
+        "gitBlobSha1": "462b59bc57719a04251e4e10d430e8bf045ca13f"
+      },
+      {
+        "path": "src/lib/dataFreshnessAudit.test.ts",
+        "gitBlobSha1": "9f6298a8330ecb3307fe5b9865e1b7c5862dea6e"
+      },
+      {
+        "path": "src/lib/dataQualityAnomalyGuard.test.ts",
+        "gitBlobSha1": "a0da0b171a74a74ce3315f7228af7433f3c7797f"
+      },
+      {
+        "path": "src/lib/dataTrust.test.ts",
+        "gitBlobSha1": "051672b4a301f319499f0e1295da0650b3e66dd6"
+      },
+      {
+        "path": "src/lib/dataTrust.ts",
+        "gitBlobSha1": "83036d42cb123d0d8729dd6b519ce6f8ea5eeb00"
+      },
+      {
+        "path": "src/lib/datasetCatalogue.test.ts",
+        "gitBlobSha1": "7a23655cf8da08a5332105c8d8fc3c715f13745a"
+      },
+      {
+        "path": "src/lib/datasetCatalogue.ts",
+        "gitBlobSha1": "162680d9d7e36f9f54a592e5519cf0b464420a7f"
+      },
+      {
+        "path": "src/lib/datasetUiFamily.test.ts",
+        "gitBlobSha1": "e68448f9250d097be71986dbecd897bd09e50898"
+      },
+      {
+        "path": "src/lib/datasetUiFamily.ts",
+        "gitBlobSha1": "4b5464e470f657852322be810c5aca75ef2b01e3"
+      },
+      {
+        "path": "src/lib/dawannanIndustrialAreaCompanies.test.ts",
+        "gitBlobSha1": "b50e38421e20785ab1caeb0b539f3ab102393f82"
+      },
+      {
+        "path": "src/lib/dawannanIndustrialAreaCompanies.ts",
+        "gitBlobSha1": "69a38f83c89403c10daabb1a47de52e5cf612dff"
+      },
+      {
+        "path": "src/lib/dentureSubsidyMedicalProviders.test.ts",
+        "gitBlobSha1": "2066e0fd8d7835332131b66e2e6289d99e0c90f1"
+      },
+      {
+        "path": "src/lib/dentureSubsidyMedicalProviders.ts",
+        "gitBlobSha1": "c74773279c94f538064cbd63d174b8c05ce6fd82"
+      },
+      {
+        "path": "src/lib/dependencyContract.test.ts",
+        "gitBlobSha1": "c77bd4e09fb1f5b87c4d385374e07541b61b5eb7"
+      },
+      {
+        "path": "src/lib/disabilityEmploymentResourceMap.test.ts",
+        "gitBlobSha1": "6699d9159188931d47fd374615425872c98322ea"
+      },
+      {
+        "path": "src/lib/disabilityEmploymentResourceMap.ts",
+        "gitBlobSha1": "15ab0b5addf39c9b47020559d556625ccf9dae9e"
+      },
+      {
+        "path": "src/lib/earlyInterventionMedicalProviders.ts",
+        "gitBlobSha1": "b0d7544f5da2cf119cf29b50c9a588963a4d4af5"
+      },
+      {
+        "path": "src/lib/elderlyWelfareInstitutions.test.ts",
+        "gitBlobSha1": "046db2259a1a5d7aadad357b77a127747caf41ad"
+      },
+      {
+        "path": "src/lib/elderlyWelfareInstitutions.ts",
+        "gitBlobSha1": "d8bb2a47eeae351537357bf0e6c17b77870b8fc3"
+      },
+      {
+        "path": "src/lib/employmentAgencyIntermediaryCompanies.test.ts",
+        "gitBlobSha1": "052c54933e1b89418056d8636585b91af031bbe6"
+      },
+      {
+        "path": "src/lib/employmentAgencyIntermediaryCompanies.ts",
+        "gitBlobSha1": "b789390abd5492ccc9edbfbad5b75439bca709c1"
+      },
+      {
+        "path": "src/lib/enterpriseHeadquartersDistribution.test.ts",
+        "gitBlobSha1": "996edd55c48632cfc2c94e8aba5db42365ce7d5d"
+      },
+      {
+        "path": "src/lib/enterpriseHeadquartersDistribution.ts",
+        "gitBlobSha1": "952209f98dc5d27615006a3335edc41ffc3d8012"
+      },
+      {
+        "path": "src/lib/fixedSiteTemporaryChildcare.test.ts",
+        "gitBlobSha1": "243cc91f33fed4f31e9e4453d929d7f7f6d56796"
+      },
+      {
+        "path": "src/lib/fixedSiteTemporaryChildcare.ts",
+        "gitBlobSha1": "758ae4a393d953aa1d11338eefa33e2b3c9ab754"
+      },
+      {
+        "path": "src/lib/frontendArchitecture.test.ts",
+        "gitBlobSha1": "42927f31628d329bdc3cc2bc9042562c2d191401"
+      },
+      {
+        "path": "src/lib/funeralServiceBusinesses.test.ts",
+        "gitBlobSha1": "4188eea2e609d1ad9ca727f1232503fdc6144e56"
+      },
+      {
+        "path": "src/lib/funeralServiceBusinesses.ts",
+        "gitBlobSha1": "27f153bb09655cee44a8ac448a8e5cda162a7ac1"
+      },
+      {
+        "path": "src/lib/genderEqualityWorkActViolations.test.ts",
+        "gitBlobSha1": "aa38be65e8f06674b3e1964218024d580559ece1"
+      },
+      {
+        "path": "src/lib/genderEqualityWorkActViolations.ts",
+        "gitBlobSha1": "7bcb8afb5b092881eb93463444acfdae14cd1476"
+      },
+      {
+        "path": "src/lib/generalDentalMedicalInstitutions.ts",
+        "gitBlobSha1": "43e3182225fe89ce173aef059c7e76c6a982b7b1"
+      },
+      {
+        "path": "src/lib/generatedDirectoryLocation.test.ts",
+        "gitBlobSha1": "7820f6d61a3594cb2316b9e1576d498424bb93a2"
+      },
+      {
+        "path": "src/lib/generatedDirectoryLocation.ts",
+        "gitBlobSha1": "1762b4f414c598ce24add84704668fdc8bbb3810"
+      },
+      {
+        "path": "src/lib/hakkaOrganizations.test.ts",
+        "gitBlobSha1": "a46cea3701eb596a5fdb6306794fd353716e73bc"
+      },
+      {
+        "path": "src/lib/hakkaOrganizations.ts",
+        "gitBlobSha1": "16ce79d834fa857ffda88740cd0660493f4aed4f"
+      },
+      {
+        "path": "src/lib/hospitalDischargeLongTermCarePartners.test.ts",
+        "gitBlobSha1": "7f05dfa990877cd929bf33f91ff1ed3fa7681d89"
+      },
+      {
+        "path": "src/lib/hospitalDischargeLongTermCarePartners.ts",
+        "gitBlobSha1": "6e2bfe899588c92f60550300a0bb318e21323d35"
+      },
+      {
+        "path": "src/lib/industryGrants.test.ts",
+        "gitBlobSha1": "f1868371e4490730445e2c6f804087f8c25e1be3"
+      },
+      {
+        "path": "src/lib/industryGrants.ts",
+        "gitBlobSha1": "6899f1e48b980c297676346e47fd6f1a2bb09b6b"
+      },
+      {
+        "path": "src/lib/infantCareCenterEvaluationResults.test.ts",
+        "gitBlobSha1": "59bb95e5a55f5bd0918564f06b4a664248484a2a"
+      },
+      {
+        "path": "src/lib/infantCareCenterEvaluationResults.ts",
+        "gitBlobSha1": "bdc37b5bf1a9629433048eecce96ed82e580730b"
+      },
+      {
+        "path": "src/lib/laborStandardActViolations.test.ts",
+        "gitBlobSha1": "75ddf0971264bfc98c07ed74189c363ab3388574"
+      },
+      {
+        "path": "src/lib/laborStandardActViolations.ts",
+        "gitBlobSha1": "364a1aa7cb3109baf9f153650d8d3e968abb6ebb"
+      },
+      {
+        "path": "src/lib/licensedAnimalMedicineSellers.test.ts",
+        "gitBlobSha1": "9352827a1c0de059448a0442ec95a6e9fb5bd64a"
+      },
+      {
+        "path": "src/lib/licensedAnimalMedicineSellers.ts",
+        "gitBlobSha1": "3df62f1e9bdff93e4c3515842afeb4bdf38232c9"
+      },
+      {
+        "path": "src/lib/licensedElectronicGameArcadeOperators.test.ts",
+        "gitBlobSha1": "7a5362f42f12531a7d1e1ea210d0d316351afbb7"
+      },
+      {
+        "path": "src/lib/licensedElectronicGameArcadeOperators.ts",
+        "gitBlobSha1": "afb7e6ba018816cc01cb8509e11e1f86d903e114"
+      },
+      {
+        "path": "src/lib/licensedNaturalGasPipelineContractors.test.ts",
+        "gitBlobSha1": "ed13595239a1b7d0467718c2c4e4df8346f9a58f"
+      },
+      {
+        "path": "src/lib/licensedNaturalGasPipelineContractors.ts",
+        "gitBlobSha1": "2886257bd0f2d7b5c37e5edcff0fff22b0446bf0"
+      },
+      {
+        "path": "src/lib/licensedPawnshopDirectory.test.ts",
+        "gitBlobSha1": "63873b3e669ec3ceaa92eca9abc1355bfe1c14e1"
+      },
+      {
+        "path": "src/lib/licensedPawnshopDirectory.ts",
+        "gitBlobSha1": "2f512a8cbde76d951b8f8b8447e09115b72dfbdb"
+      },
+      {
+        "path": "src/lib/licensedSpecialEntertainmentBusinessOperators.test.ts",
+        "gitBlobSha1": "6253180798847809a7905c8aa200d59f4e90a53c"
+      },
+      {
+        "path": "src/lib/licensedSpecialEntertainmentBusinessOperators.ts",
+        "gitBlobSha1": "159826ba6e8549bf31bb5d0af98f71948207fcae"
+      },
+      {
+        "path": "src/lib/loadLocalJson.test.ts",
+        "gitBlobSha1": "7b93fa48ed0c6fd53754aafa02a7e102ef4e38fe"
+      },
+      {
+        "path": "src/lib/loadLocalJson.ts",
+        "gitBlobSha1": "d5d931dff5534962cbc1301cd403e0a168f92bd6"
+      },
+      {
+        "path": "src/lib/loadSeniorCarePolicy.ts",
+        "gitBlobSha1": "5eabfdf8b1159d6a49843008fba9feda9bfe51c7"
+      },
+      {
+        "path": "src/lib/majorElectricityUsers.ts",
+        "gitBlobSha1": "5c2f97f6bb6854feb3a4c3d719eee650082c1042"
+      },
+      {
+        "path": "src/lib/metroProcurement.test.ts",
+        "gitBlobSha1": "4304cc1f9077653f13ba3723a4bbcbc85f7932dd"
+      },
+      {
+        "path": "src/lib/metroProcurement.ts",
+        "gitBlobSha1": "1646d54c10a87bd92723062fe0617e5e21556a69"
+      },
+      {
+        "path": "src/lib/nangangSoftwareParkCompanies.test.ts",
+        "gitBlobSha1": "5a632788a676b22b70f5589b291fb26574adc65e"
+      },
+      {
+        "path": "src/lib/nangangSoftwareParkCompanies.ts",
+        "gitBlobSha1": "0613cf027e8e92e42e80c7542c295d18761bb2c6"
+      },
+      {
+        "path": "src/lib/navigationState.test.ts",
+        "gitBlobSha1": "125991ea09194ec373d96109835921996714d64c"
+      },
+      {
+        "path": "src/lib/navigationState.ts",
+        "gitBlobSha1": "f705b567bf6f664dab083c3bebd8057fd4295fb4"
+      },
+      {
+        "path": "src/lib/occupationalSafetyHealthViolations.test.ts",
+        "gitBlobSha1": "c9822593c61de7ae2c7482f99f4868294ddac8bb"
+      },
+      {
+        "path": "src/lib/occupationalSafetyHealthViolations.ts",
+        "gitBlobSha1": "9cc39ff2905eff3bf95c5e30ba359e8e575d4bec"
+      },
+      {
+        "path": "src/lib/outOfCityFuneralServiceBusinesses.ts",
+        "gitBlobSha1": "27f4fcf3bf546ab5fc36f1d371b499d4c523f083"
+      },
+      {
+        "path": "src/lib/performanceBudget.test.ts",
+        "gitBlobSha1": "2647b6d47446e96f78a10d04753da46f3488c15b"
+      },
+      {
+        "path": "src/lib/performingArtsGroups.test.ts",
+        "gitBlobSha1": "0b406ec9cbbec5f43e64b3ae73a3619c910b22f2"
+      },
+      {
+        "path": "src/lib/performingArtsGroups.ts",
+        "gitBlobSha1": "5d86cbc4dec5cc57b8d41482095db9644ce55534"
+      },
+      {
+        "path": "src/lib/privateCulturalHeritageSubsidies.test.ts",
+        "gitBlobSha1": "8af776b1c7ce0ada511a6926f4c338b0dd8c0311"
+      },
+      {
+        "path": "src/lib/privateCulturalHeritageSubsidies.ts",
+        "gitBlobSha1": "33fdcf45514af0b94a8c6271050f7f19bcb5cf86"
+      },
+      {
+        "path": "src/lib/provenanceReviewRegistry.test.ts",
+        "gitBlobSha1": "87b2dc5c6e63bf275c40dc32bd5762d7f575c907"
+      },
+      {
+        "path": "src/lib/provenanceReviewSchedule.test.ts",
+        "gitBlobSha1": "8e8ced8b29d9526b3bce500927e60d598eac57e4"
+      },
+      {
+        "path": "src/lib/publicPneumococcalVaccineProviders.ts",
+        "gitBlobSha1": "e8aefb9a633ecb1b6a22f31f8c02138fbe1ff0df"
+      },
+      {
+        "path": "src/lib/publiclyFundedHpvVaccinationProviders.test.ts",
+        "gitBlobSha1": "8378cfdac648a91931f5b68711372e1f62de172f"
+      },
+      {
+        "path": "src/lib/publiclyFundedHpvVaccinationProviders.ts",
+        "gitBlobSha1": "84f3a8b39b07485148784f87167bbe16aefa0ecc"
+      },
+      {
+        "path": "src/lib/quasiPublicInfantCareCenters.test.ts",
+        "gitBlobSha1": "56a30779456d7913c21e350972ed75db9f764e5f"
+      },
+      {
+        "path": "src/lib/quasiPublicInfantCareCenters.ts",
+        "gitBlobSha1": "1a4587dc549a25ff9d54ae8703c4cffa4d122385"
+      },
+      {
+        "path": "src/lib/registeredAnimalHospitals.test.ts",
+        "gitBlobSha1": "76944126da43efe4bda95374894503d0e3c36962"
+      },
+      {
+        "path": "src/lib/registeredAnimalHospitals.ts",
+        "gitBlobSha1": "dda760d2a69441cdc81da704e0e46c6262191aab"
+      },
+      {
+        "path": "src/lib/registeredCramSchools.test.ts",
+        "gitBlobSha1": "78c020a8994493c075ac7372585e08f2270b2e13"
+      },
+      {
+        "path": "src/lib/registeredCramSchools.ts",
+        "gitBlobSha1": "252907345534dff1ac10777104bc6af699542faa"
+      },
+      {
+        "path": "src/lib/registeredFactoryDistribution.test.ts",
+        "gitBlobSha1": "738569827ea8a13e763eaab031c1677334ee3093"
+      },
+      {
+        "path": "src/lib/registeredFactoryDistribution.ts",
+        "gitBlobSha1": "84b60eac2092f25287152eeea5595c83b47eea9f"
+      },
+      {
+        "path": "src/lib/registeredHotels.test.ts",
+        "gitBlobSha1": "29ff1984d7aa4407a892822196d4dafd4eb05a9e"
+      },
+      {
+        "path": "src/lib/registeredHotels.ts",
+        "gitBlobSha1": "5001af0dcc9cffbe00fbb10a3643f9d039716f0d"
+      },
+      {
+        "path": "src/lib/registeredLaborUnions.test.ts",
+        "gitBlobSha1": "c78214f361196510a11f7d5ad53db47c7942cb91"
+      },
+      {
+        "path": "src/lib/registeredLaborUnions.ts",
+        "gitBlobSha1": "a4a9a25589e5e682261d579af81fafd8a0f8f587"
+      },
+      {
+        "path": "src/lib/registeredPostpartumCareInstitutions.ts",
+        "gitBlobSha1": "1289b9b011ea00349bd57e616f5f834b0e29bbc0"
+      },
+      {
+        "path": "src/lib/registeredRecyclingBusinessOrganizations.test.ts",
+        "gitBlobSha1": "706268e99b4d25596d91e50218e9a7d6f0e38146"
+      },
+      {
+        "path": "src/lib/registeredRecyclingBusinessOrganizations.ts",
+        "gitBlobSha1": "aba782a3018a13df076bd2468e883ba44fc12e2a"
+      },
+      {
+        "path": "src/lib/seniorCarePolicy.test.ts",
+        "gitBlobSha1": "ab548c01841653fa958a6b1afe386ef3e2e5ea26"
+      },
+      {
+        "path": "src/lib/seniorCarePolicy.ts",
+        "gitBlobSha1": "5302e0d4cb27096ce16189eb8d930fbaeeca0acc"
+      },
+      {
+        "path": "src/lib/seniorGroupMealServiceSites.ts",
+        "gitBlobSha1": "d24ff047a2a23dfe902466cbb38543f4c79445d1"
+      },
+      {
+        "path": "src/lib/shelteredWorkshopDirectory.test.ts",
+        "gitBlobSha1": "f6968770b9fe1d987343f7d2b76a5c8aab9b27a1"
+      },
+      {
+        "path": "src/lib/shelteredWorkshopDirectory.ts",
+        "gitBlobSha1": "161e2d97d165c892cd52b9a4585c9701bc3b5b95"
+      },
+      {
+        "path": "src/lib/sourceDateMetadataC.test.ts",
+        "gitBlobSha1": "98d4786fe65437a24de928175604c8c50c4b0154"
+      },
+      {
+        "path": "src/lib/sourceDateMetadataD.test.ts",
+        "gitBlobSha1": "920a333c3742ec0e62544f637e5e97a9092db22a"
+      },
+      {
+        "path": "src/lib/sourceSchemaGuard.test.ts",
+        "gitBlobSha1": "4d982d0f9e49f102ce984f16cf1537aa8e9bd283"
+      },
+      {
+        "path": "src/lib/specificPetBusinessEvaluationResults.test.ts",
+        "gitBlobSha1": "ae801306adf8febfb4ac82e3806f0f4964ee8dea"
+      },
+      {
+        "path": "src/lib/specificPetBusinessEvaluationResults.ts",
+        "gitBlobSha1": "76991985a526821ab1de02c0ab46ceeeb7c953a6"
+      },
+      {
+        "path": "src/lib/taipeiTravelAccommodationsZh.test.ts",
+        "gitBlobSha1": "596cb98cff082e65035a0f99364fcd2a62f99efc"
+      },
+      {
+        "path": "src/lib/taipeiTravelAccommodationsZh.ts",
+        "gitBlobSha1": "e2ddb5e2fca4e95edab446e9b658e9645ffbee9e"
+      },
+      {
+        "path": "src/lib/telepsychologyCounselingInstitutions.test.ts",
+        "gitBlobSha1": "5e8668d483ccc549030625fe3adc6a704763317f"
+      },
+      {
+        "path": "src/lib/telepsychologyCounselingInstitutions.ts",
+        "gitBlobSha1": "a8ebace50a1f37f41ee65897fbf3aed2b07d198e"
+      },
+      {
+        "path": "src/lib/travelMedicineClinics.test.ts",
+        "gitBlobSha1": "90c489fff8f9aac90f669b3915e581c60dec3692"
+      },
+      {
+        "path": "src/lib/travelMedicineClinics.ts",
+        "gitBlobSha1": "60783ee01b6427db388a735cd86d337162d3ca7d"
+      },
+      {
+        "path": "src/lib/uiContract.test.ts",
+        "gitBlobSha1": "16fdaa85c4eca69c6318212250fd1242a601bb3f"
+      },
+      {
+        "path": "src/lib/uiFamilies.ts",
+        "gitBlobSha1": "bc41efdf01a600ae17ae15706864853d629738b5"
+      },
+      {
+        "path": "src/lib/upstreamMonitorSchedule.test.ts",
+        "gitBlobSha1": "073ff56918ad9c35444142846af7e2f8e9e8959a"
+      },
+      {
+        "path": "src/lib/upstreamResourceMonitor.test.ts",
+        "gitBlobSha1": "d247dd3a4181406ba87e999ae7395be96454c6f6"
+      },
+      {
+        "path": "src/lib/veterinarianProfessionalRegistry.test.ts",
+        "gitBlobSha1": "93dbb54343f28dc108a1501c40d1295c1567a2cc"
+      },
+      {
+        "path": "src/lib/veterinarianProfessionalRegistry.ts",
+        "gitBlobSha1": "df929948360f5db53f113af13743efffee9d1df6"
+      },
+      {
+        "path": "src/lib/withdrawnIllegalHotelEnforcement.test.ts",
+        "gitBlobSha1": "b2753d9efa0b2d4b4ff76cfe2141546fecc37caa"
+      },
+      {
+        "path": "src/lib/withdrawnIllegalHotelEnforcement.ts",
+        "gitBlobSha1": "10bf78086392900f523244c89944cb7596d296a3"
+      },
+      {
+        "path": "src/main.tsx",
+        "gitBlobSha1": "317bf11082870505034f54f067907fdbadfdef12"
+      },
+      {
+        "path": "src/seniorCarePolicy.css",
+        "gitBlobSha1": "a2e11153b799400bcbed84f898ff02cf6acd5ebd"
+      },
+      {
+        "path": "src/styles.css",
+        "gitBlobSha1": "e80f4f96bf26ff9080c01e3ad0de8105aa5ad015"
+      },
+      {
+        "path": "src/types.ts",
+        "gitBlobSha1": "4ea135ababb912d78166ed06bc62e61443013405"
+      },
+      {
+        "path": "src/types/seniorCarePolicy.ts",
+        "gitBlobSha1": "332dcba5f45b21f1aa7242d708e32db14d53f66d"
+      },
+      {
+        "path": "tsconfig.app.json",
+        "gitBlobSha1": "cc9f68b758105ad760f15c1b8b00e69dd1158fa3"
+      },
+      {
+        "path": "tsconfig.json",
+        "gitBlobSha1": "1ffef600d959ec9e396d5a260bd3f5b927b2cef8"
+      },
+      {
+        "path": "tsconfig.node.json",
+        "gitBlobSha1": "c93273a35509b7504ab3e1f06abb5f1b7278dc71"
+      },
+      {
+        "path": "vite.config.ts",
+        "gitBlobSha1": "a64f4b3c10b6734babbd41aa2490aad587c19259"
+      }
+    ],
+    "commands": [
+      "npm ci --ignore-scripts --no-audit --no-fund",
+      "node node_modules/vite/bin/vite.js build",
+      "node node_modules/vite/bin/vite.js preview --host 127.0.0.1 --port 4197 --strictPort"
+    ],
+    "scope": "Unmodified pinned source, build configuration, lockfile and minimal published policy snapshot only. Broad unrelated public datasets are not needed for this policy preview. Upstream prebuild/data pipelines were not executed."
+  },
+  "captureOrigin": "Local production build of 299 Git-blob-verified files from the exact pinned upstream revision; source inputs unchanged.",
+  "scope": "Real personal research interface, not a government operational system. Source inventory and unbuilt-village counts are not current operation, available places, need or care quality. The live deployment previously served the older civic-groups view; these captures use the verified pinned source build.",
+  "records": [
+    {
+      "url": "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=en",
+      "locale": "en",
+      "width": 1440,
+      "image": "src/assets/images/govtech/senior-care-en-1440.png",
+      "errors": [],
+      "snapshots": [
+        {
+          "url": "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+          "bytes": 771155,
+          "sha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=en",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-C5ix79Bc.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-Daub1XRh.css",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CM30K4Z6.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/DatasetFamilyFrame-NvWl0kfn.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CJhU8ymK.css",
+        "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.122.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.123.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.116.woff2",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-groups.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-group-summary.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/current.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.121.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.120.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.119.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.118.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.117.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.113.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.110.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.115.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.112.woff2"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=zh",
+      "locale": "zh",
+      "width": 1440,
+      "image": "src/assets/images/govtech/senior-care-zh-1440.png",
+      "errors": [],
+      "snapshots": [
+        {
+          "url": "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+          "bytes": 771155,
+          "sha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=zh",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-C5ix79Bc.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-Daub1XRh.css",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CM30K4Z6.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/DatasetFamilyFrame-NvWl0kfn.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CJhU8ymK.css",
+        "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.123.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.122.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.121.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.120.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.119.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.117.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.116.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.112.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.118.woff2",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-groups.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-group-summary.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/current.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.113.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.106.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.115.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.111.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.114.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.110.woff2"
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=zh",
+      "locale": "zh",
+      "width": 390,
+      "image": "src/assets/images/govtech/senior-care-zh-390.png",
+      "errors": [],
+      "snapshots": [
+        {
+          "url": "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+          "bytes": 771155,
+          "sha256": "f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4197/taipei-civic-groups-map/?dataset=seniorCarePolicy&lang=zh",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-C5ix79Bc.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/index-Daub1XRh.css",
+        "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CM30K4Z6.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/DatasetFamilyFrame-NvWl0kfn.js",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/assets/SeniorCarePolicyDashboard-CJhU8ymK.css",
+        "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYY.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.123.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.122.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.121.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.120.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.119.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.117.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.116.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.112.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.118.woff2",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-groups.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/data/civic-group-summary.json",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/current.json",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.113.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.106.woff2",
+        "http://127.0.0.1:4197/taipei-civic-groups-map/policy/senior-care-policy/snapshot-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c.json",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.115.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.111.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.114.woff2",
+        "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFOkMQAewlpbGXhhyYs0QF3kPVyLylzU95vTq1Ltj5xQez1g.110.woff2"
+      ]
+    }
+  ]
+}

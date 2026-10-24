@@ -1,0 +1,189 @@
+北
+
+TAIPEI · OPEN DIRECTORY
+
+Taipei Public Records Explorer
+Civic groups, performing-arts groups, labor unions, intermediary companies, disability employment resources, sheltered workshops, licensed pawnshops, healthcare and mental-health providers, HPV vaccine providers, child medical subsidy providers, denture subsidy providers, public liability insurance, business changes, company changes, registered institutions, lodging records, travel accommodations, procurement, grants, biotech companies, compliance, consumer dispute notices, industry park, animal-care, childcare, infant care evaluations, and elderly-care public records explorer
+中文
+Data catalogue
+Senior Community Care Policy 10
+⌄
+Search datasets
+
+START EXPLORING
+
+Find verifiable public data in three steps
+×
+01
+Choose a dataset
+
+Browse by topic or search for a service and dataset name.
+
+→
+02
+Narrow the records
+
+Use district, year, and dataset-specific filters.
+
+→
+03
+Check the source
+
+Read the data notes and source links before taking a next step.
+
+Datasets are public-data snapshots. Confirm service status, eligibility, and availability with the relevant authority or provider.
+
+Browse datasets
+
+POLICY 10 / COMMUNITY CARE
+
+Taipei Senior Community Care Coverage & Service Readiness Decision Support
+Problem → Source evidence → Engineering method → Findings → Limitations
+With limited review capacity, which records should be clarified next?
+
+Administrative evidence review and service-planning research. Published sites, unbuilt villages and session bands do not establish current operation, available places, care quality or unmet demand. No site approval, subsidy, individual eligibility or placement decision.
+
+Source feasibility and editions
+
+A: official PDF site rows; B: officially listed villages without a programme site; E: retained CSV with its own edition. C-level units are a separate programme and are not combined.
+
+A published site rows
+520
+B officially unbuilt rows
+88
+B eligible village reviews
+88
+A/B village overlaps
+0
+Source A · 115年度臺北市社區照顧關懷據點一覽表
+Source B · 115年度臺北市社區照顧關懷據點尚未布建里別一覽表
+Source C · 臺北市政府社會局補助辦理社區照顧關懷據點實施計畫
+Source E · Retained community-care CSV
+Published rows by district and type
+Village identity, administrative coverage and reconciliation
+
+Uses within-edition district + village keys. No compatible citywide village universe is admitted, so no citywide coverage percentage is calculated. Organization names do not determine village attribution; no coordinates are inferred from addresses.
+
+E retained rows: 510 · E rows without accepted associations: 17
+
+Exact
+427
+Normalized
+66
+Ambiguous
+1
+Rejected
+9
+PDF only
+17
+A/B overlap and programme exceptions
+Review modes and capacity scenarios
+
+A: site documentation review; B: follow-up on the official unbuilt-village list. Evidence tiers A/B/C mean primary conflict / documentation question / routine review, not care need or quality.
+
+Mode
+A Documentation review
+B Officially unbuilt village follow-up
+Review capacity
+5
+10
+All eligible
+Selection strategy
+Evidence Gaps First
+Balanced District Review
+District
+All districts
+中山區
+中正區
+信義區
+內湖區
+北投區
+南港區
+士林區
+大同區
+大安區
+文山區
+松山區
+萬華區
+Issue scope
+Routine review included
+All documentation questions
+Primary conflicts only
+Source association scope
+Current PDF source questions
+PDF with accepted E associations
+Broader review (including ambiguous associations)
+Source category subset
+All source classifications
+Care-point text (excluding learning)
+Learning-school text classification
+
+Balanced review takes one record per district per round, retaining tier order within each district; stable source IDs break ties. This is administrative representation, not need equity. Category subsets are text filters, not official eligibility classifications.
+
+Eligible population: 520 · Excluded: 0 · Capacity used: 5 · Represented districts: 3
+
+Search selected records (does not change selection)
+Source row	Record	District / village	Tier and reasons	Details
+A #114 · p.4	臺北市大安區大安新龍社區發展協會	大安區 / 新龍里	A · Ambiguous cross-edition association	Inspect
+A #1 · p.1	士林老人服務中心(財團法人台北市中國基督教靈糧世界佈道會士林靈糧堂)	士林區 / 三玉里	B · Session band unspecified	Inspect
+A #59 · p.2	社團法人中華無齡酷活協會	大同區 / 保安里	B · Source types differ; edition review required	Inspect
+A #60 · p.2	社團法人中華國際照顧發展協會	大同區 / 南芳里	B · Source types differ; edition review required	Inspect
+A #66 · p.2	大同老人服務暨日間照顧中心	大同區 / 重慶里	B · Session band unspecified	Inspect
+Strategy comparison and sensitivity
+
+Compares strategies on the same population. The table varies capacity or issue scope and reports ID-set changes relative to the current scenario; category and source association scope are controlled above.
+
+Shared between strategies: 0 / 5 · Other strategy districts: 5
+
+Shared, added and removed IDs
+Variation	Population	Selected	Districts	Shared / added / removed
+Capacity 5	520	5	3	
+5 / 0 / 0
+
+Capacity 10	520	10	3	
+5 / 5 / 0
+
+Capacity All	520	520	12	
+5 / 515 / 0
+
+Issue Primary	1	1	1	
+1 / 0 / 4
+
+Issue Questions	62	5	3	
+5 / 0 / 0
+
+Source scope PDF only	520	5	5	
+2 / 3 / 3
+
+Source scope Accepted associations	493	5	2	
+4 / 1 / 1
+
+Source scope Broader review	520	5	3	
+5 / 0 / 0
+
+Category All	520	5	3	
+5 / 0 / 0
+
+Category Care points	463	5	3	
+5 / 0 / 0
+
+Category Learning schools	57	5	4	
+0 / 5 / 5
+
+Comparisons requiring authoritative cross-edition geographic identity, actual operation, travel time, need and outcomes are unavailable; no arbitrary need weights are added. Identical selections are reported as such.
+
+Complete site inventory and official unbuilt villages
+Mode C: care capacity, measured accessibility and outcomes
+
+Unavailable. Current operation, staffing and capacity, utilization and waitlists, travel and barriers, compatible population denominators and care outcomes are missing. Missing evidence remains unknown, not zero.
+
+PDF extraction evidence and technical source audit
+Administrative Investigation Briefing exports
+
+Exports the full current selection (search does not change exports), including exact IDs, editions, exclusions and limitations. CSV cells guard against spreadsheet formula injection. Elderly-alone counts are deliberately excluded.
+
+JSON CSV
+
+Administrative evidence review and service-planning research. Published sites, unbuilt villages and session bands do not establish current operation, available places, care quality or unmet demand. No site approval, subsidy, individual eligibility or placement decision.
+
+Data sources: Taipei civic groups, Taipei performing-arts group registry dataset, registered labor unions, Taipei disability employment resource map, Taipei sheltered workshop directory, Taipei recycling business organization records, Taipei registered factory records, Taipei cemetery public facility records, Taipei City Police Department licensed pawnshop directory, Taipei licensed electronic game arcade operator records, Taipei licensed special entertainment business operator records, Taipei contracted vaccination medical provider records, Taipei publicly funded HPV vaccination provider records, Taipei child medical subsidy contracted provider records, Taipei denture subsidy medical provider records, Taipei telepsychology counseling institution records, Taipei business premises public liability insurance records, Taipei business registration change records, Taipei company registration change records, industry grants, Taipei biotech company directory records, Metro procurement, registered cram schools, registered hotels, Taipei Travel accommodation dataset, Labor Standards Act violation publication records, Occupational Safety and Health Act violation publication records, Gender Equality in Employment Act violation publication records, Taipei consumer dispute absent business operator notices, Nangang Software Park company directory, Dawannan Industrial Area company directory, Taipei animal hospital directory, Taipei animal medicine seller records, Taipei quasi-public infant care center records, Taipei infant care center evaluation results, Taipei elderly welfare institution directory records, and related public data. These datasets have different meanings. Latest official information should be verified with authorities and official systems.
