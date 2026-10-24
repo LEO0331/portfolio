@@ -54,7 +54,7 @@ Case 007 has three independent objectives: 1,241 quality candidates (A163/B927/C
 
 ## Evidence and tests
 
-Provide pinned methodology, audits, implementations, source tests, aggregate outputs, merged PR and source commit. Use HTTPS links with readable labels. Distinguish upstream recorded test results from the portfolio's executed tests. Use attributed reviewed screenshots or text-based evidence; never invent dashboards.
+Provide pinned methodology, audits, implementations, source tests, aggregate outputs and exact source commit. Keep PR and merge administration in internal verification documents, outside public evidence labels and URLs. Use HTTPS links with readable labels. Distinguish upstream recorded test results from the portfolio's executed tests. Use attributed reviewed screenshots or text-based evidence; never invent dashboards.
 
 ## Data limitations and responsible use
 
@@ -79,3 +79,9 @@ See [Case008](./govtech-case-study-008.zh-TW.md), [independent audit](./govtech-
 One existing safety project owns Case009. Preserve416record/415group/612inventory units,216within-edition research associations and194geographic admissions. No official crosswalk,CRS/boundary certification,structural classification or overdue finding is established. Actual sensitivity differs from prose:accepted/geographic top5 agree;broader selects5ambiguous TierA;critical-only retains default5. Use executed functions and machine artifacts.
 
 Reuse existing renderer,types,methodology variants,scenario tables,routes andproject normalizer for future cases;require a separately scoped verified merged source and complete bilingual evidence before adding another case. Keep Cases001–008 and dated reports intact. See [Case009](./govtech-case-study-009.zh-TW.md),[source audit](./govtech-bridge-inspection-source-audit.md),[verification](./govtech-v1.8-verification.md).
+
+## Completed Case010 and next-case requirements
+
+The existing public-records explorer owns senior-community-care, with a separate policy snapshot and unchanged directory Data Trust. Keep520official PDF rows,88officially listed unbuilt villages,510retained CSV records and292C-level programme records distinct. Associations427exact+66normalized=493are conservative research links; one ambiguous,9rejected and17PDF-only rows are not care-quality findings. Tiers1/61/458measure documentation issues. ModeA/B compare administrative follow-up composition, while actual operating service, care capacity, geographic accessibility and welfare outcomes remain unavailable.
+
+Use the existing typed catalogue, lightweight summaries, four-part overview, closed technical evidence and project normalizer. Preserve previous nine source records and frozen baseline, extending catalogue expectations explicitly. OriginalA/B/C acquired bytes and sourceEcanonicalGitLF are different custody classes. Keep full source IDs optional and all substantive results/limits visible. Do not reproduce village vulnerable-person counts or unredacted PDF assets. See [Case010](./govtech-case-study-010.zh-TW.md), [source audit](./govtech-senior-community-care-source-audit.md) and [verification](./govtech-v1.9-verification.md).
