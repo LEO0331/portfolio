@@ -1,6 +1,6 @@
 # GovTech Showcase v2.0 verification
 
-Verified 2026-10-25 (Asia/Taipei). Portfolio base: `74a979721a640e87e3d49ce866f435c525120a0a`, including merged Case 010. Latest main was re-fetched unchanged on resume. Branch: `codex/govtech-food-hygiene-case-011`. Delivery: Draft PR pending creation, targeting main. Exactly one draft for human review; no hosted E2E/Lighthouse wait and no automatic merge.
+Verified 2026-10-25 (Asia/Taipei). Portfolio base: `74a979721a640e87e3d49ce866f435c525120a0a`, including merged Case 010. Latest main was re-fetched unchanged on resume. Branch: `codex/govtech-food-hygiene-case-011`. Delivery: [Draft PR](https://github.com/LEO0331/portfolio/pull/35), targeting main. Exactly one draft for human review; no hosted E2E/Lighthouse wait and no automatic merge.
 
 ## Dependency gate and immutable source
 

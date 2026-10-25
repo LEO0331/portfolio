@@ -1,29 +1,30 @@
 # Session Handoff
 
-Updated2026-10-24. Branch codex/govtech-senior-community-care-case-010, base bcd78c641e9e08ebf47101d21ea43725fc7e9e94.
+Updated2026-10-25. Branch codex/govtech-food-hygiene-case-011, base74a979721a640e87e3d49ce866f435c525120a0a.
 
-**Current objective:** Ten bilingual source-grounded GovTech cases, adding Senior Community Care Case 010.
+**Current objective:** Eleven bilingual source-grounded GovTech cases, adding Food Hygiene Case 011.
 
-**Current status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge.
+**Current status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge.
 
-Completed: Case 01020bilingualsections/15tables, source/snapshot/IDverification and12+9scenario replays;10case lightweight summaries, four-field overviews, correct project/domain relationships and30static routes+404. Existing nine records/goldens unchanged. Real source previews verified against299 pinned inputs and exactsnapshot;0public workflow findings. No sourceproject changes or new dependencies.
+Completed:20sections/14tables per locale; exact source/builder/scenario/export verification; actual methodselectReviewRecords; no validated ModeBlinks/current safety claims. One existing project/domain relation and32 static routes+404. All20priorlocalizedrecords and old fixtures preserved; direct per-case lazy loading reuses original renderer. No dependencies or source-project data changed.
 
-Verification: clean fullgate29 unit/190 Chromium/17 flows100%,audit0;260viewport/locale/theme checks and46root/Pages route outcomes passed. Default production build restored. See docs/govtech-v1.9-verification.md, docs/govtech-senior-community-care-source-audit.md, docs/govtech-case-study-010.zh-TW.md and docs/evidence/govtech-v1.9/.
-
-Remaining risks: documentary scope/Mode C unavailable, no authoritative all-village denominator or access model, original-versus-GitLF custody distinction, no fresh Python extraction/fullupstreamtest replay, older live source deployment, larger detailed route chunk and local-only visual/browser evidence. No implementation blocker.
+Verification: audit0,29unit,209Chromium,17/17flows100%,280layouts,50root/Pages route outcomes and keyboard/long-table checks. Representative Bridge screenshot identical; JS288461→135776bytes. Default production Pages build restored. No public PR/workflow findings in22records.
 
 ## Blockers
 
-None for implementation.
+None for implementation. Draft delivered; user owns hosted checks and merge.
 
 ## Files Relevant to the Next Update
 
-- docs/govtech-v1.9-verification.md
-- docs/govtech-senior-community-care-source-audit.md
-- docs/govtech-case-study-010.zh-TW.md
-- src/data/govtechSeniorCommunityCare.ts and its Chinese counterpart
-- tests/e2e/govtech-senior-community-care.spec.ts
+- docs/govtech-v2.0-verification.md
+- docs/govtech-food-hygiene-source-audit.md
+- docs/govtech-case-study-011.zh-TW.md
+- docs/evidence/govtech-v2.0/
+- src/data/govtechFoodHygieneInspection.ts and its Chinese counterpart
+- src/utils/govtechCaseLoader.ts and original CaseContent renderer
+- tests/e2e/govtech-food-hygiene-inspection.spec.ts
+- tests/fixtures/govtech-prior-ten-baseline.json and govtech-food-hygiene-source.json
 
 ## Recommended Next Step
 
-User reviews draft, handles hosted E2E/Lighthouse, marks ready and merges manually. Do not wait for hosted CI or auto-merge. No OMX. Ignore historical PR33 pending language inside older dated records; it is merged into this base.
+User reviews draft and evidence, accepts hosted checks, marks ready and merges manually. Preserve source editions, mixed statistical units, logical-versus-file hashes, unavailable ModeB/C evidence and neutral examples. Historical transformedJSON lacks originalCSV custody; source full suite/fresh acquisition and production latency were not independently rerun. No hosted-check wait, no automatic merge, no OMX.

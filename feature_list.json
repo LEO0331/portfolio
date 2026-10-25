@@ -555,6 +555,30 @@
         "Clean finalgate29 unit/190 Chromium/17 flows100%,audit0,260matrix,46root-Pages route outcomes; measured loading costs and limits documented",
         "Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/34); user owns hosted checks, readiness and merge."
       ]
+    },
+    {
+      "id": "govtech-food-hygiene-v2-0-2026-10",
+      "name": "Add source-grounded bilingual Food Hygiene Case011",
+      "description": "Historical sample semantics, official source custody, conservative identity gates and reproducible administrative evidence review.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-senior-community-care-v1-9-2026-10"
+      ],
+      "doneCriteria": [
+        "Verify merged source and actual accepted editions, source custody, snapshot and scenarios",
+        "Eleven bilingual cases with existing project/domain, lightweight summaries, disclosures, routes and metadata",
+        "Preserve all previous ten records, historical fixtures and public presentation contract",
+        "Fix detailed-route data loading, run full local/browser/source gates and document actual results",
+        "One draft main-target PR; user owns hosted checks and merge"
+      ],
+      "evidence": [
+        "Base74a9797; upstream PR4 merged ebed7962b8ced05afea285865f95f2bb7e991f1e; accepted source custody/logical and exact snapshot identities verified",
+        "30pinned blobs/8original bodies/3retained JSON/actualofflinebuilder/6scenarios+6sensitivities/exportguards/compactfixture passed",
+        "Eleven bilingual cases20sections14tables; all20priorrecordhashes and historical fixtures preserved;0 publicworkflowfindings/22records",
+        "Final audit0,29unit,209Chromium,17/17flows100%,280layoutchecks,50root-Pages outcomes; native keyboard and byte-identical representative screenshot",
+        "Per-case loading: Bridge JS288461→135776bytes (-52.9%); Food EN134689bytes; no17MBsnapshot or government runtime payload",
+        "Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge."
+      ]
     }
   ]
 }
