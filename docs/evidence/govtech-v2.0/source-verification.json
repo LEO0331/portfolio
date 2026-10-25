@@ -1,0 +1,315 @@
+{
+  "sourceSha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+  "verified": true,
+  "pinnedGitBlobs": 30,
+  "originalBodies": 8,
+  "retainedJsonEditions": 3,
+  "offlineBuilderReproduced": true,
+  "snapshot": {
+    "id": "policy-11-1916319270a865f57805f618267c58be38e7b2f39b8ef6af2f8dfd0ac40ecefd",
+    "sha256": "8ef73119f62c4ca9594a2077cbee3cca8aaf6d360173217f982ad91370e6eeb3",
+    "bytes": 17021022,
+    "gzipBytes": 1428866,
+    "file": "snapshot-8ef73119f62c4ca9594a.json",
+    "generatedAt": "2026-10-24T02:40:52.637Z",
+    "identityMeaning": "SHA256(JSON.stringify(snapshotBody)), distinct from exact pretty JSON file hash"
+  },
+  "diagnostics": {
+    "sourceAdmission": {
+      "publishedRows": 22645,
+      "admittedRows": 22645,
+      "excludedRows": 0,
+      "duplicatePublishedOccurrencesPreserved": 1
+    },
+    "missingSamplingDates": 0,
+    "invalidSamplingDates": 0,
+    "emptyNames": 0,
+    "emptyAddresses": 0,
+    "flagCounts": {
+      "event-id-unavailable": 673,
+      "batch-id-unavailable": 673,
+      "identity-unresolved": 22645,
+      "duplicate-published-row": 1,
+      "assessment-date-unavailable": 1686,
+      "identifier-namespace-unverified": 20286,
+      "source-edition-changed": 1028
+    }
+  },
+  "populations": {
+    "failed": 673,
+    "grading": 1686,
+    "registry": 20286
+  },
+  "tiers": {
+    "T1": 1028,
+    "T2": 20944,
+    "T3": 673
+  },
+  "modeB": {
+    "available": false,
+    "validatedAssociations": 0,
+    "unvalidatedCandidates": 35,
+    "ambiguousCandidates": 0,
+    "matchingCoverage": {
+      "matchedRecords": 0,
+      "totalRecords": 22645
+    },
+    "unresolvedRecords": 22645,
+    "excludedSamples": 673,
+    "diagnosticsOverlap": true,
+    "automaticSampleAssociationAllowed": false
+  },
+  "scenarios": [
+    {
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 5,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 5
+      },
+      "tiers": {
+        "T1": 5
+      },
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3"
+    },
+    {
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 5,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 5
+      },
+      "tiers": {
+        "T1": 5
+      },
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3"
+    },
+    {
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 10,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 10
+      },
+      "tiers": {
+        "T1": 10
+      },
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa"
+    },
+    {
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 10,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 10
+      },
+      "tiers": {
+        "T1": 10
+      },
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa"
+    },
+    {
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "sourceCount": 3,
+      "sourceCounts": {
+        "registry": 20286,
+        "grading": 1686,
+        "failed": 673
+      },
+      "tiers": {
+        "T1": 1028,
+        "T2": 20944,
+        "T3": 673
+      },
+      "orderedIdsSha256": "330f285ef5a8800ad669afc008c3c5b4de98c930a31f5455ae7d5b1b30deed02",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e"
+    },
+    {
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "sourceCount": 3,
+      "sourceCounts": {
+        "registry": 20286,
+        "grading": 1686,
+        "failed": 673
+      },
+      "tiers": {
+        "T1": 1028,
+        "T2": 20944,
+        "T3": 673
+      },
+      "orderedIdsSha256": "1b42c33fb068922108d46fa56bf0614dc2c3d87c59d3cabf64f3d30a69824198",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e"
+    }
+  ],
+  "overlaps": [
+    {
+      "capacity": 5,
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": true
+    },
+    {
+      "capacity": 10,
+      "shared": 10,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": true
+    },
+    {
+      "capacity": "all",
+      "shared": 22645,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": false
+    }
+  ],
+  "sensitivity": [
+    {
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 5,
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "addedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 10,
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "shared": 5,
+      "added": 5,
+      "removed": 0,
+      "addedIdsSha256": "e0d294e92b577247790be018909ab78be8ffacd789540945273710e96e32972f",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "orderedIdsSha256": "330f285ef5a8800ad669afc008c3c5b4de98c930a31f5455ae7d5b1b30deed02",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e",
+      "shared": 5,
+      "added": 22640,
+      "removed": 0,
+      "addedIdsSha256": "5d549bcd5568ff07d26185eb30d2396b1c10d7c169498515267416cb54afccff",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 5,
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "addedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 10,
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "shared": 5,
+      "added": 5,
+      "removed": 0,
+      "addedIdsSha256": "e0d294e92b577247790be018909ab78be8ffacd789540945273710e96e32972f",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "orderedIdsSha256": "1b42c33fb068922108d46fa56bf0614dc2c3d87c59d3cabf64f3d30a69824198",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e",
+      "shared": 5,
+      "added": 22640,
+      "removed": 0,
+      "addedIdsSha256": "ecdfa71e25b451e9ee414ee4eec18026b5996fdb799d9f148033a0f94fd2969a",
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    }
+  ],
+  "exportSafeguards": {
+    "csvBomCount": 1,
+    "formulaPrefixGuardVerified": true,
+    "controlWhitespacePrefixGuardVerified": true,
+    "emptySelectionHeaderOnly": true,
+    "fullMetadataFirstRow": true
+  },
+  "notExecuted": [
+    "Full upstream test suite",
+    "Fresh official source acquisition",
+    "Production latency or operational food-safety verification"
+  ],
+  "paths": [
+    ".github/workflows/policy-11-review.yml",
+    ".gitattributes",
+    "package.json",
+    "doc/POLICY_11_SOURCE_AUDIT.md",
+    "doc/POLICY_11_VERIFICATION.md",
+    "public/data/policy-11/manifest.json",
+    "public/data/policy-11/retained-manifest.json",
+    "public/data/policy-11/snapshot-8ef73119f62c4ca9594a.json",
+    "public/data/policy-11/retained/failed.json",
+    "public/data/policy-11/retained/grading.json",
+    "public/data/policy-11/retained/registry.json",
+    "public/data/policy-11/evidence/acquisition.json",
+    "public/data/policy-11/evidence/failed-111.csv",
+    "public/data/policy-11/evidence/failed-112.csv",
+    "public/data/policy-11/evidence/failed-113.csv",
+    "public/data/policy-11/evidence/grading.csv",
+    "public/data/policy-11/evidence/registry.csv",
+    "public/data/policy-11/evidence/failed-catalogue.html",
+    "public/data/policy-11/evidence/grading-catalogue.html",
+    "public/data/policy-11/evidence/registry-catalogue.html",
+    "scripts/buildPolicy11Evidence.ts",
+    "scripts/policy11EvidenceValidation.ts",
+    "scripts/fetchPolicy11Evidence.mjs",
+    "scripts/dataPipeline.ts",
+    "src/lib/policy11.ts",
+    "src/lib/policy11.test.ts",
+    "src/lib/policy11SourceAudit.test.ts",
+    "src/lib/friendlyFood.ts",
+    "src/components/Policy11Module.tsx",
+    "src/App.tsx"
+  ]
+}

@@ -1,0 +1,854 @@
+{
+  "diagnostics": {
+    "sourceAdmission": {
+      "publishedRows": 22645,
+      "admittedRows": 22645,
+      "excludedRows": 0,
+      "duplicatePublishedOccurrencesPreserved": 1
+    },
+    "missingSamplingDates": 0,
+    "invalidSamplingDates": 0,
+    "emptyNames": 0,
+    "emptyAddresses": 0,
+    "flagCounts": {
+      "event-id-unavailable": 673,
+      "batch-id-unavailable": 673,
+      "identity-unresolved": 22645,
+      "duplicate-published-row": 1,
+      "assessment-date-unavailable": 1686,
+      "identifier-namespace-unverified": 20286,
+      "source-edition-changed": 1028
+    }
+  },
+  "sourceSha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+  "merge": {
+    "merged": true,
+    "sha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+    "mergedAt": "2026-10-24T07:42:21Z"
+  },
+  "method": {
+    "sourceFunction": "selectReviewRecords",
+    "declaredVersion": null,
+    "tierLabels": [
+      "T1",
+      "T2",
+      "T3"
+    ],
+    "balance": "source-round-robin-within-tier"
+  },
+  "schemaVersion": 1,
+  "snapshot": {
+    "id": "policy-11-1916319270a865f57805f618267c58be38e7b2f39b8ef6af2f8dfd0ac40ecefd",
+    "sha256": "8ef73119f62c4ca9594a2077cbee3cca8aaf6d360173217f982ad91370e6eeb3",
+    "bytes": 17021022,
+    "gzipBytes": 1428866,
+    "file": "snapshot-8ef73119f62c4ca9594a.json",
+    "generatedAt": "2026-10-24T02:40:52.637Z",
+    "identityMeaning": "SHA256(JSON.stringify(snapshotBody)), distinct from exact pretty JSON file hash"
+  },
+  "sourceEditions": [
+    {
+      "id": "failed-113-official-e0441def7ae0",
+      "sourceId": "failed",
+      "datasetId": "09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "resourceId": "3fc106cb-c8aa-4f74-8dbc-3272c7ffcae0",
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "e0441def7ae06c65c75b21a2d40129fca8891a9152858e4b93a6b50f33a20465",
+      "bytes": 73050,
+      "rowCount": 268,
+      "origin": "official-resource",
+      "originalBytesAvailable": true,
+      "retrievedAt": "2026-10-24T02:40:47.508Z",
+      "catalogueUpdatedAt": "2026-07-14T10:44:49+08:00",
+      "resourceUpdatedAt": "2025-12-16T10:22:17+08:00",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=3fc106cb-c8aa-4f74-8dbc-3272c7ffcae0",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "columns": [
+        "專案名稱",
+        "抽驗日期",
+        "分類",
+        "檢體名稱",
+        "抽驗行政郵遞區號",
+        "抽驗地點",
+        "檢驗結果",
+        "不符合規定原因"
+      ]
+    },
+    {
+      "id": "failed-112-official-a27addae0386",
+      "sourceId": "failed",
+      "datasetId": "09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "resourceId": "bb347e3d-626a-46e5-bb96-9061e8d08c26",
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "a27addae0386ed05ee28c898e0178230e7c77acbde63cde92660520481e07a95",
+      "bytes": 66166,
+      "rowCount": 249,
+      "origin": "official-resource",
+      "originalBytesAvailable": true,
+      "retrievedAt": "2026-10-24T02:40:47.920Z",
+      "catalogueUpdatedAt": "2026-07-14T10:44:49+08:00",
+      "resourceUpdatedAt": "2025-12-16T10:22:01+08:00",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=bb347e3d-626a-46e5-bb96-9061e8d08c26",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "columns": [
+        "專案名稱",
+        "抽驗日期",
+        "分類",
+        "檢體名稱",
+        "抽驗行政郵遞區號",
+        "抽驗地點",
+        "檢驗結果",
+        "不符合規定原因"
+      ]
+    },
+    {
+      "id": "failed-111-official-2f0dcfb68e45",
+      "sourceId": "failed",
+      "datasetId": "09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "resourceId": "bc24a40f-5687-4338-8f9a-449de248ab93",
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "2f0dcfb68e45872d11f6e027c2e0ff7fbed68a2c6657ba1c7f5ae3de6a972da2",
+      "bytes": 39069,
+      "rowCount": 156,
+      "origin": "official-resource",
+      "originalBytesAvailable": true,
+      "retrievedAt": "2026-10-24T02:40:48.211Z",
+      "catalogueUpdatedAt": "2026-07-14T10:44:49+08:00",
+      "resourceUpdatedAt": "2025-12-16T10:21:49+08:00",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=bc24a40f-5687-4338-8f9a-449de248ab93",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "columns": [
+        "專案名稱",
+        "抽驗日期",
+        "分類",
+        "檢體名稱",
+        "抽驗行政郵遞區號",
+        "抽驗地點",
+        "檢驗結果",
+        "不符合規定原因"
+      ]
+    },
+    {
+      "id": "grading-official-2d1e1cc7c953",
+      "sourceId": "grading",
+      "datasetId": "59579c19-a561-4564-8c0f-545bfb32c0f6",
+      "resourceId": "c5646d80-9118-4439-b924-075f96371d75",
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "2d1e1cc7c9535204a708304efc00a666fafc09a0c32a41a814e7256a50bcaf25",
+      "bytes": 169383,
+      "rowCount": 1686,
+      "origin": "official-resource",
+      "originalBytesAvailable": true,
+      "retrievedAt": "2026-10-24T02:40:49.058Z",
+      "catalogueUpdatedAt": "2026-07-15T09:33:57+08:00",
+      "resourceUpdatedAt": "2025-12-19T13:53:20+08:00",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=c5646d80-9118-4439-b924-075f96371d75",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=59579c19-a561-4564-8c0f-545bfb32c0f6",
+      "columns": [
+        "行政區域代碼",
+        "業者名稱店名",
+        "食品業者登錄字號",
+        "地址",
+        "評核結果"
+      ]
+    },
+    {
+      "id": "registry-official-19e248533854",
+      "sourceId": "registry",
+      "datasetId": "178abc4e-fe32-4fc9-af3a-7baf1c15082c",
+      "resourceId": "e94a712a-be5b-4d8b-89c9-30a5ee21f25d",
+      "publisherCatalogueLabel": "產業局商業處",
+      "sha256": "19e248533854a0ff407fb19ca354b9bb44291ef7c720ac0c3ae30449d252aafe",
+      "bytes": 1956190,
+      "rowCount": 20286,
+      "origin": "official-resource",
+      "originalBytesAvailable": true,
+      "retrievedAt": "2026-10-24T02:40:52.034Z",
+      "catalogueUpdatedAt": "2026-09-23T16:00:04+08:00",
+      "resourceUpdatedAt": "2026-09-23T15:59:54+08:00",
+      "url": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=e94a712a-be5b-4d8b-89c9-30a5ee21f25d",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=178abc4e-fe32-4fc9-af3a-7baf1c15082c",
+      "columns": [
+        "統一編號",
+        "商業名稱",
+        "商業地址",
+        "Longitude",
+        "Latitude"
+      ]
+    },
+    {
+      "id": "failed-retained-955ce047cc49",
+      "sourceId": "failed",
+      "datasetId": "09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "resourceId": null,
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "955ce047cc495f4e018ab85a1692dabadd49fa00beda56e91906c8ce1ee2e853",
+      "bytes": 1016021,
+      "rowCount": 672,
+      "origin": "retained-project-json",
+      "originalBytesAvailable": false,
+      "retrievedAt": null,
+      "catalogueUpdatedAt": null,
+      "resourceUpdatedAt": null,
+      "url": "https://data.taipei/dataset/detail?id=09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "catalogueUrl": null,
+      "columns": null
+    },
+    {
+      "id": "grading-retained-d9d42de11779",
+      "sourceId": "grading",
+      "datasetId": "59579c19-a561-4564-8c0f-545bfb32c0f6",
+      "resourceId": null,
+      "publisherCatalogueLabel": "衛生局",
+      "sha256": "d9d42de117792b1b31f44ba678a3009f93b84ffc29ea6131395d4a801ba93a80",
+      "bytes": 2054965,
+      "rowCount": 1686,
+      "origin": "retained-project-json",
+      "originalBytesAvailable": false,
+      "retrievedAt": null,
+      "catalogueUpdatedAt": null,
+      "resourceUpdatedAt": null,
+      "url": "https://data.taipei/dataset/detail?id=59579c19-a561-4564-8c0f-545bfb32c0f6",
+      "catalogueUrl": null,
+      "columns": null
+    },
+    {
+      "id": "registry-retained-d23b14a2ca17",
+      "sourceId": "registry",
+      "datasetId": "178abc4e-fe32-4fc9-af3a-7baf1c15082c",
+      "resourceId": null,
+      "publisherCatalogueLabel": "產業局商業處",
+      "sha256": "d23b14a2ca1794f8d96976f9200cc8693e620e481224df2ecc8e5113db63ced3",
+      "bytes": 9419875,
+      "rowCount": 20182,
+      "origin": "retained-project-json",
+      "originalBytesAvailable": false,
+      "retrievedAt": null,
+      "catalogueUpdatedAt": null,
+      "resourceUpdatedAt": null,
+      "url": "https://data.taipei/dataset/detail?id=178abc4e-fe32-4fc9-af3a-7baf1c15082c",
+      "catalogueUrl": null,
+      "columns": null
+    }
+  ],
+  "catalogues": [
+    {
+      "id": "failed-catalogue",
+      "url": "https://data.taipei/dataset/detail?id=09a917a0-0fb5-47e1-957c-5f1268fba517",
+      "sha256": "0670e98c5f5dc886017f362e42a6789bb2f27ad1f9797dcbb3b11528a58ad2b3",
+      "bytes": 89251,
+      "retrievedAt": "2026-10-24T02:40:52.246Z"
+    },
+    {
+      "id": "grading-catalogue",
+      "url": "https://data.taipei/dataset/detail?id=59579c19-a561-4564-8c0f-545bfb32c0f6",
+      "sha256": "b5883a9a35830b975d8f6258bba1f77615d0e041fd4ebdeab3526cbbaac7a8c5",
+      "bytes": 83989,
+      "retrievedAt": "2026-10-24T02:40:52.445Z"
+    },
+    {
+      "id": "registry-catalogue",
+      "url": "https://data.taipei/dataset/detail?id=178abc4e-fe32-4fc9-af3a-7baf1c15082c",
+      "sha256": "c13648ce79f63cd99960af86da94cf453a492cfa9378d4cee7790eeffba01f6b",
+      "bytes": 83932,
+      "retrievedAt": "2026-10-24T02:40:52.637Z"
+    }
+  ],
+  "catalogueTemporalCoverage": {
+    "failed": {
+      "rawStart": "2022-03-26",
+      "rawEnd": "2026-07-14",
+      "actualSamplingRange": {
+        "from": "2022-01-04",
+        "to": "2024-11-20"
+      }
+    },
+    "grading": {
+      "rawStart": "2025-12-19",
+      "rawEnd": "2026-07-15",
+      "actualAssessmentRange": null
+    },
+    "registry": {
+      "rawStart": null,
+      "rawEnd": null,
+      "actualOperatingRange": null
+    }
+  },
+  "populations": {
+    "failed": 673,
+    "grading": 1686,
+    "registry": 20286
+  },
+  "validation": {
+    "failed": {
+      "sampleCount": 673,
+      "distinctPublishedSampleRows": 672,
+      "eventCandidateGroups": 600,
+      "validatedEventCount": null,
+      "batchCount": null,
+      "eventGroupingRule": "Exact sampling date + published location + project; candidates only, not asserted unique inspections",
+      "multiSampleCandidateGroups": 64,
+      "eventDateRange": {
+        "from": "2022-01-04",
+        "to": "2024-11-20"
+      },
+      "missingEventDates": 0,
+      "allResultsNoncompliant": true,
+      "denominatorAvailable": false,
+      "publishedRowCount": 673,
+      "duplicatePublishedRows": 1,
+      "validatedUniqueSampleCount": null,
+      "sampleCountMeaning": "Published sample rows, not independently validated unique samples"
+    },
+    "grading": {
+      "recordCount": 1686,
+      "assessmentDatesAvailable": false,
+      "passingListOnly": true,
+      "results": [
+        "優",
+        "良"
+      ]
+    },
+    "registry": {
+      "recordCount": 20286,
+      "physicalEstablishmentValidated": false,
+      "identifierNamespace": "company-business-registration"
+    }
+  },
+  "sourceComparisons": [
+    {
+      "sourceId": "failed",
+      "retainedRows": 672,
+      "officialRows": 673,
+      "retainedDistinctKeys": 672,
+      "officialDistinctKeys": 672,
+      "unchangedKeys": 672,
+      "onlyRetainedKeys": 0,
+      "onlyOfficialKeys": 0,
+      "comparisonUnit": "date + product + sampling location + result + reason",
+      "interpretation": "Edition differences are documentary changes, not new inspection events or business safety changes."
+    },
+    {
+      "sourceId": "grading",
+      "retainedRows": 1686,
+      "officialRows": 1686,
+      "retainedDistinctKeys": 1686,
+      "officialDistinctKeys": 1686,
+      "unchangedKeys": 1686,
+      "onlyRetainedKeys": 0,
+      "onlyOfficialKeys": 0,
+      "comparisonUnit": "identifier + name + address (+ grading result)",
+      "interpretation": "Edition differences are documentary changes, not new inspection events or business safety changes."
+    },
+    {
+      "sourceId": "registry",
+      "retainedRows": 20182,
+      "officialRows": 20286,
+      "retainedDistinctKeys": 20182,
+      "officialDistinctKeys": 20286,
+      "unchangedKeys": 19258,
+      "onlyRetainedKeys": 924,
+      "onlyOfficialKeys": 1028,
+      "comparisonUnit": "identifier + name + address (+ grading result)",
+      "interpretation": "Edition differences are documentary changes, not new inspection events or business safety changes."
+    }
+  ],
+  "tiers": {
+    "T1": 1028,
+    "T2": 20944,
+    "T3": 673
+  },
+  "modeA": {
+    "available": true,
+    "eligibleCount": 22645,
+    "candidateGrain": "heterogeneous documentary source row"
+  },
+  "modeB": {
+    "available": false,
+    "validatedAssociations": 0,
+    "unvalidatedCandidates": 35,
+    "ambiguousCandidates": 0,
+    "matchingCoverage": {
+      "matchedRecords": 0,
+      "totalRecords": 22645
+    },
+    "unresolvedRecords": 22645,
+    "excludedSamples": 673,
+    "diagnosticsOverlap": true,
+    "automaticSampleAssociationAllowed": false
+  },
+  "modeC": {
+    "available": false
+  },
+  "scenarios": [
+    {
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 5,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 5
+      },
+      "tiers": {
+        "T1": 5
+      },
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089"
+      ],
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3"
+    },
+    {
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 5,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 5
+      },
+      "tiers": {
+        "T1": 5
+      },
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089"
+      ],
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3"
+    },
+    {
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 10,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 10
+      },
+      "tiers": {
+        "T1": 10
+      },
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089",
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa"
+    },
+    {
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 10,
+      "sourceCount": 1,
+      "sourceCounts": {
+        "registry": 10
+      },
+      "tiers": {
+        "T1": 10
+      },
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089",
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa"
+    },
+    {
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "sourceCount": 3,
+      "sourceCounts": {
+        "registry": 20286,
+        "grading": 1686,
+        "failed": 673
+      },
+      "tiers": {
+        "T1": 1028,
+        "T2": 20944,
+        "T3": 673
+      },
+      "selectedIds": [],
+      "orderedIdsSha256": "330f285ef5a8800ad669afc008c3c5b4de98c930a31f5455ae7d5b1b30deed02",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e"
+    },
+    {
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "sourceCount": 3,
+      "sourceCounts": {
+        "registry": 20286,
+        "grading": 1686,
+        "failed": 673
+      },
+      "tiers": {
+        "T1": 1028,
+        "T2": 20944,
+        "T3": 673
+      },
+      "selectedIds": [],
+      "orderedIdsSha256": "1b42c33fb068922108d46fa56bf0614dc2c3d87c59d3cabf64f3d30a69824198",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e"
+    }
+  ],
+  "overlaps": [
+    {
+      "capacity": 5,
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": true
+    },
+    {
+      "capacity": 10,
+      "shared": 10,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": true
+    },
+    {
+      "capacity": "all",
+      "shared": 22645,
+      "added": 0,
+      "removed": 0,
+      "sameOrder": false
+    }
+  ],
+  "sensitivity": [
+    {
+      "capacity": 5,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 5,
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089"
+      ],
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "addedIds": [],
+      "addedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 10,
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 10,
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089",
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "shared": 5,
+      "added": 5,
+      "removed": 0,
+      "addedIds": [
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "addedIdsSha256": "e0d294e92b577247790be018909ab78be8ffacd789540945273710e96e32972f",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": "all",
+      "strategy": "evidence-first",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "selectedIds": [],
+      "orderedIdsSha256": "330f285ef5a8800ad669afc008c3c5b4de98c930a31f5455ae7d5b1b30deed02",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e",
+      "shared": 5,
+      "added": 22640,
+      "removed": 0,
+      "addedIds": [],
+      "addedIdsSha256": "5d549bcd5568ff07d26185eb30d2396b1c10d7c169498515267416cb54afccff",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 5,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 5,
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089"
+      ],
+      "orderedIdsSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "sortedSetSha256": "0934eb1cbe5ec332e952d2c61ce310f463128c9c951374d0c7e126b3921139e3",
+      "shared": 5,
+      "added": 0,
+      "removed": 0,
+      "addedIds": [],
+      "addedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": 10,
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 10,
+      "selectedIds": [
+        "policy11_registry_0020b1397906c16c",
+        "policy11_registry_005d1a9c6dac82d6",
+        "policy11_registry_00c14f043303754a",
+        "policy11_registry_00e3d8cdfd66d7d7",
+        "policy11_registry_00f01e8c60840089",
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "orderedIdsSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "sortedSetSha256": "f974c5d8a3d8e47ddcd418ee1d23f1ae48bc54473e65a7c73a30e4d04c1dd8aa",
+      "shared": 5,
+      "added": 5,
+      "removed": 0,
+      "addedIds": [
+        "policy11_registry_012301b7655c927e",
+        "policy11_registry_01303f6e8cf5d670",
+        "policy11_registry_016237177b8ad375",
+        "policy11_registry_017fc897832ab0af",
+        "policy11_registry_01913b22756f09ae"
+      ],
+      "addedIdsSha256": "e0d294e92b577247790be018909ab78be8ffacd789540945273710e96e32972f",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    },
+    {
+      "capacity": "all",
+      "strategy": "balanced",
+      "eligibleCount": 22645,
+      "used": 22645,
+      "selectedIds": [],
+      "orderedIdsSha256": "1b42c33fb068922108d46fa56bf0614dc2c3d87c59d3cabf64f3d30a69824198",
+      "sortedSetSha256": "52212cd33bc4fa03d09e33b9ca1ffe3c2ea3cf25778e1c10710af2e66f0e1c1e",
+      "shared": 5,
+      "added": 22640,
+      "removed": 0,
+      "addedIds": [],
+      "addedIdsSha256": "ecdfa71e25b451e9ee414ee4eec18026b5996fdb799d9f148033a0f94fd2969a",
+      "removedIds": [],
+      "removedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "populationChange": 0
+    }
+  ],
+  "selectedExamples": {
+    "firstFive": [
+      {
+        "id": "policy11_registry_0020b1397906c16c",
+        "sourceId": "registry",
+        "unit": "registry",
+        "eventDate": null,
+        "flags": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ],
+        "editionId": "registry-official-19e248533854",
+        "originalRecordId": null,
+        "tier": "T1",
+        "reasons": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ]
+      },
+      {
+        "id": "policy11_registry_005d1a9c6dac82d6",
+        "sourceId": "registry",
+        "unit": "registry",
+        "eventDate": null,
+        "flags": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ],
+        "editionId": "registry-official-19e248533854",
+        "originalRecordId": null,
+        "tier": "T1",
+        "reasons": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ]
+      },
+      {
+        "id": "policy11_registry_00c14f043303754a",
+        "sourceId": "registry",
+        "unit": "registry",
+        "eventDate": null,
+        "flags": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ],
+        "editionId": "registry-official-19e248533854",
+        "originalRecordId": null,
+        "tier": "T1",
+        "reasons": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ]
+      },
+      {
+        "id": "policy11_registry_00e3d8cdfd66d7d7",
+        "sourceId": "registry",
+        "unit": "registry",
+        "eventDate": null,
+        "flags": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ],
+        "editionId": "registry-official-19e248533854",
+        "originalRecordId": null,
+        "tier": "T1",
+        "reasons": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ]
+      },
+      {
+        "id": "policy11_registry_00f01e8c60840089",
+        "sourceId": "registry",
+        "unit": "registry",
+        "eventDate": null,
+        "flags": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ],
+        "editionId": "registry-official-19e248533854",
+        "originalRecordId": null,
+        "tier": "T1",
+        "reasons": [
+          "identifier-namespace-unverified",
+          "identity-unresolved",
+          "source-edition-changed"
+        ]
+      }
+    ],
+    "historicalSample": {
+      "id": "failed_food_inspection_a24f5da5af94",
+      "sourceId": "failed",
+      "unit": "sample",
+      "eventDate": "2024-01-02",
+      "flags": [
+        "event-id-unavailable",
+        "batch-id-unavailable",
+        "identity-unresolved"
+      ],
+      "editionId": "failed-113-official-e0441def7ae0",
+      "originalRecordId": "failed_food_inspection_a24f5da5af94"
+    },
+    "duplicatePublishedRow": {
+      "id": "failed_food_inspection_97d6b8b223f4_published_duplicate_554",
+      "sourceId": "failed",
+      "unit": "sample",
+      "eventDate": "2022-06-21",
+      "flags": [
+        "event-id-unavailable",
+        "batch-id-unavailable",
+        "identity-unresolved",
+        "duplicate-published-row"
+      ],
+      "editionId": "failed-111-official-2f0dcfb68e45",
+      "originalRecordId": "failed_food_inspection_97d6b8b223f4"
+    },
+    "gradingWithoutAssessmentDate": {
+      "id": "restaurant_hygiene_grading_67d0d3962f24",
+      "sourceId": "grading",
+      "unit": "grading",
+      "eventDate": null,
+      "flags": [
+        "assessment-date-unavailable",
+        "identity-unresolved"
+      ],
+      "editionId": "grading-official-2d1e1cc7c953",
+      "originalRecordId": "restaurant_hygiene_grading_67d0d3962f24"
+    },
+    "unvalidatedAssociation": {
+      "leftId": "restaurant_hygiene_grading_1f87734e8fa8",
+      "rightId": "restaurant_6fbebbbc8b40",
+      "status": "unvalidated"
+    }
+  },
+  "exports": {
+    "csvBomCount": 1,
+    "formulaPrefixGuardVerified": true,
+    "controlWhitespacePrefixGuardVerified": true,
+    "emptySelectionHeaderOnly": true,
+    "fullMetadataFirstRow": true
+  },
+  "upstreamRecordedChecks": {
+    "testsPassed": 20,
+    "baselineTests": 8,
+    "lint": "TypeScript passed",
+    "build": "passed",
+    "browser": "recorded manual production preview; no numeric browser-suite count published",
+    "benchmark": null
+  }
+}
