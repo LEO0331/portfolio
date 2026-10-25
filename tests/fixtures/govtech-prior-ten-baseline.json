@@ -1,0 +1,90 @@
+{
+  "baseSha": "74a979721a640e87e3d49ce866f435c525120a0a",
+  "serialization": "SHA-256 of UTF-8 JSON.stringify of each complete canonical record; key and array order preserved.",
+  "records": {
+    "en": [
+      {
+        "id": "bin-policy",
+        "sha256": "4858f6dde20c538b71917e4df9de403ad7c0a45782d5752ffa9135849a3dc7eb"
+      },
+      {
+        "id": "civic-1999",
+        "sha256": "a4943f70d78d2eac3b98939c1989ff77012dff6ce6548dcd44c8e7146554d826"
+      },
+      {
+        "id": "heavy-rain-preparedness",
+        "sha256": "2b1afbbf041c842cc1061d0aeabdf117312226e34baf97156f1bfd4e68b3eae2"
+      },
+      {
+        "id": "urban-renewal",
+        "sha256": "adbefffee47b36bb3887b8efa90e625185ca241479544b724a7220de38001d09"
+      },
+      {
+        "id": "shade-equity",
+        "sha256": "97bc1f0cb807501d732be8aec4d83543d49abab0a82849e051b7d9990accebb3"
+      },
+      {
+        "id": "neihu-congestion",
+        "sha256": "94276f930a30eb9b903e95cfaf8075fc68d908ea8986018c4af974ea261926ec"
+      },
+      {
+        "id": "bus-service",
+        "sha256": "ff16687d6de863ef2d97a4a96dbb8b86eba8ef2d7393508bdcc2c289e6bd299c"
+      },
+      {
+        "id": "wifi-allocation",
+        "sha256": "03129cd7da27911a4e888fb364d2e7a80966a9fc69958b5097e7c6471daafc18"
+      },
+      {
+        "id": "bridge-inspection",
+        "sha256": "c77eac7867abc89f4e623ea67bc24016f054a136ac878aa01198666f6925df3b"
+      },
+      {
+        "id": "senior-community-care",
+        "sha256": "82dcd25d1714c4af3f638104f866f3de273153d5309d95e7dabf4b4485ac615c"
+      }
+    ],
+    "zh": [
+      {
+        "id": "bin-policy",
+        "sha256": "788846b77270e9daa9798aa4756f2f1a0d6a3042aa474d4f09abc0678c87727e"
+      },
+      {
+        "id": "civic-1999",
+        "sha256": "e4023e71f56780facee7e77f2a4e25cc471c95483f76014901fa9611695347de"
+      },
+      {
+        "id": "heavy-rain-preparedness",
+        "sha256": "f9a7b0cec53bd59df498bd48b5c982ab6fe4fd9fda667e3fe87066f5cc611e77"
+      },
+      {
+        "id": "urban-renewal",
+        "sha256": "1e71033d661d09ed5e588b38bdc093a3373b522259cfd0640d3c7f3b85c2ed4f"
+      },
+      {
+        "id": "shade-equity",
+        "sha256": "4fdf081736f314d87a2670ee81a24a6185557c8b74d462cffe3f86aead341634"
+      },
+      {
+        "id": "neihu-congestion",
+        "sha256": "e864d86b94cd8734a4d6a07e7a48cfe8773f027a2e219f151d71893324821aad"
+      },
+      {
+        "id": "bus-service",
+        "sha256": "6a30c2a72065ddc0fe373da31bccf1745d7bb076231a01bb2cff312a89306e52"
+      },
+      {
+        "id": "wifi-allocation",
+        "sha256": "ab3b6030d5f25dc6f54a3913a40062c9d136314358955a47380332ace10e746c"
+      },
+      {
+        "id": "bridge-inspection",
+        "sha256": "60dbeaaa86eb29fdb39ede1b17fefabd42d49187ae57ec4382dc0579520958a3"
+      },
+      {
+        "id": "senior-community-care",
+        "sha256": "e9d79150b8d4f725680374eecb1d527455cf6065751a2eea795210e96775c8d2"
+      }
+    ]
+  }
+}

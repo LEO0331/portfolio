@@ -828,13 +828,14 @@ export const projects: Project[] = [
   },
   {
     id: "taipei-friendly-food-map",
+    govtechCaseIds: ["food-hygiene-inspection"],
     slug: "taipei-friendly-food-map",
     name: "Taipei Friendly Food Map",
     tagline: "Bilingual food, friendly-store, and refill-location explorer",
     shortDescription:
-      "A mobile-first map for finding Taipei friendly stores, water-refill locations, registered food businesses, and related public food datasets.",
+      "A mobile-first public food-data explorer with reproducible historical inspection and source-documentation review.",
     fullDescription:
-      "Taipei Friendly Food Map combines store accessibility tags, water-refill locations, food traceability, hygiene records, green stores, markets, and commercial districts. Its clustered map, searchable directories, filters, and summaries turn fragmented public records into a practical exploration tool.",
+      "Taipei Friendly Food Map combines store accessibility tags, water-refill locations, food traceability, hygiene records, green stores, markets, and commercial districts. Its clustered map, searchable directories, filters, and summaries turn fragmented public records into a practical exploration tool. The completed food-hygiene evidence module retains official source bytes, distinguishes sample, grading and registration units, validates source editions and compares deterministic administrative review queues with JSON/CSV briefings. Name/address candidates remain unvalidated; historical findings do not establish current business safety or responsibility.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Open Data"],
@@ -843,7 +844,9 @@ export const projects: Project[] = [
       "Friendly-store and water-refill map layers",
       "Searchable food-business directories",
       "Clustered markers and district filters",
-      "Bilingual data summaries"
+      "Bilingual data summaries",
+      "Official-source custody and historical sample/registration identity validation",
+      "Deterministic evidence-review scenarios and provenance-preserving JSON/CSV exports"
     ],
     image: "/src/assets/images/projects/taipei-friendly-food-map.png",
     demoUrl: "https://leo0331.github.io/taipei-friendly-food-map/",
