@@ -1,0 +1,421 @@
+=== Portfolio Harness Verification ===
+Harness state valid: 24 features, required lifecycle files present, README links resolved.
+
+added 52 packages, and audited 53 packages in 4s
+
+13 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+found 0 vulnerabilities
+
+> portfolio-site@1.0.0 test:unit
+> node --test --test-isolation=none tools/*.test.mjs
+
+✔ polygon fill preserves holes, islands, ring orientation and exact boundaries (1.6046ms)
+✔ district ambiguity and shared edges remain visible without selecting a winner (0.5946ms)
+✔ retained official district ZIP decodes all twelve projected polygon records (8.6496ms)
+✔ committed geographic accounting preserves the original review populations (5.0621ms)
+✔ installed build closure excludes unpatched braces and obsolete selector-parser (0.8314ms)
+✔ public evidence audit rejects encoded, relative and protocol-equivalent GitHub PR destinations (0.2794ms)
+✔ workflow scan is specific enough to preserve research joins and business handoffs (0.8559ms)
+✔ public URL scanning does not depend on a field being named url (0.3165ms)
+✔ GovTech crawler artifacts include bilingual static metadata at base / (169.018ms)
+✔ GovTech crawler artifacts include bilingual static metadata at base /portfolio/ (165.1747ms)
+✔ scan resolves renames, proposes approved demo links and preserves curated content (1.3773ms)
+✔ scan detects README and pushed code changes without trusting unsafe homepages (0.7495ms)
+✔ scan paginates candidates and does not insert new projects (0.808ms)
+✔ missing repositories are recorded; API failures abort instead of accepting partial results (0.6036ms)
+✔ report escapes untrusted repository names (0.4275ms)
+✔ monorepo subprojects are scanned without replacing their demo with the parent homepage (0.3208ms)
+✔ the entire current catalogue can establish a baseline and repeat without changes (7.6836ms)
+✔ normalizes Vite base paths consistently (0.2807ms)
+✔ accepts configured app routes and rejects traversal or URL syntax (0.4969ms)
+✔ escapes generated sitemap values (0.1853ms)
+✔ pin mapping preserves order, stable IDs, renamed aliases, and curated content (1.0197ms)
+✔ empty pins clear previous flags and repeated mapping is idempotent (0.2003ms)
+✔ ambiguous monorepo pins are review-only (0.2018ms)
+✔ GraphQL query uses variables and excludes private repositories from the saved snapshot (0.648ms)
+✔ authentication, GraphQL errors, null users, and invalid lists fail instead of clearing the cache (0.5979ms)
+✔ extracts the canonical projects array without being confused by braces in strings (0.1086ms)
+✔ updates a multiline string property without changing the surrounding object (0.2989ms)
+✔ rejects unsafe or credential-bearing homepage URLs (0.3083ms)
+✔ validates project count and identifier uniqueness before writing (0.2817ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 414.0023
+
+> portfolio-site@1.0.0 prebuild
+> npm run generate:sitemap && npm run generate:robots
+
+
+> portfolio-site@1.0.0 generate:sitemap
+> node tools/generate-sitemap.mjs
+
+[generate-sitemap] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[generate-sitemap] Wrote 32 routes to public\sitemap.xml
+
+> portfolio-site@1.0.0 generate:robots
+> node tools/generate-robots.mjs
+
+[generate-robots] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[generate-robots] Wrote robots file to public\robots.txt
+
+> portfolio-site@1.0.0 build
+> tsc -b && vite build && node tools/generate-route-entrypoints.mjs
+
+vite v8.3.5 building client environment for production...
+transforming...
+✓ 173 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                         2.24 kB │ gzip:   0.83 kB
+dist/assets/passportcomparison-DDhy40HH.webp                           14.84 kB
+dist/assets/inbodysimpletracker-D7ApYNxG.webp                          17.06 kB
+dist/assets/craftfocus-BSF821BW.webp                                   24.06 kB
+dist/assets/email-website-jxbAjvNj.webp                                26.10 kB
+dist/assets/simpletaxautoextraction-BbjgvLhj.webp                      27.53 kB
+dist/assets/circles-app-Cx8O7v7-.webp                                  30.16 kB
+dist/assets/ppt-design-md-r0JBJYJd.webp                                31.16 kB
+dist/assets/lighthouse-skill-pack-ZClQPUSA.webp                        32.57 kB
+dist/assets/assistanthub-DDVRviuU.webp                                 34.99 kB
+dist/assets/warmthfromafar-C4JVUkWB.webp                               35.79 kB
+dist/assets/amazon-app-h1V93wIV.webp                                   35.80 kB
+dist/assets/leave-request-B0NtEnPZ.webp                                36.62 kB
+dist/assets/boxmatch-BGPc6vd3.webp                                     38.95 kB
+dist/assets/wordpressparser-qzVu9o4m.webp                              40.43 kB
+dist/assets/thalassemia-seq-analysis-wq0dVNuh.webp                     41.47 kB
+dist/assets/inbodysimpletracker-WxmShxJ5.png                           42.20 kB
+dist/assets/prosemasters-skill-Dk3ieBHn.webp                           43.07 kB
+dist/assets/resume-vault-Dieglfb7.webp                                 45.69 kB
+dist/assets/skill-gen-BCT0hGop.webp                                    48.34 kB
+dist/assets/email-website-CCR9kgm5.png                                 48.69 kB
+dist/assets/craftfocus-DdN9GsSp.png                                    52.84 kB
+dist/assets/sharpface-Ld80yUWc.webp                                    56.57 kB
+dist/assets/assistanthub-Ce_4J7Pj.png                                  58.18 kB
+dist/assets/rednote-gallery-By2ommqx.webp                              61.72 kB
+dist/assets/epubreader-BGz7b8f9.webp                                   64.24 kB
+dist/assets/passportcomparison-B_gh-T6C.png                            69.23 kB
+dist/assets/taipei-real-estate-dashboard-pxEafDqf.webp                 69.24 kB
+dist/assets/genomic-data-science-with-galaxy-project-BWiuZq92.webp     70.28 kB
+dist/assets/robotfriends-DyCm_frR.webp                                 77.50 kB
+dist/assets/amazon-app-CcOAfp_s.png                                    77.51 kB
+dist/assets/publicsafetydashboard-fR26LcZ0.webp                        79.18 kB
+dist/assets/toyrobot-3A1oMJNa.webp                                     80.61 kB
+dist/assets/warmthfromafar-DTgoeIQC.png                                83.17 kB
+dist/assets/sharpface-C6nucxqZ.png                                     90.61 kB
+dist/assets/taipei-civic-groups-map-CgNgNDEx.webp                      91.05 kB
+dist/assets/taipei-real-estate-dashboard-CPlInm1r.png                  97.05 kB
+dist/assets/wordpress-KhJ2Tlpt.webp                                   104.64 kB
+dist/assets/warmmemo-Bip3U3L4.webp                                    105.19 kB
+dist/assets/taipei-feitsui-water-map-BjpU4tAd.png                     114.23 kB
+dist/assets/taipei-zoo-guide-BXFx6Piv.png                             115.50 kB
+dist/assets/taipei-civic-groups-map-Dffiv_4u.png                      124.88 kB
+dist/assets/taipei-friendly-food-map-BtHPoiz_.png                     152.53 kB
+dist/assets/taipei-crash-map-B0r0NEDj.webp                            167.04 kB
+dist/assets/taipei-free-wifi-map-CBuXk2Q_.webp                        172.36 kB
+dist/assets/taipei-1999-map-CXlB1aO6.webp                             183.22 kB
+dist/assets/robotfriends-CiPJlZ5m.png                                 183.52 kB
+dist/assets/publicsafetydashboard-QEAoiBsj.png                        214.01 kB
+dist/assets/taipei-bin-map-Cf6HB63a.webp                              224.01 kB
+dist/assets/taipei-faith-map-CMe2U8ik.webp                            230.09 kB
+dist/assets/simpletaxautoextraction-BJCu96Pd.png                      232.70 kB
+dist/assets/taipei-free-wifi-map-B7iaPsnS.png                         234.28 kB
+dist/assets/taipei-safety-map-CcXOpGlB.webp                           242.66 kB
+dist/assets/skill-gen-C2gLqX2h.png                                    243.04 kB
+dist/assets/wordpressparser-jBQ6p-_-.png                              253.70 kB
+dist/assets/ppt-design-md-CEKCEuRb.png                                269.64 kB
+dist/assets/boxmatch-CuVfNaUi.png                                     295.68 kB
+dist/assets/toyrobot-bEIHfQTA.png                                     399.40 kB
+dist/assets/thalassemia-seq-analysis-EytGZKTi.png                     450.62 kB
+dist/assets/wordpress-B7zV6jru.png                                    453.41 kB
+dist/assets/leave-request-BZOBOuC0.png                                456.46 kB
+dist/assets/epubreader-DDdQDaKx.png                                   463.59 kB
+dist/assets/prosemasters-skill-b8IsX5E8.png                           535.17 kB
+dist/assets/circles-app-hOQ3EoBw.png                                  574.24 kB
+dist/assets/rednote-gallery-OmzF810v.png                              600.03 kB
+dist/assets/resume-vault-BPvRwZ2l.png                                 625.69 kB
+dist/assets/genomic-data-science-with-galaxy-project-Cq34kpeO.png     626.81 kB
+dist/assets/lighthouse-skill-pack-V1outD1v.png                        658.28 kB
+dist/assets/taipei-1999-map-CjHRhFzi.png                              752.63 kB
+dist/assets/warmmemo-C0XOe79T.png                                     971.24 kB
+dist/assets/taipei-faith-map-DMNHAud_.png                           1,050.78 kB
+dist/assets/taipei-crash-map-DHbFeiWg.png                           1,080.30 kB
+dist/assets/taipei-bin-map-Qm4GsR4_.png                             1,104.99 kB
+dist/assets/taipei-safety-map-B3WUgOl-.png                          1,156.40 kB
+dist/assets/index-CHNakwYD.css                                         42.69 kB │ gzip:   7.64 kB
+dist/assets/govtechCaseLinks-BhGZo2ul.js                                0.37 kB │ gzip:   0.26 kB
+dist/assets/GovTechPage-C1g-3Bd4.js                                     5.60 kB │ gzip:   1.61 kB
+dist/assets/govtechBinPolicy.zh-BX2KnfRU.js                            10.56 kB │ gzip:   4.74 kB
+dist/assets/GovTechCaseStudyPage-Xp0zvAaJ.js                           11.52 kB │ gzip:   3.61 kB
+dist/assets/ProjectsPage-DmIt9wst.js                                   12.73 kB │ gzip:   3.89 kB
+dist/assets/govtechBinPolicy-CoB1XcT0.js                               12.76 kB │ gzip:   4.58 kB
+dist/assets/govtechCopy-CNL6Vh-1.js                                    12.85 kB │ gzip:   6.03 kB
+dist/assets/govtechCivic1999.zh-BFR4nBOE.js                            14.25 kB │ gzip:   6.40 kB
+dist/assets/govtechHeavyRain.zh-CQ0yYQGQ.js                            17.98 kB │ gzip:   7.62 kB
+dist/assets/govtechCivic1999-B5OrJ4Ok.js                               18.08 kB │ gzip:   6.38 kB
+dist/assets/govtechUrbanRenewal.zh--Igr5Yck.js                         19.50 kB │ gzip:   8.11 kB
+dist/assets/govtechHeavyRain-DSY2xONZ.js                               22.39 kB │ gzip:   7.54 kB
+dist/assets/govtechBusService.zh-BVxIZvaE.js                           23.99 kB │ gzip:   9.75 kB
+dist/assets/govtechUrbanRenewal-BAFuBdIi.js                            24.48 kB │ gzip:   8.31 kB
+dist/assets/govtechNeihuCongestion.zh-8ZnWwlCJ.js                      25.50 kB │ gzip:  10.45 kB
+dist/assets/govtechShadeEquity.zh-otexuj3x.js                          26.42 kB │ gzip:  10.88 kB
+dist/assets/govtechBusService-BEVcHCg-.js                              30.08 kB │ gzip:  10.07 kB
+dist/assets/govtechNeihuCongestion-BKWLt2Nk.js                         31.28 kB │ gzip:  10.75 kB
+dist/assets/govtechShadeEquity-BLkxod3C.js                             31.51 kB │ gzip:  10.76 kB
+dist/assets/govtechCaseSummaries-akP_NfYe.js                           33.12 kB │ gzip:  12.04 kB
+dist/assets/govtechWifiAllocation.zh-CejZKfkA.js                       33.86 kB │ gzip:  11.78 kB
+dist/assets/govtechFoodHygieneInspection.zh-DKSol3aB.js                34.00 kB │ gzip:  11.82 kB
+dist/assets/govtechBridgeInspection.zh-CEexWvX_.js                     35.24 kB │ gzip:  12.68 kB
+dist/assets/govtechWifiAllocation-BjuTz_r4.js                          37.29 kB │ gzip:  11.36 kB
+dist/assets/govtechFoodHygieneInspection-DcKcF3Al.js                   38.45 kB │ gzip:  11.57 kB
+dist/assets/govtechBridgeInspection-CahH9azg.js                        40.29 kB │ gzip:  12.67 kB
+dist/assets/govtechSeniorCommunityCare.zh-Bf64vBFL.js                  59.76 kB │ gzip:  15.69 kB
+dist/assets/govtechSeniorCommunityCare-919EPJX_.js                     64.51 kB │ gzip:  15.46 kB
+dist/assets/index-D0nxbr0O.js                                         318.86 kB │ gzip: 102.40 kB
+
+✓ built in 401ms
+[generate-route-entrypoints] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[generate-route-entrypoints] Wrote 32 route entrypoints and dist/404.html
+
+> portfolio-site@1.0.0 test:e2e
+> playwright test && node tools/e2e-coverage-check.mjs
+
+[WebServer] [generate-sitemap] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[WebServer] [generate-robots] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[WebServer] (node:23960) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] [generate-route-entrypoints] SITE_URL is not set. Using fallback: https://leo0331.github.io/portfolio
+[WebServer] (node:36236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 209 tests using 1 worker
+
+(node:21560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:21560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok   1 [chromium] › tests\e2e\core-utils.spec.ts:35:1 › sortProjects prioritizes featured, then status, then name (6ms)
+  ok   2 [chromium] › tests\e2e\core-utils.spec.ts:45:1 › filterProjects combines grouped category, technology, status, and normalized search (1ms)
+  ok   3 [chromium] › tests\e2e\core-utils.spec.ts:71:1 › filter options use Traditional Chinese labels for localized project data (1ms)
+  ok   4 [chromium] › tests\e2e\core-utils.spec.ts:80:1 › getFeaturedProjects fills a short featured list without duplicating projects (7ms)
+  ok   5 [chromium] › tests\e2e\core-utils.spec.ts:90:1 › saved GitHub pins select the same projects in pin order for both languages (4ms)
+  ok   6 [chromium] › tests\e2e\core-utils.spec.ts:102:1 › homepage renders saved pins in the same order in both languages (610ms)
+  ok   7 [chromium] › tests\e2e\core-utils.spec.ts:113:1 › project localization overrides known content and preserves unknown projects (2ms)
+  ok   8 [chromium] › tests\e2e\core-utils.spec.ts:123:1 › every portfolio project has Traditional Chinese card and detail copy (180ms)
+  ok   9 [chromium] › tests\e2e\core-utils.spec.ts:141:1 › external URL safety accepts http(s) and rejects executable or credential URLs (2ms)
+  ok  10 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:17:3 › Bridge009 en preserves all eight cases and exact official statistical units (19ms)
+  ok  11 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:45:3 › Bridge009 en freezes original scenarios, sensitivity discrepancies and actual candidate IDs (23ms)
+  ok  12 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:67:3 › Bridge009 en direct loading and refresh expose SEO with no bridge payloads or browser errors (534ms)
+  ok  13 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:79:3 › Bridge009 en renders actual tables, responsible limits and all pinned provenance (654ms)
+  ok  14 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:90:3 › Bridge009 en ninth card and project drawer support keyboard navigation (1.0s)
+  ok  15 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:17:3 › Bridge009 zh preserves all eight cases and exact official statistical units (15ms)
+  ok  16 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:45:3 › Bridge009 zh freezes original scenarios, sensitivity discrepancies and actual candidate IDs (15ms)
+  ok  17 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:67:3 › Bridge009 zh direct loading and refresh expose SEO with no bridge payloads or browser errors (619ms)
+  ok  18 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:79:3 › Bridge009 zh renders actual tables, responsible limits and all pinned provenance (703ms)
+  ok  19 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:90:3 › Bridge009 zh ninth card and project drawer support keyboard navigation (977ms)
+  ok  20 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:100:1 › Bridge009 locale switch preserves route and back navigation (883ms)
+  ok  21 [chromium] › tests\e2e\govtech-bridge-inspection.spec.ts:106:1 › Bridge009 five widths, real light/dark controls and keyboard-scrollable tables (3.6s)
+  ok  22 [chromium] › tests\e2e\govtech-bus-service.spec.ts:25:3 › Bus007 en freezes the three objectives, real capacity tradeoffs and unchanged sensitivity (15ms)
+  ok  23 [chromium] › tests\e2e\govtech-bus-service.spec.ts:25:3 › Bus007 zh freezes the three objectives, real capacity tradeoffs and unchanged sensitivity (15ms)
+  ok  24 [chromium] › tests\e2e\govtech-bus-service.spec.ts:74:1 › Bus007 preserves source units, unresolved relationships, acquisition dates and measured-performance limits (22ms)
+  ok  25 [chromium] › tests\e2e\govtech-bus-service.spec.ts:101:5 › Bus007 bilingual network and published-documentation review › en direct route and refresh expose unique SEO without bus dataset downloads or runtime errors (579ms)
+  ok  26 [chromium] › tests\e2e\govtech-bus-service.spec.ts:130:5 › Bus007 bilingual network and published-documentation review › en displays real review tradeoffs and pinned evidence with qualified service boundaries (829ms)
+  ok  27 [chromium] › tests\e2e\govtech-bus-service.spec.ts:157:5 › Bus007 bilingual network and published-documentation review › en seventh completed card supports keyboard navigation (440ms)
+  ok  28 [chromium] › tests\e2e\govtech-bus-service.spec.ts:101:5 › Bus007 bilingual network and published-documentation review › zh direct route and refresh expose unique SEO without bus dataset downloads or runtime errors (641ms)
+  ok  29 [chromium] › tests\e2e\govtech-bus-service.spec.ts:130:5 › Bus007 bilingual network and published-documentation review › zh displays real review tradeoffs and pinned evidence with qualified service boundaries (777ms)
+  ok  30 [chromium] › tests\e2e\govtech-bus-service.spec.ts:157:5 › Bus007 bilingual network and published-documentation review › zh seventh completed card supports keyboard navigation (485ms)
+  ok  31 [chromium] › tests\e2e\govtech-bus-service.spec.ts:172:3 › Bus007 bilingual network and published-documentation review › locale switching and browser history preserve Bus007 and localized back links (758ms)
+  ok  32 [chromium] › tests\e2e\govtech-bus-service.spec.ts:187:3 › Bus007 bilingual network and published-documentation review › desktop/mobile light and dark layouts fit and capacity tables scroll with the keyboard (1.5s)
+  ok  33 [chromium] › tests\e2e\govtech-case-data.spec.ts:43:3 › Bin001 en preserves the frozen v1.0 semantic record (3ms)
+  ok  34 [chromium] › tests\e2e\govtech-case-data.spec.ts:53:3 › Civic002 en preserves the complete frozen v1.1 record (1ms)
+  ok  35 [chromium] › tests\e2e\govtech-case-data.spec.ts:56:3 › HeavyRain003 en preserves the complete frozen v1.2 record (0ms)
+  ok  36 [chromium] › tests\e2e\govtech-case-data.spec.ts:59:3 › UrbanRenewal004 en preserves the complete frozen v1.3 record (0ms)
+  ok  37 [chromium] › tests\e2e\govtech-case-data.spec.ts:62:3 › Shade005 en preserves the complete frozen v1.4 record (1ms)
+  ok  38 [chromium] › tests\e2e\govtech-case-data.spec.ts:65:3 › Neihu006 en preserves its frozen v1.5 technical record and updates only the completed bus roadmap (2ms)
+  ok  39 [chromium] › tests\e2e\govtech-case-data.spec.ts:43:3 › Bin001 zh preserves the frozen v1.0 semantic record (1ms)
+  ok  40 [chromium] › tests\e2e\govtech-case-data.spec.ts:53:3 › Civic002 zh preserves the complete frozen v1.1 record (0ms)
+  ok  41 [chromium] › tests\e2e\govtech-case-data.spec.ts:56:3 › HeavyRain003 zh preserves the complete frozen v1.2 record (0ms)
+  ok  42 [chromium] › tests\e2e\govtech-case-data.spec.ts:59:3 › UrbanRenewal004 zh preserves the complete frozen v1.3 record (0ms)
+  ok  43 [chromium] › tests\e2e\govtech-case-data.spec.ts:62:3 › Shade005 zh preserves the complete frozen v1.4 record (0ms)
+  ok  44 [chromium] › tests\e2e\govtech-case-data.spec.ts:65:3 › Neihu006 zh preserves its frozen v1.5 technical record and updates only the completed bus roadmap (2ms)
+  ok  45 [chromium] › tests\e2e\govtech-case-data.spec.ts:83:3 › GovTech en identities, project relationships and evidence stay aligned (419ms)
+  ok  46 [chromium] › tests\e2e\govtech-case-data.spec.ts:83:3 › GovTech zh identities, project relationships and evidence stay aligned (457ms)
+  ok  47 [chromium] › tests\e2e\govtech-case-data.spec.ts:126:1 › English and Traditional Chinese preserve the same case identity and table structure (9ms)
+  ok  48 [chromium] › tests\e2e\govtech-case-data.spec.ts:138:1 › project case normalization validates ownership, precedence, duplicates and localized order (15ms)
+  ok  49 [chromium] › tests\e2e\govtech-case-data.spec.ts:169:1 › typed case lookup resolves only known case and project relationships (20ms)
+  ok  50 [chromium] › tests\e2e\govtech-case-data.spec.ts:184:1 › Civic002 freezes the pinned priority scenario and keeps both analytical models distinct (3ms)
+  ok  51 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:16:5 › Civic002 frozen bilingual decision-support case › en direct route and refresh expose unique civic metadata (532ms)
+  ok  52 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:33:5 › Civic002 frozen bilingual decision-support case › en landing has eleven completed cards and all project drawers navigate locally (5.4s)
+  ok  53 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:67:5 › Civic002 frozen bilingual decision-support case › en civic evidence and exact frozen scenario render with rule-based methodology (621ms)
+  ok  54 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:16:5 › Civic002 frozen bilingual decision-support case › zh direct route and refresh expose unique civic metadata (633ms)
+  ok  55 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:33:5 › Civic002 frozen bilingual decision-support case › zh landing has eleven completed cards and all project drawers navigate locally (6.4s)
+  ok  56 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:67:5 › Civic002 frozen bilingual decision-support case › zh civic evidence and exact frozen scenario render with rule-based methodology (576ms)
+  ok  57 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:97:3 › Civic002 frozen bilingual decision-support case › locale switching retains civic slug and back navigation returns to localized landing (671ms)
+  ok  58 [chromium] › tests\e2e\govtech-civic-1999.spec.ts:108:3 › Civic002 frozen bilingual decision-support case › mobile light and dark pages fit the viewport and tables support keyboard scrolling (882ms)
+  ok  59 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:30:1 › Food011 per-case loader exactly preserves all canonical records and rejects inherited property names (185ms)
+  ok  60 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:37:1 › Food011 compact fixture preserves six actual configurations and same-set/different-order all-capacity evidence (176ms)
+  ok  61 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:100:3 › Food011 en registers once with actual source identity and existing explorer ownership (186ms)
+  ok  62 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:129:3 › Food011 en preserves source custody, historical units and unavailable safety/identity outcomes (287ms)
+  ok  63 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:173:3 › Food011 en presents exact edition populations, actual scenarios and neutral source-bound examples (175ms)
+  ok  64 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:225:3 › Food011 en direct loading and refresh retain localized metadata without upstream research requests (659ms)
+  ok  65 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:251:3 › Food011 en supports the eleventh card, keyboard evidence, section navigation and project drawer (879ms)
+  ok  66 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:100:3 › Food011 zh registers once with actual source identity and existing explorer ownership (197ms)
+  ok  67 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:129:3 › Food011 zh preserves source custody, historical units and unavailable safety/identity outcomes (322ms)
+  ok  68 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:173:3 › Food011 zh presents exact edition populations, actual scenarios and neutral source-bound examples (190ms)
+  ok  69 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:225:3 › Food011 zh direct loading and refresh retain localized metadata without upstream research requests (699ms)
+  ok  70 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:251:3 › Food011 zh supports the eleventh card, keyboard evidence, section navigation and project drawer (967ms)
+  ok  71 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:284:1 › Food011 locale switching retains the case and language-specific data (782ms)
+  ok  72 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:294:1 › Food011 all five widths, both languages and themes support keyboard-scrollable tables (4.5s)
+  ok  73 [chromium] › tests\e2e\govtech-food-hygiene-inspection.spec.ts:320:1 › Food011 detailed data loads only when its case is opened (954ms)
+  ok  74 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:17:3 › HeavyRain003 en freezes the source identity and ordered same-scope scenario (15ms)
+  ok  75 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:17:3 › HeavyRain003 zh freezes the source identity and ordered same-scope scenario (18ms)
+  ok  76 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:45:1 › HeavyRain003 source counts retain units, partial geography and independent review dimensions (3ms)
+  ok  77 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:63:5 › HeavyRain003 source-backed bilingual decision support › en direct route and refresh retain case-specific metadata without source-data requests (555ms)
+  ok  78 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:88:5 › HeavyRain003 source-backed bilingual decision support › en recorded evidence, caveats and generic methodology tables are visible (630ms)
+  ok  79 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:128:5 › HeavyRain003 source-backed bilingual decision support › en completed case card opens Case003 with keyboard navigation (405ms)
+  ok  80 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:63:5 › HeavyRain003 source-backed bilingual decision support › zh direct route and refresh retain case-specific metadata without source-data requests (573ms)
+  ok  81 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:88:5 › HeavyRain003 source-backed bilingual decision support › zh recorded evidence, caveats and generic methodology tables are visible (645ms)
+  ok  82 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:128:5 › HeavyRain003 source-backed bilingual decision support › zh completed case card opens Case003 with keyboard navigation (494ms)
+  ok  83 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:143:3 › HeavyRain003 source-backed bilingual decision support › locale switching preserves Case003 and back links return to localized landing (823ms)
+  ok  84 [chromium] › tests\e2e\govtech-heavy-rain.spec.ts:156:3 › HeavyRain003 source-backed bilingual decision support › desktop and mobile light/dark layouts fit, and the scenario scrolls with the keyboard (1.4s)
+  ok  85 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:16:3 › Neihu006 en preserves exact quality selections and independently empty performance scenarios (14ms)
+  ok  86 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:16:3 › Neihu006 zh preserves exact quality selections and independently empty performance scenarios (14ms)
+  ok  87 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:55:1 › Neihu006 preserves null history, source exclusions, unverified geography and objective boundaries (12ms)
+  ok  88 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:82:5 › Neihu006 bilingual traffic evidence readiness › en direct route and refresh expose unique metadata without live traffic calls (544ms)
+  ok  89 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:105:5 › Neihu006 bilingual traffic evidence readiness › en renders source-backed quality and empty performance tables with visible qualifications (708ms)
+  ok  90 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:133:5 › Neihu006 bilingual traffic evidence readiness › en sixth completed card supports keyboard navigation (431ms)
+  ok  91 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:82:5 › Neihu006 bilingual traffic evidence readiness › zh direct route and refresh expose unique metadata without live traffic calls (564ms)
+  ok  92 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:105:5 › Neihu006 bilingual traffic evidence readiness › zh renders source-backed quality and empty performance tables with visible qualifications (682ms)
+  ok  93 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:133:5 › Neihu006 bilingual traffic evidence readiness › zh sixth completed card supports keyboard navigation (492ms)
+  ok  94 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:148:3 › Neihu006 bilingual traffic evidence readiness › locale switching retains Neihu006 and back links use localized landing (746ms)
+  ok  95 [chromium] › tests\e2e\govtech-neihu-congestion.spec.ts:159:3 › Neihu006 bilingual traffic evidence readiness › desktop/mobile light and dark layouts fit and the shortlist scrolls with the keyboard (1.5s)
+  ok  96 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:14:1 › presentation allowlist protects identities, source editions, numerical method rules and scenario results (386ms)
+  ok  97 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:37:3 › all nine en records preserve the complete pre-hardening record outside reviewed copy (7ms)
+  ok  98 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:42:3 › all ten accepted en records preserve their complete v1.9 canonical content (7ms)
+  ok  99 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:52:3 › en lightweight summaries preserve canonical fields, ordering and project ownership (11ms)
+  ok 100 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:37:3 › all nine zh records preserve the complete pre-hardening record outside reviewed copy (3ms)
+  ok 101 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:42:3 › all ten accepted zh records preserve their complete v1.9 canonical content (7ms)
+  ok 102 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:52:3 › zh lightweight summaries preserve canonical fields, ordering and project ownership (10ms)
+  ok 103 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:75:3 › en provenance disclosures keep material context available by default (19ms)
+  ok 104 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:75:3 › zh provenance disclosures keep material context available by default (18ms)
+  ok 105 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:94:3 › en customer-facing labels use the selected language (23ms)
+  ok 106 [chromium] › tests\e2e\govtech-presentation-preservation.spec.ts:94:3 › zh customer-facing labels use the selected language (26ms)
+  ok 107 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:11:1 › all twenty-two public case records exclude delivery workflow content and PR destinations (1.1s)
+  ok 108 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 001 en presents useful results before optional technical identities (515ms)
+  ok 109 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 002 en presents useful results before optional technical identities (514ms)
+  ok 110 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 003 en presents useful results before optional technical identities (545ms)
+  ok 111 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 004 en presents useful results before optional technical identities (515ms)
+  ok 112 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 005 en presents useful results before optional technical identities (561ms)
+  ok 113 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 006 en presents useful results before optional technical identities (599ms)
+  ok 114 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 007 en presents useful results before optional technical identities (524ms)
+  ok 115 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 008 en presents useful results before optional technical identities (508ms)
+  ok 116 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 009 en presents useful results before optional technical identities (539ms)
+  ok 117 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 010 en presents useful results before optional technical identities (581ms)
+  ok 118 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 011 en presents useful results before optional technical identities (538ms)
+  ok 119 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 001 zh presents useful results before optional technical identities (547ms)
+  ok 120 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 002 zh presents useful results before optional technical identities (516ms)
+  ok 121 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 003 zh presents useful results before optional technical identities (542ms)
+  ok 122 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 004 zh presents useful results before optional technical identities (563ms)
+  ok 123 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 005 zh presents useful results before optional technical identities (555ms)
+  ok 124 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 006 zh presents useful results before optional technical identities (548ms)
+  ok 125 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 007 zh presents useful results before optional technical identities (553ms)
+  ok 126 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 008 zh presents useful results before optional technical identities (585ms)
+  ok 127 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 009 zh presents useful results before optional technical identities (624ms)
+  ok 128 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 010 zh presents useful results before optional technical identities (623ms)
+  ok 129 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:19:3 › 011 zh presents useful results before optional technical identities (572ms)
+  ok 130 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:46:3 › en landing and every case-linked project drawer exclude workflow content and PR links (1.2s)
+  ok 131 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:70:3 › en lower case card resets scroll and focuses the case heading (603ms)
+  ok 132 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:46:3 › zh landing and every case-linked project drawer exclude workflow content and PR links (1.4s)
+  ok 133 [chromium] › tests\e2e\govtech-public-presentation.spec.ts:70:3 › zh lower case card resets scroll and focuses the case heading (695ms)
+  ok 134 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:23:1 › Senior010 compact source fixture retains all twelve reproduced scenarios without publishing the snapshot (222ms)
+  ok 135 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:62:3 › Senior010 en registers exactly once with immutable identities and existing project ownership (175ms)
+  ok 136 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:83:3 › Senior010 en preserves independently verified source custody and excludes sensitive analytical fields (308ms)
+  ok 137 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:116:3 › Senior010 en renders verified populations, all twelve outcomes and actual source-bound selected IDs (163ms)
+  ok 138 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:169:3 › Senior010 en direct loading and refresh preserve metadata without research data dependencies (676ms)
+  ok 139 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:192:3 › Senior010 en exposes evidence through keyboard and keeps the tenth card and drawer local (1.0s)
+  ok 140 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:62:3 › Senior010 zh registers exactly once with immutable identities and existing project ownership (170ms)
+  ok 141 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:83:3 › Senior010 zh preserves independently verified source custody and excludes sensitive analytical fields (288ms)
+  ok 142 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:116:3 › Senior010 zh renders verified populations, all twelve outcomes and actual source-bound selected IDs (174ms)
+  ok 143 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:169:3 › Senior010 zh direct loading and refresh preserve metadata without research data dependencies (715ms)
+  ok 144 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:192:3 › Senior010 zh exposes evidence through keyboard and keeps the tenth card and drawer local (1.0s)
+  ok 145 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:231:1 › Senior010 language switching retains the new case route (831ms)
+  ok 146 [chromium] › tests\e2e\govtech-senior-community-care.spec.ts:240:1 › Senior010 all five widths, both locales and actual theme controls preserve accessible long tables (4.7s)
+  ok 147 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:16:3 › Shade005 en preserves source populations, GIS matches and the actual empty ranked scenarios (19ms)
+  ok 148 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:16:3 › Shade005 zh preserves source populations, GIS matches and the actual empty ranked scenarios (13ms)
+  ok 149 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:47:1 › Shade005 distinguishes inventory readiness, measurement gates and recorded offline performance (4ms)
+  ok 150 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:61:5 › Shade005 bilingual source-backed GIS readiness › en direct route and refresh preserve metadata without live GIS requests (636ms)
+  ok 151 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:84:5 › Shade005 bilingual source-backed GIS readiness › en inventory and zero eligibility are separately visible with scope qualifications (740ms)
+  ok 152 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:114:5 › Shade005 bilingual source-backed GIS readiness › en fifth completed card supports keyboard navigation (435ms)
+  ok 153 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:61:5 › Shade005 bilingual source-backed GIS readiness › zh direct route and refresh preserve metadata without live GIS requests (563ms)
+  ok 154 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:84:5 › Shade005 bilingual source-backed GIS readiness › zh inventory and zero eligibility are separately visible with scope qualifications (698ms)
+  ok 155 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:114:5 › Shade005 bilingual source-backed GIS readiness › zh fifth completed card supports keyboard navigation (516ms)
+  ok 156 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:129:3 › Shade005 bilingual source-backed GIS readiness › locale switching retains Shade005 and back navigation uses localized landing (772ms)
+  ok 157 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:140:3 › Shade005 bilingual source-backed GIS readiness › desktop/mobile light/dark layouts fit and scenario tables scroll with the keyboard (1.4s)
+  ok 158 [chromium] › tests\e2e\govtech-shade-equity.spec.ts:169:1 › homepage defers full case narratives until a catalogue page is opened (492ms)
+  ok 159 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:16:3 › UrbanRenewal004 en freezes the audited population, capacities and identical strategy selections (14ms)
+  ok 160 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:16:3 › UrbanRenewal004 zh freezes the audited population, capacities and identical strategy selections (27ms)
+  ok 161 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:55:1 › UrbanRenewal004 source statistics and legal/population boundaries remain explicit (15ms)
+  ok 162 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:77:5 › UrbanRenewal004 bilingual recorded policy-research case › en direct route and refresh expose unique SEO with no live source dependency (538ms)
+  ok 163 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:101:5 › UrbanRenewal004 bilingual recorded policy-research case › en pinned evidence and frozen scenario render with visible scope and safety qualifications (583ms)
+  ok 164 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:136:5 › UrbanRenewal004 bilingual recorded policy-research case › en fourth completed card opens with the keyboard (451ms)
+  ok 165 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:77:5 › UrbanRenewal004 bilingual recorded policy-research case › zh direct route and refresh expose unique SEO with no live source dependency (590ms)
+  ok 166 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:101:5 › UrbanRenewal004 bilingual recorded policy-research case › zh pinned evidence and frozen scenario render with visible scope and safety qualifications (602ms)
+  ok 167 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:136:5 › UrbanRenewal004 bilingual recorded policy-research case › zh fourth completed card opens with the keyboard (553ms)
+  ok 168 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:151:3 › UrbanRenewal004 bilingual recorded policy-research case › locale switching preserves Case004 and back links return to localized landing (777ms)
+  ok 169 [chromium] › tests\e2e\govtech-urban-renewal.spec.ts:164:3 › UrbanRenewal004 bilingual recorded policy-research case › desktop/mobile light and dark layouts fit and scenario regions support keyboard scrolling (1.5s)
+  ok 170 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:15:3 › WiFi008 en preserves exact independent source facts and all published combined scenarios (19ms)
+  ok 171 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:46:3 › WiFi008 en direct loading, refresh and metadata avoid upstream dataset requests (651ms)
+  ok 172 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:59:3 › WiFi008 en exposes negative findings, historical results and pinned evidence (652ms)
+  ok 173 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:70:3 › WiFi008 en eighth card opens by keyboard (970ms)
+  ok 174 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:15:3 › WiFi008 zh preserves exact independent source facts and all published combined scenarios (17ms)
+  ok 175 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:46:3 › WiFi008 zh direct loading, refresh and metadata avoid upstream dataset requests (1.1s)
+  ok 176 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:59:3 › WiFi008 zh exposes negative findings, historical results and pinned evidence (1.1s)
+  ok 177 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:70:3 › WiFi008 zh eighth card opens by keyboard (1.0s)
+  ok 178 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:81:1 › WiFi008 locale switching retains the case (789ms)
+  ok 179 [chromium] › tests\e2e\govtech-wifi-allocation.spec.ts:89:1 › WiFi008 five widths, both languages and themes keep tables keyboard-scrollable (1.6s)
+  ok 180 [chromium] › tests\e2e\govtech.spec.ts:17:5 › GovTech showcase › govtech loads directly, refreshes, and exposes unique localized metadata (499ms)
+  ok 181 [chromium] › tests\e2e\govtech.spec.ts:17:5 › GovTech showcase › zh/govtech loads directly, refreshes, and exposes unique localized metadata (605ms)
+  ok 182 [chromium] › tests\e2e\govtech.spec.ts:17:5 › GovTech showcase › govtech/bin-policy loads directly, refreshes, and exposes unique localized metadata (574ms)
+  ok 183 [chromium] › tests\e2e\govtech.spec.ts:17:5 › GovTech showcase › zh/govtech/bin-policy loads directly, refreshes, and exposes unique localized metadata (567ms)
+  ok 184 [chromium] › tests\e2e\govtech.spec.ts:37:5 › GovTech showcase › govtech locale switching retains the corresponding path (526ms)
+  ok 185 [chromium] › tests\e2e\govtech.spec.ts:37:5 › GovTech showcase › govtech/bin-policy locale switching retains the corresponding path (606ms)
+  ok 186 [chromium] › tests\e2e\govtech.spec.ts:47:3 › GovTech showcase › homepage CTA and project drawer use local GovTech navigation under the configured base (1.1s)
+  ok 187 [chromium] › tests\e2e\govtech.spec.ts:69:3 › GovTech showcase › case study exposes technical milestones, reproducible source evidence, and responsible-use limitations (396ms)
+  ok 188 [chromium] › tests\e2e\govtech.spec.ts:88:3 › GovTech showcase › mobile keyboard navigation reaches GovTech and pages fit light and dark viewports (1.1s)
+  ok 189 [chromium] › tests\e2e\govtech.spec.ts:117:3 › GovTech showcase › unknown case-study slugs preserve Not Found and noindex behavior (318ms)
+  ok 190 [chromium] › tests\e2e\poc-hardening.spec.ts:6:43 › supplementary official polygons remain conditional in en (654ms)
+  ok 191 [chromium] › tests\e2e\poc-hardening.spec.ts:6:43 › supplementary official polygons remain conditional in zh (618ms)
+  ok 192 [chromium] › tests\e2e\poc-hardening.spec.ts:26:1 › Tailwind migration preserves explicit dark surfaces and desktop hero line height (742ms)
+  ok 193 [chromium] › tests\e2e\smoke.spec.ts:4:3 › Portfolio smoke › [COV-01] home renders hero and primary CTAs (563ms)
+  ok 194 [chromium] › tests\e2e\smoke.spec.ts:13:3 › Portfolio smoke › [COV-02] desktop navbar route navigation works (865ms)
+  ok 195 [chromium] › tests\e2e\smoke.spec.ts:29:3 › Portfolio smoke › [COV-03] mobile menu opens and navigates routes (533ms)
+  ok 196 [chromium] › tests\e2e\smoke.spec.ts:45:3 › Portfolio smoke › [COV-04] projects search narrows results (572ms)
+  ok 197 [chromium] › tests\e2e\smoke.spec.ts:53:3 › Portfolio smoke › [COV-05] projects filters by category, technology, and status (483ms)
+  ok 198 [chromium] › tests\e2e\smoke.spec.ts:68:3 › Portfolio smoke › [COV-06] empty state appears and reset restores results (593ms)
+  ok 199 [chromium] › tests\e2e\smoke.spec.ts:83:3 › Portfolio smoke › [COV-07] project highlights counters are visible (512ms)
+  ok 200 [chromium] › tests\e2e\smoke.spec.ts:96:3 › Portfolio smoke › [COV-08] project card external links include safe attributes (494ms)
+  ok 201 [chromium] › tests\e2e\smoke.spec.ts:111:3 › Portfolio smoke › [COV-09] about page content and CTA route to contact (502ms)
+  ok 202 [chromium] › tests\e2e\smoke.spec.ts:122:3 › Portfolio smoke › [COV-10] contact page key links and footer links are present (544ms)
+  ok 203 [chromium] › tests\e2e\smoke.spec.ts:132:3 › Portfolio smoke › [COV-11] unknown route redirects to 404 and can return home (597ms)
+  ok 204 [chromium] › tests\e2e\smoke.spec.ts:142:3 › Portfolio smoke › [COV-12] project detail drawer opens and closes with URL sync (564ms)
+  ok 205 [chromium] › tests\e2e\smoke.spec.ts:161:3 › Portfolio smoke › [COV-13] detail drawer supports Escape and backdrop close (588ms)
+  ok 206 [chromium] › tests\e2e\smoke.spec.ts:179:3 › Portfolio smoke › [COV-14] deep-link query opens project drawer on initial load (528ms)
+  ok 207 [chromium] › tests\e2e\smoke.spec.ts:184:3 › Portfolio smoke › [COV-15] mobile drawer opens and preserves filter/search state (411ms)
+  ok 208 [chromium] › tests\e2e\smoke.spec.ts:206:3 › Portfolio smoke › [COV-16] traditional chinese route renders localized project content (532ms)
+  ok 209 [chromium] › tests\e2e\smoke.spec.ts:215:3 › Portfolio smoke › [COV-17] canonical and social metadata use crawlable deployment paths (459ms)
+
+  209 passed (2.2m)
+E2E functional coverage: 17/17 (100.0%)
+Coverage threshold met (>= 85%).
+warning: in the working copy of 'public/robots.txt', LF will be replaced by CRLF the next time Git touches it
+=== Verification Complete ===
+Next steps:
+1. Read AGENTS.md and progress.md
+2. Select ONE pending feature from feature_list.json
+3. Stay in scope and update progress.md before ending
