@@ -1,0 +1,54 @@
+{
+  "checkedOn": "2026-10-24",
+  "method": "One bounded read-only GitHub check-runs snapshot for actual PR head and merge revisions; no polling or waiting. API check conclusions do not replace recorded test details.",
+  "head": {
+    "revision": "7d82273d894235f4aa29867f0ea5f7d1e56ac54f",
+    "total": 1,
+    "checks": [
+      {
+        "name": "verify",
+        "status": "completed",
+        "conclusion": "success",
+        "detailsUrl": "https://github.com/LEO0331/taipei-friendly-food-map/actions/runs/40074594778/job/120815147665",
+        "headSha": "7d82273d894235f4aa29867f0ea5f7d1e56ac54f",
+        "completedAt": "2026-10-24T07:33:39Z"
+      }
+    ]
+  },
+  "merge": {
+    "revision": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+    "total": 2,
+    "checks": [
+      {
+        "name": "deploy",
+        "status": "completed",
+        "conclusion": "success",
+        "detailsUrl": "https://github.com/LEO0331/taipei-friendly-food-map/actions/runs/40075191716/job/120817007345",
+        "headSha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+        "completedAt": "2026-10-24T07:43:07Z"
+      },
+      {
+        "name": "build",
+        "status": "completed",
+        "conclusion": "success",
+        "detailsUrl": "https://github.com/LEO0331/taipei-friendly-food-map/actions/runs/40075191716/job/120816911856",
+        "headSha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+        "completedAt": "2026-10-24T07:42:53Z"
+      }
+    ]
+  },
+  "previews": [
+    {
+      "path": "doc/policy-11/desktop-en.png",
+      "bytes": 150038,
+      "gitBlobSha1": "73677c1db6914bc6a29637db4c039e123997325f",
+      "sha256": "67cdb6ff7000d4c1ea35beddf9c29bb02b959213bd1668a33c5a8abb90b53b4f"
+    },
+    {
+      "path": "doc/policy-11/mobile-zh.png",
+      "bytes": 50704,
+      "gitBlobSha1": "b5e2e6885270646aa8cd6ac14303d16ef1b59794",
+      "sha256": "a5d71e374756c56f38a819dfa6bb07599a492cf8026626aa3712d68e9b6fd418"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { lazy, useEffect, useRef, type LazyExoticComponent } from "react";
 import { Link, useLocation, useNavigationType } from "react-router-dom";
 import { caseOverviews, caseTechnicalDetails } from "../data/govtechCaseSummaries";
 import { Section } from "../components/layout/Section";
@@ -8,8 +8,8 @@ import { CaseStudyTable } from "../components/govtech/CaseStudyTable";
 import { MethodologyDetails } from "../components/govtech/MethodologyDetails";
 import { govtechCopy } from "../data/govtechCopy";
 import { useLocale } from "../i18n/LocaleContext";
-import type { GovTechCase } from "../types/govtechCase";
-import { getGovTechCaseBySlug } from "../utils/govtechCase";
+import { GOVTECH_CASE_IDS, type GovTechCase } from "../types/govtechCase";
+import { loadGovTechCase } from "../utils/govtechCaseLoader";
 import { usePageSeo } from "../utils/seo";
 import { NotFoundPage } from "./NotFoundPage";
 import routeConfig from "../routes/routeConfig.json";
@@ -68,8 +68,20 @@ function CaseContent({ study }: { study: GovTechCase }): JSX.Element {
   </div></Section>;
 }
 
+// Stable lazy component identities let React cache each case load and preserve
+// the existing route-level Suspense, locale switching and heading-focus behavior.
+const casePages = new Map<string, LazyExoticComponent<() => JSX.Element>>(
+  (["en", "zh"] as const).flatMap(locale => GOVTECH_CASE_IDS.map(slug => [
+    `${locale}/${slug}`,
+    lazy(async () => {
+      const study = await loadGovTechCase(locale, slug);
+      return { default: () => study ? <CaseContent study={study} /> : <NotFoundPage /> };
+    })
+  ] as const))
+);
+
 export function GovTechCaseStudyPage({ slug }: { slug: string }): JSX.Element {
   const { locale } = useLocale();
-  const study = getGovTechCaseBySlug(locale, slug);
-  return study ? <CaseContent study={study} /> : <NotFoundPage />;
+  const CasePage = casePages.get(`${locale}/${slug}`);
+  return CasePage ? <CasePage /> : <NotFoundPage />;
 }

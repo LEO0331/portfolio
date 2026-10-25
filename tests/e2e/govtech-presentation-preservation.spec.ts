@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import { expect, test } from "@playwright/test";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -7,6 +8,7 @@ import { getLocalizedProjects } from "../../src/utils/projectLocalization";
 import { getGovTechCaseSummaries, getProjectGovTechCaseLinks } from "../../src/utils/govtechCaseLinks";
 import { getProjectGovTechCases } from "../../src/utils/govtechCase";
 import baseline from "../fixtures/govtech-public-baseline.json" with { type: "json" };
+import priorTen from "../fixtures/govtech-prior-ten-baseline.json" with { type: "json" };
 import { presentationEdits, restorePresentation } from "../helpers/govtechPresentation";
 
 test("presentation allowlist protects identities, source editions, numerical method rules and scenario results", () => {
@@ -34,8 +36,18 @@ test("presentation allowlist protects identities, source editions, numerical met
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`all nine ${locale} records preserve the complete pre-hardening record outside reviewed copy`, () => {
     const originalIds = baseline[locale].map(record => record.id);
-    expect(records.map(record => record.id)).toEqual([...originalIds, "senior-community-care"]);
+    expect(records.map(record => record.id)).toEqual([...originalIds, "senior-community-care", "food-hygiene-inspection"]);
     expect(records.filter(record => originalIds.includes(record.id)).map(record => restorePresentation(record, locale))).toEqual(baseline[locale]);
+  });
+  test(`all ten accepted ${locale} records preserve their complete v1.9 canonical content`, () => {
+    expect(priorTen.baseSha).toBe("74a979721a640e87e3d49ce866f435c525120a0a");
+    expect(priorTen.records[locale]).toHaveLength(10);
+    expect(records.map(record => record.id)).toEqual([...priorTen.records[locale].map(record => record.id), "food-hygiene-inspection"]);
+    for (const frozen of priorTen.records[locale]) {
+      const record = records.find(record => record.id === frozen.id)!;
+      expect(record, frozen.id).toBeDefined();
+      expect(createHash("sha256").update(JSON.stringify(record)).digest("hex"), frozen.id).toBe(frozen.sha256);
+    }
   });
   test(`${locale} lightweight summaries preserve canonical fields, ordering and project ownership`, () => {
     const fields = ["id", "slug", "displayNumber", "projectId", "title", "summary", "maturityLabel", "implementedCapabilities"] as const;

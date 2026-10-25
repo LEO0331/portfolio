@@ -162,6 +162,22 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "Privacy-minimized immutable snapshots and reproducible JSON/CSV briefings",
         "Explicit unavailable service-capacity and welfare-outcome evidence gate"
       ]
+    },
+    {
+      "id": "food-hygiene-inspection",
+      "slug": "food-hygiene-inspection",
+      "displayNumber": "011",
+      "projectId": "taipei-friendly-food-map",
+      "title": "Food Hygiene & Inspection Evidence Review",
+      "summary": "From heterogeneous food records to reproducible source-edition comparisons and explainable documentation review, with establishment and current-safety evidence gates.",
+      "maturityLabel": "Completed source and documentation-review proof of concept; establishment comparison gated",
+      "implementedCapabilities": [
+        "Sealed official CSV/HTML provenance and retained-edition separation",
+        "Sample, event, grading and registration identity contracts",
+        "Conservative establishment validation and explicit exclusions",
+        "Deterministic T1/T2/T3 queues with actual capacity/strategy sensitivity",
+        "Versioned snapshots and provenance-preserving JSON/CSV briefings"
+      ]
     }
   ],
   "zh": [
@@ -322,6 +338,22 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "隱私最小化不可變快照與可重現 JSON／CSV 摘要",
         "明列不可用的服務量能與福利成果證據門檻"
       ]
+    },
+    {
+      "id": "food-hygiene-inspection",
+      "slug": "food-hygiene-inspection",
+      "displayNumber": "011",
+      "projectId": "taipei-friendly-food-map",
+      "title": "臺北市食品衛生與抽驗紀錄證據查核決策支援",
+      "summary": "從異質食品紀錄到可重現來源版本對帳與可解釋文件查核，明列場所身分及目前安全證據門檻。",
+      "maturityLabel": "已完成來源與文件查核概念驗證；場所比較仍受證據限制",
+      "implementedCapabilities": [
+        "封存官方 CSV／HTML 溯源並分開保留歷史版本",
+        "樣本、事件、評核與登記身分契約",
+        "保守場所驗證與明確排除",
+        "確定性 T1／T2／T3 清單與實際量能／策略敏感度",
+        "版本化快照與保留溯源的 JSON／CSV 摘要"
+      ]
     }
   ]
 };
@@ -387,6 +419,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "Validate official PDFs, reconcile source editions and compare explainable administrative follow-up lists.",
       "Validated 520 published site rows and 88 listed villages; accepted 493 older-directory research associations and reproduced both review modes.",
       "Published records do not establish current operation, care capacity, resident access or unmet demand."
+    ],
+    "food-hygiene-inspection": [
+      "How can different inspection, hygiene-grading and registration records be reviewed without implying current business safety?",
+      "Retain source bytes, validate dates and identity evidence, then compare deterministic administrative review queues.",
+      "Verified 673 historical sample publication rows and a 22,645-record documentary queue; no establishment association has independent validation.",
+      "Failed-only publications lack an all-inspection denominator. Equal names or addresses do not establish the same operating site or responsibility."
     ]
   },
   "zh": {
@@ -449,6 +487,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "驗證官方 PDF、保守核對資料版本，並比較可解釋的行政追蹤名單。",
       "驗證 520 筆公告據點列與 88 筆官方列示里別，接受 493 筆舊目錄研究對應，並重現兩種查核模式。",
       "公告紀錄不能證明目前營運、照顧量能、居民近用或未滿足需求。"
+    ],
+    "food-hygiene-inspection": [
+      "如何核對不同年份的抽驗、衛生評核及業者登記，避免把歷史紀錄誤當成目前食品安全狀態？",
+      "保存來源位元組，驗證日期與身分證據，再比較確定性行政查核名單。",
+      "驗證 673 筆歷史抽驗公告列，建立 22,645 筆文件查核候選；尚無經獨立證據驗證的場所關聯。",
+      "不合格公告缺少全部抽驗分母；名稱或地址相同不能證明同一營業場所或責任歸屬。"
     ]
   }
 };
@@ -625,6 +669,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
           "2": "The source commit, snapshot identity and exact-file hash identify separate provenance objects. For this accepted publication only, the snapshot identifier includes the same digest as the exact JSON file."
         }
       }
+    },
+    "food-hygiene-inspection": {
+      "paragraphs": {
+        "provenance": [
+          1
+        ],
+        "governance": [
+          1
+        ]
+      },
+      "tables": [
+        2,
+        11,
+        12
+      ],
+      "summaries": {
+        "provenance": {
+          "1": "Accepted originals retain exact response-byte identities. Earlier project editions preserve transformed JSON only; historical CSV bytes and acquisition times remain unavailable."
+        },
+        "governance": {
+          "1": "The snapshot identifier binds its compact JSON body; the exact formatted file has a separate SHA-256. The manifest names the content-addressed file, without an atomic pointer-swap claim."
+        }
+      }
     }
   },
   "zh": {
@@ -795,6 +862,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
         },
         "governance": {
           "2": "來源版本、快照身分與精確檔案雜湊各自識別不同追溯物件。僅就這份已接受發布而言，快照識別包含與精確 JSON 檔案相同的摘要；此關係不能推廣至其他案例。"
+        }
+      }
+    },
+    "food-hygiene-inspection": {
+      "paragraphs": {
+        "provenance": [
+          1
+        ],
+        "governance": [
+          1
+        ]
+      },
+      "tables": [
+        2,
+        11,
+        12
+      ],
+      "summaries": {
+        "provenance": {
+          "1": "接受的官方下載保留原始回應位元組識別；較早專案版本只有轉換後的 JSON，不能據此還原歷史原始 CSV 或取得時間。"
+        },
+        "governance": {
+          "1": "快照識別綁定精簡 JSON 內容；排版後的精確檔案另有 SHA-256。清單指向內容定址檔案，但本版未宣稱使用原子指標切換發布。"
         }
       }
     }

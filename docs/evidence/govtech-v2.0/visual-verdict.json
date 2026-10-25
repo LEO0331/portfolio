@@ -1,0 +1,12 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case011 replaces the case-specific title and four-part overview while retaining the existing spacing, typography, panels, navigation and closed technical disclosures.",
+    "The inspected Chinese390pxdark view wraps the title and all material findings/limits within the viewport; technical tables remain locally scrollable.",
+    "The representative English Bridge baseline and final screenshots are byte-identical after the runtime loading change."
+  ],
+  "suggestions": [],
+  "reasoning": "Manual comparison of English desktop and Chinese390pxdark Case011 against existing case styling, plus expanded technical-table captures, supports a limited visual-style pass. Automated280-layout checks and native keyboard tests provide broader evidence; this is not screen-reader, physical-device or factual certification."
+}

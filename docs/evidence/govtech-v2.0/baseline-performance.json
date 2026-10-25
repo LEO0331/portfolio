@@ -1,0 +1,409 @@
+{
+  "scope": "Local production preview; fresh context per route; fonts.googleapis.com deliberately blocked consistently for reproducible before/after captures, recorded separately from app errors. No production performance score.",
+  "measurements": [
+    {
+      "name": "home",
+      "path": "",
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "reason": "net::ERR_FAILED"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4195/portfolio/",
+        "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+        "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+        "http://127.0.0.1:4195/portfolio/assets/taipei-real-estate-dashboard-pxEafDqf.webp",
+        "http://127.0.0.1:4195/portfolio/assets/taipei-civic-groups-map-CgNgNDEx.webp",
+        "http://127.0.0.1:4195/portfolio/assets/publicsafetydashboard-fR26LcZ0.webp",
+        "http://127.0.0.1:4195/portfolio/assets/sharpface-Ld80yUWc.webp",
+        "http://127.0.0.1:4195/portfolio/assets/robotfriends-DyCm_frR.webp"
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+          "duration": 24.100000023841858,
+          "transferSize": 101299,
+          "encodedBodySize": 100999
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+          "duration": 9.5,
+          "transferSize": 7880,
+          "encodedBodySize": 7580
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "duration": 4.599999904632568,
+          "transferSize": 0,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/taipei-real-estate-dashboard-pxEafDqf.webp",
+          "duration": 7.899999976158142,
+          "transferSize": 69546,
+          "encodedBodySize": 69246
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/taipei-civic-groups-map-CgNgNDEx.webp",
+          "duration": 7.299999952316284,
+          "transferSize": 91352,
+          "encodedBodySize": 91052
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/publicsafetydashboard-fR26LcZ0.webp",
+          "duration": 8.100000023841858,
+          "transferSize": 79484,
+          "encodedBodySize": 79184
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/sharpface-Ld80yUWc.webp",
+          "duration": 8.199999928474426,
+          "transferSize": 56870,
+          "encodedBodySize": 56570
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/robotfriends-DyCm_frR.webp",
+          "duration": 8.5,
+          "transferSize": 77802,
+          "encodedBodySize": 77502
+        }
+      ],
+      "domElements": 300,
+      "bodyOverflow": false,
+      "brokenLoadedImages": []
+    },
+    {
+      "name": "projects",
+      "path": "projects",
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "reason": "net::ERR_FAILED"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4195/portfolio/projects",
+        "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+        "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+        "http://127.0.0.1:4195/portfolio/assets/ProjectsPage-D7wHfOYF.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCaseLinks-DfjfUhaD.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+        "http://127.0.0.1:4195/portfolio/assets/sharpface-Ld80yUWc.webp",
+        "http://127.0.0.1:4195/portfolio/assets/robotfriends-DyCm_frR.webp",
+        "http://127.0.0.1:4195/portfolio/assets/taipei-civic-groups-map-CgNgNDEx.webp",
+        "http://127.0.0.1:4195/portfolio/assets/taipei-real-estate-dashboard-pxEafDqf.webp",
+        "http://127.0.0.1:4195/portfolio/assets/publicsafetydashboard-fR26LcZ0.webp",
+        "http://127.0.0.1:4195/portfolio/assets/skill-gen-BCT0hGop.webp",
+        "http://127.0.0.1:4195/portfolio/assets/assistanthub-DDVRviuU.webp",
+        "http://127.0.0.1:4195/portfolio/assets/epubreader-BGz7b8f9.webp",
+        "http://127.0.0.1:4195/portfolio/assets/boxmatch-BGPc6vd3.webp",
+        "http://127.0.0.1:4195/portfolio/assets/circles-app-Cx8O7v7-.webp",
+        "http://127.0.0.1:4195/portfolio/assets/email-website-jxbAjvNj.webp",
+        "http://127.0.0.1:4195/portfolio/assets/craftfocus-BSF821BW.webp",
+        "http://127.0.0.1:4195/portfolio/assets/amazon-app-h1V93wIV.webp",
+        "http://127.0.0.1:4195/portfolio/assets/genomic-data-science-with-galaxy-project-BWiuZq92.webp",
+        "http://127.0.0.1:4195/portfolio/assets/inbodysimpletracker-D7ApYNxG.webp"
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+          "duration": 13.600000023841858,
+          "transferSize": 101299,
+          "encodedBodySize": 100999
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+          "duration": 8,
+          "transferSize": 7880,
+          "encodedBodySize": 7580
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "duration": 2,
+          "transferSize": 0,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/ProjectsPage-D7wHfOYF.js",
+          "duration": 5.899999976158142,
+          "transferSize": 4197,
+          "encodedBodySize": 3897
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCaseLinks-DfjfUhaD.js",
+          "duration": 5.100000023841858,
+          "transferSize": 679,
+          "encodedBodySize": 379
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+          "duration": 6,
+          "transferSize": 11205,
+          "encodedBodySize": 10905
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/sharpface-Ld80yUWc.webp",
+          "duration": 8.100000023841858,
+          "transferSize": 56870,
+          "encodedBodySize": 56570
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/robotfriends-DyCm_frR.webp",
+          "duration": 7.899999976158142,
+          "transferSize": 77802,
+          "encodedBodySize": 77502
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/taipei-civic-groups-map-CgNgNDEx.webp",
+          "duration": 10.399999976158142,
+          "transferSize": 91352,
+          "encodedBodySize": 91052
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/taipei-real-estate-dashboard-pxEafDqf.webp",
+          "duration": 12.5,
+          "transferSize": 69546,
+          "encodedBodySize": 69246
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/publicsafetydashboard-fR26LcZ0.webp",
+          "duration": 13,
+          "transferSize": 79484,
+          "encodedBodySize": 79184
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/skill-gen-BCT0hGop.webp",
+          "duration": 13.799999952316284,
+          "transferSize": 48642,
+          "encodedBodySize": 48342
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/assistanthub-DDVRviuU.webp",
+          "duration": 14.099999904632568,
+          "transferSize": 35294,
+          "encodedBodySize": 34994
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/epubreader-BGz7b8f9.webp",
+          "duration": 14.400000095367432,
+          "transferSize": 64544,
+          "encodedBodySize": 64244
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/boxmatch-BGPc6vd3.webp",
+          "duration": 15.200000047683716,
+          "transferSize": 39252,
+          "encodedBodySize": 38952
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/circles-app-Cx8O7v7-.webp",
+          "duration": 16.800000071525574,
+          "transferSize": 30464,
+          "encodedBodySize": 30164
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/email-website-jxbAjvNj.webp",
+          "duration": 19.90000009536743,
+          "transferSize": 26408,
+          "encodedBodySize": 26108
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/craftfocus-BSF821BW.webp",
+          "duration": 20,
+          "transferSize": 24366,
+          "encodedBodySize": 24066
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/amazon-app-h1V93wIV.webp",
+          "duration": 20.100000023841858,
+          "transferSize": 36106,
+          "encodedBodySize": 35806
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/inbodysimpletracker-D7ApYNxG.webp",
+          "duration": 20.300000071525574,
+          "transferSize": 17368,
+          "encodedBodySize": 17068
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/genomic-data-science-with-galaxy-project-BWiuZq92.webp",
+          "duration": 20.600000023841858,
+          "transferSize": 70582,
+          "encodedBodySize": 70282
+        }
+      ],
+      "domElements": 1210,
+      "bodyOverflow": false,
+      "brokenLoadedImages": []
+    },
+    {
+      "name": "govtech",
+      "path": "govtech",
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "reason": "net::ERR_FAILED"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4195/portfolio/govtech",
+        "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+        "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+        "http://127.0.0.1:4195/portfolio/assets/GovTechPage-BF95pNYL.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCopy-BiGGkHby.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCaseLinks-DfjfUhaD.js"
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+          "duration": 4,
+          "transferSize": 7880,
+          "encodedBodySize": 7580
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+          "duration": 9.5,
+          "transferSize": 101299,
+          "encodedBodySize": 100999
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "duration": 1.2999999523162842,
+          "transferSize": 0,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/GovTechPage-BF95pNYL.js",
+          "duration": 6.899999976158142,
+          "transferSize": 1920,
+          "encodedBodySize": 1620
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCopy-BiGGkHby.js",
+          "duration": 7.600000023841858,
+          "transferSize": 6125,
+          "encodedBodySize": 5825
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+          "duration": 8,
+          "transferSize": 11205,
+          "encodedBodySize": 10905
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCaseLinks-DfjfUhaD.js",
+          "duration": 6.900000095367432,
+          "transferSize": 679,
+          "encodedBodySize": 379
+        }
+      ],
+      "domElements": 282,
+      "bodyOverflow": false,
+      "brokenLoadedImages": []
+    },
+    {
+      "name": "bridge",
+      "path": "govtech/bridge-inspection",
+      "errors": [],
+      "failed": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "reason": "net::ERR_FAILED"
+        }
+      ],
+      "requests": [
+        "http://127.0.0.1:4195/portfolio/govtech/bridge-inspection",
+        "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+        "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+        "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+        "http://127.0.0.1:4195/portfolio/assets/GovTechCaseStudyPage-B4TRWBkU.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+        "http://127.0.0.1:4195/portfolio/assets/govtechCopy-BiGGkHby.js"
+      ],
+      "resources": [
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-B2QM3Q36.js",
+          "duration": 75.20000004768372,
+          "transferSize": 101299,
+          "encodedBodySize": 100999
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/index-CHNakwYD.css",
+          "duration": 4.5,
+          "transferSize": 7880,
+          "encodedBodySize": 7580
+        },
+        {
+          "name": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+          "duration": 25.199999928474426,
+          "transferSize": 0,
+          "encodedBodySize": 0
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCaseSummaries-DERAToka.js",
+          "duration": 11.300000071525574,
+          "transferSize": 11205,
+          "encodedBodySize": 10905
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/GovTechCaseStudyPage-B4TRWBkU.js",
+          "duration": 55.200000047683716,
+          "transferSize": 171032,
+          "encodedBodySize": 170732
+        },
+        {
+          "name": "http://127.0.0.1:4195/portfolio/assets/govtechCopy-BiGGkHby.js",
+          "duration": 10.800000071525574,
+          "transferSize": 6125,
+          "encodedBodySize": 5825
+        }
+      ],
+      "domElements": 907,
+      "bodyOverflow": false,
+      "brokenLoadedImages": []
+    }
+  ],
+  "assets": [
+    {
+      "filename": "govtechCaseLinks-DfjfUhaD.js",
+      "bytes": 379
+    },
+    {
+      "filename": "GovTechCaseStudyPage-B4TRWBkU.js",
+      "bytes": 586214
+    },
+    {
+      "filename": "govtechCaseSummaries-DERAToka.js",
+      "bytes": 29599
+    },
+    {
+      "filename": "govtechCopy-BiGGkHby.js",
+      "bytes": 12374
+    },
+    {
+      "filename": "GovTechPage-BF95pNYL.js",
+      "bytes": 5602
+    },
+    {
+      "filename": "index-B2QM3Q36.js",
+      "bytes": 317127
+    },
+    {
+      "filename": "index-CHNakwYD.css",
+      "bytes": 42696
+    },
+    {
+      "filename": "ProjectsPage-D7wHfOYF.js",
+      "bytes": 12734
+    }
+  ]
+}

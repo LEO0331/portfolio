@@ -8,7 +8,7 @@ import {govtechCases} from '../../src/data/govtechCases';
 import {govtechCasesZh} from '../../src/data/govtechCases.zh';
 import {auditPublicRecords,isPullRequestHref,workflowPattern,visibleFields} from '../../tools/govtech-public-audit.mjs';
 
-test('all twenty public case records exclude delivery workflow content and PR destinations',()=>{
+test('all twenty-two public case records exclude delivery workflow content and PR destinations',()=>{
   expect(auditPublicRecords({en:govtechCases,zh:govtechCasesZh})).toEqual([]);
   for(const field of visibleFields({caseOverviews,caseTechnicalDetails,govtechCopy,projects:{en:getLocalizedProjects(projects,'en'),zh:getLocalizedProjects(projects,'zh')}})) {
     expect(workflowPattern.test(field.value),field.path).toBe(false);
@@ -52,11 +52,11 @@ for (const locale of ['en', 'zh'] as const) {
     };
     await page.goto(`./${prefix}`);
     const description=copy[locale].home.govtechDescription;
-    expect(description).toContain(locale==='en'?'ten':'十');
+    expect(description).toContain(locale==='en'?'eleven':'十一');
     await expect(page.getByText(description,{exact:true})).toBeVisible();
     await page.goto(`./${prefix}govtech`);
     await expect(page.locator('button[data-theme-toggle]').filter({visible:true})).toHaveText(locale==='en'?/^(Dark|Light)$/:/^(深色|淺色)$/);
-    await expect(page.locator('section[aria-labelledby="govtech-cases"] article')).toHaveCount(10);
+    await expect(page.locator('section[aria-labelledby="govtech-cases"] article')).toHaveCount(11);
     await inspect(page.getByRole('main'));
     const ids = [...new Set((locale === 'en' ? govtechCases : govtechCasesZh).map(record => record.projectId))];
     for (const projectId of ids) {

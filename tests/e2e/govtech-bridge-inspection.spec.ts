@@ -15,7 +15,7 @@ for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
   const study = records[locale].find(({ id }) => id === "bridge-inspection")!;
   test(`Bridge009 ${locale} preserves all eight cases and exact official statistical units`, () => {
-    expect(records[locale]).toHaveLength(10);
+    expect(records[locale]).toHaveLength(11);
     expect(records[locale].filter(({ id }) => id === "bridge-inspection")).toHaveLength(1);
     expect(records[locale].slice(0, 8).map(record => ({ id: record.id, sha256: createHash("sha256").update(JSON.stringify(restorePresentation(record, locale))).digest("hex") }))).toEqual(prior[locale]);
     expect(study).toMatchObject({ displayNumber: "009", projectId: "taipei-safety-map", sourceVersion: sha, snapshotVersion: fixture.snapshot.snapshotId, maturity: "decision-support-poc", methodology: { kind: "rule-based-priority", methodId: "bridge-inspection-evidence-review-v1" } });
@@ -89,7 +89,7 @@ for (const locale of ["en", "zh"] as const) {
   });
   test(`Bridge009 ${locale} ninth card and project drawer support keyboard navigation`,async({page})=>{
     await page.goto(`./${prefix}govtech`);
-    const completed=page.locator('section[aria-labelledby="govtech-cases"]');await expect(completed.locator('article')).toHaveCount(10);
+    const completed=page.locator('section[aria-labelledby="govtech-cases"]');await expect(completed.locator('article')).toHaveCount(11);
     const card=completed.locator('article').filter({has:page.getByRole('heading',{name:study.title,exact:true})});await expect(card).toContainText('009');
     const link=card.locator(`a[href="/portfolio/${prefix}govtech/bridge-inspection"]`);await link.focus();await page.keyboard.press('Enter');await expect(page.getByRole('heading',{level:1})).toHaveText(study.title);
     await page.goto(`./${prefix}projects?project=taipei-safety-map`);

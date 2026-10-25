@@ -13,7 +13,7 @@ for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
   const study = records[locale].find(({ id }) => id === "wifi-allocation")!;
   test(`WiFi008 ${locale} preserves exact independent source facts and all published combined scenarios`, () => {
-    expect(records[locale]).toHaveLength(10);
+    expect(records[locale]).toHaveLength(11);
     expect(records[locale].filter(({ id }) => id === "wifi-allocation")).toHaveLength(1);
     expect(study).toMatchObject({ displayNumber: "008", projectId: "taipei-free-wifi-map", maturity: "decision-support-poc", sourceVersion: fixture.v11Sha, snapshotVersion: fixture.geoVersion, methodology: { methodId: fixture.method } });
     expect(study.sections).toHaveLength(18);
@@ -70,7 +70,7 @@ for (const locale of ["en", "zh"] as const) {
   test(`WiFi008 ${locale} eighth card opens by keyboard`,async({page})=>{
     await page.goto(`./${prefix}govtech`);
     const completed=page.locator('section[aria-labelledby="govtech-cases"]');
-    await expect(completed.locator("article")).toHaveCount(10);
+    await expect(completed.locator("article")).toHaveCount(11);
     const card=completed.locator("article").filter({has:page.getByRole("heading",{name:study.title,exact:true})});
     await expect(card).toContainText("008");
     const link=card.locator(`a[href="/portfolio/${prefix}govtech/wifi-allocation"]`);
