@@ -3,6 +3,7 @@ import type { Project } from "../../src/types/project";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
 import { projects as portfolioProjects } from "../../src/data/projects";
 import githubPins from "../../src/data/github-pins.json" with { type: "json" };
+import { featuredProjectIds } from "../../src/data/featuredProjects";
 import {
   extractUniqueCategories,
   extractUniqueTechnologies,
@@ -99,15 +100,26 @@ test("saved GitHub pins select the same projects in pin order for both languages
   expect(getFeaturedProjects(list, 3, 6, [])).toEqual([]);
 });
 
-test("homepage renders saved pins in the same order in both languages", async ({ page }) => {
+test("homepage renders the curated recruiter-facing projects in the same order in both languages", async ({ page }) => {
   for (const locale of ["en", "zh"] as const) {
     const localized = getLocalizedProjects(portfolioProjects, locale);
-    const expected = githubPins.projectIds.map((id) => localized.find((project) => project.id === id)!.name);
+    const expected = featuredProjectIds.map((id) => localized.find((project) => project.id === id)!.name);
     await page.goto(locale === "en" ? "./" : "./zh");
     const section = page.locator("section").filter({ has: page.getByRole("heading", { name: locale === "en" ? "Featured Projects" : "重點專案", exact: true }) });
     await expect(section.locator("article")).toHaveCount(expected.length);
     await expect(section.locator("article h2")).toHaveText(expected);
   }
+});
+
+test("Gridline keeps its legacy identifier and canonical public links", () => {
+  const gridline = portfolioProjects.find((project) => project.id === "robotfriends");
+  expect(gridline).toMatchObject({
+    slug: "robotfriends",
+    name: "Gridline",
+    repoUrl: "https://github.com/LEO0331/Gridline",
+    demoUrl: "https://leo0331.github.io/Gridline/"
+  });
+  expect(featuredProjectIds[0]).toBe("robotfriends");
 });
 
 test("project localization overrides known content and preserves unknown projects", () => {

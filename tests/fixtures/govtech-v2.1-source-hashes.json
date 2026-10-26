@@ -1,0 +1,29 @@
+{
+  "base": "b822e95305336a43c2b8563d373a82b4e65d98bd",
+  "files": {
+    "govtechBinPolicy.ts": "5d27d56340fd509c889c7cb204edc7bd43e90cfb51cb7614b5d5442df91a11e0",
+    "govtechBinPolicy.zh.ts": "a046860092ee4bd9c10125d4267537b4c0583a7acf5727eccb8cbe4f3b3b30b6",
+    "govtechBridgeInspection.ts": "4d6a4a8cfd8e0d951864d04b6ac5c7739f4dda8372999dccd13aeea128ec8888",
+    "govtechBridgeInspection.zh.ts": "d6a98dff5109bcc859414d9a9e8dc991d44cf98464ad98bc7e939211fcc0566a",
+    "govtechBusService.ts": "e13199e60e300a3a98e4376eb78b34c5bdc06726180c7c48c287b81ff8786d53",
+    "govtechBusService.zh.ts": "fbe5263f92047cd36b3a02afd9759fae733309f3c8582fe92ca1ff48c4a42e8a",
+    "govtechCivic1999.ts": "1940e6dd294ac905c3eff0b8796a838bb9bcaf641bb3f9d780267db974d0e8d8",
+    "govtechCivic1999.zh.ts": "3252e7431dd98083a9ea36fd9814609303201414b435fc2b8736155423fe8ad0",
+    "govtechFireRescueAccess.ts": "d5fc2416829e0e9d79c1d2c2db8c55c939461b55e4197034ab00c4e9f6e04d2b",
+    "govtechFireRescueAccess.zh.ts": "d2e3aa7ef647bef3b8259d7bd4ff0f379182efa281893644fafed4295efb7f47",
+    "govtechFoodHygieneInspection.ts": "f8fab6d8ede41849f315c455b6f0fa20c4302cbf08435183b96090548b894e64",
+    "govtechFoodHygieneInspection.zh.ts": "8eaddf72e2fe7514028b94ef83c1a6f5b6450fdb427859487b7ed6bb83c2e4a2",
+    "govtechHeavyRain.ts": "46ee30f2650a0edaf79279178f41d8535eb1d0f1c96c4b6bdbc40dd2f18948e7",
+    "govtechHeavyRain.zh.ts": "160ff0e147fe3605671239fdf90ccb30b81eac2867fc1883fa4e4e6f029ea27d",
+    "govtechNeihuCongestion.ts": "e2d19261663a4ce2db10b71e239d5370f34b15a6adc5e86ad6ec6164cf4deb40",
+    "govtechNeihuCongestion.zh.ts": "dab47a3d0b158b8749ee10a41520d7cab7de0ea3beb2bc42ef9bf315cc1328e2",
+    "govtechSeniorCommunityCare.ts": "7e14c3d71ce448703fa983a9ce02e9dc1c21003b8b6cdad2f2b6fd42abb4e4ce",
+    "govtechSeniorCommunityCare.zh.ts": "83b4c7375cbbd96be5b3cb52219e880bf77575a3da0b0811ec7cb3a01f3cd2c7",
+    "govtechShadeEquity.ts": "cbeb87db59e6922ca2d2485f324f4b5c000473309c7331115a73394e3115b632",
+    "govtechShadeEquity.zh.ts": "3d24bbfe035d07f23a539f2a16a1b883b8cb7db1566a178d4cfce32bba4291f4",
+    "govtechUrbanRenewal.ts": "765a9388c14dc32900c1761532350e38fbb74633c2d51cb8a1278c6e88946e63",
+    "govtechUrbanRenewal.zh.ts": "0760066eb2c8f26adbb6d969178bbe073b6dad30afedb7fd4fdf9397269b9be8",
+    "govtechWifiAllocation.ts": "936b1201f0d70ee4afc075f07fdc550e7c13940b82d4842cf5e59cb58da5f3eb",
+    "govtechWifiAllocation.zh.ts": "f84c48b32d754eb74f557ddf11f2363cbaaaa66436efd01be7a4357fae28891f"
+  }
+}
