@@ -225,17 +225,17 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                   <h3 className="text-sm font-semibold text-slate-900">{text.projects.links}</h3>
                   <div className="flex flex-wrap gap-3 text-sm">
                     {safeDemoUrl ? (
-                      <ExternalLink href={safeDemoUrl} label={`Open live demo for ${project.name}`}>
+                      <ExternalLink href={safeDemoUrl} label={locale === "zh" ? `開啟 ${project.name} 線上 Demo` : `Open live demo for ${project.name}`}>
                         {text.projects.liveDemo}
                       </ExternalLink>
                     ) : null}
                     {safeRepoUrl ? (
-                      <ExternalLink href={safeRepoUrl} label={`Open repository for ${project.name}`}>
+                      <ExternalLink href={safeRepoUrl} label={locale === "zh" ? `開啟 ${project.name} 原始碼` : `Open repository for ${project.name}`}>
                         {text.projects.githubRepo}
                       </ExternalLink>
                     ) : null}
                     {safeCaseStudyUrl ? (
-                      <ExternalLink href={safeCaseStudyUrl} label={`Open case study for ${project.name}`}>
+                      <ExternalLink href={safeCaseStudyUrl} label={locale === "zh" ? `開啟 ${project.name} 案例研究` : `Open case study for ${project.name}`}>
                         {text.projects.caseStudy}
                       </ExternalLink>
                     ) : null}

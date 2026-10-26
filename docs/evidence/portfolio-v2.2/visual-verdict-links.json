@@ -1,0 +1,8 @@
+{
+  "score": 89,
+  "verdict": "revise",
+  "category_match": true,
+  "differences": ["The role and primary button contrast are corrected, but Gridline drawer external links still inherit dark navy because the referenced brand-400 theme token is undefined."],
+  "suggestions": ["Give the shared external link a defined light foreground in dark mode and verify its computed color."],
+  "reasoning": "The first-screen positioning is legible. The final source/demo actions in the project drawer need the same contrast treatment."
+}

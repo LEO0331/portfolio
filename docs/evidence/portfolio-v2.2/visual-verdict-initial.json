@@ -1,0 +1,8 @@
+{
+  "score": 87,
+  "verdict": "revise",
+  "category_match": true,
+  "differences": ["The Chinese mobile dark screenshot has a low-contrast navy role title and dark text on the primary navy button."],
+  "suggestions": ["Use a light foreground for the role title, skill evidence links and primary button in dark mode."],
+  "reasoning": "The established layout and typography are preserved. Dark-mode recruiter identity and CTA contrast need correction before acceptance."
+}

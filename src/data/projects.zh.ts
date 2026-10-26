@@ -143,21 +143,21 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["大字與簡單題庫操作", "作答回饋與錯題複習", "瀏覽器本機進度", "附來源的筆記與圖卡"]
   },
   "robotfriends": {
-    tagline: "以具日期的原始來源研究資料中心建置",
-    shortDescription: "雙語研究儀表板，串聯電網需求、基礎設施專案紀錄、企業揭露及市場價格脈絡。",
-    fullDescription: "Gridline 整合 EIA 用電紀錄、已核對的專案里程碑、SEC 企業資料及描述性價格分析，並呈現來源日期與資料缺口。",
-    role: "全端／研究儀表板開發者",
-    categories: ["Web 應用", "儀表板", "資料視覺化"],
-    features: ["電網需求資料", "具日期的基礎設施里程碑", "SEC 企業揭露", "來源日期與資料品質追蹤"]
+    tagline: "具來源追溯的金融資料工程研究流程",
+    shortDescription: "以外部能源、基礎設施、企業揭露與市場資料介接，建立具確定性紀錄與透明來源脈絡的研究應用。",
+    fullDescription: "Gridline 以 Node.js 研究 API 與 SQLite/WAL 儲存層保存確定性觀測、來源追溯與上次有效資料。GitHub Pages 公開 Demo 發布靜態快照，並非公開即時後端、交易系統或投資預測工具。",
+    role: "後端／金融資料工程開發者",
+    categories: ["Web 應用", "後端", "資料工程"],
+    features: ["Node.js 資料介接 API 與確定性觀測識別", "SQLite/WAL 研究儲存、來源追溯與上次有效資料", "失敗即停止更新與排程靜態快照發布", "GitHub Actions 驗證與可選 Supabase 偏好整合"]
   },
   "epubreader": {
     name: "私人書庫問答系統",
     tagline: "私人書庫匯入與附來源引用的問答",
     shortDescription: "雙語本機優先書庫系統，支援 EPUB 與網頁來源匯入、解析內容檢視及附引用的問答。",
-    fullDescription: "Book QA Library 結合 FastAPI 匯入與檢索後端及 Next.js 介面；解析模式支援內容檢視，API 模式另提供產物生成、問答、書籍集合與匯出。",
+    fullDescription: "Book QA Library 結合 FastAPI 匯入與檢索後端及 Next.js 介面。公開解析 Demo 支援匯入及內容檢視；產物生成、附來源問答、書籍集合與匯出則需另行設定 API 後端。",
     role: "全端／AI 應用開發者",
     categories: ["Web 應用", "AI 工作流程", "文件"],
-    features: ["EPUB 與網頁匯入", "章節與文字區塊檢視", "附來源引用的問答", "產物與書籍集合匯出"]
+    features: ["EPUB 與網頁匯入", "章節與文字區塊檢視", "API 設定模式下的附來源問答", "產物與書籍集合匯出"]
   },
   "prosemasters-skill": {
     name: "世界文豪人格生成器",
@@ -225,10 +225,10 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["里程碑與勳章圖庫", "標籤篩選與日期排序", "燈箱圖片預覽", "三語與主題切換"]
   },
   "craftfocus": {
-    tagline: "將專注時間轉為種子、房間裝飾與共享手作",
+    tagline: "以資料庫支援專注、獎勵與共享手作流程",
     shortDescription: "以 Expo React Native 支援 iOS、Android 與 Web，完成專注後可獲得種子並兌換房間物件與手作收藏。",
-    fullDescription: "CraftFocus 結合專注計時、種子錢包、官方與玩家手作兌換、2.5D 房間裝飾、收藏展示及朋友拜訪，後端使用 Supabase。",
-    role: "產品／前端開發者",
+    fullDescription: "CraftFocus 結合專注計時、種子獎勵、手作兌換及社交房間，使用 Supabase Auth 與 PostgreSQL。資料列層級安全及交易式資料庫函式支援存取控制與獎勵／兌換一致性；帳號相關流程需先登入。",
+    role: "全端／產品開發者",
     categories: ["生產力工具", "社交應用", "行動應用"],
     features: ["專注計時與種子獎勵", "房間裝飾與收藏", "玩家手作上架與兌換", "朋友房間與社群互動"]
   },

@@ -96,7 +96,9 @@ Notes:
 
 ## Homepage featured projects
 
-The homepage follows the public GitHub pin order saved in `src/data/github-pins.json`. Pins map to stable project IDs so both languages show the same projects in the same order, including after repository renames. Only uniquely matched catalogue records appear. Unmatched pins (including this portfolio) and ambiguous monorepo pins are flagged for curation; no placeholders or unrelated filler cards are added. An empty pin list displays no featured cards.
+The homepage uses the explicit order in `src/data/featuredProjects.ts`: Gridline, Book QA Library and CraftFocus. A separate concise GovTech collection entry links to the twelve-case landing. The catalogue uses the same priority before its existing pin/status/name ordering. The saved `src/data/github-pins.json` and `featured` flags continue to represent actual GitHub pins and are synchronized independently. All catalogue records, search, filters and project query links remain available.
+
+Gridline retains its legacy `robotfriends` ID, slug and preview filenames to preserve query links, pin mappings and external references. Its visible copy describes the Node.js/SQLite API profile and the static public demo separately. See [v2.2 evidence and verification](./docs/portfolio-v2.2-recruiter-refinement.md).
 
 Run `npm run sync:pins` with `GITHUB_TOKEN` to query GraphQL, save public pins/matched IDs, and update existing `featured` flags. The monthly scan performs the same sync using canonical repository URLs to handle renames. API errors preserve the last successful snapshot and fail the job. Rendering needs no network request or token. The initial snapshot was verified against the public profile on 2026-10-06: six pins, five catalogue matches, with `LEO0331/portfolio` intentionally unlisted.
 

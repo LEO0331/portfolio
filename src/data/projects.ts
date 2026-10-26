@@ -351,20 +351,20 @@ export const projects: Project[] = [
     id: "robotfriends",
     slug: "robotfriends",
     name: "Gridline",
-    tagline: "Investigate data-center buildout through dated primary-source evidence",
+    tagline: "Financial data engineering with provenance-aware research pipelines",
     shortDescription:
-      "A bilingual research dashboard connecting grid demand, infrastructure project records, company disclosures, and market-price context.",
+      "A research application that combines external energy, infrastructure, disclosure and market-data adapters with deterministic records and transparent source context.",
     fullDescription:
-      "Gridline brings EIA load records, verified project milestones, SEC company facts, and descriptive price analysis into a source-first research workflow, with dates and data-health gaps visible.",
-    role: "Full Stack / Research Dashboard Developer",
+      "Gridline uses a Node.js research API and SQLite/WAL store to retain deterministic observations, provenance and last-known-good history across external sources. The public GitHub Pages demo publishes static snapshots; it is not a live public backend, trading system or investment predictor.",
+    role: "Backend / Financial Data Engineering Developer",
     teamType: "solo",
-    techStack: ["React", "JavaScript", "Node.js", "Supabase"],
-    categories: ["Web App", "Dashboard", "Data Visualization"],
+    techStack: ["React", "JavaScript", "Node.js", "SQLite", "Supabase"],
+    categories: ["Web App", "Backend", "Data Engineering"],
     features: [
-      "Grid-demand evidence",
-      "Dated infrastructure milestones",
-      "SEC company disclosures",
-      "Source dates and data-health tracking"
+      "Node.js ingestion API and deterministic observation IDs",
+      "SQLite/WAL research store with provenance and last-known-good history",
+      "Fail-closed refresh and scheduled static snapshot publication",
+      "GitHub Actions verification; optional Supabase preferences integration"
     ],
     image: "/src/assets/images/projects/robotfriends.png",
     demoUrl: "https://leo0331.github.io/Gridline/",
@@ -379,7 +379,7 @@ export const projects: Project[] = [
     tagline: "Private-library ingestion and citation-grounded answers",
     shortDescription: "A local-first bilingual library system for ingesting EPUB and web sources, inspecting parsed content, and asking questions with citations.",
     fullDescription:
-      "Book QA Library combines a FastAPI ingestion and retrieval backend with a Next.js interface. Parser mode supports content inspection; API mode adds generated artifacts, grounded Q&A, collections, and exports.",
+      "Book QA Library combines a FastAPI ingestion and retrieval backend with a Next.js interface. The public parser demo supports ingestion and content inspection. Configured API mode adds generated artifacts, grounded Q&A, collections and exports; those capabilities require a separately configured backend.",
     role: "Full Stack / AI App Developer",
     teamType: "solo",
     techStack: ["Next.js", "TypeScript", "Python", "FastAPI", "Chroma"],
@@ -387,7 +387,7 @@ export const projects: Project[] = [
     features: [
       "EPUB and web ingestion",
       "Section and chunk inspection",
-      "Citation-grounded Q&A",
+      "Citation-grounded Q&A in configured API mode",
       "Artifact and collection exports"
     ],
     image: "/src/assets/images/projects/epubreader.png",
@@ -574,14 +574,14 @@ export const projects: Project[] = [
     id: "craftfocus",
     slug: "craftfocus",
     name: "CraftFocus",
-    tagline: "Focus sessions become seeds, room decorations, and shared crafts",
+    tagline: "Database-backed focus sessions, rewards and shared crafts",
     shortDescription:
       "An Expo React Native app for iOS, Android, and Web that rewards focus sessions with seeds for room items and handmade collectibles.",
     fullDescription:
-      "CraftFocus combines protected focus timers, a seed wallet, official and custom craft claims, 2.5D room decoration, collectible galleries, and social visits backed by Supabase.",
-    role: "Product / Frontend Developer",
+      "CraftFocus combines focus timers, seed rewards, craft claims and social rooms with Supabase Auth and PostgreSQL. Row-level security and transactional database functions support access control and reward/claim consistency. Account-based workflows require sign-in.",
+    role: "Full Stack / Product Developer",
     teamType: "solo",
-    techStack: ["React Native", "Expo", "TypeScript", "Supabase"],
+    techStack: ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL"],
     categories: ["Productivity", "Social App", "Mobile App"],
     features: [
       "Focus timers and seed rewards",

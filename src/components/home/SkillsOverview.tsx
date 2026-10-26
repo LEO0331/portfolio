@@ -1,10 +1,11 @@
 import { skillGroups } from "../../data/skills";
+import { Link } from "react-router-dom";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { Section } from "../layout/Section";
 
 export function SkillsOverview(): JSX.Element {
-  const { locale } = useLocale();
+  const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
 
   return (
@@ -19,14 +20,17 @@ export function SkillsOverview(): JSX.Element {
         <div className="mt-6 grid grid-cols-1 gap-3.5 sm:mt-7 sm:gap-4 md:grid-cols-2">
           {skillGroups.map((group) => (
             <article key={group.title} className="panel-soft p-4">
-              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{group.title}</h3>
+              <h3 className="text-base font-semibold text-slate-900 sm:text-lg">{locale === "zh" ? group.titleZh : group.title}</h3>
               <ul className="mt-2.5 flex flex-wrap gap-2">
-                {group.items.map((item) => (
+                {(locale === "zh" ? group.itemsZh : group.items).map((item) => (
                   <li key={`${group.title}-${item}`} className="rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs text-slate-700 sm:text-sm">
                     {item}
                   </li>
                 ))}
               </ul>
+              <Link className="mt-3 inline-block text-sm font-semibold text-brand-700 underline underline-offset-4 dark:text-slate-200" to={toLocalePath(group.evidence.path)}>
+                {locale === "zh" ? group.evidence.labelZh : group.evidence.label}
+              </Link>
             </article>
           ))}
         </div>

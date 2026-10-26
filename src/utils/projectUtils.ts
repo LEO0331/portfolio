@@ -1,4 +1,5 @@
 import type { Project, ProjectStatus } from "../types/project";
+import { featuredProjectIds } from "../data/featuredProjects";
 
 export interface ProjectFilterState {
   searchTerm: string;
@@ -41,7 +42,7 @@ const categoryFilterGroups = [
     value: "data-analytics",
     label: "Data & analytics",
     labelZh: "資料與分析",
-    keywords: ["data visualization", "data ui", "data science", "bioinformatics", "healthcare", "health", "maps", "map", "civic tech", "資料視覺化", "資料介面", "資料科學", "生物資訊", "醫療應用", "健康", "地圖", "公民科技"]
+    keywords: ["data visualization", "data engineering", "data ui", "data science", "bioinformatics", "healthcare", "health", "maps", "map", "civic tech", "資料工程", "資料視覺化", "資料介面", "資料科學", "生物資訊", "醫療應用", "健康", "地圖", "公民科技"]
   },
   {
     value: "developer-workflow",
@@ -80,7 +81,7 @@ const technologyFilterGroups = [
     value: "backend-data",
     label: "Backend & data",
     labelZh: "後端與資料",
-    keywords: ["node.js", "sqlite", "python", "data visualization", "parser tooling", "sanger sequencing"]
+    keywords: ["node.js", "sqlite", "postgresql", "fastapi", "supabase", "python", "data visualization", "parser tooling", "sanger sequencing"]
   },
   {
     value: "content-cms",
@@ -123,6 +124,12 @@ function projectMatchesTechnologyFilter(project: Project, filterValue: string): 
 
 export function sortProjects(projectList: Project[]): Project[] {
   return [...projectList].sort((a, b) => {
+    const rank = (id: string) => {
+      const index = featuredProjectIds.findIndex((candidate) => candidate === id);
+      return index < 0 ? featuredProjectIds.length : index;
+    };
+    const curatedDiff = rank(a.id) - rank(b.id);
+    if (curatedDiff !== 0) return curatedDiff;
     if (a.featured !== b.featured) {
       return Number(b.featured) - Number(a.featured);
     }
@@ -165,6 +172,8 @@ export function filterProjects(projectList: Project[], filters: ProjectFilterSta
       project.name,
       project.tagline,
       project.shortDescription,
+      project.role,
+      ...project.features,
       ...project.categories,
       ...project.techStack
     ]
