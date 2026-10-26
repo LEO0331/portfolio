@@ -2,23 +2,25 @@
 
 ## Current State
 
-**Last updated:** 2026-10-25
+**Last updated:** 2026-10-26
 
-**Active work:** GovTech v2.0 Case 011, branch codex/govtech-food-hygiene-case-011; Portfolio base74a979721a640e87e3d49ce866f435c525120a0a.
+**Active work:** Portfolio v2.2 recruiter refinement, branch `codex/portfolio-v2-2-recruiter-refinement`, from merged v2.1 base `b822e95305336a43c2b8563d373a82b4e65d98bd`.
 
-**Status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge.
+**Status:** Delivered [Draft PR 37](https://github.com/LEO0331/portfolio/pull/37); user handles hosted checks, readiness and merge.
 
 ### Completed
 
-- Eleven bilingual cases; Food01120sections/14tables with official-source custody, actual T1/T2/T3 review, neutral examples and explicit unavailable establishment/current-risk gates. Existing Friendly Food project and domain/routes/metadata integrated.
-- Source PR 4 merged ebed7962;30pinned blobs,8original bodies,3retained JSON, exact17,021,022-byte snapshot, unchanged builder, six scenarios/sensitivities and export guards independently verified. No source-project edits or raw business-bearing evidence committed.
-- All20priorlocalizedrecords have complete-hash preservation; original18inverse fixture and older goldens unchanged. Bin001 extracted verbatim, direct per-case loading retains existing rendering and registry APIs. Public workflow findings0/22records.
+- Confirmed Case 012 merged in PR 36; all twelve English and twelve Traditional Chinese records preserved. Recovered its missing feature-ledger completion entry from committed evidence.
+- Backend-focused Hero, distinct professional summary/About, bilingual skills and source-backed Gridline/API/static-demo copy implemented.
+- Curated Gridline, Book QA Library and CraftFocus independently of GitHub pins; retained a compact GovTech collection entry, the complete catalogue, stable query links, search and filters.
+- Preserved `robotfriends` ID/slug/images for compatibility. Removed unsupported visible Express/MySQL claims. Reused existing UI components and dependencies; corrected dark-mode identity/action contrast.
 
 ### Verification Evidence
 
-- Clean final init.sh: audit0,29unit,209Chromium,17/17tracked flows100%,TypeScript/build32routes+404,diff. Final0flaky/skipped/unexpected.
--280layout combinations;25root+25Pages route outcomes; locales/themes/keyboard/tables/no payloads passed. Default Pages build restored. Bridge desktop screenshot byte-identical.
-- JS representative Bridge first view288,461→135,776bytes (-52.9%); Food English134,689bytes, no upstream17MBsnapshot. Entry/list metadata increases disclosed. Full evidence: docs/govtech-v2.0-verification.md.
+- Baseline: audit 0, 29 unit tests, 219 Chromium tests and 34 routes passed before implementation.
+- Final clean install/audit 0, unit 29/29, TypeScript/build 34 routes, full E2E 230/230 with zero skipped/flaky/unexpected, functional coverage 17/17 (100%).
+- Full-file preservation hashes protect all 24 canonical case data files; old historical fixtures and public-presentation tests pass. Read-only claim audit and targeted follow-up review found no remaining actionable defects.
+- Source/selection rationale and final browser/resource evidence: `docs/portfolio-v2.2-recruiter-refinement.md` and `docs/evidence/portfolio-v2.2/`.
 
 ### Blockers
 
@@ -26,11 +28,11 @@ None for implementation. Draft delivered.
 
 ### Remaining Risks
 
-Historical failed-only records lack an inspection denominator and current safety/attribution evidence. ModeB0 validated/35unvalidated pairs; ModeC unavailable. Historical JSON does not recover original CSV custody. Full source suite/fresh government acquisition not rerun; local browser/style checks are not production latency or screen-reader certification.
+Hosted deployment/Lighthouse and external account/backend availability are not established by local portfolio checks. Legacy Gridline identifiers remain intentionally stable. Existing GovTech source limits remain unchanged.
 
 ### Next Session Should
 
-Review draft/evidence; user handles hosted E2E/Lighthouse, readiness and merge. Preserve prior cases and source/reputation boundaries. No OMX or automatic merge.
+User reviews Draft PR 37 and its evidence, handles hosted E2E/Lighthouse, marks ready and merges manually. Preserve prior cases, pin metadata and legacy deep links.
 
 ## Update Contract
 
@@ -42,6 +44,16 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-10-26 — Portfolio v2.2 recruiter refinement
+
+- Started from merged Case 012 base `b822e95305336a43c2b8563d373a82b4e65d98bd`; baseline clean install, audit 0, 29 unit tests, 219 browser tests and 34 routes passed.
+- Refined bilingual Hero, profile, summary, About, CTA, skills and SEO around backend APIs, data integration and verifiable delivery. Source-reviewed Gridline, Book QA Library and CraftFocus; retained legacy Gridline identifiers and assets. Removed unsupported Express/MySQL claims.
+- Added explicit flagship order independent of GitHub pins, direct detail links and relevant catalogue ordering/search/filter mappings. Retained all 38 projects and 24 complete bilingual GovTech case data files. No new dependencies or runtime API calls.
+- Reused existing components and palette; corrected dark-theme role, button and external-action contrast. Existing language, metadata, historical-preservation and public PR-free checks pass.
+- Final evidence: clean install/audit 0, 29 unit, build 34 routes, 230/230 Chromium tests with 0 skipped/flaky/unexpected, 17/17 tracked flows, 160 Pages layouts, 32 root core surfaces and 27 root direct-route outcomes. Default Pages build restored; diff check passed.
+- Home encoded JS 101,854 → 103,027 bytes (+1.15%); catalogue 119,013 → 120,277 (+1.06%). Screenshots, source claim mapping and limitations are in `docs/portfolio-v2.2-recruiter-refinement.md`.
+- Delivered [Draft PR 37](https://github.com/LEO0331/portfolio/pull/37). Hosted E2E/Lighthouse, readiness and merge remain with the user. The GitHub integration lacked create-PR permission; the existing Git credential created exactly one draft. No automatic merge.
 
 ### 2026-08-27 — Whole-project anti-slop cleanup
 

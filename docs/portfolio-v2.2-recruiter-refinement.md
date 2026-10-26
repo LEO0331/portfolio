@@ -110,3 +110,5 @@ Reproduce after `npm run build` with `node tools/verify-recruiter-presentation.m
 The simplification replaces pin-driven homepage selection and generic marketing text with one explicit presentation configuration and specific engineering evidence; the existing project renderer, catalogue and route architecture remain in use.
 
 Remaining limits: local Chromium QA does not establish hosted deployment, Lighthouse results, external demo account availability or a live public API. Gridline's legacy identity/assets remain intentionally stable. No third-party project test suite or production workload was rerun in this presentation release. The user handles hosted checks, readiness and merge after the Draft PR is delivered.
+
+Delivery: [Draft PR 37 — Refine Portfolio v2.2 for Backend Engineering Recruiters](https://github.com/LEO0331/portfolio/pull/37), branch `codex/portfolio-v2-2-recruiter-refinement` → `main`. No automatic merge.

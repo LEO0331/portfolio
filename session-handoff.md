@@ -1,14 +1,14 @@
 # Session Handoff
 
-Updated2026-10-25. Branch codex/govtech-food-hygiene-case-011, base74a979721a640e87e3d49ce866f435c525120a0a.
+Updated 2026-10-26. Branch `codex/portfolio-v2-2-recruiter-refinement`, base `b822e95305336a43c2b8563d373a82b4e65d98bd` (merged Case 012 / v2.1).
 
-**Current objective:** Eleven bilingual source-grounded GovTech cases, adding Food Hygiene Case 011.
+**Current objective:** Recruiter-facing backend positioning, curated flagship work and verified bilingual claims while preserving all twelve GovTech cases.
 
-**Current status:** Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge.
+**Current status:** Delivered [Draft PR 37](https://github.com/LEO0331/portfolio/pull/37); user handles hosted checks, readiness and merge.
 
-Completed:20sections/14tables per locale; exact source/builder/scenario/export verification; actual methodselectReviewRecords; no validated ModeBlinks/current safety claims. One existing project/domain relation and32 static routes+404. All20priorlocalizedrecords and old fixtures preserved; direct per-case lazy loading reuses original renderer. No dependencies or source-project data changed.
+Completed: bilingual Hero/summary/About/skills/CTA/footer, curated Gridline → Book QA Library → CraftFocus order plus compact GovTech collection entry, source-backed project descriptions and dark-mode contrast. Gridline retains `robotfriends` identity/assets and original URLs. All projects and pin metadata remain; no dependencies added.
 
-Verification: audit0,29unit,209Chromium,17/17flows100%,280layouts,50root/Pages route outcomes and keyboard/long-table checks. Representative Bridge screenshot identical; JS288461→135776bytes. Default production Pages build restored. No public PR/workflow findings in22records.
+Verification: clean install, zero audit findings, 29 unit tests, build 34 routes, 230 Chromium tests, 17/17 flows (100%). All 24 full case data files match merged v2.1 hashes; historical and public-presentation checks pass. Bilingual filter/legacy-query/static-metadata/keyboard tests pass. A Windows module lock during the first reinstall was resolved by ending the preview before the successful rerun.
 
 ## Blockers
 
@@ -16,15 +16,15 @@ None for implementation. Draft delivered; user owns hosted checks and merge.
 
 ## Files Relevant to the Next Update
 
-- docs/govtech-v2.0-verification.md
-- docs/govtech-food-hygiene-source-audit.md
-- docs/govtech-case-study-011.zh-TW.md
-- docs/evidence/govtech-v2.0/
-- src/data/govtechFoodHygieneInspection.ts and its Chinese counterpart
-- src/utils/govtechCaseLoader.ts and original CaseContent renderer
-- tests/e2e/govtech-food-hygiene-inspection.spec.ts
-- tests/fixtures/govtech-prior-ten-baseline.json and govtech-food-hygiene-source.json
+- docs/portfolio-v2.2-recruiter-refinement.md
+- docs/evidence/portfolio-v2.2/
+- src/data/featuredProjects.ts and the unchanged github-pins.json
+- src/data/profile.ts, profile.zh.ts, skills.ts, projects.ts and projects.zh.ts
+- src/components/home/, src/components/projects/, src/utils/projectUtils.ts
+- tests/e2e/recruiter-presentation.spec.ts
+- tests/fixtures/govtech-v2.1-source-hashes.json
+- tools/verify-recruiter-presentation.mjs
 
 ## Recommended Next Step
 
-User reviews draft and evidence, accepts hosted checks, marks ready and merges manually. Preserve source editions, mixed statistical units, logical-versus-file hashes, unavailable ModeB/C evidence and neutral examples. Historical transformedJSON lacks originalCSV custody; source full suite/fresh acquisition and production latency were not independently rerun. No hosted-check wait, no automatic merge, no OMX.
+User reviews Draft PR 37 and hosted checks, marks ready and merges manually. Evidence includes 160 Pages layouts, 32 root surface checks, 27 root direct-route outcomes and before/after resource sizes. Home JS increased 1.15%; catalogue 1.06%. Preserve source findings, legacy Gridline query URLs and independent GitHub pin synchronization. No Case 013, Policy 14, automatic merge or source-project dependency changes. Public demos have separate API/account requirements; local portfolio QA does not establish hosted performance or production availability.
