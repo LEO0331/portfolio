@@ -1,0 +1,131 @@
+{
+  "sourceSha": "4e532d697eafb274530d0a1e524f027903a4c4d1",
+  "sourceFiles": [
+    {
+      "path": "docs/fire-rescue-access-policy-source-audit.md",
+      "bytes": 6327,
+      "sha256": "de2bfc1399d8af4069dc590789354aa87de4d261fdad881e7b123d3fd6a7b9cc"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-identity-contract.md",
+      "bytes": 4972,
+      "sha256": "931d82120a51fb052376bf0c60ab3f799e560285f5b4cc4fa0586e1bc07b4f13"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-classification-and-width.md",
+      "bytes": 3492,
+      "sha256": "2b91492650e74a945f69dd05f239cc8b2f528742d5c89f652c2c289b1549d684"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-geographic-evidence.md",
+      "bytes": 2315,
+      "sha256": "751d55ca852a21d14445c741ff5f6541b945ed879f356fb5828b5f0f82a88280"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-methodology.md",
+      "bytes": 7216,
+      "sha256": "60fe1367fcbd10b22961b544491ab890fefc586414c46727ee1109da3ebfaf49"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-results.json",
+      "bytes": 2334984,
+      "sha256": "7a252b3c3e0bd506aa9d8436ed7432c98ae2f4eed573f22348fe9ca6cf471db4"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-performance.json",
+      "bytes": 2660,
+      "sha256": "b40ce72d0959c5b14c93798bf726bb2db37bd9d53ae877180fb52fa5618bc3a1"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-decision-mvp.zh-TW.md",
+      "bytes": 7011,
+      "sha256": "10694f8f44f845a58f11bea55d26cf3af4a766a50373174f46a4329136879023"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/sources.json",
+      "bytes": 5336,
+      "sha256": "5d79c4ac43da796894b0bc1953aadcf91ddd9e3140e4103f042b0faba58a7a80"
+    },
+    {
+      "path": "public/data/fire-rescue-access-policy/current.json",
+      "bytes": 354,
+      "sha256": "69be5f58ce50303690029effa8877f3f32e34ac91077714bc04ea3fd976472ac"
+    },
+    {
+      "path": "src/lib/fireRescueAccessIdentity.ts",
+      "bytes": 7197,
+      "sha256": "9d391632560c9f533533fc336c3773c641d2e2f761a414f106f2dd8e3d4df864"
+    },
+    {
+      "path": "src/lib/fireRescueAccessScenarios.ts",
+      "bytes": 13494,
+      "sha256": "acf1c69b52d144ab770042a0b7b355eea805464f61006d95c9ebdd594bdc5482"
+    },
+    {
+      "path": "src/FireRescueAccessPolicyDashboard.tsx",
+      "bytes": 32422,
+      "sha256": "c5ec11c600d86b90ce040738691f36987ea4868ba18cf2cce86234e854761c24"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-desktop.png",
+      "bytes": 108740,
+      "sha256": "560bc00250556930689543cfb3163092bf3c23ec323d8ce42e10809a169ed62a"
+    },
+    {
+      "path": "docs/fire-rescue-access-policy-mobile.png",
+      "bytes": 41507,
+      "sha256": "ec149751f303550824343242336ed388e74d96aa67942be50db89f9b769a9ac3"
+    }
+  ],
+  "reconciliationReplayed": true,
+  "snapshot": {
+    "schemaVersion": 1,
+    "snapshotId": "fire-rescue-access-policy-v1-a5354b561746336ecd171478dbd2c429c948055780cdda25c1a6c709c6e86524",
+    "filename": "fire-rescue-access-policy-v1-a5354b561746336ecd171478dbd2c429c948055780cdda25c1a6c709c6e86524.json",
+    "sha256": "704b4c9f72a3746b4216aa96a283794c16fc40ae1013a99d9016d96948f6844d",
+    "bytes": 3353150,
+    "path": "public/data/fire-rescue-access-policy/fire-rescue-access-policy-v1-a5354b561746336ecd171478dbd2c429c948055780cdda25c1a6c709c6e86524.json"
+  },
+  "originalObjects": [
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/A.csv",
+      "bytes": 20055,
+      "sha256": "873c138fbc367b3123412785c2d1492fa7f4b2d1f73b4788f40587ce77145797"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/A-catalogue.html",
+      "bytes": 83634,
+      "sha256": "bd3bd765a57bac66f5072d553353f85881716f9f55a2b7fcbd1668d43522659c"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/B.csv",
+      "bytes": 13191,
+      "sha256": "d1882db87b8d0bc3e27f3bb74ec7c604446becc80d2f0f3e1e90d817e4eccb00"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/B-catalogue.html",
+      "bytes": 83439,
+      "sha256": "d24d645009a8c3e4401b85a2a0fca81cf929ccdf2dbcab771ac28cf99c95504f"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/C.csv",
+      "bytes": 27013,
+      "sha256": "a8ff6929d2f53438e50a94b7d0abbdc983f0300ef54b6e87b82596c349287049"
+    },
+    {
+      "path": "data/raw/fire-rescue-access-policy/pending/2026-10-25-01-20-08-515-/C-catalogue.html",
+      "bytes": 83621,
+      "sha256": "78f410b9cd10ffbd7212787c71b51b6b1fa3e9cda691d95b7dc463114315c8c2"
+    }
+  ],
+  "scenarioCount": 12,
+  "sensitivityCount": 12,
+  "modeCUnavailable": true,
+  "sourceEngineReplayed": true,
+  "exportChecks": {
+    "exactHash": true,
+    "emptyCsvKeepsProvenance": true,
+    "formulaNeutralization": true
+  },
+  "scope": "Retained offline evidence and exact source engine replay; no fresh official acquisition or operational validation."
+}

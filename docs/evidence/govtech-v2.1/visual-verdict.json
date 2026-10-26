@@ -1,0 +1,16 @@
+{
+  "scope": "GovTech Case 012 portfolio routes",
+  "reviewedAt": "2026-10-26",
+  "screenshots": [
+    "qa-govtech-fire-rescue-access-en-1440-light.png",
+    "qa-govtech-fire-rescue-access-zh-390-dark.png"
+  ],
+  "score": 92,
+  "result": "pass",
+  "findings": [
+    "The desktop route maintains the existing portfolio hierarchy, readable case summary and clearly separated evidence sections.",
+    "The Traditional Chinese mobile route keeps navigation, title, summary and evidence card legible without clipping or horizontal viewport overflow.",
+    "Dense evidence tables remain intentionally contained in the shared responsive table treatment."
+  ],
+  "knownLimit": "This is a local visual review, not a production Lighthouse or assistive-technology certification."
+}
