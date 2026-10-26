@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import type { Project } from "../../types/project";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { Badge } from "../common/Badge";
-import { Button } from "../common/Button";
+import { Button, getButtonClassName } from "../common/Button";
 import { Tag } from "../common/Tag";
 import { resolveProjectImageSources } from "../../utils/projectImage";
 import { toSafeExternalHref } from "../../utils/urlSafety";
@@ -29,7 +30,7 @@ function statusLabel(status: Project["status"], live: string, inProgress: string
 }
 
 export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.Element {
-  const { locale } = useLocale();
+  const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
   const [imageFailed, setImageFailed] = useState(false);
   const { primary: primaryImage, fallback: fallbackImage } = resolveProjectImageSources(project.image);
@@ -126,7 +127,11 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
             >
               {text.projects.viewDetails}
             </Button>
-          ) : null}
+          ) : (
+            <Link to={`${toLocalePath("/projects")}?project=${project.slug}`} className={getButtonClassName("ghost", "sm")}>
+              {text.projects.viewDetails}
+            </Link>
+          )}
         </div>
       </div>
     </article>

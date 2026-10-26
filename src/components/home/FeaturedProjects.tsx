@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { projects } from "../../data/projects";
-import githubPins from "../../data/github-pins.json";
+import { featuredProjectIds } from "../../data/featuredProjects";
 import { copy } from "../../i18n/copy";
 import { useLocale } from "../../i18n/LocaleContext";
 import { getLocalizedProjects } from "../../utils/projectLocalization";
@@ -13,7 +13,7 @@ export function FeaturedProjects(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
   const localizedProjects = getLocalizedProjects(projects, locale);
-  const featuredProjects = getFeaturedProjects(localizedProjects, 3, 6, githubPins.projectIds);
+  const featuredProjects = getFeaturedProjects(localizedProjects, 3, 3, [...featuredProjectIds]);
 
   return (
     <Section>
@@ -27,7 +27,7 @@ export function FeaturedProjects(): JSX.Element {
         </div>
         <Link
           to={toLocalePath("/projects")}
-          aria-label="View all projects"
+          aria-label={text.home.viewAllProjects}
           className={getButtonClassName("secondary")}
         >
           {text.home.viewAllProjects}

@@ -76,7 +76,7 @@ function buildGlobalJsonLd(): JsonLdNode[] {
       "@context": "https://schema.org",
       "@type": "Person",
       name: "Leo Chen",
-      jobTitle: "Full Stack Engineer",
+      jobTitle: "Backend-Focused Full Stack Engineer",
       url: siteUrl,
       sameAs: [
         "https://leolicheng.wordpress.com/",

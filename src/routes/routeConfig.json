@@ -1,7 +1,7 @@
 {
   "routes": [
-    {"key": "home", "path": "/", "indexable": true, "changefreq": "weekly", "priority": 1.0},
-    {"key": "projects", "path": "/projects", "indexable": true, "changefreq": "weekly", "priority": 0.9},
+    {"key": "home", "path": "/", "indexable": true, "changefreq": "weekly", "priority": 1.0, "title": "Backend-Focused Full Stack Engineer Portfolio | Leo Chen", "description": "Leo Chen's backend-focused engineering portfolio: APIs, data integrations, reliable data processing and inspectable project implementations."},
+    {"key": "projects", "path": "/projects", "indexable": true, "changefreq": "weekly", "priority": 0.9, "title": "Projects | Full Stack Portfolio | Leo Chen", "description": "Filterable full stack portfolio projects including role, technology stack, live demos, and GitHub source repositories."},
     {"key": "govtech", "path": "/govtech", "indexable": true, "changefreq": "monthly", "priority": 0.9, "title": "GovTech & Civic Decision Systems | Leo Chen", "description": "Exploring how public data becomes explainable, traceable, and reproducible decision-support tools for urban governance."},
     {"key": "govtech-bin-policy", "path": "/govtech/bin-policy", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Public Bin Allocation Decision Support | Leo Chen", "description": "A completed independent decision-support proof of concept: spatial bin allocation, governed public-data snapshots, policy weights, and explainable scenarios."},
     {"key": "govtech-civic-1999", "path": "/govtech/civic-1999", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Taipei 1999 Citizen Service Decision Support | Leo Chen", "description": "From historical service requests to explainable municipal investigation priorities."},
@@ -15,10 +15,10 @@
     {"key": "govtech-senior-community-care", "path": "/govtech/senior-community-care", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Senior Community Care Coverage & Service Readiness | Leo Chen", "description": "Evidence-aware senior community-care source reconciliation, official village follow-up scenarios and privacy-preserving public-data engineering."},
     {"key": "govtech-food-hygiene-inspection", "path": "/govtech/food-hygiene-inspection", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Food Hygiene & Inspection Evidence Review | Leo Chen", "description": "Reproducible public-data engineering for historical food inspection evidence, source reconciliation and transparent administrative review."},
     {"key": "govtech-fire-rescue-access", "path": "/govtech/fire-rescue-access", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Fire Rescue Access & Narrow Alley Evidence Readiness | Leo Chen", "description": "Source-grounded fire-access and narrow-alley documentary review, conservative identity reconciliation and reproducible administrative scenarios."},
-    {"key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7},
-    {"key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7},
-    {"key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9},
-    {"key": "projects-zh", "path": "/zh/projects", "indexable": true, "changefreq": "weekly", "priority": 0.8},
+    {"key": "about", "path": "/about", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "About | Full Stack Engineer | Leo Chen", "description": "Leo Chen's approach to backend APIs, source validation, maintainable applications and verifiable software delivery."},
+    {"key": "contact", "path": "/contact", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "Contact | Full Stack Engineer | Leo Chen", "description": "Contact Leo Chen via personal website, GitHub, and LinkedIn."},
+    {"key": "home-zh", "path": "/zh", "indexable": true, "changefreq": "weekly", "priority": 0.9, "title": "後端導向全端工程師作品集 | Leo Chen", "description": "Leo Chen 後端導向工程作品集，展示 API、資料整合、可靠資料處理與可檢視的專案實作。"},
+    {"key": "projects-zh", "path": "/zh/projects", "indexable": true, "changefreq": "weekly", "priority": 0.8, "title": "專案作品 | 全端作品集 | Leo Chen", "description": "可篩選的全端專案列表，包含角色、技術堆疊、線上 Demo 與 GitHub 原始碼。"},
     {"key": "govtech-zh", "path": "/zh/govtech", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "市政資料治理與決策支援系統 | Leo Chen", "description": "探索如何將政府開放資料轉化為可解釋、可追溯、可重現的市政治理決策支援工具。"},
     {"key": "govtech-bin-policy-zh", "path": "/zh/govtech/bin-policy", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市清潔箱配置決策支援 | Leo Chen", "description": "已完成的個人決策支援概念驗證：整合清潔箱空間配置、資料治理、政策權重與可解釋情境分析，供討論及現地評估。"},
     {"key": "govtech-civic-1999-zh", "path": "/zh/govtech/civic-1999", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市 1999 民生通報與環境治理決策支援 | Leo Chen", "description": "從歷史派工資料，建立可解釋、可比較的市政調查優先順序。"},
@@ -32,8 +32,8 @@
     {"key": "govtech-senior-community-care-zh", "path": "/zh/govtech/senior-community-care", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援 | Leo Chen", "description": "以官方社區照顧據點名冊、尚未布建里別與跨版本對帳，建立可追溯的行政查核情境與隱私保護證據。"},
     {"key": "govtech-food-hygiene-inspection-zh", "path": "/zh/govtech/food-hygiene-inspection", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市食品衛生與抽驗紀錄證據查核決策支援 | Leo Chen", "description": "整合官方食品衛生評核、歷史抽驗與業者登記資料，呈現來源追溯、保守身分對帳及可重現行政證據查核。"},
     {"key": "govtech-fire-rescue-access-zh", "path": "/zh/govtech/fire-rescue-access", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市消防通道與狹小巷道救災整備證據查核 | Leo Chen", "description": "以官方消防通道、狹小巷道及搶救困難場所清冊，呈現保守身分對帳、來源追溯與可重現行政查核。"},
-    {"key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6},
-    {"key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6},
+    {"key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6, "title": "關於我 | 全端工程師 | Leo Chen", "description": "Leo Chen 對後端 API、來源驗證、可維護應用與可驗證軟體交付的實作方式。"},
+    {"key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6, "title": "聯絡方式 | 全端工程師 | Leo Chen", "description": "透過個人網站、GitHub 與 LinkedIn 聯絡 Leo Chen。"},
     {"key": "not-found", "path": "/404", "indexable": false}
   ]
 }
