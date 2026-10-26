@@ -223,3 +223,7 @@ GovTech 列表與專案連結使用輕量雙語摘要；詳細頁保留完整研
 第 011 案保存官方餐飲資料回應位元組，區分檢體、衛生評核與業者登記，並重現 22,645 筆文件查核候選。673 筆歷史不合格抽驗公告列對應 672 個文件鍵；35 筆名稱／地址候選仍未驗證。僅有不合格公告不能建立全部抽驗分母，也不能判定目前業者安全。
 
 十一個雙語案例沿用四欄摘要與可展開技術證據。詳細頁改為直接載入所選案例，避免首次進入時下載其他研究內容；資料工具仍可使用同步完整目錄。原十案以完整紀錄雜湊及歷史測試資料保護。詳見[中文案例](./docs/govtech-case-study-011.zh-TW.md)、[來源稽核](./docs/govtech-food-hygiene-source-audit.md)及[v2.0 驗證](./docs/govtech-v2.0-verification.md)。`node tools/verify-food-hygiene-evidence.mjs --refresh`（Node 24 以上）下載固定來源版本至忽略快取，核對原始離線建置器、情境函式及精簡驗證資料；不代表重新向政府取得資料或進行食品安全評估。
+
+## GovTech v2.1
+
+GovTech Showcase v2.1新增第十二個雙語案例「臺北市消防通道與狹小巷道救災整備證據查核」。三份官方版本共869筆文件紀錄，層級477／392／0，僅一筆接受關聯；目前淨空與實際救災整備仍不可判定。保留既有探索功能與前十一案。參見[案例012](./docs/govtech-case-study-012.zh-TW.md)、[來源稽核](./docs/govtech-fire-rescue-access-source-audit.md)及[驗證紀錄](./docs/govtech-v2.1-verification.md)。
