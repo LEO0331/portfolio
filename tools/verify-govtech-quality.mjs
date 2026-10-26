@@ -28,7 +28,7 @@ try{
   const p=await context.newPage();await p.route('https://fonts.googleapis.com/**',r=>r.abort());
   p.on('pageerror',e=>errors.push({width,locale,theme,message:e.message}));
   p.on('console',m=>{if(m.type()==='error'&&!m.location().url.includes('fonts.googleapis.com'))errors.push({width,locale,theme,scope:'console',message:m.text()});});
-  p.on('request',r=>{if(/data\.taipei|dosw\.gov|laws\.gov|www-ws\.gov|raw\.githubusercontent|api\.github|\/policy\/senior-care-policy|\/data\/policy-11|\/data\/(?:wifi|bridge|bus|neihu|shade)/.test(r.url()))upstreamRequests.push(r.url());});
+  p.on('request',r=>{if(/data\.taipei|dosw\.gov|laws\.gov|www-ws\.gov|raw\.githubusercontent|api\.github|\/policy\/senior-care-policy|\/data\/fire-rescue-access-policy|\/data\/policy-11|\/data\/(?:wifi|bridge|bus|neihu|shade)/.test(r.url()))upstreamRequests.push(r.url());});
   for(const path of paths){
    await p.goto(origin+base+(locale==='zh'?'zh/':'')+path,{waitUntil:'networkidle'});await p.locator('h1').waitFor();
    const result=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,dark:document.documentElement.classList.contains('dark'),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i),cards:document.querySelectorAll('#govtech-cases').length?document.querySelector('#govtech-cases').closest('section').querySelectorAll('article').length:0,missingTableCaptions:[...document.querySelectorAll('table')].filter(t=>!t.querySelector('caption')).length}));

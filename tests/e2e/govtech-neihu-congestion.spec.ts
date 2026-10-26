@@ -134,7 +134,7 @@ test.describe("Neihu006 bilingual traffic evidence readiness", () => {
       const study = records[locale].find(({ id }) => id === "neihu-congestion")!;
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(11);
+      await expect(completed.locator("article")).toHaveCount(12);
       const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
       await expect(card).toContainText("006");
       const link = card.locator(`a[href="/portfolio/${prefix}govtech/neihu-congestion"]`);

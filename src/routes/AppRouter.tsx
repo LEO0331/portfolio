@@ -24,6 +24,7 @@ const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   "govtech-urban-renewal": <GovTechCaseStudyPage slug="urban-renewal" />,
   "govtech-shade-equity": <GovTechCaseStudyPage slug="shade-equity" />,
   "govtech-neihu-congestion": <GovTechCaseStudyPage slug="neihu-congestion" />,
+  "govtech-fire-rescue-access": <GovTechCaseStudyPage slug="fire-rescue-access" />,
   "govtech-food-hygiene-inspection": <GovTechCaseStudyPage slug="food-hygiene-inspection" />,
   "govtech-senior-community-care": <GovTechCaseStudyPage slug="senior-community-care" />,
   "govtech-bridge-inspection": <GovTechCaseStudyPage slug="bridge-inspection" />,

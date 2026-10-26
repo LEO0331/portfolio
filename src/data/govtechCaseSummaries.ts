@@ -178,6 +178,21 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "Deterministic T1/T2/T3 queues with actual capacity/strategy sensitivity",
         "Versioned snapshots and provenance-preserving JSON/CSV briefings"
       ]
+    },
+    {
+      "id": "fire-rescue-access",
+      "slug": "fire-rescue-access",
+      "displayNumber": "012",
+      "projectId": "taipei-safety-map",
+      "title": "Fire Rescue Access & Narrow Alley Evidence Readiness",
+      "summary": "From mixed-edition fire-service listings to reproducible administrative review, with conservative road identity and explicit operational evidence gates.",
+      "maturityLabel": "Completed documentary decision-support proof of concept; operational readiness unavailable",
+      "implementedCapabilities": [
+        "Original-byte source custody and mixed-edition reconciliation",
+        "Road, alley and place identity contracts",
+        "Explainable tiers and capacity/strategy sensitivity",
+        "Conservative association gates and provenance-bound JSON/CSV briefings"
+      ]
     }
   ],
   "zh": [
@@ -354,6 +369,21 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "確定性 T1／T2／T3 清單與實際量能／策略敏感度",
         "版本化快照與保留溯源的 JSON／CSV 摘要"
       ]
+    },
+    {
+      "id": "fire-rescue-access",
+      "slug": "fire-rescue-access",
+      "displayNumber": "012",
+      "projectId": "taipei-safety-map",
+      "title": "臺北市消防通道與狹小巷道救災整備證據查核",
+      "summary": "從混合版本消防清冊建立可重現行政查核，以保守道路身分契約及明確實際救災證據門檻約束推論。",
+      "maturityLabel": "文件決策支援概念驗證已完成，實際救災整備不可判定",
+      "implementedCapabilities": [
+        "原始位元組來源保存與混合版本對帳",
+        "道路、巷道與場所身分契約",
+        "可解釋層級與名額／策略敏感度",
+        "保守關聯門檻與來源綁定JSON／CSV摘要"
+      ]
     }
   ]
 };
@@ -425,6 +455,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "Retain source bytes, validate dates and identity evidence, then compare deterministic administrative review queues.",
       "Verified 673 historical sample publication rows and a 22,645-record documentary queue; no establishment association has independent validation.",
       "Failed-only publications lack an all-inspection denominator. Equal names or addresses do not establish the same operating site or responsibility."
+    ],
+    "fire-rescue-access": [
+      "Which fire-service publications need follow-up documentation under limited review capacity?",
+      "Retain official bytes, preserve complete identities and compare deterministic source/district review queues.",
+      "Verified 869 documentary rows, tiers 477/392/0 and one conservative A/B association; actual strategies share 2 records at capacities 5 and 10.",
+      "No validated geometry, numerical width, current clearance, operational connectivity or rescue performance."
     ]
   },
   "zh": {
@@ -493,6 +529,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "保存來源位元組，驗證日期與身分證據，再比較確定性行政查核名單。",
       "驗證 673 筆歷史抽驗公告列，建立 22,645 筆文件查核候選；尚無經獨立證據驗證的場所關聯。",
       "不合格公告缺少全部抽驗分母；名稱或地址相同不能證明同一營業場所或責任歸屬。"
+    ],
+    "fire-rescue-access": [
+      "有限查核人力下，哪些消防公告需要追查文件？",
+      "保存官方位元組與完整身分，並比較確定性來源／行政區查核清單。",
+      "驗證869筆文件紀錄、477／392／0層級與一筆保守A／B關聯；名額5與10的兩策略皆重疊2筆。",
+      "沒有已驗證幾何、數值寬度、目前淨空、實際連通或救災表現證據。"
     ]
   }
 };
@@ -692,6 +734,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
           "1": "The snapshot identifier binds its compact JSON body; the exact formatted file has a separate SHA-256. The manifest names the content-addressed file, without an atomic pointer-swap claim."
         }
       }
+    },
+    "fire-rescue-access": {
+      "paragraphs": {
+        "identity": [
+          2
+        ],
+        "governance": [
+          1
+        ]
+      },
+      "tables": [
+        8,
+        9,
+        10
+      ],
+      "summaries": {
+        "identity": {
+          "2": "Stable source-bound IDs preserve documentary occurrences; full provenance remains available."
+        },
+        "governance": {
+          "1": "Source bytes, logical payload and exact formatted file have distinct integrity identities."
+        }
+      }
     }
   },
   "zh": {
@@ -885,6 +950,29 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
         },
         "governance": {
           "1": "快照識別綁定精簡 JSON 內容；排版後的精確檔案另有 SHA-256。清單指向內容定址檔案，但本版未宣稱使用原子指標切換發布。"
+        }
+      }
+    },
+    "fire-rescue-access": {
+      "paragraphs": {
+        "identity": [
+          2
+        ],
+        "governance": [
+          1
+        ]
+      },
+      "tables": [
+        8,
+        9,
+        10
+      ],
+      "summaries": {
+        "identity": {
+          "2": "穩定來源識別保留文件出現次序，完整來源雜湊及唯一性檢查仍是重建紀錄的必要條件；技術細節另可查閱。"
+        },
+        "governance": {
+          "1": "來源位元組、邏輯內容與精確排版檔案各有不同完整性識別；取得日期和分析日期亦分開保留，不將重建時間當成來源更新。"
         }
       }
     }

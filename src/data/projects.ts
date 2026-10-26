@@ -802,14 +802,14 @@ export const projects: Project[] = [
   },
   {
     id: "taipei-safety-map",
-    govtechCaseIds: ["bridge-inspection"],
+    govtechCaseIds: ["bridge-inspection", "fire-rescue-access"],
     slug: "taipei-safety-map",
     name: "Taipei Public Safety Map",
     tagline: "Multi-dataset public safety map and resource dashboard for Taipei",
     shortDescription:
       "A bilingual map and dashboard for exploring Taipei emergency resources, infrastructure, and carefully scoped historical safety records.",
     fullDescription:
-      "Taipei Public Safety Map retains its bilingual emergency/resource, infrastructure and historical-record explorer and independent bridge inspection directory. Policy #9 adds official-source reconciliation, 216 within-edition research associations, 194 geographically eligible inspection documentation records, evidence tiers, capacity scenarios, static provenance and auditable JSON/CSV exports. It does not certify structural safety, overdue status or maintenance schedules.",
+      "Taipei Public Safety Map retains its bilingual emergency/resource, infrastructure and historical-record explorer and independent bridge inspection directory. Policy #9 adds official-source reconciliation, 216 within-edition research associations, 194 geographically eligible inspection documentation records, evidence tiers, capacity scenarios, static provenance and auditable JSON/CSV exports. It does not certify structural safety, overdue status or maintenance schedules. Fire-access and narrow-alley evidence review adds 869 documentary rows, conservative identity reconciliation and administrative capacity scenarios; current clearance and operational rescue readiness remain unavailable.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Vitest"],

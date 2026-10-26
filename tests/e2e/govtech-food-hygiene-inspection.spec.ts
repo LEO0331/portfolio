@@ -98,7 +98,7 @@ for (const locale of ["en", "zh"] as const) {
   const study = records[locale].find(record => record.id === "food-hygiene-inspection")!;
 
   test(`Food011 ${locale} registers once with actual source identity and existing explorer ownership`, () => {
-    expect(records[locale]).toHaveLength(11);
+    expect(records[locale]).toHaveLength(12);
     expect(records[locale].filter(record => record.id === "food-hygiene-inspection")).toHaveLength(1);
     expect(study).toMatchObject({ displayNumber: "011", slug: "food-hygiene-inspection", projectId: "taipei-friendly-food-map", sourceRepository: repo, sourceVersion: sourceSha, snapshotVersion: snapshotId, maturity: "decision-support-poc", methodology: { kind: "rule-based-priority", methodId: "selectReviewRecords" } });
     expect(study.sections.length).toBeGreaterThanOrEqual(16);
@@ -251,7 +251,7 @@ for (const locale of ["en", "zh"] as const) {
   test(`Food011 ${locale} supports the eleventh card, keyboard evidence, section navigation and project drawer`, async ({ page, baseURL }) => {
     await page.goto(`./${prefix}govtech`);
     const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-    await expect(completed.locator("article")).toHaveCount(11);
+    await expect(completed.locator("article")).toHaveCount(12);
     const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
     const route = new URL(`./${prefix}govtech/food-hygiene-inspection`, baseURL).pathname;
     const link = card.locator(`a[href="${route}"]`);

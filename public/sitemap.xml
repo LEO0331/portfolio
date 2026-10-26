@@ -71,6 +71,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://leo0331.github.io/portfolio/govtech/fire-rescue-access</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://leo0331.github.io/portfolio/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -147,6 +152,11 @@
   </url>
   <url>
     <loc>https://leo0331.github.io/portfolio/zh/govtech/food-hygiene-inspection</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://leo0331.github.io/portfolio/zh/govtech/fire-rescue-access</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

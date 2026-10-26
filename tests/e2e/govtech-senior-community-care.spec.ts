@@ -60,7 +60,7 @@ for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
   const study = records[locale].find(record => record.id === "senior-community-care")!;
   test(`Senior010 ${locale} registers exactly once with immutable identities and existing project ownership`, () => {
-    expect(records[locale]).toHaveLength(11);
+    expect(records[locale]).toHaveLength(12);
     expect(records[locale].filter(record => record.id === "senior-community-care")).toHaveLength(1);
     expect(study).toMatchObject({ displayNumber: "010", slug: "senior-community-care", projectId: "taipei-civic-groups-map", sourceRepository: repo, sourceVersion: sourceSha, snapshotVersion: snapshotId, maturity: "decision-support-poc", methodology: { kind: "rule-based-priority", methodId: "senior-community-care-evidence-review-v1" } });
     expect(study.sections.length).toBeGreaterThanOrEqual(18);
@@ -192,7 +192,7 @@ for (const locale of ["en", "zh"] as const) {
   test(`Senior010 ${locale} exposes evidence through keyboard and keeps the tenth card and drawer local`, async ({ page, baseURL }) => {
     await page.goto(`./${prefix}govtech`);
     const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-    await expect(completed.locator("article")).toHaveCount(11);
+    await expect(completed.locator("article")).toHaveCount(12);
     const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
     await expect(card).toContainText("010");
     const route = new URL(`./${prefix}govtech/senior-community-care`, baseURL).pathname;
