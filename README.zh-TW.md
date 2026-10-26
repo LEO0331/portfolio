@@ -109,7 +109,9 @@ node tools/capture-project-previews.mjs
 
 ## 首頁精選專案
 
-首頁依照 `src/data/github-pins.json` 儲存的公開 GitHub 置頂順序，使用穩定的專案 ID，讓中英文顯示相同專案及順序，儲存庫改名也能保留對應。只顯示已收錄且唯一對應的專案。未收錄項目（包含此作品集）及有多筆對應的 monorepo 會列入報告，不自動補入其他專案或佔位卡片；清空置頂清單時不顯示精選卡片。
+首頁以 `src/data/featuredProjects.ts` 明確設定 Gridline、Book QA Library、CraftFocus 的順序，另以精簡 GovTech 集合入口連至十二案例總覽。目錄先依相同策展順序，再沿用置頂／狀態／名稱排序。`src/data/github-pins.json` 與 `featured` 旗標仍代表實際 GitHub 置頂，獨立同步。全部專案、搜尋、篩選與專案查詢連結持續可用。
+
+Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連結、置頂對應與外部參照。可見內容分別說明 Node.js／SQLite API 模式及公開靜態 Demo。詳見 [v2.2 證據與驗證](./docs/portfolio-v2.2-recruiter-refinement.md)。
 
 設定 `GITHUB_TOKEN` 後執行 `npm run sync:pins`，透過 GraphQL 同步公開置頂儲存庫、對應 ID 與既有 `featured` 旗標。每月掃描也會執行同步，使用正式儲存庫網址處理改名。API 錯誤會保留上次成功快照並使工作失敗；頁面不需即時 API 或 token。初始快照已於 2026-10-06 核對公開個人頁面：六個置頂中有五個專案，`LEO0331/portfolio` 不列為卡片。
 

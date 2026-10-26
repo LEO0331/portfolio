@@ -1,0 +1,3066 @@
+{
+  "stage": "final",
+  "base": "/portfolio/",
+  "scope": "Local Chromium production preview; optional font stylesheet blocked consistently. No hosted performance claim.",
+  "checks": [
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCopy-Cbx06MwB.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCopy-Cbx06MwB.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCopy-Cbx06MwB.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCopy-Cbx06MwB.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    }
+  ],
+  "measurements": [
+    {
+      "path": "",
+      "locale": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    },
+    {
+      "path": "projects",
+      "locale": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ]
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "en",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ]
+    },
+    {
+      "path": "about",
+      "locale": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ]
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "en",
+      "jsBytes": 133763,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess-1CUiS--q.js"
+      ]
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "en",
+      "jsBytes": 138325,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection-CahH9azg.js"
+      ]
+    },
+    {
+      "path": "contact",
+      "locale": "en",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    },
+    {
+      "path": "projects",
+      "locale": "zh",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ]
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "locale": "zh",
+      "jsBytes": 120277,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "ProjectsPage-C3jxYhFj.js",
+        "govtechCaseLinks-D005mw7Q.js",
+        "govtechCaseSummaries-BUZctSLm.js"
+      ]
+    },
+    {
+      "path": "about",
+      "locale": "zh",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "jsBytes": 124052,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechPage-r28pfmby.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCaseLinks-D005mw7Q.js"
+      ]
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "locale": "zh",
+      "jsBytes": 134038,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechFireRescueAccess.zh-Ayf2dAcM.js"
+      ]
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "locale": "zh",
+      "jsBytes": 138369,
+      "jsFiles": [
+        "index-B-OYztrC.js",
+        "GovTechCaseStudyPage-DxU3XAoq.js",
+        "govtechCaseSummaries-BUZctSLm.js",
+        "govtechCopy-Cbx06MwB.js",
+        "govtechBridgeInspection.zh-CEexWvX_.js"
+      ]
+    },
+    {
+      "path": "contact",
+      "locale": "zh",
+      "jsBytes": 103027,
+      "jsFiles": [
+        "index-B-OYztrC.js"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "filename": "govtechBinPolicy-CoB1XcT0.js",
+      "bytes": 12765
+    },
+    {
+      "filename": "govtechBinPolicy.zh-BX2KnfRU.js",
+      "bytes": 10568
+    },
+    {
+      "filename": "govtechBridgeInspection-CahH9azg.js",
+      "bytes": 40298
+    },
+    {
+      "filename": "govtechBridgeInspection.zh-CEexWvX_.js",
+      "bytes": 35241
+    },
+    {
+      "filename": "govtechBusService-BEVcHCg-.js",
+      "bytes": 30088
+    },
+    {
+      "filename": "govtechBusService.zh-BVxIZvaE.js",
+      "bytes": 23993
+    },
+    {
+      "filename": "govtechCaseLinks-D005mw7Q.js",
+      "bytes": 379
+    },
+    {
+      "filename": "GovTechCaseStudyPage-DxU3XAoq.js",
+      "bytes": 11777
+    },
+    {
+      "filename": "govtechCaseSummaries-BUZctSLm.js",
+      "bytes": 36055
+    },
+    {
+      "filename": "govtechCivic1999-B5OrJ4Ok.js",
+      "bytes": 18088
+    },
+    {
+      "filename": "govtechCivic1999.zh-BFR4nBOE.js",
+      "bytes": 14257
+    },
+    {
+      "filename": "govtechCopy-Cbx06MwB.js",
+      "bytes": 13289
+    },
+    {
+      "filename": "govtechFireRescueAccess-1CUiS--q.js",
+      "bytes": 27683
+    },
+    {
+      "filename": "govtechFireRescueAccess.zh-Ayf2dAcM.js",
+      "bytes": 25214
+    },
+    {
+      "filename": "govtechFoodHygieneInspection-DcKcF3Al.js",
+      "bytes": 38457
+    },
+    {
+      "filename": "govtechFoodHygieneInspection.zh-DKSol3aB.js",
+      "bytes": 34009
+    },
+    {
+      "filename": "govtechHeavyRain-DSY2xONZ.js",
+      "bytes": 22399
+    },
+    {
+      "filename": "govtechHeavyRain.zh-CQ0yYQGQ.js",
+      "bytes": 17988
+    },
+    {
+      "filename": "govtechNeihuCongestion-BKWLt2Nk.js",
+      "bytes": 31281
+    },
+    {
+      "filename": "govtechNeihuCongestion.zh-8ZnWwlCJ.js",
+      "bytes": 25508
+    },
+    {
+      "filename": "GovTechPage-r28pfmby.js",
+      "bytes": 5602
+    },
+    {
+      "filename": "govtechSeniorCommunityCare-919EPJX_.js",
+      "bytes": 64518
+    },
+    {
+      "filename": "govtechSeniorCommunityCare.zh-Bf64vBFL.js",
+      "bytes": 59765
+    },
+    {
+      "filename": "govtechShadeEquity-BLkxod3C.js",
+      "bytes": 31510
+    },
+    {
+      "filename": "govtechShadeEquity.zh-otexuj3x.js",
+      "bytes": 26428
+    },
+    {
+      "filename": "govtechUrbanRenewal-BAFuBdIi.js",
+      "bytes": 24484
+    },
+    {
+      "filename": "govtechUrbanRenewal.zh--Igr5Yck.js",
+      "bytes": 19505
+    },
+    {
+      "filename": "govtechWifiAllocation-BjuTz_r4.js",
+      "bytes": 37291
+    },
+    {
+      "filename": "govtechWifiAllocation.zh-CejZKfkA.js",
+      "bytes": 33861
+    },
+    {
+      "filename": "index-B-OYztrC.js",
+      "bytes": 323896
+    },
+    {
+      "filename": "index-CCseer-W.css",
+      "bytes": 42912
+    },
+    {
+      "filename": "ProjectsPage-C3jxYhFj.js",
+      "bytes": 12853
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "pass": true
+}
