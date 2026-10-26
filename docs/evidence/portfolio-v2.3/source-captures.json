@@ -1,0 +1,48 @@
+{
+  "capturedAt": "2026-10-26T14:25:01.370Z",
+  "scope": "Live public interface at capture time, not proof of deployed source revision or API availability.",
+  "reports": [
+    {
+      "locale": "en",
+      "width": 1440,
+      "url": "https://leo0331.github.io/Gridline/",
+      "title": "Gridline Infrastructure Intelligence",
+      "headings": [
+        "Follow the buildout,from grid to market.",
+        "Is the data-center buildout showing up?",
+        "NBIS · Nebius Group",
+        "Short-term price trend: downward"
+      ],
+      "alerts": [],
+      "snapshots": [
+        {
+          "url": "https://leo0331.github.io/Gridline/data/dashboard-overview.json",
+          "status": 200,
+          "generatedAt": "2026-10-23T21:23:10.829Z",
+          "observations": 2653
+        }
+      ]
+    },
+    {
+      "locale": "zh-TW",
+      "width": 390,
+      "url": "https://leo0331.github.io/Gridline/",
+      "title": "Gridline Infrastructure Intelligence",
+      "headings": [
+        "追蹤資料中心建設，從電網到市場。",
+        "資料中心建設是否已有可觀察的進展？",
+        "NBIS · Nebius Group",
+        "短期價格趨勢向下"
+      ],
+      "alerts": [],
+      "snapshots": [
+        {
+          "url": "https://leo0331.github.io/Gridline/data/dashboard-overview.json",
+          "status": 200,
+          "generatedAt": "2026-10-23T21:23:10.829Z",
+          "observations": 2653
+        }
+      ]
+    }
+  ]
+}

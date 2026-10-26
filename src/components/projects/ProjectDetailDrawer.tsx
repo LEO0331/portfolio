@@ -220,10 +220,13 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
               <ListSection title={text.projects.challenges} items={project.challenges} itemKeyPrefix={`${project.id}-challenge`} />
               <ListSection title={text.projects.outcomes} items={project.outcomes} itemKeyPrefix={`${project.id}-outcome`} />
 
-              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl || govtechCases.length > 0 ? (
+              {safeDemoUrl || safeRepoUrl || safeCaseStudyUrl || govtechCases.length > 0 || project.engineeringCasePath ? (
                 <section className="space-y-1.5 border-t border-slate-200 pt-4">
                   <h3 className="text-sm font-semibold text-slate-900">{text.projects.links}</h3>
                   <div className="flex flex-wrap gap-3 text-sm">
+                    {project.engineeringCasePath && <Link to={toLocalePath(project.engineeringCasePath)} onClick={onClose}>
+                      {locale === "zh" ? "工程案例" : "Engineering Case Study"}
+                    </Link>}
                     {safeDemoUrl ? (
                       <ExternalLink href={safeDemoUrl} label={locale === "zh" ? `開啟 ${project.name} 線上 Demo` : `Open live demo for ${project.name}`}>
                         {text.projects.liveDemo}

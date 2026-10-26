@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "portfolioBase": "9bf4abb5090128c3a8b00c6351c28eba606115ad",
+  "cleanInstall": "passed",
+  "portfolioAudit": {
+    "vulnerabilities": 0
+  },
+  "unit": {
+    "passed": 29,
+    "failed": 0,
+    "skipped": 0
+  },
+  "typescriptBuild": {
+    "passed": true,
+    "routeEntrypoints": 36
+  },
+  "e2e": {
+    "startTime": "2026-10-26T14:36:23.856Z",
+    "duration": 47244.695999999996,
+    "expected": 236,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "functionalFlows": {
+    "passed": 17,
+    "total": 17
+  },
+  "diffCheck": "passed",
+  "scope": "Local production preview; hosted checks and complete Gridline suite are not claimed."
+}

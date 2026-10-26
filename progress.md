@@ -4,35 +4,36 @@
 
 **Last updated:** 2026-10-26
 
-**Active work:** Portfolio v2.2 recruiter refinement, branch `codex/portfolio-v2-2-recruiter-refinement`, from merged v2.1 base `b822e95305336a43c2b8563d373a82b4e65d98bd`.
+**Active work:** Portfolio v2.3 Gridline engineering case, branch `codex/portfolio-v2-3-gridline-engineering-case`, from merged v2.2 base `9bf4abb5090128c3a8b00c6351c28eba606115ad`.
 
-**Status:** Delivered [Draft PR 37](https://github.com/LEO0331/portfolio/pull/37); user handles hosted checks, readiness and merge.
+**Status:** Implementation and local verification complete; preparing one Draft PR. User handles hosted checks, readiness and merge.
 
 ### Completed
 
-- Confirmed Case 012 merged in PR 36; all twelve English and twelve Traditional Chinese records preserved. Recovered its missing feature-ledger completion entry from committed evidence.
-- Backend-focused Hero, distinct professional summary/About, bilingual skills and source-backed Gridline/API/static-demo copy implemented.
-- Curated Gridline, Book QA Library and CraftFocus independently of GitHub pins; retained a compact GovTech collection entry, the complete catalogue, stable query links, search and filters.
-- Preserved `robotfriends` ID/slug/images for compatibility. Removed unsupported visible Express/MySQL claims. Reused existing UI components and dependencies; corrected dark-mode identity/action contrast.
+- Confirmed v2.2 merged in PR 37; pinned Gridline main to `02136a38af60763402ee317da1235002d006cd01`.
+- Added equivalent EN/ZH engineering pages with twelve sections, six tables, architecture/data-model figures, API example, failure limits and commit-pinned evidence disclosures.
+- Linked the existing Gridline card/drawer and featured access; preserved `robotfriends` identity, legacy queries, pins, all twelve bilingual GovTech studies and dependencies.
+- Added genuine source demo screenshots, a 51-file source manifest and dated source/security evidence. No Gridline source change or live backend added.
 
 ### Verification Evidence
 
-- Baseline: audit 0, 29 unit tests, 219 Chromium tests and 34 routes passed before implementation.
-- Final clean install/audit 0, unit 29/29, TypeScript/build 34 routes, full E2E 230/230 with zero skipped/flaky/unexpected, functional coverage 17/17 (100%).
-- Full-file preservation hashes protect all 24 canonical case data files; old historical fixtures and public-presentation tests pass. Read-only claim audit and targeted follow-up review found no remaining actionable defects.
-- Source/selection rationale and final browser/resource evidence: `docs/portfolio-v2.2-recruiter-refinement.md` and `docs/evidence/portfolio-v2.2/`.
+- Baseline: audit 0, 29 unit tests, 230 Chromium tests, 34 routes and 17/17 flows passed.
+- Final: clean install/audit 0, unit 29/29, TypeScript/build 36 routes, E2E 236/236 with zero skipped/flaky/unexpected, 17/17 flows (100%), diff check passed.
+- Pages matrix 180 checks plus 36 post-review checks; root 36 surfaces and 27 GovTech/404 outcomes passed. Real screenshots and visual verdict retained. Home encoded JS +1.27%; Projects +1.14% versus merged v2.2 evidence.
+- Selected Gridline tests: 43 pipeline plus 35 security/policy tests passed. Retained snapshot acceptance: zero blockers, two warnings. Full upstream suite/build was not run.
+- All 24 case data files, pin/featured metadata, package/lockfile and original Gridline assets preserved. See `docs/portfolio-v2.3-gridline-verification.md`, source audit and `docs/evidence/portfolio-v2.3/`.
 
 ### Blockers
 
-None for implementation. Draft delivered.
+None for Portfolio implementation. Upstream dependency audit has an unapproved high `body-parser` finding; the case records it, without changing Gridline or claiming a clean source gate.
 
 ### Remaining Risks
 
-Hosted deployment/Lighthouse and external account/backend availability are not established by local portfolio checks. Legacy Gridline identifiers remain intentionally stable. Existing GovTech source limits remain unchanged.
+Hosted deployment/Lighthouse, complete Gridline tests/build and production availability remain unverified. Source audit is dated; policy exceptions do not cover the current high finding. Public demo captured a different dated snapshot from pinned source. Existing GovTech source limits remain unchanged.
 
 ### Next Session Should
 
-User reviews Draft PR 37 and its evidence, handles hosted E2E/Lighthouse, marks ready and merges manually. Preserve prior cases, pin metadata and legacy deep links.
+Deliver/review the v2.3 Draft PR; user handles hosted E2E/Lighthouse, readiness and merge. Preserve source caveats, prior cases, pin metadata and legacy links. Do not start another policy or modify Gridline.
 
 ## Update Contract
 
@@ -44,6 +45,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-10-26 — Portfolio v2.3 Gridline engineering case
+
+- Started from merged v2.2 `9bf4abb`; reverified Gridline main `02136a38af60763402ee317da1235002d006cd01` and manifested 51 reviewed files. Source checkout stayed unchanged; no source dependencies installed.
+- Added standalone bilingual engineering pages, actual API/schema tables, native architecture/key figures, provenance/idempotency boundaries, failure recovery, publication/security controls and genuine source captures. Reused shared patterns and preserved all twelve cases, Gridline identity, pins and dependencies.
+- Selected source tests passed 43 + 35; retained artifact checks and explicit review-time acceptance passed with two warnings. Source audit found high 1/moderate 1/low 6; body-parser is outside the braces exception. Complete source suite/build/exposure was not rerun.
+- Corrected snapshot Git acceptance versus later Pages security gates in both languages after independent review. Fixed lazy-image and language-roundtrip test timing, then reran all 236 browser tests successfully.
+- Final Portfolio checks: harness 27 records, clean install/audit 0, 29 unit, 36 routes, 236 E2E, 17/17 flows, diff check. Pages 180 + post-review 36; root 36 + 27 routes; visual 94/pass. Home JS +1.27%, Projects +1.14%; no research payload runtime fetch.
+- One Draft PR only; user owns hosted checks and merge. Evidence and limits: `docs/portfolio-v2.3-gridline-verification.md`.
 
 ### 2026-10-26 — Portfolio v2.2 recruiter refinement
 

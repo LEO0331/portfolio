@@ -20,6 +20,7 @@ export interface Project {
   demoUrl?: string;
   repoUrl?: string;
   caseStudyUrl?: string;
+  engineeringCasePath?: "/engineering/gridline";
   govtechCaseId?: GovTechCaseId;
   govtechCaseIds?: GovTechCaseId[];
   status: ProjectStatus;

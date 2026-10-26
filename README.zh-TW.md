@@ -10,6 +10,8 @@
 
 ## 架構與技術棧
 
+v2.3 新增英文 `/engineering/gridline` 與繁中 `/zh/engineering/gridline` 獨立工程案例，由既有 Gridline 卡片與詳細抽屜連入。內容依固定來源版本說明原生 HTTP API、六表 SQLite 模型、觀測識別、來源降級恢復及靜態發布邊界；保留十二個 GovTech 案例，不新增依賴或即時資料請求。[來源審核](./docs/engineering-gridline-source-audit.md)與[驗證報告](./docs/portfolio-v2.3-gridline-verification.md)記錄實際部分來源測試、上游套件阻擋項、真實介面截圖及瀏覽器／資源量測。
+
 - React 18 與 TypeScript
 - React Router 7，搭配自動產生的 GitHub Pages 靜態路由入口
 - Vite 8 與 Tailwind CSS
