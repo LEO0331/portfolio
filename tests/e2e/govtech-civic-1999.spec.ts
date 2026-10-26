@@ -30,11 +30,11 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
       }
     });
 
-    test(`${locale} landing has eleven completed cards and all project drawers navigate locally`, async ({ page }) => {
+    test(`${locale} landing has twelve completed cards and all project drawers navigate locally`, async ({ page }) => {
       test.setTimeout(60000);
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(11);
+      await expect(completed.locator("article")).toHaveCount(12);
       for (const study of records[locale]) {
         const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
         await expect(card).toContainText(study.displayNumber);
@@ -48,7 +48,7 @@ test.describe("Civic002 frozen bilingual decision-support case", () => {
         await page.goto(`./${prefix}projects`);
         const projectCard = page.locator("article").filter({ has: page.locator(`a[href="${study.sourceRepository}"]`) });
         await projectCard.getByRole("button", { name: locale === "en" ? "View Details" : "查看詳情", exact: true }).click();
-        const label = ["taipei-bin-map", "taipei-crash-map"].includes(study.projectId)
+        const label = ["taipei-bin-map", "taipei-crash-map", "taipei-safety-map"].includes(study.projectId)
           ? `${study.title} — ${locale === "en" ? "Case Study" : "案例"} ${study.displayNumber}`
           : locale === "en" ? "GovTech Case Study" : "市政科技案例研究";
         const link = page.getByRole("dialog").getByRole("link", { name: label, exact: true });

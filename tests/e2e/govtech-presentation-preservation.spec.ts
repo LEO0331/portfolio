@@ -36,13 +36,13 @@ test("presentation allowlist protects identities, source editions, numerical met
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`all nine ${locale} records preserve the complete pre-hardening record outside reviewed copy`, () => {
     const originalIds = baseline[locale].map(record => record.id);
-    expect(records.map(record => record.id)).toEqual([...originalIds, "senior-community-care", "food-hygiene-inspection"]);
+    expect(records.map(record => record.id)).toEqual([...originalIds, "senior-community-care", "food-hygiene-inspection", "fire-rescue-access"]);
     expect(records.filter(record => originalIds.includes(record.id)).map(record => restorePresentation(record, locale))).toEqual(baseline[locale]);
   });
   test(`all ten accepted ${locale} records preserve their complete v1.9 canonical content`, () => {
     expect(priorTen.baseSha).toBe("74a979721a640e87e3d49ce866f435c525120a0a");
     expect(priorTen.records[locale]).toHaveLength(10);
-    expect(records.map(record => record.id)).toEqual([...priorTen.records[locale].map(record => record.id), "food-hygiene-inspection"]);
+    expect(records.map(record => record.id)).toEqual([...priorTen.records[locale].map(record => record.id), "food-hygiene-inspection", "fire-rescue-access"]);
     for (const frozen of priorTen.records[locale]) {
       const record = records.find(record => record.id === frozen.id)!;
       expect(record, frozen.id).toBeDefined();

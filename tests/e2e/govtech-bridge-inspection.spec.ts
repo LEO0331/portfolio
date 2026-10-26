@@ -15,7 +15,7 @@ for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
   const study = records[locale].find(({ id }) => id === "bridge-inspection")!;
   test(`Bridge009 ${locale} preserves all eight cases and exact official statistical units`, () => {
-    expect(records[locale]).toHaveLength(11);
+    expect(records[locale]).toHaveLength(12);
     expect(records[locale].filter(({ id }) => id === "bridge-inspection")).toHaveLength(1);
     expect(records[locale].slice(0, 8).map(record => ({ id: record.id, sha256: createHash("sha256").update(JSON.stringify(restorePresentation(record, locale))).digest("hex") }))).toEqual(prior[locale]);
     expect(study).toMatchObject({ displayNumber: "009", projectId: "taipei-safety-map", sourceVersion: sha, snapshotVersion: fixture.snapshot.snapshotId, maturity: "decision-support-poc", methodology: { kind: "rule-based-priority", methodId: "bridge-inspection-evidence-review-v1" } });
@@ -34,9 +34,9 @@ for (const locale of ["en", "zh"] as const) {
     for(const s of fixture.sources)expect(sourceText).toContain(s.sha256);
     expect(sourceText).toContain(fixture.historical.gitSha256);
     const safety=projects.filter(({id})=>id==="taipei-safety-map");expect(safety).toHaveLength(1);
-    expect(safety[0].govtechCaseIds).toEqual(["bridge-inspection"]);
+    expect(safety[0].govtechCaseIds).toEqual(["bridge-inspection","fire-rescue-access"]);
     expect(safety[0]).toMatchObject({image:"/src/assets/images/projects/taipei-safety-map.png",demoUrl:"https://leo0331.github.io/taipei-safety-map/",repoUrl:repo});
-    expect(getProjectGovTechCases(safety[0],locale)).toEqual([study]);
+    expect(getProjectGovTechCases(safety[0],locale).map(s=>s.id)).toEqual([study.id,"fire-rescue-access"]);
     expect(projects.find(({id})=>id==="taipei-bin-map")!.govtechCaseIds).toEqual(["bin-policy","shade-equity"]);
     expect(projects.find(({id})=>id==="taipei-crash-map")!.govtechCaseIds).toEqual(["neihu-congestion","bus-service"]);
     expect(projects.find(({id})=>id==="taipei-free-wifi-map")!.govtechCaseIds).toEqual(["wifi-allocation"]);
@@ -89,11 +89,11 @@ for (const locale of ["en", "zh"] as const) {
   });
   test(`Bridge009 ${locale} ninth card and project drawer support keyboard navigation`,async({page})=>{
     await page.goto(`./${prefix}govtech`);
-    const completed=page.locator('section[aria-labelledby="govtech-cases"]');await expect(completed.locator('article')).toHaveCount(11);
+    const completed=page.locator('section[aria-labelledby="govtech-cases"]');await expect(completed.locator('article')).toHaveCount(12);
     const card=completed.locator('article').filter({has:page.getByRole('heading',{name:study.title,exact:true})});await expect(card).toContainText('009');
     const link=card.locator(`a[href="/portfolio/${prefix}govtech/bridge-inspection"]`);await link.focus();await page.keyboard.press('Enter');await expect(page.getByRole('heading',{level:1})).toHaveText(study.title);
     await page.goto(`./${prefix}projects?project=taipei-safety-map`);
-    const drawer=page.getByRole('dialog');const caseLink=drawer.getByRole('link',{name:locale==='en'?'GovTech Case Study':'市政科技案例研究',exact:true});
+    const drawer=page.getByRole('dialog');const caseLink=drawer.locator('a[href$="/govtech/bridge-inspection"]');
     await expect(caseLink).toHaveAttribute('href',`/portfolio/${prefix}govtech/bridge-inspection`);await caseLink.click();await expect(drawer).toHaveCount(0);await expect(page.getByRole('heading',{level:1})).toHaveText(study.title);
   });
 }
