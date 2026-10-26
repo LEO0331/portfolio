@@ -11,12 +11,14 @@ import { NotFoundPage } from "../pages/NotFoundPage";
 import routeConfig from "./routeConfig.json";
 
 const ProjectsPage = lazy(() => import("../pages/ProjectsPage").then((module) => ({ default: module.ProjectsPage })));
+const GridlineEngineeringPage = lazy(() => import("../pages/GridlineEngineeringPage").then((module) => ({ default: module.GridlineEngineeringPage })));
 const GovTechPage = lazy(() => import("../pages/GovTechPage").then((module) => ({ default: module.GovTechPage })));
 const GovTechCaseStudyPage = lazy(() => import("../pages/GovTechCaseStudyPage").then((module) => ({ default: module.GovTechCaseStudyPage })));
 
 const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   home: <HomePage />,
   projects: <ProjectsPage />,
+  "engineering-gridline": <GridlineEngineeringPage />,
   govtech: <GovTechPage />,
   "govtech-bin-policy": <GovTechCaseStudyPage slug="bin-policy" />,
   "govtech-civic-1999": <GovTechCaseStudyPage slug="civic-1999" />,

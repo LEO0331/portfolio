@@ -1,30 +1,31 @@
 # Session Handoff
 
-Updated 2026-10-26. Branch `codex/portfolio-v2-2-recruiter-refinement`, base `b822e95305336a43c2b8563d373a82b4e65d98bd` (merged Case 012 / v2.1).
+Updated 2026-10-26. Branch `codex/portfolio-v2-3-gridline-engineering-case`, base `9bf4abb5090128c3a8b00c6351c28eba606115ad` (merged v2.2 / PR 37).
 
-**Current objective:** Recruiter-facing backend positioning, curated flagship work and verified bilingual claims while preserving all twelve GovTech cases.
+**Current objective:** Standalone bilingual Gridline financial-data/backend reliability engineering case, grounded in source `02136a38af60763402ee317da1235002d006cd01`.
 
-**Current status:** Delivered [Draft PR 37](https://github.com/LEO0331/portfolio/pull/37); user handles hosted checks, readiness and merge.
+**Current status:** Implementation and local verification complete; preparing one Draft PR to main. User handles hosted checks, readiness and merge.
 
-Completed: bilingual Hero/summary/About/skills/CTA/footer, curated Gridline → Book QA Library → CraftFocus order plus compact GovTech collection entry, source-backed project descriptions and dark-mode contrast. Gridline retains `robotfriends` identity/assets and original URLs. All projects and pin metadata remain; no dependencies added.
+Completed: twelve equivalent EN/ZH sections, six actual API/schema/source/failure/security/result tables, architecture and data-model figures, loopback API example, commit-pinned source disclosures and genuine public demo screenshots. Existing Gridline card/drawer and featured access link to both engineering routes. Reused shared design/locale/SEO patterns; no dependencies, source-project changes or live API added.
 
-Verification: clean install, zero audit findings, 29 unit tests, build 34 routes, 230 Chromium tests, 17/17 flows (100%). All 24 full case data files match merged v2.1 hashes; historical and public-presentation checks pass. Bilingual filter/legacy-query/static-metadata/keyboard tests pass. A Windows module lock during the first reinstall was resolved by ending the preview before the successful rerun.
+Verification: clean install/audit 0, 29 unit tests, TypeScript/build 36 routes, E2E 236/236 (0 skipped/flaky/unexpected), 17/17 flows (100%), diff check. Pages 180 layouts plus post-review 36, root 36 surfaces and 27 GovTech/404 outcomes passed; Pages build restored. Visual verdict 94/pass. Home JS +1.27%, Projects +1.14%. All 24 GovTech canonical files, Gridline legacy identity/assets, pins, featured order and package/lockfile preserved.
+
+Source evidence: 51 reviewed file hashes; 43 pipeline and 35 security/policy tests passed. Snapshot acceptance zero blockers/two warnings. Source high body-parser finding is outside the exact braces exception; policy blocks it. Portfolio audit 0 is a separate graph. Source UI capture has an older snapshot than pinned repository artifacts. Full upstream suite/build/exposure and hosted availability were not verified.
 
 ## Blockers
 
-None for implementation. Draft delivered; user owns hosted checks and merge.
+None for Portfolio delivery. Source dependency blocker is accurately disclosed; do not fix Gridline within this PR.
 
 ## Files Relevant to the Next Update
 
-- docs/portfolio-v2.2-recruiter-refinement.md
-- docs/evidence/portfolio-v2.2/
-- src/data/featuredProjects.ts and the unchanged github-pins.json
-- src/data/profile.ts, profile.zh.ts, skills.ts, projects.ts and projects.zh.ts
-- src/components/home/, src/components/projects/, src/utils/projectUtils.ts
-- tests/e2e/recruiter-presentation.spec.ts
-- tests/fixtures/govtech-v2.1-source-hashes.json
-- tools/verify-recruiter-presentation.mjs
+- src/data/gridlineEngineering.ts and src/pages/GridlineEngineeringPage.tsx
+- Project type/record/card/drawer, route config/router and sitemap
+- tests/e2e/gridline-engineering.spec.ts
+- tools/verify-gridline-source.mjs and tools/verify-recruiter-presentation.mjs
+- public/images/engineering/ and docs/evidence/portfolio-v2.3/
+- docs/engineering-gridline-source-audit.md and docs/portfolio-v2.3-gridline-verification.md
+- README pair, feature_list.json and progress.md
 
 ## Recommended Next Step
 
-User reviews Draft PR 37 and hosted checks, marks ready and merges manually. Evidence includes 160 Pages layouts, 32 root surface checks, 27 root direct-route outcomes and before/after resource sizes. Home JS increased 1.15%; catalogue 1.06%. Preserve source findings, legacy Gridline query URLs and independent GitHub pin synchronization. No Case 013, Policy 14, automatic merge or source-project dependency changes. Public demos have separate API/account requirements; local portfolio QA does not establish hosted performance or production availability.
+Deliver/review the v2.3 Draft PR. User owns hosted E2E/Lighthouse, readiness and manual merge; do not poll or merge automatically. No Case 013, Policy 13/14, homepage redesign or source-project implementation. Preserve source caveats, static/API separation and robotfriends compatibility. The ignored read-only Gridline checkout is recreated after npm ci; commands are in the source audit.

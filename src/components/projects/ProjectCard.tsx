@@ -96,6 +96,9 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
         </div>
 
         <div className="mt-auto flex flex-wrap gap-2 border-t border-slate-100 pt-3.5 sm:pt-4">
+          {project.engineeringCasePath && <Link to={toLocalePath(project.engineeringCasePath)} className={getButtonClassName("secondary", "sm")}>
+            {locale === "zh" ? "工程案例" : "Engineering Case Study"}
+          </Link>}
           {safeDemoUrl ? (
             <Button
               as="a"

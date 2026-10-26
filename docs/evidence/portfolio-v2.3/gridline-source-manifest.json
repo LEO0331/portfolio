@@ -1,0 +1,692 @@
+{
+  "sourceSha": "02136a38af60763402ee317da1235002d006cd01",
+  "checkedAt": "2026-10-26T14:24:19.152Z",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 22403,
+      "sha256": "58fe5486114534e15dc95bb6c0792e6e416c751d46ecd91f97d6745a522c3030",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/README.md"
+    },
+    {
+      "path": "docs/api-ingestion.md",
+      "bytes": 10417,
+      "sha256": "282caded170871e1f4293b7ce049bc276bcf936d52a54bf10b073e652e2a8644",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/api-ingestion.md"
+    },
+    {
+      "path": "docs/data-provenance.md",
+      "bytes": 4445,
+      "sha256": "065bb7ea1f07e1950315244dee36989afe0094c9af0f2a79ac550c35f5589aa4",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/data-provenance.md"
+    },
+    {
+      "path": "docs/persistent-storage.md",
+      "bytes": 3388,
+      "sha256": "a4e0e3df0e550d1d7745ad1097f2c6d3b85921862e1a460426b918058c9ad47e",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/persistent-storage.md"
+    },
+    {
+      "path": "docs/demo-readiness.en.md",
+      "bytes": 2986,
+      "sha256": "211920a9707ea28480e5a119b0e090ab798601e041a0927820885d27e373d6f1",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/demo-readiness.en.md"
+    },
+    {
+      "path": "docs/static-snapshot-deployment.en.md",
+      "bytes": 13092,
+      "sha256": "38232aeb70f2e797447d9ee5305efdb409853cf45187b1c76c032c0af051e90b",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/static-snapshot-deployment.en.md"
+    },
+    {
+      "path": "docs/security-review.md",
+      "bytes": 5786,
+      "sha256": "e5316858e28b14e270f342cddc1700e2cdd285dd7dfbf0c875e572ddffa98185",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/security-review.md"
+    },
+    {
+      "path": "docs/security-exception-policy.md",
+      "bytes": 5385,
+      "sha256": "76989557e685fa9564574a274af0557ccd9c49e6c75d9c192a8621dd3abe2554",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/security-exception-policy.md"
+    },
+    {
+      "path": "docs/scoring-methodology.md",
+      "bytes": 1929,
+      "sha256": "ba56876c5c476718ec253de4bea908b597968a92a030a677074af61eaeed4a04",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/scoring-methodology.md"
+    },
+    {
+      "path": "docs/snapshot-changes.md",
+      "bytes": 4655,
+      "sha256": "5a138b755c9b7d6015b4e042cecb5ea4919566dbb00796593f256fd181eb863b",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/snapshot-changes.md"
+    },
+    {
+      "path": "docs/backtesting.md",
+      "bytes": 1977,
+      "sha256": "12e6fb092b56f10eb51ef97b5fe921438a4c9338f1e45f03785211919f784f0c",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/backtesting.md"
+    },
+    {
+      "path": "docs/pr-ci.md",
+      "bytes": 2762,
+      "sha256": "6decf8d95e54493fdbb047e4618d9d7b0957aa6216d8d25a57f91618f2ed1f47",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/docs/pr-ci.md"
+    },
+    {
+      "path": "server/index.js",
+      "bytes": 10496,
+      "sha256": "db9c705e2dd3c382ddd0b34cd4fc538d26aab30de6499bcd029a48b02d2fa77e",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/index.js"
+    },
+    {
+      "path": "server/config.js",
+      "bytes": 1862,
+      "sha256": "9c164effb8d15ef54eb729abc97a218af5e2acb8fa01454dfbf5c05fecc9d0f4",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/config.js"
+    },
+    {
+      "path": "server/http.js",
+      "bytes": 4011,
+      "sha256": "2947cc4d720c6caeb6bf23b5471f6d02a1cf50756e2d76d3ecd93bbbf238e9c1",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/http.js"
+    },
+    {
+      "path": "server/service.js",
+      "bytes": 5581,
+      "sha256": "a9f29ab6a08783fedf2c1f5303287f18d1ca6390dfda1086d7240265507f203e",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/service.js"
+    },
+    {
+      "path": "server/database.js",
+      "bytes": 2483,
+      "sha256": "7af019f37dfdae74e163fa29ebf4c1af7d3b99e8647cb0399d6977d4cbb47e70",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/database.js"
+    },
+    {
+      "path": "server/store.js",
+      "bytes": 9211,
+      "sha256": "6777c6c57d1f263de772857e5036dec10ef8b4584bbaace75b28437613ee08f9",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/store.js"
+    },
+    {
+      "path": "server/sources.js",
+      "bytes": 19401,
+      "sha256": "252574fdefd812f6ae588d0bca3ca037e8a6a88171f10026330be6b5fd2d2dc9",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/sources.js"
+    },
+    {
+      "path": "server/provenance.js",
+      "bytes": 3682,
+      "sha256": "228d45b38328884f02576654d73c31a3f6ef642da8e768c77a9a3d643cf031ce",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/provenance.js"
+    },
+    {
+      "path": "server/scheduler.js",
+      "bytes": 1124,
+      "sha256": "690bdb14ae5e6f9dd7f5e44d55d9d85eadda46f23aad78b35520340d47829cd1",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/scheduler.js"
+    },
+    {
+      "path": "server/snapshot-merge.js",
+      "bytes": 4001,
+      "sha256": "f6baf87f967be1d1765fbe4732816e9d107f58c6fc8c8b491462f7c9b9d75391",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/snapshot-merge.js"
+    },
+    {
+      "path": "server/export-static-snapshot.js",
+      "bytes": 9855,
+      "sha256": "3718ef43c526d01199dbcefe6e83f42a058493026defb15e13e716d15de51f81",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/export-static-snapshot.js"
+    },
+    {
+      "path": "server/scoring/engine.js",
+      "bytes": 3361,
+      "sha256": "56df00908a0b6ea93f05c263ec03d90a90d637c30aac7bbc6d7d733422b7870e",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/scoring/engine.js"
+    },
+    {
+      "path": "server/demo-readiness.js",
+      "bytes": 6226,
+      "sha256": "3723e0b64f9596298d8675daaa71857a0e55ff7e0c8f0779e81ed6ad9ba55d56",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/demo-readiness.js"
+    },
+    {
+      "path": "server/runtime-snapshot.js",
+      "bytes": 5738,
+      "sha256": "50e7b908f1f18ba3f9a46ab8fc49af75cda88a1d6db3c34d5d613fc25c87943f",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/runtime-snapshot.js"
+    },
+    {
+      "path": "server/snapshot-artifacts.js",
+      "bytes": 279,
+      "sha256": "176e0f7c4bdefa972e70ae0c1adf19bf5f32f6afc995fea6741505bfa3951b32",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/snapshot-artifacts.js"
+    },
+    {
+      "path": "scripts/publish-snapshot.js",
+      "bytes": 5006,
+      "sha256": "266795428c992afa9013b2550bd4d292212738e16681f2382be9dd83c4724ccd",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/publish-snapshot.js"
+    },
+    {
+      "path": "scripts/verify-demo-snapshot.js",
+      "bytes": 2638,
+      "sha256": "1d01bab8a5e7a634b2d72362ab0ac92502eb8f19b381ae5f557b2b4d478001bb",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/verify-demo-snapshot.js"
+    },
+    {
+      "path": "scripts/security-audit.js",
+      "bytes": 10335,
+      "sha256": "8a613fb7b14fdd180c494aac993e76340b93d03badeb4e4fce0e7e8791bf115d",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/security-audit.js"
+    },
+    {
+      "path": "scripts/dependency-exposure.js",
+      "bytes": 10278,
+      "sha256": "6a1315aece555579eb1d807b67782186537df5696df3450a41ee2505e0873d12",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/dependency-exposure.js"
+    },
+    {
+      "path": "config/security-exceptions.json",
+      "bytes": 1083,
+      "sha256": "8306dc6de90346e52ea1c557b1320d59130a9040d17cd88170b3db8864a7f495",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/config/security-exceptions.json"
+    },
+    {
+      "path": "supabase/user-preferences.sql",
+      "bytes": 973,
+      "sha256": "e871a87ca198ec6f05f5113b1c75ad3f5f9648cb4fe3ef06fa65ddd132f186a7",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/supabase/user-preferences.sql"
+    },
+    {
+      "path": ".github/workflows/daily-snapshot.yml",
+      "bytes": 3586,
+      "sha256": "0ba89958dce95321ce39f2b30952f911981ad96000b0dae86dea8807b324bb05",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/.github/workflows/daily-snapshot.yml"
+    },
+    {
+      "path": ".github/workflows/deploy-pages.yml",
+      "bytes": 4420,
+      "sha256": "c5b681a52b94bd43d9ac85d6ce76c1170254d2596f521980e556aae168cb1c56",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/.github/workflows/deploy-pages.yml"
+    },
+    {
+      "path": ".github/workflows/pr-ci.yml",
+      "bytes": 2570,
+      "sha256": "2990bffa484d2f1600e62778a0f37909a4add6e6442829cf951d22a6bcb5db6d",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/.github/workflows/pr-ci.yml"
+    },
+    {
+      "path": ".github/actions/verify/action.yml",
+      "bytes": 711,
+      "sha256": "1e9ddbb3b0fc0501de2dd15022bfda7ccbe2692eebf91376a5ffc09c06a2efbb",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/.github/actions/verify/action.yml"
+    },
+    {
+      "path": "server/database.test.js",
+      "bytes": 1700,
+      "sha256": "f382a0a2cec5e160fdfd578c97ca335de638fb0cb2a1f9d11096835a15efacfb",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/database.test.js"
+    },
+    {
+      "path": "server/provenance.test.js",
+      "bytes": 1693,
+      "sha256": "05aade3c3373e882edecd7efa809d22523ccb827137b29fc7bcf9923804b67a9",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/provenance.test.js"
+    },
+    {
+      "path": "server/snapshot-merge.test.js",
+      "bytes": 7682,
+      "sha256": "e890de1adda8fe69d46ed5af8384c819ab54a6a82bf67b6f04657606cb036f6b",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/snapshot-merge.test.js"
+    },
+    {
+      "path": "server/snapshot-artifacts.test.js",
+      "bytes": 822,
+      "sha256": "e63a666139aae9546f2aaa6402bc293506458d56fc59dbe491d9e95b87d4456b",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/snapshot-artifacts.test.js"
+    },
+    {
+      "path": "server/runtime-snapshot.test.js",
+      "bytes": 5030,
+      "sha256": "38714fc02a6caebb3611a4ce73962449e0729f1f7cc37ea839afc42dc36b188b",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/runtime-snapshot.test.js"
+    },
+    {
+      "path": "server/export-static-snapshot.test.js",
+      "bytes": 7797,
+      "sha256": "da42ca7c82cebadcbb2280533d1e3c1a3e2e8ee7cc5e5167e2892881d8955208",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/export-static-snapshot.test.js"
+    },
+    {
+      "path": "scripts/publish-snapshot.test.js",
+      "bytes": 6661,
+      "sha256": "832b0e134c162d7e2136213c684527094c218fa66b5861efa84be8e654df2083",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/publish-snapshot.test.js"
+    },
+    {
+      "path": "server/security.test.js",
+      "bytes": 1890,
+      "sha256": "40da05fd451d3d2a64a565e55dc74150ff73f4519b4a534c23ef2dd60a4779c9",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/server/security.test.js"
+    },
+    {
+      "path": "scripts/security-audit.test.js",
+      "bytes": 6994,
+      "sha256": "9aacf5144227d2417c7fcdbcff79195efe120099f87d3b193ecb1ab3c6d6edae",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/security-audit.test.js"
+    },
+    {
+      "path": "scripts/dependency-exposure.test.js",
+      "bytes": 7432,
+      "sha256": "f8a3f85f4e749e97012ce3596b1497bb8c77ddb2bb245b257d8e596bac2d017f",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/dependency-exposure.test.js"
+    },
+    {
+      "path": "scripts/supabase-health.test.js",
+      "bytes": 4456,
+      "sha256": "6fc7ff000a6ab4aad9cb9011b1a4655df165e79a4d0968874eb3e85b167a0667",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/scripts/supabase-health.test.js"
+    },
+    {
+      "path": "src/data/companyExposure.json",
+      "bytes": 9476,
+      "sha256": "2b5682001138e84cb6a337e6296346ccdf21b5135eb11533e8439941b9b84375",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/src/data/companyExposure.json"
+    },
+    {
+      "path": "package.json",
+      "bytes": 2491,
+      "sha256": "fa809aa3989e684e9ba616be5eabe22c0abcff7f25c95198d0fb33c3a00cea29",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/package.json"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 1229933,
+      "sha256": "e13ed9945bd210875e01f6b3165719ec4d64a106a7cbc6f447ff71d0633f5dca",
+      "url": "https://github.com/LEO0331/Gridline/blob/02136a38af60763402ee317da1235002d006cd01/package-lock.json"
+    }
+  ],
+  "endpoints": [
+    "GET /api/health",
+    "GET /api/observations",
+    "GET /api/provenance",
+    "GET /api/scores",
+    "POST /api/scenario",
+    "GET /api/scenario/runs",
+    "POST /api/backtest",
+    "GET /api/backtest/runs",
+    "POST /api/ingest",
+    "POST /api/ingest/all"
+  ],
+  "tables": [
+    "schema_migrations",
+    "observations",
+    "source_health",
+    "score_snapshots",
+    "scenario_runs",
+    "backtest_runs"
+  ],
+  "snapshots": [
+    {
+      "path": "public/data/dashboard-snapshot.json",
+      "bytes": 7475981,
+      "sha256": "46abd6ab730bc1e6225a2f470a904978f210fca83806265ac930b148bab5c4eb"
+    },
+    {
+      "path": "public/data/dashboard-overview.json",
+      "bytes": 1068630,
+      "sha256": "4c60a5e7e81bcc25da52fa95694f821f0d01a1dbd6f34812b413f4b2072c0312"
+    }
+  ],
+  "snapshot": {
+    "generatedAt": "2026-10-25T16:23:29.165Z",
+    "trackedTickers": [
+      "NBIS",
+      "CRWV",
+      "ORCL",
+      "AVGO",
+      "APLD",
+      "IREN",
+      "CIFR",
+      "CORZ",
+      "GDS",
+      "VNET",
+      "EQIX",
+      "DLR",
+      "IRM",
+      "VRT",
+      "ETN",
+      "ANET",
+      "PWR",
+      "GEV",
+      "CEG",
+      "BE"
+    ],
+    "observationCount": 5741,
+    "populations": {
+      "company-research": 37,
+      "eia": 336,
+      "events": 13,
+      "prices": 5200,
+      "sec": 155
+    },
+    "compactMatches": true,
+    "acceptanceAtGeneration": {
+      "ready": true,
+      "blockers": 0,
+      "warnings": 2
+    },
+    "acceptanceAtReview": {
+      "ready": true,
+      "blockers": 0,
+      "warnings": 2,
+      "reference": "2026-10-26T14:24:19.152Z"
+    },
+    "priceCoverage": {
+      "NBIS": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "CRWV": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "ORCL": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "AVGO": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "APLD": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "IREN": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "CIFR": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "CORZ": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "GDS": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "VNET": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "EQIX": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "DLR": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "IRM": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "VRT": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "ETN": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "ANET": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "PWR": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "GEV": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "CEG": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      },
+      "BE": {
+        "count": 260,
+        "earliest": "2025-10-13T00:00:00.000Z",
+        "latest": "2026-10-23T00:00:00.000Z",
+        "expectedSession": "2026-10-23",
+        "provider": "Yahoo Finance",
+        "stalenessDays": 3.6
+      }
+    }
+  },
+  "policy": {
+    "expiresAt": "2026-11-11T00:00:00+08:00",
+    "advisory": "GHSA-vfj7-8cjw-p6xm"
+  },
+  "registryAudit": {
+    "checkedAt": "2026-10-26T14:24:19.152Z",
+    "command": "npm audit --package-lock-only --include=dev --include=optional --include=peer --audit-level=high --json",
+    "counts": {
+      "info": 0,
+      "low": 6,
+      "moderate": 1,
+      "high": 1,
+      "critical": 0,
+      "total": 8
+    },
+    "findings": [
+      {
+        "name": "body-parser",
+        "severity": "high",
+        "direct": false,
+        "nodes": [
+          "node_modules/body-parser"
+        ],
+        "advisories": [
+          {
+            "url": "https://github.com/advisories/GHSA-27r3-jxmh-p828",
+            "title": "body-parser vulnerable to Denial of Service via trailing bytes after a compressed request body",
+            "severity": "high",
+            "range": "<1.20.9"
+          }
+        ]
+      },
+      {
+        "name": "css-minimizer-webpack-plugin",
+        "severity": "low",
+        "direct": false,
+        "nodes": [
+          "node_modules/css-minimizer-webpack-plugin"
+        ],
+        "advisories": []
+      },
+      {
+        "name": "fast-uri",
+        "severity": "moderate",
+        "direct": false,
+        "nodes": [
+          "node_modules/fast-uri"
+        ],
+        "advisories": [
+          {
+            "url": "https://github.com/advisories/GHSA-w74x-v6f9-j3xg",
+            "title": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
+            "severity": "moderate",
+            "range": ">=3.0.0 <3.1.9"
+          },
+          {
+            "url": "https://github.com/advisories/GHSA-xhq7-xmqj-769h",
+            "title": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
+            "severity": "low",
+            "range": ">=3.0.0 <3.1.9"
+          },
+          {
+            "url": "https://github.com/advisories/GHSA-wjr9-j795-jxcr",
+            "title": "fast-uri vulnerable to host confusion via unchecked WHATWG host canonicalization",
+            "severity": "moderate",
+            "range": ">=3.1.3 <3.1.9"
+          },
+          {
+            "url": "https://github.com/advisories/GHSA-333x-w4r6-6crp",
+            "title": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
+            "severity": "low",
+            "range": ">=3.0.0 <3.1.9"
+          }
+        ]
+      },
+      {
+        "name": "react-scripts",
+        "severity": "low",
+        "direct": true,
+        "nodes": [
+          "node_modules/react-scripts"
+        ],
+        "advisories": []
+      },
+      {
+        "name": "rollup-plugin-terser",
+        "severity": "low",
+        "direct": false,
+        "nodes": [
+          "node_modules/rollup-plugin-terser"
+        ],
+        "advisories": []
+      },
+      {
+        "name": "serialize-javascript",
+        "severity": "low",
+        "direct": false,
+        "nodes": [
+          "node_modules/serialize-javascript"
+        ],
+        "advisories": [
+          {
+            "url": "https://github.com/advisories/GHSA-m5mm-p8h7-m29v",
+            "title": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
+            "severity": "low",
+            "range": "<7.1.3"
+          }
+        ]
+      },
+      {
+        "name": "workbox-build",
+        "severity": "low",
+        "direct": false,
+        "nodes": [
+          "node_modules/workbox-build"
+        ],
+        "advisories": []
+      },
+      {
+        "name": "workbox-webpack-plugin",
+        "severity": "low",
+        "direct": false,
+        "nodes": [
+          "node_modules/workbox-webpack-plugin"
+        ],
+        "advisories": []
+      }
+    ],
+    "policyEvaluation": {
+      "ok": false,
+      "accepted": [],
+      "blocked": [
+        {
+          "package": "body-parser",
+          "reason": "Unapproved high advisory, changed dependency identity, or missing/current exposure proof."
+        }
+      ]
+    },
+    "scope": "Registry/lockfile audit and policy-function evaluation only; no fresh production build/exposure proof or complete CI gate."
+  },
+  "scope": "Unchanged pinned source and retained artifacts; no fresh collection, deployed API probe or hosted deployment claim."
+}

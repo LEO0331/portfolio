@@ -6,7 +6,7 @@ import { resolve } from 'node:path';
 const root = process.cwd();
 const stage = process.argv[2] ?? 'final';
 const base = process.env.QUALITY_BASE ?? '/portfolio/';
-const out = resolve(root, 'docs/evidence/portfolio-v2.2');
+const out = resolve(root, process.env.QUALITY_OUTPUT_DIR ?? 'docs/evidence/portfolio-v2.2');
 const origin = 'http://127.0.0.1:4197';
 await mkdir(out, { recursive: true });
 const server = spawn(process.execPath, ['node_modules/vite/bin/vite.js', 'preview', '--host', '127.0.0.1', '--port', '4197', '--strictPort', '--base', base], { cwd: root, stdio: 'ignore' });
@@ -19,6 +19,7 @@ try {
   browser = await chromium.launch();
   const measurements = [], checks = [], errors = [], requests = [];
   const paths = ['', 'projects', 'projects?project=robotfriends', 'about', 'govtech', 'govtech/fire-rescue-access', 'govtech/bridge-inspection', 'contact'];
+  if (process.env.QUALITY_INCLUDE_GRIDLINE === '1') paths.push('engineering/gridline');
   const widths = stage === 'baseline' || process.env.QUALITY_ROUTES_ONLY === '1' ? [1440] : [320, 390, 768, 1024, 1440];
   for (const locale of ['en', 'zh']) for (const theme of (stage === 'baseline' ? ['light'] : ['light', 'dark'])) for (const width of widths) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: theme });

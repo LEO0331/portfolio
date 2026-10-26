@@ -369,6 +369,7 @@ export const projects: Project[] = [
     image: "/src/assets/images/projects/robotfriends.png",
     demoUrl: "https://leo0331.github.io/Gridline/",
     repoUrl: "https://github.com/LEO0331/Gridline",
+    engineeringCasePath: "/engineering/gridline",
     status: "live",
     featured: true
   },

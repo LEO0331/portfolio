@@ -597,6 +597,15 @@
       "dependencies": ["govtech-fire-rescue-access-v2-1-2026-10"],
       "doneCriteria": ["Bilingual recruiter identity and distinct summary/About copy", "Curated flagship order with existing pin metadata and deep links", "Source-backed Gridline and skill claims", "All twelve cases preserved; responsive and local full gate pass", "One Draft PR to main; no automatic merge"],
       "evidence": ["Merged v2.1 base b822e953 verified", "Baseline: clean install, audit 0, unit 29, E2E 219, build 34 routes", "Final: audit 0, unit 29, E2E 230, 17/17 tracked flows, 160 Pages layouts, 32 root surfaces and 27 root direct routes", "All 24 case data files, historical fixtures, GitHub pins and dependencies preserved", "Home encoded JS 101854 to 103027 bytes (+1.15%); catalogue 119013 to 120277 (+1.06%)", "Draft PR https://github.com/LEO0331/portfolio/pull/37; user owns hosted checks, readiness and merge"]
+    },
+    {
+      "id": "gridline-engineering-v2-3-2026-10",
+      "name": "Add the bilingual Gridline backend engineering case",
+      "description": "Pinned API, schema, ingestion, provenance, recovery, security and static-publication evidence.",
+      "status": "in-progress",
+      "dependencies": ["portfolio-recruiter-v2-2-2026-10"],
+      "doneCriteria": ["Verify merged v2.2 and latest Gridline source", "Substantial bilingual engineering routes and project card/drawer links", "Actual API/schema/failure/security evidence with dated test results", "Preserve twelve GovTech cases, identifiers, pins and dependencies", "Pass local gate, responsive/root/Pages checks and open one Draft PR"],
+      "evidence": ["Base 9bf4abb; source 02136a38 verified", "51 source files manifested; 43 plus 35 targeted source tests passed", "Retained snapshot passes with two warnings; source lockfile audit has an unapproved high advisory", "180 Pages layout checks passed; full acceptance in progress"]
     }
   ]
 }
