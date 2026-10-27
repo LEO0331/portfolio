@@ -6,7 +6,7 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
 const source = resolve(process.argv.find(argument => argument.startsWith('--source='))?.slice(9) ?? 'node_modules/.cache/gridline-v23');
-const expectedSha = '02136a38af60763402ee317da1235002d006cd01';
+const expectedSha = 'e3d47a638ddb7f3192c63598596628f60c7b364d';
 assert.equal(execFileSync('git', ['rev-parse', 'HEAD'], { cwd: source, encoding: 'utf8' }).trim(), expectedSha);
 assert.equal(execFileSync('git', ['status', '--porcelain', '--untracked-files=no'], { cwd: source, encoding: 'utf8' }).trim(), '');
 const paths = [

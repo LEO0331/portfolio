@@ -1,10 +1,26 @@
 # Gridline engineering source audit
 
+## Completion review — 2026-10-27
+
+Portfolio v2.2 PR37 and v2.3 [PR38](https://github.com/LEO0331/portfolio/pull/38) are merged. This follow-up starts at Portfolio main `e78173135b470a42a0a7397e9eec923afb75b928` and pins latest Gridline main [`e3d47a638ddb7f3192c63598596628f60c7b364d`](https://github.com/LEO0331/Gridline/tree/e3d47a638ddb7f3192c63598596628f60c7b364d). The original October26 audit below remains historical; its manifest is archived separately.
+
+Only the full and compact retained JSON artifacts changed after02136a3. All51 reviewed implementation,documentation,test,workflow and dependency files have identical byte hashes. Two independent bounded reviews found no missing required page content or source-to-case implementation defect. The latest [evidence manifest](./evidence/portfolio-v2.3/gridline-source-manifest.json) now backs all case source links. No provider collection,source dependency installation or source edits were performed.
+
+At 2026-10-27T00:16:17.890Z, original readiness and exact projection functions confirmed 5741observations across20companies:5,200prices/336EIA/155SEC/13events/37companyresearch. Each company has260usable closes through2026-10-26 from Yahoo Finance. Snapshot generated2026-10-26T20:34:11.996Z; generation-time and explicit review-time acceptance both have0blockers/2warnings. Full7408010B SHA256`2a846c81a15be28fcfbffeed8dddc8c4798a061d59564d9d066e1cd5abdfc5e3`;compact1076089B SHA256`a35dd3bb312affa8ee345b6f268979987e3a33b2aa2684fdfde5e40081d08e41`.
+
+Fresh source-specific lockfile audit again reports1high/1moderate/6low/0critical. The body-parser high advisory remains outside the exact braces exception; original policy evaluation returns ok:false. This is not a full deployed security gate. Portfolio separately reports0vulnerabilities.
+
+All78selected original source tests were rerun successfully against this pin,including publication recovery fixture repositories. An initial sandbox attempt denied fixture Git configuration writes; rerunning with fixture permissions passed78/78,no skips. Complete source frontend/build tests and fresh exposure proof were not rerun. Reproduce with `node tools/verify-gridline-source.mjs --source=.omx/gridline-v23-completion --audit` after a clean read-only clone at this pin. The standard clone instructions below now require this latest pin when using the updated verifier.
+
+Original public UI captures remain explicitly dated2026-10-26 and retain their own artifact identity; they are not silently relabeled as screenshots of the latest repository snapshot.
+
+## Original review — 2026-10-26
+
 Review date: 2026-10-26. Portfolio base: `9bf4abb5090128c3a8b00c6351c28eba606115ad`.
 
 Gridline main was reverified and pinned to [`02136a38af60763402ee317da1235002d006cd01`](https://github.com/LEO0331/Gridline/tree/02136a38af60763402ee317da1235002d006cd01). The source checkout was read-only; targeted tests used isolated temporary fixtures. No source edits, dependency installation, provider collection or remote publication were performed.
 
-The [machine-readable manifest](./evidence/portfolio-v2.3/gridline-source-manifest.json) records 51 reviewed paths with byte lengths, SHA-256 values and commit-pinned URLs, plus the actual endpoint/table inventory and snapshot identities. It does not copy either research payload into Portfolio.
+The [original machine-readable manifest](./evidence/portfolio-v2.3/gridline-source-manifest-2026-10-26.json) records 51 reviewed paths with byte lengths, SHA-256 values and commit-pinned URLs, plus the actual endpoint/table inventory and snapshot identities. It does not copy either research payload into Portfolio.
 
 ## Architecture and implementation boundaries
 
@@ -82,7 +98,7 @@ Reproduce the bounded audit from the Portfolio root with:
 
 ```text
 git -c core.autocrlf=false clone https://github.com/LEO0331/Gridline.git node_modules/.cache/gridline-v23
-git -C node_modules/.cache/gridline-v23 checkout --detach 02136a38af60763402ee317da1235002d006cd01
+git -C node_modules/.cache/gridline-v23 checkout --detach e3d47a638ddb7f3192c63598596628f60c7b364d
 node tools/verify-gridline-source.mjs --audit
 ```
 

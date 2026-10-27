@@ -1,0 +1,8 @@
+{
+  "score": 94,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [],
+  "suggestions": [],
+  "reasoning": "Fresh English desktop and Chinese mobile dark overview captures are byte-identical to the merged v2.3 references. Typography, spacing, hierarchy and responsive layout remain preserved while dated source evidence is refreshed below the overview."
+}

@@ -2,38 +2,37 @@
 
 ## Current State
 
-**Last updated:** 2026-10-26
+**Last updated:** 2026-10-27
 
-**Active work:** Portfolio v2.3 Gridline engineering case, branch `codex/portfolio-v2-3-gridline-engineering-case`, from merged v2.2 base `9bf4abb5090128c3a8b00c6351c28eba606115ad`.
+**Active work:** Portfolio v2.3 completion review on `codex/portfolio-v2-3-gridline-completion`, based on merged PR38/main `e78173135b470a42a0a7397e9eec923afb75b928`.
 
-**Status:** Implementation and local verification complete; preparing one Draft PR. User handles hosted checks, readiness and merge.
+**Status:** Complete and published as draft [PR39](https://github.com/LEO0331/portfolio/pull/39),verified open and unmerged. Implementation c25893a on codex/portfolio-v2-3-gridline-completion. PR37(v2.2) and PR38(v2.3) are already merged; earlier preparing-PR text was stale. No automatic merge.
 
 ### Completed
 
-- Confirmed v2.2 merged in PR 37; pinned Gridline main to `02136a38af60763402ee317da1235002d006cd01`.
-- Added equivalent EN/ZH engineering pages with twelve sections, six tables, architecture/data-model figures, API example, failure limits and commit-pinned evidence disclosures.
-- Linked the existing Gridline card/drawer and featured access; preserved `robotfriends` identity, legacy queries, pins, all twelve bilingual GovTech studies and dependencies.
-- Added genuine source demo screenshots, a 51-file source manifest and dated source/security evidence. No Gridline source change or live backend added.
+- Two independent bounded reviews confirmed all required EN/ZH content and project integration are present:12sections,six technical tables,architecture/model figures,API example,source links,genuine screenshots,card/drawer/featured discovery and legacy robotfriends links.
+- Reverified Gridline main at e3d47a638ddb7f3192c63598596628f60c7b364d. Only two retained JSON files changed since the original pin; all51reviewed implementation/test/docs/workflow/dependency hashes are identical. Case links and dated evidence now use the new pin; original manifest is archived with its original audit.
+- Retained5741observations/20companies;260closes each through2026-10-26;exact full/compact consistency and readiness0blockers/2warnings at explicit review time. No provider acquisition or source modification.
+- Added assertions tying bilingual snapshot dates/counts and security review dates to the current evidence. Completed v2.3 feature state and corrected merged release history. Existing layout,12GovTech cases,project identities,pins,assets and dependencies preserved.
 
 ### Verification Evidence
 
-- Baseline: audit 0, 29 unit tests, 230 Chromium tests, 34 routes and 17/17 flows passed.
-- Final: clean install/audit 0, unit 29/29, TypeScript/build 36 routes, E2E 236/236 with zero skipped/flaky/unexpected, 17/17 flows (100%), diff check passed.
-- Pages matrix 180 checks plus 36 post-review checks; root 36 surfaces and 27 GovTech/404 outcomes passed. Real screenshots and visual verdict retained. Home encoded JS +1.27%; Projects +1.14% versus merged v2.2 evidence.
-- Selected Gridline tests: 43 pipeline plus 35 security/policy tests passed. Retained snapshot acceptance: zero blockers, two warnings. Full upstream suite/build was not run.
-- All 24 case data files, pin/featured metadata, package/lockfile and original Gridline assets preserved. See `docs/portfolio-v2.3-gridline-verification.md`, source audit and `docs/evidence/portfolio-v2.3/`.
+- Baseline and updated Portfolio runs:29unit/236Playwright/17trackedflows(100%),TypeScript/build36routes,harness27features,clean install and audit0.
+- Actual root and Pages matrices each passed80checks across both locales/themes/five widths;engineering reload/static metadata passed;visual94/pass,overview captures byte-identical. Default Pages build restored. Home104337encodedJS bytes unchanged;engineering121848bytes(+2B).
+- Selected original Gridline tests rerun:78/78passed,no skips. Fresh source lockfile audit:1high/1moderate/6low;body-parser high remains outside the exact braces exception and blocks source policy. Portfolio and source dependency graphs remain separate.
+- Initial sandbox install/build and temporary source Git fixtures encountered environment permission failures; permitted reruns passed. Full source frontend/build/exposure suite,production API and deployment availability remain unverified.
 
 ### Blockers
 
-None for Portfolio implementation. Upstream dependency audit has an unapproved high `body-parser` finding; the case records it, without changing Gridline or claiming a clean source gate.
+None for Portfolio completion. Upstream security blocker remains disclosed; no Gridline changes are authorized.
 
 ### Remaining Risks
 
-Hosted deployment/Lighthouse, complete Gridline tests/build and production availability remain unverified. Source audit is dated; policy exceptions do not cover the current high finding. Public demo captured a different dated snapshot from pinned source. Existing GovTech source limits remain unchanged.
+No complete Gridline suite/build/exposure replay,live API production controls or hosted deployment/Lighthouse claim. Original genuine demo screenshots remain dated2026-10-26 and do not certify the latest source revision. Research methods do not establish investment performance or banking transaction guarantees.
 
 ### Next Session Should
 
-Deliver/review the v2.3 Draft PR; user handles hosted E2E/Lighthouse, readiness and merge. Preserve source caveats, prior cases, pin metadata and legacy links. Do not start another policy or modify Gridline.
+Review the completion follow-up and manually merge after user-owned hosted checks. Preserve12GovTech cases,Gridline identity,shared design and source caveats. Do not modify Gridline or start another policy.
 
 ## Update Contract
 
