@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio v2.3 completion review on `codex/portfolio-v2-3-gridline-completion`, based on merged PR38/main `e78173135b470a42a0a7397e9eec923afb75b928`.
 
-**Current status:** Implementation and all local verification complete; preparing one reviewable completion PR. PR37(v2.2) and PR38(v2.3) are already merged; earlier preparing-PR text was stale. No automatic merge.
+**Current status:** Complete and published as draft [PR39](https://github.com/LEO0331/portfolio/pull/39),verified open and unmerged. Implementation c25893a on codex/portfolio-v2-3-gridline-completion. PR37(v2.2) and PR38(v2.3) are already merged; earlier preparing-PR text was stale. No automatic merge.
 
 ### Completed
 
