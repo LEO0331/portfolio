@@ -14,11 +14,20 @@ test("engineering inventory and bilingual evidence remain bound to the audited i
   expect(manifest.snapshot.trackedTickers).toHaveLength(20);
   expect(manifest.snapshot.observationCount).toBe(5741);
   expect(manifest.snapshot.compactMatches).toBe(true);
+  expect(manifest.snapshot.acceptanceAtReview).toMatchObject({ ready: true, blockers: 0, warnings: 2 });
+  for (const ticker of manifest.snapshot.trackedTickers) {
+    expect(manifest.snapshot.priceCoverage[ticker as keyof typeof manifest.snapshot.priceCoverage]).toMatchObject({ count: 260, expectedSession: "2026-10-26", provider: "Yahoo Finance" });
+  }
   expect(manifest.registryAudit?.policyEvaluation.ok).toBe(false);
   expect(manifest.registryAudit?.findings.some(finding => finding.name === "body-parser" && finding.severity === "high")).toBe(true);
   for (const locale of ["en", "zh"] as const) {
     const content = gridlineEngineeringContent[locale];
     expect(content.sections).toHaveLength(12);
+    const verification = content.sections.find(section => section.id === "verification")!;
+    expect(verification.table!.rows[1][1]).toContain(manifest.snapshot.generatedAt);
+    expect(verification.table!.rows[1][1]).toContain(manifest.snapshot.observationCount.toLocaleString("en-US"));
+    expect(verification.table!.caption).toContain("2026-10-27");
+    expect(content.sections.find(section => section.id === "security")!.paragraphs.join(" ")).toContain("2026-10-27");
     const api = content.sections.find(section => section.id === "api")!;
     expect(api.table!.rows.map(row => row[0]).sort()).toEqual([...manifest.endpoints].sort());
     const database = content.sections.find(section => section.id === "persistence")!;

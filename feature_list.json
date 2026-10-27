@@ -602,10 +602,28 @@
       "id": "gridline-engineering-v2-3-2026-10",
       "name": "Add the bilingual Gridline backend engineering case",
       "description": "Pinned API, schema, ingestion, provenance, recovery, security and static-publication evidence.",
-      "status": "in-progress",
-      "dependencies": ["portfolio-recruiter-v2-2-2026-10"],
-      "doneCriteria": ["Verify merged v2.2 and latest Gridline source", "Substantial bilingual engineering routes and project card/drawer links", "Actual API/schema/failure/security evidence with dated test results", "Preserve twelve GovTech cases, identifiers, pins and dependencies", "Pass local gate, responsive/root/Pages checks and open one Draft PR"],
-      "evidence": ["Base 9bf4abb; source 02136a38 verified", "51 source files manifested; 43 plus 35 targeted source tests passed", "Retained snapshot passes with two warnings; source lockfile audit has an unapproved high advisory", "180 Pages layout checks passed; full acceptance in progress"]
+      "status": "complete",
+      "dependencies": [
+        "portfolio-recruiter-v2-2-2026-10"
+      ],
+      "doneCriteria": [
+        "Verify merged v2.2 and latest Gridline source",
+        "Substantial bilingual engineering routes and project card/drawer links",
+        "Actual API/schema/failure/security evidence with dated test results",
+        "Preserve twelve GovTech cases, identifiers, pins and dependencies",
+        "Pass local gate, responsive/root/Pages checks and open one Draft PR"
+      ],
+      "evidence": [
+        "Base 9bf4abb; source 02136a38 verified",
+        "51 source files manifested; 43 plus 35 targeted source tests passed",
+        "Retained snapshot passes with two warnings; source lockfile audit has an unapproved high advisory",
+        "Original delivery:29unit/236browser,36routes,17/17flows;180Pages layouts plus root checks passed; PR38 merged2026-10-26T14:52:35Z",
+        "2026-10-27 completion review from main e78173135b470a42a0a7397e9eec923afb75b928: all required bilingual sections/integration present; stale preparing-PR lifecycle corrected",
+        "Latest Gridline e3d47a638ddb7f3192c63598596628f60c7b364d: only two snapshot files changed,51reviewed implementation hashes unchanged;78targeted source tests passed",
+        "Fresh manifest:5741observations,20companies,260closes through2026-10-26 each;compact exact projection and readiness0blockers/2warnings;source audit1high/1moderate/6low remains blocked",
+        "Completion baseline and updated run:Portfolio audit0,29unit,236Playwright,17/17flows,TypeScript/build36routes passed;dependencies and all12GovTech cases unchanged",
+        "Completion actual root/Pages80checks each,EN/ZH/light/dark/five widths,engineering direct/refresh/static metadata pass;visual94,overview byte-identical;home JS104337unchanged,engineering121848(+2B)"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 import type { Locale } from "../i18n/LocaleContext";
 
-export const GRIDLINE_SOURCE_SHA = "02136a38af60763402ee317da1235002d006cd01";
+export const GRIDLINE_SOURCE_SHA = "e3d47a638ddb7f3192c63598596628f60c7b364d";
 export const gridlineSource = (path: string): string => `https://github.com/LEO0331/Gridline/blob/${GRIDLINE_SOURCE_SHA}/${path}`;
 
 export interface EngineeringTable {
@@ -147,7 +147,7 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
         paragraphs: [
           "The API binds to 127.0.0.1 by default. Allowed browser origins are exact configuration matches; reads are not bearer-authenticated. Loopback writes with no Origin or localhost:3000 can proceed; other writes require a configured timing-safe bearer-token comparison. Tokens remain server-side.",
           "Security controls are implemented and locally tested. They do not establish production TLS, shared rate limiting or deployed Supabase policy state. Optional Supabase stores accounts/preferences under owner-only RLS, separately from SQLite and public research snapshots.",
-          "The source has an exact, expiring braces tooling-risk exception through 2026-11-11 00:00 Taipei, conditional on fresh matching exposure proof. A registry audit on 2026-10-26 found a different unapproved high body-parser advisory (GHSA-27r3-jxmh-p828). No current clean source audit or complete security-gate pass is claimed."
+          "The source has an exact, expiring braces tooling-risk exception through 2026-11-11 00:00 Taipei, conditional on fresh matching exposure proof. A registry audit on 2026-10-27 found a different unapproved high body-parser advisory (GHSA-27r3-jxmh-p828). No current clean source audit or complete security-gate pass is claimed."
         ], sources: ["server/index.js", "server/http.js", "supabase/user-preferences.sql", "config/security-exceptions.json", "docs/security-exception-policy.md"],
         table: { caption: "Implemented safeguards and operating scope", columns: ["Control", "Bound", "Scope"], rows: [
           ["Write request limiter", "30 POSTs / client IP / 5 minutes; 10,000 client buckets", "In-memory, one API process; reset on restart"],
@@ -169,12 +169,12 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
       {
         id: "verification", title: "Verified implementation results",
         paragraphs: [
-          "The pinned artifacts contain 20 enabled companies and 5,741 retained observations. All 20 have 260 usable closes through 2026-10-23 in this artifact, identifying Yahoo Finance as the actual provider. Refresh-health record counts are not the same statistical unit as retained history.",
+          "The pinned artifacts contain 20 enabled companies and 5,741 retained observations. All 20 have 260 usable closes through 2026-10-26 in this artifact, identifying Yahoo Finance as the actual provider. Refresh-health record counts are not the same statistical unit as retained history.",
           "Targeted dependency-free suites exercised persistence/provenance/merge/publication (43 tests) and security/policy/exposure/account-health behavior (35 tests). The snapshot command passed with two warnings for partial events and company research. This is a bounded replay of retained artifacts and source regressions, not a complete Gridline suite, fresh collection or hosted deployment test."
         ], sources: ["server/database.test.js", "server/snapshot-artifacts.test.js", "scripts/publish-snapshot.test.js", "scripts/security-audit.test.js", "scripts/dependency-exposure.test.js"],
-        table: { caption: "Observed evidence at the 2026-10-26 review", columns: ["Check", "Actual result", "Interpretation"], rows: [
+        table: { caption: "Observed evidence at the 2026-10-27 review", columns: ["Check", "Actual result", "Interpretation"], rows: [
           ["Configured universe / schema", "20 companies; 10 JSON endpoints; 6 SQLite tables", "Implementation inventory, not production scale"],
-          ["Retained snapshot", "Generated 2026-10-25T16:23:29.165Z; 5,741 observations", "5,200 prices / 336 EIA / 155 SEC / 13 events / 37 company research"],
+          ["Retained snapshot", "Generated 2026-10-26T20:34:11.996Z; 5,741 observations", "5,200 prices / 336 EIA / 155 SEC / 13 events / 37 company research"],
           ["Acceptance", "0 blockers; 2 partial-source warnings; compact projection matches", "Dated retained-artifact result, not guaranteed ongoing freshness"],
           ["Targeted regressions", "43 + 35 tests passed", "The full frontend/build suite was not rerun"],
           ["Fresh dependency audit", "1 high / 1 moderate / 6 low / 0 critical affected entries", "The high body-parser finding is outside the exact exception"],
@@ -288,7 +288,7 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
       },
       {
         id: "security", title: "安全與存取控制",
-        paragraphs: ["API 預設綁定 127.0.0.1；瀏覽器來源須完全符合設定，讀取端點不要求 bearer 驗證。無 Origin 或 localhost:3000 的 loopback 寫入可通過，其餘寫入需設定權杖並以固定時間比較；權杖留在伺服器端。", "控制已實作並經本機測試，但不代表生產 TLS、共用限流或已部署 Supabase 政策已驗證。可選 Supabase 以擁有者 RLS 保存帳號／偏好，與 SQLite 及公開研究快照分開。", "來源有精確且附到期日的 braces 工具鏈風險例外，至台北時間 2026-11-11 00:00，仍須新鮮且相符的暴露證據。2026-10-26 即時稽核發現不同且未核准的 body-parser 高風險公告 GHSA-27r3-jxmh-p828；不宣稱目前來源稽核無漏洞或已通過完整安全門檻。"],
+        paragraphs: ["API 預設綁定 127.0.0.1；瀏覽器來源須完全符合設定，讀取端點不要求 bearer 驗證。無 Origin 或 localhost:3000 的 loopback 寫入可通過，其餘寫入需設定權杖並以固定時間比較；權杖留在伺服器端。", "控制已實作並經本機測試，但不代表生產 TLS、共用限流或已部署 Supabase 政策已驗證。可選 Supabase 以擁有者 RLS 保存帳號／偏好，與 SQLite 及公開研究快照分開。", "來源有精確且附到期日的 braces 工具鏈風險例外，至台北時間 2026-11-11 00:00，仍須新鮮且相符的暴露證據。2026-10-27 即時稽核發現不同且未核准的 body-parser 高風險公告 GHSA-27r3-jxmh-p828；不宣稱目前來源稽核無漏洞或已通過完整安全門檻。"],
         sources: ["server/index.js", "server/http.js", "supabase/user-preferences.sql", "config/security-exceptions.json", "docs/security-exception-policy.md"],
         table: { caption: "已實作防護與適用範圍", columns: ["控制", "上限", "範圍"], rows: [
           ["寫入限流", "每 IP 每五分鐘 30 次 POST；10,000 個用戶端桶", "單一程序記憶體，重啟後重置"],
@@ -306,11 +306,11 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
       },
       {
         id: "verification", title: "已驗證實作結果",
-        paragraphs: ["固定版本含 20 個啟用企業、5,741 筆保留觀測；各企業有 260 筆可用收盤價至 2026-10-23，本檔實際供應者為 Yahoo Finance。最新健康狀態的紀錄數與保留歷史不是相同統計單位。", "不需安裝依賴的部分測試涵蓋持久化、追溯、合併、發布共 43 項，以及安全、政策、暴露與帳號健康共 35 項；快照命令通過，事件及企業研究各有部分來源警告。這是保留檔案及部分回歸重播，並非完整 Gridline 測試、重新取得資料或網站部署測試。"],
+        paragraphs: ["固定版本含 20 個啟用企業、5,741 筆保留觀測；各企業有 260 筆可用收盤價至 2026-10-26，本檔實際供應者為 Yahoo Finance。最新健康狀態的紀錄數與保留歷史不是相同統計單位。", "不需安裝依賴的部分測試涵蓋持久化、追溯、合併、發布共 43 項，以及安全、政策、暴露與帳號健康共 35 項；快照命令通過，事件及企業研究各有部分來源警告。這是保留檔案及部分回歸重播，並非完整 Gridline 測試、重新取得資料或網站部署測試。"],
         sources: ["server/database.test.js", "server/snapshot-artifacts.test.js", "scripts/publish-snapshot.test.js", "scripts/security-audit.test.js", "scripts/dependency-exposure.test.js"],
-        table: { caption: "2026-10-26 審查的實際證據", columns: ["檢查", "實際結果", "解讀"], rows: [
+        table: { caption: "2026-10-27 審查的實際證據", columns: ["檢查", "實際結果", "解讀"], rows: [
           ["企業集合及結構", "20 家企業、10 個 JSON 端點、6 張 SQLite 表", "實作盤點，非生產規模"],
-          ["保留快照", "產生於 2026-10-25T16:23:29.165Z；5,741 筆", "價格 5,200／EIA 336／SEC 155／事件 13／企業研究 37"],
+          ["保留快照", "產生於 2026-10-26T20:34:11.996Z；5,741 筆", "價格 5,200／EIA 336／SEC 155／事件 13／企業研究 37"],
           ["接受檢查", "零阻擋、兩項部分來源警告；精簡投影一致", "具日期的檔案結果，非持續新鮮度保證"],
           ["部分回歸測試", "43 加 35 項通過", "未重跑完整前端／建置套件"],
           ["即時套件稽核", "受影響項目：高 1／中 1／低 6／嚴重 0", "body-parser 高風險不在精確例外內"],
