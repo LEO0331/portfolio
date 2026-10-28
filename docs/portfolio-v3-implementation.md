@@ -115,4 +115,4 @@ Reuse `HexIsland` as the native visual control by providing new labels, colors, 
 
 ## Delivery
 
-One Draft PR: `feat: Portfolio v3.0 Interactive Civic Explorer`, targeting main from `codex/portfolio-v3-interactive-civic-explorer`. Final URL is recorded in the feature ledger and handoff after creation. User owns hosted checks, readiness and manual merge. No automatic merge.
+Delivered [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42): `feat: Portfolio v3.0 Interactive Civic Explorer`, targeting main from `codex/portfolio-v3-interactive-civic-explorer`. User owns hosted checks, readiness and manual merge. No automatic merge.
