@@ -33,6 +33,19 @@ test('scan resolves renames, proposes approved demo links and preserves curated 
   assert.deepEqual(repeat.state, result.state);
 });
 
+test('scan preserves literal dollar tokens in approved URLs and curated copy', async () => {
+  const input = source.replace('Curated title', () => "Curated $& / $` / $' / $$");
+  const demo = "https://example.vercel.app/$&/$'/$$";
+  const updated = { ...repo, homepage: demo };
+  const fixtureRequest = async endpoint => endpoint.includes('/readme') ? { sha: 'readme-one' } :
+    endpoint.includes('/users/') ? [updated] : updated;
+  const result = await scanProjects(input, undefined, fixtureRequest);
+  assert.equal(result.source, input.replace('https://leo0331.github.io/old/', () => demo));
+  const repeat = await scanProjects(result.source, result.state, fixtureRequest);
+  assert.equal(repeat.source, result.source);
+  assert.deepEqual(repeat.changes, []);
+});
+
 test('scan detects README and pushed code changes without trusting unsafe homepages', async () => {
   const baseline = await scanProjects(source, undefined, request);
   const changed = async (endpoint) => endpoint.includes('/readme') ? { sha: 'readme-two' } :

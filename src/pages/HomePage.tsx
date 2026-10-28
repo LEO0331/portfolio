@@ -48,7 +48,7 @@ export function HomePage(): JSX.Element {
             <Link to={toLocalePath("/projects")} aria-label={locale === "zh" ? "瀏覽專案" : "Browse projects"} className={getButtonClassName("primary")}>
               {text.home.browseProjects}
             </Link>
-            <Link to={toLocalePath("/contact")} aria-label={locale === "zh" ? "聯絡 Leo Chen" : "Contact Leo Chen"} className={getButtonClassName("secondary")}>
+            <Link to={toLocalePath("/contact")} aria-label={`${text.home.contactMe} — ${locale === "zh" ? "聯絡 Leo Chen" : "Contact Leo Chen"}`} className={getButtonClassName("secondary")}>
               {text.home.contactMe}
             </Link>
           </div>

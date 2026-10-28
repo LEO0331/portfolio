@@ -82,7 +82,7 @@ export async function scanProjects(source, previous, request = githubJson, owner
     if (safeDemo && safeDemo !== demoUrl && !isSubproject) {
       const updated = setStringProperty(block, 'demoUrl', safeDemo);
       if (updated !== block) {
-        nextSource = nextSource.replace(block, updated);
+        nextSource = nextSource.replace(block, () => updated);
         changes.push(`${text(id)}: proposed approved demo URL ${text(safeDemo)}.`);
       }
     } else if (current.homepage && !safeDemo && (!old || old.homepage !== current.homepage)) {

@@ -6,7 +6,7 @@
 [![Deploy Portfolio to GitHub Pages](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/deploy.yml)
 [![Lighthouse Audit](https://github.com/LEO0331/portfolio/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/lighthouse.yml)
 
-A production-ready, recruiter-friendly portfolio for LEO0331. The site is driven by curated project data, supports English and Traditional Chinese routes, and deploys statically to GitHub Pages.
+A bilingual engineering portfolio for LEO0331. The site is driven by curated project data, supports English and Traditional Chinese routes, and deploys statically to GitHub Pages.
 
 ## Architecture and stack
 - React 18 and TypeScript
@@ -229,3 +229,7 @@ The existing Feitsui Water Map project owns Cases 003 and 013 through one projec
 Mode A admits 736 documentary review candidates (A46/B690/C0). Strict longitudinal comparison admits zero; a separately labeled limited same-label view has 823 windows and 7,239 exact indicator-month pairs, which are not independent samples or validated trends. Although 460 rows have four potential exact RPI inputs, no research RPI output is admitted. Mode C remains unavailable for causal, regulatory or public-health conclusions. No pollution severity, drinking-water safety or current monitoring completeness is inferred.
 
 See the [Chinese Case 013 specification](./docs/govtech-case-study-013.zh-TW.md), [independent source audit](./docs/govtech-river-water-source-audit.md) and [v2.5 verification](./docs/portfolio-v2.5-verification.md) for accepted editions, original hashes, immutable snapshot, actual selected IDs, tests and browser evidence. Existing twelve-case technical records and Gridline engineering evidence remain preserved. Portfolio presents static verified findings and does not fetch official monitoring data or the full policy snapshot at runtime.
+
+## Final release maintenance scope
+
+The planned GovTech collection is frozen at13 bilingual cases across six existing domains,with the independent Gridline engineering case and complete project catalogue preserved. Future changes focus on security/dependency maintenance,broken links,compatibility,material factual corrections and concrete recruiter feedback. See the [v2.6 final audit](./docs/portfolio-v2.6-final-audit.md) and [release-readiness report](./docs/portfolio-v2.6-release-readiness.md) for actual checks and deployment limits.

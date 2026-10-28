@@ -1,5 +1,10 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import fs from "node:fs";
+import os from "node:os";
+import path from "node:path";
+import { execFileSync } from "node:child_process";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import {
   setStringProperty,
   validateGeneratedProjectsSource
@@ -43,6 +48,46 @@ test("updates a multiline string property without changing the surrounding objec
   const updated = setStringProperty(block, "shortDescription", "Updated description.");
   assert.match(updated, /shortDescription:\s*\n\s*"Updated description\."/);
   assert.match(updated, /repoUrl: "https:\/\/github\.com\/LEO0331\/alpha"/);
+});
+
+test("property updates preserve literal replacement tokens in every supported shape", () => {
+  const value = "Replacement $& / $` / $' / $$";
+  const encoded = JSON.stringify(value);
+  for (const [block, property, expected] of [
+    ['{\n    demoUrl: "old",\n}', "demoUrl", `{\n    demoUrl: ${encoded},\n}`],
+    ['{\n    shortDescription:\n      "old",\n}', "shortDescription", `{\n    shortDescription:\n      ${encoded},\n}`],
+    ['{\n    image: "/alpha.png",\n}', "demoUrl", `{\n    image: "/alpha.png",\n    demoUrl: ${encoded},\n}`]
+  ]) {
+    assert.equal(setStringProperty(block, property, value), expected);
+  }
+});
+
+test("sync CLI writes approved dollar-bearing URLs without changing curated project text", () => {
+  const temporary = fs.mkdtempSync(path.join(os.tmpdir(), "portfolio-sync-test-"));
+  try {
+    const curated = "Curated $& / $` / $' / $$";
+    const input = projectSource.replace("Alpha description.", () => curated);
+    const demo = "https://example.vercel.app/$&/$'/$$";
+    const expectedDemo = sanitizePublicDemoUrl(demo);
+    assert.ok(expectedDemo);
+    const dataDirectory = path.join(temporary, "src/data");
+    fs.mkdirSync(dataDirectory, { recursive: true });
+    const projectsPath = path.join(dataDirectory, "projects.ts");
+    fs.writeFileSync(projectsPath, input);
+    const preload = path.join(temporary, "mock-fetch.mjs");
+    const repositories = [{ name: "alpha", homepage: demo }, { name: "beta", homepage: "" }];
+    fs.writeFileSync(preload, `globalThis.fetch = async () => ({ ok: true, json: async () => ${JSON.stringify(repositories)} });\n`);
+    execFileSync(process.execPath, [
+      "--import", pathToFileURL(preload).href,
+      fileURLToPath(new URL("./sync-projects-from-github.mjs", import.meta.url)), "--write"
+    ], { cwd: temporary, env: { ...process.env, GITHUB_TOKEN: "" }, stdio: "pipe" });
+    const expected = input.replace('    image: "/src/assets/images/projects/alpha.png",',
+      () => `    image: "/src/assets/images/projects/alpha.png",\n    demoUrl: ${JSON.stringify(expectedDemo)},`);
+    assert.equal(fs.readFileSync(projectsPath, "utf8"), expected);
+  } finally {
+    assert.equal(path.dirname(temporary), path.resolve(os.tmpdir()));
+    fs.rmSync(temporary, { recursive: true, force: true });
+  }
 });
 
 test("rejects unsafe or credential-bearing homepage URLs", () => {

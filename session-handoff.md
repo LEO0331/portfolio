@@ -2,36 +2,36 @@
 
 **Last updated:** 2026-10-28
 
-**Current objective:** Portfolio v2.5 — final planned GovTech Case013,on `codex/govtech-river-water-case-013`,base `8fa9a56acfddd3792efad63e49e6efbdc33343ad`.
+**Current objective:** Portfolio v2.6 final audit on `codex/portfolio-v2-6-final-audit`,from merged v2.5 main `c2ee6e5893e45bce78508330f2c2c6490352a03f`.
 
-**Current status:** Complete and published as draft [PR40](https://github.com/LEO0331/portfolio/pull/40),verified open and unmerged. Implementation5898329;branch codex/govtech-river-water-case-013. No automatic merge.
+**Current status:** Complete and published as draft [PR41](https://github.com/LEO0331/portfolio/pull/41),verified open and unmerged. Implementationd9b8de3. Verdict PASS_WITH_LIMITATIONS. No automatic merge.
 
 ### Completed
 
-- Thirteen bilingual cases across six domains plus the separate Gridline Engineering Deep Dive. Case013 has16 sections,12 tables,actual source-bound examples and visible analytical limits through the shared lazy renderer.
-- Policy13 PR7 merged at beedd7eef3592c12bb66c21937add068f82ce5fa. Eight original bodies and exact7,016,489-byte snapshot verified;original auditor and two publication-disabled builders reproduce identical bytes. Fixed analysis date2026-10-27;verification completed28October.
-- Published768 versus observed720(partial across27 fields),pending16/future32. ModeA736(A46/B690/C0);strictB0,limited823 windows/7239 exact pairs;RPI460 potential/0 admitted;ModeC unavailable. Default strategies select identical5/10 IDs;2026 scope changes population to160 rather than proving environmental improvement.
-- Existing Feitsui project owns003/013 without duplication or combined score. All24 previous localized semantic records,Gridline content/identity,pins,featured order,dependencies and old fixtures are preserved. Source audits,specification,README pair,template and lifecycle updated.
+- Audited13unique GovTech cases,26localized records,sixdomains,38catalogue projects andthe independent Gridline case. All30protected source/presentation files andexisting semantic/identity/dependency regressions remain unchanged.
+- Resolved2P1 findings:localized404 recovery andlazy-loading footer shift. Resolved4P2 findings:visible-label/localization mismatches,duplicated domain sentence,literal-dollar maintenance mutations andverification coverage gaps. DeferredoneP3 image-variant opportunity.
+- Preserved Feitsui003013,Safety009012,Bin001005,Crash006007 ownership,robotfriends compatibility,featured order andGitHubpins. No newpolicy,renderer,dependency orupstreamrepo modification.
 
 ### Verification Evidence
 
-- Baseline29 unit/236 browser/audit0/build36 routes. Final clean install,audit0,29 unit,249 Playwright(0 skipped/flaky/unexpected),17/17 flows,TypeScript/build38 routes,harness28 features and diff checks pass.
-- Actual root and Pages each pass120 bilingual/theme/five-width layouts and31 route outcomes;240layouts/62route outcomes total. No page errors,external research requests or overflow. Default Pages build restored. Visual94/pass;actual scenario/gate/selection/RPI captures saved.
-- New language-roundtrip test setup and exact accessible back-link name corrected without product locale changes. Initial Windows preview/native-module lock resolved by closing the owned preview before clean install.
-- Pages home105074 encoded JS bytes versus104337 baseline(+0.71%);Case013141537 English/141797 Chinese;no live government fetch or full research snapshot. Details:docs/portfolio-v2.5-verification.md.
+- Baseline audit0,29unit,249browser,320layouts and9actualLighthouse runs. Final actual GitBash init.sh exit0,audit0(full/production),34unit,257browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build40registered/38indexable routes,harness29features anddiff checks pass.
+- Final340GovTech/Gridline layouts plus180representative layouts perroot/Pages;all40routes plus2unknown outcomes perbase(84). Metadata,structureddata,sitemap/robots,language/noindex and404recovery pass. Default Pages build restored.
+- Nine final localLighthouse runs:A/BP/SEO100 each. CLSbin/river0.272816→0.00053;Gridline0.321633→0.00086. Single-run performance scores have CPU-load caveats,notproduction guarantees. Home scripttransfer105884→106095bytes(+0.20%).
+-502unique source/projectlinks,313pinnedpaths existing,0confirmed hardfailures. OneRender demo remains unverified(timeout,then503loading);threefeatured anonymouslandingpages rendered. Mainc2ee deployment/E2E/Lighthouse statuses verifiedindependently;candidatechangesnotlive.
+- Reports:docs/portfolio-v2.6-final-audit.md anddocs/portfolio-v2.6-release-readiness.md;compactrequiredmachineevidence underdocs/evidence/portfolio-v2.6.
 
 ### Blockers
 
-None for Portfolio implementation/publication.
+None forlocalcandidate implementation/review. Candidatehosted verification follows humanmerge anddeployment.
 
 ### Remaining Risks
 
-Strict station/method continuity,RPI and causal/regulatory conclusions remain unavailable. Limited same-label differences are descriptive,not trends or independent samples. No complete upstream92-test/build replay,fresh source acquisition,hosted deployment/Lighthouse or production availability claim.
+OneexternalRender serviceinconclusive;imagevariantsdeferred;noWCAG/productionSLA certification. FrozenGridlinesnapshot nowfails20current-sessionfreshness checks whileitsoriginaldatedacceptance remainsintact. Riverstrictcomparability/RPI/causal gates stayunavailable. Branchprotection andfullupstreamacceptance notverified.
 
 ## Recommended Next Step
 
-Review the final collection PR and manually merge after user-owned hosted checks. Preserve prior case and Gridline evidence. Future work concerns better evidence for existing limits;do not start Policy14 or Case014.
+Reviewthe oneaudit PR andmerge manually ifaccepted. Thenverify deployedhead/assets,localized404 recovery,Case013/Gridline routes andindependent E2E/Lighthouse outcomes. Freeze newGovTechdevelopment at13;futurework ismaintenance,factualcorrections orrealrecruiterfeedback.
 
 ## Files Relevant to the Next Update
 
-New river data pair;shared catalogue/summary/lazy loader/routes and SEO title fallback;Feitsui003013 relationship and project/domain/home copy;source verifier/fixture/prior-twelve baseline;focused E2E and count/link updates;README/spec/source audit/verification/template/current indices;evidence under docs/evidence/portfolio-v2.5.
+Localized404/AppRouter/loadingfallback;Home/Hero/About/Contact/Navbar/Footerlabels;domaincopy;three maintenance source mutators/tests;Lighthouseconfig;existing link/public/quality tools andnew focused browserregressions;READMEpair,featureledger,lifecycle andv2.6audit/readiness/evidence. Acceptedcase/engineering/project/dependencydata unchanged.

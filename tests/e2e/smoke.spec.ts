@@ -135,7 +135,7 @@ test.describe("Portfolio smoke", () => {
     await expect(page).toHaveURL(/\/portfolio\/404$/);
     await expect(page.getByRole("heading", { name: "Page not found", level: 1 })).toBeVisible();
 
-    await page.getByRole("link", { name: "Return to home page" }).click();
+    await page.getByRole("link", { name: "Return Home" }).click();
     await expect(page).toHaveURL(/\/portfolio\/?$/);
   });
 

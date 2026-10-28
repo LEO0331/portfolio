@@ -23,3 +23,9 @@ export function auditPublicRecords(records) {
   }
   return findings;
 }
+export function isResearchPayloadRequest(href) {
+  let url;
+  try { url = new URL(href); } catch { return false; }
+  return /(?:^|\.)(?:data\.taipei|dosw\.gov|laws\.gov|www-ws\.gov|raw\.githubusercontent\.com|api\.github\.com)/i.test(url.hostname)
+    || /\/policy\/senior-care-policy|\/data\/(?:fire-rescue-access-policy|policy-11|wifi|bridge|bus|neihu|shade|river-water-policy|dashboard-(?:snapshot|overview))|\/api\/(?:observations|provenance|scores|ingest|scenario|backtest)(?:\/|$)/i.test(url.pathname);
+}

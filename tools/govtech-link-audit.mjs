@@ -20,11 +20,12 @@ const { govtechCasesZh } = await import('../src/data/govtechCases.zh.ts');
 const { govtechCopy, civicSourceReadmes } = await import('../src/data/govtechCopy.ts');
 const { projects } = await import('../src/data/projects.ts');
 const { getLocalizedProjects } = await import('../src/utils/projectLocalization.ts');
+const { gridlineEngineeringContent, gridlineSource, GRIDLINE_SOURCE_SHA } = await import('../src/data/gridlineEngineering.ts');
 const records = { en: govtechCases, zh: govtechCasesZh };
 const routePaths = new Set(JSON.parse(readFileSync(resolve(root, 'src/routes/routeConfig.json'), 'utf8')).routes.map(route => route.path));
 const limits = { concurrency: 2, timeoutMs: 8000, maxTreeRequests: 32, maxHttpRequests: 120, maxResponseBytes: 12000000, maxRedirects: 4 };
 const startedAt = new Date().toISOString();
-const inputSha256 = createHash('sha256').update(JSON.stringify({ records, govtechCopy, civicSourceReadmes, projects: { en: getLocalizedProjects(projects, 'en'), zh: getLocalizedProjects(projects, 'zh') } })).digest('hex');
+const inputSha256 = createHash('sha256').update(JSON.stringify({ records, gridlineEngineeringContent, GRIDLINE_SOURCE_SHA, govtechCopy, civicSourceReadmes, projects: { en: getLocalizedProjects(projects, 'en'), zh: getLocalizedProjects(projects, 'zh') } })).digest('hex');
 const links = new Map();
 function add(href, source) {
   if (!links.has(href)) links.set(href, { href, references: [] });
@@ -32,7 +33,7 @@ function add(href, source) {
 }
 function visit(value, source) {
   if (typeof value === 'string') {
-    if (/^(?:https?:\/\/|\/\/|\/src\/|\/assets\/|\/govtech(?:\/|$)|\/zh\/|#)/.test(value)) add(value, source);
+    if (/^(?:https?:\/\/|\/\/|\/src\/|\/assets\/|\/govtech(?:\/|$)|\/engineering(?:\/|$)|\/zh\/|#)/.test(value)) add(value, source);
   } else if (value && typeof value === 'object') {
     for (const [key, child] of Object.entries(value)) visit(child, `${source}/${key}`);
   }
@@ -56,6 +57,10 @@ if (!token && !process.argv.includes('--no-credentials')) {
     const credential = execFileSync('git', ['credential', 'fill'], { cwd: root, input: 'protocol=https\nhost=github.com\n\n', encoding: 'utf8', timeout: 5000, stdio: ['pipe', 'pipe', 'ignore'], env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never' } });
     token = credential.split(/\r?\n/).find(line => line.startsWith('password='))?.slice(9);
   } catch { /* Public requests remain valid evidence, possibly rate limited. */ }
+}
+for (const [locale,content] of Object.entries(gridlineEngineeringContent)) {
+  visit(content, `engineering/${locale}`);
+  for (const section of content.sections) for (const file of section.sources) add(gridlineSource(file), `engineering/${locale}/${section.id}`);
 }
 const blockedCodes = new Set([401, 403, 407, 429, 451]);
 async function request(url, { json = false } = {}) {
@@ -155,8 +160,8 @@ for (const entry of checks) for (const kind of ['structural', 'local', 'internal
   if (entry[kind]) { const key = `${kind}:${entry[kind].status}`; counts[key] = (counts[key] ?? 0) + 1; }
 }
 const failures = checks.filter(entry => [entry.structural, entry.local, entry.internalRoute, entry.repositoryPath, entry.http].some(check => check && ['invalid', 'missing', 'type-mismatch'].includes(check.status)));
-const report = { schemaVersion: 1, inputSha256, startedAt, completedAt: new Date().toISOString(), source: 'Current imported case records, landing copy, civic source READMEs and localized project drawers', cases: { en: records.en.length, zh: records.zh.length }, limits, uniqueLinks: checks.length, counts, hardFailures: failures.length, treeRequests, limitations: ['HTTP success verifies response availability, not factual correctness or client-side rendering.', 'GitHub paths are checked against exact SHA trees; a truncated tree never establishes absence.', 'Blocked, unavailable and bounded-out requests remain unverified, not passing.', 'Internal fragments require the separate rendered DOM regression suite.', 'HTTP checks cancel bodies after headers; no large datasets or remote media are downloaded.'], checks };
-const output = resolve(root, 'docs/evidence/cross-case-quality/link-audit.json');
+const report = { schemaVersion: 1, inputSha256, startedAt, completedAt: new Date().toISOString(), source: 'Current imported GovTech and Gridline engineering records, landing copy, civic source READMEs and localized project drawers', cases: { en: records.en.length, zh: records.zh.length }, limits, uniqueLinks: checks.length, counts, hardFailures: failures.length, treeRequests, limitations: ['HTTP success verifies response availability, not factual correctness or client-side rendering.', 'GitHub paths are checked against exact SHA trees; a truncated tree never establishes absence.', 'Blocked, unavailable and bounded-out requests remain unverified, not passing.', 'Internal fragments require the separate rendered DOM regression suite.', 'HTTP checks cancel bodies after headers; no large datasets or remote media are downloaded.'], checks };
+const output = resolve(root, process.env.LINK_AUDIT_OUTPUT ?? 'docs/evidence/cross-case-quality/link-audit.json');
 mkdirSync(dirname(output), { recursive: true });
 writeFileSync(output, `${JSON.stringify(report, null, 2)}\n`);
 console.log(JSON.stringify({ output: relative(root, output), uniqueLinks: checks.length, counts, hardFailures: failures.length }, null, 2));

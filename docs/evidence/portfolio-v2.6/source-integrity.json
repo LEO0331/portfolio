@@ -1,0 +1,471 @@
+{
+  "portfolioBase": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+  "scope": "Accepted canonical inventory and final file-hash preservation;bounded retained-source replays are separated from original upstream test reports.",
+  "counts": {
+    "uniqueCases": 13,
+    "localizedRecords": 26,
+    "domains": 6,
+    "projects": 38,
+    "localizedGovtechRoutes": 26,
+    "engineeringRoutes": 2
+  },
+  "inventory": [
+    {
+      "id": "bin-policy",
+      "displayNumber": "001",
+      "projectId": "taipei-bin-map",
+      "policyDomain": "Urban Services & Environment",
+      "sourceRepository": "https://github.com/LEO0331/taipei-bin-map",
+      "sourceVersion": "1280011b086f498404abf138c29f64041963e14c",
+      "snapshotVersion": null,
+      "methodology": "weighted-coverage (original type has no named method ID)",
+      "semanticHashes": {
+        "en": "4858f6dde20c538b71917e4df9de403ad7c0a45782d5752ffa9135849a3dc7eb",
+        "zh": "788846b77270e9daa9798aa4756f2f1a0d6a3042aa474d4f09abc0678c87727e"
+      }
+    },
+    {
+      "id": "civic-1999",
+      "displayNumber": "002",
+      "projectId": "taipei-1999-map",
+      "policyDomain": "Citizen Services & Public Health",
+      "sourceRepository": "https://github.com/LEO0331/taipei-1999-map",
+      "sourceVersion": "352dbebe0057f62817e4ee08572e1a4d207a5b5a",
+      "snapshotVersion": "4f5529897a52311ae3b4984c93d624958a7c9180d86fe63e5de8bc1c4dbdf61f",
+      "methodology": "civic-investigation-priority-v1",
+      "semanticHashes": {
+        "en": "a4943f70d78d2eac3b98939c1989ff77012dff6ce6548dcd44c8e7146554d826",
+        "zh": "e4023e71f56780facee7e77f2a4e25cc471c95483f76014901fa9611695347de"
+      }
+    },
+    {
+      "id": "heavy-rain-preparedness",
+      "displayNumber": "003",
+      "projectId": "taipei-feitsui-water-map",
+      "policyDomain": "Disaster Preparedness & Public Safety",
+      "sourceRepository": "https://github.com/LEO0331/taipei-feitsui-water-map",
+      "sourceVersion": "195e63111d32ad564291545ff9d8b230b025b055",
+      "snapshotVersion": "sha256-d67edc57254ee273",
+      "methodology": "heavy-rain-preparedness-review-v1",
+      "semanticHashes": {
+        "en": "2b1afbbf041c842cc1061d0aeabdf117312226e34baf97156f1bfd4e68b3eae2",
+        "zh": "f9a7b0cec53bd59df498bd48b5c982ab6fe4fd9fda667e3fe87066f5cc611e77"
+      }
+    },
+    {
+      "id": "urban-renewal",
+      "displayNumber": "004",
+      "projectId": "taipei-real-estate-dashboard",
+      "policyDomain": "Housing & Urban Resilience",
+      "sourceRepository": "https://github.com/LEO0331/taipei-real-estate-dashboard",
+      "sourceVersion": "e3f37ff91816b4d51223ab686097a6cef542ca31",
+      "snapshotVersion": "ure-c81e4ef44e6c9868",
+      "methodology": "urban-renewal-evidence-review-v1",
+      "semanticHashes": {
+        "en": "adbefffee47b36bb3887b8efa90e625185ca241479544b724a7220de38001d09",
+        "zh": "1e71033d661d09ed5e588b38bdc093a3373b522259cfd0640d3c7f3b85c2ed4f"
+      }
+    },
+    {
+      "id": "shade-equity",
+      "displayNumber": "005",
+      "projectId": "taipei-bin-map",
+      "policyDomain": "Urban Services & Environment",
+      "sourceRepository": "https://github.com/LEO0331/taipei-bin-map",
+      "sourceVersion": "612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9",
+      "snapshotVersion": "shade-equity-v1-8e4cfb4029d0831d",
+      "methodology": "shade-equity-evidence-review-v1",
+      "semanticHashes": {
+        "en": "97bc1f0cb807501d732be8aec4d83543d49abab0a82849e051b7d9990accebb3",
+        "zh": "4fdf081736f314d87a2670ee81a24a6185557c8b74d462cffe3f86aead341634"
+      }
+    },
+    {
+      "id": "neihu-congestion",
+      "displayNumber": "006",
+      "projectId": "taipei-crash-map",
+      "policyDomain": "Transportation & Mobility",
+      "sourceRepository": "https://github.com/LEO0331/taipei-crash-map",
+      "sourceVersion": "deb28d5d5b4e608eb04d89743bc3fea632d74c8a",
+      "snapshotVersion": "neihu-readiness-49f28aaa55758ffe",
+      "methodology": "neihu-traffic-observation-review-v1",
+      "semanticHashes": {
+        "en": "94276f930a30eb9b903e95cfaf8075fc68d908ea8986018c4af974ea261926ec",
+        "zh": "e864d86b94cd8734a4d6a07e7a48cfe8773f027a2e219f151d71893324821aad"
+      }
+    },
+    {
+      "id": "bus-service",
+      "displayNumber": "007",
+      "projectId": "taipei-crash-map",
+      "policyDomain": "Transportation & Mobility",
+      "sourceRepository": "https://github.com/LEO0331/taipei-crash-map",
+      "sourceVersion": "e01b651d66cedfb5106c263088dc99fbc5d5e3b8",
+      "snapshotVersion": "pto-bus-0b70f80504e5b952",
+      "methodology": "bus-network-service-evidence-review-v1",
+      "semanticHashes": {
+        "en": "ff16687d6de863ef2d97a4a96dbb8b86eba8ef2d7393508bdcc2c289e6bd299c",
+        "zh": "6a30c2a72065ddc0fe373da31bccf1745d7bb076231a01bb2cff312a89306e52"
+      }
+    },
+    {
+      "id": "wifi-allocation",
+      "displayNumber": "008",
+      "projectId": "taipei-free-wifi-map",
+      "policyDomain": "Digital Inclusion & Data Governance",
+      "sourceRepository": "https://github.com/LEO0331/taipei-free-wifi-map",
+      "sourceVersion": "8e01a2bd8d762b51fae979d32fd477e378d1876b",
+      "snapshotVersion": "wifi-geo-da9f69f501af4d6e1d3f9122",
+      "methodology": "wifi-geographic-proximity-experiment-v1",
+      "semanticHashes": {
+        "en": "03129cd7da27911a4e888fb364d2e7a80966a9fc69958b5097e7c6471daafc18",
+        "zh": "ab3b6030d5f25dc6f54a3913a40062c9d136314358955a47380332ace10e746c"
+      }
+    },
+    {
+      "id": "bridge-inspection",
+      "displayNumber": "009",
+      "projectId": "taipei-safety-map",
+      "policyDomain": "Disaster Preparedness & Public Safety",
+      "sourceRepository": "https://github.com/LEO0331/taipei-safety-map",
+      "sourceVersion": "deb812b3472c078b5879727953e85d2850f0a82c",
+      "snapshotVersion": "bridge-policy-v1-3198380697811e454554c9c19a9c16ebf82019e7e07c4b8699099aa4bb74273a",
+      "methodology": "bridge-inspection-evidence-review-v1",
+      "semanticHashes": {
+        "en": "c77eac7867abc89f4e623ea67bc24016f054a136ac878aa01198666f6925df3b",
+        "zh": "60dbeaaa86eb29fdb39ede1b17fefabd42d49187ae57ec4382dc0579520958a3"
+      }
+    },
+    {
+      "id": "senior-community-care",
+      "displayNumber": "010",
+      "projectId": "taipei-civic-groups-map",
+      "policyDomain": "Citizen Services & Public Health",
+      "sourceRepository": "https://github.com/LEO0331/taipei-civic-groups-map",
+      "sourceVersion": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+      "snapshotVersion": "senior-care-f3dabc24478b89c72dc25a4e7154fb8efed4669d9e07809dcff72c1d7a4e502c",
+      "methodology": "senior-community-care-evidence-review-v1",
+      "semanticHashes": {
+        "en": "82dcd25d1714c4af3f638104f866f3de273153d5309d95e7dabf4b4485ac615c",
+        "zh": "e9d79150b8d4f725680374eecb1d527455cf6065751a2eea795210e96775c8d2"
+      }
+    },
+    {
+      "id": "food-hygiene-inspection",
+      "displayNumber": "011",
+      "projectId": "taipei-friendly-food-map",
+      "policyDomain": "Citizen Services & Public Health",
+      "sourceRepository": "https://github.com/LEO0331/taipei-friendly-food-map",
+      "sourceVersion": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+      "snapshotVersion": "policy-11-1916319270a865f57805f618267c58be38e7b2f39b8ef6af2f8dfd0ac40ecefd",
+      "methodology": "selectReviewRecords",
+      "semanticHashes": {
+        "en": "6b86d1b51baca70c4a7b6ece32c6bd0bdcd6d127a63580831e192a13e7fc5b62",
+        "zh": "4f505e486d30840b33a8e287f004d60f48648303691c130c1b69d9b6a7a72cff"
+      }
+    },
+    {
+      "id": "fire-rescue-access",
+      "displayNumber": "012",
+      "projectId": "taipei-safety-map",
+      "policyDomain": "Disaster Preparedness & Public Safety",
+      "sourceRepository": "https://github.com/LEO0331/taipei-safety-map",
+      "sourceVersion": "4e532d697eafb274530d0a1e524f027903a4c4d1",
+      "snapshotVersion": "fire-rescue-access-policy-v1-a5354b561746336ecd171478dbd2c429c948055780cdda25c1a6c709c6e86524",
+      "methodology": "fire-rescue-access-evidence-review-v1",
+      "semanticHashes": {
+        "en": "1e9bda96bd6cb0b0b0e98fcf236afb184bf66850413c919b9f0de41463e12a3a",
+        "zh": "1c388dc53a674f3fc687109253c67dbb239c8907d382bb1c47f5e337d37a7eac"
+      }
+    },
+    {
+      "id": "river-water-quality",
+      "displayNumber": "013",
+      "projectId": "taipei-feitsui-water-map",
+      "policyDomain": "Urban Services & Environment",
+      "sourceRepository": "https://github.com/LEO0331/taipei-feitsui-water-map",
+      "sourceVersion": "beedd7eef3592c12bb66c21937add068f82ce5fa",
+      "snapshotVersion": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+      "methodology": "river-water-longitudinal-evidence-review-v1",
+      "semanticHashes": {
+        "en": "bcdb624b404f43de3c9eee5177ee0a17280b025f15b506ab188333695ee039bc",
+        "zh": "516ee8228bf36c1fa2a6f03ad010ea951bf2bce64a8e536276bfc072821c781b"
+      }
+    }
+  ],
+  "relationships": {
+    "taipei-bin-map": [
+      "bin-policy",
+      "shade-equity"
+    ],
+    "taipei-crash-map": [
+      "neihu-congestion",
+      "bus-service"
+    ],
+    "taipei-safety-map": [
+      "bridge-inspection",
+      "fire-rescue-access"
+    ],
+    "taipei-feitsui-water-map": [
+      "heavy-rain-preparedness",
+      "river-water-quality"
+    ]
+  },
+  "preservation": {
+    "priorLocalizedSemanticHashes": 24,
+    "protectedPriorReleaseFiles": 9,
+    "gridlineLegacyProjectUnchanged": true
+  },
+  "river": {
+    "sourceSha": "beedd7eef3592c12bb66c21937add068f82ce5fa",
+    "methodId": "river-water-longitudinal-evidence-review-v1",
+    "snapshot": {
+      "schemaVersion": "1.0.0",
+      "methodId": "river-water-longitudinal-evidence-review-v1",
+      "snapshotId": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+      "sha256": "212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+      "byteLength": 7016489,
+      "file": "snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json"
+    },
+    "analysisDate": "2026-10-27",
+    "counts": {
+      "publishedRowCount": 768,
+      "observedRowCount": 720,
+      "completeFourIndicatorCount": 460,
+      "partiallyMeasuredRowCount": 720,
+      "placeholderCount": 32,
+      "futurePlaceholderCount": 32,
+      "expectedStationMonthCount": 736,
+      "missingStationMonthCount": 16,
+      "censoredValueCount": 1571,
+      "duplicateCount": 0,
+      "unparseableRowCount": 0,
+      "strictComparisonCount": 0,
+      "limitedComparisonCount": 823,
+      "matchedPairCount": 7239,
+      "indicatorCount": 27,
+      "totalIndicatorCells": 20736,
+      "riverCount": 9,
+      "stationLabelCount": 16,
+      "currentPeriodPendingCount": 16,
+      "historicalMissingCount": 0,
+      "fullyObservedCount": 0
+    },
+    "modeA": {
+      "eligible": 736,
+      "tiers": {
+        "A": 46,
+        "B": 690,
+        "C": 0
+      }
+    },
+    "modeB": {
+      "strictEligible": 0,
+      "limitedEligible": 823,
+      "matchedPairCount": 7239
+    },
+    "rpi": {
+      "potentialInputs": 460,
+      "eligible": 0
+    },
+    "modeC": false
+  },
+  "gridline": {
+    "sourceSha": "e3d47a638ddb7f3192c63598596628f60c7b364d",
+    "reviewedAt": "2026-10-27T00:16:17.890Z",
+    "endpoints": 10,
+    "tables": 6,
+    "reviewedFiles": 51,
+    "sourceSecurity": {
+      "info": 0,
+      "low": 6,
+      "moderate": 1,
+      "high": 1,
+      "critical": 0,
+      "total": 8
+    },
+    "sourceSecurityScope": "Dated2026-10-27sourcegraph;notcurrentPortfolioaudit",
+    "publicProfile": "Static React and JSON;notpublicNodeAPIorSQLite",
+    "apiProfile": "LocalNodeHTTP/SQLiteWALwithingestion,provenance,health,persistedruns"
+  },
+  "protectedFileHashes": [
+    {
+      "path": "src/data/gridlineEngineering.ts",
+      "sha256": "8005211530615834465beb7367d4fef64fbbd5471f94491601e9dc0a5fd9e5eb",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/pages/GridlineEngineeringPage.tsx",
+      "sha256": "52ec8840dac402ea9597b90eeb929237250329dc4efbf753e92cda233bfad83a",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/featuredProjects.ts",
+      "sha256": "120224b5a2fe79a0bed6553708a94a427a47a345e0478d755fbf6dcb8ca47e39",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/github-pins.json",
+      "sha256": "eccaa4b13622d322962cb54791d984a41910989722eb76add7b7522ccce70257",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBinPolicy.ts",
+      "sha256": "5d27d56340fd509c889c7cb204edc7bd43e90cfb51cb7614b5d5442df91a11e0",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBinPolicy.zh.ts",
+      "sha256": "a046860092ee4bd9c10125d4267537b4c0583a7acf5727eccb8cbe4f3b3b30b6",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechCivic1999.ts",
+      "sha256": "1940e6dd294ac905c3eff0b8796a838bb9bcaf641bb3f9d780267db974d0e8d8",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechCivic1999.zh.ts",
+      "sha256": "3252e7431dd98083a9ea36fd9814609303201414b435fc2b8736155423fe8ad0",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechHeavyRain.ts",
+      "sha256": "46ee30f2650a0edaf79279178f41d8535eb1d0f1c96c4b6bdbc40dd2f18948e7",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechHeavyRain.zh.ts",
+      "sha256": "160ff0e147fe3605671239fdf90ccb30b81eac2867fc1883fa4e4e6f029ea27d",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechUrbanRenewal.ts",
+      "sha256": "765a9388c14dc32900c1761532350e38fbb74633c2d51cb8a1278c6e88946e63",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechUrbanRenewal.zh.ts",
+      "sha256": "0760066eb2c8f26adbb6d969178bbe073b6dad30afedb7fd4fdf9397269b9be8",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechShadeEquity.ts",
+      "sha256": "cbeb87db59e6922ca2d2485f324f4b5c000473309c7331115a73394e3115b632",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechShadeEquity.zh.ts",
+      "sha256": "3d24bbfe035d07f23a539f2a16a1b883b8cb7db1566a178d4cfce32bba4291f4",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechNeihuCongestion.ts",
+      "sha256": "e2d19261663a4ce2db10b71e239d5370f34b15a6adc5e86ad6ec6164cf4deb40",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechNeihuCongestion.zh.ts",
+      "sha256": "dab47a3d0b158b8749ee10a41520d7cab7de0ea3beb2bc42ef9bf315cc1328e2",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBusService.ts",
+      "sha256": "e13199e60e300a3a98e4376eb78b34c5bdc06726180c7c48c287b81ff8786d53",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBusService.zh.ts",
+      "sha256": "fbe5263f92047cd36b3a02afd9759fae733309f3c8582fe92ca1ff48c4a42e8a",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechWifiAllocation.ts",
+      "sha256": "936b1201f0d70ee4afc075f07fdc550e7c13940b82d4842cf5e59cb58da5f3eb",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechWifiAllocation.zh.ts",
+      "sha256": "f84c48b32d754eb74f557ddf11f2363cbaaaa66436efd01be7a4357fae28891f",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBridgeInspection.ts",
+      "sha256": "4d6a4a8cfd8e0d951864d04b6ac5c7739f4dda8372999dccd13aeea128ec8888",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechBridgeInspection.zh.ts",
+      "sha256": "d6a98dff5109bcc859414d9a9e8dc991d44cf98464ad98bc7e939211fcc0566a",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechSeniorCommunityCare.ts",
+      "sha256": "7e14c3d71ce448703fa983a9ce02e9dc1c21003b8b6cdad2f2b6fd42abb4e4ce",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechSeniorCommunityCare.zh.ts",
+      "sha256": "83b4c7375cbbd96be5b3cb52219e880bf77575a3da0b0811ec7cb3a01f3cd2c7",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechFoodHygieneInspection.ts",
+      "sha256": "f8fab6d8ede41849f315c455b6f0fa20c4302cbf08435183b96090548b894e64",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechFoodHygieneInspection.zh.ts",
+      "sha256": "8eaddf72e2fe7514028b94ef83c1a6f5b6450fdb427859487b7ed6bb83c2e4a2",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechFireRescueAccess.ts",
+      "sha256": "d5fc2416829e0e9d79c1d2c2db8c55c939461b55e4197034ab00c4e9f6e04d2b",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechFireRescueAccess.zh.ts",
+      "sha256": "d2e3aa7ef647bef3b8259d7bd4ff0f379182efa281893644fafed4295efb7f47",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechRiverWaterQuality.ts",
+      "sha256": "b61641f7427d1fd4e62ea4a2fa955d5ebc2972dde0dd855dfdc6a63e27b1fbae",
+      "normalizeEol": true
+    },
+    {
+      "path": "src/data/govtechRiverWaterQuality.zh.ts",
+      "sha256": "1dcec331c7fe244a9fd768a59afa3dcb79f6a76ab40541d80fd1103762002e9f",
+      "normalizeEol": true
+    }
+  ],
+  "findings": [],
+  "finalCheckDate": "2026-10-28",
+  "finalProtectedFilesUnchanged": 30,
+  "riverReplay": {
+    "command": "node tools/verify-river-water-source.mjs --source=.omx/river-water-source",
+    "exitCode": 0,
+    "originalBodies": 8,
+    "exactOfflineRebuilds": 2,
+    "sourceModified": false,
+    "fullUpstreamSuite": false
+  },
+  "gridlineRetainedReplay": {
+    "sourceSha": "e3d47a638ddb7f3192c63598596628f60c7b364d",
+    "files": 51,
+    "snapshot": "2026-10-26T20:34:11.996Z",
+    "acceptedAtGeneration": {
+      "ready": true,
+      "blockers": 0,
+      "warnings": 2
+    },
+    "acceptanceAtCurrentAudit": {
+      "ready": false,
+      "blockers": 20,
+      "warnings": 2,
+      "reference": "2026-10-28T05:39:03.642Z"
+    },
+    "meaning": "Frozen historical artifact remains byte-consistent;current-session freshness now fails20ticker checks. Do not relabel it as current market coverage or alter the dated accepted record."
+  }
+}

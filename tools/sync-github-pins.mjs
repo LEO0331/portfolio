@@ -59,7 +59,7 @@ export function applyPinnedRepositories(source, repositories, canonicalProjects 
   for (const { block, id } of projects) {
     if (!id || !/featured:\s*(true|false)/.test(block)) throw new Error('Project is missing an id or featured flag');
     const updated = block.replace(/(featured:\s*)(true|false)/, (_, prefix) => `${prefix}${selectedIds.has(id)}`);
-    nextSource = nextSource.replace(block, updated);
+    nextSource = nextSource.replace(block, () => updated);
   }
   validateGeneratedProjectsSource(nextSource, blocks.length);
   return { source: nextSource, projectIds: [...selectedIds], unmatched, ambiguous };

@@ -1,0 +1,10 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Chinese not-found content and recovery now retain their locale;the shared error-page styling remains unchanged."
+  ],
+  "suggestions": [],
+  "reasoning": "The 390px Chinese dark error view is readable,with clear recovery and unchanged shared navigation/footer. Automated theme/width matrices and keyboard/error-route regressions confirm no page overflow or focus regression."
+}

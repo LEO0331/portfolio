@@ -8,7 +8,10 @@
         "/portfolio/about",
         "/portfolio/contact",
         "/portfolio/zh",
-        "/portfolio/zh/projects"
+        "/portfolio/zh/projects",
+        "/portfolio/govtech/bin-policy",
+        "/portfolio/govtech/river-water-quality",
+        "/portfolio/engineering/gridline"
       ],
       "numberOfRuns": 1
     }

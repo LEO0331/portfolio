@@ -1,0 +1,237 @@
+{
+  "workflows": {
+    "checkedAt": "2026-10-28T07:01:31.616Z",
+    "scope": "Public read-only workflow metadata; separate workflows are not inferred to gate deployment.",
+    "workflows": {
+      "deploy.yml": [
+        {
+          "id": 40608664002,
+          "headSha": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40608664002",
+          "updatedAt": "2026-10-28T00:25:59Z"
+        },
+        {
+          "id": 40426398616,
+          "headSha": "8fa9a56acfddd3792efad63e49e6efbdc33343ad",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40426398616",
+          "updatedAt": "2026-10-27T00:26:57Z"
+        },
+        {
+          "id": 40343761370,
+          "headSha": "e78173135b470a42a0a7397e9eec923afb75b928",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40343761370",
+          "updatedAt": "2026-10-26T14:53:13Z"
+        }
+      ],
+      "e2e.yml": [
+        {
+          "id": 40608664015,
+          "headSha": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40608664015",
+          "updatedAt": "2026-10-28T00:30:15Z"
+        },
+        {
+          "id": 40426398669,
+          "headSha": "8fa9a56acfddd3792efad63e49e6efbdc33343ad",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40426398669",
+          "updatedAt": "2026-10-27T00:30:08Z"
+        },
+        {
+          "id": 40343761292,
+          "headSha": "e78173135b470a42a0a7397e9eec923afb75b928",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40343761292",
+          "updatedAt": "2026-10-26T14:56:08Z"
+        }
+      ],
+      "lighthouse.yml": [
+        {
+          "id": 40608664101,
+          "headSha": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40608664101",
+          "updatedAt": "2026-10-28T00:27:28Z"
+        },
+        {
+          "id": 40426398658,
+          "headSha": "8fa9a56acfddd3792efad63e49e6efbdc33343ad",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40426398658",
+          "updatedAt": "2026-10-27T00:28:35Z"
+        },
+        {
+          "id": 40343761416,
+          "headSha": "e78173135b470a42a0a7397e9eec923afb75b928",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "url": "https://github.com/LEO0331/portfolio/actions/runs/40343761416",
+          "updatedAt": "2026-10-26T14:54:33Z"
+        }
+      ]
+    }
+  },
+  "browser": {
+    "checkedAt": "2026-10-28T07:05:41.359Z",
+    "scope": "Actual hosted current main,not candidate branch. Font/network failures retained;no style or network suppression.",
+    "checks": [
+      {
+        "path": "",
+        "httpStatus": 200,
+        "title": "Backend-Focused Full Stack Engineer Portfolio | Leo Chen",
+        "lang": "en",
+        "canonical": "https://leo0331.github.io/portfolio/",
+        "heading": "Leo Chen",
+        "styles": 1,
+        "fontSize": "60px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js"
+      },
+      {
+        "path": "projects?project=robotfriends",
+        "httpStatus": 200,
+        "title": "Projects | Full Stack Portfolio | Leo Chen",
+        "lang": "en",
+        "canonical": "https://leo0331.github.io/portfolio/projects",
+        "heading": "Projects",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js"
+      },
+      {
+        "path": "govtech",
+        "httpStatus": 200,
+        "title": "GovTech & Civic Decision Systems | Leo Chen",
+        "lang": "en",
+        "canonical": "https://leo0331.github.io/portfolio/govtech",
+        "heading": "GovTech & Civic Decision Systems",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js",
+        "caseCards": 13
+      },
+      {
+        "path": "govtech/river-water-quality",
+        "httpStatus": 200,
+        "title": "River Water Quality & Longitudinal Evidence Review | Leo Chen",
+        "lang": "en",
+        "canonical": "https://leo0331.github.io/portfolio/govtech/river-water-quality",
+        "heading": "River Water Quality Monitoring & Longitudinal Evidence Review",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js",
+        "sourceShaInDOM": true
+      },
+      {
+        "path": "zh/govtech/river-water-quality",
+        "httpStatus": 200,
+        "title": "臺北市河川水質監測與長期趨勢證據查核 | Leo Chen",
+        "lang": "zh-Hant",
+        "canonical": "https://leo0331.github.io/portfolio/zh/govtech/river-water-quality",
+        "heading": "臺北市河川水質監測與長期趨勢證據查核",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js",
+        "sourceShaInDOM": true
+      },
+      {
+        "path": "engineering/gridline",
+        "httpStatus": 200,
+        "title": "Gridline Backend Architecture & Financial Data Engineering | Leo Chen",
+        "lang": "en",
+        "canonical": "https://leo0331.github.io/portfolio/engineering/gridline",
+        "heading": "Gridline — Financial Data Engineering & Backend Reliability",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js",
+        "sourceShaInDOM": true
+      },
+      {
+        "path": "zh/engineering/gridline",
+        "httpStatus": 200,
+        "title": "Gridline 後端架構與金融資料工程 | Leo Chen",
+        "lang": "zh-Hant",
+        "canonical": "https://leo0331.github.io/portfolio/zh/engineering/gridline",
+        "heading": "Gridline — 金融資料工程與後端可靠性",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js",
+        "sourceShaInDOM": true
+      },
+      {
+        "path": "zh/about",
+        "httpStatus": 200,
+        "title": "關於我 | 全端工程師 | Leo Chen",
+        "lang": "zh-Hant",
+        "canonical": "https://leo0331.github.io/portfolio/zh/about",
+        "heading": "關於我",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js"
+      },
+      {
+        "path": "zh/contact",
+        "httpStatus": 200,
+        "title": "聯絡方式 | 全端工程師 | Leo Chen",
+        "lang": "zh-Hant",
+        "canonical": "https://leo0331.github.io/portfolio/zh/contact",
+        "heading": "保持聯絡",
+        "styles": 1,
+        "fontSize": "36px",
+        "script": "https://leo0331.github.io/portfolio/assets/index-Dip9PJez.js"
+      },
+      {
+        "path": "sitemap.xml",
+        "httpStatus": 200,
+        "indexableUrls": 38,
+        "includesRiver": true
+      },
+      {
+        "path": "robots.txt",
+        "httpStatus": 200,
+        "robotsSitemap": true
+      }
+    ],
+    "errors": [],
+    "requestFailures": [
+      {
+        "url": "https://leo0331.github.io/portfolio/assets/email-website-jxbAjvNj.webp",
+        "error": "net::ERR_ABORTED"
+      }
+    ],
+    "externalRequests": [
+      "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap",
+      "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggexSg.woff2",
+      "https://fonts.gstatic.com/s/spacegrotesk/v22/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2",
+      "https://fonts.gstatic.com/s/manrope/v23/xn7gYHE41ni1AdIRggSxSuXd.woff2"
+    ],
+    "known404": {
+      "url": "https://leo0331.github.io/portfolio/404",
+      "lang": "en",
+      "heading": "Page not found",
+      "note": "Current hosted main reproduces FA-001;candidate fix is not deployed."
+    }
+  },
+  "candidateHosted": false,
+  "scope": "Current main c2ee6e5 observed;candidate audit changes are not deployed. Separate workflow successes are not a combined deployment gate."
+}

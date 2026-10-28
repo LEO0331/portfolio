@@ -651,6 +651,32 @@
         "Home encodedJS104337→105074(+0.71%);newlazyCase013141537EN/141797ZH;no7MBsnapshot/government runtime requests",
         "Exactly one draft PR40 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/40;implementation5898329 on codex/govtech-river-water-case-013"
       ]
+    },
+    {
+      "id": "portfolio-final-audit-v2-6-2026-10",
+      "name": "Audit and harden the completed engineering portfolio",
+      "description": "Evidence-first final release audit preserving thirteen bilingual GovTech cases and Gridline.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-river-water-v2-5-2026-10"
+      ],
+      "doneCriteria": [
+        "Baseline audit and severity-rated findings before targeted fixes",
+        "Resolve confirmed P0/P1 issues and preserve all accepted engineering evidence",
+        "Full supported gate,root/Pages,source-link,hosted,accessibility and Lighthouse evidence",
+        "Document readiness limits,freeze13case scope and publish one reviewable unmerged PR"
+      ],
+      "evidence": [
+        "Starting main c2ee6e5893e45bce78508330f2c2c6490352a03f includes merged Case013 PR40; clean working tree",
+        "Baseline audit0,29unit,249browser,320layouts/29routes and nine actual Lighthouse runs completed before remediation",
+        "Confirmed localized404 loss,lazyfooterCLS,label-in-name,duplicatecopy and literalreplacement-token maintenance defects;targeted plan saved before edits",
+        "Final actual init.sh exit0;full/production audits0,34unit,257browser17flows,build40registered38indexable,harness29features,diff pass",
+        "2P1 and4P2 findings resolved;1P3 image opportunity deferred;all30protected canonical/presentation file hashes unchanged",
+        "700executed layout checks across overlapping families;84all-route root/Pages outcomes;9actual finalLighthouse runs with substantialfooterCLS reduction",
+        "502unique links/313pinned paths exist/0hard failures;oneRender demo unverified;actualhostedmainc2ee verifiedseparately fromcandidate",
+        "PASS_WITH_LIMITATIONS: candidatehostedfollow-up pendinghumanmerge;datedupstreamscope andsingle-run measurementlimitsexplicit",
+        "Exactly one draft PR41 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/41;implementationd9b8de3 on codex/portfolio-v2-6-final-audit"
+      ]
     }
   ]
 }

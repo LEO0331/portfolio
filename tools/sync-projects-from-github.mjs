@@ -74,17 +74,17 @@ function setStringProperty(block, property, value) {
   const multilinePattern = new RegExp(`(\\s{4}${property}:\\s*)\\n\\s*"[^"]*"(,?)`);
 
   if (simplePattern.test(block)) {
-    return block.replace(simplePattern, `$1${encodedValue}$2`);
+    return block.replace(simplePattern, (_, prefix, suffix) => `${prefix}${encodedValue}${suffix}`);
   }
 
   if (multilinePattern.test(block)) {
-    return block.replace(multilinePattern, `$1${encodedValue}$2`);
+    return block.replace(multilinePattern, (_, prefix, suffix) => `${prefix}${encodedValue}${suffix}`);
   }
 
   if (property === 'demoUrl') {
     const imagePattern = /(\n\s{4}image:\s*"[^"]+",)/;
     if (imagePattern.test(block)) {
-      return block.replace(imagePattern, `$1\n    demoUrl: ${encodedValue},`);
+      return block.replace(imagePattern, (_, prefix) => `${prefix}\n    demoUrl: ${encodedValue},`);
     }
   }
 
@@ -182,7 +182,7 @@ async function main() {
 
   let nextSource = source;
   for (const [oldBlock, newBlock] of updatedBlocks.entries()) {
-    nextSource = nextSource.replace(oldBlock, newBlock);
+    nextSource = nextSource.replace(oldBlock, () => newBlock);
   }
 
   console.log(`Existing project updates: ${updates.length}`);
