@@ -430,7 +430,7 @@
       ],
       "evidence": [
         "Clean baseline22unit105Playwright17trackedflows,TypeScript/build,harness/diff passed;5existing high findings onVite8.3.5 base",
-        "Pinned bus artifacts independently verified in ignored .omx/source-bus-service; plan saved before app edits",
+        "Pinned bus artifacts independently verified in an ignored source cache; plan saved before app edits",
         "Final22unit/118Playwright17trackedflows(100%),TypeScript/build24routes,harness18features,diff and both-base14bilingualURLs/five widths passed; visual95/100",
         "Independent original pure functions:1241qualityA163B927C151,0directional,0history;capacity5/10 exact ordered IDs and3/5set differences verified",
         "Actual Git Bash init.sh rerun passes harness/install then stops at5existing high audit findings; downstream checks pass separately; no dependencies changed",
@@ -677,6 +677,15 @@
         "PASS_WITH_LIMITATIONS: candidatehostedfollow-up pendinghumanmerge;datedupstreamscope andsingle-run measurementlimitsexplicit",
         "Exactly one draft PR41 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/41;implementationd9b8de3 on codex/portfolio-v2-6-final-audit"
       ]
+    },
+    {
+      "id": "portfolio-civic-explorer-v3-2026-10",
+      "name": "Explore the existing civic evidence through original layered islands",
+      "description": "Bilingual, accessible, URL-driven discovery of thirteen cases across six domains without changing their evidence.",
+      "status": "complete",
+      "dependencies": ["portfolio-final-audit-v2-6-2026-10"],
+      "doneCriteria": ["Explicit validated 13-case/six-domain mapping preserving shared repositories", "Original SVG/CSS islands with full HTML list and detail evidence", "Search, filters, selected URLs, history, locale, keyboard, touch and reduced motion", "Lazy root/Pages routes with measured baseline/final cost and full regression", "Remove retired workflow references and deliver one Draft PR without merge"],
+      "evidence": ["Base2d5f52a includes merged audit PR41; isolated v3 branch", "Baseline audit0,34unit,257browser,17/17flows passed; actual pre-edit resource capture retained", "Final37unit/269browser/17flows/audit0/build42registered40indexable; both bases80states+44route outcomes passed", "Forty protected canonical files unchanged; home screenshot identical; homeJS+0.29%; visual95/pass; retired workflow references removed", "Draft PR https://github.com/LEO0331/portfolio/pull/42; user owns hosted checks/readiness/manual merge"]
     }
   ]
 }

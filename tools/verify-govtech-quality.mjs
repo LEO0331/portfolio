@@ -35,7 +35,8 @@ try{
    const result=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,dark:document.documentElement.classList.contains('dark'),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i),cards:document.querySelectorAll('#govtech-cases').length?document.querySelector('#govtech-cases').closest('section').querySelectorAll('article').length:0,missingTableCaptions:[...document.querySelectorAll('table')].filter(t=>!t.querySelector('caption')).length}));
    for(const img of await p.locator('main img').all()){await img.scrollIntoViewIfNeeded();await img.evaluate(i=>i.decode().catch(()=>{}));}
    const brokenImages=await p.locator('main img').evaluateAll(imgs=>imgs.filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.currentSrc));
-   const pass=!result.overflow&&result.dark===(theme==='dark')&&!result.duplicateIds.length&&!result.missingTableCaptions&&!brokenImages.length&&(path!=='govtech'||result.cards===config.routes.filter(r=>r.path.startsWith('/govtech/')).length);
+   const caseRouteCount=config.routes.filter(r=>r.path.startsWith('/govtech/')&&r.key!=='govtech-explore').length;
+   const pass=!result.overflow&&result.dark===(theme==='dark')&&!result.duplicateIds.length&&!result.missingTableCaptions&&!brokenImages.length&&(path!=='govtech'||result.cards===caseRouteCount);
    checks.push({width,locale,theme,path,...result,brokenImages,pass});
    const capture=(width===1440&&locale==='en'&&theme==='light')||(width===390&&locale==='zh'&&theme==='dark')||(path==='govtech'&&locale==='en'&&theme==='light');
    if(capture){await p.evaluate(()=>scrollTo(0,0));await p.screenshot({path:resolve(out,`qa-${path.replaceAll('/','-')||'home'}-${locale}-${width}-${theme}.png`)});}

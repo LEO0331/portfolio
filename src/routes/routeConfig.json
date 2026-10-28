@@ -1,5 +1,7 @@
 {
   "routes": [
+    {"key":"govtech-explore","path":"/govtech/explore","indexable":true,"changefreq":"monthly","priority":0.8,"title":"Interactive Civic Explorer | Leo Chen","description":"Explore thirteen civic engineering case studies across six policy domains, with source evidence, implemented results, limitations and an accessible list."},
+    {"key":"govtech-explore-zh","path":"/zh/govtech/explore","indexable":true,"changefreq":"monthly","priority":0.8,"title":"互動市政案例探索 | Leo Chen","description":"以六個政策領域探索十三個市政資料工程案例，閱讀來源證據、實作成果與限制，並可使用完整無障礙清單。"},
     {"key": "engineering-gridline", "path": "/engineering/gridline", "indexable": true, "changefreq": "monthly", "priority": 0.8, "title": "Gridline Backend Architecture & Financial Data Engineering | Leo Chen", "description": "Gridline's source-backed Node.js API, SQLite persistence, deterministic ingestion, failure recovery and validated static publication, with explicit security and deployment limits."},
     {"key": "engineering-gridline-zh", "path": "/zh/engineering/gridline", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "Gridline 後端架構與金融資料工程 | Leo Chen", "description": "以來源程式說明 Gridline 的 Node.js API、SQLite 持久化、確定性介接、失敗恢復及靜態發布，並明示安全與部署界線。"},
     {"key": "home", "path": "/", "indexable": true, "changefreq": "weekly", "priority": 1.0, "title": "Backend-Focused Full Stack Engineer Portfolio | Leo Chen", "description": "Leo Chen's backend-focused engineering portfolio: APIs, data integrations, reliable data processing and inspectable project implementations."},

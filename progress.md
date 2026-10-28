@@ -4,35 +4,37 @@
 
 **Last updated:** 2026-10-28
 
-**Active work:** Portfolio v2.6 final audit on `codex/portfolio-v2-6-final-audit`,from merged v2.5 main `c2ee6e5893e45bce78508330f2c2c6490352a03f`.
+**Active work:** Portfolio v3.0 Interactive Civic Explorer on `codex/portfolio-v3-interactive-civic-explorer`, from latest main `2d5f52a` including merged v2.6 audit PR 41.
 
-**Status:** Complete and published as draft [PR41](https://github.com/LEO0331/portfolio/pull/41),verified open and unmerged. Implementationd9b8de3. Verdict PASS_WITH_LIMITATIONS. No automatic merge.
+**Status:** Complete and delivered as [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42). User handles hosted checks, readiness and manual merge.
 
 ### Completed
 
-- Audited13unique GovTech cases,26localized records,sixdomains,38catalogue projects andthe independent Gridline case. All30protected source/presentation files andexisting semantic/identity/dependency regressions remain unchanged.
-- Resolved2P1 findings:localized404 recovery andlazy-loading footer shift. Resolved4P2 findings:visible-label/localization mismatches,duplicated domain sentence,literal-dollar maintenance mutations andverification coverage gaps. DeferredoneP3 image-variant opportunity.
-- Preserved Feitsui003013,Safety009012,Bin001005,Crash006007 ownership,robotfriends compatibility,featured order andGitHubpins. No newpolicy,renderer,dependency orupstreamrepo modification.
+- Original layered SVG/CSS islands for six domains and thirteen unique case nodes. Explicit primary mapping preserves all shared-repository identities; no new case, dataset or policy claim.
+- Complete HTML list, existing four-field summaries/maturity, selected-case lazy source evidence, verified project-demo links, search, filters, reset and canonical full-case links.
+- URL-driven domain/case/search/view state, refresh/history/locale parity, keyboard focus/Escape, native touch and reduced motion. Two lazy routes plus optional GovTech overview entry; existing list and Full-Stack/backend positioning preserved.
+- Removed retired workflow ignore entry, historical cache path and two progress references. Reused shared patterns; no dependencies or upstream application changes.
 
 ### Verification Evidence
 
-- Baseline audit0,29unit,249browser,320layouts and9actualLighthouse runs. Final actual GitBash init.sh exit0,audit0(full/production),34unit,257browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build40registered/38indexable routes,harness29features anddiff checks pass.
-- Final340GovTech/Gridline layouts plus180representative layouts perroot/Pages;all40routes plus2unknown outcomes perbase(84). Metadata,structureddata,sitemap/robots,language/noindex and404recovery pass. Default Pages build restored.
-- Nine final localLighthouse runs:A/BP/SEO100 each. CLSbin/river0.272816→0.00053;Gridline0.321633→0.00086. Single-run performance scores have CPU-load caveats,notproduction guarantees. Home scripttransfer105884→106095bytes(+0.20%).
--502unique source/projectlinks,313pinnedpaths existing,0confirmed hardfailures. OneRender demo remains unverified(timeout,then503loading);threefeatured anonymouslandingpages rendered. Mainc2ee deployment/E2E/Lighthouse statuses verifiedindependently;candidatechangesnotlive.
-- Reports:docs/portfolio-v2.6-final-audit.md anddocs/portfolio-v2.6-release-readiness.md;compactrequiredmachineevidence underdocs/evidence/portfolio-v2.6.
+- Baseline clean install/audit0,34unit,257browser,17/17flows. Final harness30records,audit0,37unit,269browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build42registered40indexable routes,diff check pass.
+- Root and Pages each passed80scene/list/domain/selected viewport-locale-theme states plus44all-route/unknown outcomes. Final pointer checks include all labels/captions; no page errors, unexpected external requests, duplicate IDs or overflow. Pages build restored.
+- Independent review found/fixed tablet hit interception and cached failed-import retry. Recheck passed48tablet targets and abort-once reload recovery. Visual95/pass; real desktop/mobile screenshots retained.
+- Forty canonical LF data/presentation/dependency hashes unchanged; all13cases/26records,sixdomains,Gridline,pins,featured order andlegacy IDs preserved. Home screenshot byte-identical.
+- Home encodedJS105285→105592(+0.29%); Projects+0.34%,GovTech+0.56%,Gridline+0.25%. Explorer initial133589bytes; selected River adds only12366bytes. No runtime research payloads.
+- Report: docs/portfolio-v3-implementation.md. Machine evidence and screenshots: docs/evidence/portfolio-v3/.
 
 ### Blockers
 
-None forlocalcandidate implementation/review. Candidatehosted verification follows humanmerge anddeployment.
+None for implementation or Draft PR delivery.
 
 ### Remaining Risks
 
-OneexternalRender serviceinconclusive;imagevariantsdeferred;noWCAG/productionSLA certification. FrozenGridlinesnapshot nowfails20current-sessionfreshness checks whileitsoriginaldatedacceptance remainsintact. Riverstrictcomparability/RPI/causal gates stayunavailable. Branchprotection andfullupstreamacceptance notverified.
+Conceptual positions are not geography or policy relationships. Static retained evidence is not live government data; original research/scientific/source freshness limits remain. Demo HTTP200 checks prove endpoint availability only. No full assistive-technology/WCAG certification, upstream suite, hosted candidate E2E/Lighthouse or production speed guarantee.
 
 ### Next Session Should
 
-Reviewthe oneaudit PR andmerge manually ifaccepted. Thenverify deployedhead/assets,localized404 recovery,Case013/Gridline routes andindependent E2E/Lighthouse outcomes. Freeze newGovTechdevelopment at13;futurework ismaintenance,factualcorrections orrealrecruiterfeedback.
+Review [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42). User handles hosted checks, readiness and manual merge; no automatic merge or additional policy/case. Preserve all existing evidence and backend positioning. Dashboard reuse is documented, not implemented.
 
 ## Update Contract
 
@@ -44,6 +46,14 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-10-28 — Interactive Civic Explorer v3.0
+
+- Started from latest main2d5f52a including merged auditPR41; clean isolated branch. Baseline34unit/257browser/audit0 passed before edits.
+- Added original six-domain layered island scene, thirteen distinct cases, same-data HTML list/details, lazy selected evidence, bilingual search/filter and shareable history-aware URLs. Added only optional GovTech entry and two lazy routes.
+- Resolved independently found tablet hit interception and cached dynamic-import retry; added label/caption pointer regressions and actual abort-once recovery.
+- Final37unit/269browser/17flows/audit0/build42registered40indexable/harness30/diff passed. Both bases80states+44route outcomes; visual95. Forty protected canonical text files unchanged; home screenshot identical; homeJS+0.29%.
+- Retired workflow references removed. No new dependency, source change, dataset, policy relationship, Dashboard integration or automatic merge. Delivered Draft PR42 (https://github.com/LEO0331/portfolio/pull/42); no automatic merge. See docs/portfolio-v3-implementation.md.
 
 ### 2026-10-28 — Final release audit and targeted quality hardening
 
@@ -333,7 +343,7 @@ Review the final collection PR and manually merge after user-owned hosted checks
 
 **Active work:** Portfolio GovTech Showcase v1.6 — Taipei Bus Network & Service Coverage Case007.
 
-**Status:** Complete, externally merged through PR30 at 778e183105cd80db464728bf971bc589d0e168e9. Merged E2E/Lighthouse/Pages and live bilingual checks passed. Agent did not merge. Post-merge CI/lifecycle records remain branch-only; no OMX.
+**Status:** Complete, externally merged through PR30 at 778e183105cd80db464728bf971bc589d0e168e9. Merged E2E/Lighthouse/Pages and live bilingual checks passed. Agent did not merge. Post-merge CI/lifecycle records remain branch-only.
 
 ### Completed
 
@@ -387,7 +397,7 @@ Case009 delivery: https://github.com/LEO0331/portfolio/pull/28 targets main from
 
 ### 2026-10-23 — POC dependency and evidence hardening
 
-Authorized dependency fixes,full upstream test/publication replay andsupplementary official-geography evidence. See current state and docs/poc-hardening-verification.md. No OMX,official crosswalk orengineering condition expansion.
+Authorized dependency fixes,full upstream test/publication replay andsupplementary official-geography evidence. See current state and docs/poc-hardening-verification.md. No official crosswalk orengineering condition expansion.
 
 POC hardening delivery: https://github.com/LEO0331/portfolio/pull/30. Full audit0/26unit/143browser/88upstream/two-publication replay/root-visual acceptance passed. One PR created and no automatic merge.
 

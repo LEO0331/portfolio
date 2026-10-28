@@ -23,6 +23,7 @@ A bilingual engineering portfolio for LEO0331. The site is driven by curated pro
 - Quality guardrails: Playwright E2E + CI workflows
 
 ## What visitors can do
+- Explore the thirteen civic engineering cases through an original layered island scene or an accessible HTML list at `/govtech/explore` and `/zh/govtech/explore`. Domain, case, search and view selections can be shared in the URL; existing case evidence remains canonical.
 - Review who you are and your engineering focus
 - Filter projects by category, technology, and status
 - Open project details in-page without losing filters/scroll state
@@ -30,6 +31,9 @@ A bilingual engineering portfolio for LEO0331. The site is driven by curated pro
 - Open live demos and source repositories directly
 
 ## Quick start
+
+The [v3.0 implementation and verification report](./docs/portfolio-v3-implementation.md) documents the explicit six-domain mapping, native SVG/HTML interaction, URL state, Dashboard reuse boundaries and actual browser/resource evidence. `node tools/verify-civic-explorer.mjs` checks the production build across languages, themes, five widths, four states and all registered routes; set `QUALITY_BASE=/` only after generating a root-base build.
+
 ```bash
 npm ci
 npm run build

@@ -1,0 +1,127 @@
+{
+  "scope": "Actual before/after local production response encoded bytes; optional font stylesheet blocked consistently. No hosted speed, Lighthouse or timing improvement claim.",
+  "comparison": [
+    {
+      "path": "",
+      "before": 105285,
+      "after": 105592,
+      "delta": 307,
+      "percent": 0.29
+    },
+    {
+      "path": "projects",
+      "before": 123595,
+      "after": 124016,
+      "delta": 421,
+      "percent": 0.34
+    },
+    {
+      "path": "projects?project=robotfriends",
+      "before": 123595,
+      "after": 124016,
+      "delta": 421,
+      "percent": 0.34
+    },
+    {
+      "path": "about",
+      "before": 105285,
+      "after": 105592,
+      "delta": 307,
+      "percent": 0.29
+    },
+    {
+      "path": "govtech",
+      "before": 127605,
+      "after": 128319,
+      "delta": 714,
+      "percent": 0.56
+    },
+    {
+      "path": "govtech/fire-rescue-access",
+      "before": 137430,
+      "after": 137836,
+      "delta": 406,
+      "percent": 0.3
+    },
+    {
+      "path": "govtech/bridge-inspection",
+      "before": 141992,
+      "after": 142398,
+      "delta": 406,
+      "percent": 0.29
+    },
+    {
+      "path": "contact",
+      "before": 105285,
+      "after": 105592,
+      "delta": 307,
+      "percent": 0.29
+    },
+    {
+      "path": "engineering/gridline",
+      "before": 122796,
+      "after": 123104,
+      "delta": 308,
+      "percent": 0.25
+    }
+  ],
+  "explorer": [
+    {
+      "view": "overview",
+      "jsBytes": 133589,
+      "cssBytes": 10184,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ]
+    },
+    {
+      "view": "domain",
+      "jsBytes": 133589,
+      "cssBytes": 10184,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-DNBo9ZxT.js"
+      ]
+    },
+    {
+      "view": "selected",
+      "jsBytes": 145955,
+      "cssBytes": 10184,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ]
+    },
+    {
+      "view": "list",
+      "jsBytes": 133589,
+      "cssBytes": 10184,
+      "jsFiles": [
+        "seo-BrGhucZX.js",
+        "index-BwWf60tc.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ]
+    }
+  ]
+}

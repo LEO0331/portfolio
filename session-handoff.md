@@ -1,37 +1,29 @@
 # Session Handoff
 
-**Last updated:** 2026-10-28
+Updated 2026-10-28. Branch `codex/portfolio-v3-interactive-civic-explorer`, base `2d5f52a` (latest main, including merged v2.6 PR41).
 
-**Current objective:** Portfolio v2.6 final audit on `codex/portfolio-v2-6-final-audit`,from merged v2.5 main `c2ee6e5893e45bce78508330f2c2c6490352a03f`.
+**Current objective:** Complete original bilingual 2.5D Civic Explorer while preserving thirteen accepted cases and the independent Gridline backend example.
 
-**Current status:** Complete and published as draft [PR41](https://github.com/LEO0331/portfolio/pull/41),verified open and unmerged. Implementationd9b8de3. Verdict PASS_WITH_LIMITATIONS. No automatic merge.
+**Current status:** Complete and delivered as [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42) to main. User handles hosted checks/readiness/manual merge.
 
-### Completed
+## Completed
 
-- Audited13unique GovTech cases,26localized records,sixdomains,38catalogue projects andthe independent Gridline case. All30protected source/presentation files andexisting semantic/identity/dependency regressions remain unchanged.
-- Resolved2P1 findings:localized404 recovery andlazy-loading footer shift. Resolved4P2 findings:visible-label/localization mismatches,duplicated domain sentence,literal-dollar maintenance mutations andverification coverage gaps. DeferredoneP3 image-variant opportunity.
-- Preserved Feitsui003013,Safety009012,Bin001005,Crash006007 ownership,robotfriends compatibility,featured order andGitHubpins. No newpolicy,renderer,dependency orupstreamrepo modification.
+Six original layered SVG/CSS domain islands; thirteen explicitly mapped unique case nodes; complete ordinary HTML list and existing four-field summaries/limits/maturity; selected-case-only evidence import; existing canonical full-case links and checked public demos. Search/domain filters, reset, URL state/history/refresh/locale, keyboard/focus/Escape, touch and reduced motion. Lazy routes /govtech/explore and /zh/govtech/explore plus optional overview entry. Retired workflow references removed. No dependency, source-project or analytical-content changes.
 
-### Verification Evidence
+## Verification
 
-- Baseline audit0,29unit,249browser,320layouts and9actualLighthouse runs. Final actual GitBash init.sh exit0,audit0(full/production),34unit,257browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build40registered/38indexable routes,harness29features anddiff checks pass.
-- Final340GovTech/Gridline layouts plus180representative layouts perroot/Pages;all40routes plus2unknown outcomes perbase(84). Metadata,structureddata,sitemap/robots,language/noindex and404recovery pass. Default Pages build restored.
-- Nine final localLighthouse runs:A/BP/SEO100 each. CLSbin/river0.272816→0.00053;Gridline0.321633→0.00086. Single-run performance scores have CPU-load caveats,notproduction guarantees. Home scripttransfer105884→106095bytes(+0.20%).
--502unique source/projectlinks,313pinnedpaths existing,0confirmed hardfailures. OneRender demo remains unverified(timeout,then503loading);threefeatured anonymouslandingpages rendered. Mainc2ee deployment/E2E/Lighthouse statuses verifiedindependently;candidatechangesnotlive.
-- Reports:docs/portfolio-v2.6-final-audit.md anddocs/portfolio-v2.6-release-readiness.md;compactrequiredmachineevidence underdocs/evidence/portfolio-v2.6.
+Clean baseline install/audit0,34unit,257browser. Final harness30,audit0,37unit,269browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build42registered40indexable,diff check. Root and Pages each80states+44route outcomes; zero runtime errors/overflow/unexpected requests/wrong label targets. Default Pages build restored. Forty canonical data/presentation/dependency files preserved; actual home screenshot unchanged. Home JS +307bytes(+0.29%); Projects+0.34%,GovTech+0.56%,Gridline+0.25%. Explorer overview133589encodedJS; only selected River evidence adds12366bytes.
 
-### Blockers
+Review found tablet rectangular hit interception and unrecoverable dynamic-import retry; both fixed and independently rechecked (48tablet targets and abort-once reload recovery). Visual95/pass. Real screenshot/JSON evidence retained under docs/evidence/portfolio-v3/.
 
-None forlocalcandidate implementation/review. Candidatehosted verification follows humanmerge anddeployment.
+## Blockers and risks
 
-### Remaining Risks
-
-OneexternalRender serviceinconclusive;imagevariantsdeferred;noWCAG/productionSLA certification. FrozenGridlinesnapshot nowfails20current-sessionfreshness checks whileitsoriginaldatedacceptance remainsintact. Riverstrictcomparability/RPI/causal gates stayunavailable. Branchprotection andfullupstreamacceptance notverified.
-
-## Recommended Next Step
-
-Reviewthe oneaudit PR andmerge manually ifaccepted. Thenverify deployedhead/assets,localized404 recovery,Case013/Gridline routes andindependent E2E/Lighthouse outcomes. Freeze newGovTechdevelopment at13;futurework ismaintenance,factualcorrections orrealrecruiterfeedback.
+No implementation or Draft delivery blocker. Hosted candidate checks/production timings and full assistive-technology certification not claimed. Positions are conceptual, evidence is frozen, and demo HTTP availability is not a deployment/function guarantee. Existing upstream evidence limitations remain unchanged.
 
 ## Files Relevant to the Next Update
 
-Localized404/AppRouter/loadingfallback;Home/Hero/About/Contact/Navbar/Footerlabels;domaincopy;three maintenance source mutators/tests;Lighthouseconfig;existing link/public/quality tools andnew focused browserregressions;READMEpair,featureledger,lifecycle andv2.6audit/readiness/evidence. Acceptedcase/engineering/project/dependencydata unchanged.
+New Explorer graph/copy/state, page and five visual/detail/list components plus scoped CSS; route config/router, GovTech optional entry, sitemap; new unit/E2E/QA tools; retired-reference cleanup, README pair and lifecycle files. Details: docs/portfolio-v3-implementation.md.
+
+## Recommended Next Step
+
+Review [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42). User handles hosted E2E/Lighthouse and manual merge. No Policy14/Case014, new source data, homepage redesign, Dashboard implementation, package publication or upstream modifications. Reuse HexIsland through a separate Dashboard adapter only in a future authorized task.

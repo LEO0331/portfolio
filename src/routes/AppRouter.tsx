@@ -13,6 +13,7 @@ import routeConfig from "./routeConfig.json";
 const ProjectsPage = lazy(() => import("../pages/ProjectsPage").then((module) => ({ default: module.ProjectsPage })));
 const GridlineEngineeringPage = lazy(() => import("../pages/GridlineEngineeringPage").then((module) => ({ default: module.GridlineEngineeringPage })));
 const GovTechPage = lazy(() => import("../pages/GovTechPage").then((module) => ({ default: module.GovTechPage })));
+const GovTechExplorerPage = lazy(() => import("../pages/GovTechExplorerPage").then((module) => ({ default: module.GovTechExplorerPage })));
 const GovTechCaseStudyPage = lazy(() => import("../pages/GovTechCaseStudyPage").then((module) => ({ default: module.GovTechCaseStudyPage })));
 
 const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
@@ -20,6 +21,7 @@ const pageElementByBaseRouteKey: Record<string, JSX.Element> = {
   projects: <ProjectsPage />,
   "engineering-gridline": <GridlineEngineeringPage />,
   govtech: <GovTechPage />,
+  "govtech-explore": <GovTechExplorerPage />,
   "govtech-bin-policy": <GovTechCaseStudyPage slug="bin-policy" />,
   "govtech-civic-1999": <GovTechCaseStudyPage slug="civic-1999" />,
   "govtech-heavy-rain-preparedness": <GovTechCaseStudyPage slug="heavy-rain-preparedness" />,

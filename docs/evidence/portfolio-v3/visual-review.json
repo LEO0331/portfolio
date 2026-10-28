@@ -1,0 +1,8 @@
+{
+  "score": 86,
+  "verdict": "revise",
+  "category_match": true,
+  "differences": ["Real tablet pointer probing found transparent rectangular island hit areas intercepting preceding domain labels at 768 and 1024px, despite readable non-overflowing screenshots."],
+  "suggestions": ["Restrict pointer interception to painted island geometry and HTML labels, and verify label-center clicks across all scene sizes."],
+  "reasoning": "Desktop and mobile artwork meet the intended visual direction, but a scene cannot pass interaction review when its visible labels activate another domain. The earlier layout-only matrix lacked pointer-hit checks; final QA must add them."
+}
