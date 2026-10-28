@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-10-28T13:18:35.368Z",
+  "scope": "HTTP availability of existing public project demo URLs, not deployment revision or every function.",
+  "results": [
+    {
+      "id": "taipei-bin-map",
+      "url": "https://taipei-bin-map.vercel.app/",
+      "status": 200,
+      "finalUrl": "https://taipei-bin-map.vercel.app/",
+      "verified": true
+    },
+    {
+      "id": "taipei-1999-map",
+      "url": "https://leo0331.github.io/taipei-1999-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-1999-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-feitsui-water-map",
+      "url": "https://leo0331.github.io/taipei-feitsui-water-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-feitsui-water-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-real-estate-dashboard",
+      "url": "https://leo0331.github.io/taipei-real-estate-dashboard/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-real-estate-dashboard/",
+      "verified": true
+    },
+    {
+      "id": "taipei-crash-map",
+      "url": "https://leo0331.github.io/taipei-crash-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-crash-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-free-wifi-map",
+      "url": "https://leo0331.github.io/taipei-free-wifi-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-free-wifi-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-safety-map",
+      "url": "https://leo0331.github.io/taipei-safety-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-safety-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-civic-groups-map",
+      "url": "https://leo0331.github.io/taipei-civic-groups-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-civic-groups-map/",
+      "verified": true
+    },
+    {
+      "id": "taipei-friendly-food-map",
+      "url": "https://leo0331.github.io/taipei-friendly-food-map/",
+      "status": 200,
+      "finalUrl": "https://leo0331.github.io/taipei-friendly-food-map/",
+      "verified": true
+    }
+  ]
+}

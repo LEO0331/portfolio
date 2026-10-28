@@ -24,7 +24,6 @@ pnpm-debug.log*
 .vscode/
 .idea/
 *.swp
-.omx
 # Local build and verification scratch files
 .cache/portfolio-v3/
 

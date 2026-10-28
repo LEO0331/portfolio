@@ -1,0 +1,248 @@
+{
+  "base": "2d5f52a",
+  "files": [
+    {
+      "path": "package-lock.json",
+      "before": "472c4090a993b1edc63611e0eda1b2750c2847c6aa992844315309c39fac9e3c",
+      "after": "472c4090a993b1edc63611e0eda1b2750c2847c6aa992844315309c39fac9e3c",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "before": "a7a0f41f2d2edcc86a670df00014dc7cb73043a0ea7b65aa3b736ad62d704478",
+      "after": "a7a0f41f2d2edcc86a670df00014dc7cb73043a0ea7b65aa3b736ad62d704478",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/featuredProjects.ts",
+      "before": "120224b5a2fe79a0bed6553708a94a427a47a345e0478d755fbf6dcb8ca47e39",
+      "after": "120224b5a2fe79a0bed6553708a94a427a47a345e0478d755fbf6dcb8ca47e39",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/github-pins.json",
+      "before": "eccaa4b13622d322962cb54791d984a41910989722eb76add7b7522ccce70257",
+      "after": "eccaa4b13622d322962cb54791d984a41910989722eb76add7b7522ccce70257",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBinPolicy.ts",
+      "before": "5d27d56340fd509c889c7cb204edc7bd43e90cfb51cb7614b5d5442df91a11e0",
+      "after": "5d27d56340fd509c889c7cb204edc7bd43e90cfb51cb7614b5d5442df91a11e0",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBinPolicy.zh.ts",
+      "before": "a046860092ee4bd9c10125d4267537b4c0583a7acf5727eccb8cbe4f3b3b30b6",
+      "after": "a046860092ee4bd9c10125d4267537b4c0583a7acf5727eccb8cbe4f3b3b30b6",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBridgeInspection.ts",
+      "before": "4d6a4a8cfd8e0d951864d04b6ac5c7739f4dda8372999dccd13aeea128ec8888",
+      "after": "4d6a4a8cfd8e0d951864d04b6ac5c7739f4dda8372999dccd13aeea128ec8888",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBridgeInspection.zh.ts",
+      "before": "d6a98dff5109bcc859414d9a9e8dc991d44cf98464ad98bc7e939211fcc0566a",
+      "after": "d6a98dff5109bcc859414d9a9e8dc991d44cf98464ad98bc7e939211fcc0566a",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBusService.ts",
+      "before": "e13199e60e300a3a98e4376eb78b34c5bdc06726180c7c48c287b81ff8786d53",
+      "after": "e13199e60e300a3a98e4376eb78b34c5bdc06726180c7c48c287b81ff8786d53",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechBusService.zh.ts",
+      "before": "fbe5263f92047cd36b3a02afd9759fae733309f3c8582fe92ca1ff48c4a42e8a",
+      "after": "fbe5263f92047cd36b3a02afd9759fae733309f3c8582fe92ca1ff48c4a42e8a",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCaseSummaries.ts",
+      "before": "aabc9071af6856029daaa4944b6858145e6f706f65c015934ddd94f6e8b8135d",
+      "after": "aabc9071af6856029daaa4944b6858145e6f706f65c015934ddd94f6e8b8135d",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCases.ts",
+      "before": "013e4943bb3a6b9dc9d45083cd25d58e615014ef86639eb707fec4349547890f",
+      "after": "013e4943bb3a6b9dc9d45083cd25d58e615014ef86639eb707fec4349547890f",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCases.zh.ts",
+      "before": "8da356484c94480eed7d124ab6d2b8749e8ca480144b28e155212dc97b1a23b5",
+      "after": "8da356484c94480eed7d124ab6d2b8749e8ca480144b28e155212dc97b1a23b5",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCivic1999.ts",
+      "before": "1940e6dd294ac905c3eff0b8796a838bb9bcaf641bb3f9d780267db974d0e8d8",
+      "after": "1940e6dd294ac905c3eff0b8796a838bb9bcaf641bb3f9d780267db974d0e8d8",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCivic1999.zh.ts",
+      "before": "3252e7431dd98083a9ea36fd9814609303201414b435fc2b8736155423fe8ad0",
+      "after": "3252e7431dd98083a9ea36fd9814609303201414b435fc2b8736155423fe8ad0",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechCopy.ts",
+      "before": "1fd481e5adca0cba7db38770e41588e99b391633f05b0c14944eda4d690d4838",
+      "after": "1fd481e5adca0cba7db38770e41588e99b391633f05b0c14944eda4d690d4838",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechFireRescueAccess.ts",
+      "before": "d5fc2416829e0e9d79c1d2c2db8c55c939461b55e4197034ab00c4e9f6e04d2b",
+      "after": "d5fc2416829e0e9d79c1d2c2db8c55c939461b55e4197034ab00c4e9f6e04d2b",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechFireRescueAccess.zh.ts",
+      "before": "d2e3aa7ef647bef3b8259d7bd4ff0f379182efa281893644fafed4295efb7f47",
+      "after": "d2e3aa7ef647bef3b8259d7bd4ff0f379182efa281893644fafed4295efb7f47",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechFoodHygieneInspection.ts",
+      "before": "f8fab6d8ede41849f315c455b6f0fa20c4302cbf08435183b96090548b894e64",
+      "after": "f8fab6d8ede41849f315c455b6f0fa20c4302cbf08435183b96090548b894e64",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechFoodHygieneInspection.zh.ts",
+      "before": "8eaddf72e2fe7514028b94ef83c1a6f5b6450fdb427859487b7ed6bb83c2e4a2",
+      "after": "8eaddf72e2fe7514028b94ef83c1a6f5b6450fdb427859487b7ed6bb83c2e4a2",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechHeavyRain.ts",
+      "before": "46ee30f2650a0edaf79279178f41d8535eb1d0f1c96c4b6bdbc40dd2f18948e7",
+      "after": "46ee30f2650a0edaf79279178f41d8535eb1d0f1c96c4b6bdbc40dd2f18948e7",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechHeavyRain.zh.ts",
+      "before": "160ff0e147fe3605671239fdf90ccb30b81eac2867fc1883fa4e4e6f029ea27d",
+      "after": "160ff0e147fe3605671239fdf90ccb30b81eac2867fc1883fa4e4e6f029ea27d",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechNeihuCongestion.ts",
+      "before": "e2d19261663a4ce2db10b71e239d5370f34b15a6adc5e86ad6ec6164cf4deb40",
+      "after": "e2d19261663a4ce2db10b71e239d5370f34b15a6adc5e86ad6ec6164cf4deb40",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechNeihuCongestion.zh.ts",
+      "before": "dab47a3d0b158b8749ee10a41520d7cab7de0ea3beb2bc42ef9bf315cc1328e2",
+      "after": "dab47a3d0b158b8749ee10a41520d7cab7de0ea3beb2bc42ef9bf315cc1328e2",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechRiverWaterQuality.ts",
+      "before": "b61641f7427d1fd4e62ea4a2fa955d5ebc2972dde0dd855dfdc6a63e27b1fbae",
+      "after": "b61641f7427d1fd4e62ea4a2fa955d5ebc2972dde0dd855dfdc6a63e27b1fbae",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechRiverWaterQuality.zh.ts",
+      "before": "1dcec331c7fe244a9fd768a59afa3dcb79f6a76ab40541d80fd1103762002e9f",
+      "after": "1dcec331c7fe244a9fd768a59afa3dcb79f6a76ab40541d80fd1103762002e9f",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechSeniorCommunityCare.ts",
+      "before": "7e14c3d71ce448703fa983a9ce02e9dc1c21003b8b6cdad2f2b6fd42abb4e4ce",
+      "after": "7e14c3d71ce448703fa983a9ce02e9dc1c21003b8b6cdad2f2b6fd42abb4e4ce",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechSeniorCommunityCare.zh.ts",
+      "before": "83b4c7375cbbd96be5b3cb52219e880bf77575a3da0b0811ec7cb3a01f3cd2c7",
+      "after": "83b4c7375cbbd96be5b3cb52219e880bf77575a3da0b0811ec7cb3a01f3cd2c7",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechShadeEquity.ts",
+      "before": "cbeb87db59e6922ca2d2485f324f4b5c000473309c7331115a73394e3115b632",
+      "after": "cbeb87db59e6922ca2d2485f324f4b5c000473309c7331115a73394e3115b632",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechShadeEquity.zh.ts",
+      "before": "3d24bbfe035d07f23a539f2a16a1b883b8cb7db1566a178d4cfce32bba4291f4",
+      "after": "3d24bbfe035d07f23a539f2a16a1b883b8cb7db1566a178d4cfce32bba4291f4",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechUrbanRenewal.ts",
+      "before": "765a9388c14dc32900c1761532350e38fbb74633c2d51cb8a1278c6e88946e63",
+      "after": "765a9388c14dc32900c1761532350e38fbb74633c2d51cb8a1278c6e88946e63",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechUrbanRenewal.zh.ts",
+      "before": "0760066eb2c8f26adbb6d969178bbe073b6dad30afedb7fd4fdf9397269b9be8",
+      "after": "0760066eb2c8f26adbb6d969178bbe073b6dad30afedb7fd4fdf9397269b9be8",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechWifiAllocation.ts",
+      "before": "936b1201f0d70ee4afc075f07fdc550e7c13940b82d4842cf5e59cb58da5f3eb",
+      "after": "936b1201f0d70ee4afc075f07fdc550e7c13940b82d4842cf5e59cb58da5f3eb",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/govtechWifiAllocation.zh.ts",
+      "before": "f84c48b32d754eb74f557ddf11f2363cbaaaa66436efd01be7a4357fae28891f",
+      "after": "f84c48b32d754eb74f557ddf11f2363cbaaaa66436efd01be7a4357fae28891f",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/gridlineEngineering.ts",
+      "before": "8005211530615834465beb7367d4fef64fbbd5471f94491601e9dc0a5fd9e5eb",
+      "after": "8005211530615834465beb7367d4fef64fbbd5471f94491601e9dc0a5fd9e5eb",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/profile.ts",
+      "before": "7ca2a7810c012569bf2c66f7d3835a505e3c7041c428f781457b4618fa609c9b",
+      "after": "7ca2a7810c012569bf2c66f7d3835a505e3c7041c428f781457b4618fa609c9b",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/profile.zh.ts",
+      "before": "7fb30e4a370f5982544e261a8b19399f413bbdc344054b4702230f95fc43c0e3",
+      "after": "7fb30e4a370f5982544e261a8b19399f413bbdc344054b4702230f95fc43c0e3",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/projects.ts",
+      "before": "e311f3e7c5d83f8b4905dc6b5baaea9697e2742851b8dc9c027fbda7276156a3",
+      "after": "e311f3e7c5d83f8b4905dc6b5baaea9697e2742851b8dc9c027fbda7276156a3",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/projects.zh.ts",
+      "before": "2eae7db5824f34b1c678737bab3bfa03fe24968a465a6e0f34a7b31ab14054dd",
+      "after": "2eae7db5824f34b1c678737bab3bfa03fe24968a465a6e0f34a7b31ab14054dd",
+      "unchanged": true
+    },
+    {
+      "path": "src/data/skills.ts",
+      "before": "651ea01ac34be585a4c8047ae39a8531018263aac1332e4aa2a9d536343f2e82",
+      "after": "651ea01ac34be585a4c8047ae39a8531018263aac1332e4aa2a9d536343f2e82",
+      "unchanged": true
+    }
+  ],
+  "pass": true,
+  "sameHomeScreenshot": true,
+  "scope": "Canonical LF text hashes, accounting for Windows checkout line endings; protected fields and records also covered by historical fixtures."
+}

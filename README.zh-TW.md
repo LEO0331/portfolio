@@ -10,6 +10,8 @@
 
 ## 架構與技術棧
 
+v3.0 在 `/zh/govtech/explore` 與 `/govtech/explore` 提供原創分層島嶼與完整 HTML 清單，以六個領域探索十三個既有案例；領域、案例、搜尋及檢視選擇可透過網址分享。原始案例與證據維持既有來源。[實作與驗證報告](./docs/portfolio-v3-implementation.md)說明領域映射、原生 SVG／HTML 互動、網址狀態、未來儀表板重用邊界及實際瀏覽器／資源量測。正式建置後執行 `node tools/verify-civic-explorer.mjs`，可檢查雙語、雙主題、五種寬度、四種狀態與所有註冊路由；只有根目錄版本建置後才設定 `QUALITY_BASE=/`。
+
 v2.3 新增英文 `/engineering/gridline` 與繁中 `/zh/engineering/gridline` 獨立工程案例，由既有 Gridline 卡片與詳細抽屜連入。內容依固定來源版本說明原生 HTTP API、六表 SQLite 模型、觀測識別、來源降級恢復及靜態發布邊界；保留十二個 GovTech 案例，不新增依賴或即時資料請求。[來源審核](./docs/engineering-gridline-source-audit.md)與[驗證報告](./docs/portfolio-v2.3-gridline-verification.md)記錄實際部分來源測試、上游套件阻擋項、真實介面截圖及瀏覽器／資源量測。
 
 - React 18 與 TypeScript
