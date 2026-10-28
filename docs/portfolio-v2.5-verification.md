@@ -91,3 +91,7 @@ Chinese Case013 loads141,797 encoded JS bytes. Root Case013 loads141,478 English
 New bilingual data,source verifier/compact fixture/prior-twelve baseline,E2E case,specification/source audit/this report and real browser evidence are present. Modified catalogue/summaries/lazy loader/types/routes/SEO,Feitsui project copy/relationship,domain/home copy,sitemap,existing count/link tests,README/template/current-index and lifecycle files. Existing renderer and project-link utilities are reused;no additional renderer,framework,backend or dependency was added.
 
 Remaining limits are evidentiary:unverified historical station continuity and sampling methods,censored/missing fields,partial current year,RPI precision/rounding/common-event blockers and unavailable causal/regulatory outcomes. No fresh government acquisition,complete upstream application test/build,hosted deployment/Lighthouse,production availability or government endorsement is claimed. The collection is final at13 planned GovTech cases. Review the one Portfolio PR and merge manually;no automatic merge is performed.
+
+## Publication
+
+Exactly one reviewable draft [PR40](https://github.com/LEO0331/portfolio/pull/40) targets main on codex/govtech-river-water-case-013. Implementation commit5898329;Portfolio base8fa9a56acfddd3792efad63e49e6efbdc33343ad. The PR is attached to this chat and verified open/unmerged. A lifecycle-only follow-up records this status. Review and manually merge;no merge or post-merge deployment was performed by this task.

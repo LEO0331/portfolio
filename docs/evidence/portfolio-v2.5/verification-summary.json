@@ -103,5 +103,12 @@
     "dependenciesUnchanged": true,
     "gridlineTechnicalContentUnchanged": true
   },
-  "scope": "Local production QA and retained pinned-source replay; no fresh official acquisition, full upstream suite/build, production availability or post-merge deployment claim."
+  "scope": "Local production QA and retained pinned-source replay; no fresh official acquisition, full upstream suite/build, production availability or post-merge deployment claim.",
+  "publication": {
+    "url": "https://github.com/LEO0331/portfolio/pull/40",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "implementation": "5898329e4e0ab0752f4b9a344c41a659322f3269"
+  }
 }

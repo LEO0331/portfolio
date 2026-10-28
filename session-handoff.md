@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio v2.5 — final planned GovTech Case013,on `codex/govtech-river-water-case-013`,base `8fa9a56acfddd3792efad63e49e6efbdc33343ad`.
 
-**Current status:** Implementation and all local verification complete;preparing one reviewable PR. No automatic merge.
+**Current status:** Complete and published as draft [PR40](https://github.com/LEO0331/portfolio/pull/40),verified open and unmerged. Implementation5898329;branch codex/govtech-river-water-case-013. No automatic merge.
 
 ### Completed
 
