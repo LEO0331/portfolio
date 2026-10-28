@@ -9,6 +9,7 @@ import { useLocale } from "../i18n/LocaleContext";
 import { getLocalizedProjects } from "../utils/projectLocalization";
 import { usePageSeo } from "../utils/seo";
 import routeConfig from "../routes/routeConfig.json";
+import { getButtonClassName } from "../components/common/Button";
 
 export function GovTechPage(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
@@ -25,6 +26,10 @@ export function GovTechPage(): JSX.Element {
       <p className="text-lg leading-relaxed text-slate-600">{text.intro}</p>
     </header>
     <div className="mt-10 space-y-12">
+      <section className="panel-soft flex flex-wrap items-center justify-between gap-5 p-6" aria-label={locale === "zh" ? "互動探索" : "Interactive exploration"}>
+        <div><p className="eyebrow">{locale === "zh" ? "六個領域 · 十三個案例" : "Six domains · Thirteen cases"}</p><h2 className="mt-2 text-xl font-bold">{locale === "zh" ? "用另一種方式探索工程證據" : "A different way into the engineering evidence"}</h2></div>
+        <Link className={getButtonClassName("primary", "md")} to={toLocalePath("/govtech/explore")}>{locale === "zh" ? "互動探索" : "Explore interactively"} <span aria-hidden="true">↗</span></Link>
+      </section>
       <section aria-labelledby="govtech-cases"><h2 id="govtech-cases" className="mb-5 text-2xl font-bold">{text.completed}</h2><div className="grid gap-6">{cases.map((study) => <GovTechCaseCard key={study.id} study={study} />)}</div></section>
       <section aria-labelledby="govtech-vision" className="max-w-4xl space-y-3"><h2 id="govtech-vision" className="text-2xl font-bold">{text.vision}</h2><p className="leading-relaxed text-slate-600">{text.visionText}</p></section>
       <section aria-labelledby="govtech-domains"><h2 id="govtech-domains" className="mb-5 text-2xl font-bold">{text.domainsTitle}</h2>
