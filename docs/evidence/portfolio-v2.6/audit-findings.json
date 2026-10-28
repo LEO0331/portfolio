@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "base": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+  "summary": {
+    "P0": 0,
+    "P1": {
+      "resolved": 2,
+      "unresolved": 0
+    },
+    "P2": {
+      "resolved": 4,
+      "unresolved": 0
+    },
+    "P3": {
+      "deferred": 1
+    }
+  },
+  "findings": [
+    {
+      "id": "FA-001",
+      "severity": "P1",
+      "affected": "Chinese unknown/404 routes",
+      "description": "Unknown Chinese routes render English404 and overwrite saved language.",
+      "reproductionSteps": [
+        "Open /zh/unknown-audit in a fresh baseline context.",
+        "Observe /404,English heading/lang and stored en preference."
+      ],
+      "expectedBehavior": "Chinese error route,metadata and return-home locale remain Chinese.",
+      "actualBehavior": "Baseline replaced Chinese with English.",
+      "rootCause": "Wildcard always targeted /404;locale derives from route path.",
+      "filesChanged": [
+        "src/routes/AppRouter.tsx",
+        "src/routes/routeConfig.json",
+        "src/pages/NotFoundPage.tsx",
+        "tests/e2e/final-release.spec.ts",
+        "tests/e2e/smoke.spec.ts"
+      ],
+      "verificationOutcome": "EN/ZH direct/reload/switch/recovery,noindex,static metadata pass;40routes across both bases pass.",
+      "affectedPageOrComponent": "Chinese unknown/404 routes",
+      "remediationStatus": "resolved",
+      "supportingEvidence": ".omx baseline-404 proof;fixed-zh404-dark.png;route-matrix.json",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-002",
+      "severity": "P1",
+      "affected": "Lazy route loading",
+      "description": "Short Suspense fallback exposes footer; content arrival causes CLS0.273 on bin/river and0.322 onGridline.",
+      "reproductionSteps": [
+        "Load a lazy route with its script delayed.",
+        "Observe baseline footer in viewport then displaced by loaded content."
+      ],
+      "expectedBehavior": "Loading state reserves visible route space.",
+      "actualBehavior": "Case CLS0.272816;Gridline0.321633.",
+      "rootCause": "Short Suspense fallback allowed footer to occupy first viewport.",
+      "filesChanged": [
+        "src/routes/AppRouter.tsx",
+        "tests/e2e/final-release.spec.ts"
+      ],
+      "verificationOutcome": "Delayed-script footer-position regressions pass;finalCLSbin/river0.00053,Gridline0.00086.",
+      "affectedPageOrComponent": "Lazy route loading",
+      "remediationStatus": "resolved",
+      "supportingEvidence": "performance-comparison.json;257-test acceptance",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-003",
+      "severity": "P2",
+      "affected": "Home/About/Contact links",
+      "description": "Accessible names omitted visible labels;shared Chinese website and supporting-purpose labels remained English.",
+      "reproductionSteps": [
+        "Compare visible Home/About/Contact link text with aria-label."
+      ],
+      "expectedBehavior": "Accessible name includes visible label in either language.",
+      "actualBehavior": "Purpose-only names replaced visible CTA text or URL.",
+      "rootCause": "Redundant aria-label strings omitted visible content.",
+      "filesChanged": [
+        "src/components/home/Hero.tsx",
+        "src/pages/HomePage.tsx",
+        "src/pages/AboutPage.tsx",
+        "src/pages/ContactPage.tsx",
+        "src/components/layout/Navbar.tsx",
+        "src/components/layout/Footer.tsx",
+        "tests/e2e/accessibility-labels.spec.ts"
+      ],
+      "verificationOutcome": "EN/ZH visible-name and shared-link localization regressions pass;final label-in-name Lighthouse findings are zero.",
+      "affectedPageOrComponent": "Home/About/Contact and shared navigation/footer",
+      "remediationStatus": "resolved",
+      "supportingEvidence": "performance-comparison.json;257-test acceptance",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-004",
+      "severity": "P2",
+      "affected": "English disaster domain copy",
+      "description": "Fire-access sentence repeated twice.",
+      "reproductionSteps": [
+        "Read English disaster domain paragraph."
+      ],
+      "expectedBehavior": "Fire-access scope stated once.",
+      "actualBehavior": "Identical sentence repeated.",
+      "rootCause": "Duplicated copy literal.",
+      "filesChanged": [
+        "src/data/govtechCopy.ts"
+      ],
+      "verificationOutcome": "Only duplicate removed;all canonical case hashes preserved.",
+      "affectedPageOrComponent": "English disaster domain copy",
+      "remediationStatus": "resolved",
+      "supportingEvidence": "One-line copy diff",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-005",
+      "severity": "P2",
+      "affected": "Maintenance source mutators",
+      "description": "Replacement-string dollar tokens corrupt otherwise approved URLs/curated source text.",
+      "reproductionSteps": [
+        "Run helper and mocked CLI with approved https://example.vercel.app/$& and curated dollar tokens."
+      ],
+      "expectedBehavior": "Literal URLs and curated text survive edits.",
+      "actualBehavior": "Replacement metacharacters duplicated source and could invalidate TS.",
+      "rootCause": "String replacement second arguments expanded $ tokens at property and whole-block stages.",
+      "filesChanged": [
+        "tools/sync-projects-from-github.mjs",
+        "tools/scan-project-changes.mjs",
+        "tools/sync-github-pins.mjs",
+        "tools/sync-projects-from-github.test.mjs",
+        "tools/scan-project-changes.test.mjs",
+        "tools/sync-github-pins.test.mjs"
+      ],
+      "verificationOutcome": "Regression reproduced failure before fix;callback-based helper/CLI/scan/pin tests pass.",
+      "affectedPageOrComponent": "Maintenance source mutators",
+      "remediationStatus": "resolved",
+      "supportingEvidence": "New failing-before/passing-after unit and CLI regressions",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-006",
+      "severity": "P2",
+      "affected": "Verification coverage",
+      "description": "Lighthouse covers only core routes; existing link/quality tools omit engineering links and river/financial research URL guards.",
+      "reproductionSteps": [
+        "Inspect Lighthouse URL list and source-link/request collectors."
+      ],
+      "expectedBehavior": "Engineering,river payloads and representative case routes are covered.",
+      "actualBehavior": "Core-only6LHURLs;engineering source paths and new payload patterns omitted.",
+      "rootCause": "Verification tools predated final collection.",
+      "filesChanged": [
+        "lighthouserc.ci.json",
+        "tools/govtech-link-audit.mjs",
+        "tools/verify-govtech-quality.mjs",
+        "tools/govtech-public-audit.mjs",
+        "tools/govtech-public-presentation.test.mjs"
+      ],
+      "verificationOutcome": "9LHroutes,502unique links/313 pinned paths,340GovTech/Gridline layouts,positive/negative researchURL tests pass. Bounds unchanged.",
+      "affectedPageOrComponent": "Verification coverage",
+      "remediationStatus": "resolved",
+      "supportingEvidence": "performance-comparison.json;link-audit.json;route-matrix.json",
+      "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
+    },
+    {
+      "id": "FA-007",
+      "severity": "P3",
+      "affected": "Image delivery",
+      "description": "Lighthouse suggests additional image size variants; defer optional asset work to preserve final-audit scope.",
+      "reproductionSteps": [
+        "Inspect Lighthouse image-delivery opportunities."
+      ],
+      "expectedBehavior": "Consider further variants only if worth maintenance cost.",
+      "actualBehavior": "Existing WebP images have remaining potential savings.",
+      "rootCause": "Catalogue preview dimensions exceed some displayed sizes.",
+      "filesChanged": [],
+      "verificationOutcome": "Documented;no asset overhaul during final audit.",
+      "affectedPageOrComponent": "Image delivery",
+      "remediationStatus": "deferred",
+      "supportingEvidence": "performance-comparison.json;257-test acceptance",
+      "remainingRisk": "Optional image work deferred;no new acceptance blocker."
+    }
+  ]
+}

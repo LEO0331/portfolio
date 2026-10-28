@@ -1,0 +1,112 @@
+{
+  "scope": "Tracked client code,configuration and maintenance scripts;pattern scan and manual review,not repository-history or account-secret certification.",
+  "filesScanned": 280,
+  "secretFindings": [],
+  "actions": [
+    {
+      "file": ".github/workflows/deploy.yml",
+      "action": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/deploy.yml",
+      "action": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/deploy.yml",
+      "action": "actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/deploy.yml",
+      "action": "actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/deploy.yml",
+      "action": "actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/e2e.yml",
+      "action": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/e2e.yml",
+      "action": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/e2e.yml",
+      "action": "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/lighthouse.yml",
+      "action": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/lighthouse.yml",
+      "action": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/lighthouse.yml",
+      "action": "treosh/lighthouse-ci-action@3e7e23fb74242897f95c0ba9cabad3d0227b9b18",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/lighthouse.yml",
+      "action": "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/project-maintenance.yml",
+      "action": "actions/checkout@11d5960a326750d5838078e36cf38b85af677262",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/project-maintenance.yml",
+      "action": "actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020",
+      "pinned": true
+    },
+    {
+      "file": ".github/workflows/project-maintenance.yml",
+      "action": "actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02",
+      "pinned": true
+    }
+  ],
+  "allRemoteActionsPinned": true,
+  "portfolioAudit": {
+    "all": 0,
+    "production": 0
+  },
+  "csp": "script-src 'self';connect-src 'self';fonts explicitly allowed;no executable third-party scripts",
+  "workflowGates": {
+    "deployment": [
+      "npm ci",
+      "TypeScript/Vite build",
+      "Pages artifact"
+    ],
+    "independent": [
+      "E2E smoke",
+      "Lighthouse"
+    ],
+    "maintenance": [
+      "harness",
+      "unit",
+      "build",
+      "E2E",
+      "diff"
+    ],
+    "maintenanceAudit": "Advisory reported separately before review PR;not suppressed as clean."
+  },
+  "limits": [
+    "Branch protection and deployed upstream Supabase policies are not verified.",
+    "Portfolio has no backend authentication or transaction service.",
+    "CLI redirect checks are not a general-purpose hardened untrusted fetch service."
+  ]
+}

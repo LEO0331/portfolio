@@ -77,7 +77,7 @@ export function Navbar(): JSX.Element {
           {safeGithubUrl ? (
             <ExternalLink
               href={safeGithubUrl}
-              label="Visit GitHub profile"
+              label={locale === "zh" ? "瀏覽 GitHub 個人檔案" : "Visit GitHub profile"}
               className="rounded-md border border-slate-300 px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:no-underline dark:border-slate-600 dark:text-slate-200 dark:hover:bg-slate-800"
             >
               GitHub
@@ -132,7 +132,7 @@ export function Navbar(): JSX.Element {
               </NavLink>
             ))}
             {safeGithubUrl ? (
-              <ExternalLink href={safeGithubUrl} label="Visit GitHub profile" className="px-1 py-1 text-sm font-semibold">
+              <ExternalLink href={safeGithubUrl} label={locale === "zh" ? "瀏覽 GitHub 個人檔案" : "Visit GitHub profile"} className="px-1 py-1 text-sm font-semibold">
                 {text.nav.github}
               </ExternalLink>
             ) : null}

@@ -50,7 +50,12 @@ function getPageElementForRouteKey(routeKey: string): JSX.Element | undefined {
 
 function RouteLoading(): JSX.Element {
   const { locale } = useLocale();
-  return <p role="status" className="mx-auto max-w-6xl px-4 py-12">{copy[locale].nav.loadingPage}</p>;
+  return <p role="status" className="mx-auto min-h-screen max-w-6xl px-4 py-12">{copy[locale].nav.loadingPage}</p>;
+}
+
+function NotFoundRedirect(): JSX.Element {
+  const { toLocalePath } = useLocale();
+  return <Navigate to={toLocalePath("/404")} replace />;
 }
 
 function AppShell(): JSX.Element {
@@ -87,7 +92,7 @@ export function AppRouter(): JSX.Element {
           {routesWithElement.map((route) => (
             <Route key={route.key} path={route.path} element={route.element} />
           ))}
-          <Route path="*" element={<Navigate to="/404" replace />} />
+          <Route path="*" element={<NotFoundRedirect />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -15,3 +15,9 @@ test('public URL scanning does not depend on a field being named url',()=>{
   const fields={title:'project',preview:{href:'//github.com/owner/repo/pull/3'},repoUrl:'https://github.com/owner/repo/%70ull/4',label:'source reference'};
   assert.deepEqual(auditPublicRecords({en:[{id:'sample',...fields}]}).map(f=>f.path),['preview/href','repoUrl']);
 });
+
+test('render audit recognizes river and financial research payloads without blocking presentation assets', async()=>{
+  const {isResearchPayloadRequest}=await import('./govtech-public-audit.mjs');
+  for(const url of ['https://data.taipei/api/frontstage/resource','http://127.0.0.1:4175/portfolio/data/river-water-policy/current.json','https://leo0331.github.io/Gridline/data/dashboard-overview.json','http://127.0.0.1:8787/api/observations?ticker=ORCL','https://raw.githubusercontent.com/owner/repo/main/data.json','https://api.github.com/repos/owner/repo'])assert.equal(isResearchPayloadRequest(url),true,url);
+  for(const url of ['http://127.0.0.1:4175/portfolio/assets/govtechRiverWaterQuality-abc.js','http://127.0.0.1:4175/portfolio/images/engineering/gridline-desktop.png','https://fonts.googleapis.com/css2?family=Inter','https://example.com/data-presentation'])assert.equal(isResearchPayloadRequest(url),false,url);
+});

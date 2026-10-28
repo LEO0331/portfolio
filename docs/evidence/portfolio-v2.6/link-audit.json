@@ -1,0 +1,277 @@
+{
+  "startedAt": "2026-10-28T07:01:18.895Z",
+  "completedAt": "2026-10-28T07:01:58.334Z",
+  "inputSha256": "bb6fdfa89a7e9807a51f7e92d091926e9b94e6e1941918f61f285e99f9982378",
+  "uniqueLinks": 502,
+  "counts": {
+    "structural:valid": 501,
+    "internalRoute:exists": 31,
+    "local:exists": 38,
+    "http:reachable": 119,
+    "repositoryPath:exists": 313,
+    "structural:unpinned": 1,
+    "http:unavailable": 1
+  },
+  "hardFailures": 0,
+  "limits": {
+    "concurrency": 2,
+    "timeoutMs": 8000,
+    "maxTreeRequests": 32,
+    "maxHttpRequests": 120,
+    "maxResponseBytes": 12000000,
+    "maxRedirects": 4
+  },
+  "treeRequests": [
+    {
+      "repository": "LEO0331/Gridline",
+      "sha": "e3d47a638ddb7f3192c63598596628f60c7b364d",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 269,
+      "requestedPaths": 35
+    },
+    {
+      "repository": "LEO0331/portfolio",
+      "sha": "d91640f77d9880cf01c552356e322324d8916dd0",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 494,
+      "requestedPaths": 3
+    },
+    {
+      "repository": "LEO0331/publicsafetydashboard",
+      "sha": "f96ae2933f9ea6e96f5628cb68ba45d3fcf5547c",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 135,
+      "requestedPaths": 1
+    },
+    {
+      "repository": "LEO0331/taipei-1999-map",
+      "sha": "352dbebe0057f62817e4ee08572e1a4d207a5b5a",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 275,
+      "requestedPaths": 11
+    },
+    {
+      "repository": "LEO0331/taipei-bin-map",
+      "sha": "1280011b086f498404abf138c29f64041963e14c",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 437,
+      "requestedPaths": 15
+    },
+    {
+      "repository": "LEO0331/taipei-bin-map",
+      "sha": "612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 514,
+      "requestedPaths": 25
+    },
+    {
+      "repository": "LEO0331/taipei-civic-groups-map",
+      "sha": "a1c98e4aef59bf15f7e5f76e52cd871525c1517e",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 1707,
+      "requestedPaths": 20
+    },
+    {
+      "repository": "LEO0331/taipei-crash-map",
+      "sha": "deb28d5d5b4e608eb04d89743bc3fea632d74c8a",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 166,
+      "requestedPaths": 19
+    },
+    {
+      "repository": "LEO0331/taipei-crash-map",
+      "sha": "e01b651d66cedfb5106c263088dc99fbc5d5e3b8",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 626,
+      "requestedPaths": 22
+    },
+    {
+      "repository": "LEO0331/taipei-feitsui-water-map",
+      "sha": "195e63111d32ad564291545ff9d8b230b025b055",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 588,
+      "requestedPaths": 16
+    },
+    {
+      "repository": "LEO0331/taipei-feitsui-water-map",
+      "sha": "beedd7eef3592c12bb66c21937add068f82ce5fa",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 655,
+      "requestedPaths": 31
+    },
+    {
+      "repository": "LEO0331/taipei-free-wifi-map",
+      "sha": "8e01a2bd8d762b51fae979d32fd477e378d1876b",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 192,
+      "requestedPaths": 24
+    },
+    {
+      "repository": "LEO0331/taipei-free-wifi-map",
+      "sha": "fc3fe9340c460418b4255d04cf8a0150dbcf669b",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 124,
+      "requestedPaths": 10
+    },
+    {
+      "repository": "LEO0331/taipei-friendly-food-map",
+      "sha": "ebed7962b8ced05afea285865f95f2bb7e991f1e",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 179,
+      "requestedPaths": 16
+    },
+    {
+      "repository": "LEO0331/taipei-real-estate-dashboard",
+      "sha": "e3f37ff91816b4d51223ab686097a6cef542ca31",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 1089,
+      "requestedPaths": 16
+    },
+    {
+      "repository": "LEO0331/taipei-safety-map",
+      "sha": "4e532d697eafb274530d0a1e524f027903a4c4d1",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 499,
+      "requestedPaths": 20
+    },
+    {
+      "repository": "LEO0331/taipei-safety-map",
+      "sha": "deb812b3472c078b5879727953e85d2850f0a82c",
+      "status": "reachable",
+      "httpStatus": 200,
+      "truncated": false,
+      "entries": 440,
+      "requestedPaths": 29
+    }
+  ],
+  "unverifiedOrMutable": [
+    {
+      "href": "https://github.com/LEO0331/projects_drafts/tree/main/tools/skill-gen",
+      "references": [
+        "projects/en/17/repoUrl",
+        "projects/zh/17/repoUrl"
+      ],
+      "structural": {
+        "status": "unpinned",
+        "reason": "mutable-repository-reference"
+      },
+      "http": {
+        "httpStatus": 200,
+        "finalUrl": "https://github.com/LEO0331/projects_drafts/tree/main/tools/skill-gen",
+        "status": "reachable"
+      }
+    },
+    {
+      "href": "https://publicsafetydashboard.onrender.com/",
+      "references": [
+        "projects/en/24/demoUrl",
+        "projects/zh/24/demoUrl"
+      ],
+      "structural": {
+        "status": "valid"
+      },
+      "http": {
+        "status": "unavailable",
+        "reason": "timeout"
+      }
+    }
+  ],
+  "limitations": [
+    "HTTP success verifies response availability, not factual correctness or client-side rendering.",
+    "GitHub paths are checked against exact SHA trees; a truncated tree never establishes absence.",
+    "Blocked, unavailable and bounded-out requests remain unverified, not passing.",
+    "Internal fragments require the separate rendered DOM regression suite.",
+    "HTTP checks cancel bodies after headers; no large datasets or remote media are downloaded."
+  ],
+  "externalDemos": {
+    "checkedAt": "2026-10-28T07:21:59.741Z",
+    "results": [
+      {
+        "project": "Gridline",
+        "url": "https://leo0331.github.io/Gridline/",
+        "finalUrl": "https://leo0331.github.io/Gridline/",
+        "httpStatus": 200,
+        "title": "Gridline Infrastructure Intelligence",
+        "headings": [
+          "Follow the buildout,from grid to market.",
+          "Is the data-center buildout showing up?",
+          "NBIS · Nebius Group",
+          "Short-term price trend: mixed"
+        ],
+        "bodyTextLength": 14401,
+        "errors": [],
+        "scope": "Anonymous landing-page render only;no backend,sign-in,paid API or business-flow acceptance."
+      },
+      {
+        "project": "Book QA Library",
+        "url": "https://epubreader-theta.vercel.app/",
+        "finalUrl": "https://epubreader-theta.vercel.app/",
+        "httpStatus": 200,
+        "title": "Book QA Library",
+        "headings": [
+          "Private Library Command Center",
+          "Dashboard"
+        ],
+        "bodyTextLength": 864,
+        "errors": [],
+        "scope": "Anonymous landing-page render only;no backend,sign-in,paid API or business-flow acceptance."
+      },
+      {
+        "project": "CraftFocus",
+        "url": "https://leo0331.github.io/craftfocus/",
+        "finalUrl": "https://leo0331.github.io/craftfocus/auth/login",
+        "httpStatus": 200,
+        "title": "CraftFocus",
+        "headings": [
+          "Log In"
+        ],
+        "bodyTextLength": 315,
+        "errors": [],
+        "scope": "Anonymous landing-page render only;no backend,sign-in,paid API or business-flow acceptance."
+      },
+      {
+        "project": "Public Safety Dashboard",
+        "url": "https://publicsafetydashboard.onrender.com/",
+        "finalUrl": "https://publicsafetydashboard.onrender.com/",
+        "httpStatus": 503,
+        "title": "Render - Application loading",
+        "headings": [],
+        "bodyTextLength": 4080,
+        "errors": [],
+        "scope": "Anonymous landing-page render only;no backend,sign-in,paid API or business-flow acceptance."
+      }
+    ]
+  }
+}

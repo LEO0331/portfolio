@@ -1,3 +1,4 @@
+import {isResearchPayloadRequest} from './govtech-public-audit.mjs';
 import {chromium} from 'playwright';
 import {spawn} from 'node:child_process';
 import {readFileSync,mkdirSync,writeFileSync,existsSync} from 'node:fs';
@@ -7,14 +8,14 @@ const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const base=process.env.QUALITY_BASE??'/portfolio/',port=Number(process.env.QUALITY_PORT??4196);
 const origin=`http://127.0.0.1:${port}`,out=resolve(root,process.env.QUALITY_OUTPUT_DIR??'docs/evidence/cross-case-quality');mkdirSync(out,{recursive:true});
 const config=JSON.parse(readFileSync(resolve(root,'src/routes/routeConfig.json')));
-const paths=['','projects','govtech',...config.routes.filter(r=>r.path.startsWith('/govtech/')).map(r=>r.path.slice(1))];
+const paths=['','projects','engineering/gridline','govtech',...config.routes.filter(r=>r.path.startsWith('/govtech/')).map(r=>r.path.slice(1))];
 const server=spawn(process.execPath,[resolve(root,'node_modules/vite/bin/vite.js'),'preview','--host','127.0.0.1','--port',String(port),'--strictPort','--base',base],{cwd:root,stdio:'ignore'});
 let browser;const checks=[],routeChecks=[],errors=[],upstreamRequests=[];
 try{
  for(let i=0;i<80;i++){try{if((await fetch(origin+base)).ok)break;}catch{}await new Promise(r=>setTimeout(r,100));}
  browser=await chromium.launch();
  const page=await browser.newPage();await page.addInitScript(()=>localStorage.removeItem('portfolio-locale'));await page.route('https://fonts.googleapis.com/**',r=>r.abort());
- for(const route of config.routes.filter(r=>/\/(?:zh\/)?govtech(?:\/|$)/.test(r.path))){
+ for(const route of config.routes.filter(r=>/^\/(?:zh\/)?(?:govtech(?:\/|$)|engineering\/gridline$)/.test(r.path))){
   const url=origin+base+route.path.slice(1);await page.goto(url);await page.locator('h1').waitFor();await page.reload();await page.locator('h1').waitFor();
   const meta=await page.evaluate(()=>({title:document.title,lang:document.documentElement.lang,canonical:document.querySelector('link[rel=canonical]')?.href,description:document.querySelector('meta[name=description]')?.content}));
   const staticEntry=existsSync(resolve(root,'dist',route.path.slice(1),'index.html'));
@@ -28,7 +29,7 @@ try{
   const p=await context.newPage();await p.route('https://fonts.googleapis.com/**',r=>r.abort());
   p.on('pageerror',e=>errors.push({width,locale,theme,message:e.message}));
   p.on('console',m=>{if(m.type()==='error'&&!m.location().url.includes('fonts.googleapis.com'))errors.push({width,locale,theme,scope:'console',message:m.text()});});
-  p.on('request',r=>{if(/data\.taipei|dosw\.gov|laws\.gov|www-ws\.gov|raw\.githubusercontent|api\.github|\/policy\/senior-care-policy|\/data\/fire-rescue-access-policy|\/data\/policy-11|\/data\/(?:wifi|bridge|bus|neihu|shade)/.test(r.url()))upstreamRequests.push(r.url());});
+  p.on('request',r=>{if(isResearchPayloadRequest(r.url()))upstreamRequests.push(r.url());});
   for(const path of paths){
    await p.goto(origin+base+(locale==='zh'?'zh/':'')+path,{waitUntil:'networkidle'});await p.locator('h1').waitFor();
    const result=await p.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth+1,dark:document.documentElement.classList.contains('dark'),duplicateIds:[...document.querySelectorAll('[id]')].map(e=>e.id).filter((id,i,a)=>a.indexOf(id)!==i),cards:document.querySelectorAll('#govtech-cases').length?document.querySelector('#govtech-cases').closest('section').querySelectorAll('article').length:0,missingTableCaptions:[...document.querySelectorAll('table')].filter(t=>!t.querySelector('caption')).length}));

@@ -1,0 +1,123 @@
+{
+  "base": "c2ee6e5893e45bce78508330f2c2c6490352a03f",
+  "date": "2026-10-28",
+  "verdict": "PASS_WITH_LIMITATIONS",
+  "commands": [
+    {
+      "command": "npm run validate:harness",
+      "exitCode": 0,
+      "features": 29
+    },
+    {
+      "command": "npm ci",
+      "exitCode": 0
+    },
+    {
+      "command": "npm audit",
+      "exitCode": 0,
+      "vulnerabilities": 0
+    },
+    {
+      "command": "npm audit --omit=dev --json",
+      "exitCode": 0,
+      "vulnerabilities": 0
+    },
+    {
+      "command": "npm run test:unit",
+      "exitCode": 0,
+      "passed": 34
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "indexableRoutes": 38,
+      "registeredRoutes": 40
+    },
+    {
+      "command": "npm run test:e2e",
+      "exitCode": 0,
+      "statistics": {
+        "startTime": "2026-10-28T07:57:31.880Z",
+        "duration": 59925.049999999996,
+        "expected": 257,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "trackedFlows": "17/17"
+    },
+    {
+      "command": "C:/Program Files/Git/bin/bash.exe init.sh",
+      "exitCode": 0,
+      "complete": true
+    },
+    {
+      "command": "node tools/govtech-link-audit.mjs (LINK_AUDIT_OUTPUT set)",
+      "exitCode": 0,
+      "hardFailures": 0
+    },
+    {
+      "command": "node tools/verify-govtech-quality.mjs",
+      "exitCode": 0,
+      "layouts": 340
+    },
+    {
+      "command": "node tools/e2e-coverage-check.mjs",
+      "exitCode": 0,
+      "coverage": "17/17"
+    },
+    {
+      "command": "node tools/verify-river-water-source.mjs --source=.omx/river-water-source",
+      "exitCode": 0,
+      "originalBodies": 8,
+      "exactRebuilds": 2
+    },
+    {
+      "command": "Copied original Gridline verifier with ignored output directory",
+      "exitCode": 0,
+      "sourceSha": "e3d47a638ddb7f3192c63598596628f60c7b364d",
+      "freshnessPassed": false
+    },
+    {
+      "command": "Actual local Lighthouse baseline/final",
+      "exitCode": 0,
+      "routes": 9
+    },
+    {
+      "command": "Root and Pages route checker",
+      "exitCode": 0,
+      "outcomes": 84
+    },
+    {
+      "command": "Representative root/Pages browser matrix",
+      "exitCode": 0,
+      "layouts": 360
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "baseline": {
+    "unit": 29,
+    "browser": 249,
+    "layouts": 320,
+    "lighthouseRoutes": 9,
+    "audit": 0
+  },
+  "final": {
+    "unit": 34,
+    "browser": 257,
+    "govtechLayouts": 340,
+    "representativeLayouts": 360,
+    "allRegisteredRoutes": 40,
+    "allRouteOutcomes": 84
+  },
+  "limitations": [
+    "Candidate hosted deployment is pending human merge.",
+    "One Render demo timed out;browser retry returned503 Application loading,not proof of deletion or working service.",
+    "Frozen Gridline snapshot now fails current-session freshness for20tickers;original dated acceptance remains intact.",
+    "Lighthouse is one local simulated mobile run;baseline CPU overlap limits score causality.",
+    "Image variants deferred;automated accessibility does not certify WCAG."
+  ]
+}

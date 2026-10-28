@@ -27,6 +27,18 @@ test('empty pins clear previous flags and repeated mapping is idempotent', () =>
   assert.equal(applyPinnedRepositories(result.source, []).source, result.source);
 });
 
+test('pin updates preserve dollar-bearing curated copy and URLs exactly', () => {
+  const input = source.replace('name: "Curated"',
+    () => `name: ${JSON.stringify("Curated $& / $` / $' / $$")}, demoUrl: ${JSON.stringify("https://example.vercel.app/$&/$'/$$")}`);
+  const expected = input.replace('featured: false },', 'featured: true },')
+    .replace('repoUrl: "https://github.com/LEO0331/beta", featured: true',
+      'repoUrl: "https://github.com/LEO0331/beta", featured: false');
+  const result = applyPinnedRepositories(input, ['LEO0331/OldName']);
+  assert.deepEqual(result.projectIds, ['old-id']);
+  assert.equal(result.source, expected);
+  assert.equal(applyPinnedRepositories(result.source, ['LEO0331/OldName']).source, result.source);
+});
+
 test('ambiguous monorepo pins are review-only', () => {
   const nested = source.replace('LEO0331/beta', 'LEO0331/OldName/tree/main/tools/beta');
   const result = applyPinnedRepositories(nested, ['LEO0331/OldName']);

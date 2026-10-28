@@ -27,20 +27,20 @@ export function Footer(): JSX.Element {
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
             {safeGithubUrl ? (
-              <ExternalLink href={safeGithubUrl} label="Open GitHub profile" className="font-semibold">
+              <ExternalLink href={safeGithubUrl} label={locale === "zh" ? "開啟 GitHub 個人檔案" : "Open GitHub profile"} className="font-semibold">
                 GitHub
               </ExternalLink>
             ) : null}
             {safeLinkedinUrl ? (
-              <ExternalLink href={safeLinkedinUrl} label="Open LinkedIn profile" className="font-semibold">
+              <ExternalLink href={safeLinkedinUrl} label={locale === "zh" ? "開啟 LinkedIn 個人檔案" : "Open LinkedIn profile"} className="font-semibold">
                 LinkedIn
               </ExternalLink>
             ) : (
               <span>{text.footer.linkedinFallback}</span>
             )}
             {safeWebsiteUrl ? (
-              <ExternalLink href={safeWebsiteUrl} label="Open personal website" className="font-semibold">
-                Website
+              <ExternalLink href={safeWebsiteUrl} label={locale === "zh" ? "開啟個人網站" : "Open personal website"} className="font-semibold">
+                {locale === "zh" ? "個人網站" : "Website"}
               </ExternalLink>
             ) : (
               <span>{text.footer.websiteFallback}</span>

@@ -23,7 +23,7 @@ export function Hero(): JSX.Element {
             <Link to={toLocalePath("/projects")} aria-label={text.home.viewProjects} className={getButtonClassName("primary")}>
               {text.home.viewProjects}
             </Link>
-            <Link to={toLocalePath("/contact")} aria-label={locale === "zh" ? "聯絡 Leo Chen" : "Contact Leo Chen"} className={getButtonClassName("secondary")}>
+            <Link to={toLocalePath("/contact")} aria-label={`${text.home.contact} — ${locale === "zh" ? "聯絡 Leo Chen" : "Contact Leo Chen"}`} className={getButtonClassName("secondary")}>
               {text.home.contact}
             </Link>
           </div>

@@ -32,7 +32,7 @@ export function ContactPage(): JSX.Element {
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">{text.contact.website} </span>
             {safeWebsiteUrl ? (
-              <ExternalLink href={safeWebsiteUrl} label="Open personal website">
+              <ExternalLink href={safeWebsiteUrl} label={`${safeWebsiteUrl} — ${locale === "zh" ? "開啟個人網站" : "Open personal website"}`}>
                 {safeWebsiteUrl}
               </ExternalLink>
             ) : (
@@ -42,7 +42,7 @@ export function ContactPage(): JSX.Element {
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">{text.contact.github} </span>
             {safeGithubUrl ? (
-              <ExternalLink href={safeGithubUrl} label="Open GitHub profile">
+              <ExternalLink href={safeGithubUrl} label={`${safeGithubUrl} — ${locale === "zh" ? "開啟 GitHub 個人檔案" : "Open GitHub profile"}`}>
                 {safeGithubUrl}
               </ExternalLink>
             ) : (
@@ -52,7 +52,7 @@ export function ContactPage(): JSX.Element {
           <li className="rounded-lg border border-slate-200 bg-slate-50 p-4">
             <span className="font-semibold text-slate-900">{text.contact.linkedin} </span>
             {safeLinkedInUrl ? (
-              <ExternalLink href={safeLinkedInUrl} label="Open LinkedIn profile">
+              <ExternalLink href={safeLinkedInUrl} label={`${safeLinkedInUrl} — ${locale === "zh" ? "開啟 LinkedIn 個人檔案" : "Open LinkedIn profile"}`}>
                 {safeLinkedInUrl}
               </ExternalLink>
             ) : (

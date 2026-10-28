@@ -10,7 +10,7 @@ export function NotFoundPage(): JSX.Element {
   const text = copy[locale];
 
   usePageSeo(text.seo.notFoundTitle, {
-    routePath: "/404",
+    routePath: toLocalePath("/404"),
     description: text.seo.notFoundDescription,
     noIndex: true
   });
@@ -23,7 +23,6 @@ export function NotFoundPage(): JSX.Element {
         <p className="mt-2 text-sm text-slate-600 sm:text-base">{text.notFound.description}</p>
         <Link
           to={toLocalePath("/")}
-          aria-label="Return to home page"
           className={getButtonClassName("primary", "md", "mt-5 inline-flex")}
         >
           {text.notFound.returnHome}
