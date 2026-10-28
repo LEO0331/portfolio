@@ -1,13 +1,15 @@
 import type { CSSProperties, ReactNode } from "react";
+import type { ExplorerMotif } from "./types";
 
 interface HexIslandProps {
-  color: string; motif: number; label: ReactNode; caption: string;
+  color: string; motif: ExplorerMotif; label: ReactNode; caption: string;
   selected?: boolean; inactive?: boolean; onSelect: () => void;
-  style?: CSSProperties; nodeId: string;
+  style?: CSSProperties; nodeId: string; kind?: "node" | "group";
 }
 /** Portfolio-independent polygon art inside a native HTML button. */
-export function HexIsland({ color, motif, label, caption, selected, inactive, onSelect, style, nodeId }: HexIslandProps): JSX.Element {
+export function HexIsland({ color, motif, label, caption, selected, inactive, onSelect, style, nodeId, kind = "node" }: HexIslandProps): JSX.Element {
   return <button type="button" className="civic-island" data-node={nodeId} data-selected={selected || undefined} data-inactive={inactive || undefined}
+    data-explorer-node={kind === "node" ? nodeId : undefined} data-explorer-group={kind === "group" ? nodeId : undefined}
     aria-pressed={Boolean(selected)} onClick={onSelect} style={{ ...style, "--island-hue": color } as CSSProperties}>
     <svg viewBox="0 0 220 180" aria-hidden="true" focusable="false" className="civic-island-art">
       <ellipse cx="110" cy="155" rx="87" ry="20" className="island-shadow" />

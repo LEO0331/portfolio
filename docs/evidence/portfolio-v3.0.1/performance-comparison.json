@@ -1,0 +1,174 @@
+{
+  "conditionsMatch": true,
+  "scope": "Three-sample medians at 4x CPU slowdown; CDP/paint/observed-result timings are not React profiling, official INP or statistically established production speed improvements.",
+  "beforeAssets": [
+    {
+      "name": "GovTechExplorerPage-aq9ar8kx.js",
+      "bytes": 17529
+    },
+    {
+      "name": "GovTechExplorerPage-C2m6NumB.css",
+      "bytes": 9455
+    }
+  ],
+  "afterAssets": [
+    {
+      "name": "GovTechExplorerPage-D9EeQRHg.js",
+      "bytes": 21343
+    },
+    {
+      "name": "GovTechExplorerPage-DWMQzfhF.css",
+      "bytes": 10631
+    }
+  ],
+  "groups": [
+    {
+      "width": 390,
+      "path": "",
+      "before": {
+        "jsBytes": 105592,
+        "fcpMs": 396,
+        "scriptMs": 76.45,
+        "layoutMs": 248.83,
+        "styleMs": 18.47,
+        "maxCls": 0,
+        "longTaskTotalMs": 313
+      },
+      "after": {
+        "jsBytes": 105568,
+        "fcpMs": 388,
+        "scriptMs": 73.76,
+        "layoutMs": 248.31,
+        "styleMs": 16.49,
+        "maxCls": 0,
+        "longTaskTotalMs": 310
+      }
+    },
+    {
+      "width": 390,
+      "path": "govtech/explore",
+      "before": {
+        "jsBytes": 133589,
+        "fcpMs": 312,
+        "scriptMs": 89.03,
+        "layoutMs": 273.89,
+        "styleMs": 19.51,
+        "maxCls": 0,
+        "longTaskTotalMs": 352,
+        "searchObservedPaintMs": 86.7,
+        "selectionObservedPaintMs": 123.1
+      },
+      "after": {
+        "jsBytes": 135041,
+        "fcpMs": 292,
+        "scriptMs": 90.73,
+        "layoutMs": 263.94,
+        "styleMs": 19.06,
+        "maxCls": 0,
+        "longTaskTotalMs": 291,
+        "searchObservedPaintMs": 85.6,
+        "selectionObservedPaintMs": 108.9
+      }
+    },
+    {
+      "width": 390,
+      "path": "govtech/explore?domain=environment&case=river-water-quality",
+      "before": {
+        "jsBytes": 145955,
+        "fcpMs": 304,
+        "scriptMs": 97.85,
+        "layoutMs": 321.79,
+        "styleMs": 20.52,
+        "maxCls": 0,
+        "longTaskTotalMs": 398
+      },
+      "after": {
+        "jsBytes": 147407,
+        "fcpMs": 280,
+        "scriptMs": 92.63,
+        "layoutMs": 302.23,
+        "styleMs": 20.21,
+        "maxCls": 0,
+        "longTaskTotalMs": 321
+      }
+    },
+    {
+      "width": 1440,
+      "path": "",
+      "before": {
+        "jsBytes": 105592,
+        "fcpMs": 416,
+        "scriptMs": 79.58,
+        "layoutMs": 260.24,
+        "styleMs": 20.71,
+        "maxCls": 0,
+        "longTaskTotalMs": 327
+      },
+      "after": {
+        "jsBytes": 105568,
+        "fcpMs": 392,
+        "scriptMs": 72.73,
+        "layoutMs": 239.33,
+        "styleMs": 18.42,
+        "maxCls": 0,
+        "longTaskTotalMs": 302
+      }
+    },
+    {
+      "width": 1440,
+      "path": "govtech/explore",
+      "before": {
+        "jsBytes": 133589,
+        "fcpMs": 288,
+        "scriptMs": 81.56,
+        "layoutMs": 262.41,
+        "styleMs": 21.16,
+        "maxCls": 0,
+        "longTaskTotalMs": 295,
+        "searchObservedPaintMs": 90.1,
+        "selectionObservedPaintMs": 124.3
+      },
+      "after": {
+        "jsBytes": 135041,
+        "fcpMs": 292,
+        "scriptMs": 89.46,
+        "layoutMs": 271.38,
+        "styleMs": 20.29,
+        "maxCls": 0,
+        "longTaskTotalMs": 295,
+        "searchObservedPaintMs": 85.6,
+        "selectionObservedPaintMs": 109.6
+      }
+    },
+    {
+      "width": 1440,
+      "path": "govtech/explore?domain=environment&case=river-water-quality",
+      "before": {
+        "jsBytes": 145955,
+        "fcpMs": 320,
+        "scriptMs": 99.19,
+        "layoutMs": 337.37,
+        "styleMs": 20.44,
+        "maxCls": 0,
+        "longTaskTotalMs": 421
+      },
+      "after": {
+        "jsBytes": 147407,
+        "fcpMs": 304,
+        "scriptMs": 102.68,
+        "layoutMs": 318.96,
+        "styleMs": 22.26,
+        "maxCls": 0,
+        "longTaskTotalMs": 387
+      }
+    }
+  ],
+  "consoleMessages": {
+    "before": 0,
+    "after": 0
+  },
+  "pageErrors": {
+    "before": 0,
+    "after": 0
+  }
+}

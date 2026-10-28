@@ -34,9 +34,3 @@ export type ExplorerCase = ReturnType<typeof getExplorerCases>[number];
 export function domainTitle(domain: ExplorerDomain, locale: Locale): string {
   return govtechCopy[locale].domains[domain.index].title;
 }
-export function filterExplorerCases(cases: ExplorerCase[], domain: ExplorerDomainId | undefined, query: string): ExplorerCase[] {
-  const words = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
-  return cases.filter(study => (!domain || study.domainId === domain) && words.every(word =>
-    [study.title, study.summary, study.displayNumber, domainTitle(EXPLORER_DOMAINS.find(domain => domain.id === study.domainId)!, "en"), domainTitle(EXPLORER_DOMAINS.find(domain => domain.id === study.domainId)!, "zh"), ...study.implementedCapabilities, ...study.overview].join(" ").toLocaleLowerCase().includes(word)
-  ));
-}
