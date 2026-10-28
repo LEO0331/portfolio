@@ -1,3 +1,4 @@
+import { riverWaterQualityCaseZh } from "./govtechRiverWaterQuality.zh";
 import { fireRescueAccessCaseZh } from "./govtechFireRescueAccess.zh";
 import { foodHygieneInspectionCaseZh } from "./govtechFoodHygieneInspection.zh";
 import { seniorCommunityCareCaseZh } from "./govtechSeniorCommunityCare.zh";
@@ -14,4 +15,4 @@ import { civic1999CaseZh } from "./govtechCivic1999.zh";
 import { binPolicyCaseZh } from "./govtechBinPolicy.zh";
 export { binPolicyCaseZh } from "./govtechBinPolicy.zh";
 
-export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh, shadeEquityCaseZh, neihuCongestionCaseZh, busServiceCaseZh, wifiAllocationCaseZh, bridgeInspectionCaseZh, seniorCommunityCareCaseZh, foodHygieneInspectionCaseZh, fireRescueAccessCaseZh];
+export const govtechCasesZh: GovTechCase[] = [binPolicyCaseZh, civic1999CaseZh, heavyRainCaseZh, urbanRenewalCaseZh, shadeEquityCaseZh, neihuCongestionCaseZh, busServiceCaseZh, wifiAllocationCaseZh, bridgeInspectionCaseZh, seniorCommunityCareCaseZh, foodHygieneInspectionCaseZh, fireRescueAccessCaseZh, riverWaterQualityCaseZh];

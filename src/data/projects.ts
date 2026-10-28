@@ -750,11 +750,11 @@ export const projects: Project[] = [
     id: "taipei-feitsui-water-map",
     slug: "taipei-feitsui-water-map",
     name: "Taipei Feitsui Water Map",
-    tagline: "Water/environment exploration and explainable heavy-rain preparedness review",
+    tagline: "Water exploration, preparedness documentation and river monitoring evidence review",
     shortDescription:
-      "A bilingual water-quality and ecology explorer with a completed heavy-rain infrastructure evidence-review decision-support proof of concept.",
+      "A bilingual water/environment explorer with two completed evidence-review proofs of concept: heavy-rain infrastructure documentation and river monitoring/longitudinal measurements.",
     fullDescription:
-      "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. Its completed heavy-rain preparedness module adds official infrastructure source integration, flood-context GIS validation, provenance and data-quality checks, A/B/C evidence-review priorities, capacity and geographic-balancing scenarios, deterministic sensitivity and JSON/CSV briefings. Priorities describe documentary or field verification needs, not flood forecasts, current equipment availability or operational readiness. Reservoir and ecology modules remain public-data exploration capabilities.",
+      "Taipei Feitsui Water Map combines monthly water-quality monitoring with reservoir operations, river conditions, pumping facilities, and historical ecology records. Its completed heavy-rain preparedness module adds official infrastructure source integration, flood-context GIS validation, provenance and data-quality checks, A/B/C evidence-review priorities, capacity and geographic-balancing scenarios, deterministic sensitivity and JSON/CSV briefings. Priorities describe documentary or field verification needs, not flood forecasts, current equipment availability or operational readiness. A separate river-monitoring module validates annual editions, station labels, pending/future rows and censored measurements, then compares deterministic administrative review queues. Limited same-label monthly differences are descriptive; strict longitudinal comparisons, research RPI and causal/regulatory conclusions remain unavailable. Flood preparedness and pollution evidence are independent modules with no combined score. Reservoir and ecology modules remain public-data exploration capabilities.",
     role: "Frontend / Data Dashboard Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Recharts"],
@@ -767,12 +767,14 @@ export const projects: Project[] = [
       "Heavy-rain infrastructure evidence review and official flood-context GIS validation",
       "Versioned provenance and explainable A/B/C review priorities",
       "Capacity, geographic balancing and deterministic sensitivity scenarios",
-      "JSON/CSV preparedness review briefings"
+      "JSON/CSV preparedness review briefings",
+      "River monitoring source editions, station identity and detection-limit semantics",
+      "Reproducible administrative review and evidence-gated longitudinal/RPI analysis"
     ],
     image: "/src/assets/images/projects/taipei-feitsui-water-map.png",
     demoUrl: "https://leo0331.github.io/taipei-feitsui-water-map/",
     repoUrl: "https://github.com/LEO0331/taipei-feitsui-water-map",
-    govtechCaseId: "heavy-rain-preparedness",
+    govtechCaseIds: ["heavy-rain-preparedness", "river-water-quality"],
     status: "live",
     featured: false
   },

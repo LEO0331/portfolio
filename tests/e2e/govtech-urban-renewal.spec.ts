@@ -137,7 +137,7 @@ test.describe("UrbanRenewal004 bilingual recorded policy-research case", () => {
       const study = records[locale].find(({ id }) => id === "urban-renewal")!;
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(12);
+      await expect(completed.locator("article")).toHaveCount(13);
       const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
       await expect(card).toContainText("004");
       const link = card.locator(`a[href="/portfolio/${prefix}govtech/urban-renewal"]`);

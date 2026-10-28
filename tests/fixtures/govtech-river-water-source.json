@@ -1,0 +1,2032 @@
+{
+  "policy": 13,
+  "sourceSha": "beedd7eef3592c12bb66c21937add068f82ce5fa",
+  "methodId": "river-water-longitudinal-evidence-review-v1",
+  "schemaVersion": "1.0.0",
+  "analysisDate": "2026-10-27",
+  "evidencePaths": [
+    "README.md",
+    "data/raw/river-water-policy/catalogue-043528ca3d450e5e23ee3709cfb11dc49b185223b716bd60e013651b48ccb717.html",
+    "data/raw/river-water-policy/manifest-5e196405727fc771ccc29af781ab8258b2c2b5acd21c37c97e2e4dc7c28532a9.json",
+    "data/raw/river-water-policy/manifest-fc0309d74b969a6855277f5ebbdf2da660a0104269efe85d7d17b4e2edb4062a.json",
+    "data/raw/river-water-policy/river-2023-6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6.csv",
+    "data/raw/river-water-policy/river-2024-e71033568e29b1cffbc0babefd94ca66f653effd1488611d0b34028e03f04907.csv",
+    "data/raw/river-water-policy/river-2025-b5114013df50d2e1fecb2ad446b8134c23858ad408af88f803a58d837664c8e3.csv",
+    "data/raw/river-water-policy/river-2026-39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34.csv",
+    "data/raw/river-water-policy/rpi-definition-e1169ad86d6d7c745fcfdbb4218279d140dba0cd477559fd2e46517108c7db37.html",
+    "data/raw/river-water-policy/rpi-support-ab38bd12c287d8c9146f21c0d47f5632301ebf7a13acce614caf34c18d908894.html",
+    "data/raw/river-water-policy/source-manifest.json",
+    "data/raw/river-water-policy/staged-5e196405727fc771ccc29af781ab8258b2c2b5acd21c37c97e2e4dc7c28532a9.json",
+    "data/raw/river-water-policy/station-context-c557c579739182adf8056e5416b3a569bb581e0c416e7d16165aa8ac4b79e0d4.html",
+    "docs/evidence/river-water-policy/baseline-build.log",
+    "docs/evidence/river-water-policy/baseline-convert.log",
+    "docs/evidence/river-water-policy/baseline-pages.log",
+    "docs/evidence/river-water-policy/baseline-test.log",
+    "docs/evidence/river-water-policy/briefing.csv",
+    "docs/evidence/river-water-policy/briefing.json",
+    "docs/evidence/river-water-policy/browser-qa.json",
+    "docs/evidence/river-water-policy/final-build.log",
+    "docs/evidence/river-water-policy/final-en-desktop.png",
+    "docs/evidence/river-water-policy/final-init.log",
+    "docs/evidence/river-water-policy/final-pages.log",
+    "docs/evidence/river-water-policy/final-reproducibility.log",
+    "docs/evidence/river-water-policy/final-source-audit.log",
+    "docs/evidence/river-water-policy/final-test.log",
+    "docs/evidence/river-water-policy/final-zh-mobile.png",
+    "docs/evidence/river-water-policy/implementation-test.log",
+    "docs/evidence/river-water-policy/performance.json",
+    "docs/evidence/river-water-policy/reference-preparedness.png",
+    "docs/evidence/river-water-policy/visual-verdict.json",
+    "docs/evidence/river-water-policy/zh-1024.png",
+    "docs/evidence/river-water-policy/zh-1440.png",
+    "docs/evidence/river-water-policy/zh-320.png",
+    "docs/evidence/river-water-policy/zh-390.png",
+    "docs/evidence/river-water-policy/zh-768.png",
+    "docs/river-water-policy-decision-mvp.zh-TW.md",
+    "docs/river-water-policy-delivery.md",
+    "docs/river-water-policy-geographic-evidence.md",
+    "docs/river-water-policy-implementation-plan.md",
+    "docs/river-water-policy-longitudinal-methodology.md",
+    "docs/river-water-policy-observation-coverage.md",
+    "docs/river-water-policy-results.json",
+    "docs/river-water-policy-rpi-methodology.md",
+    "docs/river-water-policy-source-audit.md",
+    "docs/river-water-policy-source-feasibility.md",
+    "docs/river-water-policy-station-identity.md",
+    "package-lock.json",
+    "package.json",
+    "public/data/river-water-policy/current.json",
+    "public/data/river-water-policy/snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json",
+    "scripts/auditRiverWaterPolicySources.ts",
+    "scripts/buildPreparednessDecisionSnapshot.ts",
+    "scripts/buildRiverWaterPolicyReport.ts",
+    "scripts/buildRiverWaterPolicySnapshot.ts",
+    "scripts/fetchRiverWaterPolicySources.ts",
+    "scripts/measureRiverWaterPolicy.ts",
+    "scripts/verifyRiverWaterPolicy.ts",
+    "src/RiverWaterPolicyDashboard.tsx",
+    "src/riverWaterPolicy.css",
+    "src/types/riverWaterPolicy.ts",
+    "src/types/riverWaterQuality.ts",
+    "src/utils/riverWaterPolicy.ts",
+    "src/utils/riverWaterPolicyScenarios.ts",
+    "src/utils/riverWaterQuality.ts",
+    "tests/riverWaterPolicy.test.ts",
+    "tests/riverWaterPolicyScenarios.test.ts",
+    "tests/riverWaterPolicySources.test.ts"
+  ],
+  "snapshot": {
+    "schemaVersion": "1.0.0",
+    "methodId": "river-water-longitudinal-evidence-review-v1",
+    "snapshotId": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+    "sha256": "212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+    "byteLength": 7016489,
+    "file": "snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json"
+  },
+  "sourceManifest": {
+    "path": "data/raw/river-water-policy/source-manifest.json",
+    "byteLength": 26056,
+    "sha256": "fc0309d74b969a6855277f5ebbdf2da660a0104269efe85d7d17b4e2edb4062a",
+    "acceptedAt": "2026-10-27T00:13:36.437Z"
+  },
+  "sources": [
+    {
+      "sourceId": "river-2023",
+      "datasetId": "759db528-77b5-4aa3-b6fa-2b857890214e",
+      "resourceId": "0e488a9c-7e44-4c30-bd07-049779218a76",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+      "downloadUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=0e488a9c-7e44-4c30-bd07-049779218a76",
+      "publisher": "臺北市政府環境保護局",
+      "yearRoc": 112,
+      "year": 2023,
+      "updatedAt": "2024-05-31 16:34:13",
+      "retrievedAt": "2026-10-27T00:13:36.437Z",
+      "sha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "byteLength": 28176,
+      "encoding": "Big5/CP950",
+      "publishedRowCount": 192,
+      "observedRowCount": 192,
+      "placeholderCount": 0,
+      "admissionStatus": "accepted",
+      "columnCount": 31,
+      "duplicateCount": 0,
+      "historicalComparison": {
+        "sha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+        "byteLength": 28176,
+        "identical": true
+      }
+    },
+    {
+      "sourceId": "river-2024",
+      "datasetId": "759db528-77b5-4aa3-b6fa-2b857890214e",
+      "resourceId": "44524259-d419-4c95-aa6f-16d58f03d1c1",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+      "downloadUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=44524259-d419-4c95-aa6f-16d58f03d1c1",
+      "publisher": "臺北市政府環境保護局",
+      "yearRoc": 113,
+      "year": 2024,
+      "updatedAt": "2025-01-10 11:35:14",
+      "retrievedAt": "2026-10-27T00:13:36.437Z",
+      "sha256": "e71033568e29b1cffbc0babefd94ca66f653effd1488611d0b34028e03f04907",
+      "byteLength": 28731,
+      "encoding": "Big5/CP950",
+      "publishedRowCount": 192,
+      "observedRowCount": 192,
+      "placeholderCount": 0,
+      "admissionStatus": "accepted",
+      "columnCount": 31,
+      "duplicateCount": 0,
+      "historicalComparison": {
+        "sha256": "e71033568e29b1cffbc0babefd94ca66f653effd1488611d0b34028e03f04907",
+        "byteLength": 28731,
+        "identical": true
+      }
+    },
+    {
+      "sourceId": "river-2025",
+      "datasetId": "759db528-77b5-4aa3-b6fa-2b857890214e",
+      "resourceId": "4f2bf5d2-9561-471a-a53c-7da82dfac0e2",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+      "downloadUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=4f2bf5d2-9561-471a-a53c-7da82dfac0e2",
+      "publisher": "臺北市政府環境保護局",
+      "yearRoc": 114,
+      "year": 2025,
+      "updatedAt": "2026-01-02 17:30:37",
+      "retrievedAt": "2026-10-27T00:13:36.437Z",
+      "sha256": "b5114013df50d2e1fecb2ad446b8134c23858ad408af88f803a58d837664c8e3",
+      "byteLength": 28788,
+      "encoding": "Big5/CP950",
+      "publishedRowCount": 192,
+      "observedRowCount": 192,
+      "placeholderCount": 0,
+      "admissionStatus": "accepted",
+      "columnCount": 31,
+      "duplicateCount": 0,
+      "historicalComparison": {
+        "sha256": "b5114013df50d2e1fecb2ad446b8134c23858ad408af88f803a58d837664c8e3",
+        "byteLength": 28788,
+        "identical": true
+      }
+    },
+    {
+      "sourceId": "river-2026",
+      "datasetId": "759db528-77b5-4aa3-b6fa-2b857890214e",
+      "resourceId": "a66f7820-35c0-42f4-af31-87c2401f3c12",
+      "catalogueUrl": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+      "downloadUrl": "https://data.taipei/api/frontstage/tpeod/dataset/resource.download?rid=a66f7820-35c0-42f4-af31-87c2401f3c12",
+      "publisher": "臺北市政府環境保護局",
+      "yearRoc": 115,
+      "year": 2026,
+      "updatedAt": "2026-10-16 09:00:48",
+      "retrievedAt": "2026-10-27T00:13:36.437Z",
+      "sha256": "39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34",
+      "byteLength": 23858,
+      "encoding": "Big5/CP950",
+      "publishedRowCount": 192,
+      "observedRowCount": 144,
+      "placeholderCount": 32,
+      "admissionStatus": "accepted",
+      "columnCount": 31,
+      "duplicateCount": 0,
+      "historicalComparison": {
+        "sha256": "742b87d4f89a2ecd3abf256eba345a836131087f27e0162dea671fd1d224b5fd",
+        "byteLength": 17651,
+        "identical": false
+      }
+    }
+  ],
+  "contextualSources": [
+    {
+      "sourceId": "catalogue",
+      "sourceUrl": "https://data.taipei/dataset/detail?id=759db528-77b5-4aa3-b6fa-2b857890214e",
+      "sha256": "043528ca3d450e5e23ee3709cfb11dc49b185223b716bd60e013651b48ccb717",
+      "byteLength": 95841,
+      "retrievedAt": "2026-10-27T00:13:36.437Z"
+    },
+    {
+      "sourceId": "station-context",
+      "sourceUrl": "https://www.tldep.gov.taipei/Public/DetInformation/RiverQuality.aspx",
+      "sha256": "c557c579739182adf8056e5416b3a569bb581e0c416e7d16165aa8ac4b79e0d4",
+      "byteLength": 118855,
+      "retrievedAt": "2026-10-27T00:13:36.437Z"
+    },
+    {
+      "sourceId": "rpi-definition",
+      "sourceUrl": "https://wq.moenv.gov.tw/EWQP/zh/Encyclopedia/NounDefinition/Pedia_37.aspx",
+      "sha256": "e1169ad86d6d7c745fcfdbb4218279d140dba0cd477559fd2e46517108c7db37",
+      "byteLength": 45734,
+      "retrievedAt": "2026-10-27T00:13:36.437Z"
+    },
+    {
+      "sourceId": "rpi-support",
+      "sourceUrl": "https://water.moenv.gov.tw/Public/CHT/WQInfo/monitor_river.aspx",
+      "sha256": "ab38bd12c287d8c9146f21c0d47f5632301ebf7a13acce614caf34c18d908894",
+      "byteLength": 62162,
+      "retrievedAt": "2026-10-27T00:13:36.437Z"
+    }
+  ],
+  "counts": {
+    "publishedRowCount": 768,
+    "observedRowCount": 720,
+    "completeFourIndicatorCount": 460,
+    "partiallyMeasuredRowCount": 720,
+    "placeholderCount": 32,
+    "futurePlaceholderCount": 32,
+    "expectedStationMonthCount": 736,
+    "missingStationMonthCount": 16,
+    "censoredValueCount": 1571,
+    "duplicateCount": 0,
+    "unparseableRowCount": 0,
+    "strictComparisonCount": 0,
+    "limitedComparisonCount": 823,
+    "matchedPairCount": 7239,
+    "indicatorCount": 27,
+    "totalIndicatorCells": 20736,
+    "riverCount": 9,
+    "stationLabelCount": 16,
+    "currentPeriodPendingCount": 16,
+    "historicalMissingCount": 0,
+    "fullyObservedCount": 0
+  },
+  "rowsByStatus": {
+    "partially_observed": 720,
+    "present_no_indicators": 16,
+    "future_placeholder": 32
+  },
+  "stationIdentity": {
+    "counts": {
+      "label_verified": 15,
+      "unmatched": 1
+    },
+    "physicallyVerified": 0,
+    "coordinatesAdmitted": 0,
+    "unmatchedOfficialLabel": "菁礐溪",
+    "stations": [
+      {
+        "stationId": "station-0bfbba8dbe62861a",
+        "riverName": "雙溪",
+        "stationName": "雙溪取水口",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-0dc984395d82495e",
+        "riverName": "雙溪",
+        "stationName": "復興橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-164608853a0baa99",
+        "riverName": "磺溪",
+        "stationName": "磺溪橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-20cb206dfed95a06",
+        "riverName": "淡水河",
+        "stationName": "臺北橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-2644cd708b3d0597",
+        "riverName": "景美溪",
+        "stationName": "恆光橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-6046e5944fe6e28f",
+        "riverName": "景美溪",
+        "stationName": "景美橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-80f33b2a0eb541a5",
+        "riverName": "基隆河",
+        "stationName": "承德橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-8b45ec3433384ed5",
+        "riverName": "景美溪",
+        "stationName": "萬福橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-b304f8239c8754ee",
+        "riverName": "雙溪",
+        "stationName": "青礜溪",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "unmatched",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-d5875cbaaa0dfc7a",
+        "riverName": "貴子坑溪",
+        "stationName": "新貴子坑",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-e4ec5f711189b58f",
+        "riverName": "磺溪",
+        "stationName": "陽明山",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-ec8b74bac5eb5f70",
+        "riverName": "基隆河",
+        "stationName": "大直橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-ee3d6759a7b4e0dc",
+        "riverName": "基隆河",
+        "stationName": "成功橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-f19920a3e6929dbe",
+        "riverName": "新店溪",
+        "stationName": "永福橋",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-f42bb56bf7790d4e",
+        "riverName": "山豬窟溪",
+        "stationName": "山豬窟溪",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      },
+      {
+        "stationId": "station-fb0b200e20909360",
+        "riverName": "磺港溪",
+        "stationName": "大豐停車場",
+        "years": [
+          2023,
+          2024,
+          2025,
+          2026
+        ],
+        "identityStatus": "label_verified",
+        "physicalContinuity": "unverified",
+        "coordinateStatus": "unverified"
+      }
+    ]
+  },
+  "qualifiers": {
+    "counts": {
+      "measured": 10684,
+      "not_detected_below": 1571,
+      "not_measured": 7185,
+      "missing": 1296
+    },
+    "invalidExact": 0,
+    "byIndicator": {
+      "waterTemperatureC": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "airTemperatureC": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "ph": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "dissolvedOxygenMgL": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "biochemicalOxygenDemandMgL": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "ammoniaNitrogenMgL": {
+        "measured": 460,
+        "not_detected_below": 260,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 460
+      },
+      "nitrateNitrogenMgL": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "nitriteNitrogenMgL": {
+        "measured": 489,
+        "not_detected_below": 231,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 489
+      },
+      "suspendedSolidsMgL": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "chemicalOxygenDemandMgL": {
+        "measured": 714,
+        "not_detected_below": 6,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 714
+      },
+      "cadmiumUgL": {
+        "measured": 15,
+        "not_detected_below": 225,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 15
+      },
+      "chromiumUgL": {
+        "measured": 95,
+        "not_detected_below": 145,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 95
+      },
+      "copperUgL": {
+        "measured": 234,
+        "not_detected_below": 6,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 234
+      },
+      "leadUgL": {
+        "measured": 135,
+        "not_detected_below": 105,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 135
+      },
+      "zincUgL": {
+        "measured": 240,
+        "not_detected_below": 0,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 240
+      },
+      "ironUgL": {
+        "measured": 0,
+        "not_detected_below": 0,
+        "not_measured": 720,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 0
+      },
+      "manganeseUgL": {
+        "measured": 240,
+        "not_detected_below": 0,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 240
+      },
+      "silverUgL": {
+        "measured": 0,
+        "not_detected_below": 240,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 0
+      },
+      "nickelUgL": {
+        "measured": 172,
+        "not_detected_below": 68,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 172
+      },
+      "mercuryUgL": {
+        "measured": 0,
+        "not_detected_below": 240,
+        "not_measured": 480,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 0
+      },
+      "arsenicUgL": {
+        "measured": 15,
+        "not_detected_below": 0,
+        "not_measured": 705,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 15
+      },
+      "conductivityUmhoCm": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "totalPhosphorusMgL": {
+        "measured": 0,
+        "not_detected_below": 0,
+        "not_measured": 720,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 0
+      },
+      "turbidityNtu": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "coliformCfuPer100Ml": {
+        "measured": 675,
+        "not_detected_below": 45,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 675
+      },
+      "chlorideMgL": {
+        "measured": 720,
+        "not_detected_below": 0,
+        "not_measured": 0,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 720
+      },
+      "totalNitrogenMgL": {
+        "measured": 0,
+        "not_detected_below": 0,
+        "not_measured": 720,
+        "missing": 48,
+        "unparsed": 0,
+        "invalid": 0,
+        "exactEligible": 0
+      }
+    }
+  },
+  "detectionLimits": {
+    "waterTemperatureC": {},
+    "airTemperatureC": {},
+    "ph": {},
+    "dissolvedOxygenMgL": {},
+    "biochemicalOxygenDemandMgL": {},
+    "ammoniaNitrogenMgL": {
+      "0.07": 12,
+      "0.08": 150,
+      "0.02": 98
+    },
+    "nitrateNitrogenMgL": {},
+    "nitriteNitrogenMgL": {
+      "0.01": 231
+    },
+    "suspendedSolidsMgL": {},
+    "chemicalOxygenDemandMgL": {
+      "1.5": 6
+    },
+    "cadmiumUgL": {
+      "0.648": 30,
+      "0.641": 75,
+      "0.667": 60,
+      "0.661": 45,
+      "0.604": 15
+    },
+    "chromiumUgL": {
+      "0.632": 20,
+      "0.634": 50,
+      "0.657": 45,
+      "0.639": 27,
+      "0.598": 3
+    },
+    "copperUgL": {
+      "0.668": 2,
+      "0.662": 2,
+      "0.661": 2
+    },
+    "leadUgL": {
+      "0.642": 14,
+      "0.643": 27,
+      "0.663": 33,
+      "0.627": 25,
+      "0.598": 6
+    },
+    "zincUgL": {},
+    "ironUgL": {},
+    "manganeseUgL": {},
+    "silverUgL": {
+      "0.625": 32,
+      "0.647": 80,
+      "0.652": 64,
+      "0.624": 48,
+      "0.596": 16
+    },
+    "nickelUgL": {
+      "0.642": 14,
+      "0.636": 30,
+      "0.647": 24
+    },
+    "mercuryUgL": {
+      "0.2": 224,
+      "0.194": 16
+    },
+    "arsenicUgL": {},
+    "conductivityUmhoCm": {},
+    "totalPhosphorusMgL": {},
+    "turbidityNtu": {},
+    "coliformCfuPer100Ml": {
+      "1": 2,
+      "10": 43
+    },
+    "chlorideMgL": {},
+    "totalNitrogenMgL": {}
+  },
+  "coverage": {
+    "publishedFirstPeriod": "2023-01",
+    "publishedLastPeriod": "2026-12",
+    "observedFirstPeriod": "2023-01",
+    "observedLastPeriod": "2026-09",
+    "priorMonthOpportunityCount": 720,
+    "priorMonthObservedCount": 720,
+    "byStation": [
+      {
+        "stationId": "station-0bfbba8dbe62861a",
+        "riverName": "雙溪",
+        "stationName": "雙溪取水口",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 1,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-0dc984395d82495e",
+        "riverName": "雙溪",
+        "stationName": "復興橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 4,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-164608853a0baa99",
+        "riverName": "磺溪",
+        "stationName": "磺溪橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 32,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-20cb206dfed95a06",
+        "riverName": "淡水河",
+        "stationName": "臺北橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 45,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-2644cd708b3d0597",
+        "riverName": "景美溪",
+        "stationName": "恆光橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 39,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-6046e5944fe6e28f",
+        "riverName": "景美溪",
+        "stationName": "景美橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 42,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-80f33b2a0eb541a5",
+        "riverName": "基隆河",
+        "stationName": "承德橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 43,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-8b45ec3433384ed5",
+        "riverName": "景美溪",
+        "stationName": "萬福橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 43,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-b304f8239c8754ee",
+        "riverName": "雙溪",
+        "stationName": "青礜溪",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 1,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-d5875cbaaa0dfc7a",
+        "riverName": "貴子坑溪",
+        "stationName": "新貴子坑",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 5,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-e4ec5f711189b58f",
+        "riverName": "磺溪",
+        "stationName": "陽明山",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 4,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-ec8b74bac5eb5f70",
+        "riverName": "基隆河",
+        "stationName": "大直橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 43,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-ee3d6759a7b4e0dc",
+        "riverName": "基隆河",
+        "stationName": "成功橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 43,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-f19920a3e6929dbe",
+        "riverName": "新店溪",
+        "stationName": "永福橋",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 42,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-f42bb56bf7790d4e",
+        "riverName": "山豬窟溪",
+        "stationName": "山豬窟溪",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 28,
+        "futureOpportunityCount": 2
+      },
+      {
+        "stationId": "station-fb0b200e20909360",
+        "riverName": "磺港溪",
+        "stationName": "大豐停車場",
+        "firstPeriod": "2023-01",
+        "lastPeriod": "2026-12",
+        "expectedStationMonthCount": 46,
+        "publishedRowCount": 48,
+        "observedRowCount": 45,
+        "missingStationMonthCount": 1,
+        "placeholderCount": 2,
+        "partiallyMeasuredRowCount": 45,
+        "completeFourIndicatorCount": 45,
+        "futureOpportunityCount": 2
+      }
+    ]
+  },
+  "rpi": {
+    "available": false,
+    "label": "Research-reproduced RPI",
+    "completeInputCount": 460,
+    "eligibleCount": 0,
+    "excludedCount": 768,
+    "blockers": [
+      "Official reference specifies category points and averaging but leaves precision intervals (DO 4.5–4.6, BOD5 4.9–5.0, SS 49.9–50.0, NH3-N 0.99–1.00) unresolved for arbitrary decimal inputs.",
+      "The applicable official laboratory significant-digit and RPI rounding rule has not been independently admitted. No rounding or detection-limit substitution is invented.",
+      "Same station-month CSV fields establish a published monthly record, not an independently verified common sampling event. No official RPI value was matched."
+    ],
+    "officialMethodUrl": "https://wq.moenv.gov.tw/EWQP/zh/Encyclopedia/NounDefinition/Pedia_37.aspx",
+    "literalPointFixtures": [
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 6.5,
+        "points": 1
+      },
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 4.6,
+        "points": 3
+      },
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 4.5,
+        "points": 6
+      },
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 2,
+        "points": 6
+      },
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 1.9,
+        "points": 10
+      },
+      {
+        "indicator": "dissolvedOxygenMgL",
+        "input": 4.55,
+        "points": null
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 3,
+        "points": 1
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 4.9,
+        "points": 3
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 5,
+        "points": 6
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 15,
+        "points": 6
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 15.1,
+        "points": 10
+      },
+      {
+        "indicator": "biochemicalOxygenDemandMgL",
+        "input": 4.95,
+        "points": null
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 20,
+        "points": 1
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 49.9,
+        "points": 3
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 50,
+        "points": 6
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 100,
+        "points": 6
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 100.1,
+        "points": 10
+      },
+      {
+        "indicator": "suspendedSolidsMgL",
+        "input": 49.95,
+        "points": null
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 0.5,
+        "points": 1
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 0.99,
+        "points": 3
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 1,
+        "points": 6
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 3,
+        "points": 6
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 3.1,
+        "points": 10
+      },
+      {
+        "indicator": "ammoniaNitrogenMgL",
+        "input": 0.995,
+        "points": null
+      }
+    ]
+  },
+  "modeA": {
+    "grain": "station identity × source month",
+    "population": 768,
+    "eligiblePopulation": 736,
+    "excludedPopulation": 32,
+    "tierPopulation": {
+      "A": 46,
+      "B": 690,
+      "C": 0
+    },
+    "scenarios": [
+      {
+        "strategy": "gaps",
+        "capacity": 5,
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 5,
+        "selectedTiers": {
+          "A": 5,
+          "B": 0,
+          "C": 0
+        },
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ],
+        "unusedCapacity": 0,
+        "selectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05"
+        ],
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05"
+        ],
+        "selectedIdsSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c",
+        "selectedIdSetSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      {
+        "strategy": "gaps",
+        "capacity": 10,
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 10,
+        "selectedTiers": {
+          "A": 10,
+          "B": 0,
+          "C": 0
+        },
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ],
+        "unusedCapacity": 0,
+        "selectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "selectedIdsSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54",
+        "selectedIdSetSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      {
+        "strategy": "gaps",
+        "capacity": "all",
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 736,
+        "selectedTiers": {
+          "A": 46,
+          "B": 690,
+          "C": 0
+        },
+        "rivers": [
+          "基隆河",
+          "山豬窟溪",
+          "新店溪",
+          "景美溪",
+          "淡水河",
+          "磺港溪",
+          "磺溪",
+          "貴子坑溪",
+          "雙溪"
+        ],
+        "stations": [
+          "station-0bfbba8dbe62861a",
+          "station-0dc984395d82495e",
+          "station-164608853a0baa99",
+          "station-20cb206dfed95a06",
+          "station-2644cd708b3d0597",
+          "station-6046e5944fe6e28f",
+          "station-80f33b2a0eb541a5",
+          "station-8b45ec3433384ed5",
+          "station-b304f8239c8754ee",
+          "station-d5875cbaaa0dfc7a",
+          "station-e4ec5f711189b58f",
+          "station-ec8b74bac5eb5f70",
+          "station-ee3d6759a7b4e0dc",
+          "station-f19920a3e6929dbe",
+          "station-f42bb56bf7790d4e",
+          "station-fb0b200e20909360"
+        ],
+        "unusedCapacity": 0,
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "selectedIdsSha256": "8162f662aabd06ca52767fdc766cc957319f0ca6e7ae0177d0e392abf60672e0",
+        "selectedIdSetSha256": "943f39c05be1ed06ef6f80b4b86eef79a59361abc84d9ea18cf7815fe92c1b98",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      {
+        "strategy": "balanced",
+        "capacity": 5,
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 5,
+        "selectedTiers": {
+          "A": 5,
+          "B": 0,
+          "C": 0
+        },
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ],
+        "unusedCapacity": 0,
+        "selectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05"
+        ],
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05"
+        ],
+        "selectedIdsSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c",
+        "selectedIdSetSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      {
+        "strategy": "balanced",
+        "capacity": 10,
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 10,
+        "selectedTiers": {
+          "A": 10,
+          "B": 0,
+          "C": 0
+        },
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ],
+        "unusedCapacity": 0,
+        "selectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "selectedIdsSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54",
+        "selectedIdSetSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      {
+        "strategy": "balanced",
+        "capacity": "all",
+        "population": 768,
+        "eligiblePopulation": 736,
+        "excludedPopulation": 32,
+        "selectedCount": 736,
+        "selectedTiers": {
+          "A": 46,
+          "B": 690,
+          "C": 0
+        },
+        "rivers": [
+          "基隆河",
+          "山豬窟溪",
+          "新店溪",
+          "景美溪",
+          "淡水河",
+          "磺港溪",
+          "磺溪",
+          "貴子坑溪",
+          "雙溪"
+        ],
+        "stations": [
+          "station-0bfbba8dbe62861a",
+          "station-0dc984395d82495e",
+          "station-164608853a0baa99",
+          "station-20cb206dfed95a06",
+          "station-2644cd708b3d0597",
+          "station-6046e5944fe6e28f",
+          "station-80f33b2a0eb541a5",
+          "station-8b45ec3433384ed5",
+          "station-b304f8239c8754ee",
+          "station-d5875cbaaa0dfc7a",
+          "station-e4ec5f711189b58f",
+          "station-ec8b74bac5eb5f70",
+          "station-ee3d6759a7b4e0dc",
+          "station-f19920a3e6929dbe",
+          "station-f42bb56bf7790d4e",
+          "station-fb0b200e20909360"
+        ],
+        "unusedCapacity": 0,
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05",
+          "A:station-b304f8239c8754ee:2023-06",
+          "A:station-b304f8239c8754ee:2023-07",
+          "A:station-b304f8239c8754ee:2023-08",
+          "A:station-b304f8239c8754ee:2023-09",
+          "A:station-b304f8239c8754ee:2023-10"
+        ],
+        "selectedIdsSha256": "e52a681d616602b9e383c2b346fd1312e59d8f2528bae598218cdf0196440820",
+        "selectedIdSetSha256": "943f39c05be1ed06ef6f80b4b86eef79a59361abc84d9ea18cf7815fe92c1b98",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      }
+    ],
+    "overlaps": [
+      {
+        "capacity": 5,
+        "sameEligiblePopulation": true,
+        "sharedCount": 5,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c"
+      },
+      {
+        "capacity": 10,
+        "sameEligiblePopulation": true,
+        "sharedCount": 10,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54"
+      },
+      {
+        "capacity": "all",
+        "sameEligiblePopulation": true,
+        "sharedCount": 736,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "943f39c05be1ed06ef6f80b4b86eef79a59361abc84d9ea18cf7815fe92c1b98"
+      }
+    ]
+  },
+  "modeB": {
+    "grain": "station identity × indicator × adjacent-year window",
+    "comparisonWindows": [
+      "2023-2024",
+      "2024-2025",
+      "2025-2026"
+    ],
+    "investigatedPopulation": 1296,
+    "strict": {
+      "strategy": "balanced",
+      "capacity": 5,
+      "population": 1296,
+      "eligiblePopulation": 0,
+      "excludedPopulation": 1296,
+      "selectedCount": 0,
+      "selectedTiers": {
+        "A": 0,
+        "B": 0,
+        "C": 0
+      },
+      "rivers": [],
+      "stations": [],
+      "unusedCapacity": 5,
+      "selectedIds": [],
+      "first10SelectedIds": [],
+      "selectedIdsSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "selectedIdSetSha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "excludedReasonCounts": {
+        "historical_location_unverified": 1296,
+        "identity_unverified": 81,
+        "sampling_method_unknown": 1296,
+        "strict_comparison_evidence_insufficient": 1296,
+        "incomplete_matched_year": 908,
+        "no_exact_pairs": 428
+      }
+    },
+    "limited": {
+      "strategy": "balanced",
+      "capacity": 5,
+      "population": 1296,
+      "eligiblePopulation": 823,
+      "excludedPopulation": 473,
+      "selectedCount": 5,
+      "selectedTiers": {
+        "A": 0,
+        "B": 5,
+        "C": 0
+      },
+      "rivers": [
+        "基隆河",
+        "景美溪",
+        "淡水河",
+        "磺溪",
+        "雙溪"
+      ],
+      "stations": [
+        "station-0bfbba8dbe62861a",
+        "station-164608853a0baa99",
+        "station-20cb206dfed95a06",
+        "station-2644cd708b3d0597",
+        "station-80f33b2a0eb541a5"
+      ],
+      "unusedCapacity": 0,
+      "selectedIds": [
+        "B:station-0bfbba8dbe62861a:airTemperatureC:2023-2024",
+        "B:station-164608853a0baa99:airTemperatureC:2023-2024",
+        "B:station-20cb206dfed95a06:airTemperatureC:2023-2024",
+        "B:station-2644cd708b3d0597:airTemperatureC:2023-2024",
+        "B:station-80f33b2a0eb541a5:airTemperatureC:2023-2024"
+      ],
+      "first10SelectedIds": [
+        "B:station-0bfbba8dbe62861a:airTemperatureC:2023-2024",
+        "B:station-164608853a0baa99:airTemperatureC:2023-2024",
+        "B:station-20cb206dfed95a06:airTemperatureC:2023-2024",
+        "B:station-2644cd708b3d0597:airTemperatureC:2023-2024",
+        "B:station-80f33b2a0eb541a5:airTemperatureC:2023-2024"
+      ],
+      "selectedIdsSha256": "9dd1d62d98eb7c6d099681cd81fc880a58a28d14dc7c86611764e2c723ae1eb6",
+      "selectedIdSetSha256": "9dd1d62d98eb7c6d099681cd81fc880a58a28d14dc7c86611764e2c723ae1eb6",
+      "excludedReasonCounts": {
+        "historical_location_unverified": 473,
+        "identity_unverified": 81,
+        "sampling_method_unknown": 473,
+        "incomplete_matched_year": 449,
+        "no_exact_pairs": 428
+      }
+    },
+    "limitedAllSelectedIdSetSha256": "77ad8307b0b4c173013c022802930f735bf09a7dee4aae8eb41b657747c1bfa7",
+    "limitedExcluded": 473,
+    "matchedPairCount": 7239,
+    "pairsAreIndependentSamples": false
+  },
+  "modeC": {
+    "available": false,
+    "eligiblePopulation": 0,
+    "selectedCount": 0,
+    "blockers": [
+      "No independent causal identification",
+      "No permit or official compliance determination",
+      "No validated public-health suitability assessment"
+    ]
+  },
+  "sensitivity": {
+    "strategyOverlap": [
+      {
+        "capacity": 5,
+        "sameEligiblePopulation": true,
+        "sharedCount": 5,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "8f2f668325001760e924cfb7bdb3ee45ed23657b1614fa86736d0aa8b63a1f9c"
+      },
+      {
+        "capacity": 10,
+        "sameEligiblePopulation": true,
+        "sharedCount": 10,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "c8b76ba99781fd30f7a124f448b1a175272868ff378d059bff6b439f4524ed54"
+      },
+      {
+        "capacity": "all",
+        "sameEligiblePopulation": true,
+        "sharedCount": 736,
+        "addedIds": [],
+        "removedIds": [],
+        "sharedIdSetSha256": "943f39c05be1ed06ef6f80b4b86eef79a59361abc84d9ea18cf7815fe92c1b98"
+      }
+    ],
+    "latestYear": {
+      "config": {
+        "years": [
+          2026
+        ]
+      },
+      "scenario": {
+        "strategy": "gaps",
+        "capacity": 5,
+        "population": 192,
+        "eligiblePopulation": 160,
+        "excludedPopulation": 32,
+        "selectedCount": 5,
+        "selectedTiers": {
+          "A": 5,
+          "B": 0,
+          "C": 0
+        },
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ],
+        "unusedCapacity": 0,
+        "selectedIds": [
+          "A:station-b304f8239c8754ee:2026-01",
+          "A:station-b304f8239c8754ee:2026-02",
+          "A:station-b304f8239c8754ee:2026-03",
+          "A:station-b304f8239c8754ee:2026-04",
+          "A:station-b304f8239c8754ee:2026-05"
+        ],
+        "first10SelectedIds": [
+          "A:station-b304f8239c8754ee:2026-01",
+          "A:station-b304f8239c8754ee:2026-02",
+          "A:station-b304f8239c8754ee:2026-03",
+          "A:station-b304f8239c8754ee:2026-04",
+          "A:station-b304f8239c8754ee:2026-05"
+        ],
+        "selectedIdsSha256": "95d48fb49ba78fb637bb79c5c91923657a29aec8bed5bc387e8b58e2509a9409",
+        "selectedIdSetSha256": "95d48fb49ba78fb637bb79c5c91923657a29aec8bed5bc387e8b58e2509a9409",
+        "excludedReasonCounts": {
+          "future_placeholder_not_due": 32
+        }
+      },
+      "tierPopulation": {
+        "A": 10,
+        "B": 150,
+        "C": 0
+      },
+      "comparison": {
+        "sameEligiblePopulation": false,
+        "sharedIds": [],
+        "addedIds": [
+          "A:station-b304f8239c8754ee:2026-01",
+          "A:station-b304f8239c8754ee:2026-02",
+          "A:station-b304f8239c8754ee:2026-03",
+          "A:station-b304f8239c8754ee:2026-04",
+          "A:station-b304f8239c8754ee:2026-05"
+        ],
+        "removedIds": [
+          "A:station-b304f8239c8754ee:2023-01",
+          "A:station-b304f8239c8754ee:2023-02",
+          "A:station-b304f8239c8754ee:2023-03",
+          "A:station-b304f8239c8754ee:2023-04",
+          "A:station-b304f8239c8754ee:2023-05"
+        ],
+        "eligiblePopulationChange": -576,
+        "selectedCoverageChange": 0,
+        "riverCoverageChange": 0,
+        "stationCoverageChange": 0,
+        "before": {
+          "eligiblePopulation": 736,
+          "selectedCount": 5,
+          "rivers": [
+            "雙溪"
+          ],
+          "stations": [
+            "station-b304f8239c8754ee"
+          ]
+        },
+        "after": {
+          "eligiblePopulation": 160,
+          "selectedCount": 5,
+          "rivers": [
+            "雙溪"
+          ],
+          "stations": [
+            "station-b304f8239c8754ee"
+          ]
+        },
+        "explanation": "Eligibility populations differ. Changes reflect scope or evidence rules as well as selection; this is not an equivalent-population strategy comparison."
+      }
+    },
+    "capacity5To10": {
+      "sameEligiblePopulation": true,
+      "sharedIds": [
+        "A:station-b304f8239c8754ee:2023-01",
+        "A:station-b304f8239c8754ee:2023-02",
+        "A:station-b304f8239c8754ee:2023-03",
+        "A:station-b304f8239c8754ee:2023-04",
+        "A:station-b304f8239c8754ee:2023-05"
+      ],
+      "addedIds": [
+        "A:station-b304f8239c8754ee:2023-06",
+        "A:station-b304f8239c8754ee:2023-07",
+        "A:station-b304f8239c8754ee:2023-08",
+        "A:station-b304f8239c8754ee:2023-09",
+        "A:station-b304f8239c8754ee:2023-10"
+      ],
+      "removedIds": [],
+      "eligiblePopulationChange": 0,
+      "selectedCoverageChange": 5,
+      "riverCoverageChange": 0,
+      "stationCoverageChange": 0,
+      "before": {
+        "eligiblePopulation": 736,
+        "selectedCount": 5,
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ]
+      },
+      "after": {
+        "eligiblePopulation": 736,
+        "selectedCount": 10,
+        "rivers": [
+          "雙溪"
+        ],
+        "stations": [
+          "station-b304f8239c8754ee"
+        ]
+      },
+      "explanation": "The exact eligible candidate IDs are identical. Selection changes reflect strategy or capacity under the supplied scope."
+    }
+  },
+  "examples": {
+    "observedExactFourInput": {
+      "id": "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:6:2023-01:%E6%B7%A1%E6%B0%B4%E6%B2%B3:%E8%87%BA%E5%8C%97%E6%A9%8B",
+      "sourceId": "river-2023",
+      "sourceSha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "rowNumber": 6,
+      "stationId": "station-20cb206dfed95a06",
+      "riverName": "淡水河",
+      "stationName": "臺北橋",
+      "period": "2023-01",
+      "status": "partially_observed",
+      "identityStatus": "label_verified",
+      "completeFourIndicators": true,
+      "rpiEligible": false
+    },
+    "partial": {
+      "id": "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:10:2023-01:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+      "sourceId": "river-2023",
+      "sourceSha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "rowNumber": 10,
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2023-01",
+      "status": "partially_observed",
+      "identityStatus": "label_verified",
+      "completeFourIndicators": false,
+      "rpiEligible": false
+    },
+    "censoredAmmonia": {
+      "id": "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:10:2023-01:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+      "sourceId": "river-2023",
+      "sourceSha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "rowNumber": 10,
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2023-01",
+      "status": "partially_observed",
+      "identityStatus": "label_verified",
+      "completeFourIndicators": false,
+      "rpiEligible": false,
+      "cell": {
+        "raw": "ND<0.07",
+        "qualifier": "not_detected_below",
+        "detectionLimit": 0.07,
+        "unit": "mg/L"
+      }
+    },
+    "futurePlaceholder": {
+      "id": "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:170:2026-11:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+      "sourceId": "river-2026",
+      "sourceSha256": "39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34",
+      "rowNumber": 170,
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2026-11",
+      "status": "future_placeholder",
+      "identityStatus": "label_verified",
+      "completeFourIndicators": false,
+      "rpiEligible": false
+    },
+    "currentPending": {
+      "id": "river-2026:39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34:154:2026-10:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+      "sourceId": "river-2026",
+      "sourceSha256": "39ca05ac221eab632fde2b5d2e359b633d5ffa5fcb2a7ed40a70c8d3b0177f34",
+      "rowNumber": 154,
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "period": "2026-10",
+      "status": "present_no_indicators",
+      "identityStatus": "label_verified",
+      "completeFourIndicators": false,
+      "rpiEligible": false
+    },
+    "unmatched": {
+      "id": "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:11:2023-01:%E9%9B%99%E6%BA%AA:%E9%9D%92%E7%A4%9C%E6%BA%AA",
+      "sourceId": "river-2023",
+      "sourceSha256": "6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6",
+      "rowNumber": 11,
+      "stationId": "station-b304f8239c8754ee",
+      "riverName": "雙溪",
+      "stationName": "青礜溪",
+      "period": "2023-01",
+      "status": "partially_observed",
+      "identityStatus": "unmatched",
+      "completeFourIndicators": false,
+      "rpiEligible": false
+    },
+    "limitedComparison": {
+      "id": "station-0bfbba8dbe62861a:waterTemperatureC:2023-2024",
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "indicator": "waterTemperatureC",
+      "fromYear": 2023,
+      "toYear": 2024,
+      "matchedCount": 12,
+      "excludedCount": 0,
+      "pairs": [
+        {
+          "month": 1,
+          "fromId": "river-2023:6ccd7907164ab593ad60c123d764fb473420015f88afaeebb7d25459c1627fb6:10:2023-01:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+          "toId": "river-2024:e71033568e29b1cffbc0babefd94ca66f653effd1488611d0b34028e03f04907:10:2024-01:%E9%9B%99%E6%BA%AA:%E9%9B%99%E6%BA%AA%E5%8F%96%E6%B0%B4%E5%8F%A3",
+          "fromValue": 18.8,
+          "toValue": 15.1,
+          "change": -3.700000000000001
+        }
+      ],
+      "strictEligible": false,
+      "limitedEligible": true,
+      "exclusionReasons": [
+        "historical_location_unverified",
+        "sampling_method_unknown"
+      ]
+    },
+    "excludedComparison": {
+      "id": "station-0bfbba8dbe62861a:ammoniaNitrogenMgL:2023-2024",
+      "stationId": "station-0bfbba8dbe62861a",
+      "riverName": "雙溪",
+      "stationName": "雙溪取水口",
+      "indicator": "ammoniaNitrogenMgL",
+      "fromYear": 2023,
+      "toYear": 2024,
+      "matchedCount": 0,
+      "excludedCount": 12,
+      "pairs": [],
+      "strictEligible": false,
+      "limitedEligible": false,
+      "exclusionReasons": [
+        "historical_location_unverified",
+        "sampling_method_unknown",
+        "incomplete_matched_year",
+        "no_exact_pairs"
+      ]
+    },
+    "selectedModeA": [
+      "A:station-b304f8239c8754ee:2023-01",
+      "A:station-b304f8239c8754ee:2023-02",
+      "A:station-b304f8239c8754ee:2023-03",
+      "A:station-b304f8239c8754ee:2023-04",
+      "A:station-b304f8239c8754ee:2023-05"
+    ],
+    "selectedModeB": [
+      "B:station-0bfbba8dbe62861a:airTemperatureC:2023-2024",
+      "B:station-164608853a0baa99:airTemperatureC:2023-2024",
+      "B:station-20cb206dfed95a06:airTemperatureC:2023-2024",
+      "B:station-2644cd708b3d0597:airTemperatureC:2023-2024",
+      "B:station-80f33b2a0eb541a5:airTemperatureC:2023-2024"
+    ]
+  },
+  "exportSafety": {
+    "capacity5JsonBytes": 76875,
+    "capacity5CsvBytes": 118004,
+    "formulaPrefixProtection": true,
+    "controlPrefixProtection": true
+  },
+  "limitations": [
+    "Monthly station records support documentary evidence review only. They do not establish causality, regulatory compliance, drinking-water safety, ecological harm or current conditions.",
+    "Expected periods assume the published monthly schedule across the admitted years. Station commissioning/discontinuation and historical physical continuity are unknown; missing rows do not prove closure.",
+    "The current month is an observation opportunity still in progress; its empty rows are neither future placeholders nor overdue historical samples. Future months are excluded from expected-to-date denominators.",
+    "Current official label matching does not establish unchanged historical physical monitoring location or laboratory methodology. Strict Mode B has no admitted comparisons. Limited pairs describe exact same-label monthly differences only, not validated trends or significance.",
+    "Censored values preserve detection limits without substitution. No ordinary mean mixes exact and censored observations. No station coordinates are admitted and no policy map pins are generated.",
+    "Complete four-indicator inputs are potential inputs only; research RPI remains unavailable pending precision, rounding and common-sampling evidence."
+  ],
+  "validationScope": {
+    "selectedIdHashDefinition": "SHA-256 over UTF-8 JSON.stringify(selectedIds); set hashes sort a copied ID array before serialization.",
+    "originalBodyHashesVerified": 8,
+    "annualCsvReparsed": 4,
+    "stationRosterReaudited": true,
+    "unchangedOriginalModules": [
+      {
+        "path": "src/types/riverWaterQuality.ts",
+        "sha256": "6f7e58005842a2b7aabd4d6d0311a9d4fa7415e390e2dfd13fbcaee2d8c9760d",
+        "byteLength": 2394
+      },
+      {
+        "path": "src/types/riverWaterPolicy.ts",
+        "sha256": "667679a66c29908c5bd87df4312d6d688fd020de5a6600d094dbeb600f390c7c",
+        "byteLength": 3990
+      },
+      {
+        "path": "src/utils/riverWaterQuality.ts",
+        "sha256": "a5c12c2eb4ed1087a9ca5f8d9ba4c54d2e7d4e2803bb1b4a7176bab5ed000f4a",
+        "byteLength": 6731
+      },
+      {
+        "path": "src/utils/riverWaterPolicy.ts",
+        "sha256": "0bb14d0685dc3e5fe21443734e2b985f7be1c9eb4be2538c242718766dc0672d",
+        "byteLength": 14721
+      },
+      {
+        "path": "src/utils/riverWaterPolicyScenarios.ts",
+        "sha256": "6bd841889d266990ac562b565b83e0a62caa03ef74d19f5fcba4ea34fb901cd2",
+        "byteLength": 20506
+      },
+      {
+        "path": "scripts/auditRiverWaterPolicySources.ts",
+        "sha256": "eff62ba37f5952aae72b57c527529d820f78f3a29d35ca674c80599fceb72034",
+        "byteLength": 11433
+      },
+      {
+        "path": "scripts/buildRiverWaterPolicySnapshot.ts",
+        "sha256": "a71b02f50124787c092309ab3ebd9658e8cc341fdc20fd96e04cae2ed7d983c0",
+        "byteLength": 14763
+      },
+      {
+        "path": "scripts/buildPreparednessDecisionSnapshot.ts",
+        "sha256": "3e1e4fb298af7c0d3898bbc1bc15c4cd6519abb4f24ab2cd5cbf9dc663888060",
+        "extractedFunction": "preparednessCsv",
+        "extractedFunctionSha256": "12b6bfcf128841eaff9ef04669e3d1723ce3aefe5fea5faf5d42e6b20d2c69a9"
+      }
+    ],
+    "extractedDependency": "Only unchanged preparednessCsv AST function; unrelated preparedness/proj4 module imports are not executed.",
+    "exactOfflineRebuilds": 2,
+    "originalSnapshotVerifier": true,
+    "scenariosReplayed": true,
+    "sourceTestsRerun": false,
+    "sourceDependenciesInstalled": false,
+    "freshGovernmentAcquisition": false,
+    "sourceModified": false,
+    "note": "Bounded retained-source audit and original pure-function replay; no complete upstream application test/build or deployed-system acceptance claim."
+  }
+}

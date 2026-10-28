@@ -111,7 +111,7 @@ node tools/capture-project-previews.mjs
 
 ## 首頁精選專案
 
-首頁以 `src/data/featuredProjects.ts` 明確設定 Gridline、Book QA Library、CraftFocus 的順序，另以精簡 GovTech 集合入口連至十二案例總覽。目錄先依相同策展順序，再沿用置頂／狀態／名稱排序。`src/data/github-pins.json` 與 `featured` 旗標仍代表實際 GitHub 置頂，獨立同步。全部專案、搜尋、篩選與專案查詢連結持續可用。
+首頁以 `src/data/featuredProjects.ts` 明確設定 Gridline、Book QA Library、CraftFocus 的順序，另以精簡 GovTech 集合入口連至十三案例總覽。目錄先依相同策展順序，再沿用置頂／狀態／名稱排序。`src/data/github-pins.json` 與 `featured` 旗標仍代表實際 GitHub 置頂，獨立同步。全部專案、搜尋、篩選與專案查詢連結持續可用。
 
 Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連結、置頂對應與外部參照。可見內容分別說明 Node.js／SQLite API 模式及公開靜態 Demo。詳見 [v2.2 證據與驗證](./docs/portfolio-v2.2-recruiter-refinement.md)。
 
@@ -154,7 +154,7 @@ Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus
 
 **Portfolio GovTech Showcase v1.6（歷史基準）** 延伸已隨 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併的展示。案例 002 [PR #18](https://github.com/LEO0331/portfolio/pull/18)、案例 003 [PR #19](https://github.com/LEO0331/portfolio/pull/19)、案例 004 [PR #20](https://github.com/LEO0331/portfolio/pull/20)、案例 005 [PR #21](https://github.com/LEO0331/portfolio/pull/21) 及案例 006 [PR #22](https://github.com/LEO0331/portfolio/pull/22) 均已合併，本版以 main `7c7ace1b97a334e0b618b78f7f018dc0c0a150bd` 為基準，已包含 [PR #24](https://github.com/LEO0331/portfolio/pull/24) 的 Vite 8.3.5；本案例不宣稱完成該先前依賴更新。
 
-個人[市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 依序呈現十一個已完成工程 POC：[001 — 臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置及政策加權參考涵蓋；[002 — 臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工與調查查核；[003 — 豪雨防汛整備與設施查核決策支援](https://leo0331.github.io/portfolio/zh/govtech/heavy-rain-preparedness) 展示設施證據缺口及 GIS 驗證；[004 — 臺北市老舊建築與都市更新決策支援](https://leo0331.github.io/portfolio/zh/govtech/urban-renewal) 展示行政核對及法律階段語義；[005 — 樹蔭公平與都市熱環境整備決策支援](https://leo0331.github.io/portfolio/zh/govtech/shade-equity) 已完成 GIS 盤點及證據就緒原型，排序現勘能力仍受資格閘門限制；[006 — 內湖交通壅塞與觀測資料就緒度決策支援](https://leo0331.github.io/portfolio/zh/govtech/neihu-congestion) 完成設備／來源品質查核，歷史壅塞排名仍待合格觀測；[007 — 臺北市公車路網與服務涵蓋決策支援](https://leo0331.github.io/portfolio/zh/govtech/bus-service) 完成路網／公告文件查核，方向服務比較與歷史實際表現仍不可用。[008 — 公共 Wi-Fi 資源配置與數位近用](https://leo0331.github.io/portfolio/zh/govtech/wifi-allocation) 呈現來源對帳及非自身增益為零的實驗地理研究；[009 — 橋梁檢測與維護](https://leo0331.github.io/portfolio/zh/govtech/bridge-inspection) 呈現保守資產對帳及受限行政調查。[010 — 高齡社區照顧據點涵蓋與服務整備](https://leo0331.github.io/portfolio/zh/govtech/senior-community-care) 呈現官方 PDF 擷取、保守跨版本對應與隱私最小化行政追蹤。[011 — 食品衛生與抽驗紀錄證據查核](https://leo0331.github.io/portfolio/zh/govtech/food-hygiene-inspection) 呈現歷史檢體語義、官方來源保全及保守場所證據門檻。這些是個人工程 POC，不由臺北市政府營運或背書，未進行官方營運整備認證。
+個人[市政資料治理與決策支援系統](https://leo0331.github.io/portfolio/zh/govtech) 依序呈現六個政策領域的十三個已完成工程 POC：[001 — 臺北市清潔箱配置決策支援](https://leo0331.github.io/portfolio/zh/govtech/bin-policy) 展示空間配置及政策加權參考涵蓋；[002 — 臺北市 1999 民生通報與環境治理決策支援](https://leo0331.github.io/portfolio/zh/govtech/civic-1999) 展示歷史派工與調查查核；[003 — 豪雨防汛整備與設施查核決策支援](https://leo0331.github.io/portfolio/zh/govtech/heavy-rain-preparedness) 展示設施證據缺口及 GIS 驗證；[004 — 臺北市老舊建築與都市更新決策支援](https://leo0331.github.io/portfolio/zh/govtech/urban-renewal) 展示行政核對及法律階段語義；[005 — 樹蔭公平與都市熱環境整備決策支援](https://leo0331.github.io/portfolio/zh/govtech/shade-equity) 已完成 GIS 盤點及證據就緒原型，排序現勘能力仍受資格閘門限制；[006 — 內湖交通壅塞與觀測資料就緒度決策支援](https://leo0331.github.io/portfolio/zh/govtech/neihu-congestion) 完成設備／來源品質查核，歷史壅塞排名仍待合格觀測；[007 — 臺北市公車路網與服務涵蓋決策支援](https://leo0331.github.io/portfolio/zh/govtech/bus-service) 完成路網／公告文件查核，方向服務比較與歷史實際表現仍不可用。[008 — 公共 Wi-Fi 資源配置與數位近用](https://leo0331.github.io/portfolio/zh/govtech/wifi-allocation) 呈現來源對帳及非自身增益為零的實驗地理研究；[009 — 橋梁檢測與維護](https://leo0331.github.io/portfolio/zh/govtech/bridge-inspection) 呈現保守資產對帳及受限行政調查。[010 — 高齡社區照顧據點涵蓋與服務整備](https://leo0331.github.io/portfolio/zh/govtech/senior-community-care) 呈現官方 PDF 擷取、保守跨版本對應與隱私最小化行政追蹤。[011 — 食品衛生與抽驗紀錄證據查核](https://leo0331.github.io/portfolio/zh/govtech/food-hygiene-inspection) 呈現歷史檢體語義、官方來源保全及保守場所證據門檻。[012 — 消防通道與狹小巷道救災整備證據查核](https://leo0331.github.io/portfolio/zh/govtech/fire-rescue-access) 呈現保守文件關聯與尚不可判定的實際救災整備。[013 — 臺北市河川水質監測與長期趨勢證據查核](https://leo0331.github.io/portfolio/zh/govtech/river-water-quality) 區分公告列與實際觀測，保存偵測極限，並分開呈現文件查核、受限描述性比較與不可用的 RPI／因果結論。這些是個人工程 POC，不由臺北市政府營運或背書，未進行官方營運整備認證。
 
 案例 005 呈現已合併的 [Bin Map PR #19](https://github.com/LEO0331/taipei-bin-map/pull/19)，合併時間 `2026-10-20T07:14:40Z`，固定 commit [`612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9`](https://github.com/LEO0331/taipei-bin-map/commit/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9)；此 metadata 取代舊來源交接「無法建立 PR」的歷史狀態。Source snapshot `shade-source-v1-078b91443dc33e45` 與 derived snapshot `shade-equity-v1-8e4cfb4029d0831d` 為不同識別；方法 `shade-equity-evidence-review-v1`、設定 `1.0.0`、凍結生成 `2026-10-20T00:41:41.554Z`。見[案例 005 規格](./docs/govtech-case-study-005.zh-TW.md)、[來源稽核](./docs/govtech-shade-equity-source-audit.md)、[v1.4 歷史驗證](./docs/govtech-v1.4-verification.md)、[v1.5 歷史驗證](./docs/govtech-v1.5-verification.md) 及 [v1.6 驗證](./docs/govtech-v1.6-verification.md)。
 
@@ -166,7 +166,7 @@ Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus
 
 實際母體為 11 個 A 級行政區問題：容量 5 選中正、大同、中山、松山、大安；容量 10 再加萬華、士林、北投、內湖、南港，文山因容量未選；不限則全選 11。每區一題且主要資格相同，因此缺口優先、區別均衡、來源核對結果及順序相同。選入問題共涉及兩個不同面向、一種已驗證來源，不把各候選面向相加。信義缺列是涵蓋未知而非零案件。全市建物存量、使照流量、獎勵單位及法律階段不混合；858 天是資源版本年齡，不是案件停滯。老屋不等於危樓，劃定核准不等於更新完成，未建立安全、法律資格或投資推薦。
 
-案例 003 呈現已合併的 [Feitsui PR #5](https://github.com/LEO0331/taipei-feitsui-water-map/pull/5)，固定來源為 [`195e63111d32ad564291545ff9d8b230b025b055`](https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055)、快照 `sha256-d67edc57254ee273`、方法 `heavy-rain-preparedness-review-v1`、設定 `1.0.0`，來源查核日 2026-10-19。水質／生態等模組仍為探索功能，已完成的豪雨整備模組提供此專案的決策支援 POC 能力。
+案例 003 呈現已合併的 [Feitsui PR #5](https://github.com/LEO0331/taipei-feitsui-water-map/pull/5)，固定來源為 [`195e63111d32ad564291545ff9d8b230b025b055`](https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055)、快照 `sha256-d67edc57254ee273`、方法 `heavy-rain-preparedness-review-v1`、設定 `1.0.0`，來源查核日 2026-10-19。在案例 003 的固定來源版本，河川水質與生態等模組為探索功能；目前獨立案例 013 已以另一固定版本加入河川監測證據查核，水庫／生態探索仍分開保留。兩案不合成防汛與污染分數。
 
 相同嚴格證據範圍與容量 5 下，缺口優先選入 2 區、5 個 A 候選及 12 個候選層級問題；地理均衡選入 5 區、2 A／3 B 及 15 個問題。兩者皆選北投／士林機具候選。來源共通問題可跨候選重複，不代表淹水風險、防護效果或政策績效。嚴格模式不採計帶限制的歷史來源；695 筆為轉換納入觀測數，並非嚴格情境貢獻。因缺少已驗證排水服務關係而採行政區 × 類別查核；官方參考地理部分涵蓋、歷史日期矛盾及沉砂池面積單位仍是限制。本案例不是警報或預報，不確立排水能力、機具目前可用性、實際整備或防淹保障。
 
@@ -174,7 +174,7 @@ Crash Map 現以既有 normalizer 設 `govtechCaseIds: ['neihu-congestion', 'bus
 
 Showcase v1.1 新增 [案例 002 規格](./docs/govtech-case-study-002.zh-TW.md)、[1999 固定來源稽核](./docs/govtech-civic-1999-source-audit.md) 及 [v1.1 驗證](./docs/govtech-v1.1-verification.md)。來源固定為 352dbebe0057f62817e4ee08572e1a4d207a5b5a；作品集呈現凍結彙總情境，不即時請求民生資料。
 
-v1.0–v1.5 歷史驗證報告保持不變；[v1.0 規格](./docs/govtech-case-study-v1.0.zh-TW.md)及[清潔箱來源查核](./docs/govtech-source-audit.md) 保留歷史證據並明示目前狀態補充。參閱[新增案例 008 模板](./docs/govtech-case-study-template.md)：先核對固定來源與能力，引用既有 project ID（可為已被其他案例使用的 project）、補齊雙語資料／路由／metadata，再驗證刷新、語言／base、多案例連結、限制及行動版。保留既有 baseline fixtures 與首頁精選順序，以實際結果更新 feature ledger／交接；一般專案同步及人工策展維持不變。
+v1.0–v1.5 歷史驗證報告保持不變；[v1.0 規格](./docs/govtech-case-study-v1.0.zh-TW.md)及[清潔箱來源查核](./docs/govtech-source-audit.md) 保留歷史證據並明示目前狀態補充。[歷史可重用案例指南](./docs/govtech-case-study-template.md)保留整合模式：先核對固定來源與能力，引用既有 project ID（可為已被其他案例使用的 project）、補齊雙語資料／路由／metadata，再驗證刷新、語言／base、多案例連結、限制及行動版。保留既有 baseline fixtures 與首頁精選順序，以實際結果更新 feature ledger／交接；一般專案同步及人工策展維持不變。
 
 新頁沿用 SEO hook 與靜態入口產生器，包含各頁標題／描述、Open Graph 與 sitemap。同步提供[英文首頁](https://leo0331.github.io/portfolio/govtech)、[清潔箱案例](https://leo0331.github.io/portfolio/govtech/bin-policy)、[1999 案例](https://leo0331.github.io/portfolio/govtech/civic-1999)、[豪雨案例](https://leo0331.github.io/portfolio/govtech/heavy-rain-preparedness)、[都市更新案例](https://leo0331.github.io/portfolio/govtech/urban-renewal)、[樹蔭案例](https://leo0331.github.io/portfolio/govtech/shade-equity)、[內湖案例](https://leo0331.github.io/portfolio/govtech/neihu-congestion) 及[公車案例](https://leo0331.github.io/portfolio/govtech/bus-service)。
 
@@ -231,3 +231,13 @@ GovTech 列表與專案連結使用輕量雙語摘要；詳細頁保留完整研
 ## GovTech v2.1
 
 GovTech Showcase v2.1新增第十二個雙語案例「臺北市消防通道與狹小巷道救災整備證據查核」。三份官方版本共869筆文件紀錄，層級477／392／0，僅一筆接受關聯；目前淨空與實際救災整備仍不可判定。保留既有探索功能與前十一案。參見[案例012](./docs/govtech-case-study-012.zh-TW.md)、[來源稽核](./docs/govtech-fire-rescue-access-source-audit.md)及[驗證紀錄](./docs/govtech-v2.1-verification.md)。
+
+## Portfolio v2.5 — 最後一個規劃中的市政案例
+
+本集合已完成 **六個政策領域、十三個雙語 GovTech 案例，以及獨立的 Gridline 工程深度案例**。案例 013 完成既定市政案例集合，不新增其他政策或空白未來案例卡片。
+
+既有翡翠水庫水環境專案以同一筆專案紀錄提供案例 003 與 013。案例 003 維持「防災整備與公共安全」的防汛設施文件查核；案例 013 屬於「都市服務與環境」，使用接受的 2023–2026 年官方河川監測版本。768 筆公告日曆列中，720 筆含有效精確或設限觀測，16 筆為當月待發布、32 筆為未來月份占位。720 筆觀測列在完整 27 欄清單下皆為部分量測，不代表每個已採樣指標都無效。
+
+模式 A 有 736 個文件查核候選（A46／B690／C0）。嚴格長期比較為零；另行標示的同名測站受限描述性檢視有 823 個視窗、7,239 個精確指標月份配對，並非獨立樣本或經驗證趨勢。460 列具備四項潛在精確 RPI 輸入，但尚無接受的研究重現 RPI 輸出。模式 C 的因果、法規及公共健康結論維持不可用，不推定污染嚴重度、飲用水安全或目前監測完整性。
+
+詳見[案例 013 中文規格](./docs/govtech-case-study-013.zh-TW.md)、[獨立來源稽核](./docs/govtech-river-water-source-audit.md)及[v2.5 驗證紀錄](./docs/portfolio-v2.5-verification.md)，其中記錄接受版本、原始雜湊、不可變快照、實際選取識別及測試／瀏覽器證據。前十二案技術紀錄與 Gridline 工程證據維持不變。Portfolio 靜態呈現已驗證發現，不在閱讀時擷取官方監測資料或完整政策快照。

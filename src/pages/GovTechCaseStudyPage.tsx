@@ -35,7 +35,8 @@ function CaseContent({ study }: { study: GovTechCase }): JSX.Element {
     }
   }, [study.id, locale, location.hash, navigationType]);
   const routePath = toLocalePath(`/govtech/${study.slug}`);
-  usePageSeo(study.title, { routePath, description: routeConfig.routes.find((route) => route.path === routePath)?.description ?? study.summary });
+  const metadata = routeConfig.routes.find((route) => route.path === routePath);
+  usePageSeo(metadata?.title?.replace(/ \| Leo Chen$/, "") ?? study.title, { routePath, description: metadata?.description ?? study.summary });
   return <Section><div className="mx-auto max-w-4xl">
     <Link to={toLocalePath("/govtech")} className={`text-sm ${evidenceLinkClass}`}>← {text.back}</Link>
     <header className="mb-8 mt-6 space-y-4">

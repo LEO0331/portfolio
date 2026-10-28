@@ -1,0 +1,2795 @@
+{
+  "stage": "final",
+  "base": "/",
+  "routeChecks": [
+    {
+      "path": "/engineering/gridline",
+      "pass": true,
+      "title": "Gridline Backend Architecture & Financial Data Engineering | Leo Chen",
+      "staticTitle": "Gridline Backend Architecture & Financial Data Engineering | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/engineering/gridline",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech",
+      "pass": true,
+      "title": "GovTech & Civic Decision Systems | Leo Chen",
+      "staticTitle": "GovTech & Civic Decision Systems | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/bin-policy",
+      "pass": true,
+      "title": "Public Bin Allocation Decision Support | Leo Chen",
+      "staticTitle": "Public Bin Allocation Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/bin-policy",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/civic-1999",
+      "pass": true,
+      "title": "Taipei 1999 Citizen Service Decision Support | Leo Chen",
+      "staticTitle": "Taipei 1999 Citizen Service Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/civic-1999",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/heavy-rain-preparedness",
+      "pass": true,
+      "title": "Heavy-Rain Preparedness & Infrastructure Review | Leo Chen",
+      "staticTitle": "Heavy-Rain Preparedness & Infrastructure Review | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/heavy-rain-preparedness",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/urban-renewal",
+      "pass": true,
+      "title": "Aging Buildings & Urban Renewal Evidence Decision Support | Leo Chen",
+      "staticTitle": "Aging Buildings & Urban Renewal Evidence Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/urban-renewal",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/shade-equity",
+      "pass": true,
+      "title": "Shade Equity & Urban Heat Preparedness | Leo Chen",
+      "staticTitle": "Shade Equity & Urban Heat Preparedness | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/shade-equity",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/neihu-congestion",
+      "pass": true,
+      "title": "Neihu Traffic Congestion & Observation Readiness | Leo Chen",
+      "staticTitle": "Neihu Traffic Congestion & Observation Readiness | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/neihu-congestion",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/bus-service",
+      "pass": true,
+      "title": "Taipei Bus Network & Service Coverage Decision Support | Leo Chen",
+      "staticTitle": "Taipei Bus Network & Service Coverage Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/bus-service",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/wifi-allocation",
+      "pass": true,
+      "title": "Public Wi-Fi Allocation & Digital Inclusion Decision Support | Leo Chen",
+      "staticTitle": "Public Wi-Fi Allocation & Digital Inclusion Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/wifi-allocation",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/bridge-inspection",
+      "pass": true,
+      "title": "Bridge Inspection & Maintenance Decision Support | Leo Chen",
+      "staticTitle": "Bridge Inspection & Maintenance Decision Support | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/bridge-inspection",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/senior-community-care",
+      "pass": true,
+      "title": "Senior Community Care Coverage & Service Readiness | Leo Chen",
+      "staticTitle": "Senior Community Care Coverage & Service Readiness | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/senior-community-care",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/food-hygiene-inspection",
+      "pass": true,
+      "title": "Food Hygiene & Inspection Evidence Review | Leo Chen",
+      "staticTitle": "Food Hygiene & Inspection Evidence Review | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/food-hygiene-inspection",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/fire-rescue-access",
+      "pass": true,
+      "title": "Fire Rescue Access & Narrow Alley Evidence Readiness | Leo Chen",
+      "staticTitle": "Fire Rescue Access & Narrow Alley Evidence Readiness | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/fire-rescue-access",
+      "lang": "en"
+    },
+    {
+      "path": "/govtech/river-water-quality",
+      "pass": true,
+      "title": "River Water Quality & Longitudinal Evidence Review | Leo Chen",
+      "staticTitle": "River Water Quality & Longitudinal Evidence Review | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/govtech/river-water-quality",
+      "lang": "en"
+    },
+    {
+      "path": "/zh/engineering/gridline",
+      "pass": true,
+      "title": "Gridline 後端架構與金融資料工程 | Leo Chen",
+      "staticTitle": "Gridline 後端架構與金融資料工程 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/engineering/gridline",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech",
+      "pass": true,
+      "title": "市政資料治理與決策支援系統 | Leo Chen",
+      "staticTitle": "市政資料治理與決策支援系統 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/bin-policy",
+      "pass": true,
+      "title": "臺北市清潔箱配置決策支援 | Leo Chen",
+      "staticTitle": "臺北市清潔箱配置決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/bin-policy",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/civic-1999",
+      "pass": true,
+      "title": "臺北市 1999 民生通報與環境治理決策支援 | Leo Chen",
+      "staticTitle": "臺北市 1999 民生通報與環境治理決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/civic-1999",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/heavy-rain-preparedness",
+      "pass": true,
+      "title": "豪雨防汛整備與設施查核決策支援 | Leo Chen",
+      "staticTitle": "豪雨防汛整備與設施查核決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/heavy-rain-preparedness",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/urban-renewal",
+      "pass": true,
+      "title": "臺北市老舊建築與都市更新決策支援 | Leo Chen",
+      "staticTitle": "臺北市老舊建築與都市更新決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/urban-renewal",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/shade-equity",
+      "pass": true,
+      "title": "樹蔭公平與都市熱環境整備決策支援 | Leo Chen",
+      "staticTitle": "樹蔭公平與都市熱環境整備決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/shade-equity",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/neihu-congestion",
+      "pass": true,
+      "title": "內湖交通壅塞與觀測資料就緒度決策支援 | Leo Chen",
+      "staticTitle": "內湖交通壅塞與觀測資料就緒度決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/neihu-congestion",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/bus-service",
+      "pass": true,
+      "title": "臺北市公車路網與服務涵蓋決策支援 | Leo Chen",
+      "staticTitle": "臺北市公車路網與服務涵蓋決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/bus-service",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/wifi-allocation",
+      "pass": true,
+      "title": "臺北市公共 Wi-Fi 資源配置與數位近用決策支援 | Leo Chen",
+      "staticTitle": "臺北市公共 Wi-Fi 資源配置與數位近用決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/wifi-allocation",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/bridge-inspection",
+      "pass": true,
+      "title": "臺北市橋梁檢測與維護決策支援 | Leo Chen",
+      "staticTitle": "臺北市橋梁檢測與維護決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/bridge-inspection",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/senior-community-care",
+      "pass": true,
+      "title": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援 | Leo Chen",
+      "staticTitle": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/senior-community-care",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/food-hygiene-inspection",
+      "pass": true,
+      "title": "臺北市食品衛生與抽驗紀錄證據查核決策支援 | Leo Chen",
+      "staticTitle": "臺北市食品衛生與抽驗紀錄證據查核決策支援 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/food-hygiene-inspection",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/fire-rescue-access",
+      "pass": true,
+      "title": "臺北市消防通道與狹小巷道救災整備證據查核 | Leo Chen",
+      "staticTitle": "臺北市消防通道與狹小巷道救災整備證據查核 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/fire-rescue-access",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "/zh/govtech/river-water-quality",
+      "pass": true,
+      "title": "臺北市河川水質監測與長期趨勢證據查核 | Leo Chen",
+      "staticTitle": "臺北市河川水質監測與長期趨勢證據查核 | Leo Chen",
+      "canonical": "http://127.0.0.1:4197/zh/govtech/river-water-quality",
+      "lang": "zh-Hant"
+    },
+    {
+      "path": "unknown-case",
+      "pass": true
+    }
+  ],
+  "scope": "Local Chromium production preview; optional font stylesheet blocked consistently. No hosted performance claim.",
+  "checks": [
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "overflow": false,
+      "dark": false,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCopy-Dhp8Csh2.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "seo-DyhIbVsk.js",
+        "index-AJ73ZYPv.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "overflow": false,
+      "dark": true,
+      "lang": "zh-Hant",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ],
+      "brokenImages": [],
+      "pass": true
+    }
+  ],
+  "measurements": [
+    {
+      "path": "",
+      "locale": "en",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ]
+    },
+    {
+      "path": "govtech",
+      "locale": "en",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ]
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "en",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ]
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "en",
+      "jsBytes": 136622,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ]
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "en",
+      "jsBytes": 141478,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ]
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "en",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ]
+    },
+    {
+      "path": "",
+      "locale": "zh",
+      "jsBytes": 105017,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js"
+      ]
+    },
+    {
+      "path": "govtech",
+      "locale": "zh",
+      "jsBytes": 127343,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechPage-DoErdwNa.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechCaseLinks-jfQagLmP.js"
+      ]
+    },
+    {
+      "path": "projects?project=taipei-feitsui-water-map",
+      "locale": "zh",
+      "jsBytes": 123327,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "govtechCaseLinks-jfQagLmP.js",
+        "ProjectsPage-BlcwZrFh.js",
+        "govtechCaseSummaries-D8_HYkXx.js"
+      ]
+    },
+    {
+      "path": "govtech/heavy-rain-preparedness",
+      "locale": "zh",
+      "jsBytes": 144239,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechHeavyRain.zh-CQ0yYQGQ.js",
+        "govtechHeavyRain-DSY2xONZ.js"
+      ]
+    },
+    {
+      "path": "govtech/river-water-quality",
+      "locale": "zh",
+      "jsBytes": 141738,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GovTechCaseStudyPage-CSTVczkH.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-Dhp8Csh2.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ]
+    },
+    {
+      "path": "engineering/gridline",
+      "locale": "zh",
+      "jsBytes": 122524,
+      "jsFiles": [
+        "index-AJ73ZYPv.js",
+        "seo-DyhIbVsk.js",
+        "GridlineEngineeringPage-8BeF8U91.js"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "filename": "govtechBinPolicy-CoB1XcT0.js",
+      "bytes": 12765
+    },
+    {
+      "filename": "govtechBinPolicy.zh-BX2KnfRU.js",
+      "bytes": 10568
+    },
+    {
+      "filename": "govtechBridgeInspection-CahH9azg.js",
+      "bytes": 40298
+    },
+    {
+      "filename": "govtechBridgeInspection.zh-CEexWvX_.js",
+      "bytes": 35241
+    },
+    {
+      "filename": "govtechBusService-BEVcHCg-.js",
+      "bytes": 30088
+    },
+    {
+      "filename": "govtechBusService.zh-BVxIZvaE.js",
+      "bytes": 23993
+    },
+    {
+      "filename": "govtechCaseLinks-jfQagLmP.js",
+      "bytes": 379
+    },
+    {
+      "filename": "GovTechCaseStudyPage-CSTVczkH.js",
+      "bytes": 12114
+    },
+    {
+      "filename": "govtechCaseSummaries-D8_HYkXx.js",
+      "bytes": 39178
+    },
+    {
+      "filename": "govtechCivic1999-B5OrJ4Ok.js",
+      "bytes": 18088
+    },
+    {
+      "filename": "govtechCivic1999.zh-BFR4nBOE.js",
+      "bytes": 14257
+    },
+    {
+      "filename": "govtechCopy-Dhp8Csh2.js",
+      "bytes": 13841
+    },
+    {
+      "filename": "govtechFireRescueAccess-1CUiS--q.js",
+      "bytes": 27683
+    },
+    {
+      "filename": "govtechFireRescueAccess.zh-Ayf2dAcM.js",
+      "bytes": 25214
+    },
+    {
+      "filename": "govtechFoodHygieneInspection-DcKcF3Al.js",
+      "bytes": 38457
+    },
+    {
+      "filename": "govtechFoodHygieneInspection.zh-DKSol3aB.js",
+      "bytes": 34009
+    },
+    {
+      "filename": "govtechHeavyRain-DSY2xONZ.js",
+      "bytes": 22399
+    },
+    {
+      "filename": "govtechHeavyRain.zh-CQ0yYQGQ.js",
+      "bytes": 17988
+    },
+    {
+      "filename": "govtechNeihuCongestion-BKWLt2Nk.js",
+      "bytes": 31281
+    },
+    {
+      "filename": "govtechNeihuCongestion.zh-8ZnWwlCJ.js",
+      "bytes": 25508
+    },
+    {
+      "filename": "GovTechPage-DoErdwNa.js",
+      "bytes": 5633
+    },
+    {
+      "filename": "govtechRiverWaterQuality-B2pcEsmg.js",
+      "bytes": 42607
+    },
+    {
+      "filename": "govtechRiverWaterQuality.zh-bk3mdAu4.js",
+      "bytes": 37670
+    },
+    {
+      "filename": "govtechSeniorCommunityCare-919EPJX_.js",
+      "bytes": 64518
+    },
+    {
+      "filename": "govtechSeniorCommunityCare.zh-Bf64vBFL.js",
+      "bytes": 59765
+    },
+    {
+      "filename": "govtechShadeEquity-BLkxod3C.js",
+      "bytes": 31510
+    },
+    {
+      "filename": "govtechShadeEquity.zh-otexuj3x.js",
+      "bytes": 26428
+    },
+    {
+      "filename": "govtechUrbanRenewal-BAFuBdIi.js",
+      "bytes": 24484
+    },
+    {
+      "filename": "govtechUrbanRenewal.zh--Igr5Yck.js",
+      "bytes": 19505
+    },
+    {
+      "filename": "govtechWifiAllocation-BjuTz_r4.js",
+      "bytes": 37291
+    },
+    {
+      "filename": "govtechWifiAllocation.zh-CejZKfkA.js",
+      "bytes": 33861
+    },
+    {
+      "filename": "GridlineEngineeringPage-8BeF8U91.js",
+      "bytes": 43723
+    },
+    {
+      "filename": "index-4zomly-k.css",
+      "bytes": 43580
+    },
+    {
+      "filename": "index-AJ73ZYPv.js",
+      "bytes": 274620
+    },
+    {
+      "filename": "ProjectsPage-BlcwZrFh.js",
+      "bytes": 13031
+    },
+    {
+      "filename": "seo-DyhIbVsk.js",
+      "bytes": 51552
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "pass": true
+}

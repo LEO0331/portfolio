@@ -158,7 +158,7 @@ test.describe("Bus007 bilingual network and published-documentation review", () 
       const study = records[locale].find(({ id }) => id === "bus-service")!;
       await page.goto(`./${prefix}govtech`);
       const completed = page.locator('section[aria-labelledby="govtech-cases"]');
-      await expect(completed.locator("article")).toHaveCount(12);
+      await expect(completed.locator("article")).toHaveCount(13);
       const card = completed.locator("article").filter({ has: page.getByRole("heading", { name: study.title, exact: true }) });
       await expect(card).toContainText("007");
       const link = card.locator(`a[href="/portfolio/${prefix}govtech/bus-service"]`);

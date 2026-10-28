@@ -81,7 +81,7 @@ import { getGovTechCaseBySlug, getGovTechCasePath, getGovTechCases, getProjectGo
 
 for (const [locale, records] of [["en", govtechCases], ["zh", govtechCasesZh]] as const) {
   test(`GovTech ${locale} identities, project relationships and evidence stay aligned`, () => {
-    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation", "bridge-inspection", "senior-community-care", "food-hygiene-inspection", "fire-rescue-access"]);
+    expect(records.map((record) => record.id)).toEqual(["bin-policy", "civic-1999", "heavy-rain-preparedness", "urban-renewal", "shade-equity", "neihu-congestion", "bus-service", "wifi-allocation", "bridge-inspection", "senior-community-care", "food-hygiene-inspection", "fire-rescue-access", "river-water-quality"]);
     for (const key of ["id", "slug", "displayNumber"] as const) {
       expect(new Set(records.map((record) => record[key])).size).toBe(records.length);
     }

@@ -625,6 +625,32 @@
         "Completion actual root/Pages80checks each,EN/ZH/light/dark/five widths,engineering direct/refresh/static metadata pass;visual94,overview byte-identical;home JS104337unchanged,engineering121848(+2B)",
         "Completion follow-up draft PR39 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/39; implementation c25893a on codex/portfolio-v2-3-gridline-completion"
       ]
+    },
+    {
+      "id": "govtech-river-water-v2-5-2026-10",
+      "name": "Complete the planned GovTech collection with river monitoring Case013",
+      "description": "Pinned annual editions, monitoring completeness, censoring, station identity, longitudinal/RPI eligibility and deterministic review evidence.",
+      "status": "complete",
+      "dependencies": [
+        "govtech-fire-rescue-access-v2-1-2026-10",
+        "gridline-engineering-v2-3-2026-10"
+      ],
+      "doneCriteria": [
+        "13 bilingual cases across six domains and shared Feitsui003013 ownership",
+        "Independently verified original sources,exact snapshot and actual A/B/C scenarios with visible gates",
+        "Preserve prior twelve semantic records,Gridline,project identities,pins and dependencies",
+        "Full local gate,both-base bilingual/theme/responsive QA,performance evidence and exactly one reviewable unmerged PR"
+      ],
+      "evidence": [
+        "Policy13 PR7 mergedbeedd7eef3592c12bb66c21937add068f82ce5fa; Portfolio main8fa9a56acfddd3792efad63e49e6efbdc33343ad includes mergedGridlinePR39",
+        "Baseline cleaninstall/audit0,29unit,236Playwright17trackedflows,TypeScript/build36routes",
+        "Eight retained original bodies hashed; original auditor and2exactpublish=false7MBrebuilds,hash validation,scenarios/RPIboundaries/exportguardreplay passed; compactfixture saved",
+        "Final2026-10-28:clean install/audit0,29unit,249Playwright/17trackedflows,TypeScript/build38routes,harness28features,diff pass",
+        "Actual root/Pages120layouts and31route outcomes each;EN/ZH/light/dark/five widths,keyboard/disclosures/metadata/404;visual94,default Pages build restored",
+        "All24prior localized semantic records and9protectedGridline/config files unchanged;Feitsui003013 sharesoneproject/sixdomains",
+        "Home encodedJS104337→105074(+0.71%);newlazyCase013141537EN/141797ZH;no7MBsnapshot/government runtime requests",
+        "Exactly one draft PR40 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/40;implementation5898329 on codex/govtech-river-water-case-013"
+      ]
     }
   ]
 }

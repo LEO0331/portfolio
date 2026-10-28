@@ -2,37 +2,37 @@
 
 ## Current State
 
-**Last updated:** 2026-10-27
+**Last updated:** 2026-10-28
 
-**Active work:** Portfolio v2.3 completion review on `codex/portfolio-v2-3-gridline-completion`, based on merged PR38/main `e78173135b470a42a0a7397e9eec923afb75b928`.
+**Active work:** Portfolio v2.5 — final planned GovTech Case013,on `codex/govtech-river-water-case-013`,base `8fa9a56acfddd3792efad63e49e6efbdc33343ad`.
 
-**Status:** Complete and published as draft [PR39](https://github.com/LEO0331/portfolio/pull/39),verified open and unmerged. Implementation c25893a on codex/portfolio-v2-3-gridline-completion. PR37(v2.2) and PR38(v2.3) are already merged; earlier preparing-PR text was stale. No automatic merge.
+**Status:** Complete and published as draft [PR40](https://github.com/LEO0331/portfolio/pull/40),verified open and unmerged. Implementation5898329;branch codex/govtech-river-water-case-013. No automatic merge.
 
 ### Completed
 
-- Two independent bounded reviews confirmed all required EN/ZH content and project integration are present:12sections,six technical tables,architecture/model figures,API example,source links,genuine screenshots,card/drawer/featured discovery and legacy robotfriends links.
-- Reverified Gridline main at e3d47a638ddb7f3192c63598596628f60c7b364d. Only two retained JSON files changed since the original pin; all51reviewed implementation/test/docs/workflow/dependency hashes are identical. Case links and dated evidence now use the new pin; original manifest is archived with its original audit.
-- Retained5741observations/20companies;260closes each through2026-10-26;exact full/compact consistency and readiness0blockers/2warnings at explicit review time. No provider acquisition or source modification.
-- Added assertions tying bilingual snapshot dates/counts and security review dates to the current evidence. Completed v2.3 feature state and corrected merged release history. Existing layout,12GovTech cases,project identities,pins,assets and dependencies preserved.
+- Thirteen bilingual cases across six domains plus the separate Gridline Engineering Deep Dive. Case013 has16 sections,12 tables,actual source-bound examples and visible analytical limits through the shared lazy renderer.
+- Policy13 PR7 merged at beedd7eef3592c12bb66c21937add068f82ce5fa. Eight original bodies and exact7,016,489-byte snapshot verified;original auditor and two publication-disabled builders reproduce identical bytes. Fixed analysis date2026-10-27;verification completed28October.
+- Published768 versus observed720(partial across27 fields),pending16/future32. ModeA736(A46/B690/C0);strictB0,limited823 windows/7239 exact pairs;RPI460 potential/0 admitted;ModeC unavailable. Default strategies select identical5/10 IDs;2026 scope changes population to160 rather than proving environmental improvement.
+- Existing Feitsui project owns003/013 without duplication or combined score. All24 previous localized semantic records,Gridline content/identity,pins,featured order,dependencies and old fixtures are preserved. Source audits,specification,README pair,template and lifecycle updated.
 
 ### Verification Evidence
 
-- Baseline and updated Portfolio runs:29unit/236Playwright/17trackedflows(100%),TypeScript/build36routes,harness27features,clean install and audit0.
-- Actual root and Pages matrices each passed80checks across both locales/themes/five widths;engineering reload/static metadata passed;visual94/pass,overview captures byte-identical. Default Pages build restored. Home104337encodedJS bytes unchanged;engineering121848bytes(+2B).
-- Selected original Gridline tests rerun:78/78passed,no skips. Fresh source lockfile audit:1high/1moderate/6low;body-parser high remains outside the exact braces exception and blocks source policy. Portfolio and source dependency graphs remain separate.
-- Initial sandbox install/build and temporary source Git fixtures encountered environment permission failures; permitted reruns passed. Full source frontend/build/exposure suite,production API and deployment availability remain unverified.
+- Baseline29 unit/236 browser/audit0/build36 routes. Final clean install,audit0,29 unit,249 Playwright(0 skipped/flaky/unexpected),17/17 flows,TypeScript/build38 routes,harness28 features and diff checks pass.
+- Actual root and Pages each pass120 bilingual/theme/five-width layouts and31 route outcomes;240layouts/62route outcomes total. No page errors,external research requests or overflow. Default Pages build restored. Visual94/pass;actual scenario/gate/selection/RPI captures saved.
+- New language-roundtrip test setup and exact accessible back-link name corrected without product locale changes. Initial Windows preview/native-module lock resolved by closing the owned preview before clean install.
+- Pages home105074 encoded JS bytes versus104337 baseline(+0.71%);Case013141537 English/141797 Chinese;no live government fetch or full research snapshot. Details:docs/portfolio-v2.5-verification.md.
 
 ### Blockers
 
-None for Portfolio completion. Upstream security blocker remains disclosed; no Gridline changes are authorized.
+None for Portfolio implementation/publication.
 
 ### Remaining Risks
 
-No complete Gridline suite/build/exposure replay,live API production controls or hosted deployment/Lighthouse claim. Original genuine demo screenshots remain dated2026-10-26 and do not certify the latest source revision. Research methods do not establish investment performance or banking transaction guarantees.
+Strict station/method continuity,RPI and causal/regulatory conclusions remain unavailable. Limited same-label differences are descriptive,not trends or independent samples. No complete upstream92-test/build replay,fresh source acquisition,hosted deployment/Lighthouse or production availability claim.
 
 ### Next Session Should
 
-Review the completion follow-up and manually merge after user-owned hosted checks. Preserve12GovTech cases,Gridline identity,shared design and source caveats. Do not modify Gridline or start another policy.
+Review the final collection PR and manually merge after user-owned hosted checks. Preserve prior case and Gridline evidence. Future work concerns better evidence for existing limits;do not start Policy14 or Case014.
 
 ## Update Contract
 
@@ -44,6 +44,41 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-10-28 — Complete the planned GovTech collection with Case013
+
+**Last updated:** 2026-10-28
+
+**Active work:** Portfolio v2.5 — final planned GovTech Case013,on `codex/govtech-river-water-case-013`,base `8fa9a56acfddd3792efad63e49e6efbdc33343ad`.
+
+**Status:** Complete and published as draft [PR40](https://github.com/LEO0331/portfolio/pull/40),verified open and unmerged. Implementation5898329;branch codex/govtech-river-water-case-013. No automatic merge.
+
+### Completed
+
+- Thirteen bilingual cases across six domains plus the separate Gridline Engineering Deep Dive. Case013 has16 sections,12 tables,actual source-bound examples and visible analytical limits through the shared lazy renderer.
+- Policy13 PR7 merged at beedd7eef3592c12bb66c21937add068f82ce5fa. Eight original bodies and exact7,016,489-byte snapshot verified;original auditor and two publication-disabled builders reproduce identical bytes. Fixed analysis date2026-10-27;verification completed28October.
+- Published768 versus observed720(partial across27 fields),pending16/future32. ModeA736(A46/B690/C0);strictB0,limited823 windows/7239 exact pairs;RPI460 potential/0 admitted;ModeC unavailable. Default strategies select identical5/10 IDs;2026 scope changes population to160 rather than proving environmental improvement.
+- Existing Feitsui project owns003/013 without duplication or combined score. All24 previous localized semantic records,Gridline content/identity,pins,featured order,dependencies and old fixtures are preserved. Source audits,specification,README pair,template and lifecycle updated.
+
+### Verification Evidence
+
+- Baseline29 unit/236 browser/audit0/build36 routes. Final clean install,audit0,29 unit,249 Playwright(0 skipped/flaky/unexpected),17/17 flows,TypeScript/build38 routes,harness28 features and diff checks pass.
+- Actual root and Pages each pass120 bilingual/theme/five-width layouts and31 route outcomes;240layouts/62route outcomes total. No page errors,external research requests or overflow. Default Pages build restored. Visual94/pass;actual scenario/gate/selection/RPI captures saved.
+- New language-roundtrip test setup and exact accessible back-link name corrected without product locale changes. Initial Windows preview/native-module lock resolved by closing the owned preview before clean install.
+- Pages home105074 encoded JS bytes versus104337 baseline(+0.71%);Case013141537 English/141797 Chinese;no live government fetch or full research snapshot. Details:docs/portfolio-v2.5-verification.md.
+
+### Blockers
+
+None for Portfolio implementation/publication.
+
+### Remaining Risks
+
+Strict station/method continuity,RPI and causal/regulatory conclusions remain unavailable. Limited same-label differences are descriptive,not trends or independent samples. No complete upstream92-test/build replay,fresh source acquisition,hosted deployment/Lighthouse or production availability claim.
+
+### Next Session Should
+
+Review the final collection PR and manually merge after user-owned hosted checks. Preserve prior case and Gridline evidence. Future work concerns better evidence for existing limits;do not start Policy14 or Case014.
+
 
 ### 2026-10-26 — Portfolio v2.3 Gridline engineering case
 

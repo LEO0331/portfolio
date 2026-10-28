@@ -18,7 +18,8 @@ const loaders = {
     "bridge-inspection": () => import("../data/govtechBridgeInspection").then(module => module.bridgeInspectionCase),
     "senior-community-care": () => import("../data/govtechSeniorCommunityCare").then(module => module.seniorCommunityCareCase),
     "food-hygiene-inspection": () => import("../data/govtechFoodHygieneInspection").then(module => module.foodHygieneInspectionCase),
-    "fire-rescue-access": () => import("../data/govtechFireRescueAccess").then(module => module.fireRescueAccessCase)
+    "fire-rescue-access": () => import("../data/govtechFireRescueAccess").then(module => module.fireRescueAccessCase),
+    "river-water-quality": () => import("../data/govtechRiverWaterQuality").then(module => module.riverWaterQualityCase)
   },
   zh: {
     "bin-policy": () => import("../data/govtechBinPolicy.zh").then(module => module.binPolicyCaseZh),
@@ -32,7 +33,8 @@ const loaders = {
     "bridge-inspection": () => import("../data/govtechBridgeInspection.zh").then(module => module.bridgeInspectionCaseZh),
     "senior-community-care": () => import("../data/govtechSeniorCommunityCare.zh").then(module => module.seniorCommunityCareCaseZh),
     "food-hygiene-inspection": () => import("../data/govtechFoodHygieneInspection.zh").then(module => module.foodHygieneInspectionCaseZh),
-    "fire-rescue-access": () => import("../data/govtechFireRescueAccess.zh").then(module => module.fireRescueAccessCaseZh)
+    "fire-rescue-access": () => import("../data/govtechFireRescueAccess.zh").then(module => module.fireRescueAccessCaseZh),
+    "river-water-quality": () => import("../data/govtechRiverWaterQuality.zh").then(module => module.riverWaterQualityCaseZh)
   }
 } satisfies Record<Locale, Record<GovTechCaseId, CaseLoader>>;
 

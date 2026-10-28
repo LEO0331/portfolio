@@ -1,6 +1,6 @@
 # GovTech Case Study & Decision Support Showcase v1.0
 
-> 目前狀態（2026-10-22）：Showcase v1.6 已有七個案例，包含排序受測量定義限制的樹蔭 GIS 證據整備，以及歷史交通表現仍受觀測資格限制的交通資料就緒度 POC；[案例004都市更新](./govtech-case-study-004.zh-TW.md) 已完成行政證據查核展示，[案例005樹蔭公平](./govtech-case-study-005.zh-TW.md) 已完成 GIS 盤點，但未發布實測遮蔭或排序植樹候選。[目前案例模板](./govtech-case-study-template.md) 維護新增流程。下列 v1.0 範圍、來源表與路線圖保留當時脈絡，不代表後續模組仍未完成；不新增政府營運或建物安全認證主張。
+> 目前狀態（2026-10-27）：Portfolio v2.5 已完成六個政策領域、十三個雙語 GovTech 案例，另有獨立 Gridline 工程深度案例。[案例 013 河川監測證據查核](./govtech-case-study-013.zh-TW.md) 完成既定集合；同一翡翠水庫專案保留案例 003 防汛文件查核與案例 013 河川觀測證據，兩案不合成風險分數。嚴格長期比較、研究 RPI 與因果／法規結論仍受各自證據門檻限制。下列 v1.0 範圍、來源表與路線圖保留歷史脈絡，不代表後續模組仍未完成；不新增政府營運或安全認證主張。實際驗證見 [v2.5 報告](./portfolio-v2.5-verification.md)。
 
 狀態：已於 2026-10-16 透過 [PR #16](https://github.com/LEO0331/portfolio/pull/16) 合併至 main；實作驗證與文件複查見 [驗證報告](./govtech-verification.md)。
 

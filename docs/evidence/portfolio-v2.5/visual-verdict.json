@@ -1,0 +1,10 @@
+{
+  "score": 94,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Case013 has a longer title and a denser results summary than Case012; both retain the shared typography, spacing and four-part overview."
+  ],
+  "suggestions": [],
+  "reasoning": "The desktop and Chinese mobile dark captures preserve the established case layout and readable hierarchy. Published versus observed records and the strict-comparison/RPI/causal limits are visible before technical disclosures."
+}

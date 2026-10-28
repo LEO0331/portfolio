@@ -18,7 +18,7 @@ const exact='704b4c9f72a3746b4216aa96a283794c16fc40ae1013a99d9016d96948f6844d';
 for(const locale of ['en','zh'] as const){
  const study=records[locale].find(s=>s.id===id)!;const prefix=locale==='zh'?'zh/':'';
  test(`Fire012 ${locale} preserves all eleven prior records and canonical lightweight integration`,()=>{
-  expect(records[locale]).toHaveLength(12);expect(prior.records[locale]).toHaveLength(11);
+  expect(records[locale]).toHaveLength(13);expect(prior.records[locale]).toHaveLength(11);
   expect(prior.baseSha).toBe('44ccb690b32edce249eed7e89eaeef5c5f88151c');
   for(const frozen of prior.records[locale])expect(createHash('sha256').update(JSON.stringify(records[locale].find(s=>s.id===frozen.id))).digest('hex'),frozen.id).toBe(frozen.sha256);
   expect(study).toMatchObject({id,slug:id,displayNumber:'012',projectId:'taipei-safety-map',sourceVersion:sha,snapshotVersion:snapshot,maturity:'decision-support-poc',methodology:{kind:'rule-based-priority',methodId:'fire-rescue-access-evidence-review-v1'}});
@@ -69,10 +69,10 @@ test('Fire012 locale switch and all widths/themes preserve tables without page o
   for(const theme of ['dark','light']){if((await page.locator('html').evaluate(e=>e.classList.contains('dark')))!==(theme==='dark'))await page.locator('button[data-theme-toggle]').filter({visible:true}).click();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);}
   if(width<768){const region=page.getByRole('region',{name:records[locale].find(s=>s.id===id)!.scenarioTables[3].caption,exact:true});await region.focus();await region.evaluate(e=>e.scrollLeft=0);await page.keyboard.press('ArrowRight');await expect.poll(()=>region.evaluate(e=>e.scrollLeft)).toBeGreaterThan(0);}
  }
- await page.evaluate(()=>localStorage.setItem('portfolio-locale','en'));await page.goto(`./govtech/${id}`);await expect(page.locator('h1')).toHaveText(records.en.at(-1)!.title);await page.goto(`./zh/govtech/${id}`);await expect(page).toHaveURL(/\/zh\/govtech\/fire-rescue-access$/);await expect(page.locator('h1')).toHaveText(records.zh.at(-1)!.title);
+ await page.evaluate(()=>localStorage.setItem('portfolio-locale','en'));await page.goto(`./govtech/${id}`);await expect(page.locator('h1')).toHaveText(records.en.find(study=>study.id===id)!.title);await page.goto(`./zh/govtech/${id}`);await expect(page).toHaveURL(/\/zh\/govtech\/fire-rescue-access$/);await expect(page.locator('h1')).toHaveText(records.zh.find(study=>study.id===id)!.title);
 });
 test('Fire012 data stays out of all prior case and landing runtime requests',async({page})=>{
  const scripts:string[]=[];page.on('request',r=>{if(r.resourceType()==='script')scripts.push(r.url());});const isFire=(s:string)=>/govtechFireRescueAccess(?:\.zh)?-[^/]+\.js/.test(s);
  for(const path of ['','projects','govtech',...records.en.slice(0,11).map(s=>'govtech/'+s.slug)]){await page.goto('./'+path);await expect(page.locator('h1')).toBeVisible();expect(scripts.filter(isFire),path).toEqual([]);}
- await page.goto('./govtech/'+id);await expect(page.locator('h1')).toHaveText(records.en.at(-1)!.title);expect(scripts.some(isFire)).toBe(true);
+ await page.goto('./govtech/'+id);await expect(page.locator('h1')).toHaveText(records.en.find(study=>study.id===id)!.title);expect(scripts.some(isFire)).toBe(true);
 });

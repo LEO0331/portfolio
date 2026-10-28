@@ -40,8 +40,8 @@ test("engineering inventory and bilingual evidence remain bound to the audited i
   expect(gridlineEngineeringContent.en.sections.map(section => section.id)).toEqual(gridlineEngineeringContent.zh.sections.map(section => section.id));
   expect(projects.filter(project => project.id === "robotfriends")).toHaveLength(1);
   expect(projects.find(project => project.id === "robotfriends")).toMatchObject({ slug: "robotfriends", engineeringCasePath: "/engineering/gridline", demoUrl: "https://leo0331.github.io/Gridline/", repoUrl: "https://github.com/LEO0331/Gridline" });
-  expect(govtechCases).toHaveLength(12);
-  expect(govtechCasesZh).toHaveLength(12);
+  expect(govtechCases).toHaveLength(13);
+  expect(govtechCasesZh).toHaveLength(13);
   expect(govtechCases.some(study => study.projectId === "robotfriends")).toBe(false);
 });
 

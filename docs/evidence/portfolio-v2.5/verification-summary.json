@@ -1,0 +1,114 @@
+{
+  "completedDate": "2026-10-28",
+  "portfolioBase": "8fa9a56acfddd3792efad63e49e6efbdc33343ad",
+  "sourceSha": "beedd7eef3592c12bb66c21937add068f82ce5fa",
+  "sourceAnalysisDate": "2026-10-27",
+  "sourceSnapshot": {
+    "schemaVersion": "1.0.0",
+    "methodId": "river-water-longitudinal-evidence-review-v1",
+    "snapshotId": "sha256-212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+    "sha256": "212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81",
+    "byteLength": 7016489,
+    "file": "snapshots/212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81.json"
+  },
+  "baseline": {
+    "unit": 29,
+    "browser": 236,
+    "indexableRoutes": 36,
+    "auditVulnerabilities": 0
+  },
+  "final": {
+    "unit": 29,
+    "browser": {
+      "startTime": "2026-10-28T00:13:42.479Z",
+      "duration": 62460.016,
+      "expected": 249,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "trackedFlows": "17/17",
+    "indexableRoutes": 38,
+    "auditVulnerabilities": 0,
+    "harnessFeatures": 28,
+    "pagesLayouts": 120,
+    "rootLayouts": 120,
+    "pagesRoutes": 31,
+    "rootRoutes": 31,
+    "staticSitemapCanonicalBothBases": true,
+    "visualScore": 94
+  },
+  "sourceReplay": {
+    "selectedIdHashDefinition": "SHA-256 over UTF-8 JSON.stringify(selectedIds); set hashes sort a copied ID array before serialization.",
+    "originalBodyHashesVerified": 8,
+    "annualCsvReparsed": 4,
+    "stationRosterReaudited": true,
+    "unchangedOriginalModules": [
+      {
+        "path": "src/types/riverWaterQuality.ts",
+        "sha256": "6f7e58005842a2b7aabd4d6d0311a9d4fa7415e390e2dfd13fbcaee2d8c9760d",
+        "byteLength": 2394
+      },
+      {
+        "path": "src/types/riverWaterPolicy.ts",
+        "sha256": "667679a66c29908c5bd87df4312d6d688fd020de5a6600d094dbeb600f390c7c",
+        "byteLength": 3990
+      },
+      {
+        "path": "src/utils/riverWaterQuality.ts",
+        "sha256": "a5c12c2eb4ed1087a9ca5f8d9ba4c54d2e7d4e2803bb1b4a7176bab5ed000f4a",
+        "byteLength": 6731
+      },
+      {
+        "path": "src/utils/riverWaterPolicy.ts",
+        "sha256": "0bb14d0685dc3e5fe21443734e2b985f7be1c9eb4be2538c242718766dc0672d",
+        "byteLength": 14721
+      },
+      {
+        "path": "src/utils/riverWaterPolicyScenarios.ts",
+        "sha256": "6bd841889d266990ac562b565b83e0a62caa03ef74d19f5fcba4ea34fb901cd2",
+        "byteLength": 20506
+      },
+      {
+        "path": "scripts/auditRiverWaterPolicySources.ts",
+        "sha256": "eff62ba37f5952aae72b57c527529d820f78f3a29d35ca674c80599fceb72034",
+        "byteLength": 11433
+      },
+      {
+        "path": "scripts/buildRiverWaterPolicySnapshot.ts",
+        "sha256": "a71b02f50124787c092309ab3ebd9658e8cc341fdc20fd96e04cae2ed7d983c0",
+        "byteLength": 14763
+      },
+      {
+        "path": "scripts/buildPreparednessDecisionSnapshot.ts",
+        "sha256": "3e1e4fb298af7c0d3898bbc1bc15c4cd6519abb4f24ab2cd5cbf9dc663888060",
+        "extractedFunction": "preparednessCsv",
+        "extractedFunctionSha256": "12b6bfcf128841eaff9ef04669e3d1723ce3aefe5fea5faf5d42e6b20d2c69a9"
+      }
+    ],
+    "extractedDependency": "Only unchanged preparednessCsv AST function; unrelated preparedness/proj4 module imports are not executed.",
+    "exactOfflineRebuilds": 2,
+    "originalSnapshotVerifier": true,
+    "scenariosReplayed": true,
+    "sourceTestsRerun": false,
+    "sourceDependenciesInstalled": false,
+    "freshGovernmentAcquisition": false,
+    "sourceModified": false,
+    "note": "Bounded retained-source audit and original pure-function replay; no complete upstream application test/build or deployed-system acceptance claim."
+  },
+  "preservation": {
+    "priorLocalizedSemanticRecords": 24,
+    "protectedGridlineAndConfigurationFiles": 9,
+    "priorFixturesUnchanged": true,
+    "dependenciesUnchanged": true,
+    "gridlineTechnicalContentUnchanged": true
+  },
+  "scope": "Local production QA and retained pinned-source replay; no fresh official acquisition, full upstream suite/build, production availability or post-merge deployment claim.",
+  "publication": {
+    "url": "https://github.com/LEO0331/portfolio/pull/40",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "implementation": "5898329e4e0ab0752f4b9a344c41a659322f3269"
+  }
+}
