@@ -11,8 +11,8 @@ import { govtechCasesZh } from "../../src/data/govtechCases.zh";
 import baseline from "../fixtures/govtech-v2.1-source-hashes.json" with { type: "json" };
 
 test("v2.2 retains every complete bilingual GovTech source record from merged v2.1", () => {
-  expect(govtechCases).toHaveLength(12);
-  expect(govtechCasesZh).toHaveLength(12);
+  expect(govtechCases).toHaveLength(13);
+  expect(govtechCasesZh).toHaveLength(13);
   expect(Object.keys(baseline.files)).toHaveLength(24);
   for (const [file, expected] of Object.entries(baseline.files)) {
     const source = readFileSync(`src/data/${file}`, "utf8").replaceAll("\r\n", "\n");

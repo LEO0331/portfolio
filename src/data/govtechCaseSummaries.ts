@@ -193,6 +193,21 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "Explainable tiers and capacity/strategy sensitivity",
         "Conservative association gates and provenance-bound JSON/CSV briefings"
       ]
+    },
+    {
+      "id": "river-water-quality",
+      "slug": "river-water-quality",
+      "displayNumber": "013",
+      "projectId": "taipei-feitsui-water-map",
+      "title": "River Water Quality Monitoring & Longitudinal Evidence Review",
+      "summary": "From published river records to reproducible monitoring review: 720 observation-bearing rows, 736 documentary candidates and a limited descriptive view; strict longitudinal comparisons, RPI and causal or regulatory conclusions remain unavailable.",
+      "maturityLabel": "Completed monitoring-evidence decision-support proof of concept; strict trend, RPI and causal conclusions remain gated",
+      "implementedCapabilities": [
+        "Original-byte annual edition reconciliation and deterministic time-series ETL",
+        "Station-period identity, observation coverage and detection-limit preservation",
+        "Separate documentary, limited-comparison, RPI and causal evidence gates",
+        "Deterministic capacity/strategy/scope review and provenance-bound JSON/CSV briefings"
+      ]
     }
   ],
   "zh": [
@@ -384,6 +399,21 @@ export const govtechCaseSummaries: Record<Locale, GovTechCaseSummary[]> = {
         "可解釋層級與名額／策略敏感度",
         "保守關聯門檻與來源綁定JSON／CSV摘要"
       ]
+    },
+    {
+      "id": "river-water-quality",
+      "slug": "river-water-quality",
+      "displayNumber": "013",
+      "projectId": "taipei-feitsui-water-map",
+      "title": "臺北市河川水質監測與長期趨勢證據查核",
+      "summary": "從公開河川紀錄建立可重現監測查核：720 筆具量測紀錄、736 個文件查核候選及受限描述性比較；嚴格長期比較、RPI 與因果／法規結論仍不可用。",
+      "maturityLabel": "監測證據決策支援概念驗證已完成，嚴格趨勢、RPI 與因果結論仍受證據限制",
+      "implementedCapabilities": [
+        "年度原始位元組版本對帳與確定性時間序列 ETL",
+        "監測站月份身分、觀測涵蓋與偵測極限保存",
+        "分離文件查核、受限比較、RPI 與因果證據門檻",
+        "具來源綁定 JSON／CSV 摘要的名額、策略與範圍情境"
+      ]
     }
   ]
 };
@@ -461,6 +491,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "Retain official bytes, preserve complete identities and compare deterministic source/district review queues.",
       "Verified 869 documentary rows, tiers 477/392/0 and one conservative A/B association; actual strategies share 2 records at capacities 5 and 10.",
       "No validated geometry, numerical width, current clearance, operational connectivity or rescue performance."
+    ],
+    "river-water-quality": [
+      "How can monthly river records support a trustworthy monitoring review without mistaking empty calendar rows for measurements?",
+      "Validate annual editions, station labels and detection limits, then apply deterministic review priorities and separate comparison eligibility gates.",
+      "768 published rows include 720 measurement-bearing rows, 16 current-month pending rows and 32 future placeholders; Mode A admits 736 review candidates. A limited descriptive view retains 823 windows and 7,239 exact monthly indicator pairs.",
+      "Strict longitudinal comparisons and research RPI have zero eligible outputs. Causal, regulatory, drinking-water and swimming-safety conclusions are unavailable."
     ]
   },
   "zh": {
@@ -535,6 +571,12 @@ export const caseOverviews: Record<Locale, Record<GovTechCaseId, [string, string
       "保存官方位元組與完整身分，並比較確定性來源／行政區查核清單。",
       "驗證869筆文件紀錄、477／392／0層級與一筆保守A／B關聯；名額5與10的兩策略皆重疊2筆。",
       "沒有已驗證幾何、數值寬度、目前淨空、實際連通或救災表現證據。"
+    ],
+    "river-water-quality": [
+      "如何運用逐月河川資料進行可信查核，避免將空白日曆列誤當成量測？",
+      "驗證年度版本、測站標籤與偵測極限，再以確定性優先順序及獨立比較資格門檻查核。",
+      "768 筆公告列包含 720 筆含量測列、16 筆本月待公布列與 32 筆未來預留列；模式 A 納入 736 個查核候選。受限描述檢視保留 823 個視窗與 7,239 組精確逐月指標配對。",
+      "嚴格長期比較與研究 RPI 的可用輸出皆為零；因果、法規、飲用水及游泳安全結論不可用。"
     ]
   }
 };
@@ -757,6 +799,17 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
           "1": "Source bytes, logical payload and exact formatted file have distinct integrity identities."
         }
       }
+    },
+    "river-water-quality": {
+      "paragraphs": {},
+      "tables": [
+        0,
+        7,
+        8,
+        9,
+        11
+      ],
+      "summaries": {}
     }
   },
   "zh": {
@@ -975,6 +1028,17 @@ export const caseTechnicalDetails: Record<Locale, Record<GovTechCaseId, { paragr
           "1": "來源位元組、邏輯內容與精確排版檔案各有不同完整性識別；取得日期和分析日期亦分開保留，不將重建時間當成來源更新。"
         }
       }
+    },
+    "river-water-quality": {
+      "paragraphs": {},
+      "tables": [
+        0,
+        7,
+        8,
+        9,
+        11
+      ],
+      "summaries": {}
     }
   }
 };

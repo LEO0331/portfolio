@@ -36,6 +36,8 @@
     {"key": "govtech-fire-rescue-access-zh", "path": "/zh/govtech/fire-rescue-access", "indexable": true, "changefreq": "monthly", "priority": 0.7, "title": "臺北市消防通道與狹小巷道救災整備證據查核 | Leo Chen", "description": "以官方消防通道、狹小巷道及搶救困難場所清冊，呈現保守身分對帳、來源追溯與可重現行政查核。"},
     {"key": "about-zh", "path": "/zh/about", "indexable": true, "changefreq": "monthly", "priority": 0.6, "title": "關於我 | 全端工程師 | Leo Chen", "description": "Leo Chen 對後端 API、來源驗證、可維護應用與可驗證軟體交付的實作方式。"},
     {"key": "contact-zh", "path": "/zh/contact", "indexable": true, "changefreq": "monthly", "priority": 0.6, "title": "聯絡方式 | 全端工程師 | Leo Chen", "description": "透過個人網站、GitHub 與 LinkedIn 聯絡 Leo Chen。"},
-    {"key": "not-found", "path": "/404", "indexable": false}
+    {"key": "not-found", "path": "/404", "indexable": false},
+    {"key":"govtech-river-water-quality","path":"/govtech/river-water-quality","indexable":true,"changefreq":"monthly","priority":0.7,"title":"River Water Quality & Longitudinal Evidence Review | Leo Chen","description":"Evidence-based engineering of river monitoring records, observation completeness, detection limits, comparable time series and reproducible administrative review."},
+    {"key":"govtech-river-water-quality-zh","path":"/zh/govtech/river-water-quality","indexable":true,"changefreq":"monthly","priority":0.7,"title":"臺北市河川水質監測與長期趨勢證據查核 | Leo Chen","description":"透過官方河川水質資料、有效量測辨識、偵測極限、監測站身分與可重現查核情境，呈現具明確證據限制的長期監測分析。"}
   ]
 }

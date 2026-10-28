@@ -1,7 +1,7 @@
 import type { GovTechDomain } from "../types/govtechCase";
 
 const domainsEn: GovTechDomain[] = [
-  { title: "Urban Services & Environment", projectIds: ["taipei-bin-map"], planned: "Shade Equity GIS inventory and evidence-readiness proof of concept is completed. Ranked field-review candidates remain unavailable pending verified sidewalk-length semantics and comparable coverage. No measured canopy, heat exposure or planting feasibility is claimed." },
+  { title: "Urban Services & Environment", projectIds: ["taipei-bin-map", "taipei-feitsui-water-map"], planned: "Shade Equity GIS inventory and evidence-readiness proof of concept is completed. Ranked field-review candidates remain unavailable pending verified sidewalk-length semantics and comparable coverage. No measured canopy, heat exposure or planting feasibility is claimed. River monitoring evidence review is also completed: distinguish 768 published rows from 720 observation-bearing rows, retain detection limits and separate limited monthly differences from unavailable strict trends, RPI and causal/regulatory conclusions." },
   { title: "Citizen Services & Public Health", projectIds: ["taipei-1999-map", "taipei-friendly-food-map", "taipei-civic-groups-map"], planned: "General 1999 civic decision support, senior community-care documentary review and historical food-inspection evidence review are completed proof of concepts. Food records preserve published hygiene grades and separate sample/registration identities; current business safety and unverified cross-source responsibility remain unavailable. Senior-care follow-up covers published site and village records; actual operation, capacity and resident access remain unverified. Rodent-specific investigation remains future and evidence-dependent; no authoritative rodent-specific case series was validated." },
   { title: "Transportation & Mobility", projectIds: ["taipei-crash-map"], planned: "Neihu traffic-observation readiness and bus network/published-service documentation review are two completed proof of concepts in taipei-crash-map. Historical congestion remains gated; bus direction-specific service comparison and actual service performance also remain unverified. Network inventory does not establish service shortage, reliability or equity." },
   { title: "Housing & Urban Resilience", projectIds: ["taipei-real-estate-dashboard"], planned: "Urban-renewal administrative evidence review is a completed decision-support proof of concept. Building-age statistics remain citywide context; building-level and legal-stage research require authoritative evidence. No building-safety assessment or certified eligibility determination." },
@@ -10,7 +10,7 @@ const domainsEn: GovTechDomain[] = [
 ];
 
 const domainsZh: GovTechDomain[] = [
-  { title: "都市服務與環境", projectIds: domainsEn[0].projectIds, planned: "樹蔭公平 GIS 盤點與證據整備 概念驗證 已完成；正式排序現勘候選仍待人行道長度定義與涵蓋可比性驗證。不宣稱實測樹冠、熱暴露或植樹可行性。" },
+  { title: "都市服務與環境", projectIds: domainsEn[0].projectIds, planned: "樹蔭公平 GIS 盤點與證據整備 概念驗證 已完成；正式排序現勘候選仍待人行道長度定義與涵蓋可比性驗證。不宣稱實測樹冠、熱暴露或植樹可行性。河川監測證據查核亦已完成：區分 768 筆公告列與 720 筆含量測列、保留偵測極限，並將受限月份差值與仍不可用的嚴格趨勢、RPI 及因果／法規結論分開。" },
   { title: "市民服務與公共衛生", projectIds: domainsEn[1].projectIds, planned: "一般 1999 市政決策支援、高齡社區照顧及歷史食品抽驗文件查核概念驗證已完成；食品紀錄保留公告衛生評核，並區分檢體與登記身分，目前業者安全及未驗證的跨來源責任歸屬仍不可判定。高齡照顧追蹤涵蓋公告據點與里別紀錄，實際營運、量能與居民近用仍未驗證。鼠患專項調查仍為依證據而定的未來能力，尚未驗證權威鼠患專屬案件序列。" },
   { title: "交通運輸與移動", projectIds: domainsEn[2].projectIds, planned: "同一 taipei-crash-map 已完成內湖交通觀測整備與公車路網／公告服務文件查核兩個 概念驗證。歷史壅塞仍受證據限制；公車方向性服務比較與實際營運表現也尚未驗證。路網盤點不等於服務不足、可靠度或公平性判定。" },
   { title: "住宅與都市韌性", projectIds: domainsEn[3].projectIds, planned: "老舊建築與都市更新行政證據查核已完成決策支援 概念驗證。屋齡統計維持全市脈絡；建物層級與法律階段研究須另有權威證據，不提供建築安全評估或法定資格認定。" },
@@ -22,7 +22,7 @@ export const civicProjectIds = [...new Set(domainsEn.flatMap((domain) => domain.
 export const civicSourceReadmes: Record<string, string> = {
   "taipei-1999-map": "taipei-1999-map/blob/352dbebe0057f62817e4ee08572e1a4d207a5b5a/README.md",
   "taipei-friendly-food-map": "taipei-friendly-food-map/blob/ebed7962b8ced05afea285865f95f2bb7e991f1e/README.md",
-  "taipei-feitsui-water-map": "taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/README.md",
+  "taipei-feitsui-water-map": "taipei-feitsui-water-map/blob/beedd7eef3592c12bb66c21937add068f82ce5fa/README.md",
   "taipei-safety-map": "taipei-safety-map/blob/4e532d697eafb274530d0a1e524f027903a4c4d1/README.md",
   "taipei-real-estate-dashboard": "taipei-real-estate-dashboard/blob/e3f37ff91816b4d51223ab686097a6cef542ca31/README.md",
   "taipei-crash-map": "taipei-crash-map/blob/e01b651d66cedfb5106c263088dc99fbc5d5e3b8/README.md",
@@ -41,13 +41,13 @@ export const govtechCopy = {
     completed: "Completed Decision-Support Case Studies",
     explorers: "Existing Public Data Explorers",
     explorerIntro: "Current capabilities come from existing curated project records and inspected source READMEs. Deployment status and policy maturity are separate: a public demo does not mean a planned decision module is implemented.",
-    planned: "Planned Decision-Support Extensions",
-    plannedIntro: "Twelve cases cover bin allocation, civic investigation, heavy-rain preparedness, urban renewal, Shade Equity, Neihu observation readiness, bus network/published-service review, Wi-Fi evidence/geographic research, bridge documentation review, senior community-care evidence review historical food-inspection documentation review and fire-access/alley evidence review. Shade, historical congestion, directional bus-service comparison and actual service-performance evidence gates remain explicit. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
+    planned: "Remaining Evidence Requirements",
+    plannedIntro: "Thirteen cases cover bin allocation, civic investigation, heavy-rain preparedness, urban renewal, Shade Equity, Neihu observation readiness, bus network/published-service review, Wi-Fi evidence/geographic research, bridge documentation review, senior community-care evidence review historical food-inspection documentation review fire-access/alley evidence review and river monitoring/longitudinal evidence review. Shade, historical congestion, directional bus-service comparison and actual service-performance evidence gates remain explicit. The extensions below remain future work, including evidence-dependent rodent-specific analysis.",
     principlesTitle: "Engineering & Governance Principles",
     principles: ["Open Data ETL with schema validation", "GIS integration with explicit coordinate systems", "Data quality checks and source provenance", "Versioned snapshots and reproducible inputs", "Explainable algorithms and candidate reasons", "Scenario modelling and sensitivity analysis", "Privacy, information security and scoped public records", "Testing and reproducibility before publication"],
     limitations: "Limitations and Responsible Use",
     limitationsText: "Independent personal proof of concepts and engineering demonstrations; no official government endorsement, partnership or placement approval. Public records may be incomplete or historical. Coverage is not measured demand or policy effectiveness. Field verification remains essential. Government operations workflows are outside this showcase.",
-    explorerLabel: "Public-data explorer", plannedLabel: "Planned decision support", readCase: "Read case study", project: "Project details", evidence: "Inspected source", demo: "Live demo", back: "All GovTech cases", contents: "Case study sections", category: "Category", weight: "Default weight", availability: "Data availability", equal: "Equal category priorities", policy: "Policy-priority defaults", metric: "Reference metric", future: "Future Extensions", sourceVersion: "Source commit", snapshotVersion: "Snapshot version", review: "Field-review evidence, not installation approval"
+    explorerLabel: "Public-data explorer", plannedLabel: "Evidence and remaining limits", readCase: "Read case study", project: "Project details", evidence: "Inspected source", demo: "Live demo", back: "All GovTech cases", contents: "Case study sections", category: "Category", weight: "Default weight", availability: "Data availability", equal: "Equal category priorities", policy: "Policy-priority defaults", metric: "Reference metric", future: "Future Extensions", sourceVersion: "Source commit", snapshotVersion: "Snapshot version", review: "Field-review evidence, not installation approval"
   },
   zh: {
     title: "市政資料治理與決策支援系統",
@@ -58,12 +58,12 @@ export const govtechCopy = {
     completed: "已完成的決策支援案例",
     explorers: "既有公共資料探索工具",
     explorerIntro: "現有功能取自既有策展專案紀錄及已查閱的來源專案說明。部署狀態與政策成熟度分開：線上展示 不代表規劃中的決策模組已完成。",
-    planned: "規劃中的決策支援擴充",
-    plannedIntro: "十二個案例涵蓋清潔箱配置、市政調查、防汛整備、都市更新、樹蔭公平、內湖觀測整備、公車路網／公告服務查核、Wi-Fi 證據／地理研究、橋梁文件查核、高齡社區照顧證據查核、歷史食品抽驗文件查核與消防通道／巷道證據查核；保留樹蔭、歷史壅塞、公車方向比較及實際營運表現的證據閘門。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
+    planned: "後續證據需求",
+    plannedIntro: "十三個案例涵蓋清潔箱配置、市政調查、防汛整備、都市更新、樹蔭公平、內湖觀測整備、公車路網／公告服務查核、Wi-Fi 證據／地理研究、橋梁文件查核、高齡社區照顧證據查核、歷史食品抽驗文件查核、消防通道／巷道證據查核及河川監測／長期證據查核；保留樹蔭、歷史壅塞、公車方向比較及實際營運表現的證據閘門。以下擴充仍為未來方向，包含依證據而定的鼠患專項分析。",
     principlesTitle: "工程與治理原則",
     principles: ["開放資料 ETL 與結構驗證", "GIS 整合與明確座標系統", "資料品質檢查與來源追溯", "版本快照與可重現輸入", "可解釋演算法與候選理由", "情境建模與敏感度分析", "隱私、資訊安全與公開紀錄範圍管理", "發布前測試與可重現驗證"],
     limitations: "限制與負責任使用",
     limitationsText: "此為獨立個人概念驗證 與工程展示，並非政府官方背書、合作或設址核准。公開紀錄可能不完整或屬歷史資料；覆蓋不等於實際需求或政策成效，仍須現勘。本案例不提供政府正式營運工作流程。",
-    explorerLabel: "公共資料探索工具", plannedLabel: "規劃中的決策支援", readCase: "閱讀案例", project: "專案詳情", evidence: "已查閱來源", demo: "線上展示", back: "所有市政案例", contents: "案例章節", category: "類別", weight: "預設權重", availability: "資料可用性", equal: "等類別優先權重", policy: "預設政策優先權重", metric: "參考指標", future: "後續擴充", sourceVersion: "來源版本", snapshotVersion: "快照版本", review: "現勘討論證據，非設置核准"
+    explorerLabel: "公共資料探索工具", plannedLabel: "證據與仍存限制", readCase: "閱讀案例", project: "專案詳情", evidence: "已查閱來源", demo: "線上展示", back: "所有市政案例", contents: "案例章節", category: "類別", weight: "預設權重", availability: "資料可用性", equal: "等類別優先權重", policy: "預設政策優先權重", metric: "參考指標", future: "後續擴充", sourceVersion: "來源版本", snapshotVersion: "快照版本", review: "現勘討論證據，非設置核准"
   }
 };

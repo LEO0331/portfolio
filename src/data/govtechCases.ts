@@ -1,3 +1,4 @@
+import { riverWaterQualityCase } from "./govtechRiverWaterQuality";
 import { fireRescueAccessCase } from "./govtechFireRescueAccess";
 import { foodHygieneInspectionCase } from "./govtechFoodHygieneInspection";
 import { seniorCommunityCareCase } from "./govtechSeniorCommunityCare";
@@ -14,4 +15,4 @@ import { civic1999Case } from "./govtechCivic1999";
 import { binPolicyCase } from "./govtechBinPolicy";
 export { BIN_SOURCE_SHA, binSource, binPolicyCase } from "./govtechBinPolicy";
 
-export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase, shadeEquityCase, neihuCongestionCase, busServiceCase, wifiAllocationCase, bridgeInspectionCase, seniorCommunityCareCase, foodHygieneInspectionCase, fireRescueAccessCase];
+export const govtechCases: GovTechCase[] = [binPolicyCase, civic1999Case, heavyRainCase, urbanRenewalCase, shadeEquityCase, neihuCongestionCase, busServiceCase, wifiAllocationCase, bridgeInspectionCase, seniorCommunityCareCase, foodHygieneInspectionCase, fireRescueAccessCase, riverWaterQualityCase];

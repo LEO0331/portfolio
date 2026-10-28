@@ -29,7 +29,9 @@ const pages = [
   ["/govtech/wifi-allocation", "Public Wi-Fi Allocation & Digital Inclusion Decision Support"],
   ["/zh/govtech/wifi-allocation", "臺北市公共 Wi-Fi 資源配置與數位近用決策支援"],
   ["/govtech/bus-service", "Taipei Bus Network & Service Coverage Decision Support"],
-  ["/zh/govtech/bus-service", "臺北市公車路網與服務涵蓋決策支援"]
+  ["/zh/govtech/bus-service", "臺北市公車路網與服務涵蓋決策支援"],
+  ["/govtech/river-water-quality", "River Water Quality & Longitudinal Evidence Review"],
+  ["/zh/govtech/river-water-quality", "臺北市河川水質監測與長期趨勢證據查核"]
 ];
 
 for (const base of ["/", "/portfolio/"]) {
