@@ -119,5 +119,13 @@
     "Frozen Gridline snapshot now fails current-session freshness for20tickers;original dated acceptance remains intact.",
     "Lighthouse is one local simulated mobile run;baseline CPU overlap limits score causality.",
     "Image variants deferred;automated accessibility does not certify WCAG."
-  ]
+  ],
+  "publication": {
+    "url": "https://github.com/LEO0331/portfolio/pull/41",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "implementation": "d9b8de3f8a214a3c25a33eefc6dca3159c05e615",
+    "candidateHosted": false
+  }
 }

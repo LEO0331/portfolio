@@ -4,7 +4,7 @@
 
 **Current objective:** Portfolio v2.6 final audit on `codex/portfolio-v2-6-final-audit`,from merged v2.5 main `c2ee6e5893e45bce78508330f2c2c6490352a03f`.
 
-**Current status:** All local acceptance complete;preparing one reviewable PR. Verdict PASS_WITH_LIMITATIONS. No automatic merge.
+**Current status:** Complete and published as draft [PR41](https://github.com/LEO0331/portfolio/pull/41),verified open and unmerged. Implementationd9b8de3. Verdict PASS_WITH_LIMITATIONS. No automatic merge.
 
 ### Completed
 

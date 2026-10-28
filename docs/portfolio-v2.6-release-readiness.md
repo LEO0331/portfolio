@@ -40,3 +40,7 @@ No unresolved P0/P1 remains in the candidate. PASS_WITH_LIMITATIONS is appropria
 The planned collection is frozen at13 GovTech cases. Maintenance focuses on security, dependencies, links, compatibility, factual corrections and real recruiter feedback. No new policy release is proposed.
 
 Detailed findings, commands, metrics and evidence links: [final audit](./portfolio-v2.6-final-audit.md),[findings JSON](./evidence/portfolio-v2.6/audit-findings.json),[verification results](./evidence/portfolio-v2.6/verification-results.json).
+
+## Review publication
+
+Exactly one draft [PR41](https://github.com/LEO0331/portfolio/pull/41) targets main from codex/portfolio-v2-6-final-audit. Implementation commit:d9b8de3;starting main:c2ee6e5893e45bce78508330f2c2c6490352a03f. It is attached to the chat and verified open/unmerged. The publication-only follow-up records this state;candidate hosted deployment and independent CI acceptance are not inferred from local verification. Human review and manual merge only.

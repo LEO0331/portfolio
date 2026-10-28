@@ -656,7 +656,7 @@
       "id": "portfolio-final-audit-v2-6-2026-10",
       "name": "Audit and harden the completed engineering portfolio",
       "description": "Evidence-first final release audit preserving thirteen bilingual GovTech cases and Gridline.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "govtech-river-water-v2-5-2026-10"
       ],
@@ -674,7 +674,8 @@
         "2P1 and4P2 findings resolved;1P3 image opportunity deferred;all30protected canonical/presentation file hashes unchanged",
         "700executed layout checks across overlapping families;84all-route root/Pages outcomes;9actual finalLighthouse runs with substantialfooterCLS reduction",
         "502unique links/313pinned paths exist/0hard failures;oneRender demo unverified;actualhostedmainc2ee verifiedseparately fromcandidate",
-        "PASS_WITH_LIMITATIONS: candidatehostedfollow-up pendinghumanmerge;datedupstreamscope andsingle-run measurementlimitsexplicit"
+        "PASS_WITH_LIMITATIONS: candidatehostedfollow-up pendinghumanmerge;datedupstreamscope andsingle-run measurementlimitsexplicit",
+        "Exactly one draft PR41 created,attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/41;implementationd9b8de3 on codex/portfolio-v2-6-final-audit"
       ]
     }
   ]
