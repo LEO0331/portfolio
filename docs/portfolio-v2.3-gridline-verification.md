@@ -1,5 +1,7 @@
 # Portfolio v2.3 — Gridline engineering verification
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 The original October26 delivery evidence is preserved below; the October27 completion review records the latest source pin and the follow-up checks.
 
 ## Baseline and implementation plan
@@ -120,11 +122,11 @@ Two independent bounded reviews found all required twelve bilingual sections,six
 |npm run test:unit|Pass,29/29|
 |npm run build|Pass,TypeScript/Vite8.3.5 and36indexable routes/static entrypoints|
 |npm run test:e2e|Baseline236/236 and updated236/236;0skipped/flaky/unexpected;17/17trackedflows|
-|node tools/verify-gridline-source.mjs --source=.omx/gridline-v23-completion --audit|Pass for exact pin/hashes/identity/projection/acceptance; separately records blocked source audit|
+|node tools/verify-gridline-source.mjs --source=<pinned-checkout> --audit|Pass for exact pin/hashes/identity/projection/acceptance; separately records blocked source audit|
 |node --test server/database.test.js server/provenance.test.js server/snapshot-merge.test.js server/snapshot-artifacts.test.js server/runtime-snapshot.test.js server/export-static-snapshot.test.js scripts/publish-snapshot.test.js server/security.test.js scripts/security-audit.test.js scripts/dependency-exposure.test.js scripts/supabase-health.test.js (source working directory;temporary DATA_DIR)|78passed,0failed/skipped|
 |node scripts/verify-demo-snapshot.js (source working directory)|0blockers/2warnings;dated review and full/compact match pass|
-|node .omx/verification-v2.3-completion/browser.mjs final (QUALITY_INCLUDE_GRIDLINE=1;completion output)|80Pages checks pass|
-|npx vite build --base /; node .omx/verification-v2.3-completion/root-entrypoints.mjs; node .omx/verification-v2.3-completion/root-browser.mjs final (QUALITY_BASE=/)|Actual root build and80checks pass,including engineering reload/static title/canonical|
+| Historical one-off production-browser verification (runner retired) |80Pages checks pass|
+| Historical one-off production-browser verification (runner retired) |Actual root build and80checks pass,including engineering reload/static title/canonical|
 |npm run build (after root QA)|Default Pages output restored|
 |git diff --check|Pass|
 

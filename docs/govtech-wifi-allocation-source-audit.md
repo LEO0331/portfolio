@@ -1,10 +1,12 @@
 # Read-only upstream Wi-Fi evidence audit — 2026-10-22
 
-Upstream merged revision supplied by leader: `8e01a2bd8d762b51fae979d32fd477e378d1876b` (PR6). Upstream clone: `.omx/source-wifi`. No source/app edits or dependency installs were performed.
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
+Upstream merged revision supplied by leader: `8e01a2bd8d762b51fae979d32fd477e378d1876b` (PR6). Upstream clone: a temporary source-replay cache (retired). No source/app edits or dependency installs were performed.
 
 ## Executed independent checks
 
-Node v24.14.1 imported the original TypeScript pure functions using native type stripping. Recomputed 288 Mode B configurations and asserted `deepEqual` against all 288 published scenario objects: **288 exact matches**. Also recomputed the 12 Mode A capacity × strategy × eligibility configurations. Exact full ordered selected IDs, exclusions, settings, comparisons and hashes are saved in `.omx/source-wifi-audit.json`.
+Node v24.14.1 imported the original TypeScript pure functions using native type stripping. Recomputed 288 Mode B configurations and asserted `deepEqual` against all 288 published scenario objects: **288 exact matches**. Also recomputed the 12 Mode A capacity × strategy × eligibility configurations. Exact full ordered selected IDs, exclusions, settings, comparisons and hashes are saved in a temporary source-replay cache (retired).
 
 Byte SHA-256 verified independently:
 

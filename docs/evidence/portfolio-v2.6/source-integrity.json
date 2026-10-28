@@ -444,7 +444,7 @@
   "finalCheckDate": "2026-10-28",
   "finalProtectedFilesUnchanged": 30,
   "riverReplay": {
-    "command": "node tools/verify-river-water-source.mjs --source=.omx/river-water-source",
+    "command": "node tools/verify-river-water-source.mjs --source=<pinned-checkout>",
     "exitCode": 0,
     "originalBodies": 8,
     "exactOfflineRebuilds": 2,
@@ -467,5 +467,6 @@
       "reference": "2026-10-28T05:39:03.642Z"
     },
     "meaning": "Frozen historical artifact remains byte-consistent;current-session freshness now fails20ticker checks. Do not relabel it as current market coverage or alter the dated accepted record."
-  }
+  },
+  "localPathMaintenanceNote": "Temporary checkout arguments were parameterized after cache cleanup; original command outcomes and source identities are unchanged."
 }

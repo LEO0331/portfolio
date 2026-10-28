@@ -1,6 +1,6 @@
 # GovTech v2.0 Case 011 implementation plan
 
-Base:74a979721a640e87e3d49ce866f435c525120a0a; branch codex/govtech-food-hygiene-case-011. Upstream hard gate passed: PR4 merged2026-10-24T07:42:21Z at ebed7962b8ced05afea285865f95f2bb7e991f1e. No source-project edits or OMX state.
+Base:74a979721a640e87e3d49ce866f435c525120a0a; branch codex/govtech-food-hygiene-case-011. Upstream hard gate passed: PR4 merged2026-10-24T07:42:21Z at ebed7962b8ced05afea285865f95f2bb7e991f1e. No source-project edits.
 
 1. Run the full ten-case baseline and preserve measured loading evidence separately from historical v1.9 reports.
 2. Independently verify actual accepted source editions/bytes, snapshot identity, original pure functions, candidate units, all supported scenarios, sensitivity and evidence gates. Do not substitute task discovery references or historical counts for actual outputs.

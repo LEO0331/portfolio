@@ -1,5 +1,7 @@
 # Case 003 — pinned Heavy-Rain source audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Verified for Portfolio on **2026-10-19** against Feitsui merge commit
 [`195e63111d32ad564291545ff9d8b230b025b055`](https://github.com/LEO0331/taipei-feitsui-water-map/commit/195e63111d32ad564291545ff9d8b230b025b055),
 the implementation merged through [Feitsui PR #5](https://github.com/LEO0331/taipei-feitsui-water-map/pull/5).
@@ -21,7 +23,7 @@ All links below are pinned to the full source commit:
 - [Committed snapshot](https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/public/data/preparedness-decision/snapshot.json)
 - [Decision tests](https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessDecision.test.ts) and [GIS/source tests](https://github.com/LEO0331/taipei-feitsui-water-map/blob/195e63111d32ad564291545ff9d8b230b025b055/tests/preparednessSpatial.test.ts)
 
-The downloaded source copies retain upstream paths under ignored `.omx/source-heavy-rain/`.
+The downloaded source copies retain upstream paths under ignored a temporary source-replay cache (retired).
 They are audit inputs, not a new runtime dependency or application data feed.
 
 ## Identity verified from the committed snapshot and code
@@ -182,10 +184,10 @@ selection to candidates having eligible official context. Strict/permissive, mod
 source/geography and staleness settings change scope keys; capacity or strategy
 comparisons preserve the key. Never attribute scope changes solely to strategy.
 
-Local reproduction artifacts: `.omx/source-heavy-rain/reproduce.mjs`, generated
+Local reproduction artifacts: a temporary source-replay cache (retired), generated
 `preparednessDecision.mjs` / `preparednessSpatial.mjs`, and
 `reproduced-scenarios.json`. Re-run with
-`node .omx/source-heavy-rain/reproduce.mjs` after retrieving the listed pinned
+the historical one-off replay (runner retired) after retrieving the listed pinned
 inputs. These ignored audit artifacts do not ship to the browser.
 
 ## Inspected visual and recorded engineering evidence

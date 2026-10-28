@@ -1,12 +1,14 @@
 # GovTech Showcase v1.6 verification — 2026-10-22
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-bus-service-case-007`. Portfolio base: `7c7ace1b97a334e0b618b78f7f018dc0c0a150bd`, fetched main including merged Vite8.3.5 PR #24 and Case006 PR #22. This feature does not introduce that dependency update. Scope is Portfolio only: no upstream writes, fresh official bus acquisition, ETL, all-route-detail download or runtime bus calculation.
 
 ## Audit, plan and baseline
 
-Read AGENTS.md, both READMEs, feature ledger/progress/handoff, template and Case006/spec/audit/v1.5verification; inspected case/project types, shared renderer/normalizer/drawer, current data/localization/lazy routing, static SEO generation and tests. Clean working tree/recent history verified. Source PR9 merged metadata was confirmed before app edits. A dedicated branch, one scoped feature entry and pre-edit plan are recorded in `.omx/plans/govtech-v1.6.md`.
+Read AGENTS.md, both READMEs, feature ledger/progress/handoff, template and Case006/spec/audit/v1.5verification; inspected case/project types, shared renderer/normalizer/drawer, current data/localization/lazy routing, static SEO generation and tests. Clean working tree/recent history verified. Source PR9 merged metadata was confirmed before app edits. A dedicated branch, one scoped feature entry and pre-edit plan are recorded in a temporary pre-edit plan (retired).
 
-Baseline2026-10-22 on Vite8.3.5: clean npm ci, harness17features,22unit,TypeScript/Vite build,105Playwright checks /17trackedflows(100%) and git diff --check passed. npm audit returned five existing high Tailwind/braces-chain package findings; the prior Vite finding is absent after the already-merged PR24. The local baseline report is retained under ignored `.omx/verification-v1.6/baseline-e2e.json`.
+Baseline2026-10-22 on Vite8.3.5: clean npm ci, harness17features,22unit,TypeScript/Vite build,105Playwright checks /17trackedflows(100%) and git diff --check passed. npm audit returned five existing high Tailwind/braces-chain package findings; the prior Vite finding is absent after the already-merged PR24. The local baseline report is retained under ignored a temporary verification workspace (retired).
 
 Work resumed from saved source downloads and Neihu fixture after an account usage-limit interruption. Completed validation and saved artifacts were checked before reuse; they were not represented as newly acquired data.
 
@@ -18,7 +20,7 @@ Pinned snapshot `pto-bus-0b70f80504e5b952`; method `bus-network-service-evidence
 
 The independent cache script transpiles the original pinned pure utilities with the already-installed TypeScript dependency. It calls original manifest/snapshot assertions, verifies hashes/byte sizes before parsing four index/report bodies and only two representative route details (10132 and10419), checks artifact contracts/edition/route references, classifies all indexed candidates and runs original scenario/comparison functions. All420 referenced artifact contracts were checked; only six referenced bodies were downloaded/hashed, not all416details. Original compressed feeds were not reacquired or independently replayed through ETL. A checksum establishes agreement with the pinned manifest, not an official publisher signature.
 
-Inputs, script and output stay ignored under `.omx/source-bus-service/`; independent report is `independent-validation.json`, reproducible with `node .omx/source-bus-service/reproduce.mjs` after retrieving the bounded pinned inputs. No cached upstream files ship to the Portfolio application.
+Inputs, script and output stay ignored under a temporary source-replay cache (retired); independent report is `independent-validation.json`, reproducible with the historical one-off replay (runner retired) after retrieving the bounded pinned inputs. No cached upstream files ship to the Portfolio application.
 
 | Official feed | Raw records / unit |
 | --- | --- |
@@ -74,12 +76,12 @@ A mid-edit `C:/Program Files/Git/bin/bash.exe init.sh` attempt stopped at harnes
 | npm run test:e2e | Pass,118/118 and17/17trackedflows |
 | git diff --check | Pass |
 | & 'C:/Program Files/Git/bin/bash.exe' init.sh | Fail at audit after harness/install; downstream commands run separately |
-| node .omx/source-bus-service/reproduce.mjs | Pass,bounded original-function evidence validation |
-| node .omx/verification-v1.6/browser.mjs dist /portfolio | Pass,14bilingual URLs/5widths/zero page errors |
-| npx vite build --base / --outDir .omx/govtech-v1.6-root/dist | Pass,actual root build |
+| Historical one-off source replay (runner retired) | Pass,bounded original-function evidence validation |
+| Historical one-off production-browser verification (runner retired) | Pass,14bilingual URLs/5widths/zero page errors |
+| Historical root-base production build in a temporary fixture | Pass,actual root build |
 | node tools/generate-route-entrypoints.mjs (root fixture working directory) | Pass,24entries |
-| node .omx/verification-v1.6/browser.mjs .omx/govtech-v1.6-root/dist '' | Pass,14bilingual URLs/5widths/zero page errors |
-| node .omx/verification-v1.6/check-docs.mjs | Pass,26Markdown documents/235local links/18numbered specification sections |
+| Historical one-off production-browser verification (runner retired) | Pass,14bilingual URLs/5widths/zero page errors |
+| Historical one-off documentation validation (runner retired) | Pass,26Markdown documents/235local links/18numbered specification sections |
 
 ## Visual evidence
 

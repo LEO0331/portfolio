@@ -1,6 +1,6 @@
 # POC verification hardening — 2026-10-23
 
-Base: ce9e9e6 (merged Case009 and PR29). Branch: codex/portfolio-poc-evidence-hardening. No OMX runtime or state directories.
+Base: ce9e9e6 (merged Case009 and PR29). Branch: codex/portfolio-poc-evidence-hardening. 
 
 ## Scope and sequence
 

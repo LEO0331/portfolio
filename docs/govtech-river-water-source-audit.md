@@ -1,12 +1,14 @@
 # Case 013 — River Water Quality Source Audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Review date: **2026-10-27**, Asia/Taipei. This audit concerns the retained Policy #13 edition, not a fresh acquisition of government monitoring data.
 
 ## Source admission and merge gate
 
 Policy #13 is merged in [upstream PR #7](https://github.com/LEO0331/taipei-feitsui-water-map/pull/7), at [`beedd7eef3592c12bb66c21937add068f82ce5fa`](https://github.com/LEO0331/taipei-feitsui-water-map/commit/beedd7eef3592c12bb66c21937add068f82ce5fa). GitHub metadata reports the merge at `2026-10-27T05:37:05Z`. The pinned source delivery document still says that no PR was created; that is historical pre-publication text and is superseded by the independently checked merge metadata.
 
-The accepted source manifest, immutable snapshot, machine-readable results, methodology, code and tests were inspected before Portfolio implementation. The read-only source checkout is ignored under `.omx/river-water-source/`. No upstream code change, provider refresh or remote publication belongs to this Portfolio task.
+The accepted source manifest, immutable snapshot, machine-readable results, methodology, code and tests were inspected before Portfolio implementation. The original read-only source checkout was temporary and has been retired. No upstream code change, provider refresh or remote publication belongs to this Portfolio task.
 
 | Identity | Verified value |
 | --- | --- |
@@ -177,11 +179,21 @@ The 2026-only Mode A population has A10/B150/C0. Its added IDs are `A:station-b3
 
 For this audit, independent byte checks covered all eight accepted original bodies, the accepted manifest and the exact immutable snapshot. Snapshot inspection independently recounted row states, qualifier populations, station identity outcomes and scenario selections rather than relying only on human-written delivery text. All inspected code, data, test and screenshot paths exist at the pinned checkout. The compact Portfolio fixture and executed reproduction details are recorded with the release verification, rather than shipping the 7 MB snapshot as application data.
 
-The Portfolio [source verifier](../tools/verify-river-water-source.mjs) was executed successfully with:
+The Portfolio [source verifier](../tools/verify-river-water-source.mjs) was executed successfully against the pinned checkout. The historical local path is parameterized below:
 
 ```text
-node tools/verify-river-water-source.mjs --source=.omx/river-water-source
+node tools/verify-river-water-source.mjs --source=<pinned-checkout>
 ```
+
+For a new reproduction after `npm ci`, prepare the default disposable checkout:
+
+```text
+git clone --no-checkout https://github.com/LEO0331/taipei-feitsui-water-map.git node_modules/.cache/river-water-source
+git -C node_modules/.cache/river-water-source checkout --detach beedd7eef3592c12bb66c21937add068f82ce5fa
+node tools/verify-river-water-source.mjs
+```
+
+Generated replay modules use `node_modules/.cache/river-water-replay`. These caches are disposable and removed by a clean dependency installation; `--source` still accepts another clean pinned checkout.
 
 It validates the pinned revision and absence of tracked source edits, checks all eight original bodies, runs the original `auditRiverWaterPolicySources` against retained catalogue/station evidence, and calls the original `verifyPolicyBytes`. The original builder then runs **twice with publication disabled**; both complete byte strings and the generated pointer exactly match the published 7,016,489-byte snapshot. This is an actual offline ETL replay of the retained accepted inputs, not a fresh government acquisition or upstream publication.
 

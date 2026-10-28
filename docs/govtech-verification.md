@@ -1,5 +1,7 @@
 # GovTech showcase verification — 2026-10-16
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Implementation PR: [#16](https://github.com/LEO0331/portfolio/pull/16), merged on 2026-10-16 at 13:48 Asia/Taipei as `1db5e24ac26862b79030dbfff246bfbf27506eca`. Original branch: `codex/govtech-showcase-v1`. Results below record the implementation verification, not a claim that all checks were rerun during the documentation-only follow-up. Scope: portfolio only; no dashboard repository, dependency, pin snapshot or maintenance workflow edits. Source version: `taipei-bin-map@1280011b086f498404abf138c29f64041963e14c`.
 
 ## Results
@@ -60,7 +62,7 @@ Public GET checks returned HTTP 200 for Bin Map, Gridline and the eight other Gi
 
 ## Reproduction and next case
 
-Run `npm ci`, `npm run validate:harness`, `npm audit`, `npm run test:unit`, `npm run build`, `npm run test:e2e`, `git diff --check`. The E2E command builds its own production preview and requires port 4175 to be free; install Chromium with `npx playwright install chromium` if absent. For manual browsing: `npm run preview`, then visit /portfolio/govtech and /portfolio/zh/govtech/bin-policy. For root-base testing, run `node node_modules/vite/bin/vite.js build --base / --outDir .omx/govtech-root-dist --emptyOutDir`, then `node node_modules/vite/bin/vite.js preview --base / --outDir .omx/govtech-root-dist`.
+Run `npm ci`, `npm run validate:harness`, `npm audit`, `npm run test:unit`, `npm run build`, `npm run test:e2e`, `git diff --check`. The E2E command builds its own production preview and requires port 4175 to be free; install Chromium with `npx playwright install chromium` if absent. For manual browsing: `npm run preview`, then visit /portfolio/govtech and /portfolio/zh/govtech/bin-policy. For root-base testing, run `node node_modules/vite/bin/vite.js build --base / --outDir node_modules/.cache/govtech-root-dist --emptyOutDir`, then `node node_modules/vite/bin/vite.js preview --base / --outDir node_modules/.cache/govtech-root-dist.
 
 Recommended next repository: taipei-1999-map #3. First define the complaint/rodent investigation decision question and safe aggregation/provenance boundaries using the [case template](./govtech-case-study-template.md); do not present the planned investigation as implemented. Follow the [canonical specification](./govtech-case-study-v1.0.zh-TW.md). Maintenance [PR #15](https://github.com/LEO0331/portfolio/pull/15) was merged on 2026-10-06 as `c6dbb3fe81cc40d66a174e114fa51f8a0f1699d6`; there is no outstanding review of that PR.
 

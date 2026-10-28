@@ -1,5 +1,7 @@
 # Case 006 — pinned Neihu traffic source audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Audited **2026-10-21** against
 [`deb28d5d5b4e608eb04d89743bc3fea632d74c8a`](https://github.com/LEO0331/taipei-crash-map/commit/deb28d5d5b4e608eb04d89743bc3fea632d74c8a).
 GitHub API metadata confirms [source PR #7](https://github.com/LEO0331/taipei-crash-map/pull/7)
@@ -23,7 +25,7 @@ performance metrics were calculated or generated.
 - [Snapshot](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/public/data/neihu-congestion/snapshot.json), [retained-source manifest](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/data/raw/neihu-congestion/manifest.json), [decision tests](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestion.test.ts), [source tests](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestionSources.test.ts), [integration tests](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/tests/trafficCongestionIntegration.test.ts), [original explorer README](https://github.com/LEO0331/taipei-crash-map/blob/deb28d5d5b4e608eb04d89743bc3fea632d74c8a/README.md).
 
 All mandatory files and both screenshots were accessible at the pinned commit.
-Ignored cache `.omx/source-neihu-congestion/` retains upstream paths, the manifest,
+Ignored cache a temporary source-replay cache (retired) retains upstream paths, the manifest,
 README/progress/handoff, and `source-pr-7.json` / `portfolio-pr-21.json` API metadata.
 Raw XML/gzip traffic payloads are not downloaded into Portfolio application assets.
 
@@ -152,9 +154,9 @@ above, 58 quality-eligible candidates, three/five represented roads, and four em
 performance selections. It does not fetch sources, rerun ETL, aggregate traffic,
 generate historical observations or run any upstream browser/runtime calculation.
 
-Artifacts: `.omx/source-neihu-congestion/reproduce.mjs`, generated utility `.mjs`
+Artifacts: a temporary source-replay cache (retired), generated utility `.mjs`
 files and `reproduced-scenarios.json`. Command:
-`node .omx/source-neihu-congestion/reproduce.mjs`. This independently executed
+the historical one-off replay (runner retired). This independently executed
 selection check is distinct from recorded upstream tests, builds and benchmarks.
 
 ## Method and scope contracts

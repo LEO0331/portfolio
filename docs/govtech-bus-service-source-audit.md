@@ -1,5 +1,7 @@
 # Case 007 — independent pinned bus-service evidence audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Audited **2026-10-22**. GitHub API confirms [source PR #9](https://github.com/LEO0331/taipei-crash-map/pull/9),
 “Add evidence-aware bus network and published-service review”, merged at
 `2026-10-22T00:57:41Z` to
@@ -10,7 +12,7 @@ Earlier open-PR wording is historical. Portfolio's fetched main API reports
 
 ## Bounded independent check
 
-Downloaded committed artifacts into ignored `.omx/source-bus-service/`, preserving
+Downloaded committed artifacts into ignored a temporary source-replay cache (retired), preserving
 upstream paths. No official feed acquisition, upstream writes, ETL, new dependency,
 historical event generation or visitor-runtime analysis was performed. The local
 `reproduce.mjs` uses Portfolio's installed TypeScript to transpile unchanged pinned
@@ -18,7 +20,7 @@ pure utilities, adjusting only their local import extension for Node. It calls
 the original `assertBusManifest`, `assertBusSnapshot`, `verifyBusArtifact`,
 `assessBusCandidate`, `runBusScenario` and `compareBusScenarios`. Saved results are
 `independent-validation.json`; reproduction is
-`node .omx/source-bus-service/reproduce.mjs`.
+the historical one-off replay (runner retired).
 
 Independent results:
 

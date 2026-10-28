@@ -1,5 +1,7 @@
 # Gridline engineering source audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 ## Completion review — 2026-10-27
 
 Portfolio v2.2 PR37 and v2.3 [PR38](https://github.com/LEO0331/portfolio/pull/38) are merged. This follow-up starts at Portfolio main `e78173135b470a42a0a7397e9eec923afb75b928` and pins latest Gridline main [`e3d47a638ddb7f3192c63598596628f60c7b364d`](https://github.com/LEO0331/Gridline/tree/e3d47a638ddb7f3192c63598596628f60c7b364d). The original October26 audit below remains historical; its manifest is archived separately.
@@ -10,7 +12,7 @@ At 2026-10-27T00:16:17.890Z, original readiness and exact projection functions c
 
 Fresh source-specific lockfile audit again reports1high/1moderate/6low/0critical. The body-parser high advisory remains outside the exact braces exception; original policy evaluation returns ok:false. This is not a full deployed security gate. Portfolio separately reports0vulnerabilities.
 
-All78selected original source tests were rerun successfully against this pin,including publication recovery fixture repositories. An initial sandbox attempt denied fixture Git configuration writes; rerunning with fixture permissions passed78/78,no skips. Complete source frontend/build tests and fresh exposure proof were not rerun. Reproduce with `node tools/verify-gridline-source.mjs --source=.omx/gridline-v23-completion --audit` after a clean read-only clone at this pin. The standard clone instructions below now require this latest pin when using the updated verifier.
+All78selected original source tests were rerun successfully against this pin,including publication recovery fixture repositories. An initial sandbox attempt denied fixture Git configuration writes; rerunning with fixture permissions passed78/78,no skips. Complete source frontend/build tests and fresh exposure proof were not rerun. Reproduce with `node tools/verify-gridline-source.mjs --source=<pinned-checkout> --audit` after a clean read-only clone at this pin. The standard clone instructions below now require this latest pin when using the updated verifier.
 
 Original public UI captures remain explicitly dated2026-10-26 and retain their own artifact identity; they are not silently relabeled as screenshots of the latest repository snapshot.
 

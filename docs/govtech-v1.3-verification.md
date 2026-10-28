@@ -1,18 +1,20 @@
 # GovTech Showcase v1.3 verification — 2026-10-20
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-urban-renewal-v1-3`, based on merged main `a39f900` (Portfolio PR #19). Scope: Portfolio Case004, preserving earlier cases and homepage pins. No new backend, database, dependency, urban-renewal algorithm or building-safety model.
 
 ## Audit, plan and baseline
 
-Read repository AGENTS.md, both READMEs, feature ledger/progress/handoff, template and Case003 specification/audit/verification. Inspected case types, all three case records/localizations, shared renderer/components, project records, lookup, routes/SEO and tests. Dedicated branch and one scoped ledger entry established. Concise plan recorded before application edits in `.omx/plans/govtech-v1.3.md`.
+Read repository AGENTS.md, both READMEs, feature ledger/progress/handoff, template and Case003 specification/audit/verification. Inspected case types, all three case records/localizations, shared renderer/components, project records, lookup, routes/SEO and tests. Dedicated branch and one scoped ledger entry established. Concise plan recorded before application edits in a temporary pre-edit plan (retired).
 
-Executed baseline before application edits: harness valid14features; npm ci passed; npm audit exit1 with5existing high Tailwind/braces-chain findings;22/22unit tests; TypeScript/Vite build with16indexable routes;64/64Playwright tests and17/17trackedflows(100%); git diff --check passed. The baseline report is retained locally under ignored `.omx/verification-v1.3/baseline-e2e.json`.
+Executed baseline before application edits: harness valid14features; npm ci passed; npm audit exit1 with5existing high Tailwind/braces-chain findings;22/22unit tests; TypeScript/Vite build with16indexable routes;64/64Playwright tests and17/17trackedflows(100%); git diff --check passed. The baseline report is retained locally under ignored a temporary verification workspace (retired).
 
 ## Pinned source audit and scenario reproduction
 
 See [source audit](./govtech-urban-renewal-source-audit.md) and [Chinese Case004 specification](./govtech-case-study-004.zh-TW.md). The mandatory docs, code, tests and snapshot are pinned to [real-estate PR5 merge e3f37ff91816b4d51223ab686097a6cef542ca31](https://github.com/LEO0331/taipei-real-estate-dashboard/commit/e3f37ff91816b4d51223ab686097a6cef542ca31). Public API confirms source PR5 merged2026-10-19T06:53:49Z. No upstream modification or official source-data refresh.
 
-Snapshot `ure-c81e4ef44e6c9868`, method `urban-renewal-evidence-review-v1`, configuration `1.0.0`, analysisAsOf `2026-10-19`. Pinned unchanged TypeScript functions were transpiled with the installed TypeScript dependency and called against the downloaded snapshot; audit scripts/output remain ignored under `.omx/source-urban-renewal/`. This reproduces scenario outputs, not the upstream full suite or original official-byte acquisition.
+Snapshot `ure-c81e4ef44e6c9868`, method `urban-renewal-evidence-review-v1`, configuration `1.0.0`, analysisAsOf `2026-10-19`. Pinned unchanged TypeScript functions were transpiled with the installed TypeScript dependency and called against the downloaded snapshot; audit scripts/output remain ignored under a temporary source-replay cache (retired). This reproduces scenario outputs, not the upstream full suite or original official-byte acquisition.
 
 Eleven eligible designation_follow_up district questions, allA, each status_traceability/temporal_freshness and one independent verified source type. SourceB resourceUpdatedAt2024-06-13 yields858days at the fixed analysis date; publishedAt is unknown and metadataUpdatedAt is separately2026-09-08. Resource age is not individual case inactivity.
 
@@ -43,7 +45,7 @@ Gaps, balanced and reconciliation select the same ordered IDs: one equally quali
 
 The first integrated E2E discovery stopped before test execution because the new test imported JSON without Node's required type attribute. Adding with { type: "json" } corrected the test-only import. The subsequent complete 77-test run passed. No failed test assertions were suppressed.
 
-Both-base crawler tests verify static title/description/canonical/OpenGraph/sitemap. Actual root production reproduction used npx vite build --base / --outDir .omx/govtech-v1.3-root/dist; copied the unchanged route generator/site helper, routeConfig and a root Vite config into that fixture; ran the generator there. The browser script verified each generated index exists, then served the build locally and tested eight case URLs per base plus locale/404 and responsive landing/Case004. Browser summaries remain ignored under .omx/verification-v1.3/. Existing CSP remains intact; fonts were aborted for deterministic fallback rendering.
+Both-base crawler tests verify static title/description/canonical/OpenGraph/sitemap. Actual root production reproduction used a Vite root-base build in a retired temporary fixture; copied the unchanged route generator/site helper, routeConfig and a root Vite config into that fixture; ran the generator there. The browser script verified each generated index exists, then served the build locally and tested eight case URLs per base plus locale/404 and responsive landing/Case004. Browser summaries remain ignored under a temporary verification workspace (retired) Existing CSP remains intact; fonts were aborted for deterministic fallback rendering.
 
 ## Visual evidence
 

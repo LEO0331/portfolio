@@ -1,12 +1,14 @@
 # GovTech Showcase v1.5 verification — 2026-10-21
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-neihu-congestion-v1-5`, based on merged main `b629614b75dce4acc3ccac4bde826f448ebda256` (Portfolio PR #21). Scope: Portfolio Case006; no upstream writes, historical traffic acquisition, upstream ETL, new dependencies or browser traffic calculations.
 
 ## Repository audit, plan and baseline
 
-Read AGENTS.md, README pair, ledger/progress/handoff, current template/Case005/v1.4verification; inspected case/project types, registration/localization, shared page/components/lookup/drawer, lazy routes, SEO/static generation and GovTech tests. Clean working tree confirmed, recent merged history reviewed, feature branch and one scoped ledger entry established. The concise implementation plan was recorded before app edits at `.omx/plans/govtech-v1.5.md`.
+Read AGENTS.md, README pair, ledger/progress/handoff, current template/Case005/v1.4verification; inspected case/project types, registration/localization, shared page/components/lookup/drawer, lazy routes, SEO/static generation and GovTech tests. Clean working tree confirmed, recent merged history reviewed, feature branch and one scoped ledger entry established. The concise implementation plan was recorded before app edits at a temporary pre-edit plan (retired).
 
-Executed 2026-10-21 baseline: npm ci passed; harness valid 16 features; npm audit exit1 with six existing high package findings;22/22unit tests; TypeScript/Vite build with 20 indexable routes;92/92 Playwright checks and17/17 tracked flows(100%); git diff --check passed. Baseline report retained in ignored `.omx/verification-v1.5/baseline-e2e.json`.
+Executed 2026-10-21 baseline: npm ci passed; harness valid 16 features; npm audit exit1 with six existing high package findings;22/22unit tests; TypeScript/Vite build with 20 indexable routes;92/92 Playwright checks and17/17 tracked flows(100%); git diff --check passed. Baseline report retained in ignored a temporary verification workspace (retired).
 
 ## Pinned source and independent selection verification
 
@@ -14,7 +16,7 @@ See [Neihu source audit](./govtech-neihu-congestion-source-audit.md) and [Chines
 
 Downloaded pinned snapshot is120,789 bytes; independently checked SHA256 `e54b852d17388683eddc16b46c930178451df4af78a4802663eaef579ccf3441`, distinct from the snapshot ID. Six retained official inputs total 1,710,095 bytes; final statuses A/C/D limited, B/E/F excluded. TDXG is unavailable/not acquired, not a seventh retained source. Snapshot resourceId fields currently use catalogue dataset UUIDs; actual endpoint/resource identities are separately documented and not relabelled.
 
-Portfolio independently transpiled the two unchanged pinned TypeScript utilities using installed TypeScript, validated the cached snapshot, and called runTrafficScenario on its existing candidates for quality/slowdown/balanced at capacities5/10. This bounded offline check selected existing readiness candidates and confirmed empty performance populations; it did not acquire/aggregate observations, run ETL, generate speeds or execute in the Portfolio runtime. Cache script/output remain ignored under `.omx/source-neihu-congestion/reproduce.mjs` and `reproduced-scenarios.json`. Full upstream tests were not rerun.
+Portfolio independently transpiled the two unchanged pinned TypeScript utilities using installed TypeScript, validated the cached snapshot, and called runTrafficScenario on its existing candidates for quality/slowdown/balanced at capacities5/10. This bounded offline check selected existing readiness candidates and confirmed empty performance populations; it did not acquire/aggregate observations, run ETL, generate speeds or execute in the Portfolio runtime. Cache script/output remain ignored under a temporary source-replay cache (retired) and `reproduced-scenarios.json`. Full upstream tests were not rerun.
 
 | Objective / capacity | Eligible | Selected | Candidate roads represented | Eligible left outside capacity |
 | --- | ---: | ---: | ---: | ---: |
@@ -56,7 +58,7 @@ The existing Crash Map record uses govtechCaseIds:[neihu-congestion] without a l
 
 The first integrated application run passed all105 checks. No application-test failure or recovery was needed in this release. Test additions include exact source/quality/performance/selection assertions, complete Shade preservation, six-case navigation and both new static routes. No existing checks were disabled or CSP bypassed.
 
-Actual root reproduction used npx vite build --base / --outDir .omx/govtech-v1.5-root/dist, copied the unchanged generator/site helper and current routeConfig with a root Vite config to the isolated fixture, then generated entries from that directory. The review script checked each generated index exists, served the production builds locally, exercised12 case URLs per base, Neihu locale/404 and five widths, and recorded zero page errors. Summaries remain ignored under .omx/verification-v1.5/. Fonts were blocked for reproducible system-font fallback only; the production CSP remains intact.
+Actual root reproduction used a Vite root-base build in a retired temporary fixture, copied the unchanged generator/site helper and current routeConfig with a root Vite config to the isolated fixture, then generated entries from that directory. The review script checked each generated index exists, served the production builds locally, exercised12 case URLs per base, Neihu locale/404 and five widths, and recorded zero page errors. Summaries remain ignored under a temporary verification workspace (retired) Fonts were blocked for reproducible system-font fallback only; the production CSP remains intact.
 
 Main JS is310.27 kB (99.78 kB gzip); the234.72 kB (77.98 kB gzip) case catalogue remains deferred. No bundle-size warning or upstream traffic payload embedding was introduced. These are build sizes, not page-latency measurements.
 

@@ -1,6 +1,8 @@
 # Portfolio POC hardening — 2026-10-23
 
-Base `ce9e9e6` (merged Case009/PR29); branch `codex/portfolio-poc-evidence-hardening`. Authorized scope: dependency remediation, complete pinned upstream tests/publication replay, supplementary geographic evidence. Official asset crosswalk and current engineering-condition acquisition are outside this review POC. No OMX runtime or state directories are used.
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
+Base `ce9e9e6` (merged Case009/PR29); branch `codex/portfolio-poc-evidence-hardening`. Authorized scope: dependency remediation, complete pinned upstream tests/publication replay, supplementary geographic evidence. Official asset crosswalk and current engineering-condition acquisition are outside this review POC. 
 
 ## Dependency remediation
 

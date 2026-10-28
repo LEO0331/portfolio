@@ -24,9 +24,9 @@ pnpm-debug.log*
 .vscode/
 .idea/
 *.swp
-
-# OMX runtime/state
-.omx/
+.omx
+# Local build and verification scratch files
+.cache/portfolio-v3/
 
 # Local generated public placeholders (optional to keep if replaced with real assets)
 # public/favicon.ico

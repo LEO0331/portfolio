@@ -1,5 +1,7 @@
 # Portfolio v2.5 — River monitoring Case013 verification
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Completed: **2026-10-28**, following source admission and baseline work on October27. Portfolio base: `8fa9a56acfddd3792efad63e49e6efbdc33343ad`, including merged Gridline completion PR39. Branch: `codex/govtech-river-water-case-013`. Source analysis remains fixed at **2026-10-27**, Asia/Taipei; resuming verification did not create a newer source acquisition.
 
 ## Dependency gate and baseline
@@ -50,8 +52,8 @@ The shared page now reads the configured SEO title with the display title as fal
 |npm run test:unit|Pass,29/29|
 |npm run build|Pass,TypeScript/Vite8.3.5 and38 indexable routes/static entrypoints|
 |npm run test:e2e|Pass,249/249;0 skipped/flaky/unexpected;17/17 tracked flows(100%)|
-|node tools/verify-river-water-source.mjs --source=.omx/river-water-source|Pass,8 original body hashes,two exact offline rebuilds and bounded original-function checks|
-|node .omx/verification-v2.5/browser.mjs final (default Pages base)|Pass,120 layout checks and31 direct/reload/static-title/canonical/language/404 outcomes|
+|node tools/verify-river-water-source.mjs --source=<pinned-checkout>|Pass,8 original body hashes,two exact offline rebuilds and bounded original-function checks|
+| Historical one-off production-browser verification (runner retired) |Pass,120 layout checks and31 direct/reload/static-title/canonical/language/404 outcomes|
 |npx vite build --base /; adapted unchanged static-route/sitemap generators; browser.mjs with QUALITY_BASE=/|Pass,actual root build,38 sitemap URLs,120 layouts and31 route outcomes|
 |npm run build (after root QA)|Default Pages build restored;both localized static canonicals and38-URL sitemap checked|
 |git diff --check|Pass|

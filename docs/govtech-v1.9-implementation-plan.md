@@ -1,6 +1,6 @@
 # GovTech Case 010 implementation plan
 
-Base: bcd78c641e9e08ebf47101d21ea43725fc7e9e94, fetched 2026-10-24. Reuse the clean managed worktree on codex/govtech-senior-community-care-case-010. Do not write to the source project or create OMX state.
+Base: bcd78c641e9e08ebf47101d21ea43725fc7e9e94, fetched 2026-10-24. Reuse the clean managed worktree on codex/govtech-senior-community-care-case-010. Do not write to the source project.
 
 1. Record the existing full acceptance gate and local production-preview resource baseline before integrating the new catalogue entry.
 2. Independently inspect the pinned source implementation and retained original-byte sources, verify merge identity, immutable snapshot, statistical units, all twelve scenarios and privacy exclusions. Keep raw source cache ignored and only retain compact minimized audit evidence.

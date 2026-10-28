@@ -1,6 +1,6 @@
 # GovTech v1.8 public-presentation hardening plan
 
-Base: latest main299cfe8, including Tailwind4 and supplementary bridge polygon evidence. Branch: codex/govtech-v1-8-cross-case-hardening. User explicitly requests a draft PR after local completion, without waiting for GitHub E2E/Lighthouse or marking ready/merging. No OMX; no upstream repository changes or new dependencies.
+Base: latest main299cfe8, including Tailwind4 and supplementary bridge polygon evidence. Branch: codex/govtech-v1-8-cross-case-hardening. User explicitly requests a draft PR after local completion, without waiting for GitHub E2E/Lighthouse or marking ready/merging. No upstream repository changes or new dependencies.
 
 1. Lock behavior before edits: run baseline harness/install/audit/unit/build/E2E; capture all18 normalized EN/ZH records and a public-workflow inventory. Preserve every existing golden fixture. Add an explicit before/after presentation-operation allowlist and inverse migration for historical comparisons; numeric tables, methods, identities and source editions cannot change silently.
 2. Editorial boundary repair: remove PR/discussion/commit-administration/delivery/plan links from public records. Preserve engineering accomplishments through concise bilingual narrative and already-existing pinned methodology/source/implementation references. Curate first-screen problem/approach/result/limits for all9 without changing outcomes. Remove internal process commentary in both languages and all other public surfaces.

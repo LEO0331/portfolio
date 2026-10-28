@@ -1,5 +1,7 @@
 # Case 004 — Urban Renewal pinned-source verification
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Portfolio audit: **2026-10-20**. Source analysis remains fixed at **2026-10-19**.
 Only Portfolio is modified; no upstream data refresh, new algorithm or dependency
 is introduced. The public GitHub PR API confirms [source PR #5](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/5)
@@ -173,10 +175,10 @@ reported by `npm ci`. A live `npm audit` was unavailable because sandbox DNS fai
 no zero-advisory claim is supported. Dependencies were unchanged. They also record
 the lazy module at 38.30 kB / 14.02 kB gzip and snapshot approximately 28 kB.
 
-Ignored local audit cache: `.omx/source-urban-renewal/` preserves upstream paths,
+Ignored local audit cache: a temporary source-replay cache (retired) preserves upstream paths,
 `pr-5.json`, `reproduce.mjs`, generated `.mjs` modules and
 `reproduced-scenarios.json`. Reproduction command:
-`node .omx/source-urban-renewal/reproduce.mjs`. No cache files ship to Portfolio.
+the historical one-off replay (runner retired). No cache files ship to Portfolio.
 
 An older building is not automatically unsafe. Renewal and dangerous/old-building
 reconstruction are separate legal pathways. No current legal eligibility, owner

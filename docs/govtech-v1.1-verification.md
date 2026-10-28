@@ -1,5 +1,7 @@
 # GovTech Showcase v1.1 verification — 2026-10-19
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-civic-1999-v1-1`, based on main `10e426d` (merged documentation PR #17). Release: Case Study 002 — Citizen Service & Environmental Governance Decision Support. Application changes are limited to Portfolio; no upstream repository, new dependency, backend, database, runtime civic-data request or decision algorithm was added.
 
 ## Source and recorded scenario
@@ -72,7 +74,7 @@ These are local Portfolio production previews, not upstream operational dashboar
 
 ## Reproduction, remaining limits and next case
 
-Run npm ci, npm run validate:harness, npm audit, npm run test:unit, npm run build, npm run test:e2e, git diff --check. Keep port 4175 free for E2E; install Chromium if needed. For manual review run npm run preview and visit /portfolio/govtech/civic-1999 or /portfolio/zh/govtech/civic-1999. Root verification used a Vite --base / build plus the unchanged static-entrypoint generator in an isolated .omx fixture; crawler unit tests reproduce base-path metadata checks.
+Run npm ci, npm run validate:harness, npm audit, npm run test:unit, npm run build, npm run test:e2e, git diff --check. Keep port 4175 free for E2E; install Chromium if needed. For manual review run npm run preview and visit /portfolio/govtech/civic-1999 or /portfolio/zh/govtech/civic-1999. Root verification used a Vite --base / build plus the unchanged static-entrypoint generator in an isolated temporary fixture; crawler unit tests reproduce base-path metadata checks.
 
 Five existing dependency advisories remain. Source completeness covers the six audited original months, not all problems or petitions. Priority tiers are advisory screening, not environmental severity/public-health risk, significance, resolution rates or work orders. Small-cell/complementary suppression is not an unconditional privacy guarantee. No authoritative rodent-specific case series was validated. The full upstream suite was not rerun. Live deployment verification after a future human merge is outside this local delivery evidence.
 

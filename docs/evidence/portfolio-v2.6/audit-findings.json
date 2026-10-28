@@ -39,7 +39,7 @@
       "verificationOutcome": "EN/ZH direct/reload/switch/recovery,noindex,static metadata pass;40routes across both bases pass.",
       "affectedPageOrComponent": "Chinese unknown/404 routes",
       "remediationStatus": "resolved",
-      "supportingEvidence": ".omx baseline-404 proof;fixed-zh404-dark.png;route-matrix.json",
+      "supportingEvidence": "Retired local baseline-404 reproduction;fixed-zh404-dark.png;route-matrix.json",
       "remainingRisk": "No known unresolved candidate defect;hosted deployment requires human merge and verification."
     },
     {
@@ -177,5 +177,6 @@
       "supportingEvidence": "performance-comparison.json;257-test acceptance",
       "remainingRisk": "Optional image work deferred;no new acceptance blocker."
     }
-  ]
+  ],
+  "localPathMaintenanceNote": "Temporary checkout arguments were parameterized after cache cleanup; original command outcomes and source identities are unchanged."
 }

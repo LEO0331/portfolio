@@ -1,5 +1,7 @@
 # Case 005 — Shade Equity pinned-source audit
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Audited **2026-10-20** against
 [`612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9`](https://github.com/LEO0331/taipei-bin-map/commit/612d621cd8f43d1ebf0b5a06f48a83ea454fc6d9).
 GitHub's PR API confirms [Bin Map PR #19](https://github.com/LEO0331/taipei-bin-map/pull/19)
@@ -24,7 +26,7 @@ acquisition, GIS ETL, upstream engine execution or upstream changes were perform
 All listed files were accessible at the pinned commit, including **both** tolerance
 paths (HTTP 200); no missing-path substitution was necessary. The pinned README,
 progress and session handoff were also retrieved. Local copies retain upstream
-paths under ignored `.omx/source-shade-equity/`; PR API responses are retained as
+paths under ignored a temporary source-replay cache (retired); PR API responses are retained as
 `source-pr-19.json` and `portfolio-pr-20.json`. No large original GIS payloads or
 district chunks were copied into Portfolio's application assets.
 

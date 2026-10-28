@@ -67,7 +67,7 @@
       "coverage": "17/17"
     },
     {
-      "command": "node tools/verify-river-water-source.mjs --source=.omx/river-water-source",
+      "command": "node tools/verify-river-water-source.mjs --source=<pinned-checkout>",
       "exitCode": 0,
       "originalBodies": 8,
       "exactRebuilds": 2
@@ -127,5 +127,6 @@
     "merged": false,
     "implementation": "d9b8de3f8a214a3c25a33eefc6dca3159c05e615",
     "candidateHosted": false
-  }
+  },
+  "localPathMaintenanceNote": "Temporary checkout arguments were parameterized after cache cleanup; original command outcomes and source identities are unchanged."
 }

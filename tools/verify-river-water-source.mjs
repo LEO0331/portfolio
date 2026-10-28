@@ -6,7 +6,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import ts from 'typescript';
 
-const source = path.resolve(process.argv.find(argument => argument.startsWith('--source='))?.slice(9) ?? '.omx/river-water-source');
+const source = path.resolve(process.argv.find(argument => argument.startsWith('--source='))?.slice(9) ?? 'node_modules/.cache/river-water-source');
 const sourceSha = 'beedd7eef3592c12bb66c21937add068f82ce5fa';
 const fixturePath = path.resolve('tests/fixtures/govtech-river-water-source.json');
 const hash = value => createHash('sha256').update(value).digest('hex');
@@ -17,7 +17,7 @@ assert.equal(execFileSync('git', ['rev-parse', 'HEAD'], { cwd: source, encoding:
 assert.equal(execFileSync('git', ['status', '--porcelain', '--untracked-files=no'], { cwd: source, encoding: 'utf8' }).trim(), '', 'Pinned source must have no tracked edits');
 
 // Only generated executable copies are written. The source checkout is never modified.
-const cache = path.resolve('.omx/river-water-replay');
+const cache = path.resolve('node_modules/.cache/river-water-replay');
 await mkdir(cache, { recursive: true });
 await writeFile(path.join(cache, 'package.json'), '{"type":"commonjs"}\n');
 const modulePaths = [

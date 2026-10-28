@@ -1,12 +1,14 @@
 # GovTech Showcase v1.4 verification — 2026-10-21
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-shade-equity-v1-4`, based on merged main `bbe90d946a576f713639075c955bee69bc1c9809` (Portfolio PR #20). Scope: Portfolio only. No official GIS acquisition/ETL, source engine execution, backend, database, new dependency or fabricated field-survey shortlist.
 
 ## Audit, plan and interruption recovery
 
-Read repository contracts, README pair, ledger/progress/handoff, Case004/template/v1.3 verification; inspected types, case/project data, shared pages/components, drawer, localization, routing/SEO and existing tests. A clean working tree was confirmed and a dedicated branch, scoped feature entry and concise pre-edit plan created at `.omx/plans/govtech-v1.4.md`.
+Read repository contracts, README pair, ledger/progress/handoff, Case004/template/v1.3 verification; inspected types, case/project data, shared pages/components, drawer, localization, routing/SEO and existing tests. A clean working tree was confirmed and a dedicated branch, scoped feature entry and concise pre-edit plan created at a temporary pre-edit plan (retired).
 
-Baseline executed on 2026-10-20 before app edits: npm ci, harness, 22 unit tests, TypeScript/Vite build, 77 Playwright checks / 17 tracked flows (100%), and diff check passed. npm audit returned five pre-existing high Tailwind/braces-chain findings. The baseline report remains in ignored `.omx/verification-v1.4/baseline-e2e.json`.
+Baseline executed on 2026-10-20 before app edits: npm ci, harness, 22 unit tests, TypeScript/Vite build, 77 Playwright checks / 17 tracked flows (100%), and diff check passed. npm audit returned five pre-existing high Tailwind/braces-chain findings. The baseline report remains in ignored a temporary verification workspace (retired).
 
 Work resumed on 2026-10-21 after an account usage-limit interruption. Saved source audit, tests, multi-case integration, English case and partial documentation were retained; missing Chinese case/README/template work was completed from that state. No earlier verification was represented as a new run.
 
@@ -65,11 +67,11 @@ The added narrative initially raised the eager main JavaScript to 523.58 kB (169
 
 Route splitting exposed three pre-existing immediate-count assertions that read before content mounted. Their assertions are preserved with visible-content readiness checks; no fixed delays, disabled tests or retries were introduced. One readiness edit initially missed a CRLF line and was applied explicitly, then the full 92-check run passed.
 
-Root reproduction: npx vite build --base / --outDir .omx/govtech-v1.4-root/dist; copied the unchanged generator/site helper and current routeConfig with a root Vite config to the fixture, then generated entries from its working directory. The browser script checked actual generated files before serving them, exercised 10 case URLs per base and five widths, and recorded zero page errors. Summaries remain ignored under .omx/verification-v1.4/. Existing CSP is preserved; fonts are blocked in review contexts for reproducible system-font fallback.
+Root reproduction: a Vite root-base build in a retired temporary fixture; copied the unchanged generator/site helper and current routeConfig with a root Vite config to the fixture, then generated entries from its working directory. The browser script checked actual generated files before serving them, exercised 10 case URLs per base and five widths, and recorded zero page errors. Summaries remain ignored under a temporary verification workspace (retired) Existing CSP is preserved; fonts are blocked in review contexts for reproducible system-font fallback.
 
 ## Visual evidence
 
-Two upstream local-verification screenshots were inspected before linking. Local Portfolio production previews: [five-case landing](./images/govtech-v1.4-landing-desktop.png), [Shade case desktop](./images/shade-equity-case-desktop.png), [source/matching/scenario tables](./images/shade-equity-scenarios-desktop.png), [Chinese mobile](./images/shade-equity-case-mobile-zh.png), [Chinese mobile dark](./images/shade-equity-case-mobile-zh-dark.png), [inventory versus eligibility gate](./images/shade-equity-eligibility-desktop.png), and [Bin Map dual-case drawer](./images/bin-map-dual-case-links.png). [Structured verdict](./govtech-v1.4-visual-verdict.json): 95/100 compared with the prior case layout. Initial 88/revise mobile verdict and correction are retained in ignored .omx/state/govtech-v1.4/ralph-progress.json. Sticky navigation was hidden only for the scenario-section capture; no fake map, canopy or heat layer is generated.
+Two upstream local-verification screenshots were inspected before linking. Local Portfolio production previews: [five-case landing](./images/govtech-v1.4-landing-desktop.png), [Shade case desktop](./images/shade-equity-case-desktop.png), [source/matching/scenario tables](./images/shade-equity-scenarios-desktop.png), [Chinese mobile](./images/shade-equity-case-mobile-zh.png), [Chinese mobile dark](./images/shade-equity-case-mobile-zh-dark.png), [inventory versus eligibility gate](./images/shade-equity-eligibility-desktop.png), and [Bin Map dual-case drawer](./images/bin-map-dual-case-links.png). [Structured verdict](./govtech-v1.4-visual-verdict.json): 95/100 compared with the prior case layout. Initial 88/revise mobile verdict and correction are retained in ignored a temporary visual-review record (retired) Sticky navigation was hidden only for the scenario-section capture; no fake map, canopy or heat layer is generated.
 
 ## Changes and remaining limits
 

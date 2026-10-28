@@ -1,5 +1,7 @@
 # GovTech Showcase v1.7 verification — 2026-10-22
 
+> Maintenance note: One-off local plans, checkouts and runners referenced by this historical report were retired during repository cleanup. Recorded source identities, hashes, results and committed evidence remain unchanged. Temporary command arguments are descriptive placeholders, not claims that a new path was executed.
+
 Branch: `codex/govtech-wifi-allocation-case-008`. Fetched Portfolio base: `f291c923fe48cbd99d69b42cdcd8a4641dc9d125`, including merged Case007 PR25. Work is isolated in the attached Codex worktree. Scope: Portfolio only; no upstream writes, new dependency, fresh official-data replacement, production GIS backend or runtime policy snapshot acquisition. Exactly one PR to main is the publication target; no automatic merge.
 
 ## Verified prerequisite and identities
@@ -78,7 +80,7 @@ Baseline main312.72kB/100.63gzip → final313.89kB/100.97gzip (+1.17kB/+0.34gzip
 
 Upstream measurements retain their attribution:historical v1.0 snapshot1707558/162570gzip,policyJS28424/CSS3511,23Node tests;v1.1 snapshot158672/17567gzip,optionalgeometry437741/140735gzip,separatescenario3154696/55597gzip,100warmedlocalmedian0.0947ms/p950.1494ms. These are not visitor or Wi-Fi service measurements.
 
-[Browser evidence](./evidence/govtech-v1.7/browser-verification.json),[visual verdict](./evidence/govtech-v1.7/visual-verdict.json),[English desktop](./evidence/govtech-v1.7/en-desktop.png),[Chinese mobile dark](./evidence/govtech-v1.7/zh-mobile-dark.png),[scenario table](./evidence/govtech-v1.7/en-scenarios.png) and[Case007 design reference](./evidence/govtech-v1.7/reference-bus-desktop.png). Seven new screenshots cover desktop/mobile,both languages,light/dark,scenario tables and architecture. Visual95/100 matches established hierarchy and locally scrolling tables. Structured verdict also persists in ignored `.omx/state/govtech-v1.7/ralph-progress.json`;no OMX runtime was launched.
+[Browser evidence](./evidence/govtech-v1.7/browser-verification.json),[visual verdict](./evidence/govtech-v1.7/visual-verdict.json),[English desktop](./evidence/govtech-v1.7/en-desktop.png),[Chinese mobile dark](./evidence/govtech-v1.7/zh-mobile-dark.png),[scenario table](./evidence/govtech-v1.7/en-scenarios.png) and[Case007 design reference](./evidence/govtech-v1.7/reference-bus-desktop.png). Seven new screenshots cover desktop/mobile,both languages,light/dark,scenario tables and architecture. Visual95/100 matches established hierarchy and locally scrolling tables. Structured verdict also persists in ignored a temporary visual-review record (retired).
 
 Source images inspected:original explorer andModeA desktop at historical phase;all four v1.1locale/viewport images. Chinese desktop shows boundary overlay and hypothetical research circles,not measured radio reach. Explorer image has markers without visible basemap tiles. No screenshot is represented as public-host or government acceptance.
 
