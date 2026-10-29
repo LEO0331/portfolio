@@ -13,11 +13,12 @@ export function ExplorerScene({ groups, nodes, matches, groupId, selectedId, lab
   const rows = Math.ceil((group ? visible.length : groups.length) / 3);
   const mobileRows = group ? visible.length : Math.ceil(groups.length / 2);
   const rowHeight = group && visible.length > 3 ? 280 : 240;
+  const constrainTiles = group ? visible.length > 3 : rows > 1 && groups.some(item => !item.visual.position);
   return <section className="civic-scene" aria-label={labels.scene}>
     <div className="civic-scene-heading"><span className="civic-kicker">{group ? labels.selectedGroup : `01 — ${String(groups.length).padStart(2, "0")}`}</span>
       <h2 id={headingId} tabIndex={-1}>{group?.label ?? labels.overview}</h2><p>{group ? group.description ?? labels.next : labels.instructions}</p>
     </div>
-    <div className={`civic-islands ${group ? "civic-islands-focused" : ""} ${visible.length > 3 ? "civic-islands-many" : ""}`} style={{ "--scene-min-height": `${Math.max(group ? 420 : 0, rows * rowHeight)}px`, "--scene-mobile-height": `${Math.max(group ? 650 : 600, mobileRows * (group ? 210 : 200))}px` } as CSSProperties}>
+    <div className={`civic-islands ${group ? "civic-islands-focused" : ""} ${constrainTiles ? "civic-islands-many" : ""}`} style={{ "--scene-min-height": `${Math.max(group ? 420 : 0, rows * rowHeight)}px`, "--scene-mobile-height": `${Math.max(group ? 650 : 600, mobileRows * (group ? 210 : 200))}px` } as CSSProperties}>
       <svg className="civic-waterlines" viewBox="0 0 900 600" preserveAspectRatio="none" aria-hidden="true"><ellipse cx="450" cy="315" rx="410" ry="245" /><ellipse cx="450" cy="315" rx="350" ry="200" /><ellipse cx="450" cy="315" rx="290" ry="155" /></svg>
       {!group ? groups.map((item, index) => {
         const count = nodes.filter(node => node.groupId === item.id).length;

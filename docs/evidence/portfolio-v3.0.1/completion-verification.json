@@ -1,0 +1,430 @@
+{
+  "completedDate": "2026-10-29",
+  "base": "7743cf6f78876da218c2a9d497fe38adb420f6cf",
+  "resumedFrom": "61322ac",
+  "branch": "codex/portfolio-v3-0-1-stabilization",
+  "verdict": "PASS_WITH_LIMITATIONS",
+  "freshBaseline": {
+    "checkout": "Disposable detached merged-v3 checkout",
+    "auditVulnerabilities": 0,
+    "unit": 37,
+    "browser": {
+      "startTime": "2026-10-29T00:10:34.461Z",
+      "duration": 148939.48500000002,
+      "expected": 269,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "workers": 2,
+    "installExitCode": 0
+  },
+  "final": {
+    "auditVulnerabilities": 0,
+    "unit": 43,
+    "browser": {
+      "startTime": "2026-10-29T00:26:27.190Z",
+      "duration": 172641.08899999998,
+      "expected": 281,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "workers": 2,
+    "flows": "17/17",
+    "registeredRoutes": 42,
+    "indexableRoutes": 40,
+    "pages": {
+      "states": 80,
+      "routes": 44,
+      "pass": true
+    },
+    "root": {
+      "states": 80,
+      "routes": 44,
+      "pass": true
+    },
+    "pageErrors": 0,
+    "unexpectedRequests": 0,
+    "desktopOverviewByteIdentical": true,
+    "protectedUnchanged": 51,
+    "installExitCode": 0,
+    "harnessFeatures": 31
+  },
+  "additionalRegressions": [
+    {
+      "id": "model-coordinate-pair",
+      "before": "Focused unit test fails on empty coordinates;short/long/sparse/null/string tuples also covered after fix.",
+      "after": "Exactly two finite in-range coordinates required for either optional layout.",
+      "scope": "Runtime adapter validation;no current typed civic positions changed."
+    },
+    {
+      "id": "automatic-group-layout",
+      "before": "Independent12-group overview browser test fails label/caption painted hit targeting.",
+      "after": "Default multi-row group overviews reuse the capped plinth budget;24label/caption targets pass.",
+      "scope": "Only automatic overview placement;reviewed explicit six-domain coordinates retained."
+    }
+  ],
+  "production": {
+    "checkedAt": "2026-10-29T00:35:19.604Z",
+    "attempts": [
+      {
+        "method": "Existing Playwright production probe",
+        "url": "https://leo0331.github.io/portfolio/",
+        "result": "blocked",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED"
+      },
+      {
+        "method": "Available in-app browser",
+        "url": "https://leo0331.github.io/portfolio/govtech/explore",
+        "result": "blocked",
+        "error": "net::ERR_NETWORK_ACCESS_DENIED"
+      }
+    ],
+    "scope": "No fresh production render pass claimed. Existing2026-10-28 production evidence remains separately attributed.",
+    "deploymentMetadata": {
+      "headSha": "7743cf6f78876da218c2a9d497fe38adb420f6cf",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/LEO0331/portfolio/actions/runs/40699814758",
+      "updatedAt": "2026-10-28T13:49:09Z"
+    }
+  },
+  "reuse": {
+    "genericImportsOnlyReactAndSiblingFiles": true,
+    "independentHost": true,
+    "routerLocaleTailwindRequired": false,
+    "additionalGroups": {
+      "fixture": "Independent plain React host;12automaticgroups/12nodes;no detail or Portfolio providers",
+      "width": 1440,
+      "targets": [
+        {
+          "label": "Resource group 1",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 2",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 3",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 4",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 5",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 6",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 7",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 8",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 9",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 10",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 11",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        },
+        {
+          "label": "Resource group 12",
+          "hit": true
+        },
+        {
+          "label": "1 of 1",
+          "hit": true
+        }
+      ],
+      "pass": true
+    },
+    "secondRepositoryModified": false,
+    "packagePublished": false,
+    "ready": "Integration trial ready;target host acceptance remains required."
+  },
+  "performance": {
+    "conditionsMatch": true,
+    "scope": "Three-sample medians at 4x CPU slowdown; CDP/paint/observed-result timings are not React profiling, official INP or statistically established production speed improvements.",
+    "beforeAssets": [
+      {
+        "name": "GovTechExplorerPage-aq9ar8kx.js",
+        "bytes": 17529
+      },
+      {
+        "name": "GovTechExplorerPage-C2m6NumB.css",
+        "bytes": 9455
+      }
+    ],
+    "afterAssets": [
+      {
+        "name": "GovTechExplorerPage-C3WPeCOP.js",
+        "bytes": 21384
+      },
+      {
+        "name": "GovTechExplorerPage-DWMQzfhF.css",
+        "bytes": 10631
+      }
+    ],
+    "groups": [
+      {
+        "width": 390,
+        "path": "",
+        "before": {
+          "jsBytes": 105592,
+          "fcpMs": 388,
+          "scriptMs": 73.21,
+          "layoutMs": 246.06,
+          "styleMs": 17.01,
+          "maxCls": 0,
+          "longTaskTotalMs": 309
+        },
+        "after": {
+          "jsBytes": 105573,
+          "fcpMs": 464,
+          "scriptMs": 103.76,
+          "layoutMs": 280.21,
+          "styleMs": 22.54,
+          "maxCls": 0,
+          "longTaskTotalMs": 369
+        }
+      },
+      {
+        "width": 390,
+        "path": "govtech/explore",
+        "before": {
+          "jsBytes": 133589,
+          "fcpMs": 288,
+          "scriptMs": 85.83,
+          "layoutMs": 259.01,
+          "styleMs": 21.56,
+          "maxCls": 0,
+          "longTaskTotalMs": 323,
+          "searchObservedPaintMs": 86.5,
+          "selectionObservedPaintMs": 107.7
+        },
+        "after": {
+          "jsBytes": 135067,
+          "fcpMs": 364,
+          "scriptMs": 117.73,
+          "layoutMs": 297.13,
+          "styleMs": 23.32,
+          "maxCls": 0,
+          "longTaskTotalMs": 391,
+          "searchObservedPaintMs": 103,
+          "selectionObservedPaintMs": 136.2
+        }
+      },
+      {
+        "width": 390,
+        "path": "govtech/explore?domain=environment&case=river-water-quality",
+        "before": {
+          "jsBytes": 145955,
+          "fcpMs": 292,
+          "scriptMs": 96.14,
+          "layoutMs": 303.9,
+          "styleMs": 17.32,
+          "maxCls": 0,
+          "longTaskTotalMs": 315
+        },
+        "after": {
+          "jsBytes": 147433,
+          "fcpMs": 348,
+          "scriptMs": 115.77,
+          "layoutMs": 344.52,
+          "styleMs": 25.89,
+          "maxCls": 0,
+          "longTaskTotalMs": 426
+        }
+      },
+      {
+        "width": 1440,
+        "path": "",
+        "before": {
+          "jsBytes": 105592,
+          "fcpMs": 392,
+          "scriptMs": 77.42,
+          "layoutMs": 239.22,
+          "styleMs": 20.2,
+          "maxCls": 0,
+          "longTaskTotalMs": 310
+        },
+        "after": {
+          "jsBytes": 105573,
+          "fcpMs": 452,
+          "scriptMs": 94.23,
+          "layoutMs": 274.88,
+          "styleMs": 21.89,
+          "maxCls": 0,
+          "longTaskTotalMs": 353
+        }
+      },
+      {
+        "width": 1440,
+        "path": "govtech/explore",
+        "before": {
+          "jsBytes": 133589,
+          "fcpMs": 296,
+          "scriptMs": 84.44,
+          "layoutMs": 259.82,
+          "styleMs": 18.84,
+          "maxCls": 0,
+          "longTaskTotalMs": 283,
+          "searchObservedPaintMs": 83.7,
+          "selectionObservedPaintMs": 109.2
+        },
+        "after": {
+          "jsBytes": 135067,
+          "fcpMs": 328,
+          "scriptMs": 103.87,
+          "layoutMs": 292.2,
+          "styleMs": 24.47,
+          "maxCls": 0,
+          "longTaskTotalMs": 376,
+          "searchObservedPaintMs": 93.3,
+          "selectionObservedPaintMs": 140.6
+        }
+      },
+      {
+        "width": 1440,
+        "path": "govtech/explore?domain=environment&case=river-water-quality",
+        "before": {
+          "jsBytes": 145955,
+          "fcpMs": 296,
+          "scriptMs": 93.64,
+          "layoutMs": 303.28,
+          "styleMs": 20.41,
+          "maxCls": 0,
+          "longTaskTotalMs": 322
+        },
+        "after": {
+          "jsBytes": 147433,
+          "fcpMs": 328,
+          "scriptMs": 122.83,
+          "layoutMs": 366.28,
+          "styleMs": 33.14,
+          "maxCls": 0,
+          "longTaskTotalMs": 456
+        }
+      }
+    ],
+    "consoleMessages": {
+      "before": 0,
+      "after": 0
+    },
+    "pageErrors": {
+      "before": 0,
+      "after": 0
+    }
+  },
+  "commands": [
+    {
+      "command": "npm run validate:harness",
+      "exitCode": 0
+    },
+    {
+      "command": "npm ci",
+      "exitCode": 0
+    },
+    {
+      "command": "npm audit",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run test:unit",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npx playwright test --workers=2",
+      "exitCode": 0
+    },
+    {
+      "command": "node tools/e2e-coverage-check.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "Copied tools/measure-explorer-stability.mjs baseline/final with isolated output",
+      "exitCode": 0
+    },
+    {
+      "command": "node tools/verify-civic-explorer.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "Actual root Vite build/static generators/Explorer matrix",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "limits": [
+    "Fresh hosted-browser inspection blocked byERR_NETWORK_ACCESS_DENIED;deployment metadata success is not a rendered-site pass.",
+    "Candidate is not hosted until human merge/deployment.",
+    "Three local samples per condition at4xCPU;not official INP,statistical significance or production-speed claims.",
+    "No full assistive-technology certification,second-repository integration or cross-React-version acceptance."
+  ]
+}

@@ -4,17 +4,21 @@ import { InteractiveExplorer, type ExplorerGroup, type ExplorerLabels, type Expl
 
 // This fixture deliberately has no router, locale provider, Tailwind or civic data.
 const extras: ExplorerNode[] = new URLSearchParams(location.search).has("many") ? Array.from({ length: 8 }, (_, index) => ({ id: `extra-${index}`, groupId: "tools", label: `Additional resource ${index + 1}`, target: { href: `#extra-${index}` } })) : [];
-const nodes: ExplorerNode[] = [
+const defaultNodes: ExplorerNode[] = [
   { id: "inspect", groupId: "tools", label: "Inspect inputs", description: "Inspect a retained fixture.", target: { href: "#inspect" } },
   { id: "extract", groupId: "tools", label: "Extract records", target: { href: "#extract" } },
   { id: "alerts", groupId: "tools", label: "Review alerts", category: "warnings", target: { href: "#alerts" } },
   { id: "run-log", groupId: "tools", label: "Run log", target: { href: "#run-log" } },
   { id: "tasks", groupId: "operations", label: "Tasks", target: { href: "#tasks" } }, ...extras
 ];
-const groups: ExplorerGroup[] = [
+const defaultGroups: ExplorerGroup[] = [
   { id: "tools", label: "Review tools", nodeIds: ["run-log", "inspect", "extract", "alerts", ...extras.map(node => node.id)], visual: { color: "#39756b", motif: 0 } },
   { id: "operations", label: "Operations", nodeIds: ["tasks"], visual: { color: "#426e96", motif: 2 } }
 ];
+const manyGroups = new URLSearchParams(location.search).has("many-groups");
+const nodes: ExplorerNode[] = manyGroups ? Array.from({ length: 12 }, (_, index) => ({ id: `resource-${index}`, groupId: `group-${index}`, label: `Resource ${index + 1}`, target: { href: `#resource-${index}` } })) : defaultNodes;
+const groups: ExplorerGroup[] = manyGroups ? nodes.map((node, index) => ({ id: node.groupId, label: `Resource group ${index + 1}`, nodeIds: [node.id], visual: { color: index % 2 ? "#426e96" : "#39756b" } })) : defaultGroups;
+
 const labels: ExplorerLabels = {
   viewMode: "View", scene: "Islands", list: "List", listTitle: "All resources", search: "Find resources", searchPlaceholder: "Search", filter: "Group", all: "All groups",
   reset: "Reset", back: "Overview", overview: "Resource overview", instructions: "Choose a group", selectedGroup: "Selected group", next: "Choose a resource",

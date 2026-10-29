@@ -74,3 +74,17 @@ test("generic desktop detail layout honors the row budget for twelve nodes", asy
     expect(await label.evaluate(element => { const rect = element.getBoundingClientRect(); return document.elementFromPoint(rect.x + rect.width / 2, rect.y + rect.height / 2)?.closest("button") === element.closest("button"); })).toBe(true);
   }
 });
+
+test("generic automatic overview keeps twelve groups reachable without overlapping labels", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("http://127.0.0.1:4189/?many-groups&no-detail");
+  await expect(page.locator(".civic-island")).toHaveCount(12);
+  for (const target of await page.locator(".civic-island-label,.civic-island-caption").all()) {
+    await target.scrollIntoViewIfNeeded();
+    expect(await target.evaluate(element => {
+      const box = element.getBoundingClientRect();
+      return document.elementFromPoint(box.x + box.width / 2, box.y + box.height / 2)?.closest("button") === element.closest("button");
+    })).toBe(true);
+  }
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+});

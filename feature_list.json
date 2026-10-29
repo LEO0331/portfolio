@@ -692,9 +692,26 @@
       "name": "Stabilize civic navigation and expose reusable React explorer primitives",
       "description": "Verified focus/order/touch fixes, typed data-independent interfaces and measured loading/render behavior.",
       "status": "in-progress",
-      "dependencies": ["portfolio-civic-explorer-v3-2026-10"],
-      "doneCriteria": ["Merged v3 prerequisite and actual pre-edit local/production baseline", "Fix confirmed accessibility/UX defects with failing-then-passing regressions", "Generic typed components and thin civic adapter with independent plain-React host tests", "Preserve all case evidence/routes/positioning; run full gate and root/Pages visual/performance checks", "Document second-host contract and deliver one Draft PR without merge"],
-      "evidence": ["PR42 merged7743cf6; baseline37unit/269browser/audit0 with bounded workers", "Five original defects reproduced before app edits; paired18-sample local baseline plus separate6-sample production inspection", "Generic model/adapter and independent host tests added; targeted verification passed; final gate in progress"]
+      "dependencies": [
+        "portfolio-civic-explorer-v3-2026-10"
+      ],
+      "doneCriteria": [
+        "Merged v3 prerequisite and actual pre-edit local/production baseline",
+        "Fix confirmed accessibility/UX defects with failing-then-passing regressions",
+        "Generic typed components and thin civic adapter with independent plain-React host tests",
+        "Preserve all case evidence/routes/positioning; run full gate and root/Pages visual/performance checks",
+        "Document second-host contract and deliver one Draft PR without merge"
+      ],
+      "evidence": [
+        "PR42 merged7743cf6; baseline37unit/269browser/audit0 with bounded workers",
+        "Five original defects reproduced before app edits; paired18-sample local baseline plus separate6-sample production inspection",
+        "Generic model/adapter and independent host tests added; targeted verification passed; final gate in progress",
+        "Fresh2026-10-29mergedv3baseline37unit/269browser/audit0;candidate43unit/281browser0skips-flakes-unexpected,17/17flows,build42routes40indexable,harness31",
+        "Two additional failing-before regressions fixed: malformed runtime coordinate pairs and12automatic-group painted-hit overlap;current51protected hashes unchanged",
+        "Fresh paired18-sample baseline/final;overviewencodedJS+1478B(+1.11%),homepage-19B,CLS0,timingsmixed andnotproduction speed claims",
+        "Currentroot/Pages80states44routeoutcomes each;visual95,independentReacthost5/13resourcesand12groups,defaultPagesrestored",
+        "FreshproductionbrowserinspectionblockedERR_NETWORK_ACCESS_DENIED;deployedmain7743metadata verifiedsuccess,datedevidenceandcandidateacceptance separated"
+      ]
     }
   ]
 }

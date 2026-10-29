@@ -10,7 +10,7 @@ export function validateExplorerModel(nodes: readonly ExplorerNode[], groups: re
     if (!group.id || !group.label) errors.push("Group ID and label are required");
     if (new Set(group.nodeIds).size !== group.nodeIds.length) errors.push(`Duplicate membership: ${group.id}`);
     for (const id of group.nodeIds) if (!nodes.some(node => node.id === id && node.groupId === group.id)) errors.push(`Invalid membership: ${group.id}/${id}`);
-    for (const position of [group.visual.position, group.visual.mobilePosition]) if (position?.some(value => !Number.isFinite(value) || value < 0 || value > 100)) errors.push(`Invalid position: ${group.id}`);
+    for (const position of [group.visual.position, group.visual.mobilePosition]) if (position !== undefined && (!Array.isArray(position) || position.length !== 2 || [position[0], position[1]].some(value => !Number.isFinite(value) || value < 0 || value > 100))) errors.push(`Invalid position: ${group.id}`);
   }
   for (const node of nodes) {
     if (!node.id || !node.label || !node.target.href) errors.push("Node ID, label and navigation target are required");

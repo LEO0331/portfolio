@@ -1,29 +1,35 @@
 # Session Handoff
 
-Updated 2026-10-28. Branch `codex/portfolio-v3-interactive-civic-explorer`, base `2d5f52a` (latest main, including merged v2.6 PR41).
+**Last updated:** 2026-10-29
 
-**Current objective:** Complete original bilingual 2.5D Civic Explorer while preserving thirteen accepted cases and the independent Gridline backend example.
+**Objective:** Complete v3.0.1 on `codex/portfolio-v3-0-1-stabilization`, based on merged v3.0 main `7743cf6f78876da218c2a9d497fe38adb420f6cf` (PR #42).
 
-**Current status:** Complete and delivered as [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42) to main. User handles hosted checks/readiness/manual merge.
+**Status:** Implementation and fresh verification complete; preparing one Draft PR. **PASS_WITH_LIMITATIONS**. Never merge automatically.
 
-## Completed
+### Completed
 
-Six original layered SVG/CSS domain islands; thirteen explicitly mapped unique case nodes; complete ordinary HTML list and existing four-field summaries/limits/maturity; selected-case-only evidence import; existing canonical full-case links and checked public demos. Search/domain filters, reset, URL state/history/refresh/locale, keyboard/focus/Escape, touch and reduced motion. Lazy routes /govtech/explore and /zh/govtech/explore plus optional overview entry. Retired workflow references removed. No dependency, source-project or analytical-content changes.
+Resumed commit `61322ac` and its generic component extraction. Verified mobile order, focus restoration, touch targets, scene width and URL updates. Added failing-before regressions and fixes for malformed coordinate pairs and overlapping labels in automatic twelve-group layouts. All 51 protected file hashes match main; the paired desktop scene captures are byte-identical.
 
-## Verification
+### Verification
 
-Clean baseline install/audit0,34unit,257browser. Final harness30,audit0,37unit,269browser(0skipped/flaky/unexpected),17/17flows,TypeScript/build42registered40indexable,diff check. Root and Pages each80states+44route outcomes; zero runtime errors/overflow/unexpected requests/wrong label targets. Default Pages build restored. Forty canonical data/presentation/dependency files preserved; actual home screenshot unchanged. Home JS +307bytes(+0.29%); Projects+0.34%,GovTech+0.56%,Gridline+0.25%. Explorer overview133589encodedJS; only selected River evidence adds12366bytes.
+- Fresh merged-v3 baseline: clean install, audit zero, 37 unit tests, 269 browser tests and 17/17 tracked flows.
+- Candidate: clean install, audit zero, 43 unit tests, 281 browser tests with no skips/flakes/failures, 17/17 flows, TypeScript/build and harness validation pass.
+- Root and Pages each pass 80 responsive states and 44 route outcomes across five widths, both languages and themes. No page errors, duplicate IDs or overflow. Default Pages build restored.
+- Paired measurements: homepage JS −19 B; Explorer JS +1,478 B (+1.11%); CLS zero. Interaction timings are mixed and do not establish a production speed improvement.
+- Independent plain React host verifies typed models, selection, native/callback navigation, optional details, multiple instances and automatic layouts. Visual verdict: 95/pass.
 
-Review found tablet rectangular hit interception and unrecoverable dynamic-import retry; both fixed and independently rechecked (48tablet targets and abort-once reload recovery). Visual95/pass. Real screenshot/JSON evidence retained under docs/evidence/portfolio-v3/.
+### Limitations
 
-## Blockers and risks
+Fresh production rendering was blocked by `ERR_NETWORK_ACCESS_DENIED` in both available browser paths. GitHub metadata confirms a successful deployment of merged main; this is not a rendered candidate check. Hosted candidate acceptance awaits manual merge/deployment. Full assistive-technology, other browser engines/React versions and actual second-repository acceptance remain unverified.
 
-No implementation or Draft delivery blocker. Hosted candidate checks/production timings and full assistive-technology certification not claimed. Positions are conceptual, evidence is frozen, and demo HTTP availability is not a deployment/function guarantee. Existing upstream evidence limitations remain unchanged.
+### Next Action
 
-## Files Relevant to the Next Update
+Review the Draft PR and CI. After a manual merge, verify hosted mobile, selected/list, history and focus behavior. The generic folder is ready for an integration trial in another React dashboard, with a host adapter, reviewed URLs, labels, routing, detail IO and its own acceptance tests. No package or second-repository changes were made.
 
-New Explorer graph/copy/state, page and five visual/detail/list components plus scoped CSS; route config/router, GovTech optional entry, sitemap; new unit/E2E/QA tools; retired-reference cleanup, README pair and lifecycle files. Details: docs/portfolio-v3-implementation.md.
+## Key Files
 
-## Recommended Next Step
-
-Review [Draft PR 42](https://github.com/LEO0331/portfolio/pull/42). User handles hosted E2E/Lighthouse and manual merge. No Policy14/Case014, new source data, homepage redesign, Dashboard implementation, package publication or upstream modifications. Reuse HexIsland through a separate Dashboard adapter only in a future authorized task.
+- `src/components/explorer/`: generic types, model, renderer and scoped CSS.
+- `src/data/govtechExplorerAdapter.ts`: six-domain/thirteen-case adapter.
+- `docs/explorer-component-api.md`: integration contract and example.
+- `docs/portfolio-v3.0.1-stabilization.md`: findings and measurements.
+- `docs/evidence/portfolio-v3.0.1/completion-verification.json`: fresh acceptance evidence.

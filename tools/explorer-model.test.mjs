@@ -46,3 +46,13 @@ test('generic component imports stay inside their boundary except for React', ()
     }
   }
 });
+
+test('runtime adapter coordinates require a complete finite pair on either layout', () => {
+  for (const field of ['position', 'mobilePosition']) {
+    for (const value of [[], [50], [50, 50, 50], Array(2), [50, undefined], null, '50,50']) {
+      const invalid = [{ ...groups[0], visual: { color: '#39756b', [field]: value } }, groups[1]];
+      assert.ok(validateExplorerModel(nodes, invalid).includes('Invalid position: tools'), `${field}: ${JSON.stringify(value)}`);
+    }
+    assert.deepEqual(validateExplorerModel(nodes, [{ ...groups[0], visual: { color: '#39756b', [field]: [0, 100] } }, groups[1]]), []);
+  }
+});
