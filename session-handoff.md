@@ -22,7 +22,7 @@ Historical authoritative data and Render cold-start timing remain scoped limitat
 
 ## Recommended Next Step
 
-Complete verification and link the pushed Portfolio companion branch from one Dashboard Draft PR. Do not create a second PR or merge automatically.
+Review Draft PR #10 and its linked Portfolio companion branch. Manual application/merge and the subsequent expected-SHA hosted acceptance remain release-owner actions. Do not create another PR or merge automatically.
 
 ## Files Relevant to the Next Update
 

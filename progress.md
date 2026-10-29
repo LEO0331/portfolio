@@ -26,7 +26,7 @@ Render cold starts can exceed short audit timeouts. Shared geometry does not imp
 
 ### Next Session Should
 
-Finish relevant verification, publish the Portfolio companion branch and link it from exactly one Dashboard Draft PR. Review/merge manually and confirm the actual hosted release afterward.
+Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply each repository change manually, then inspect the expected-SHA hosted job and existing-user cache behavior. No additional PR or feature is required.
 
 ## Update Contract
 
