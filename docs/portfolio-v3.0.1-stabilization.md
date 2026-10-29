@@ -1,5 +1,7 @@
 # Civic Explorer v3.0.1 stabilization
 
+**Current-state update, 2026-10-29:** PR #43 is merged at `632b81a4acdfdf344466a447affac3e58855895e` and has a successful Pages deployment record. The candidate/draft statements below describe the original stabilization delivery. Preserve its dated measurements; use the [maintenance handoff](./civic-explorer-maintenance.md) and current lifecycle files for subsequent work and hosted-acceptance limits.
+
 Completed **2026-10-29**. Verdict: **PASS_WITH_LIMITATIONS** for the locally verified candidate.
 
 Merged v3.0 [PR 42](https://github.com/LEO0331/portfolio/pull/42) was independently confirmed before stabilization. Exact baseline: `7743cf6f78876da218c2a9d497fe38adb420f6cf`. Work continues on the single isolated branch `codex/portfolio-v3-0-1-stabilization`, resuming implementation commit `61322ac` rather than duplicating its completed extraction. No other repository, dependency, canonical case evidence, analytical claim or recruiter positioning was changed.

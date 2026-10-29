@@ -442,7 +442,7 @@ export const projects: Project[] = [
     ],
     image: "/src/assets/images/projects/skill-gen.png",
     demoUrl: "https://leo0331.github.io/projects_drafts/",
-    repoUrl: "https://github.com/LEO0331/projects_drafts/tree/main/tools/skill-gen",
+    repoUrl: "https://github.com/LEO0331/projects_drafts/tree/d498a2d36c10e5f7eb6de19e4233a050c2dbc507/tools/skill-gen",
     status: "live",
     featured: false
   },

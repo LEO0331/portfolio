@@ -1,5 +1,9 @@
 # LEO0331 工程作品集
 
+## 維護狀態 — 2026-10-29
+
+Civic Explorer 進入功能凍結。[最新維護交接](./docs/civic-explorer-maintenance.md)記錄已合併版本、獨立的 Dashboard adapter、單一 Draft PR 與作品集配套分支、來源連結複查，以及仍待正式部署後執行的驗收。歷史報告保留原始日期與驗證範圍。
+
 [English](./README.md) | **繁體中文**
 
 [![E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml)

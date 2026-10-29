@@ -1,4 +1,9 @@
 ---
+
+## Maintenance handoff — 2026-10-29
+
+Follow [current Civic Explorer maintenance guidance](./docs/civic-explorer-maintenance.md) for release/source evidence, the independent Dashboard adapter and feature-freeze boundaries. Recheck links without equating a cold-start timeout with confirmed downtime.
+
 name: portfolio-template-builder
 description: Reuse this repository as a template to build and deploy a personal portfolio to GitHub Pages using React, Vite, TypeScript, Tailwind, crawlable static routes, and Playwright E2E checks.
 ---

@@ -1,5 +1,9 @@
 # Portfolio Template Wiki
 
+## Current maintenance reference — 2026-10-29
+
+Use [Civic Explorer maintenance handoff](./docs/civic-explorer-maintenance.md) for release state, component ownership and the feature freeze. The Dashboard copies only attributed geometry; it owns its catalogue, React version and navigation state.
+
 ## Overview
 This project is a static portfolio template designed for GitHub Pages deployment.
 

@@ -48,7 +48,9 @@ The component handles keyboard, native buttons, semantic HTML list/details, live
 
 `GovTechExplorerPage` owns URL parse/serialize, query-free canonical metadata, locale and router navigation. `ExplorerDetailPanel` owns selected-case evidence IO and original overview/maturity/source content. The generic folder imports none of these. The former civic scene/list/control implementations and duplicate civic search implementation are removed rather than retained alongside the generic renderer.
 
-## Second-repository integration
+## Verified reuse and second-repository integration
+
+As of 2026-10-29, Dashboard PRs #6–8 are merged. That host reused the MIT-attributed hexagonal geometry with its own React 19 catalogue/tab interface; it did not adopt this complete controlled React 18 API. Both adapters remain independent. The following steps still describe an integration trial for the full component folder, not an assertion that Dashboard runs it. See the [maintenance handoff](./civic-explorer-maintenance.md) for current ownership and release limits.
 
 1. Bring the `src/components/explorer` folder into the other React + TypeScript build with CSS import support. Do not publish a package yet.
 2. Define a host adapter producing reviewed `ExplorerNode[]`, `ExplorerGroup[]` and `ExplorerLabels`. Preserve the host's own IDs and content references; run model validation in its tests.
