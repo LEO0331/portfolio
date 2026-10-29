@@ -2,7 +2,7 @@
 
 **Current objective:** Complete the final Civic Explorer maintenance findings on the Portfolio companion branch.
 
-**Current status:** In progress; Dashboard repairs are isolated in its own branch. One Draft PR only, in Dashboard; no automatic merge.
+**Current status:** Maintenance implementation and verification complete. Dashboard Draft PR #10 is open/unmerged; Portfolio companion branch pushed. No automatic merge.
 
 ## Completed
 
@@ -10,7 +10,7 @@ Source URL pin verified, Render application availability rechecked, and relevant
 
 ## Verification Evidence
 
-Companion gate passed (43 unit, 281 browser, 17/17 flows, audit zero); branch/PR delivery pending; use progress.md for actual results and docs/civic-explorer-maintenance.md for the finding-by-finding scope.
+Companion gate passed (43 unit, 281 browser, 17/17 flows, audit zero); companion branch and Draft PR #10 delivered; use progress.md for actual results and docs/civic-explorer-maintenance.md for the finding-by-finding scope.
 
 ## Blockers
 
@@ -31,3 +31,7 @@ README.md, README.zh-TW.md, wiki.md, skill.md, docs/explorer-component-api.md, d
 ## Latest production evidence — 2026-10-29
 
 On 2026-10-29 the Playwright fallback successfully rendered both published mains: 43/43 live checks passed across English/Traditional Chinese and 390/1440px. Portfolio covered six domains, thirteen-item HTML navigation, selected evidence, Back/Forward/reload, search and core routes; Dashboard covered five groups, 46 items, HTML fallback, bilingual search and dataset navigation. No page errors were observed. This supersedes the earlier browser-access limitation for these published versions only; the maintenance candidate remains unmerged and its expected-SHA hosted job must run after deployment.
+
+## Maintenance delivery — 2026-10-29
+
+[Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.

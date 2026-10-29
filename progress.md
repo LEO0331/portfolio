@@ -6,7 +6,7 @@
 
 **Active work:** Civic Explorer maintenance handoff on `codex/civic-explorer-maintenance-handoff`, from merged v3.0.1 main `632b81a4acdfdf344466a447affac3e58855895e`.
 
-**Status:** In progress. One Dashboard Draft PR will contain the code repairs; this Portfolio companion branch supplies reviewed link and current-state documentation updates. No automatic merge.
+**Status:** Complete for Draft delivery. [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged; this Portfolio companion branch supplies reviewed link and current-state documentation updates. No automatic merge.
 
 ### Completed
 
@@ -482,3 +482,7 @@ Companion gate: 43 unit / 281 browser / 17 flows, clean install, audit zero, bui
 On 2026-10-29 the Playwright fallback successfully rendered both published mains: 43/43 live checks passed across English/Traditional Chinese and 390/1440px. Portfolio covered six domains, thirteen-item HTML navigation, selected evidence, Back/Forward/reload, search and core routes; Dashboard covered five groups, 46 items, HTML fallback, bilingual search and dataset navigation. No page errors were observed. This supersedes the earlier browser-access limitation for these published versions only; the maintenance candidate remains unmerged and its expected-SHA hosted job must run after deployment.
 
 Commit-bound release acceptance: 45/45 checks passed for implementation `8d71ca6`; a preview with the correct code SHA but tampered real-price-summary bytes failed exactly the data-hash identity check. Original preview bytes restored. Candidate hosting still requires manual merge and the actual post-deploy job.
+
+## Maintenance delivery — 2026-10-29
+
+[Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.

@@ -756,7 +756,7 @@
       "id": "portfolio-civic-explorer-maintenance-2026-10",
       "name": "Resolve final audit maintenance findings and refresh release handoff",
       "description": "Reviewed source pin, availability evidence and current cross-repository maintenance documentation without new features.",
-      "status": "in-progress",
+      "status": "complete",
       "dependencies": [
         "portfolio-explorer-stabilization-v3-0-1-2026-10"
       ],
@@ -766,7 +766,8 @@
         "Pass supported gate and deliver companion branch linked from one Dashboard Draft PR"
       ],
       "evidence": [
-        "2026-10-29: final cross-repository audit reviewed; Skill Generator pinned to verified d498a2d; Render HTTP200 actual app after41.6s; no sync writes/new repository additions"
+        "2026-10-29: final cross-repository audit reviewed; Skill Generator pinned to verified d498a2d; Render HTTP200 actual app after41.6s; no sync writes/new repository additions",
+        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10"
       ]
     }
   ]
