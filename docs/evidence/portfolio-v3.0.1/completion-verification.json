@@ -426,5 +426,14 @@
     "Candidate is not hosted until human merge/deployment.",
     "Three local samples per condition at4xCPU;not official INP,statistical significance or production-speed claims.",
     "No full assistive-technology certification,second-repository integration or cross-React-version acceptance."
-  ]
+  ],
+  "delivery": {
+    "url": "https://github.com/LEO0331/portfolio/pull/43",
+    "draft": true,
+    "state": "open",
+    "merged": false,
+    "implementationCommit": "effd7e3",
+    "handoffMarkerCorrection": "c24d4b3",
+    "automaticMerge": false
+  }
 }

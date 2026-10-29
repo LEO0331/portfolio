@@ -6,7 +6,7 @@
 
 **Objective:** Complete v3.0.1 on `codex/portfolio-v3-0-1-stabilization`, based on merged v3.0 main `7743cf6f78876da218c2a9d497fe38adb420f6cf` (PR #42).
 
-**Status:** Implementation and fresh verification complete; preparing one Draft PR. **PASS_WITH_LIMITATIONS**. Never merge automatically.
+**Status:** Implementation and fresh verification complete; [Draft PR #43](https://github.com/LEO0331/portfolio/pull/43) is open and unmerged. **PASS_WITH_LIMITATIONS**. Never merge automatically.
 
 ### Completed
 
@@ -468,3 +468,5 @@ Eleven bilingual cases, source replay/neutral examples and per-case runtime load
 ### 2026-10-25 — Complete GovTech v2.0 Food Hygiene Case 011
 
 Eleven bilingual cases, source replay/neutral examples and per-case runtime loading complete. Existing20localizedrecords preserved. Final 29 unit/209Chromium/17flows, audit0,280matrix and 50root/Pages outcomes passed. Representative Bridge JS falls52.9% with byte-identical screenshot; no runtime source snapshot. Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge.
+
+Delivery verified on 2026-10-29: one Draft PR, open and unmerged, from `codex/portfolio-v3-0-1-stabilization` to main. Implementation evidence commit: `effd7e3`; handoff marker correction: `c24d4b3`. Review and merge remain manual.

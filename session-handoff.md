@@ -4,7 +4,7 @@
 
 **Current objective:** Complete v3.0.1 on `codex/portfolio-v3-0-1-stabilization`, based on merged v3.0 main `7743cf6f78876da218c2a9d497fe38adb420f6cf` (PR #42).
 
-**Current status:** Implementation and fresh verification complete; preparing one Draft PR. **PASS_WITH_LIMITATIONS**. Never merge automatically.
+**Current status:** Implementation and fresh verification complete; [Draft PR #43](https://github.com/LEO0331/portfolio/pull/43) is open and unmerged. **PASS_WITH_LIMITATIONS**. Never merge automatically.
 
 ### Completed
 
@@ -37,3 +37,5 @@ Review the Draft PR and CI. After a manual merge, verify hosted mobile, selected
 - `docs/explorer-component-api.md`: integration contract and example.
 - `docs/portfolio-v3.0.1-stabilization.md`: findings and measurements.
 - `docs/evidence/portfolio-v3.0.1/completion-verification.json`: fresh acceptance evidence.
+
+Delivery verified on 2026-10-29: one Draft PR, open and unmerged, from `codex/portfolio-v3-0-1-stabilization` to main. Implementation evidence commit: `effd7e3`; handoff marker correction: `c24d4b3`. Review and merge remain manual.
