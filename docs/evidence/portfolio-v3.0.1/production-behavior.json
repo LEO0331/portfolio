@@ -1,0 +1,102 @@
+{
+  "checkedAt": "2026-10-28T14:29:36.113Z",
+  "scope": "Read-only currently deployed v3 inspection; not the unpublished v3.0.1 candidate.",
+  "checks": [
+    {
+      "locale": "en",
+      "width": 390,
+      "url": "https://leo0331.github.io/portfolio/govtech/explore/?domain=environment&view=list",
+      "heading": "Explore the evidence.",
+      "caseTitle": "River Water Quality Monitoring & Longitudinal Evidence Review",
+      "evidenceLinks": 3,
+      "detailAfterBrowserDom": true,
+      "detailBelowBrowserVisually": false,
+      "assets": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "focusAfterDismissal": {
+        "tag": "BUTTON",
+        "text": "⬡ Island view"
+      }
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "url": "https://leo0331.github.io/portfolio/govtech/explore/?domain=environment&view=list",
+      "heading": "Explore the evidence.",
+      "caseTitle": "River Water Quality Monitoring & Longitudinal Evidence Review",
+      "evidenceLinks": 3,
+      "detailAfterBrowserDom": true,
+      "detailBelowBrowserVisually": false,
+      "assets": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "focusAfterDismissal": {
+        "tag": "BUTTON",
+        "text": "⬡ Island view"
+      }
+    },
+    {
+      "locale": "zh",
+      "width": 390,
+      "url": "https://leo0331.github.io/portfolio/zh/govtech/explore/?domain=environment&view=list",
+      "heading": "從探索走進證據。",
+      "caseTitle": "臺北市河川水質監測與長期趨勢證據查核",
+      "evidenceLinks": 3,
+      "detailAfterBrowserDom": true,
+      "detailBelowBrowserVisually": false,
+      "assets": [
+        "seo-BrGhucZX.js",
+        "index-BwWf60tc.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "focusAfterDismissal": {
+        "tag": "BUTTON",
+        "text": "⬡ 島嶼檢視"
+      }
+    },
+    {
+      "locale": "zh",
+      "width": 1440,
+      "url": "https://leo0331.github.io/portfolio/zh/govtech/explore/?domain=environment&view=list",
+      "heading": "從探索走進證據。",
+      "caseTitle": "臺北市河川水質監測與長期趨勢證據查核",
+      "evidenceLinks": 3,
+      "detailAfterBrowserDom": true,
+      "detailBelowBrowserVisually": false,
+      "assets": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "focusAfterDismissal": {
+        "tag": "BUTTON",
+        "text": "⬡ 島嶼檢視"
+      }
+    }
+  ]
+}

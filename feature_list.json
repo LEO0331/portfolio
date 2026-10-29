@@ -686,6 +686,32 @@
       "dependencies": ["portfolio-final-audit-v2-6-2026-10"],
       "doneCriteria": ["Explicit validated 13-case/six-domain mapping preserving shared repositories", "Original SVG/CSS islands with full HTML list and detail evidence", "Search, filters, selected URLs, history, locale, keyboard, touch and reduced motion", "Lazy root/Pages routes with measured baseline/final cost and full regression", "Remove retired workflow references and deliver one Draft PR without merge"],
       "evidence": ["Base2d5f52a includes merged audit PR41; isolated v3 branch", "Baseline audit0,34unit,257browser,17/17flows passed; actual pre-edit resource capture retained", "Final37unit/269browser/17flows/audit0/build42registered40indexable; both bases80states+44route outcomes passed", "Forty protected canonical files unchanged; home screenshot identical; homeJS+0.29%; visual95/pass; retired workflow references removed", "Draft PR https://github.com/LEO0331/portfolio/pull/42; user owns hosted checks/readiness/manual merge"]
+    },
+    {
+      "id": "portfolio-explorer-stabilization-v3-0-1-2026-10",
+      "name": "Stabilize civic navigation and expose reusable React explorer primitives",
+      "description": "Verified focus/order/touch fixes, typed data-independent interfaces and measured loading/render behavior.",
+      "status": "complete",
+      "dependencies": [
+        "portfolio-civic-explorer-v3-2026-10"
+      ],
+      "doneCriteria": [
+        "Merged v3 prerequisite and actual pre-edit local/production baseline",
+        "Fix confirmed accessibility/UX defects with failing-then-passing regressions",
+        "Generic typed components and thin civic adapter with independent plain-React host tests",
+        "Preserve all case evidence/routes/positioning; run full gate and root/Pages visual/performance checks",
+        "Document second-host contract and deliver one Draft PR without merge"
+      ],
+      "evidence": [
+        "PR42 merged7743cf6; baseline37unit/269browser/audit0 with bounded workers",
+        "Five original defects reproduced before app edits; paired18-sample local baseline plus separate6-sample production inspection",
+        "Fresh2026-10-29mergedv3baseline37unit/269browser/audit0;candidate43unit/281browser0skips-flakes-unexpected,17/17flows,build42routes40indexable,harness31",
+        "Two additional failing-before regressions fixed: malformed runtime coordinate pairs and12automatic-group painted-hit overlap;current51protected hashes unchanged",
+        "Fresh paired18-sample baseline/final;overviewencodedJS+1478B(+1.11%),homepage-19B,CLS0,timingsmixed andnotproduction speed claims",
+        "Currentroot/Pages80states44routeoutcomes each;visual95,independentReacthost5/13resourcesand12groups,defaultPagesrestored",
+        "FreshproductionbrowserinspectionblockedERR_NETWORK_ACCESS_DENIED;deployedmain7743metadata verifiedsuccess,datedevidenceandcandidateacceptance separated",
+        "One Draft PR #43 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/43; implementation effd7e3, with fresh completion evidence and documented hosted-access limitations."
+      ]
     }
   ]
 }

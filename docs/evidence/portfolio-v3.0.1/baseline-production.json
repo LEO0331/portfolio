@@ -1,0 +1,195 @@
+{
+  "stage": "baseline",
+  "checkedAt": "2026-10-28T14:01:21.387Z",
+  "origin": "https://leo0331.github.io",
+  "conditions": {
+    "cpuSlowdown": 4,
+    "reducedMotion": true,
+    "theme": "light",
+    "fonts": "optional stylesheet blocked",
+    "runs": 1,
+    "viewportHeights": 900,
+    "cache": "fresh browser context per sample"
+  },
+  "scope": "Local FCP/CDP/CLS and observed input-to-next-painted-result samples, not official INP, React profiling or production speed claims. Production is a separately attributed availability/behavior inspection.",
+  "assets": [],
+  "samples": [
+    {
+      "width": 390,
+      "path": "",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 1480,
+      "domContentLoadedMs": 1146.2999999523163,
+      "jsBytes": 105709,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js"
+      ],
+      "longTasks": [
+        53,
+        257
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 249.087,
+        "RecalcStyleDuration": 18.005,
+        "ScriptDuration": 76.329
+      },
+      "interactions": {}
+    },
+    {
+      "width": 390,
+      "path": "govtech/explore",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 1260,
+      "domContentLoadedMs": 1003,
+      "jsBytes": 133034,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "longTasks": [
+        54,
+        188,
+        107
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 273.608,
+        "RecalcStyleDuration": 21.094,
+        "ScriptDuration": 94.497
+      },
+      "interactions": {
+        "searchObservedPaintMs": 86,
+        "selectionObservedPaintMs": 123.09999990463257
+      }
+    },
+    {
+      "width": 390,
+      "path": "govtech/explore?domain=environment&case=river-water-quality",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 916,
+      "domContentLoadedMs": 669.3999998569489,
+      "jsBytes": 145450,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "longTasks": [
+        50,
+        183,
+        168
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 333.755,
+        "RecalcStyleDuration": 22.749,
+        "ScriptDuration": 93.061
+      },
+      "interactions": {}
+    },
+    {
+      "width": 1440,
+      "path": "",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 896,
+      "domContentLoadedMs": 543.4000000953674,
+      "jsBytes": 105709,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js"
+      ],
+      "longTasks": [
+        53,
+        262
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 252.583,
+        "RecalcStyleDuration": 19.578000000000003,
+        "ScriptDuration": 73.35600000000001
+      },
+      "interactions": {}
+    },
+    {
+      "width": 1440,
+      "path": "govtech/explore",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 1060,
+      "domContentLoadedMs": 811.2000000476837,
+      "jsBytes": 133034,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "longTasks": [
+        50,
+        181,
+        120
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 275.685,
+        "RecalcStyleDuration": 25.145,
+        "ScriptDuration": 88.572
+      },
+      "interactions": {
+        "searchObservedPaintMs": 69.5,
+        "selectionObservedPaintMs": 107.10000014305115
+      }
+    },
+    {
+      "width": 1440,
+      "path": "govtech/explore?domain=environment&case=river-water-quality",
+      "run": 0,
+      "cls": 0,
+      "fcpMs": 788,
+      "domContentLoadedMs": 541.9000000953674,
+      "jsBytes": 145450,
+      "jsFiles": [
+        "index-BwWf60tc.js",
+        "seo-BrGhucZX.js",
+        "GovTechExplorerPage-aq9ar8kx.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-DNBo9ZxT.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "longTasks": [
+        182,
+        150
+      ],
+      "overflow": false,
+      "cdpMs": {
+        "LayoutDuration": 314.256,
+        "RecalcStyleDuration": 22.622,
+        "ScriptDuration": 97.52199999999999
+      },
+      "interactions": {}
+    }
+  ],
+  "consoleMessages": [],
+  "pageErrors": []
+}

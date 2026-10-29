@@ -7,7 +7,7 @@ import { existsSync } from 'node:fs';
 
 const base = process.env.QUALITY_BASE ?? '/portfolio/';
 const root = process.cwd(), origin = 'http://127.0.0.1:4198';
-const out = resolve('docs/evidence/portfolio-v3');
+const out = resolve(process.env.QUALITY_OUTPUT_DIR ?? 'docs/evidence/portfolio-v3');
 await mkdir(out, { recursive: true });
 const server = spawn(process.execPath, ['node_modules/vite/bin/vite.js', 'preview', '--host', '127.0.0.1', '--port', '4198', '--strictPort', '--base', base], { cwd: root, stdio: 'ignore', windowsHide: true });
 let browser;
@@ -49,6 +49,7 @@ try {
         const ids = [...document.querySelectorAll('[id]')].map(element => element.id);
         return {
           overflow: document.documentElement.scrollWidth > innerWidth + 1,
+          nestedSceneOverflow: [...document.querySelectorAll('.civic-scene')].some(element => element.scrollWidth > element.clientWidth + 1),
           duplicateIds: ids.filter((id, index) => ids.indexOf(id) !== index),
           dark: document.documentElement.classList.contains('dark'), lang: document.documentElement.lang,
           canonical: document.querySelector('link[rel=canonical]')?.href,
@@ -57,7 +58,7 @@ try {
           jsFiles: performance.getEntriesByType('resource').filter(item => item.name.endsWith('.js')).map(item => item.name.split('/').at(-1))
         };
       });
-      checks.push({ locale, theme, width, view, count, hitTargets, ...result, pass: count === expected && hitTargets.every(target => target.pass) && !result.overflow && !result.duplicateIds.length && result.dark === (theme === 'dark') && result.lang === (locale === 'zh' ? 'zh-Hant' : 'en') && result.canonical === origin + base + path });
+      checks.push({ locale, theme, width, view, count, hitTargets, ...result, pass: count === expected && hitTargets.every(target => target.pass) && !result.overflow && !result.nestedSceneOverflow && !result.duplicateIds.length && result.dark === (theme === 'dark') && result.lang === (locale === 'zh' ? 'zh-Hant' : 'en') && result.canonical === origin + base + path });
       if ((locale === 'en' && width === 1440 && theme === 'light') || (locale === 'zh' && width === 390 && theme === 'dark')) {
         await page.evaluate(() => scrollTo(0, 0));
         await page.screenshot({ path: resolve(out, `${base === '/' ? 'root' : 'pages'}-${view}-${locale}-${width}-${theme}.png`), fullPage: true });

@@ -13,7 +13,9 @@ const hooks = registerHooks({ resolve(specifier, context, nextResolve) {
   }
   return nextResolve(specifier, context);
 } });
-const { CASE_DOMAIN, EXPLORER_DOMAINS, getExplorerCases, filterExplorerCases } = await import('../src/data/govtechExplorerGraph.ts');
+const { CASE_DOMAIN, EXPLORER_DOMAINS, getExplorerCases } = await import('../src/data/govtechExplorerGraph.ts');
+const { getGovTechExplorerModel } = await import('../src/data/govtechExplorerAdapter.ts');
+const { filterExplorerNodes, validateExplorerModel } = await import('../src/components/explorer/model.ts');
 const { parseExplorerState, serializeExplorerState } = await import('../src/utils/govtechExplorerState.ts');
 const { govtechCases } = await import('../src/data/govtechCases.ts');
 const { govtechCasesZh } = await import('../src/data/govtechCases.zh.ts');
@@ -54,13 +56,26 @@ test('Explorer URL state is bounded, validated, localized-independent and roundt
   assert.equal(parseExplorerState('?q=%3Cscript%3E').query, '<script>');
 });
 test('Explorer search uses existing bilingual metadata, combines words and domain filters without dropping shared cases', () => {
-  const en = getExplorerCases('en'), zh = getExplorerCases('zh');
-  assert.equal(filterExplorerCases(en, undefined, '  ').length, 13);
-  assert.deepEqual(filterExplorerCases(en, undefined, '013').map(study => study.id), ['river-water-quality']);
-  assert.equal(filterExplorerCases(en, 'housing', 'water').length, 0);
-  assert.equal(filterExplorerCases(en, undefined, 'zzzz-no-result').length, 0);
-  assert.ok(filterExplorerCases(zh, undefined, '河川').some(study => study.id === 'river-water-quality'));
-  assert.ok(filterExplorerCases(en, undefined, 'river water').some(study => study.id === 'river-water-quality'));
-  assert.equal(filterExplorerCases(en, 'environment', '').length, 3);
-  assert.deepEqual(filterExplorerCases(en, undefined, 'digital inclusion').map(study => study.id), ['wifi-allocation']);
+  const en = getGovTechExplorerModel('en', '/portfolio/', path => path).nodes, zh = getGovTechExplorerModel('zh', '/portfolio/', path => '/zh' + path).nodes;
+  assert.equal(filterExplorerNodes(en, undefined, '  ').length, 13);
+  assert.deepEqual(filterExplorerNodes(en, undefined, '013').map(study => study.id), ['river-water-quality']);
+  assert.equal(filterExplorerNodes(en, 'housing', 'water').length, 0);
+  assert.equal(filterExplorerNodes(en, undefined, 'zzzz-no-result').length, 0);
+  assert.ok(filterExplorerNodes(zh, undefined, '河川').some(study => study.id === 'river-water-quality'));
+  assert.ok(filterExplorerNodes(en, undefined, 'river water').some(study => study.id === 'river-water-quality'));
+  assert.equal(filterExplorerNodes(en, 'environment', '').length, 3);
+  assert.deepEqual(filterExplorerNodes(en, undefined, 'digital inclusion').map(study => study.id), ['wifi-allocation']);
+});
+
+test('GovTech adapter preserves source summaries and root/Pages localized navigation without importing full cases', () => {
+  for (const locale of ['en', 'zh']) for (const base of ['/', '/portfolio/']) {
+    const model = getGovTechExplorerModel(locale, base, path => locale === 'zh' ? '/zh' + path : path);
+    assert.deepEqual(validateExplorerModel(model.nodes, model.groups), []);
+    assert.equal(model.nodes.length, 13); assert.equal(model.groups.length, 6);
+    for (const node of model.nodes) {
+      const source = getExplorerCases(locale).find(study => study.id === node.id);
+      assert.equal(node.label, source.title); assert.equal(node.description, source.summary);
+      assert.equal(node.target.href, base.replace(/\/$/, '') + (locale === 'zh' ? '/zh' : '') + '/govtech/' + source.slug);
+    }
+  }
 });

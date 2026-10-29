@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-28T14:43:15.406Z",
+  "scope": "Actual still-deployed v3.0, before unpublished candidate fix",
+  "checks": [
+    {
+      "width": 320,
+      "sceneClientWidth": 286,
+      "sceneScrollWidth": 360,
+      "islandsWidth": 360,
+      "clipped": true
+    },
+    {
+      "width": 390,
+      "sceneClientWidth": 356,
+      "sceneScrollWidth": 360,
+      "islandsWidth": 360,
+      "clipped": true
+    }
+  ]
+}

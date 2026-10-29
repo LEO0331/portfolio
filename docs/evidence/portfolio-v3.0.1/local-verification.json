@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-10-28T14:35:15.407Z",
+  "base": "7743cf6f78876da218c2a9d497fe38adb420f6cf",
+  "baseline": {
+    "install": "passed",
+    "audit": 0,
+    "unit": 37,
+    "browser": 269,
+    "workers": 2,
+    "initialAttempt": "268 passed; one context teardown timeout under default concurrency; unchanged suite passed with two workers"
+  },
+  "final": {
+    "audit": 0,
+    "unit": 42,
+    "browser": {
+      "startTime": "2026-10-28T14:32:06.402Z",
+      "duration": 102485.36300000001,
+      "expected": 280,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "flows": {
+      "passed": 17,
+      "total": 17
+    },
+    "workers": 2,
+    "registeredRoutes": 42,
+    "indexableRoutes": 40
+  },
+  "preFixRegressions": "Five failing tests retained separately",
+  "scope": "Actual local candidate checks; no hosted candidate, full assistive-technology or second-repository acceptance claim."
+}

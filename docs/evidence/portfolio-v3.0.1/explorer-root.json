@@ -1,0 +1,4530 @@
+{
+  "checkedAt": "2026-10-28T14:50:39.281Z",
+  "base": "/",
+  "scope": "Actual local Chromium production preview, optional fonts blocked consistently; no hosted Lighthouse or full WCAG claim.",
+  "checks": [
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 320,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 390,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 768,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1024,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "light",
+      "width": 1440,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 320,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 390,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 768,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1024,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 147317,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality-B2pcEsmg.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "en",
+      "theme": "dark",
+      "width": 1440,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 320,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 390,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 768,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1024,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "light",
+      "width": 1440,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": false,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 320,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 390,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 768,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1024,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "view": "overview",
+      "count": 6,
+      "hitTargets": [
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "environment",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "citizen-services",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "mobility",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "housing",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "public-safety",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        },
+        {
+          "node": "digital-inclusion",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "view": "domain",
+      "count": 3,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "seo-Du2FWtzS.js",
+        "index-DqXq4Km5.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "view": "selected",
+      "count": 1,
+      "hitTargets": [
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "bin-policy",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "shade-equity",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        },
+        {
+          "node": "river-water-quality",
+          "pass": true
+        }
+      ],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 147577,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCaseLinks-TvVsburw.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechRiverWaterQuality.zh-bk3mdAu4.js"
+      ],
+      "pass": true
+    },
+    {
+      "locale": "zh",
+      "theme": "dark",
+      "width": 1440,
+      "view": "list",
+      "count": 13,
+      "hitTargets": [],
+      "overflow": false,
+      "nestedSceneOverflow": false,
+      "duplicateIds": [],
+      "dark": true,
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "jsBytes": 134951,
+      "cssBytes": 10460,
+      "jsFiles": [
+        "index-DqXq4Km5.js",
+        "seo-Du2FWtzS.js",
+        "GovTechExplorerPage-BvfMPR1K.js",
+        "govtechCaseSummaries-D8_HYkXx.js",
+        "govtechCopy-CiuYMhA_.js",
+        "govtechCaseLoader-CvPJzrqz.js",
+        "govtechCaseLinks-TvVsburw.js"
+      ],
+      "pass": true
+    }
+  ],
+  "routeChecks": [
+    {
+      "path": "/govtech/explore",
+      "title": "Interactive Civic Explorer | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/explore",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/engineering/gridline",
+      "title": "Gridline Backend Architecture & Financial Data Engineering | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/engineering/gridline",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/",
+      "title": "Backend-Focused Full Stack Engineer Portfolio | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/projects",
+      "title": "Projects | Full Stack Portfolio | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/projects",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech",
+      "title": "GovTech & Civic Decision Systems | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/bin-policy",
+      "title": "Public Bin Allocation Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/bin-policy",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/civic-1999",
+      "title": "Taipei 1999 Citizen Service Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/civic-1999",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/heavy-rain-preparedness",
+      "title": "Heavy-Rain Preparedness & Infrastructure Review | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/heavy-rain-preparedness",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/urban-renewal",
+      "title": "Aging Buildings & Urban Renewal Evidence Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/urban-renewal",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/shade-equity",
+      "title": "Shade Equity & Urban Heat Preparedness | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/shade-equity",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/neihu-congestion",
+      "title": "Neihu Traffic Congestion & Observation Readiness | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/neihu-congestion",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/bus-service",
+      "title": "Taipei Bus Network & Service Coverage Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/bus-service",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/wifi-allocation",
+      "title": "Public Wi-Fi Allocation & Digital Inclusion Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/wifi-allocation",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/bridge-inspection",
+      "title": "Bridge Inspection & Maintenance Decision Support | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/bridge-inspection",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/senior-community-care",
+      "title": "Senior Community Care Coverage & Service Readiness | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/senior-community-care",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/food-hygiene-inspection",
+      "title": "Food Hygiene & Inspection Evidence Review | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/food-hygiene-inspection",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/fire-rescue-access",
+      "title": "Fire Rescue Access & Narrow Alley Evidence Readiness | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/fire-rescue-access",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/about",
+      "title": "About | Full Stack Engineer | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/about",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/contact",
+      "title": "Contact | Full Stack Engineer | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/contact",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/404",
+      "title": "Not Found | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/404",
+      "noindex": true,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/govtech/river-water-quality",
+      "title": "River Water Quality & Longitudinal Evidence Review | Leo Chen",
+      "lang": "en",
+      "canonical": "http://127.0.0.1:4198/govtech/river-water-quality",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "unknown-en",
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/explore",
+      "title": "互動市政案例探索 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/explore",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/engineering/gridline",
+      "title": "Gridline 後端架構與金融資料工程 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/engineering/gridline",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh",
+      "title": "後端導向全端工程師作品集 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/projects",
+      "title": "專案作品 | 全端作品集 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/projects",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech",
+      "title": "市政資料治理與決策支援系統 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/bin-policy",
+      "title": "臺北市清潔箱配置決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/bin-policy",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/civic-1999",
+      "title": "臺北市 1999 民生通報與環境治理決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/civic-1999",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/heavy-rain-preparedness",
+      "title": "豪雨防汛整備與設施查核決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/heavy-rain-preparedness",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/urban-renewal",
+      "title": "臺北市老舊建築與都市更新決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/urban-renewal",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/shade-equity",
+      "title": "樹蔭公平與都市熱環境整備決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/shade-equity",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/neihu-congestion",
+      "title": "內湖交通壅塞與觀測資料就緒度決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/neihu-congestion",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/bus-service",
+      "title": "臺北市公車路網與服務涵蓋決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/bus-service",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/wifi-allocation",
+      "title": "臺北市公共 Wi-Fi 資源配置與數位近用決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/wifi-allocation",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/bridge-inspection",
+      "title": "臺北市橋梁檢測與維護決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/bridge-inspection",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/senior-community-care",
+      "title": "臺北市高齡社區照顧據點涵蓋與服務整備決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/senior-community-care",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/food-hygiene-inspection",
+      "title": "臺北市食品衛生與抽驗紀錄證據查核決策支援 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/food-hygiene-inspection",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/fire-rescue-access",
+      "title": "臺北市消防通道與狹小巷道救災整備證據查核 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/fire-rescue-access",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/about",
+      "title": "關於我 | 全端工程師 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/about",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/contact",
+      "title": "聯絡方式 | 全端工程師 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/contact",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/404",
+      "title": "找不到頁面 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/404",
+      "noindex": true,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "/zh/govtech/river-water-quality",
+      "title": "臺北市河川水質監測與長期趨勢證據查核 | Leo Chen",
+      "lang": "zh-Hant",
+      "canonical": "http://127.0.0.1:4198/zh/govtech/river-water-quality",
+      "noindex": false,
+      "schema": true,
+      "staticEntry": true,
+      "pass": true
+    },
+    {
+      "path": "unknown-zh",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "assets": [
+    {
+      "name": "GovTechExplorerPage-BvfMPR1K.js",
+      "bytes": 21333
+    },
+    {
+      "name": "GovTechExplorerPage-DWMQzfhF.css",
+      "bytes": 10631
+    }
+  ],
+  "pass": true
+}

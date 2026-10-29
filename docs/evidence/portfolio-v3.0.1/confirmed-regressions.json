@@ -1,0 +1,44 @@
+{
+  "base": "7743cf6f78876da218c2a9d497fe38adb420f6cf",
+  "scope": "New tests on unmodified merged v3.0 before implementation fixes",
+  "stats": {
+    "startTime": "2026-10-28T13:58:15.989Z",
+    "duration": 31937.170000000002,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  },
+  "failures": [
+    {
+      "title": "mobile Explorer DOM order agrees with visual reading order",
+      "errors": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: true\nReceived: false\n\n   8 |     const browser = element.querySelector(\".civic-browser\")!, detail = element.querySelector(\".civic-detail\")!;\n   9 |     return (browser.compareDocumentPosition(detail) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0 && browser.getBoundingClientRect().top < detail.getBoundingClientRect().top;\n> 10 |   })).toBe(true);\n     |       ^\n  11 | });\n  12 |\n  13 | test(\"closing after a view switch returns focus to the same case in the current view\", async ({ page }) => {\n    at C:\\Users\\LeoLi\\.codex\\worktrees\\portfolio-v3-0-1-stabilization\\portfolio\\tests\\e2e\\govtech-explorer-stabilization.spec.ts:10:7"
+      ]
+    },
+    {
+      "title": "closing after a view switch returns focus to the same case in the current view",
+      "errors": [
+        "Error: expect(locator).toBeFocused() failed\n\nLocator: locator('.civic-list [data-case=\"river-water-quality\"] button')\nExpected: focused\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeFocused\" with timeout 5000ms\n  - waiting for locator('.civic-list [data-case=\"river-water-quality\"] button')\n\n\n  16 |   await page.getByRole(\"button\", { name: \"List view\", exact: true }).click();\n  17 |   await page.keyboard.press(\"Escape\");\n> 18 |   await expect(page.locator('.civic-list [data-case=\"river-water-quality\"] button')).toBeFocused();\n     |                                                                                      ^\n  19 | });\n  20 |\n  21 | test(\"history dismissal restores case focus without stealing focus from search\", async ({ page }) => {\n    at C:\\Users\\LeoLi\\.codex\\worktrees\\portfolio-v3-0-1-stabilization\\portfolio\\tests\\e2e\\govtech-explorer-stabilization.spec.ts:18:86"
+      ]
+    },
+    {
+      "title": "history dismissal restores case focus without stealing focus from search",
+      "errors": [
+        "Error: expect(locator).toBeFocused() failed\n\nLocator:  locator('.civic-list [data-case=\"river-water-quality\"] button')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" with timeout 5000ms\n  - waiting for locator('.civic-list [data-case=\"river-water-quality\"] button')\n    9 × locator resolved to <button type=\"button\" aria-pressed=\"false\" class=\"civic-case-title\">River Water Quality Monitoring & Longitudinal Evi…</button>\n      - unexpected value \"inactive\"\n\n\n  25 |   await expect(page.locator(\".civic-detail h2\")).toBeFocused();\n  26 |   await page.goBack();\n> 27 |   await expect(selected).toBeFocused();\n     |                          ^\n  28 |   await page.goForward();\n  29 |   const search = page.getByRole(\"searchbox\", { name: \"Search cases\", exact: true });\n  30 |   await search.fill(\"013\");\n    at C:\\Users\\LeoLi\\.codex\\worktrees\\portfolio-v3-0-1-stabilization\\portfolio\\tests\\e2e\\govtech-explorer-stabilization.spec.ts:27:26"
+      ]
+    },
+    {
+      "title": "keyboard domain selection focuses the new scene heading",
+      "errors": [
+        "Error: expect(locator).toBeFocused() failed\n\nLocator:  locator('.civic-scene-heading h2')\nExpected: focused\nReceived: inactive\nTimeout:  5000ms\n\nCall log:\n  - Expect \"toBeFocused\" with timeout 5000ms\n  - waiting for locator('.civic-scene-heading h2')\n    2 × locator resolved to <h2>Six domains. One evidence collection.</h2>\n      - unexpected value \"inactive\"\n    7 × locator resolved to <h2>Urban Services & Environment</h2>\n      - unexpected value \"inactive\"\n\n\n  37 |   await page.locator('[data-node=\"environment\"]').focus();\n  38 |   await page.keyboard.press(\"Enter\");\n> 39 |   await expect(page.locator(\".civic-scene-heading h2\")).toBeFocused();\n     |                                                         ^\n  40 | });\n  41 |\n  42 | test(\"mobile evidence and ordinary list links have usable touch targets\", async ({ page }) => {\n    at C:\\Users\\LeoLi\\.codex\\worktrees\\portfolio-v3-0-1-stabilization\\portfolio\\tests\\e2e\\govtech-explorer-stabilization.spec.ts:39:57"
+      ]
+    },
+    {
+      "title": "mobile evidence and ordinary list links have usable touch targets",
+      "errors": [
+        "Error: expect(received).toBeGreaterThanOrEqual(expected)\n\nExpected: >= 44\nReceived:    16\n\n  45 |   await expect(page.locator(\".civic-evidence a\")).toHaveCount(3);\n  46 |   for (const link of await page.locator('.civic-list a,.civic-evidence a,.civic-evidence summary').all()) {\n> 47 |     expect((await link.boundingBox())!.height).toBeGreaterThanOrEqual(44);\n     |                                                ^\n  48 |   }\n  49 | });\n  50 |\n    at C:\\Users\\LeoLi\\.codex\\worktrees\\portfolio-v3-0-1-stabilization\\portfolio\\tests\\e2e\\govtech-explorer-stabilization.spec.ts:47:48"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Mobile details follow the browser in DOM and visible order;source/list targets have the verified touch height.",
+    "Automatic multi-row groups use bounded plinths;the reviewed six-island overview is unchanged."
+  ],
+  "suggestions": [],
+  "reasoning": "Actual desktop/mobile dark and standalone-host captures preserve the original layered geometry and readable controls. The current desktop overview is byte-identical to the fresh merged-v3 capture;all pointer and overflow matrices pass."
+}

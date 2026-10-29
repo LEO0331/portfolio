@@ -34,6 +34,8 @@ A bilingual engineering portfolio for LEO0331. The site is driven by curated pro
 
 The [v3.0 implementation and verification report](./docs/portfolio-v3-implementation.md) documents the explicit six-domain mapping, native SVG/HTML interaction, URL state, Dashboard reuse boundaries and actual browser/resource evidence. `node tools/verify-civic-explorer.mjs` checks the production build across languages, themes, five widths, four states and all registered routes; set `QUALITY_BASE=/` only after generating a root-base build.
 
+The [v3.0.1 stabilization report](./docs/portfolio-v3.0.1-stabilization.md) records actual focus/order/touch fixes and paired browser measurements. The [reusable component API](./docs/explorer-component-api.md) describes the controlled React interface, civic adapter and independent plain-React host tests. `node tools/measure-explorer-stability.mjs baseline` or `final` measures the built app under fixed Chromium conditions; `--production` records a separately attributed deployed-site inspection.
+
 ```bash
 npm ci
 npm run build
