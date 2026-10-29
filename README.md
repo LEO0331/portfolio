@@ -1,5 +1,9 @@
 # LEO0331 Engineering Portfolio
 
+## Maintenance status — 2026-10-29
+
+Civic Explorer is in feature freeze. [Current maintenance handoff](./docs/civic-explorer-maintenance.md) records merged releases, the independent Dashboard adapter, the single-Draft-PR/companion-branch delivery, source-link rechecks and remaining hosted acceptance. Historical reports retain their original test dates and scope.
+
 **English** | [繁體中文](./README.zh-TW.md)
 
 [![E2E Smoke Tests](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml/badge.svg)](https://github.com/LEO0331/portfolio/actions/workflows/e2e.yml)

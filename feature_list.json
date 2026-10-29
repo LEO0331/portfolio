@@ -585,18 +585,43 @@
       "name": "Add source-grounded bilingual Fire Rescue Access Case 012",
       "description": "Conservative identity, documentary review and operational evidence gates.",
       "status": "complete",
-      "dependencies": ["govtech-food-hygiene-v2-0-2026-10"],
-      "doneCriteria": ["Twelve bilingual cases and Case 012 direct routes", "Pinned source replay and preserved prior records", "One Draft PR for user review"],
-      "evidence": ["PR 36 merged as b822e95305336a43c2b8563d373a82b4e65d98bd", "v2.1 verification report and source proof are committed", "v2.2 baseline confirms 29 unit tests, 219 browser tests, zero audit findings and 34 routes"]
+      "dependencies": [
+        "govtech-food-hygiene-v2-0-2026-10"
+      ],
+      "doneCriteria": [
+        "Twelve bilingual cases and Case 012 direct routes",
+        "Pinned source replay and preserved prior records",
+        "One Draft PR for user review"
+      ],
+      "evidence": [
+        "PR 36 merged as b822e95305336a43c2b8563d373a82b4e65d98bd",
+        "v2.1 verification report and source proof are committed",
+        "v2.2 baseline confirms 29 unit tests, 219 browser tests, zero audit findings and 34 routes"
+      ]
     },
     {
       "id": "portfolio-recruiter-v2-2-2026-10",
       "name": "Refine the portfolio for backend engineering recruiters",
       "description": "Backend positioning, explicit flagship curation, verified Gridline copy and bilingual skill evidence.",
       "status": "complete",
-      "dependencies": ["govtech-fire-rescue-access-v2-1-2026-10"],
-      "doneCriteria": ["Bilingual recruiter identity and distinct summary/About copy", "Curated flagship order with existing pin metadata and deep links", "Source-backed Gridline and skill claims", "All twelve cases preserved; responsive and local full gate pass", "One Draft PR to main; no automatic merge"],
-      "evidence": ["Merged v2.1 base b822e953 verified", "Baseline: clean install, audit 0, unit 29, E2E 219, build 34 routes", "Final: audit 0, unit 29, E2E 230, 17/17 tracked flows, 160 Pages layouts, 32 root surfaces and 27 root direct routes", "All 24 case data files, historical fixtures, GitHub pins and dependencies preserved", "Home encoded JS 101854 to 103027 bytes (+1.15%); catalogue 119013 to 120277 (+1.06%)", "Draft PR https://github.com/LEO0331/portfolio/pull/37; user owns hosted checks, readiness and merge"]
+      "dependencies": [
+        "govtech-fire-rescue-access-v2-1-2026-10"
+      ],
+      "doneCriteria": [
+        "Bilingual recruiter identity and distinct summary/About copy",
+        "Curated flagship order with existing pin metadata and deep links",
+        "Source-backed Gridline and skill claims",
+        "All twelve cases preserved; responsive and local full gate pass",
+        "One Draft PR to main; no automatic merge"
+      ],
+      "evidence": [
+        "Merged v2.1 base b822e953 verified",
+        "Baseline: clean install, audit 0, unit 29, E2E 219, build 34 routes",
+        "Final: audit 0, unit 29, E2E 230, 17/17 tracked flows, 160 Pages layouts, 32 root surfaces and 27 root direct routes",
+        "All 24 case data files, historical fixtures, GitHub pins and dependencies preserved",
+        "Home encoded JS 101854 to 103027 bytes (+1.15%); catalogue 119013 to 120277 (+1.06%)",
+        "Draft PR https://github.com/LEO0331/portfolio/pull/37; user owns hosted checks, readiness and merge"
+      ]
     },
     {
       "id": "gridline-engineering-v2-3-2026-10",
@@ -683,9 +708,23 @@
       "name": "Explore the existing civic evidence through original layered islands",
       "description": "Bilingual, accessible, URL-driven discovery of thirteen cases across six domains without changing their evidence.",
       "status": "complete",
-      "dependencies": ["portfolio-final-audit-v2-6-2026-10"],
-      "doneCriteria": ["Explicit validated 13-case/six-domain mapping preserving shared repositories", "Original SVG/CSS islands with full HTML list and detail evidence", "Search, filters, selected URLs, history, locale, keyboard, touch and reduced motion", "Lazy root/Pages routes with measured baseline/final cost and full regression", "Remove retired workflow references and deliver one Draft PR without merge"],
-      "evidence": ["Base2d5f52a includes merged audit PR41; isolated v3 branch", "Baseline audit0,34unit,257browser,17/17flows passed; actual pre-edit resource capture retained", "Final37unit/269browser/17flows/audit0/build42registered40indexable; both bases80states+44route outcomes passed", "Forty protected canonical files unchanged; home screenshot identical; homeJS+0.29%; visual95/pass; retired workflow references removed", "Draft PR https://github.com/LEO0331/portfolio/pull/42; user owns hosted checks/readiness/manual merge"]
+      "dependencies": [
+        "portfolio-final-audit-v2-6-2026-10"
+      ],
+      "doneCriteria": [
+        "Explicit validated 13-case/six-domain mapping preserving shared repositories",
+        "Original SVG/CSS islands with full HTML list and detail evidence",
+        "Search, filters, selected URLs, history, locale, keyboard, touch and reduced motion",
+        "Lazy root/Pages routes with measured baseline/final cost and full regression",
+        "Remove retired workflow references and deliver one Draft PR without merge"
+      ],
+      "evidence": [
+        "Base2d5f52a includes merged audit PR41; isolated v3 branch",
+        "Baseline audit0,34unit,257browser,17/17flows passed; actual pre-edit resource capture retained",
+        "Final37unit/269browser/17flows/audit0/build42registered40indexable; both bases80states+44route outcomes passed",
+        "Forty protected canonical files unchanged; home screenshot identical; homeJS+0.29%; visual95/pass; retired workflow references removed",
+        "Draft PR https://github.com/LEO0331/portfolio/pull/42; user owns hosted checks/readiness/manual merge"
+      ]
     },
     {
       "id": "portfolio-explorer-stabilization-v3-0-1-2026-10",
@@ -711,6 +750,24 @@
         "Currentroot/Pages80states44routeoutcomes each;visual95,independentReacthost5/13resourcesand12groups,defaultPagesrestored",
         "FreshproductionbrowserinspectionblockedERR_NETWORK_ACCESS_DENIED;deployedmain7743metadata verifiedsuccess,datedevidenceandcandidateacceptance separated",
         "One Draft PR #43 created, attached and verified open/unmerged: https://github.com/LEO0331/portfolio/pull/43; implementation effd7e3, with fresh completion evidence and documented hosted-access limitations."
+      ]
+    },
+    {
+      "id": "portfolio-civic-explorer-maintenance-2026-10",
+      "name": "Resolve final audit maintenance findings and refresh release handoff",
+      "description": "Reviewed source pin, availability evidence and current cross-repository maintenance documentation without new features.",
+      "status": "complete",
+      "dependencies": [
+        "portfolio-explorer-stabilization-v3-0-1-2026-10"
+      ],
+      "doneCriteria": [
+        "Pin reviewed mutable evidence and recheck timed-out demo without claiming permanent downtime",
+        "Update current release/API/lifecycle documents while preserving historical evidence",
+        "Pass supported gate and deliver companion branch linked from one Dashboard Draft PR"
+      ],
+      "evidence": [
+        "2026-10-29: final cross-repository audit reviewed; Skill Generator pinned to verified d498a2d; Render HTTP200 actual app after41.6s; no sync writes/new repository additions",
+        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10"
       ]
     }
   ]

@@ -4,29 +4,29 @@
 
 **Last updated:** 2026-10-29
 
-**Objective:** Complete v3.0.1 on `codex/portfolio-v3-0-1-stabilization`, based on merged v3.0 main `7743cf6f78876da218c2a9d497fe38adb420f6cf` (PR #42).
+**Active work:** Civic Explorer maintenance handoff on `codex/civic-explorer-maintenance-handoff`, from merged v3.0.1 main `632b81a4acdfdf344466a447affac3e58855895e`.
 
-**Status:** Implementation and fresh verification complete; [Draft PR #43](https://github.com/LEO0331/portfolio/pull/43) is open and unmerged. **PASS_WITH_LIMITATIONS**. Never merge automatically.
+**Status:** Complete for Draft delivery. [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged; this Portfolio companion branch supplies reviewed link and current-state documentation updates. No automatic merge.
 
 ### Completed
 
-Resumed commit `61322ac` and its generic component extraction. Verified mobile order, focus restoration, touch targets, scene width and URL updates. Added failing-before regressions and fixes for malformed coordinate pairs and overlapping labels in automatic twelve-group layouts. All 51 protected file hashes match main; the paired desktop scene captures are byte-identical.
+Reviewed the final cross-repository audit. Pinned Skill Generator to verified source commit `d498a2d36c10e5f7eb6de19e4233a050c2dbc507`. A bounded Render demo recheck returned the actual application page, HTTP 200 after 41.6 seconds; its URL remains unchanged. Project sync dry run made no writes and its new repository candidate was not added. Updated current README/API/release/maintenance guidance; historical reports retain their original evidence.
 
-### Verification
+### Verification Evidence
 
-- Fresh merged-v3 baseline: clean install, audit zero, 37 unit tests, 269 browser tests and 17/17 tracked flows.
-- Candidate: clean install, audit zero, 43 unit tests, 281 browser tests with no skips/flakes/failures, 17/17 flows, TypeScript/build and harness validation pass.
-- Root and Pages each pass 80 responsive states and 44 route outcomes across five widths, both languages and themes. No page errors, duplicate IDs or overflow. Default Pages build restored.
-- Paired measurements: homepage JS −19 B; Explorer JS +1,478 B (+1.11%); CLS zero. Interaction timings are mixed and do not establish a production speed improvement.
-- Independent plain React host verifies typed models, selection, native/callback navigation, optional details, multiple instances and automatic layouts. Visual verdict: 95/pass.
+Baseline main is the final audit's verified 43 unit / 281 browser / 17-flow build, with zero dependency vulnerabilities. Candidate full gate passed: 43 unit, 281 browser, 17/17 flows, TypeScript/build, audit zero, harness 32 and diff checks. See `docs/civic-explorer-maintenance.md` and current evidence for executed results.
 
-### Limitations
+### Blockers
 
-Fresh production rendering was blocked by `ERR_NETWORK_ACCESS_DENIED` in both available browser paths. GitHub metadata confirms a successful deployment of merged main; this is not a rendered candidate check. Hosted candidate acceptance awaits manual merge/deployment. Full assistive-technology, other browser engines/React versions and actual second-repository acceptance remain unverified.
+No implementation blocker. Hosted acceptance is separate from local and CI acceptance; the unmerged maintenance candidate is not deployed. Record actual browser-access results and post-deployment checks without inferring a pass from a merged PR.
 
-### Next Action
+### Remaining Risks
 
-Review the Draft PR and CI. After a manual merge, verify hosted mobile, selected/list, history and focus behavior. The generic folder is ready for an integration trial in another React dashboard, with a host adapter, reviewed URLs, labels, routing, detail IO and its own acceptance tests. No package or second-repository changes were made.
+Render cold starts can exceed short audit timeouts. Shared geometry does not imply shared business/navigation APIs. Preserve thirteen bilingual cases, six domains, Gridline and the existing professional identity. Feature freeze remains in effect.
+
+### Next Session Should
+
+Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply each repository change manually, then inspect the expected-SHA hosted job and existing-user cache behavior. No additional PR or feature is required.
 
 ## Update Contract
 
@@ -38,6 +38,10 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-10-29 — Final audit maintenance
+
+Authorized fixes from the final severity table; one Dashboard Draft PR plus a Portfolio companion branch. Reviewed source pin and cold-start demo availability; documentation current-state correction and feature freeze. Candidate verification/delivery recorded in Current State.
 
 ### 2026-10-29 — Civic Explorer stabilization and reusable component boundary
 
@@ -470,3 +474,15 @@ Eleven bilingual cases, source replay/neutral examples and per-case runtime load
 Eleven bilingual cases, source replay/neutral examples and per-case runtime loading complete. Existing20localizedrecords preserved. Final 29 unit/209Chromium/17flows, audit0,280matrix and 50root/Pages outcomes passed. Representative Bridge JS falls52.9% with byte-identical screenshot; no runtime source snapshot. Delivered [Draft PR](https://github.com/LEO0331/portfolio/pull/35); user handles hosted checks, readiness and merge.
 
 Delivery verified on 2026-10-29: one Draft PR, open and unmerged, from `codex/portfolio-v3-0-1-stabilization` to main. Implementation evidence commit: `effd7e3`; handoff marker correction: `c24d4b3`. Review and merge remain manual.
+
+### 2026-10-29 — Executed maintenance verification
+
+Companion gate: 43 unit / 281 browser / 17 flows, clean install, audit zero, build and harness 32 passed. Source pin verified; Render HTTP200 actual page after41.6s.
+
+On 2026-10-29 the Playwright fallback successfully rendered both published mains: 43/43 live checks passed across English/Traditional Chinese and 390/1440px. Portfolio covered six domains, thirteen-item HTML navigation, selected evidence, Back/Forward/reload, search and core routes; Dashboard covered five groups, 46 items, HTML fallback, bilingual search and dataset navigation. No page errors were observed. This supersedes the earlier browser-access limitation for these published versions only; the maintenance candidate remains unmerged and its expected-SHA hosted job must run after deployment.
+
+Commit-bound release acceptance: 45/45 checks passed for implementation `8d71ca6`; a preview with the correct code SHA but tampered real-price-summary bytes failed exactly the data-hash identity check. Original preview bytes restored. Candidate hosting still requires manual merge and the actual post-deploy job.
+
+## Maintenance delivery — 2026-10-29
+
+[Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.
