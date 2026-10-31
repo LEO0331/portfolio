@@ -1,1 +1,11 @@
-{"score":95,"verdict":"pass","category_match":true,"differences":["Mobile details now follow the scene/list in both visible and DOM order, with larger source/list touch targets.","The plain React fixture inherits its host typography while retaining the same generic layered geometry and controls."],"suggestions":[],"reasoning":"The actual English desktop overview is byte-identical to merged v3.0. Chinese mobile dark details preserve readable hierarchy and focus, while the independent twelve-node host shows separated original layered islands. Both deployment matrices passed all label/caption hit checks and viewport overflow checks."}
+{
+  "score": 95,
+  "verdict": "pass",
+  "category_match": true,
+  "differences": [
+    "Mobile details now follow the scene/list in both visible and DOM order, with larger source/list touch targets.",
+    "The plain React fixture inherits its host typography while retaining the same generic layered geometry and controls."
+  ],
+  "suggestions": [],
+  "reasoning": "Final desktop overview is byte-identical to merged v3.0. Final independent desktop host shows all twelve nodes in three separated columns; mobile shows all nodes followed by details. Root/Pages matrices assert nested and viewport overflow and all label/caption hits. Final screenshots were recaptured after the width fix."
+}
