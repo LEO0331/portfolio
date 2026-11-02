@@ -1,3 +1,13 @@
+# Civic Explorer maintenance handoff — current November 2 status
+
+Portfolio maintenance PR #44 is merged at 3201c41; current audited main is 6c3484d7ba5bb435860059452bc5e575a4b82479. The former companion-branch review is complete. This documentation follow-up has its own Draft PR for manual review. Published acceptance must be checked against the actual served release identity; no deployment is established by this document.
+
+The November 2 seven-repository audit passed Portfolio's 43 unit tests, 281 Chromium browser tests, 17 tracked flows, build, harness and dependency audit. Other repositories' remaining release work is independently tracked in their current handoffs.
+
+## Historical maintenance handoff — October 29
+
+The following delivery record is preserved verbatim. Its pending-merge instructions describe October 29 and are superseded by the current status above.
+
 # Civic Explorer maintenance handoff — 2026-10-29
 
 The initiative is in feature freeze. Portfolio v3.0.1 was merged in [PR #43](https://github.com/LEO0331/portfolio/pull/43), main `632b81a4acdfdf344466a447affac3e58855895e`. Dashboard's Explorer, Vite security patch and navigation refinement were merged in PRs #6–8, main `d9c56757e7e01bbf1b6a5790cf7e1524daf15d56`. Both have successful SHA-matched Pages deployment records. This maintenance candidate is a separate, unmerged change.

@@ -2,31 +2,31 @@
 
 ## Current State
 
-**Last updated:** 2026-10-29
+**Last updated:** 2026-11-02
 
-**Active work:** Civic Explorer maintenance handoff on `codex/civic-explorer-maintenance-handoff`, from merged v3.0.1 main `632b81a4acdfdf344466a447affac3e58855895e`.
+**Active work:** Publication handoff correction on codex/publish-maintenance-handoff from main 6c3484d.
 
-**Status:** Complete for Draft delivery. [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged; this Portfolio companion branch supplies reviewed link and current-state documentation updates. No automatic merge.
+**Status:** Prior Portfolio maintenance PR #44 is merged. Current documentation follow-up is pending review; no deployment claim.
 
 ### Completed
 
-Reviewed the final cross-repository audit. Pinned Skill Generator to verified source commit `d498a2d36c10e5f7eb6de19e4233a050c2dbc507`. A bounded Render demo recheck returned the actual application page, HTTP 200 after 41.6 seconds; its URL remains unchanged. Project sync dry run made no writes and its new repository candidate was not added. Updated current README/API/release/maintenance guidance; historical reports retain their original evidence.
+Replaced stale current instructions to review the already merged companion branch. Preserved the dated October 29 delivery record and all canonical application/source data.
 
 ### Verification Evidence
 
-Baseline main is the final audit's verified 43 unit / 281 browser / 17-flow build, with zero dependency vulnerabilities. Candidate full gate passed: 43 unit, 281 browser, 17/17 flows, TypeScript/build, audit zero, harness 32 and diff checks. See `docs/civic-explorer-maintenance.md` and current evidence for executed results.
+November 2 baseline: harness32, unit43, build, Chromium281, flows17/17 and audit0. Follow-up checks are recorded below after execution.
 
 ### Blockers
 
-No implementation blocker. Hosted acceptance is separate from local and CI acceptance; the unmerged maintenance candidate is not deployed. Record actual browser-access results and post-deployment checks without inferring a pass from a merged PR.
+No Portfolio implementation blocker. Cross-repository source restoration and release acceptance remain independently tracked.
 
 ### Remaining Risks
 
-Render cold starts can exceed short audit timeouts. Shared geometry does not imply shared business/navigation APIs. Preserve thirteen bilingual cases, six domains, Gridline and the existing professional identity. Feature freeze remains in effect.
+Hosted acceptance must use the final served commit; merge and local tests do not establish deployment.
 
 ### Next Session Should
 
-Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply each repository change manually, then inspect the expected-SHA hosted job and existing-user cache behavior. No additional PR or feature is required.
+Review the new documentation Draft PR and CI; verify hosted behavior after manual merge. Keep the feature freeze and source boundaries.
 
 ## Update Contract
 
@@ -486,3 +486,42 @@ Commit-bound release acceptance: 45/45 checks passed for implementation `8d71ca6
 ## Maintenance delivery — 2026-10-29
 
 [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.
+
+
+### 2026-11-02 — Publication handoff follow-up
+
+Verified refreshed origin/main includes Portfolio PR #44 (3201c41). Updated current handoff guidance while preserving the original delivery record below.
+
+#### Historical October 29 current-state record
+
+## Current State
+
+**Last updated:** 2026-10-29
+
+**Active work:** Civic Explorer maintenance handoff on `codex/civic-explorer-maintenance-handoff`, from merged v3.0.1 main `632b81a4acdfdf344466a447affac3e58855895e`.
+
+**Status:** Complete for Draft delivery. [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged; this Portfolio companion branch supplies reviewed link and current-state documentation updates. No automatic merge.
+
+### Completed
+
+Reviewed the final cross-repository audit. Pinned Skill Generator to verified source commit `d498a2d36c10e5f7eb6de19e4233a050c2dbc507`. A bounded Render demo recheck returned the actual application page, HTTP 200 after 41.6 seconds; its URL remains unchanged. Project sync dry run made no writes and its new repository candidate was not added. Updated current README/API/release/maintenance guidance; historical reports retain their original evidence.
+
+### Verification Evidence
+
+Baseline main is the final audit's verified 43 unit / 281 browser / 17-flow build, with zero dependency vulnerabilities. Candidate full gate passed: 43 unit, 281 browser, 17/17 flows, TypeScript/build, audit zero, harness 32 and diff checks. See `docs/civic-explorer-maintenance.md` and current evidence for executed results.
+
+### Blockers
+
+No implementation blocker. Hosted acceptance is separate from local and CI acceptance; the unmerged maintenance candidate is not deployed. Record actual browser-access results and post-deployment checks without inferring a pass from a merged PR.
+
+### Remaining Risks
+
+Render cold starts can exceed short audit timeouts. Shared geometry does not imply shared business/navigation APIs. Preserve thirteen bilingual cases, six domains, Gridline and the existing professional identity. Feature freeze remains in effect.
+
+### Next Session Should
+
+Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply each repository change manually, then inspect the expected-SHA hosted job and existing-user cache behavior. No additional PR or feature is required.
+
+### 2026-11-02 — Documentation verification
+
+Harness32,43 unit tests and production build42routes passed on the documentation candidate; git diff integrity and canonical application/source preservation checked. Browser evidence remains the November2 baseline281/17flows because no runtime changed.

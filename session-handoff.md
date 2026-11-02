@@ -1,5 +1,39 @@
 # Session Handoff
 
+**Current objective:** Refresh publication guidance after the maintenance and audit corrections were merged.
+
+**Current status:** Portfolio maintenance PR #44 is merged at 3201c41; audited main is 6c3484d7ba5bb435860059452bc5e575a4b82479. This documentation follow-up is on codex/publish-maintenance-handoff for a new Draft PR. Merge status alone does not verify deployment.
+
+## Completed
+
+The November 2 audit passed 43 unit tests, 281 Chromium browser tests, all 17 tracked flows, production build, harness validation and dependency audit (zero advisories). No Portfolio application correction was required. Prior five cross-repository correction PRs were merged; their publication follow-ups are independently owned by each repository.
+
+## Verification Evidence
+
+See progress.md for checks executed on this documentation follow-up. Earlier runtime evidence applies to its recorded SHA; no new hosted acceptance is claimed.
+
+## Blockers
+
+No Portfolio implementation blocker identified. Dashboard approved-source restoration and other repositories' release gates are tracked independently; their results must not be inferred from Portfolio checks.
+
+## Remaining Risks
+
+Historical source coverage, Render cold starts, and post-deployment acceptance remain distinct from build and merge status. Preserve the existing thirteen bilingual cases and independent Dashboard adapter.
+
+## Recommended Next Step
+
+Review this documentation Draft PR and its CI. After manual merge, verify the actual served commit and core routes. Consult each repository's current handoff for its own release status.
+
+## Files Relevant to the Next Update
+
+session-handoff.md, progress.md, feature_list.json and docs/civic-explorer-maintenance.md.
+
+## Historical handoff — retained October 29 record
+
+The following dated handoff describes the delivery state at that time. Its open/unmerged statements are historical, superseded by the current state above.
+
+# Session Handoff
+
 **Current objective:** Complete the final Civic Explorer maintenance findings on the Portfolio companion branch.
 
 **Current status:** Maintenance implementation and verification complete. Dashboard Draft PR #10 is open/unmerged; Portfolio companion branch pushed. No automatic merge.
