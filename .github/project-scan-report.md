@@ -1,44 +1,38 @@
 # Monthly portfolio repository scan
 
-- assistanthub: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- circles-app: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- inbodysimpletracker: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- passportcomparison: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- simpletaxautoextraction: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- warmthfromafar: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- warmthfromafar: proposed approved demo URL https://leo0331.github.io/WanderStamp/.
-- sharpface: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- boxmatch: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- warmmemo: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- leave-request: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- resume-vault: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- amazon-app: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- toyrobot: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- email-website: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- robotfriends: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- epubreader: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- prosemasters-skill: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- skill-gen: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- ppt-design-md: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- lighthouse-skill-pack: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- wordpressparser: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- wordpress: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- rednote-gallery: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- craftfocus: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- publicsafetydashboard: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-bin-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-crash-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-faith-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-1999-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-feitsui-water-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-zoo-guide: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-safety-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-friendly-food-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-free-wifi-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-civic-groups-map: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- taipei-real-estate-dashboard: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- genomic-data-science-with-galaxy-project: initial baseline recorded; review current README, demo, bilingual copy, and preview.
-- thalassemia-seq-analysis: initial baseline recorded; review current README, demo, bilingual copy, and preview.
+- assistanthub: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- circles-app: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- inbodysimpletracker: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- passportcomparison: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- simpletaxautoextraction: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- warmthfromafar: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- sharpface: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- boxmatch: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- warmmemo: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- leave-request: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- resume-vault: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- amazon-app: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- email-website: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- robotfriends: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- epubreader: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- skill-gen: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- wordpressparser: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- rednote-gallery: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- craftfocus: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- publicsafetydashboard: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-bin-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-crash-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-faith-map: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-1999-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-feitsui-water-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-zoo-guide: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-safety-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-friendly-food-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-free-wifi-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-civic-groups-map: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- taipei-real-estate-dashboard: pushedAt, readmeSha changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- genomic-data-science-with-galaxy-project: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
+- thalassemia-seq-analysis: pushedAt changed. Review current README/demo, English and Chinese copy, stack, status, and preview.
 - Unmatched pinned repository: LEO0331/portfolio. Add a curated record only if appropriate.
 
 Approved demo URLs and GitHub-pinned homepage selection are proposed automatically. New entries, renamed repository links, descriptions, translations, and images require curation. Repository pushes are a review signal, not proof of a visible product change.

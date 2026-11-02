@@ -3,16 +3,16 @@
   "projects": {
     "assistanthub": {
       "repoUrl": "https://github.com/LEO0331/AssistantHub",
-      "pushedAt": "2026-10-05T00:13:32Z",
+      "pushedAt": "2026-10-29T03:21:52Z",
       "description": "AssistantHub is a web application designed to help users discover personal assistants.",
       "homepage": "https://leo0331.github.io/AssistantHub/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "e5cda1b4071c11d637bc85202bff0aebdfdf102f"
+      "readmeSha": "8c57dee6aacb337bdc75c3874781256d248727d0"
     },
     "circles-app": {
       "repoUrl": "https://github.com/LEO0331/circles-app",
-      "pushedAt": "2026-10-05T00:51:34Z",
+      "pushedAt": "2026-10-21T13:26:27Z",
       "description": "This is a simple React application designed from a provided wireframe fetching JSON data, displaying a data loading status, and implementing the required filter functionality.",
       "homepage": "https://leo0331.github.io/circles-app/",
       "defaultBranch": "main",
@@ -21,16 +21,16 @@
     },
     "inbodysimpletracker": {
       "repoUrl": "https://github.com/LEO0331/inbodysimpletracker",
-      "pushedAt": "2026-10-05T00:36:23Z",
+      "pushedAt": "2026-10-31T18:42:18Z",
       "description": "A Flutter fitness tracker turning InBody reports into actionable progress charts.",
       "homepage": "https://leo0331.github.io/inbodysimpletracker/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "0310bfc1bc27b36010770e077a580bd80f9b1b0d"
+      "readmeSha": "bc36fe995aab89dcfb3899419bb761955b95466e"
     },
     "passportcomparison": {
       "repoUrl": "https://github.com/LEO0331/passportcomparison",
-      "pushedAt": "2026-05-15T06:41:10Z",
+      "pushedAt": "2026-10-12T00:43:06Z",
       "description": "A fast, intuitive passport strength comparison tool built with Flutter. Compare up to 5 passports side-by-side with PDF reporting (Full/Diff-only) and favorites snapshots. Simplified for travelers who want straight answers.",
       "homepage": "https://leo0331.github.io/passportcomparison/",
       "defaultBranch": "main",
@@ -39,16 +39,16 @@
     },
     "simpletaxautoextraction": {
       "repoUrl": "https://github.com/LEO0331/simpletaxautoextraction",
-      "pushedAt": "2026-10-05T01:52:13Z",
+      "pushedAt": "2026-10-15T00:21:40Z",
       "description": "Help owners automatically extract income and expense data from their property management PDF statements, categorize them according to the ATO Rental Property Worksheet and track trends across financial years for tax return purposes.",
       "homepage": "https://leo0331.github.io/simpletaxautoextraction/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "964d271bde80e9684d8f42138a5cc51070223964"
+      "readmeSha": "607071129b1530de53667912e7948a522be3ea5d"
     },
     "warmthfromafar": {
       "repoUrl": "https://github.com/LEO0331/WanderStamp",
-      "pushedAt": "2026-10-01T06:53:06Z",
+      "pushedAt": "2026-10-12T00:42:27Z",
       "description": "WanderStamp is a warm Flutter Web application designed to connect travelers with people across the globe. The goal is simple: send postcard to anyone who needs a little bit of warmth, encouragement, or a travel story from afar. Spreading kindness and stories, one stamp at a time. 🌍✨",
       "homepage": "https://leo0331.github.io/WanderStamp/",
       "defaultBranch": "main",
@@ -57,16 +57,16 @@
     },
     "sharpface": {
       "repoUrl": "https://github.com/LEO0331/cna-practice",
-      "pushedAt": "2026-10-02T01:35:09Z",
+      "pushedAt": "2026-10-31T11:42:37Z",
       "description": "Study app for UoA Computer Networks and Applications",
       "homepage": "https://leo0331.github.io/cna-practice/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "e925335079649d20b620a15882a3f35c171f1dc4"
+      "readmeSha": "a678f3d32e174d522399a0eeaf9b57f64717b9f6"
     },
     "boxmatch": {
       "repoUrl": "https://github.com/LEO0331/boxmatch",
-      "pushedAt": "2026-10-02T08:35:10Z",
+      "pushedAt": "2026-10-12T01:28:47Z",
       "description": "Boxmatch is an app that helps exhibition organizers and companies reduce food waste by posting surplus meals/drinks for nearby individuals or charities to reserve and pick up safely via time windows and handoff codes.",
       "homepage": "https://leo0331.github.io/boxmatch/",
       "defaultBranch": "main",
@@ -75,7 +75,7 @@
     },
     "warmmemo": {
       "repoUrl": "https://github.com/LEO0331/warmmemo",
-      "pushedAt": "2026-10-02T08:50:45Z",
+      "pushedAt": "2026-10-31T22:13:13Z",
       "description": "Less paperwork, more presence—Warm Memo handles the complexities of parting so you can focus on the beauty of the memory.",
       "homepage": "https://leo0331.github.io/warmmemo/",
       "defaultBranch": "main",
@@ -84,7 +84,7 @@
     },
     "leave-request": {
       "repoUrl": "https://github.com/LEO0331/LeaveRequest",
-      "pushedAt": "2026-10-02T06:14:05Z",
+      "pushedAt": "2026-10-31T19:45:03Z",
       "description": "An interactive Leave Management System built with React 18, TypeScript, and MUI. This application features dynamic form validation, automated duration calculation, and data handling. It leverages Faker to simulate 10,000+ records, ensuring seamless filtering and search capabilities even under heavy data loads.",
       "homepage": "https://leo0331.github.io/LeaveRequest/",
       "defaultBranch": "main",
@@ -93,16 +93,16 @@
     },
     "resume-vault": {
       "repoUrl": "https://github.com/LEO0331/resume_vault",
-      "pushedAt": "2026-10-02T06:10:52Z",
+      "pushedAt": "2026-10-29T06:44:53Z",
       "description": "Resume Vault is a local-first simple web app that turns your reusable resume entries into tailored resumes from job descriptions.",
       "homepage": "https://leo0331.github.io/resume_vault/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "29494ca9bb61a8993f3900fb41ad29cceeffc6b2"
+      "readmeSha": "b632b58604649c755c8c92c8ff1708b8bd72cd6c"
     },
     "amazon-app": {
       "repoUrl": "https://github.com/LEO0331/family-cabinet",
-      "pushedAt": "2026-10-02T03:02:26Z",
+      "pushedAt": "2026-10-31T18:39:12Z",
       "description": "Family Cabinet is a living digital archive of things a family makes, keeps and collects—documenting the object, its story, its history and where it sits in the collection.",
       "homepage": "https://leo0331.github.io/family-cabinet/",
       "defaultBranch": "master",
@@ -120,25 +120,25 @@
     },
     "email-website": {
       "repoUrl": "https://github.com/LEO0331/competition-practice",
-      "pushedAt": "2026-10-02T02:40:00Z",
+      "pushedAt": "2026-11-01T00:58:44Z",
       "description": "簡單易用的環境知識競賽題庫練習網站，適合逐題複習與賽前準備。",
       "homepage": "https://leo0331.github.io/competition-practice/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "e3b961f87ee3672192f0c03935de91e0dadf4805"
+      "readmeSha": "f29839929d23e2e9b722743d46b05614334da964"
     },
     "robotfriends": {
       "repoUrl": "https://github.com/LEO0331/Gridline",
-      "pushedAt": "2026-10-05T06:59:36Z",
+      "pushedAt": "2026-10-31T17:18:32Z",
       "description": "A source-first research workflow for investigating whether data-center buildout is showing up in grid demand, project decisions, company disclosures, and market prices.",
       "homepage": "https://leo0331.github.io/Gridline/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "bf4c6e70aade22af01b416685012958dbae9be31"
+      "readmeSha": "68af4f3d3c63108116845bbb0ce8372cd30d5c80"
     },
     "epubreader": {
       "repoUrl": "https://github.com/LEO0331/epubreader",
-      "pushedAt": "2026-05-12T06:36:08Z",
+      "pushedAt": "2026-10-29T01:42:28Z",
       "description": "Local-first bilingual book ingestion, wiki generation, and citation-grounded RAG for a private library.",
       "homepage": "https://epubreader-theta.vercel.app",
       "defaultBranch": "main",
@@ -156,7 +156,7 @@
     },
     "skill-gen": {
       "repoUrl": "https://github.com/LEO0331/projects_drafts",
-      "pushedAt": "2026-10-02T07:51:01Z",
+      "pushedAt": "2026-10-26T08:36:15Z",
       "description": "Turn index.html, style.css, and script.js into reusable skills.md artifacts",
       "homepage": "https://leo0331.github.io/projects_drafts/",
       "defaultBranch": "main",
@@ -183,7 +183,7 @@
     },
     "wordpressparser": {
       "repoUrl": "https://github.com/LEO0331/wordpressparser",
-      "pushedAt": "2026-10-02T08:23:13Z",
+      "pushedAt": "2026-10-31T19:07:39Z",
       "description": "Turn WordPress sources JSON data into a reusable skill.md or wiki.md",
       "homepage": "https://wordpressparser.vercel.app",
       "defaultBranch": "main",
@@ -201,7 +201,7 @@
     },
     "rednote-gallery": {
       "repoUrl": "https://github.com/LEO0331/rednote-gallery",
-      "pushedAt": "2026-10-02T05:51:44Z",
+      "pushedAt": "2026-10-21T13:26:30Z",
       "description": "An image gallery website for displaying RedNote / Xiaohongshu milestone screenshots.",
       "homepage": "https://leo0331.github.io/rednote-gallery/",
       "defaultBranch": "main",
@@ -210,16 +210,16 @@
     },
     "craftfocus": {
       "repoUrl": "https://github.com/LEO0331/craftfocus",
-      "pushedAt": "2026-10-02T03:50:34Z",
+      "pushedAt": "2026-10-31T19:13:26Z",
       "description": "CraftFocus helps people stay focused, unlock pixel room items, and share handmade projects with friends.",
       "homepage": "https://leo0331.github.io/craftfocus/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "5ba46281712baa45ea76f963cba6edb8fa09380c"
+      "readmeSha": "b548f9a72d5d1fb9c4072b2b5533b1df1aee30d5"
     },
     "publicsafetydashboard": {
       "repoUrl": "https://github.com/LEO0331/publicsafetydashboard",
-      "pushedAt": "2026-10-06T00:47:55Z",
+      "pushedAt": "2026-10-19T01:02:38Z",
       "description": "Full-stack educational dashboard for Taipei public traffic-safety PDF announcements, with Next.js, SQLite, Python ingestion, filters, stats, and map visualization.",
       "homepage": "https://publicsafetydashboard.onrender.com",
       "defaultBranch": "main",
@@ -228,25 +228,25 @@
     },
     "taipei-bin-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-bin-map",
-      "pushedAt": "2026-10-05T00:11:21Z",
+      "pushedAt": "2026-10-29T07:22:37Z",
       "description": "A mobile-first, bilingual map and directory for public amenities in Taipei.",
       "homepage": "https://taipei-bin-map.vercel.app/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "3eca4818d557ef1fa2cc7b20cf2d0afcaa5711e1"
+      "readmeSha": "91ef569eaadc1380dccde4e5e9ce00dbb90ccee1"
     },
     "taipei-crash-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-crash-map",
-      "pushedAt": "2026-10-02T03:26:17Z",
+      "pushedAt": "2026-10-22T05:48:42Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei A1/A2 traffic accident hotspot data.",
       "homepage": "https://leo0331.github.io/taipei-crash-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "17988a8e155f05b62afc9a3eae4f632c05a3571c"
+      "readmeSha": "1353bebd3e2b0315c5ba9eae6bebd351e5ddee99"
     },
     "taipei-faith-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-faith-map",
-      "pushedAt": "2026-10-02T02:31:58Z",
+      "pushedAt": "2026-10-29T01:20:13Z",
       "description": "Mobile-first bilingual map for exploring registered religious organizations in Taipei.",
       "homepage": "https://leo0331.github.io/taipei-faith-map/",
       "defaultBranch": "main",
@@ -255,25 +255,25 @@
     },
     "taipei-1999-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-1999-map",
-      "pushedAt": "2026-10-02T06:34:15Z",
+      "pushedAt": "2026-10-26T08:36:35Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei 1999 dispatched service request data.",
       "homepage": "https://leo0331.github.io/taipei-1999-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "45da312d8b6f4565e0616194bb02de3e1791daab"
+      "readmeSha": "f18057c149aaab4f7a227716388ca277b6437b9f"
     },
     "taipei-feitsui-water-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-feitsui-water-map",
-      "pushedAt": "2026-10-02T08:11:46Z",
+      "pushedAt": "2026-10-29T14:04:44Z",
       "description": "Mobile-first bilingual map and dashboard for exploring monthly Feitsui Reservoir water-quality monitoring data.",
       "homepage": "https://leo0331.github.io/taipei-feitsui-water-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "e1f097388aa79f3b15de585be653638586e526f3"
+      "readmeSha": "51fed0d2ba5bff8a72a6b3f0a95a7f0fcfe02a21"
     },
     "taipei-zoo-guide": {
       "repoUrl": "https://github.com/LEO0331/taipei-zoo-guide",
-      "pushedAt": "2026-10-02T02:40:29Z",
+      "pushedAt": "2026-10-23T09:46:54Z",
       "description": "Mobile-first bilingual map and guide for exploring Taipei Zoo animal exhibits, taxonomy, conservation status, and educational content.",
       "homepage": "https://leo0331.github.io/taipei-zoo-guide/",
       "defaultBranch": "main",
@@ -282,52 +282,52 @@
     },
     "taipei-safety-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-safety-map",
-      "pushedAt": "2026-10-02T08:05:30Z",
+      "pushedAt": "2026-10-29T14:04:21Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei air-raid shelter locations and historical residential burglary records.",
       "homepage": "https://leo0331.github.io/taipei-safety-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "76cbc979b287a9501b0fde62122cd2b16bd351dd"
+      "readmeSha": "9d3dbb93493aed8476735c62eaf2204be85239cb"
     },
     "taipei-friendly-food-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-friendly-food-map",
-      "pushedAt": "2026-10-02T08:04:30Z",
+      "pushedAt": "2026-10-31T12:40:06Z",
       "description": "Mobile-first bilingual map for finding friendly stores and registered restaurant businesses in Taipei.",
       "homepage": "https://leo0331.github.io/taipei-friendly-food-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "9cccc4d701d76091b80cbc7f56a32f075e4ad818"
+      "readmeSha": "7384c8c919720050d68911d38e205af235a79d02"
     },
     "taipei-free-wifi-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-free-wifi-map",
-      "pushedAt": "2026-10-02T02:48:51Z",
+      "pushedAt": "2026-10-23T05:36:43Z",
       "description": "Mobile-first bilingual map for finding Taipei Free public Wi-Fi hotspots by district, hotspot type, agency, and nearby location.",
       "homepage": "https://leo0331.github.io/taipei-free-wifi-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "391c443f4d75e2b94d938421bc0a4eb044f6d865"
+      "readmeSha": "98d8ef54abf9afaceade5d4f32c09526d9f8b06f"
     },
     "taipei-civic-groups-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-civic-groups-map",
-      "pushedAt": "2026-10-02T02:30:58Z",
+      "pushedAt": "2026-10-31T11:51:45Z",
       "description": "Mobile-first bilingual directory and district map for exploring Taipei civic group public records.",
       "homepage": "https://leo0331.github.io/taipei-civic-groups-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "f8c95511298c8a707c9b36a5e467c631e4553ae7"
+      "readmeSha": "c25a9f1ca3257303107664b0a4983bf5e9475f27"
     },
     "taipei-real-estate-dashboard": {
       "repoUrl": "https://github.com/LEO0331/taipei-real-estate-dashboard",
-      "pushedAt": "2026-10-02T03:36:55Z",
+      "pushedAt": "2026-10-29T11:48:22Z",
       "description": "Mobile-first bilingual dashboard for exploring Taipei real-price records, quarterly market analysis, and demographic context.",
       "homepage": "https://leo0331.github.io/taipei-real-estate-dashboard/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "2c0bf3b488fd798cc7a3874d900a560b30469dba"
+      "readmeSha": "5ad39ce6ca19af8fa50208e788f26dc43df2f8a6"
     },
     "genomic-data-science-with-galaxy-project": {
       "repoUrl": "https://github.com/LEO0331/Genomic-Data-Science-with-Galaxy-Project",
-      "pushedAt": "2026-10-02T05:36:32Z",
+      "pushedAt": "2026-10-29T01:46:02Z",
       "description": "Interactive genomic variant workflow case-study web app with browser-based VCF exploration, filtering, and CSV export, powered by Galaxy-generated results.",
       "homepage": "https://genomic-data-science-with-galaxy-pr.vercel.app",
       "defaultBranch": "master",
@@ -336,7 +336,7 @@
     },
     "thalassemia-seq-analysis": {
       "repoUrl": "https://github.com/LEO0331/Thalassemia_SEQ_analysis",
-      "pushedAt": "2026-10-02T04:01:10Z",
+      "pushedAt": "2026-10-31T14:58:04Z",
       "description": "Upload .ab1 Sanger files, run primer-specific thalassemia mutation checks, view QC/mutation results in web UI, and export JSON reports.",
       "homepage": "https://thalassemia-seq-analysis.vercel.app",
       "defaultBranch": "master",
