@@ -1,2 +1,6 @@
+# Retain original official evidence bytes.
+docs/evidence/poc-hardening/*-catalogue.html -text
+docs/evidence/poc-hardening/*.zip binary
+
 # Preserve supplied license bytes, including their original whitespace.
 public/THIRD_PARTY_NOTICES.txt -text -whitespace
