@@ -2,31 +2,31 @@
 
 ## Current State
 
-**Last updated:** 2026-11-02
+**Last updated:** 2026-11-03
 
-**Active work:** Publication handoff correction on codex/publish-maintenance-handoff from main 6c3484d.
+**Active work:** Distribution notice correction on codex/portfolio-distribution-notices from current main208d119; prior handoffPR48 is merged.
 
-**Status:** Prior Portfolio maintenance PR #44 is merged. Current documentation follow-up is pending review; no deployment claim.
+**Status:** Nine exact locked runtime dependency license/notice texts and the project MIT license are generated into a deployed text artifact. Bilingual footer links preserve the configured base path.
 
 ### Completed
 
-Replaced stale current instructions to review the already merged companion branch. Preserved the dated October 29 delivery record and all canonical application/source data.
+Added fail-closed deterministic notice generation during production route generation, preserving full supplied license texts. No dependency versions, canonical project/case records or analytical source changed.
 
 ### Verification Evidence
 
-November 2 baseline: harness32, unit43, build, Chromium281, flows17/17 and audit0. Follow-up checks are recorded below after execution.
+47 unit tests, 281 Chromium browser tests, 17/17 tracked flows, production build42 routes and audit0 passed. Four targeted EN/ZH desktop/mobile footer/HTTP200/text-byte checks passed. Initial sandbox EPERM, localized aria-label and protected-manifest regressions were corrected without changing historical fixtures or the dependency manifest.
 
 ### Blockers
 
-No Portfolio implementation blocker. Cross-repository source restoration and release acceptance remain independently tracked.
+No implementation blocker. Hosted notice acceptance requires later authorized merge/deployment.
 
 ### Remaining Risks
 
-Hosted acceptance must use the final served commit; merge and local tests do not establish deployment.
+License texts are reproduced from the locked installed runtime dependency closure; this is factual attribution retention, not a legal certification.
 
 ### Next Session Should
 
-Review the new documentation Draft PR and CI; verify hosted behavior after manual merge. Keep the feature freeze and source boundaries.
+Review the pushed correction branch and actual verification evidence. After separately authorized deployment, confirm the notice URL and bilingual footer in production.
 
 ## Update Contract
 
@@ -525,3 +525,7 @@ Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply e
 ### 2026-11-02 — Documentation verification
 
 Harness32,43 unit tests and production build42routes passed on the documentation candidate; git diff integrity and canonical application/source preservation checked. Browser evidence remains the November2 baseline281/17flows because no runtime changed.
+
+### 2026-11-03 — Distribution notice correction verified
+
+Nine exact locked runtime package license/notice texts plus the project MIT license are distributed through the existing production route generator, with a UTF-8 signature and bilingual base-aware footer links. The tracked public copy serves development. Missing, empty or mismatched installed license sources fail generation. Full unit47/browser281/17flows/build42/audit0 and four targeted notice checks passed. Canonical case/data records, package.json and package-lock.json remain unchanged. Current branch is for review only; no merge/deployment.

@@ -53,6 +53,8 @@ npm run preview
 Preview 在 `/portfolio/` 提供建置後的網站。開發時仍可使用 `npm run dev`，但目前 CSP 會阻擋 Vite 注入的樣式；目視驗證請使用 production preview。首次執行 E2E 前先執行 `npx playwright install chromium`。
 
 ## 建置與測試
+正式路由產生步驟會從專案授權及已安裝、版本與 lockfile 相符的執行期依賴授權原文，寫入 `dist/THIRD_PARTY_NOTICES.txt`。執行 `node tools/generate-third-party-notices.mjs` 可更新開發環境使用的已追蹤公開副本；雙語頁尾提供符合部署 base path 的連結。授權檔遺失、空白或套件版本不符時，產生流程會在取代上一份聲明前停止。UTF-8 簽章讓未提供字元編碼標頭的靜態主機仍可正確顯示文字。這項修正不變更依賴版本，也不表示法律認證。
+
 
 建置使用 Tailwind CSS4.3.3／Vite plugin，移除原 Tailwind3／braces 鏈、PostCSS 設定、selector-parser override 及不再適用的 parser 測試；保留既有色盤、響應標題與 class 暗色樣式。瀏覽器支援依 Tailwind4：Safari16.4+、Chrome111+、Firefox128+。詳見[強化驗證](./docs/poc-hardening-verification.md)。
 

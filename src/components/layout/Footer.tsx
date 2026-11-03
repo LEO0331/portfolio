@@ -26,6 +26,9 @@ export function Footer(): JSX.Element {
           </div>
 
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            <a href={`${import.meta.env.BASE_URL}THIRD_PARTY_NOTICES.txt`} aria-label={locale === "zh" ? "第三方授權聲明" : "Third-party notices"} className="font-semibold">
+              {locale === "zh" ? "第三方授權聲明" : "Third-party notices"}
+            </a>
             {safeGithubUrl ? (
               <ExternalLink href={safeGithubUrl} label={locale === "zh" ? "開啟 GitHub 個人檔案" : "Open GitHub profile"} className="font-semibold">
                 GitHub

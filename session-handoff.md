@@ -1,8 +1,8 @@
 # Session Handoff
 
-**Current objective:** Refresh publication guidance after the maintenance and audit corrections were merged.
+**Current objective:** Distribute exact runtime license notices and expose them through the bilingual footer.
 
-**Current status:** Portfolio maintenance PR #44 is merged at 3201c41; audited main is 6c3484d7ba5bb435860059452bc5e575a4b82479. This documentation follow-up is on codex/publish-maintenance-handoff for a new Draft PR. Merge status alone does not verify deployment.
+**Current status:** Correction branch codex/portfolio-distribution-notices from main208d119; prior PR48 merged. No merge or deployment is performed for this correction.
 
 ## Completed
 
@@ -22,7 +22,7 @@ Historical source coverage, Render cold starts, and post-deployment acceptance r
 
 ## Recommended Next Step
 
-Review this documentation Draft PR and its CI. After manual merge, verify the actual served commit and core routes. Consult each repository's current handoff for its own release status.
+Review the pushed distribution-notice correction branch and checks. After separately authorized publication, verify THIRD_PARTY_NOTICES.txt and both footer labels on the served release.
 
 ## Files Relevant to the Next Update
 
@@ -69,3 +69,7 @@ On 2026-10-29 the Playwright fallback successfully rendered both published mains
 ## Maintenance delivery — 2026-10-29
 
 [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.
+
+## 2026-11-03 — Verified distribution correction
+
+Unit47, browser281/17flows, production build42routes, audit0 and four EN/ZH desktop/mobile footer notice checks passed. Nine exact runtime package licenses plus projectMIT retained; dependencies/canonical source/data unchanged. Review the pushed codex/portfolio-distribution-notices branch. No PR, merge or deployment performed.
