@@ -768,7 +768,8 @@
       "evidence": [
         "2026-11-02: Portfolio PR44 merged3201c41; current publication handoff refreshed with dated historical delivery preserved; documentation verification recorded in progress.md",
         "2026-10-29: final cross-repository audit reviewed; Skill Generator pinned to verified d498a2d; Render HTTP200 actual app after41.6s; no sync writes/new repository additions",
-        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10"
+        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10",
+        "2026-11-04: curated seven-repository audit archive, dated closure/correction registry and manual verification workflow added under docs/audits; historical verdicts retained; no runtime/data changes"
       ]
     },
     {
@@ -785,6 +786,7 @@
         "Pass unit, build, browser and artifact checks and push only relevant changes"
       ],
       "evidence": [
+        "2026-11-04: PR49 conflicts with merged audit archive resolved; E2E Ubuntu26.04/Playwright1.59.1 setup failure fixed by pinning Ubuntu24.04; fresh 47unit/281browser/17flows/build42/audit0/harness33 passed; hosted CI tracked separately in progress.md",
         "2026-11-03: nine locked runtime dependency notices and project MIT text retained verbatim; installed-version/missing/empty checks fail closed",
         "2026-11-03: 47 unit tests, 281 Chromium tests, 17/17 tracked flows, production build42 routes and audit0 passed",
         "2026-11-03: EN/ZH at1440/390px keyboard footer navigation, HTTP200 notice text and exact public/dist artifact byte equality passed; no data/dependency changes"

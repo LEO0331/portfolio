@@ -1,0 +1,176 @@
+{
+  "recordedOn": "2026-11-04",
+  "timezone": "Asia/Taipei",
+  "scope": "Subsequent source corrections to the historical November 3 production closure. This is a dated evidence snapshot, not a live release monitor.",
+  "sourceResult": "PASS_WITH_LIMITATIONS",
+  "productionReadiness": "Not reassessed after correction branches; the historical NOT_READY closure is not upgraded by branch verification.",
+  "remaining": [
+    "Civic new-fix canonical Linux screenshot comparisons are unverified; Windows has 12 missing baselines.",
+    "All corrections require separately authorized review/publication and actual served-version/cache-upgrade verification.",
+    "Water and safety retain documented bundle warnings.",
+    "Retained license texts do not constitute legal certification."
+  ],
+  "repositories": [
+    {
+      "repository": "LEO0331/portfolio",
+      "branch": "codex/portfolio-distribution-notices",
+      "commit": "4cc4be505a8cc9e72cd10402c9e2867284c67fad",
+      "commitUrl": "https://github.com/LEO0331/portfolio/commit/4cc4be505a8cc9e72cd10402c9e2867284c67fad",
+      "branchUrl": "https://github.com/LEO0331/portfolio/tree/codex/portfolio-distribution-notices",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Exact runtime notices and bilingual footer discovery",
+      "verification": {
+        "unitTests": 47,
+        "browserEvidence": "281 Chromium tests, 17 tracked flows, four notice browser cases",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Canonical project/case data and dependency manifests unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-real-estate-dashboard",
+      "branch": "codex/closure-cache-layout-notices",
+      "commit": "b1590dc621c7caee4b6eac197f5c159ab4273f3d",
+      "commitUrl": "https://github.com/LEO0331/taipei-real-estate-dashboard/commit/b1590dc621c7caee4b6eac197f5c159ab4273f3d",
+      "branchUrl": "https://github.com/LEO0331/taipei-real-estate-dashboard/tree/codex/closure-cache-layout-notices",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Owned cache cleanup, mobile tax content containment, distributed notices",
+      "verification": {
+        "unitTests": 89,
+        "browserEvidence": "44 existing browser checks plus eight focused cache/layout/notice cases; 748 JSON release validation",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Raw/generated data, analytical code and dependency lock unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-feitsui-water-map",
+      "branch": "codex/closure-water-cache-layout-notices",
+      "commit": "04b4da7a420e65c748b51efe10e0e95e8cf94bc0",
+      "commitUrl": "https://github.com/LEO0331/taipei-feitsui-water-map/commit/04b4da7a420e65c748b51efe10e0e95e8cf94bc0",
+      "branchUrl": "https://github.com/LEO0331/taipei-feitsui-water-map/tree/codex/closure-water-cache-layout-notices",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Owned cache cleanup, English overflow correction, offline notices",
+      "verification": {
+        "unitTests": 100,
+        "browserEvidence": "85 browser checks, root/Pages builds, actual worker/offline and four layout/CSV cases",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Source/generated data, analytics and dependencies unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-safety-map",
+      "branch": "codex/safety-cache-and-notices",
+      "commit": "1be6ba864d093b7128ef384589b227140b40a852",
+      "commitUrl": "https://github.com/LEO0331/taipei-safety-map/commit/1be6ba864d093b7128ef384589b227140b40a852",
+      "branchUrl": "https://github.com/LEO0331/taipei-safety-map/tree/codex/safety-cache-and-notices",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Owned cache cleanup and discoverable offline runtime notices",
+      "verification": {
+        "unitTests": 148,
+        "browserEvidence": "90 actual Explorer entries plus map/chart/policy/bridge/offline/cache checks",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Data, policy, dependency versions and lock unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-civic-groups-map",
+      "branch": "codex/fix-civic-release-closure",
+      "commit": "0026844200ee12f99cbde4b80004a9daff8e60ed",
+      "commitUrl": "https://github.com/LEO0331/taipei-civic-groups-map/commit/0026844200ee12f99cbde4b80004a9daff8e60ed",
+      "branchUrl": "https://github.com/LEO0331/taipei-civic-groups-map/tree/codex/fix-civic-release-closure",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Owned cache and registration cleanup, official 4 hearing/355 senior records, notices",
+      "verification": {
+        "unitTests": 218,
+        "browserEvidence": "Full suite: 179 passed, one expected skip, 12 missing Windows canonical snapshots. Four focused worker/directory cases and actual production-preview startup isolation passed",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Approved data restoration only; original 117 trust-entry objects unchanged; raw hashes retained; lock/policy/CI unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-friendly-food-map",
+      "branch": "codex/food-cache-notice-fixes",
+      "commit": "824c5383228be763668aecc5b4d5c029bb8444df",
+      "commitUrl": "https://github.com/LEO0331/taipei-friendly-food-map/commit/824c5383228be763668aecc5b4d5c029bb8444df",
+      "branchUrl": "https://github.com/LEO0331/taipei-friendly-food-map/tree/codex/food-cache-notice-fixes",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Owned numeric legacy cache cleanup and full runtime notices",
+      "verification": {
+        "unitTests": 25,
+        "browserEvidence": "Root/Pages builds; prior product race and 11 Explorer groups; foreign payload preservation and offline notices",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Data, dependency lock and analytical behavior unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    },
+    {
+      "repository": "LEO0331/taipei-crash-map",
+      "branch": "codex/distribute-runtime-notices",
+      "commit": "38a014437b0385f60501d210762364e6ca7ff095",
+      "commitUrl": "https://github.com/LEO0331/taipei-crash-map/commit/38a014437b0385f60501d210762364e6ca7ff095",
+      "branchUrl": "https://github.com/LEO0331/taipei-crash-map/tree/codex/distribute-runtime-notices",
+      "sourceStatus": "committed-and-pushed",
+      "result": "PASS_WITH_LIMITATIONS",
+      "correction": "Runtime notice distribution; previously merged cache/timeout corrections retained",
+      "verification": {
+        "unitTests": 127,
+        "browserEvidence": "Root/Pages builds; 64 notice text sections; desktop/mobile footer cases",
+        "productionBuild": "passed",
+        "npmAdvisories": 0,
+        "integrity": "Data, analytics, lockfile, workflow and worker unchanged"
+      },
+      "publication": {
+        "newPRCreated": false,
+        "mergedByAgent": false,
+        "deployedByAgent": false,
+        "hostedCorrectionAcceptance": "not performed in this implementation task"
+      }
+    }
+  ]
+}
