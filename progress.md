@@ -4,29 +4,29 @@
 
 **Last updated:** 2026-11-04
 
-**Active work:** Curated cross-repository audit archive on codex/centralize-civic-audit-records from main208d119.
+**Active work:** Fix PR #49 on `codex/portfolio-distribution-notices`, integrating main `d3896f9` and its merged audit archive.
 
-**Status:** Dated historical audit/production closure, correction registry and manual workflow centralized under docs/audits for Git review. Source correction branches remain independently owned; no publication is claimed.
+**Status:** Documentation conflicts resolved with both historical records retained. E2E runner pinned to Ubuntu 24.04 after the hosted failure showed Playwright 1.59.1 rejecting Ubuntu 26.04. Local verification passed; repaired PR head awaits hosted CI.
 
 ### Completed
 
-Replaced stale current instructions to review the already merged companion branch. Preserved the dated October 29 delivery record and all canonical application/source data.
+Retained fail-closed distribution notice generation and merged PR #50 audit documentation. Resolved progress/handoff conflicts without dropping either dated history. Pinned only the E2E runner to Ubuntu 24.04 after run 41587643098 failed at browser installation on Ubuntu 26.04. No dependency versions, canonical project/case records or analytical source changed.
 
 ### Verification Evidence
 
-November 2 baseline: harness32, unit43, build, Chromium281, flows17/17 and audit0. Follow-up checks are recorded below after execution.
+2026-11-04 repair gate: clean npm install, audit 0, 47 unit tests, production build (42 registered routes), 281 Chromium tests and 17/17 tracked flows passed. Harness 33 and diff checks passed. Built notice matches installed sources exactly; tracked copy matches after Windows checkout newline normalization. Initial sandbox npm install stalled and was stopped; initial sandbox build hit EPERM creating dist/govtech/urban-renewal; network-enabled install and elevated E2E build completed successfully.
 
 ### Blockers
 
-No Portfolio implementation blocker. Cross-repository source restoration and release acceptance remain independently tracked.
+No implementation blocker. Hosted notice acceptance requires later authorized merge/deployment.
 
 ### Remaining Risks
 
-Hosted acceptance must use the final served commit; merge and local tests do not establish deployment.
+License texts are reproduced from the locked installed runtime dependency closure; this is factual attribution retention, not a legal certification.
 
 ### Next Session Should
 
-Review the new documentation Draft PR and CI; verify hosted behavior after manual merge. Keep the feature freeze and source boundaries.
+Inspect PR #49 checks after the repair push. After separately authorized merge/deployment, confirm the notice URL and bilingual footer in production.
 
 ## Update Contract
 
@@ -526,6 +526,14 @@ Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply e
 
 Harness32,43 unit tests and production build42routes passed on the documentation candidate; git diff integrity and canonical application/source preservation checked. Browser evidence remains the November2 baseline281/17flows because no runtime changed.
 
+### 2026-11-03 — Distribution notice correction verified
+
+Nine exact locked runtime package license/notice texts plus the project MIT license are distributed through the existing production route generator, with a UTF-8 signature and bilingual base-aware footer links. The tracked public copy serves development. Missing, empty or mismatched installed license sources fail generation. Full unit47/browser281/17flows/build42/audit0 and four targeted notice checks passed. Canonical case/data records, package.json and package-lock.json remain unchanged. Current branch is for review only; no merge/deployment.
+
 ### 2026-11-04 — Central audit documentation
 
 Added docs/audits index, historical November2/3 reports, November4 correction register/JSON and repeatable manual workflow. Original external raw archive retained. Full source correction SHAs and test limitations are linked; each repository keeps operational handoff/source custody. This documentation branch changes no runtime, data, package/lockfile or workflow automation. Verification: harness, registry completeness, relative Markdown links and diff integrity.
+
+### 2026-11-04 — PR #49 merge and E2E repair
+
+Integrated main d3896f9 (merged PR #50) into the distribution-notices branch. Resolved progress.md/session-handoff.md conflicts while retaining both dated histories and all audit archive bytes. Changed .github/workflows/e2e.yml to ubuntu-24.04 because hosted job 125756762028 failed before tests: Playwright1.59.1 rejects ubuntu26.04. README explains compatibility; feature evidence and handoff refreshed. 2026-11-04 repair gate: clean npm install, audit 0, 47 unit tests, production build (42 registered routes), 281 Chromium tests and 17/17 tracked flows passed. Harness 33 and diff checks passed. Built notice matches installed sources exactly; tracked copy matches after Windows checkout newline normalization. Initial sandbox npm install stalled and was stopped; initial sandbox build hit EPERM creating dist/govtech/urban-renewal; network-enabled install and elevated E2E build completed successfully. Hosted CI must be checked on the repair commit; no main merge or deployment.

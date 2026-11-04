@@ -49,6 +49,10 @@ npm run preview
 The preview serves the built site under `/portfolio/`. `npm run dev` remains available for development, but the current CSP blocks Vite’s injected styles; use production preview for styled manual review. Install Chromium once with `npx playwright install chromium` before E2E.
 
 ## Build and test
+The E2E workflow uses Ubuntu 24.04 because the locked Playwright version supports that image; keep this runner compatible when updating Playwright.
+
+Production route generation writes `dist/THIRD_PARTY_NOTICES.txt` from the project license and exact installed, lock-matched runtime dependency license/notice files. Run `node tools/generate-third-party-notices.mjs` to refresh the tracked public copy used during development. The bilingual footer links to the artifact under the configured base path. Missing or empty license files and mismatched installed versions fail generation before replacing the last notice. A UTF-8 signature preserves readable text on static hosts without a charset header. No dependency versions or legal certification are changed.
+
 The build uses Tailwind CSS4.3.3 through its Vite plugin. The former Tailwind3/braces chain, PostCSS configuration, selector-parser override and obsolete parser regression are removed. Existing colors, responsive heading sizing and class-based dark surfaces are preserved. Browser support follows Tailwind4: Safari16.4+, Chrome111+, Firefox128+. See the [hardening verification](./docs/poc-hardening-verification.md).
 
 ```bash

@@ -1,7 +1,9 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import { fileURLToPath } from "node:url";
 import { isSafeRoutePath, readViteBasePath, resolveSiteUrl } from "./site-url.mjs";
+import { renderNotices } from "./generate-third-party-notices.mjs";
 
 const root = process.cwd();
 const distDir = path.join(root, "dist");
@@ -58,6 +60,8 @@ async function writeRouteEntry(source, siteUrl, route) {
 }
 
 async function main() {
+  const noticesRoot = fileURLToPath(new URL("../", import.meta.url));
+  await writeFile(path.join(distDir, "THIRD_PARTY_NOTICES.txt"), renderNotices(noticesRoot), "utf8");
   const routeConfig = JSON.parse(await readFile(routeConfigPath, "utf8"));
   if (routeConfig.routes.some((route) => !isSafeRoutePath(route.path))) {
     throw new Error("routeConfig.json contains an unsafe route path.");

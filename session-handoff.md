@@ -1,32 +1,32 @@
 # Session Handoff
 
-**Current objective:** Centralize durable Civic Explorer audit results and the manual verification workflow in Git.
+**Current objective:** Unblock PR #49 while retaining distribution notices and the merged Civic Explorer audit archive.
 
-**Current status:** docs/audits records historical assessments and seven independently pushed correction commits. Review codex/centralize-civic-audit-records separately from source fixes; no new production acceptance is claimed.
+**Current status:** Main `d3896f9` integrated; documentation conflicts resolved and E2E runner pinned to Playwright-supported Ubuntu 24.04. Local verification passed; no merge to main or deployment.
 
 ## Completed
 
-The November 2 audit passed 43 unit tests, 281 Chromium browser tests, all 17 tracked flows, production build, harness validation and dependency audit (zero advisories). No Portfolio application correction was required. Prior five cross-repository correction PRs were merged; their publication follow-ups are independently owned by each repository.
+Preserved both distribution-notice and audit-archive histories, including all docs/audits content from merged PR #50. Hosted run 41587643098 failed before tests because Playwright 1.59.1 cannot install Chromium dependencies on Ubuntu 26.04. The E2E workflow now uses Ubuntu 24.04, supported by the installed Playwright registry; package versions remain unchanged. README documents the runner choice.
 
 ## Verification Evidence
 
-See progress.md for checks executed on this documentation follow-up. Earlier runtime evidence applies to its recorded SHA; no new hosted acceptance is claimed.
+2026-11-04 repair gate: clean npm install, audit 0, 47 unit tests, production build (42 registered routes), 281 Chromium tests and 17/17 tracked flows passed. Harness 33 and diff checks passed. Built notice matches installed sources exactly; tracked copy matches after Windows checkout newline normalization. Initial sandbox npm install stalled and was stopped; initial sandbox build hit EPERM creating dist/govtech/urban-renewal; network-enabled install and elevated E2E build completed successfully.
 
 ## Blockers
 
-No Portfolio implementation blocker identified. Dashboard approved-source restoration and other repositories' release gates are tracked independently; their results must not be inferred from Portfolio checks.
+Hosted CI must run on the repaired PR head. No application implementation blocker.
 
 ## Remaining Risks
 
-Historical source coverage, Render cold starts, and post-deployment acceptance remain distinct from build and merge status. Preserve the existing thirteen bilingual cases and independent Dashboard adapter.
+Local Windows checks cannot establish Linux runner acceptance. Hosted notice acceptance remains separate from CI and requires later authorized publication.
 
 ## Recommended Next Step
 
-Review this documentation Draft PR and its CI. After manual merge, verify the actual served commit and core routes. Consult each repository's current handoff for its own release status.
+Inspect PR #49 checks after the repair push. Merge and production verification remain release-owner actions.
 
 ## Files Relevant to the Next Update
 
-session-handoff.md, progress.md, feature_list.json and docs/civic-explorer-maintenance.md.
+.github/workflows/e2e.yml, README.md, progress.md, session-handoff.md and feature_list.json.
 
 ## Historical handoff — retained October 29 record
 
@@ -69,6 +69,10 @@ On 2026-10-29 the Playwright fallback successfully rendered both published mains
 ## Maintenance delivery — 2026-10-29
 
 [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.
+
+## 2026-11-03 — Verified distribution correction
+
+Unit47, browser281/17flows, production build42routes, audit0 and four EN/ZH desktop/mobile footer notice checks passed. Nine exact runtime package licenses plus projectMIT retained; dependencies/canonical source/data unchanged. Review the pushed codex/portfolio-distribution-notices branch. No PR, merge or deployment performed.
 
 ## 2026-11-04 — Audit archive
 
