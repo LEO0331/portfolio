@@ -2,11 +2,11 @@
 
 ## Current State
 
-**Last updated:** 2026-11-02
+**Last updated:** 2026-11-04
 
-**Active work:** Publication handoff correction on codex/publish-maintenance-handoff from main 6c3484d.
+**Active work:** Curated cross-repository audit archive on codex/centralize-civic-audit-records from main208d119.
 
-**Status:** Prior Portfolio maintenance PR #44 is merged. Current documentation follow-up is pending review; no deployment claim.
+**Status:** Dated historical audit/production closure, correction registry and manual workflow centralized under docs/audits for Git review. Source correction branches remain independently owned; no publication is claimed.
 
 ### Completed
 
@@ -525,3 +525,7 @@ Review Dashboard Draft PR #10 and the pushed Portfolio companion branch. Apply e
 ### 2026-11-02 — Documentation verification
 
 Harness32,43 unit tests and production build42routes passed on the documentation candidate; git diff integrity and canonical application/source preservation checked. Browser evidence remains the November2 baseline281/17flows because no runtime changed.
+
+### 2026-11-04 — Central audit documentation
+
+Added docs/audits index, historical November2/3 reports, November4 correction register/JSON and repeatable manual workflow. Original external raw archive retained. Full source correction SHAs and test limitations are linked; each repository keeps operational handoff/source custody. This documentation branch changes no runtime, data, package/lockfile or workflow automation. Verification: harness, registry completeness, relative Markdown links and diff integrity.

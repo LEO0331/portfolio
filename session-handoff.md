@@ -1,8 +1,8 @@
 # Session Handoff
 
-**Current objective:** Refresh publication guidance after the maintenance and audit corrections were merged.
+**Current objective:** Centralize durable Civic Explorer audit results and the manual verification workflow in Git.
 
-**Current status:** Portfolio maintenance PR #44 is merged at 3201c41; audited main is 6c3484d7ba5bb435860059452bc5e575a4b82479. This documentation follow-up is on codex/publish-maintenance-handoff for a new Draft PR. Merge status alone does not verify deployment.
+**Current status:** docs/audits records historical assessments and seven independently pushed correction commits. Review codex/centralize-civic-audit-records separately from source fixes; no new production acceptance is claimed.
 
 ## Completed
 
@@ -69,3 +69,7 @@ On 2026-10-29 the Playwright fallback successfully rendered both published mains
 ## Maintenance delivery — 2026-10-29
 
 [Dashboard Draft PR #10](https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10) is open and unmerged. [Portfolio companion branch](https://github.com/LEO0331/portfolio/tree/codex/civic-explorer-maintenance-handoff) is pushed; no second PR was created. Implementation commit: `8d71ca6`. All listed maintenance actions have fixes, verified dispositions or explicit deployment acceptance gates. No tracked business snapshots or Urban Renewal analysis changed. Review and merge manually; then inspect expected-SHA hosted acceptance and real existing-user cache replacement.
+
+## 2026-11-04 — Audit archive
+
+Start at docs/audits/README.md and remediation-registry.json. Preserve dated historical verdicts; add later closure evidence rather than silently converting old failures to passes. Each app retains its own operating instructions and source-data custody. Raw external evidence was retained. Review this documentation branch; publish source corrections only under separate authorization.

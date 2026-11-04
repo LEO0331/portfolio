@@ -768,7 +768,8 @@
       "evidence": [
         "2026-11-02: Portfolio PR44 merged3201c41; current publication handoff refreshed with dated historical delivery preserved; documentation verification recorded in progress.md",
         "2026-10-29: final cross-repository audit reviewed; Skill Generator pinned to verified d498a2d; Render HTTP200 actual app after41.6s; no sync writes/new repository additions",
-        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10"
+        "2026-10-29: delivered one Dashboard Draft PR #10, open/unmerged, and pushed Portfolio companion branch. Dashboard72unit/44browser/45commit-bound identity checks,747JSON release validation,audit0; Portfolio43unit/281browser/17flows/harness32,audit0. Published-main live43/43; candidate hosting awaits manual merge. https://github.com/LEO0331/taipei-real-estate-dashboard/pull/10",
+        "2026-11-04: curated seven-repository audit archive, dated closure/correction registry and manual verification workflow added under docs/audits; historical verdicts retained; no runtime/data changes"
       ]
     }
   ]
