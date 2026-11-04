@@ -129,6 +129,7 @@ Run `node tools/scan-project-changes.mjs` locally with `GITHUB_TOKEN` (required 
 GitHub references: [scheduled workflow behavior](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule) and [token-triggered workflow behavior](https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow).
 
 ## Documentation
+- Civic Explorer cross-repository audit archive and manual verification workflow: [docs/audits/](./docs/audits/README.md)
 - Traditional Chinese README: [README.zh-TW.md](./README.zh-TW.md)
 - Repository agent rules: [AGENTS.md](./AGENTS.md)
 - Feature state: [feature_list.json](./feature_list.json)

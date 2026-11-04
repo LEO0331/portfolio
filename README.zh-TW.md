@@ -138,6 +138,7 @@ Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連
 本機執行 `node tools/scan-project-changes.mjs` 時須設定 `GITHUB_TOKEN` 供 GraphQL 取得置頂項目。工具會寫入 `.github/project-scan-state.json`、`.github/project-scan-report.md`、`src/data/github-pins.json` 及建議的 Demo 網址／精選旗標，接受基準前請一起審查。置頂選擇也會包含在草稿 PR 中。
 
 ## 文件
+- Civic Explorer 跨專案稽核紀錄與手動驗證流程：[docs/audits/](./docs/audits/README.md)
 
 - 英文 README：[README.md](./README.md)
 - 儲存庫 Agent 規則：[AGENTS.md](./AGENTS.md)
