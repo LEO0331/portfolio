@@ -1,5 +1,27 @@
 # Session Handoff
 
+**Current objective:** Refresh the existing Taipei Faith Map showcase for V2.1 and Production Hotfix #28.
+
+**Current status:** Bilingual project records and the deployed Faith Space capture are ready for review. See the 2026-11-09 progress entry for source and browser evidence.
+
+## Verification Evidence
+
+Locked install, audit, harness, 47 unit tests, production build, 281 Chromium tests and all 17 tracked flows passed. Targeted card and drawer checks passed at 1440px and 390px in both languages.
+
+## Blockers
+
+None for the portfolio update. The source project still has hosted two-browser Garden and monthly monitoring follow-up.
+
+## Recommended Next Step
+
+Review the focused portfolio PR and its hosted checks.
+
+## Files Relevant to the Next Update
+
+`src/data/projects.ts`, `src/data/projects.zh.ts`, the two `taipei-faith-map` project images, `feature_list.json`, and `progress.md`.
+
+## Historical handoff — 2026-11-04 distribution notice repair
+
 **Current objective:** Unblock PR #49 while retaining distribution notices and the merged Civic Explorer audit archive.
 
 **Current status:** Main `d3896f9` integrated; documentation conflicts resolved and E2E runner pinned to Playwright-supported Ubuntu 24.04. Local verification passed; no merge to main or deployment.
