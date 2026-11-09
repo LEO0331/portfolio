@@ -791,6 +791,24 @@
         "2026-11-03: 47 unit tests, 281 Chromium tests, 17/17 tracked flows, production build42 routes and audit0 passed",
         "2026-11-03: EN/ZH at1440/390px keyboard footer navigation, HTTP200 notice text and exact public/dist artifact byte equality passed; no data/dependency changes"
       ]
+    },
+    {
+      "id": "taipei-faith-map-v2-1-showcase",
+      "name": "Refresh the Taipei Faith Map showcase",
+      "description": "Present the V2.1 bilingual cultural explorer and its verified engineering scope in the existing catalogue entry.",
+      "status": "complete",
+      "dependencies": ["portfolio-catalogue-2026-08"],
+      "doneCriteria": [
+        "Refresh both locales and the two existing preview formats from the public deployment",
+        "Verify the card and detail drawer in English and Traditional Chinese at desktop and mobile widths",
+        "Run the portfolio verification gate and record upstream live-service limits"
+      ],
+      "evidence": [
+        "Verified source merge a43aae7 and the corresponding Pages deployment for Hotfix #28",
+        "Captured the Lungshan Temple Faith Space via the deployed Bangka route",
+        "Passed targeted Chromium card and drawer checks in both locales at 1440px and 390px",
+        "Passed clean install, audit, harness, 47 unit tests, production build, 281 Chromium tests, 17/17 tracked flows, and diff check"
+      ]
     }
   ]
 }

@@ -694,21 +694,29 @@ export const projects: Project[] = [
   {
     id: "taipei-faith-map",
     slug: "taipei-faith-map",
-    name: "Taipei Registered Religious Groups Map",
-    tagline: "Bilingual directory map of registered religious groups in Taipei",
+    name: "Taipei Faith Map",
+    tagline: "Explore Taipei’s faith and heritage at your own pace",
     shortDescription:
-      "A mobile-first map for searching and exploring officially registered religious organizations across Taipei.",
+      "A bilingual cultural exploration platform connecting Taipei’s public religious-location data with curated walking routes, historical stories, and interactive Faith Spaces.",
     fullDescription:
-      "Taipei Registered Religious Groups Map converts public registration and coordinate data into a practical bilingual directory. It demonstrates data conversion, coordinate-system handling, clustered map markers, filtering, and responsive civic-tech interface design.",
+      "Explore slowly. Notice deeply. V2.1 lets visitors move from a map result to a walking stop, a cited story, or an illustrated Faith Space and return to where they left off. The responsive interface supports keyboard navigation and reduced motion.",
     role: "Frontend / Civic Tech Developer",
     teamType: "solo",
     techStack: ["TypeScript", "React", "Vite", "Leaflet", "Proj4"],
     categories: ["Web App", "Maps", "Civic Tech"],
     features: [
-      "Registered religious-group directory",
-      "Clustered map visualization",
-      "Coordinate conversion workflow",
-      "Bilingual mobile-first interface"
+      "Interactive map, search, filters, and optional nearby discovery",
+      "Cultural Walking Routes, Historical Timeline, and Heritage Stories",
+      "Illustrated Faith Spaces, optional Faith Moments, and Cultural Calendar",
+      "Quiet Garden public pilot with opt-in guest access. Quiet Corner is disabled."
+    ],
+    challenges: [
+      "Convert Taipei City’s ODS coordinates from TWD97 to WGS84 with Proj4, validate locations, and match current registrations to cited cultural records.",
+      "Keep solo exploration independent of shared services. Garden joins use Supabase Anonymous Auth and Turnstile. Private Realtime Presence shares neutral actions without location or browsing history."
+    ],
+    outcomes: [
+      "Shipped a static-first PWA to GitHub Pages. Added monthly GitHub Actions checks for source data, citations, and calendar changes for editorial review.",
+      "Hotfix #28 budgets Presence updates across reconnects and queues only the latest pose. Automated tests covered rate-limit handling. Hosted two-browser synchronization awaits verification."
     ],
     image: "/src/assets/images/projects/taipei-faith-map.png",
     demoUrl: "https://leo0331.github.io/taipei-faith-map/",

@@ -2,31 +2,31 @@
 
 ## Current State
 
-**Last updated:** 2026-11-04
+**Last updated:** 2026-11-09
 
-**Active work:** Fix PR #49 on `codex/portfolio-distribution-notices`, integrating main `d3896f9` and its merged audit archive.
+**Active work:** Taipei Faith Map V2.1 portfolio refresh from portfolio main `28019b3`.
 
-**Status:** Documentation conflicts resolved with both historical records retained. E2E runner pinned to Ubuntu 24.04 after the hosted failure showed Playwright 1.59.1 rejecting Ubuntu 26.04. Local verification passed; repaired PR head awaits hosted CI.
-
-### Completed
-
-Retained fail-closed distribution notice generation and merged PR #50 audit documentation. Resolved progress/handoff conflicts without dropping either dated history. Pinned only the E2E runner to Ubuntu 24.04 after run 41587643098 failed at browser installation on Ubuntu 26.04. No dependency versions, canonical project/case records or analytical source changed.
+**Status:** The existing English and Traditional Chinese entry and its PNG/WebP preview now present the cultural exploration experience and the scope of Hotfix #28.
 
 ### Verification Evidence
 
-2026-11-04 repair gate: clean npm install, audit 0, 47 unit tests, production build (42 registered routes), 281 Chromium tests and 17/17 tracked flows passed. Harness 33 and diff checks passed. Built notice matches installed sources exactly; tracked copy matches after Windows checkout newline normalization. Initial sandbox npm install stalled and was stopped; initial sandbox build hit EPERM creating dist/govtech/urban-renewal; network-enabled install and elevated E2E build completed successfully.
+Reviewed the [V2.1 release](https://github.com/LEO0331/taipei-faith-map/blob/a43aae7/docs/release-v2.1.md), demo guide, design philosophy, and monthly maintenance docs on source main. [Hotfix #28](https://github.com/LEO0331/taipei-faith-map/pull/28) merged as `a43aae7` and the [Pages run](https://github.com/LEO0331/taipei-faith-map/actions/runs/42589751199) succeeded on that commit. The public site served the Bangka route and Lungshan Temple Faith Space, and switched to Traditional Chinese while retaining the selected route. The deployed build enables the Quiet Garden pilot and disables Quiet Corner.
+
+The hosted mobile check confirmed the calendar, timeline, stories, bilingual route, and passive Garden open and close with focus restoration and no Auth or CAPTCHA requests. A separate hosted check confirmed map filtering and nearby results with simulated coordinates. The repository URL returned HTTP 200.
+
+The portfolio sync dry run proposed no updates to existing projects. Locked install, audit (zero vulnerabilities), harness (34 features), 47 unit tests, production build, 281 Chromium E2E tests, 17/17 tracked flows, and the diff check passed. Targeted Chromium checks covered EN/ZH at 1440px and 390px, including search, preview decoding, demo and repository link targets, drawer copy, Escape, focus restoration, and page width. Both mobile locales also passed combined search and status filtering.
 
 ### Blockers
 
-No implementation blocker. Hosted notice acceptance requires later authorized merge/deployment.
+None for the portfolio content. Hosted two-browser Garden synchronization and the first hosted monthly monitoring run are outstanding upstream.
 
 ### Remaining Risks
 
-License texts are reproduced from the locked installed runtime dependency closure; this is factual attribution retention, not a legal certification.
+Hotfix evidence covers simulated transport and rate-limit handling. Live guest verification and peer synchronization were outside this refresh.
 
 ### Next Session Should
 
-Inspect PR #49 checks after the repair push. After separately authorized merge/deployment, confirm the notice URL and bilingual footer in production.
+Review the focused portfolio PR and its hosted checks.
 
 ## Update Contract
 
@@ -38,6 +38,38 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-09 — Taipei Faith Map showcase
+
+Updated the `taipei-faith-map` record in `src/data/projects.ts` and `src/data/projects.zh.ts`. Replaced the directory capture with the live Lungshan Temple Faith Space in both preview formats (1440×900, 74 KB WebP and 143 KB PNG). Recorded evidence in the feature register and handoff.
+
+### 2026-11-04 — Distribution notices and runner repair
+
+**Last updated:** 2026-11-04
+
+**Active work:** Fix PR #49 on `codex/portfolio-distribution-notices`, integrating main `d3896f9` and its merged audit archive.
+
+**Status:** Documentation conflicts resolved with both historical records retained. E2E runner pinned to Ubuntu 24.04 after the hosted failure showed Playwright 1.59.1 rejecting Ubuntu 26.04. Local verification passed; repaired PR head awaits hosted CI.
+
+#### Completed
+
+Retained fail-closed distribution notice generation and merged PR #50 audit documentation. Resolved progress/handoff conflicts without dropping either dated history. Pinned only the E2E runner to Ubuntu 24.04 after run 41587643098 failed at browser installation on Ubuntu 26.04. No dependency versions, canonical project/case records or analytical source changed.
+
+#### Verification Evidence
+
+2026-11-04 repair gate: clean npm install, audit 0, 47 unit tests, production build (42 registered routes), 281 Chromium tests and 17/17 tracked flows passed. Harness 33 and diff checks passed. Built notice matches installed sources exactly; tracked copy matches after Windows checkout newline normalization. Initial sandbox npm install stalled and was stopped; initial sandbox build hit EPERM creating dist/govtech/urban-renewal; network-enabled install and elevated E2E build completed successfully.
+
+#### Blockers
+
+No implementation blocker. Hosted notice acceptance requires later authorized merge/deployment.
+
+#### Remaining Risks
+
+License texts are reproduced from the locked installed runtime dependency closure; this is factual attribution retention, not a legal certification.
+
+#### Next Session Should
+
+Inspect PR #49 checks after the repair push. After separately authorized merge/deployment, confirm the notice URL and bilingual footer in production.
 
 ### 2026-10-29 — Final audit maintenance
 
