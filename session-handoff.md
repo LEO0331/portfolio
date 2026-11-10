@@ -2,11 +2,11 @@
 
 **Current objective:** Refresh the existing Passport Comparison showcase.
 
-**Current status:** The bilingual copy reflects upstream merge 62c4d36. The authentic updated preview is pending publication of that build at the public URL.
+**Current status:** [Draft PR #52](https://github.com/LEO0331/portfolio/pull/52) contains the bilingual copy for upstream merge 62c4d36. The updated preview is pending publication at the public URL.
 
 ## Verification Evidence
 
-See the November 10 entry in progress.md for source, build and public-browser evidence.
+The portfolio gate passed, including 281 Chromium tests and 17/17 tracked flows. See the November 10 entry in progress.md for the targeted bilingual checks and upstream deployment evidence.
 
 ## Blockers
 

@@ -6,13 +6,13 @@
 
 **Active work:** Passport Access Difference Analyzer showcase for the existing passportcomparison entry.
 
-**Status:** English and Traditional Chinese copy is ready for draft review. The updated production screenshot is blocked by upstream publication.
+**Status:** English and Traditional Chinese copy is in [draft PR #52](https://github.com/LEO0331/portfolio/pull/52). The updated production screenshot is blocked by upstream publication.
 
 ### Verification Evidence
 
 Reviewed [upstream PR #4](https://github.com/LEO0331/passportcomparison/pull/4) at 62c4d36, including its README, comparison and report implementations, and data methodology. The [upstream Pages workflow](https://github.com/LEO0331/passportcomparison/actions/runs/42733945893) succeeded and pushed gh-pages b600f6f. The repository and public demo URLs returned HTTP 200.
 
-The portfolio metadata dry run found zero existing updates. The locked install, npm audit (zero vulnerabilities), 47 unit tests, and production build passed.
+The portfolio metadata dry run found zero existing updates. The locked install, npm audit (zero vulnerabilities), harness (35 features), 47 unit tests, production build, 281 Chromium tests, 17/17 tracked flows, and diff check passed.
 
 Targeted Chromium checks passed in both languages at 1440px and 390px. They covered homepage featured exclusion, card and drawer rendering, both link targets, existing preview decoding, direct project links, Escape dismissal, and horizontal fit.
 
