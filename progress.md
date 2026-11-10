@@ -2,31 +2,31 @@
 
 ## Current State
 
-**Last updated:** 2026-11-09
+**Last updated:** 2026-11-10
 
-**Active work:** Taipei Faith Map V2.1 portfolio refresh from portfolio main `28019b3`.
+**Active work:** Passport Access Difference Analyzer showcase for the existing passportcomparison entry.
 
-**Status:** The existing English and Traditional Chinese entry and its PNG/WebP preview now present the cultural exploration experience and the scope of Hotfix #28.
+**Status:** English and Traditional Chinese copy is ready for draft review. The updated production screenshot is blocked by upstream publication.
 
 ### Verification Evidence
 
-Reviewed the [V2.1 release](https://github.com/LEO0331/taipei-faith-map/blob/a43aae7/docs/release-v2.1.md), demo guide, design philosophy, and monthly maintenance docs on source main. [Hotfix #28](https://github.com/LEO0331/taipei-faith-map/pull/28) merged as `a43aae7` and the [Pages run](https://github.com/LEO0331/taipei-faith-map/actions/runs/42589751199) succeeded on that commit. The public site served the Bangka route and Lungshan Temple Faith Space, and switched to Traditional Chinese while retaining the selected route. The deployed build enables the Quiet Garden pilot and disables Quiet Corner.
+Reviewed [upstream PR #4](https://github.com/LEO0331/passportcomparison/pull/4) at 62c4d36, including its README, comparison and report implementations, and data methodology. The [upstream Pages workflow](https://github.com/LEO0331/passportcomparison/actions/runs/42733945893) succeeded and pushed gh-pages b600f6f. The repository and public demo URLs returned HTTP 200.
 
-The hosted mobile check confirmed the calendar, timeline, stories, bilingual route, and passive Garden open and close with focus restoration and no Auth or CAPTCHA requests. A separate hosted check confirmed map filtering and nearby results with simulated coordinates. The repository URL returned HTTP 200.
+The portfolio metadata dry run found zero existing updates. The locked install, npm audit (zero vulnerabilities), 47 unit tests, and production build passed.
 
-The portfolio sync dry run proposed no updates to existing projects. Locked install, audit (zero vulnerabilities), harness (34 features), 47 unit tests, production build, 281 Chromium E2E tests, 17/17 tracked flows, and the diff check passed. Targeted Chromium checks covered EN/ZH at 1440px and 390px, including search, preview decoding, demo and repository link targets, drawer copy, Escape, focus restoration, and page width. Both mobile locales also passed combined search and status filtering.
+Targeted Chromium checks passed in both languages at 1440px and 390px. They covered homepage featured exclusion, card and drawer rendering, both link targets, existing preview decoding, direct project links, Escape dismissal, and horizontal fit.
 
 ### Blockers
 
-None for the portfolio content. Hosted two-browser Garden synchronization and the first hosted monthly monitoring run are outstanding upstream.
+The public demo still served HTML last modified April 15, 2026, and the new bundled passport requirements asset returned HTTP 404 on November 10. The targeted capture using the Taiwan–Japan deep link produced zero verified screenshots. The existing PNG and preferred WebP are retained.
 
 ### Remaining Risks
 
-Hotfix evidence covers simulated transport and rate-limit handling. Live guest verification and peer synchronization were outside this refresh.
+The draft copy describes merged source. The public demo and existing preview still show the older implementation.
 
 ### Next Session Should
 
-Review the focused portfolio PR and its hosted checks.
+Wait for the updated build to be published at the existing demo URL. Use the portfolio capture workflow with the Taiwan–Japan shared link and wait for the travel access summary and populated destination rows. Update both preview formats, verify both locales, and complete the draft.
 
 ## Update Contract
 
@@ -39,9 +39,19 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 
 ## History
 
+### 2026-11-10 — Passport Comparison showcase
+
+Updated the existing passportcomparison record in src/data/projects.ts and src/data/projects.zh.ts, and recorded the public deployment blocker in the feature register and handoff.
+
 ### 2026-11-09 — Taipei Faith Map showcase
 
 Updated the `taipei-faith-map` record in `src/data/projects.ts` and `src/data/projects.zh.ts`. Replaced the directory capture with the live Lungshan Temple Faith Space in both preview formats (1440×900, 74 KB WebP and 143 KB PNG). Recorded evidence in the feature register and handoff.
+
+Reviewed the [V2.1 release](https://github.com/LEO0331/taipei-faith-map/blob/a43aae7/docs/release-v2.1.md), demo guide, design philosophy, and monthly maintenance docs on source main. [Hotfix #28](https://github.com/LEO0331/taipei-faith-map/pull/28) merged as `a43aae7` and the [Pages run](https://github.com/LEO0331/taipei-faith-map/actions/runs/42589751199) succeeded on that commit. The public site served the Bangka route and Lungshan Temple Faith Space, and switched to Traditional Chinese while retaining the selected route. The deployed build enables the Quiet Garden pilot and disables Quiet Corner.
+
+The hosted mobile check confirmed the calendar, timeline, stories, bilingual route, and passive Garden open and close with focus restoration and no Auth or CAPTCHA requests. A separate hosted check confirmed map filtering and nearby results with simulated coordinates. The repository URL returned HTTP 200.
+
+The portfolio sync dry run proposed no updates to existing projects. Locked install, audit (zero vulnerabilities), harness (34 features), 47 unit tests, production build, 281 Chromium E2E tests, 17/17 tracked flows, and the diff check passed. Targeted Chromium checks covered EN/ZH at 1440px and 390px, including search, preview decoding, demo and repository link targets, drawer copy, Escape, focus restoration, and page width. Both mobile locales also passed combined search and status filtering.
 
 ### 2026-11-04 — Distribution notices and runner repair
 

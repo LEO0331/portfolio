@@ -47,13 +47,19 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     outcomes: ["提供可公開瀏覽的線上展示"]
   },
   "passportcomparison": {
-    name: "護照指數比較工具",
-    tagline: "護照實力比較、歷年排名與 PDF 報告工具",
-    shortDescription: "以 Flutter 實作，可同時比較最多五本護照、查看歷年排名，並保存比較快照。",
-    fullDescription: "Passport Index Toolbox 並排呈現簽證待遇差異，支援歷年排名追蹤，以及完整或僅差異的 PDF 報告匯出。",
+    name: "護照入境待遇差異分析工具",
+    tagline: "比較各地入境規定，找出護照之間的免簽差異",
+    shortDescription: "輕量的 Flutter 網頁應用，可同時比較二至五本護照，查看所有選取的護照皆可免簽入境的目的地。",
+    fullDescription: "依目的地比較入境規定，分別呈現落地簽證、電子旅行授權及電子簽證等類別。應用程式以靜態網站部署於 GitHub Pages，在瀏覽器內使用經驗證的 TravelRequirements.info 資料快照（AXG Sp. z o.o.，CC BY 4.0），並標示版本與可查閱的資料來源。更新失敗時保留上一份通過驗證的快照。可匯出完整或僅列差異的 PDF，並附上比較所用的資料版本。",
     role: "Flutter 開發者",
     categories: ["Web 應用", "比較工具", "資料視覺化"],
-    features: ["最多五本護照比較", "歷年排名檢視", "收藏比較快照", "完整或僅差異 PDF 報告"]
+    features: [
+      "並排比較二至五本護照",
+      "查看共同與合計免簽範圍，並在雙護照比較中找出僅一方免簽的目的地",
+      "依簽證類別分析差異，另列未確認的入境規定",
+      "內建經驗證的資料快照，標示來源與版本",
+      "匯出完整或僅列差異的 PDF 報告"
+    ]
   },
   "simpletaxautoextraction": {
     name: "出租物業稅務資料擷取工具",

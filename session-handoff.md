@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Refresh the existing Passport Comparison showcase.
+
+**Current status:** The bilingual copy reflects upstream merge 62c4d36. The authentic updated preview is pending publication of that build at the public URL.
+
+## Verification Evidence
+
+See the November 10 entry in progress.md for source, build and public-browser evidence.
+
+## Blockers
+
+The public site serves the older build and returns HTTP 404 for the new bundled dataset. The capture could not reach the updated comparison results.
+
+## Remaining Risks
+
+The existing preview and live demo show the earlier implementation.
+
+## Recommended Next Step
+
+After the upstream publication is visible, capture populated Taiwan–Japan results through the existing workflow, regenerate both the PNG and preferred WebP, and verify the portfolio preview before completing review.
+
+## Files Relevant to the Next Update
+
+src/data/projects.ts, src/data/projects.zh.ts, both passportcomparison preview files, feature_list.json, and progress.md.
+
+## Historical handoff — 2026-11-09 Taipei Faith Map showcase
+
 **Current objective:** Refresh the existing Taipei Faith Map showcase for V2.1 and Production Hotfix #28.
 
 **Current status:** Bilingual project records and the deployed Faith Space capture are ready for review. See the 2026-11-09 progress entry for source and browser evidence.
