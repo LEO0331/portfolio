@@ -85,20 +85,21 @@ export const projects: Project[] = [
   {
     id: "passportcomparison",
     slug: "passportcomparison",
-    name: "Passport Index Toolbox",
-    tagline: "Compare passport strength, track rankings, and export PDF reports",
+    name: "Passport Access Difference Analyzer",
+    tagline: "Compare entry requirements and see where visa-free access differs",
     shortDescription:
-      "A Flutter toolbox for comparing up to five passports, exploring historical rankings, and saving favorite comparison snapshots.",
+      "A lightweight Flutter web app that compares two to five passports and shows which destinations all selected passports can enter visa-free.",
     fullDescription:
-      "Passport Index Toolbox presents visa-access differences side by side, supports historical rank tracking, and exports full or differences-only PDF reports.",
+      "Compare entry requirements by destination, with separate categories for visa on arrival, electronic travel authorization, and e-visas. The static GitHub Pages app compares a validated, bundled snapshot from TravelRequirements.info (AXG Sp. z o.o., CC BY 4.0) in the browser and shows its version and available source citations. Failed refreshes leave the last validated snapshot in place. Export a full or differences-only PDF with the dataset version used.",
     role: "Flutter Developer",
     teamType: "solo",
     techStack: ["Flutter", "Dart"],
     categories: ["Web App", "Comparison Tool", "Data Visualization"],
     features: [
-      "Compare up to five passports",
-      "Historical ranking views",
-      "Favorite comparison snapshots",
+      "Side-by-side comparison of two to five passports",
+      "Shared and combined visa-free access, plus exclusive access in two-passport comparisons",
+      "Visa-category differences with unconfirmed requirements tracked separately",
+      "Validated bundled data with source attribution and version details",
       "Full and differences-only PDF reports"
     ],
     image: "/src/assets/images/projects/passportcomparison.png",

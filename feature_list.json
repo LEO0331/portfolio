@@ -809,6 +809,26 @@
         "Passed targeted Chromium card and drawer checks in both locales at 1440px and 390px",
         "Passed clean install, audit, harness, 47 unit tests, production build, 281 Chromium tests, 17/17 tracked flows, and diff check"
       ]
+    },
+    {
+      "id": "passport-access-difference-showcase",
+      "name": "Refresh the Passport Comparison showcase",
+      "description": "Present the verified Flutter entry-requirements analyzer in the existing bilingual catalogue entry.",
+      "status": "blocked",
+      "dependencies": ["portfolio-catalogue-2026-08"],
+      "doneCriteria": [
+        "Review merged upstream source and refresh both locales",
+        "Capture populated comparison results from the updated public demo",
+        "Verify responsive catalogue and drawer behavior and open a focused PR"
+      ],
+      "evidence": [
+        "Reviewed upstream PR #4 at 62c4d36 and updated both catalogue records",
+        "Verified the localized card and drawer, existing preview, links and responsive layout at 1440px and 390px",
+        "Passed the portfolio gate with 47 unit tests, 281 Chromium tests, 17/17 tracked flows and zero npm audit findings",
+        "Opened draft PR #52 for review",
+        "Public demo still serves April 15 HTML and returns HTTP 404 for the new bundled data, despite a successful upstream workflow",
+        "Preserved the existing PNG and preferred WebP pending publication of the updated demo"
+      ]
     }
   ]
 }
