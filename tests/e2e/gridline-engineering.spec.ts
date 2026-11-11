@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
-import { gridlineEngineeringContent, GRIDLINE_SOURCE_SHA, gridlineSource } from "../../src/data/gridlineEngineering";
+import { gridlineEngineeringContent, gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, GRIDLINE_SOURCE_SHA, gridlineSource } from "../../src/data/gridlineEngineering";
 import { projects } from "../../src/data/projects";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
@@ -9,6 +9,14 @@ import manifest from "../../docs/evidence/portfolio-v2.3/gridline-source-manifes
 
 test("engineering inventory and bilingual evidence remain bound to the audited implementation", () => {
   expect(GRIDLINE_SOURCE_SHA).toBe(manifest.sourceSha);
+  expect(GRIDLINE_CURRENT_RELEASE_SHA).not.toBe(GRIDLINE_SOURCE_SHA);
+  for (const locale of ["en", "zh"] as const) {
+    expect(gridlineCurrentRelease[locale].features).toHaveLength(4);
+    expect(gridlineCurrentRelease[locale].boundary).toContain("2026-11-11");
+    for (const feature of gridlineCurrentRelease[locale].features) {
+      expect(gridlineCurrentSource(feature.source)).toContain(`/blob/${GRIDLINE_CURRENT_RELEASE_SHA}/`);
+    }
+  }
   expect(manifest.endpoints).toHaveLength(10);
   expect(manifest.tables).toHaveLength(6);
   expect(manifest.snapshot.trackedTickers).toHaveLength(20);
@@ -58,6 +66,11 @@ for (const locale of ["en", "zh"] as const) {
     await page.goto(`./${prefix}engineering/gridline`);
     await page.reload();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(content.title);
+    const current = page.locator("[data-gridline-current]");
+    await expect(current).toContainText(gridlineCurrentRelease[locale].heading);
+    await expect(current).toContainText(gridlineCurrentRelease[locale].boundary);
+    await expect(current.getByRole("link")).toHaveCount(5);
+    await expect(current.getByRole("link").last()).toHaveAttribute("href", gridlineCurrentSource("scripts/publish-snapshot.js"));
     await expect(page).toHaveTitle(config.title!);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", page.url());
     await expect(page.locator("html")).toHaveAttribute("lang", locale === "zh" ? "zh-Hant" : "en");
