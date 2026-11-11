@@ -149,7 +149,17 @@ test("River013 preserves every prior canonical field and Gridline engineering/re
     }
     expect(hash(frozen.normalizeEol ? bytes.toString("utf8").replaceAll("\r\n", "\n") : bytes), frozen.path).toBe(frozen.sha256);
   }
-  expect(projects.find(project => project.id === "robotfriends")).toEqual(prior.gridlineProject);
+  const gridline = projects.find(project => project.id === "robotfriends")!;
+  // Recruiter-facing copy was deliberately refreshed in November. The historical
+  // Gridline fixture remains unchanged: protect stable identity/links/ownership,
+  // not the older tagline, description and features of a living project card.
+  const gridlineIdentityKeys = [
+    "id", "slug", "name", "role", "teamType", "techStack", "categories",
+    "image", "demoUrl", "repoUrl", "engineeringCasePath", "status", "featured"
+  ] as const;
+  for (const key of gridlineIdentityKeys) {
+    expect(gridline[key], `robotfriends/${key}`).toEqual(prior.gridlineProject[key]);
+  }
   const water = projects.find(project => project.id === "taipei-feitsui-water-map")!;
   for (const [key, value] of Object.entries(prior.waterProjectIdentity)) expect(water[key as keyof typeof water], key).toEqual(value);
 });
