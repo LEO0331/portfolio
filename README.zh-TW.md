@@ -20,6 +20,8 @@ v3.0 在 `/zh/govtech/explore` 與 `/govtech/explore` 提供原創分層島嶼�
 
 v2.3 新增英文 `/engineering/gridline` 與繁中 `/zh/engineering/gridline` 獨立工程案例，由既有 Gridline 卡片與詳細抽屜連入。內容依固定來源版本說明原生 HTTP API、六表 SQLite 模型、觀測識別、來源降級恢復及靜態發布邊界；保留十二個 GovTech 案例，不新增依賴或即時資料請求。[來源審核](./docs/engineering-gridline-source-audit.md)與[驗證報告](./docs/portfolio-v2.3-gridline-verification.md)記錄實際部分來源測試、上游套件阻擋項、真實介面截圖及瀏覽器／資源量測。
 
+**Gridline 現行功能更新（2026-11-11）：** 現有專案卡與工程頁新增具來源的主題公司比較、官方研究催化事件日曆與每週驗證／候選審閱，以及基於真實 NYSE 交易日的日報封存和週報。GitHub Pages 仍為靜態 Demo；Node／SQLite API 並未公開託管。截至此次查核，已保留第一份真實日報，但日曆首次正式每週同步尚未獨立驗證。十月固定版本稽核繼續保留其歷史測試及安全檢查日期。[工程案例](https://leo0331.github.io/portfolio/zh/engineering/gridline) · [Gridline 原始碼](https://github.com/LEO0331/Gridline)。
+
 - React 18 與 TypeScript
 - React Router 7，搭配自動產生的 GitHub Pages 靜態路由入口
 - Vite 8 與 Tailwind CSS
