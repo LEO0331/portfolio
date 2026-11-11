@@ -352,20 +352,21 @@ export const projects: Project[] = [
     id: "robotfriends",
     slug: "robotfriends",
     name: "Gridline",
-    tagline: "Financial data engineering with provenance-aware research pipelines",
+    tagline: "Evidence-first AI infrastructure research with automated data and reports",
     shortDescription:
-      "A research application that combines external energy, infrastructure, disclosure and market-data adapters with deterministic records and transparent source context.",
+      "A bilingual dashboard combining dated market and SEC evidence, thematic company comparisons, verified catalysts and historical research reports.",
     fullDescription:
-      "Gridline uses a Node.js research API and SQLite/WAL store to retain deterministic observations, provenance and last-known-good history across external sources. The public GitHub Pages demo publishes static snapshots; it is not a live public backend, trading system or investment predictor.",
+      "Gridline integrates official company, infrastructure and energy evidence with dated market observations. Its React/GitHub Pages demo provides company research, thematic comparisons, a source-backed week/month/agenda catalyst calendar and point-in-time Daily/Weekly research reports. Node.js ingestion, a local SQLite/WAL research API, fail-closed validation and GitHub Actions support safe static snapshot/report publication. A separate weekly official-source scan proposes strictly verified calendar updates or review candidates; actual publisher coverage remains bounded. The public site is not a hosted Node API, trading system or investment predictor.",
     role: "Backend / Financial Data Engineering Developer",
     teamType: "solo",
     techStack: ["React", "JavaScript", "Node.js", "SQLite", "Supabase"],
     categories: ["Web App", "Backend", "Data Engineering"],
     features: [
-      "Node.js ingestion API and deterministic observation IDs",
-      "SQLite/WAL research store with provenance and last-known-good history",
-      "Fail-closed refresh and scheduled static snapshot publication",
-      "GitHub Actions verification; optional Supabase preferences integration"
+      "Source-backed market, SEC and infrastructure research with visible evidence gaps",
+      "Thematic company comparisons and official Research Catalyst Calendar",
+      "Point-in-time Daily editions and weekly reviews from actual retained sessions",
+      "Separate scheduled snapshot/report publishing and verified calendar maintenance",
+      "Local Node.js + SQLite/WAL research profile; optional Supabase preferences"
     ],
     image: "/src/assets/images/projects/robotfriends.png",
     demoUrl: "https://leo0331.github.io/Gridline/",

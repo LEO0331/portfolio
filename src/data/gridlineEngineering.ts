@@ -3,6 +3,45 @@ import type { Locale } from "../i18n/LocaleContext";
 export const GRIDLINE_SOURCE_SHA = "e3d47a638ddb7f3192c63598596628f60c7b364d";
 export const gridlineSource = (path: string): string => `https://github.com/LEO0331/Gridline/blob/${GRIDLINE_SOURCE_SHA}/${path}`;
 
+// The original twelve-section engineering audit stays pinned to October evidence.
+export const GRIDLINE_CURRENT_RELEASE_SHA = "31a7a8b661d1734999f6d5871127b39ddb93c682";
+export const gridlineCurrentSource = (path: string): string => `https://github.com/LEO0331/Gridline/blob/${GRIDLINE_CURRENT_RELEASE_SHA}/${path}`;
+export const gridlineCurrentRelease: Record<Locale, {
+  heading: string;
+  date: string;
+  introduction: string;
+  features: { title: string; description: string; source: string }[];
+  boundary: string;
+  evidenceLabel: string;
+}> = {
+  en: {
+    heading: "Current research product — November 2026",
+    date: "Source checked: 2026-11-11",
+    introduction: "Since the pinned October backend audit, Gridline has added a multi-page evidence-first research workflow. These capabilities reference a newer source commit; the original twelve engineering sections and their test counts remain historical.",
+    features: [
+      { title: "Thematic Research", description: "Compare two to four companies within a reviewed theme using dated market and SEC evidence, comparability rules and unresolved research questions.", source: "docs/thematic-research.md" },
+      { title: "Research Catalyst Calendar", description: "Source-linked week/month/agenda views, plus a separate weekly official-source scan that can verify schedule additions, reschedules and cancellations or propose review candidates.", source: "docs/calendar-automation.md" },
+      { title: "Historical Research Reports", description: "Validated NYSE-session Daily editions are retained through snapshot publication. Weekly reviews summarize actual retained sessions and show gaps, requiring two distinct sessions for synthesis.", source: "docs/research-reports.md" },
+      { title: "Safe static publication", description: "Market snapshots and the versioned report archive are validated and published together; calendar registry changes are separately scoped and trigger a Pages app rebuild.", source: "scripts/publish-snapshot.js" }
+    ],
+    boundary: "At the 2026-11-11 review, the archive contained one genuine 2026-11-10 Daily edition. Calendar synchronization code and its Pages deployment were verified, but the first live weekly scheduled run and automatic registry update were not. The local Node API and SQLite are not publicly hosted.",
+    evidenceLabel: "Source"
+  },
+  zh: {
+    heading: "現有研究產品 — 2026 年 11 月更新",
+    date: "來源確認：2026-11-11",
+    introduction: "在十月固定版本的後端稽核之後，Gridline 加入多頁面的官方證據研究流程。這些新功能對應較新的來源提交；原有十二章工程稽核及其測試數字仍屬歷史證據。",
+    features: [
+      { title: "主題研究", description: "在同一已審閱主題比較二至四家公司，保留具日期的市場與 SEC 證據、比較限制及尚待回答的研究問題。", source: "docs/thematic-research.md" },
+      { title: "研究催化事件日曆", description: "具官方來源的週／月／議程檢視，搭配獨立的每週官方來源掃描，嚴格驗證新增、改期及取消，或提出候選審閱。", source: "docs/calendar-automation.md" },
+      { title: "歷史研究報告", description: "快照發布時保存符合資格的 NYSE 交易日日報；週報整合真實保留交易日並揭露缺漏，至少兩個不同交易日才有主要回顧。", source: "docs/research-reports.md" },
+      { title: "安全靜態發布", description: "市場快照與版本化報告一起驗證及發布；日曆登錄檔獨立更新，通過驗證後觸發 Pages 應用程式重建。", source: "scripts/publish-snapshot.js" }
+    ],
+    boundary: "截至 2026-11-11，封存已有 2026-11-10 NYSE 交易日的第一份真實日報。已驗證日曆同步程式與 Pages 部署，但當時未取得第一次正式週排程及自動更新日曆登錄檔的實際證據。本機 Node API 與 SQLite 未公開託管。",
+    evidenceLabel: "實作來源"
+  }
+};
+
 export interface EngineeringTable {
   caption: string;
   columns: string[];
@@ -31,12 +70,12 @@ interface GridlineEngineeringContent {
 export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringContent> = {
   en: {
     title: "Gridline — Financial Data Engineering & Backend Reliability",
-    summary: "A source-governed research system that keeps ingestion, historical observations, failure states and static publication explainable when external data is incomplete or unavailable.",
+    summary: "An evidence-first AI infrastructure research dashboard with thematic comparisons, source-verified catalyst schedules and point-in-time reporting, grounded in fail-closed ingestion and static publication.",
     overview: [
       ["Engineering problem", "Combine heterogeneous SEC, energy, event and market records without confusing missing data, old evidence and successful refreshes."],
       ["Implementation", "A native Node.js API, SQLite/WAL research history, deterministic observations and a separate validated static publication path."],
       ["Verified evidence", "10 JSON endpoints, 6 SQLite tables, a 20-company universe and targeted source regressions. Retained artifacts passed acceptance with two source warnings."],
-      ["Current boundary", "The public demo serves snapshots. A fresh source dependency audit found an unapproved high advisory; a current upstream security-gate pass is not established."]
+      ["October 2026 audit boundary", "The October source pin reported an unapproved high advisory at that time; this is historical evidence rather than a current security verdict. The public demo serves static snapshots, not the Node API."]
     ],
     architecture: ["External SEC / EIA / event / price sources", "Source-specific adapters and bounded HTTP requests", "Validation, normalization and observation provenance", "SQLite research store and retained source health"],
     profiles: [
@@ -193,12 +232,12 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
   },
   zh: {
     title: "Gridline — 金融資料工程與後端可靠性",
-    summary: "當外部資料不完整或無法取得時，仍能清楚說明資料介接、歷史觀測、失敗狀態與靜態發布的來源治理研究系統。",
+    summary: "以來源治理為核心的 AI 基礎設施研究平台，結合主題比較、已驗證事件日曆與時間點報告，並透過嚴格資料驗證及靜態發布保留可靠性。",
     overview: [
       ["工程問題", "整合 SEC、能源、事件與市場資料，同時區分缺值、歷史證據及真正成功的更新。"],
       ["實作方式", "原生 Node.js API、SQLite/WAL 研究歷史、確定性觀測識別，以及獨立驗證的靜態發布流程。"],
       ["已驗證證據", "10 個 JSON 端點、6 張 SQLite 資料表、20 家企業與部分來源回歸測試；保留快照通過接受檢查，附兩項來源警告。"],
-      ["目前界線", "公開 Demo 使用靜態快照；即時來源套件稽核發現未核准的高風險公告，尚未確立目前完整安全門檻通過。"]
+      ["2026 年 10 月稽核界線", "十月固定來源版本當時報告未核准的高風險公告，屬歷史證據，不能視為目前安全狀態。公開 Demo 提供靜態快照，並非公開 Node API。"]
     ],
     architecture: ["外部 SEC／EIA／事件／市場來源", "各來源介接器與有上限的 HTTP 請求", "驗證、正規化與觀測來源追溯", "SQLite 研究儲存與來源健康狀態"],
     profiles: [

@@ -829,6 +829,25 @@
         "Public demo still serves April 15 HTML and returns HTTP 404 for the new bundled data, despite a successful upstream workflow",
         "Preserved the existing PNG and preferred WebP pending publication of the updated demo"
       ]
+    },
+    {
+      "id": "gridline-phase4-calendar-portfolio-2026-11",
+      "name": "Refresh Gridline portfolio for Phase 4 and Calendar Maintenance",
+      "description": "Curate merged Gridline thematic research, verified calendar automation and research reports in the existing bilingual portfolio while retaining the October source audit.",
+      "status": "blocked",
+      "dependencies": [
+        "gridline-engineering-v2-3-2026-10"
+      ],
+      "doneCriteria": [
+        "Bilingual Gridline project copy and latest-release panel are source-linked, accurate and appropriately scoped",
+        "October source pin, manifest, twelve sections, historical images and stable project ID remain unchanged",
+        "Portfolio build and relevant browser/E2E quality gates pass before merge"
+      ],
+      "evidence": [
+        "Reviewed current Gridline source at 31a7a8b661d1734999f6d5871127b39ddb93c682",
+        "Bilingual current-release presentation implemented through GitHub MCP",
+        "Local npm/build/Playwright not executed; PR CI acceptance pending"
+      ]
     }
   ]
 }
