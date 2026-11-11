@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link, useLocation, useNavigationType } from "react-router-dom";
 import { Section } from "../components/layout/Section";
 import { ExternalLink } from "../components/common/ExternalLink";
-import { gridlineEngineeringContent, gridlineSource, GRIDLINE_SOURCE_SHA, type EngineeringTable } from "../data/gridlineEngineering";
+import { gridlineEngineeringContent, gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, gridlineSource, GRIDLINE_SOURCE_SHA, type EngineeringTable } from "../data/gridlineEngineering";
 import { useLocale } from "../i18n/LocaleContext";
 import { usePageSeo } from "../utils/seo";
 import routeConfig from "../routes/routeConfig.json";
@@ -46,6 +46,13 @@ export function GridlineEngineeringPage(): JSX.Element {
       <p className="text-lg leading-8 text-slate-600">{content.summary}</p>
       <div className="flex flex-wrap gap-4 text-sm"><ExternalLink href="https://leo0331.github.io/Gridline/">{zh ? "公開靜態 Demo" : "Public static demo"}</ExternalLink><ExternalLink href="https://github.com/LEO0331/Gridline">{zh ? "Gridline 原始碼" : "Gridline repository"}</ExternalLink></div>
     </header>
+    <section data-gridline-current aria-labelledby="gridline-current-release" className="panel-soft mb-8 p-5 sm:p-6">
+      <h2 id="gridline-current-release" className="text-xl font-bold">{gridlineCurrentRelease[locale].heading}</h2>
+      <p className="mt-2 text-xs text-slate-600">{gridlineCurrentRelease[locale].date} · <ExternalLink href={`https://github.com/LEO0331/Gridline/commit/${GRIDLINE_CURRENT_RELEASE_SHA}`}>{GRIDLINE_CURRENT_RELEASE_SHA.slice(0, 10)}</ExternalLink></p>
+      <p className="mt-3 text-sm leading-7 text-slate-700">{gridlineCurrentRelease[locale].introduction}</p>
+      <ul className="mt-4 space-y-4">{gridlineCurrentRelease[locale].features.map(feature => <li key={feature.title} className="text-sm leading-6"><h3 className="font-semibold">{feature.title}</h3><p className="mt-1 text-slate-700">{feature.description}</p><ExternalLink href={gridlineCurrentSource(feature.source)}>{gridlineCurrentRelease[locale].evidenceLabel}: {feature.source}</ExternalLink></li>)}</ul>
+      <p className="mt-4 border-t border-slate-300 pt-3 text-sm leading-6 text-slate-600">{gridlineCurrentRelease[locale].boundary}</p>
+    </section>
     <section aria-labelledby="engineering-overview" className="panel-soft mb-8 p-5 sm:p-6">
       <h2 id="engineering-overview" className="text-xl font-bold">{zh ? "工程重點" : "Engineering at a glance"}</h2>
       <dl className="mt-4 grid gap-5 sm:grid-cols-2">{content.overview.map(([label, value]) => <div key={label}><dt className="font-semibold">{label}</dt><dd className="mt-2 text-sm leading-6 text-slate-600">{value}</dd></div>)}</dl>
