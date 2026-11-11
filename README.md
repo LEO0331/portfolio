@@ -26,6 +26,10 @@ A bilingual engineering portfolio for LEO0331. The site is driven by curated pro
 - Static deployment: crawlable routes with generated GitHub Pages entrypoints
 - Quality guardrails: Playwright E2E + CI workflows
 
+## Gridline current capabilities — 2026-11-11
+
+The existing Gridline project card and bilingual engineering case now distinguish **recent research-product features** from the pinned **October 2026 backend audit**. The public dashboard includes thematic company comparisons, a source-backed Research Catalyst Calendar with a separate weekly verification/review workflow, and point-in-time Daily Research Reports plus Weekly review of retained sessions. Static GitHub Pages publication remains distinct from the local Node/SQLite API. One real NYSE-session edition had been archived at this review; the first scheduled calendar synchronization had not yet been independently verified. See the [Gridline engineering case](https://leo0331.github.io/portfolio/engineering/gridline) and [Gridline repository](https://github.com/LEO0331/Gridline).
+
 ## What visitors can do
 - Explore the thirteen civic engineering cases through an original layered island scene or an accessible HTML list at `/govtech/explore` and `/zh/govtech/explore`. Domain, case, search and view selections can be shared in the URL; existing case evidence remains canonical.
 - Review who you are and your engineering focus
