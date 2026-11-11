@@ -38,6 +38,10 @@ The existing Gridline project card and bilingual engineering case now distinguis
 - Switch language between English and Traditional Chinese
 - Open live demos and source repositories directly
 
+## Government Demo & Sample Technical Proposal — 2026-11-11
+
+For interviews and prospective SI or GovTech collaboration discussions, see the [documentation-only Government Demo Package](./docs/government-demo/README.md): an 8-minute demo script, engineering capability/architecture overview, source-bound evidence matrix, accessibility review card, illustrative technical proposal and Traditional Chinese one-page brief. It references the separately [merged Public Amenities Civic Explorer Phase 2](https://github.com/LEO0331/taipei-bin-map/pull/29); it does not add Portfolio UI, government endorsement or production procurement commitments.
+
 ## Quick start
 
 The [v3.0 implementation and verification report](./docs/portfolio-v3-implementation.md) documents the explicit six-domain mapping, native SVG/HTML interaction, URL state, Dashboard reuse boundaries and actual browser/resource evidence. `node tools/verify-civic-explorer.mjs` checks the production build across languages, themes, five widths, four states and all registered routes; set `QUALITY_BASE=/` only after generating a root-base build.

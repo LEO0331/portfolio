@@ -7,6 +7,7 @@ import { caseOverviews, caseTechnicalDetails, govtechCaseSummaries } from "../..
 import { govtechCopy } from "../../src/data/govtechCopy";
 import { projects } from "../../src/data/projects";
 import { getProjectGovTechCases } from "../../src/utils/govtechCase";
+import { GRIDLINE_SOURCE_SHA, GRIDLINE_CURRENT_RELEASE_SHA } from "../../src/data/gridlineEngineering";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
 import { auditPublicRecords, isPullRequestHref, workflowPattern } from "../../tools/govtech-public-audit.mjs";
 import routeConfig from "../../src/routes/routeConfig.json" with { type: "json" };
@@ -20,6 +21,36 @@ const sha = "beedd7eef3592c12bb66c21937add068f82ce5fa";
 const digest = "212d8dfb4b965163b6ff0edbb87765e87d933eac994f8d120de9d7b15a29dc81";
 const hash = (value: string | Buffer) => createHash("sha256").update(value).digest("hex");
 const number = (value: string) => Number(value.replaceAll(",", ""));
+
+/**
+ * Gridline's October engineering case is preserved within a file that legitimately
+ * gained November research-product presentation and updated introductory copy.
+ * Freeze the original 12-section source bodies, rather than hashing the entire
+ * mutable file (the latter incorrectly rejects the later, independently tested UI).
+ *
+ * These SHA-256 digests were checked against the pre-November file at c25893a7
+ * and the current file at 73c8f1d; both have identical section bodies.
+ * Keep the original full-file digest in the historical fixture as provenance.
+ */
+const legacyGridlineSectionDigests = {
+  en: "f4fcb7ceb69b245b99bf8284d244bb6aeee7e557f434f7d5a64d5fdecc2b6711",
+  zh: "ff9f91e406f18745615e1798665cffbd9ec5eb91af897c5c56216e8fdac7a1a2"
+};
+
+function extractLegacyGridlineSectionDigests(source: string) {
+  const model = source.indexOf("export const gridlineEngineeringContent:");
+  const enStart = source.indexOf("    sections: [", model);
+  const zhStart = source.indexOf("    sections: [", enStart + 1);
+  const enEnd = source.indexOf("\n    ]\n  },\n  zh:", enStart);
+  const zhEnd = source.indexOf("\n    ]\n  }\n};", zhStart);
+  if (Math.min(model, enStart, zhStart, enEnd, zhEnd) < 0) {
+    throw new Error("Unable to identify the two pinned Gridline engineering-section bodies");
+  }
+  return {
+    en: hash(source.slice(enStart, enEnd + 7)),
+    zh: hash(source.slice(zhStart, zhEnd + 7))
+  };
+}
 
 // The compact fixture is an independently re-parsed and rebuilt retained edition,
 // not a copy of the seven-megabyte research dataset or a runtime dependency.
@@ -106,9 +137,44 @@ test("River013 preserves every prior canonical field and Gridline engineering/re
   expect(govtechCases.length + govtechCasesZh.length).toBe(26);
   for (const frozen of prior.protectedFiles) {
     const bytes = readFileSync(frozen.path);
+    if (frozen.path === "src/data/gridlineEngineering.ts") {
+      // The historical raw-file hash remains in the fixture; the November
+      // additions are legitimate, so independently freeze its October sections.
+      expect(frozen.sha256).toBe("8005211530615834465beb7367d4fef64fbbd5471f94491601e9dc0a5fd9e5eb");
+      expect(extractLegacyGridlineSectionDigests(bytes.toString("utf8").replaceAll("\r\n", "\n")))
+        .toEqual(legacyGridlineSectionDigests);
+      expect(GRIDLINE_SOURCE_SHA).toBe("e3d47a638ddb7f3192c63598596628f60c7b364d");
+      expect(GRIDLINE_CURRENT_RELEASE_SHA).toBe("31a7a8b661d1734999f6d5871127b39ddb93c682");
+      continue;
+    }
+    if (frozen.path === "src/pages/GridlineEngineeringPage.tsx") {
+      // The newer Gridline release panel is additive and separately E2E-tested.
+      // Removing only that reviewed panel and its imports must reconstruct the
+      // complete October page, including the original case presentation.
+      const currentPage = bytes.toString("utf8").replaceAll("\r\n", "\n");
+      const withoutCurrentImports = currentPage.replace(
+        "gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, ", ""
+      );
+      const historicalPage = withoutCurrentImports.replace(
+        /^    <section data-gridline-current[^\n]*\n[\s\S]*?^    <\/section>\n/m, ""
+      );
+      expect(historicalPage).not.toBe(withoutCurrentImports);
+      expect(hash(historicalPage), frozen.path).toBe(frozen.sha256);
+      continue;
+    }
     expect(hash(frozen.normalizeEol ? bytes.toString("utf8").replaceAll("\r\n", "\n") : bytes), frozen.path).toBe(frozen.sha256);
   }
-  expect(projects.find(project => project.id === "robotfriends")).toEqual(prior.gridlineProject);
+  const gridline = projects.find(project => project.id === "robotfriends")!;
+  // Recruiter-facing copy was deliberately refreshed in November. The historical
+  // Gridline fixture remains unchanged: protect stable identity/links/ownership,
+  // not the older tagline, description and features of a living project card.
+  const gridlineIdentityKeys = [
+    "id", "slug", "name", "role", "teamType", "techStack", "categories",
+    "image", "demoUrl", "repoUrl", "engineeringCasePath", "status", "featured"
+  ] as const;
+  for (const key of gridlineIdentityKeys) {
+    expect(gridline[key], `robotfriends/${key}`).toEqual(prior.gridlineProject[key]);
+  }
   const water = projects.find(project => project.id === "taipei-feitsui-water-map")!;
   for (const [key, value] of Object.entries(prior.waterProjectIdentity)) expect(water[key as keyof typeof water], key).toEqual(value);
 });

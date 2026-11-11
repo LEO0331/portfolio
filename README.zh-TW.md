@@ -44,6 +44,10 @@ v2.3 新增英文 `/engineering/gridline` 與繁中 `/zh/engineering/gridline` �
 - 切換英文與繁體中文
 - 直接開啟線上 Demo 與原始碼儲存庫
 
+## Government Demo 與示範性技術提案 — 2026-11-11
+
+供工程面試、系統整合商及未來 GovTech 合作洽談使用的[文件型 Government Demo Package](./docs/government-demo/summary.zh-Hant.md)，包含 8 分鐘展示流程、架構／工程能力、逐項來源證據、無障礙查核卡與示範性技術提案。以已合併的 [Public Amenities Civic Explorer Phase 2](https://github.com/LEO0331/taipei-bin-map/pull/29) 為依據；不新增 Portfolio 網站功能，也不表示政府正式委託、認證或採購承諾。
+
 ## 快速開始
 
 ```bash
