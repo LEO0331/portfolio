@@ -149,12 +149,12 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["大字與簡單題庫操作", "作答回饋與錯題複習", "瀏覽器本機進度", "附來源的筆記與圖卡"]
   },
   "robotfriends": {
-    tagline: "具來源追溯的金融資料工程研究流程",
-    shortDescription: "以外部能源、基礎設施、企業揭露與市場資料介接，建立具確定性紀錄與透明來源脈絡的研究應用。",
-    fullDescription: "Gridline 以 Node.js 研究 API 與 SQLite/WAL 儲存層保存確定性觀測、來源追溯與上次有效資料。GitHub Pages 公開 Demo 發布靜態快照，並非公開即時後端、交易系統或投資預測工具。",
+    tagline: "以官方證據為核心的 AI 基礎設施研究與自動化報告平台",
+    shortDescription: "結合具日期的市場與 SEC 證據、主題公司比較、已驗證研究日曆與歷史研究報告的雙語儀表板。",
+    fullDescription: "Gridline 整合官方公司、基礎設施與能源證據及具日期的市場觀測。React／GitHub Pages 公開 Demo 提供公司研究、同業比較、週／月／議程研究日曆，以及保留真實時間點的日報與週報。Node.js 介接、本機 SQLite/WAL API 模式、嚴格資料驗證及 GitHub Actions 支援安全的靜態快照與報告發布；獨立每週官方來源掃描只自動接受嚴格驗證的時程，其他候選留待審閱。日曆涵蓋有限；公開 Demo 並非託管的 Node API、交易系統或投資預測工具。",
     role: "後端／金融資料工程開發者",
     categories: ["Web 應用", "後端", "資料工程"],
-    features: ["Node.js 資料介接 API 與確定性觀測識別", "SQLite/WAL 研究儲存、來源追溯與上次有效資料", "失敗即停止更新與排程靜態快照發布", "GitHub Actions 驗證與可選 Supabase 偏好整合"]
+    features: ["市場／SEC／基礎設施來源追溯與資料缺口揭露", "跨公司主題研究及官方研究催化事件日曆", "真實歷史交易日的日報封存與每週回顧", "快照／報告及日曆分離的 GitHub Actions 自動維護", "本機 Node.js＋SQLite/WAL 研究模式與可選 Supabase 偏好整合"]
   },
   "epubreader": {
     name: "私人書庫問答系統",
