@@ -1,5 +1,27 @@
 # Session Handoff
 
+**Current objective (2026-11-11):** Update Gridline's bilingual portfolio entry and current research-product description while preserving the October fixed-source engineering case.
+
+**Current status:** Proposed via GitHub MCP. Product source `31a7a8b661d1734999f6d5871127b39ddb93c682`; historical audited source `e3d47a638ddb7f3192c63598596628f60c7b364d`.
+
+## Verification Evidence
+
+Reviewed source documentation and successful upstream CI/Pages evidence. Added bilingual current-release content and targeted E2E assertions, but did not execute npm/build/browser verification locally.
+
+## Blockers and Remaining Risks
+
+Portfolio PR CI and bilingual browser checks are pending. The first scheduled calendar auto-sync and new Gridline screenshots are not verified. Old security audit and screenshots remain October historical evidence.
+
+## Recommended Next Step
+
+Review the focused Gridline Portfolio PR and CI, check card/drawer and engineering routes in both languages at desktop/mobile widths, then merge after acceptance. Preserve the Passport Comparison handoff below.
+
+## Files Relevant to the Next Update
+
+`src/data/projects.ts`, `src/data/projects.zh.ts`, `src/data/gridlineEngineering.ts`, `src/pages/GridlineEngineeringPage.tsx`, `src/routes/routeConfig.json`, `tests/e2e/gridline-engineering.spec.ts`, READMEs and progress/feature/handoff files.
+
+## Historical handoff — 2026-11-10 Passport Comparison
+
 **Current objective:** Refresh the existing Passport Comparison showcase.
 
 **Current status:** [Draft PR #52](https://github.com/LEO0331/portfolio/pull/52) contains the bilingual copy for upstream merge 62c4d36. The updated preview is pending publication at the public URL.
