@@ -207,24 +207,35 @@ export const projects: Project[] = [
     id: "warmmemo",
     slug: "warmmemo",
     name: "WarmMemo",
-    tagline: "Memorial pages, digital obituaries, and service delivery workflows",
+    tagline: "Flutter/Firebase memorial platform with private life planning and tested delivery",
     shortDescription:
-      "A Flutter Web and Firebase app for families and funeral-service teams to prepare memorial content and manage service orders.",
+      "A completed Flutter Web and Firebase product for memorial sharing, digital obituaries, life planning, and administrator-led service workflows.",
     fullDescription:
-      "WarmMemo combines shareable memorial pages and QR codes, obituary drafting and export, planning tools, and an administrator workspace for orders, suppliers, and delivery milestones.",
-    role: "Product / Frontend Developer",
+      "WarmMemo uses modular Flutter Web features, Firebase Authentication, Cloud Firestore, and owner/admin Security Rules to separate private drafts from public memorials and service operations. It provides shareable memorial pages and QR codes, digital obituaries, and Traditional Chinese PDF exports using bundled local fonts. Final Countdown pairs lifetime financial projections with optional, session-only current net-worth and cash-buffer reflections; the financial snapshot is not uploaded or included in public shares. Stripe-hosted Payment Links use a stable Firestore order reference for administrator-led manual reconciliation. GitHub Actions verifies Flutter tests, backend security checks, a 92% LCOV line-coverage gate, and gated GitHub Pages deployment.",
+    role: "Product / Flutter & Firebase Engineer",
     teamType: "solo",
-    techStack: ["Flutter", "Dart", "Firebase"],
+    techStack: ["Flutter", "Dart", "Firebase", "Cloud Firestore", "GitHub Actions"],
     categories: ["Web App", "Service Design", "Workflow Tool"],
     features: [
-      "Shareable memorial pages and QR codes",
-      "Digital obituary drafting and export",
-      "Service orders and notifications",
-      "Supplier and delivery administration"
+      "Firebase Auth, Firestore owner/admin rules, and public/private memorial separation",
+      "Final Countdown: lifetime projections plus session-only net worth and cash buffer",
+      "Memorial and obituary PDF exports with local Traditional Chinese fonts and QR links",
+      "Service orders, supplier coordination, and delivery milestones",
+      "Stripe-hosted checkout with order references and manual payment reconciliation",
+      "GitHub Actions CI/CD with Flutter tests, 92% LCOV gate, and Pages deployment"
+    ],
+    challenges: [
+      "Keeping private planning inputs and memorial drafts out of public sharing flows",
+      "Supporting Chinese PDF glyphs while limiting font downloads and preserving offline-after-load export"
+    ],
+    outcomes: [
+      "Completed the planned feature backlog and deployed the Flutter/Firebase web app",
+      "Published LCOV coverage artifacts with a 92% CI gate and verified Pages deployment"
     ],
     image: "/src/assets/images/projects/warmmemo.png",
     demoUrl: "https://leo0331.github.io/warmmemo/",
     repoUrl: "https://github.com/LEO0331/warmmemo",
+    caseStudyUrl: "https://github.com/LEO0331/warmmemo/blob/main/docs/system_design_architecture_tradeoffs.md",
     status: "live",
     featured: false
   },
