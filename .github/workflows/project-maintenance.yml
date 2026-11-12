@@ -7,8 +7,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
+
+env:
+  GH_REPO: ${{ github.repository }}
+  DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+  SCAN_FILES: |-
+    .github/project-scan-state.json
+    .github/project-scan-report.md
+    src/data/projects.ts
+    src/data/github-pins.json
 
 concurrency:
   group: monthly-project-maintenance
@@ -16,48 +24,51 @@ concurrency:
 
 jobs:
   scan:
-    runs-on: ubuntu-latest
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    permissions:
+      contents: read
+      pull-requests: read
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
-    env:
-      GH_REPO: ${{ github.repository }}
-      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+    outputs:
+      branch: ${{ steps.branch.outputs.name }}
+      review-head: ${{ steps.branch.outputs.review-head }}
+      prepared-tree: ${{ steps.branch.outputs.prepared-tree }}
+      audit: ${{ steps.audit.outcome }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          ref: ${{ github.event.repository.default_branch }}
+          ref: ${{ github.sha }}
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Prepare review branch without discarding pending curation
         id: branch
         env:
           GH_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.sha }}
         shell: bash
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          branch=$(gh pr list --state open --base "$DEFAULT_BRANCH" --json headRefName --jq '[.[] | select(.headRefName | startswith("codex/project-scan-"))][0].headRefName // empty')
-          if [ -n "$branch" ]; then
-            [[ "$branch" =~ ^codex/project-scan-[0-9]+$ ]] || { echo 'Unexpected maintenance branch name'; exit 1; }
-            git fetch origin "$branch"
-            git switch --track "origin/$branch"
-            git merge "origin/$DEFAULT_BRANCH" -m 'Keep pending project review compatible with the current portfolio'
-          else
-            branch="codex/project-scan-$GITHUB_RUN_ID"
-            # A prior attempt may have pushed successfully before PR creation failed.
-            if git show-ref --verify --quiet "refs/remotes/origin/$branch"; then
-              git switch --track "origin/$branch"
-              git merge "origin/$DEFAULT_BRANCH" -m 'Keep pending project review compatible with the current portfolio'
-            else
-              git switch -c "$branch"
-            fi
+          branch=$(gh pr list --state open --base "$DEFAULT_BRANCH" --limit 100 --json headRefName,isCrossRepository --jq '[.[] | select(.isCrossRepository == false and (.headRefName | test("^codex/project-scan-[0-9]+$")))][0].headRefName // empty')
+          branch=${branch:-codex/project-scan-$GITHUB_RUN_ID}
+          [[ "$branch" =~ ^codex/project-scan-[0-9]+$ ]]
+          review_head=$(git rev-parse --verify --quiet "refs/remotes/origin/$branch" || true)
+          git switch -c "$branch" "${review_head:-$BASE_SHA}"
+          if [[ -n "$review_head" ]]; then
+            git merge "$BASE_SHA" -m 'Keep pending project review compatible with the current portfolio'
           fi
-          echo "name=$branch" >> "$GITHUB_OUTPUT"
+          {
+            echo "name=$branch"
+            echo "review-head=$review_head"
+            echo "prepared-tree=$(git rev-parse 'HEAD^{tree}')"
+          } >> "$GITHUB_OUTPUT"
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 24
-          cache: npm
 
       - run: npm ci
 
@@ -83,44 +94,21 @@ jobs:
           set -o pipefail
           npm audit 2>&1 | tee "$RUNNER_TEMP/project-scan-audit.txt"
 
-      - name: Open or update draft maintenance PR
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REVIEW_BRANCH: ${{ steps.branch.outputs.name }}
-          AUDIT_OUTCOME: ${{ steps.audit.outcome }}
+      - name: Package verified project changes
         shell: bash
         run: |
           set -euo pipefail
-          git add -- .github/project-scan-state.json .github/project-scan-report.md src/data/projects.ts src/data/github-pins.json
-          if ! git diff --cached --quiet; then
-            cat > "$RUNNER_TEMP/project-scan-commit.txt" <<'MESSAGE'
-          Keep portfolio links and review signals aligned with source repositories
+          mapfile -t files <<< "$SCAN_FILES"
+          git add -- "${files[@]}"
+          git diff --cached --binary --no-ext-diff --no-textconv HEAD -- "${files[@]}" > "$RUNNER_TEMP/project-proposal.patch"
 
-          Record repository changes and propose approved demo URLs for curated review.
-
-          Constraint: Curated bilingual copy and preview images require source and visual review
-          Confidence: high
-          Scope-risk: narrow
-          Tested: Harness, unit tests, TypeScript/build, E2E, diff integrity; audit reported separately
-          Not-tested: Live demo appearance and unpublished product copy
-          MESSAGE
-            git commit --file "$RUNNER_TEMP/project-scan-commit.txt"
-          fi
-          # Also push a successful merge from main, even if the scan had no new findings.
-          if git diff --quiet "origin/$DEFAULT_BRANCH" HEAD; then
-            echo 'No project changes detected.' >> "$GITHUB_STEP_SUMMARY"
-            exit 0
-          fi
-          git push origin "HEAD:refs/heads/$REVIEW_BRANCH"
-          cp .github/project-scan-report.md "$RUNNER_TEMP/project-scan-pr.md"
-          printf '\nDependency audit outcome: %s. See the workflow audit log/artifact; resolve advisories before release.\n' "$AUDIT_OUTCOME" >> "$RUNNER_TEMP/project-scan-pr.md"
-          pr=$(gh pr list --state open --head "$REVIEW_BRANCH" --base "$DEFAULT_BRANCH" --json number --jq '.[0].number // empty')
-          if [ -n "$pr" ]; then
-            gh pr edit "$pr" --body-file "$RUNNER_TEMP/project-scan-pr.md"
-          else
-            gh pr create --draft --base "$DEFAULT_BRANCH" --head "$REVIEW_BRANCH" --title 'Review monthly portfolio repository changes' --body-file "$RUNNER_TEMP/project-scan-pr.md"
-          fi
-          echo 'Project changes are available in the draft maintenance PR. All verification ran in this workflow; additional PR workflows may require approval.' >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload verified project changes
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: project-proposal
+          path: ${{ runner.temp }}/project-proposal.patch
+          if-no-files-found: error
+          overwrite: true
 
       - name: Summarize dependency findings
         if: always() && steps.audit.outcome == 'failure'
@@ -136,3 +124,92 @@ jobs:
             .github/project-scan-state.json
             ${{ runner.temp }}/project-scan-audit.txt
           if-no-files-found: ignore
+
+  publish:
+    needs: scan
+    permissions:
+      contents: write
+      pull-requests: write
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
+
+      - name: Download verified project changes
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: project-proposal
+          path: ${{ runner.temp }}/project-proposal
+
+      - name: Open or update draft maintenance PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BASE_SHA: ${{ github.sha }}
+          REVIEW_BRANCH: ${{ needs.scan.outputs.branch }}
+          REVIEW_HEAD: ${{ needs.scan.outputs.review-head }}
+          PREPARED_TREE: ${{ needs.scan.outputs.prepared-tree }}
+          AUDIT_OUTCOME: ${{ needs.scan.outputs.audit }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$REVIEW_BRANCH" =~ ^codex/project-scan-[0-9]+$ ]]
+          [[ -z "$REVIEW_HEAD" || "$REVIEW_HEAD" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$PREPARED_TREE" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$AUDIT_OUTCOME" == success || "$AUDIT_OUTCOME" == failure ]]
+          branch_ref="refs/heads/$REVIEW_BRANCH"
+          review_head=$(git rev-parse --verify --quiet "refs/remotes/origin/$REVIEW_BRANCH" || true)
+          [[ "$review_head" == "$REVIEW_HEAD" ]] || { echo 'Review branch changed during the scan'; exit 1; }
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config core.hooksPath /dev/null
+          git switch -c "$REVIEW_BRANCH" "${REVIEW_HEAD:-$BASE_SHA}"
+          if [[ -n "$REVIEW_HEAD" ]]; then
+            git merge "$BASE_SHA" -m 'Keep pending project review compatible with the current portfolio'
+            git merge-base --is-ancestor "$REVIEW_HEAD" HEAD
+          fi
+          [[ "$(git rev-parse 'HEAD^{tree}')" == "$PREPARED_TREE" ]]
+
+          # The proposal is data from the read-only job. The publisher runs no
+          # scripts from the review branch and applies changes only to scan files.
+          patch="$RUNNER_TEMP/project-proposal/project-proposal.patch"
+          [[ -f "$patch" && ! -L "$patch" ]]
+          mapfile -t files <<< "$SCAN_FILES"
+          includes=()
+          for file in "${files[@]}"; do includes+=(--include="$file"); done
+          if [[ -s "$patch" ]]; then
+            git apply --index "${includes[@]}" -- "$patch"
+            while IFS= read -r -d '' changed; do
+              allowed=false
+              for file in "${files[@]}"; do
+                if [[ "$file" == "$changed" ]]; then allowed=true; break; fi
+              done
+              [[ "$allowed" == true ]] || { echo 'Proposal changed an unexpected path'; exit 1; }
+            done < <(git diff --cached --name-only --no-renames -z)
+            for file in "${files[@]}"; do
+              [[ "$(git ls-files --format='%(objectmode)' -- "$file")" == 100644 ]]
+            done
+            git diff --cached --check
+            if ! git diff --cached --quiet; then
+              git commit -m 'Update monthly portfolio review data'
+            fi
+          fi
+
+          if git diff --quiet "$BASE_SHA" HEAD; then
+            echo 'No project changes detected.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          [[ -f .github/project-scan-report.md && ! -L .github/project-scan-report.md ]]
+          git push --force-with-lease="$branch_ref:$REVIEW_HEAD" origin "HEAD:$branch_ref"
+          cp .github/project-scan-report.md "$RUNNER_TEMP/project-scan-pr.md"
+          printf '\nDependency audit outcome: %s. See the workflow audit log/artifact; resolve advisories before release.\n' "$AUDIT_OUTCOME" >> "$RUNNER_TEMP/project-scan-pr.md"
+          pr=$(gh pr list --state open --head "$REVIEW_BRANCH" --base "$DEFAULT_BRANCH" --json isCrossRepository,number --jq '[.[] | select(.isCrossRepository == false)][0].number // empty')
+          if [[ -n "$pr" ]]; then
+            gh pr edit "$pr" --body-file "$RUNNER_TEMP/project-scan-pr.md"
+          else
+            gh pr create --draft --base "$DEFAULT_BRANCH" --head "$REVIEW_BRANCH" --title 'Review monthly portfolio repository changes' --body-file "$RUNNER_TEMP/project-scan-pr.md"
+          fi
+          echo 'Project changes are available in the draft maintenance PR.' >> "$GITHUB_STEP_SUMMARY"

@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Harden the Portfolio automation without adding a pull request requirement to ordinary pushes.
+
+**Current status:** The workflow and link-audit changes are in the local `codex/portfolio-ci-hardening` branch.
+
+## Verification Evidence
+
+See the November 12 CI hardening entry in progress.md.
+
+## Blockers
+
+The Pages deployment and monthly scan/publish sequence still need a GitHub-hosted run on the updated default branch.
+
+## Remaining Risks
+
+Direct pushes to main can deploy. The maintenance scanner trusts tests and build scripts already present on maintainer-owned review branches.
+
+## Recommended Next Step
+
+Publish the workflow changes and verify the first Pages and monthly maintenance runs. Confirm that the maintenance job still preserves pending curation and produces a draft proposal.
+
+## Files Relevant to the Next Update
+
+`.github/workflows/deploy.yml`, `.github/workflows/e2e.yml`, `.github/workflows/lighthouse.yml`, `.github/workflows/project-maintenance.yml`, and `tools/govtech-link-audit.mjs`.
+
+## Previous handoff — 2026-11-12 WarmMemo
+
 **Current objective (2026-11-12):** Complete the existing WarmMemo bilingual portfolio record with verified engineering, Financial Footing, offline-after-load PDF, privacy and CI/CD details.
 
 **Current status:** Proposed via GitHub MCP on `docs/warmmemo-flutter-firebase-release-20261112`; awaiting Portfolio CI/build/browser acceptance and PR review.

@@ -3,7 +3,6 @@ import { registerHooks } from 'node:module';
 import { existsSync, readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { dirname, resolve, relative, isAbsolute } from 'node:path';
-import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -49,15 +48,9 @@ for (const [locale, cases] of Object.entries(records)) {
 for (const [projectId, path] of Object.entries(civicSourceReadmes)) add(`https://github.com/LEO0331/${path}`, `civicSourceReadmes/${projectId}`);
 for (const path of ['/govtech', '/zh/govtech', '/projects', '/zh/projects']) add(path, 'landing-navigation');
 
-// Credentials stay in memory, are sent only to api.github.com, and never enter
-// output. Failure falls back to public unauthenticated API access.
-let token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
-if (!token && !process.argv.includes('--no-credentials')) {
-  try {
-    const credential = execFileSync('git', ['credential', 'fill'], { cwd: root, input: 'protocol=https\nhost=github.com\n\n', encoding: 'utf8', timeout: 5000, stdio: ['pipe', 'pipe', 'ignore'], env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GCM_INTERACTIVE: 'never' } });
-    token = credential.split(/\r?\n/).find(line => line.startsWith('password='))?.slice(9);
-  } catch { /* Public requests remain valid evidence, possibly rate limited. */ }
-}
+const token = process.argv.includes('--github-auth') && !process.argv.includes('--no-credentials')
+  ? process.env.GITHUB_TOKEN || process.env.GH_TOKEN
+  : undefined;
 for (const [locale,content] of Object.entries(gridlineEngineeringContent)) {
   visit(content, `engineering/${locale}`);
   for (const section of content.sections) for (const file of section.sources) add(gridlineSource(file), `engineering/${locale}/${section.id}`);
@@ -70,7 +63,11 @@ async function request(url, { json = false } = {}) {
   try {
     for (let redirects = 0; redirects <= limits.maxRedirects; redirects++) {
       const headers = { 'User-Agent': 'portfolio-public-evidence-audit', Accept: json ? 'application/vnd.github+json' : '*/*' };
-      if (token && new URL(current).hostname === 'api.github.com') headers.Authorization = `Bearer ${token}`;
+      // JSON mode is used only for the Git tree URLs generated below. Redirects
+      // and links taken from catalogue data always use unauthenticated requests.
+      if (token && json && redirects === 0 && new URL(current).origin === 'https://api.github.com') {
+        headers.Authorization = `Bearer ${token}`;
+      }
       const response = await fetch(current, { headers, signal: controller.signal, redirect: 'manual' });
       if ([301, 302, 303, 307, 308].includes(response.status) && response.headers.has('location')) {
         const next = new URL(response.headers.get('location'), current);

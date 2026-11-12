@@ -135,7 +135,7 @@ Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連
 
 ## 每月專案維護
 
-[Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) 於每月 1 日 **台北時間 09:17** 執行，也可在 Actions → Monthly Project Maintenance → Run workflow 手動啟動。推送至預設分支後排程才會生效；請在 Settings → Actions → General 啟用 **Allow GitHub Actions to create and approve pull requests**，不需要額外 API 金鑰。
+[Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) 於每月 1 日 **台北時間 09:17** 執行。手動執行時，請在 Actions → Monthly Project Maintenance → Run workflow 選擇預設分支。掃描及測試工作使用唯讀權限。另一項工作確認審查分支仍為掃描時的版本，再發布草稿 PR。請在 Settings → Actions → General 啟用 **Allow GitHub Actions to create and approve pull requests**。
 
 掃描會比較儲存庫推送時間、正式網址、描述、首頁、預設分支、封存狀態與根目錄 README 雜湊，支援儲存庫轉址及 monorepo 連結，並分頁查詢未收錄的公開儲存庫。首次執行會建立基準並開啟草稿 PR；後續有變更時才建立或更新 PR。現有維護分支會保留人工整理的內容，不強制推送；合併衝突會停止工作供人工處理。
 
@@ -232,6 +232,8 @@ npm run verify:bridge-geography -- <standalone-checkout>
 ## 市政案例 v1.8 展示品質整理
 
 GovTech 列表與專案連結使用輕量雙語摘要；詳細頁保留完整研究紀錄。原生折疊區提供精確來源識別，實際結果與限制維持可見。以 `node tools/govtech-link-audit.mjs` 執行有界來源路徑／HTTP 檢查（需 Node.js 24 以上）；正式建置後可用 `node tools/verify-govtech-quality.mjs` 檢查螢幕寬度、主題與路由。請見 [v1.8 跨案例檢視](docs/govtech-v1.8-cross-case-quality-review.md) 與 [驗證記錄](docs/govtech-v1.8-hardening-verification.md)。
+
+連結稽核預設使用匿名請求。若需使用 GitHub 驗證後的 API 配額，請設定 `GH_TOKEN` 或 `GITHUB_TOKEN`，並加上 `--github-auth`。權杖僅用於工具發出的 GitHub HTTPS Git tree API 請求。
 
 ## 市政案例 v1.9 — 高齡社區照顧
 
