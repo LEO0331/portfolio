@@ -4,6 +4,32 @@
 
 **Last updated:** 2026-11-12
 
+**Active work:** Harden Portfolio workflows and local link-audit authentication.
+
+**Status:** Local implementation on `codex/portfolio-ci-hardening`.
+
+### Verification Evidence
+
+All four workflow definitions passed actionlint. On Node.js 24, the locked install, full and production-only audits (zero advisories), harness, 47 unit tests, production build, 284 Chromium tests, and 17/17 tracked flows passed. Mocked link-audit requests confirmed anonymous default behavior, opt-in authentication for direct GitHub HTTPS tree requests, and credential-free redirects.
+
+The maintenance publisher shell passed disposable local Git checks for a no-op, a new proposal, a stale branch revision, and updating a review branch while preserving pending curation. The fixture stubbed GitHub PR calls.
+
+### Blockers
+
+Hosted Pages and monthly maintenance acceptance require the updated workflows on the default branch.
+
+### Remaining Risks
+
+Ordinary pushes to `main` can deploy. Existing maintenance review branches remain maintainer-owned curation, and their build and test scripts execute in a read-only job.
+
+### Next Session Should
+
+After publishing the workflow changes, verify the Pages deployment and run Monthly Project Maintenance from the default branch. Confirm that the publisher opens or updates a draft only when a proposal exists.
+
+## Previous current state — 2026-11-12 WarmMemo
+
+**Last updated:** 2026-11-12
+
 **Active work:** Present WarmMemo as a completed Flutter Web/Firebase product in the existing bilingual project catalogue.
 
 **Status:** Source-backed copy and targeted E2E regression tests proposed on `docs/warmmemo-flutter-firebase-release-20261112` via GitHub MCP. Portfolio CI and browser verification pending.
@@ -93,6 +119,10 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-12 — CI and audit credential hardening
+
+Scoped Pages and OIDC permissions to the deployment job. Split monthly maintenance into a read-only verification job and a publisher that applies only approved paths after checking the branch revision. Updated workflow Node versions to 24 and made GovTech link-audit credentials opt-in. Updated the two README files, feature register, and handoff.
 
 ### 2026-11-11 — Gridline Phase 4 and Calendar Maintenance presentation
 

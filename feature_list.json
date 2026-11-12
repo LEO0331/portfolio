@@ -870,5 +870,26 @@
         "Bilingual catalogue copy, system-design source link and targeted browser regression tests proposed via GitHub MCP",
         "Portfolio npm/build/Playwright not run in MCP editing session; PR CI acceptance and screenshot currency review pending"
       ]
-    } ]
+    },
+    {
+      "id": "portfolio-ci-least-privilege-2026-11",
+      "name": "Limit workflow and link-audit credentials",
+      "description": "Scope Pages and monthly maintenance privileges to publishing jobs and make link-audit authentication opt-in.",
+      "status": "complete",
+      "dependencies": ["monthly-project-maintenance-2026-10"],
+      "doneCriteria": [
+        "Pages build uses read-only permissions and deployment retains its required scopes",
+        "Monthly maintenance verifies in a read-only job and publishes only the allowlisted proposal to the expected review branch",
+        "Use Node.js 24 in all Portfolio workflows and restrict the link-audit token to direct HTTPS GitHub tree requests",
+        "Pass the local verification gate and record hosted acceptance requirements"
+      ],
+      "evidence": [
+        "Actionlint passed for all four workflows",
+        "Mocked credential checks passed for anonymous and opt-in runs, including redirects",
+        "Local Git publisher fixture covered no-op, new proposal, preserving curation and rejecting stale branch revisions",
+        "Clean install, audit, build, 47 unit tests, 284 Chromium tests and 17/17 tracked flows passed",
+        "Hosted Pages and monthly maintenance acceptance pending publication"
+      ]
+    }
+  ]
 }

@@ -128,7 +128,7 @@ Run `npm run sync:pins` with `GITHUB_TOKEN` to query GraphQL, save public pins/m
 
 ## Monthly project maintenance
 
-[Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) runs on the first of each month at **09:17 Asia/Taipei** and can also be started from Actions → Monthly Project Maintenance → Run workflow. The schedule becomes active after the workflow is pushed to the default branch. In Settings → Actions → General, enable **Allow GitHub Actions to create and approve pull requests**; no additional API key is needed.
+[Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) runs on the first of each month at **09:17 Asia/Taipei**. To run it manually, select the default branch in Actions → Monthly Project Maintenance → Run workflow. A read-only job scans and tests the proposal. A separate job checks that the review branch still matches the scanned revision and publishes the draft PR. Enable **Allow GitHub Actions to create and approve pull requests** in Settings → Actions → General.
 
 The scanner compares repository push timestamps, canonical URLs, descriptions, homepages, default branches, archive status, and root README hashes. It follows repository redirects, handles monorepo links, and paginates the owner's public repositories to list unlisted candidates. The first run records a baseline and opens a draft review PR; later runs open or update that PR only when tracked changes exist. An open maintenance branch is reused without force-pushing, preserving pending curation; merge conflicts stop the job for review.
 
@@ -226,6 +226,8 @@ The first command runs the original full build/tests and two immutable local pub
 ## GovTech v1.8 presentation hardening
 
 GovTech public presentation uses a lightweight bilingual summary catalogue for landing/project links and complete records on detail routes. Native disclosures retain exact source IDs; results and limitations remain visible. Run `node tools/govtech-link-audit.mjs` for bounded path/HTTP checks (Node.js 24+) and `node tools/verify-govtech-quality.mjs` after a production build for the viewport/theme/route audit. See [v1.8 quality review](docs/govtech-v1.8-cross-case-quality-review.md) and [verification](docs/govtech-v1.8-hardening-verification.md).
+
+The link audit runs anonymously by default. To use GitHub's authenticated API quota, provide `GH_TOKEN` or `GITHUB_TOKEN` and pass `--github-auth`. The token is sent only on the tool's GitHub HTTPS tree API requests.
 
 ## GovTech Showcase v1.9 — Senior Community Care
 
