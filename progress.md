@@ -2,6 +2,37 @@
 
 ## Current State
 
+**Last updated:** 2026-11-12
+
+**Active work:** Present WarmMemo as a completed Flutter Web/Firebase product in the existing bilingual project catalogue.
+
+**Status:** Source-backed copy and targeted E2E regression tests proposed on `docs/warmmemo-flutter-firebase-release-20261112` via GitHub MCP. Portfolio CI and browser verification pending.
+
+### Verified upstream evidence
+
+- WarmMemo release SHA `2d6f61b97cb04f1aa18c5b273ea2587574d322dc`, merged PRs #27, #28, #30, #31, #32.
+- Matching latest main CI run [43166204947](https://github.com/LEO0331/warmmemo/actions/runs/43166204947) and GitHub Pages run [43166471273](https://github.com/LEO0331/warmmemo/actions/runs/43166471273) both succeeded.
+- The upstream CI coverage policy enforces a 92% Flutter LCOV line-coverage floor and publishes an artifact. The approved baseline is an instrumented subset (42/76 Dart production files), not a claim that all code has 92% coverage.
+- Financial Footing snapshot inputs are session-only, are not uploaded, and are excluded from public sharing; lifetime financial projections remain a separate estimate.
+- PDF export uses bundled Traditional Chinese fonts. Offline export is verified after required fonts are loaded; fully offline cold-start is not claimed. Stripe-hosted checkout uses manual payment reconciliation, not automated payment confirmation.
+
+### Portfolio changes
+
+- Curated `warmmemo` in `src/data/projects.ts` and `src/data/projects.zh.ts` with architecture, privacy, Final Countdown, PDF, testing and deployment evidence.
+- Linked the existing upstream system-design tradeoffs document; kept slug, existing previews, demo URL, repository URL, `featured: false`, homepage curated order, pin snapshot, and unrelated projects unchanged.
+- Added `tests/e2e/warmmemo-showcase.spec.ts` to protect bilingual detail drawers, expected source links, and unchanged featured order.
+
+### Verification and blockers
+
+- GitHub MCP source review and draft-file structure checks only; no local Portfolio npm install, security audit, build, Playwright or image recapture was executed.
+- Pending: review CI, test English/Chinese project card/drawer at 1440px and 390px, confirm current preview imagery accurately represents the displayed app, and review the PR before merging.
+
+### Next action
+
+Run the repository quality gate and review the focused WarmMemo copy before merging. The existing screenshot remains unchanged pending visual confirmation.
+
+## Previous current state — 2026-11-11
+
 **Last updated:** 2026-11-11
 
 **Active work:** Bilingual Gridline Phase 4/Calendar Maintenance portfolio refresh with the October source audit preserved.
