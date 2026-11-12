@@ -890,6 +890,22 @@
         "Clean install, audit, build, 47 unit tests, 284 Chromium tests and 17/17 tracked flows passed",
         "Hosted Pages and monthly maintenance acceptance pending publication"
       ]
+    },
+    {
+      "id": "taiwanese-recruiter-copy-2026-11",
+      "name": "Polish Traditional Chinese recruiter-facing portfolio copy",
+      "description": "Use natural Taiwanese wording to introduce the full-stack role and explain the backend focus.",
+      "status": "complete",
+      "dependencies": ["portfolio-catalogue-2026-08"],
+      "doneCriteria": [
+        "Update the homepage, project catalogue UI, about page and contact page in Traditional Chinese",
+        "Keep static and client metadata aligned",
+        "Verify localized copy and language navigation at mobile and desktop widths"
+      ],
+      "evidence": [
+        "Local Chromium verified the updated Traditional Chinese copy, project and contact navigation, metadata, layout and the English toggle at 390px and 1440px",
+        "Locked install, npm audit, harness, 47 unit tests, production build, 284 Chromium tests, 17 tracked flows and diff check passed"
+      ]
     }
   ]
 }

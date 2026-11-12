@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Use natural Taiwanese Traditional Chinese across the portfolio pages recruiters are most likely to visit.
+
+**Current status:** The copy update is in the local `codex/taiwanese-portfolio-copy` branch.
+
+## Verification Evidence
+
+The production build, 47 unit tests, 284 Chromium tests and 17 tracked flows passed. Focused Chromium checks verified the recruiter-facing copy and language switching at 390px and 1440px.
+
+## Blockers
+
+None.
+
+## Remaining Risks
+
+None for the local copy change.
+
+## Recommended Next Step
+
+Review the homepage and contact flow in Traditional Chinese, then publish through the existing workflow.
+
+## Files Relevant to the Next Update
+
+`src/i18n/copy.ts`, `src/data/profile.zh.ts`, and `src/routes/routeConfig.json`.
+
+## Previous handoff — 2026-11-12 CI hardening
+
 **Current objective:** Harden the Portfolio automation without adding a pull request requirement to ordinary pushes.
 
 **Current status:** The workflow and link-audit changes are in the local `codex/portfolio-ci-hardening` branch.
