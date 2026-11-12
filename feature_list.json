@@ -848,6 +848,27 @@
         "Bilingual current-release presentation implemented through GitHub MCP",
         "Local npm/build/Playwright not executed; PR CI acceptance pending"
       ]
-    }
-  ]
+    },
+    {
+      "id": "warmmemo-release-flutter-firebase-showcase-2026-11",
+      "name": "Present completed WarmMemo Flutter/Firebase product",
+      "description": "Refresh the existing bilingual WarmMemo catalogue entry with verified architecture, Financial Footing, Traditional Chinese PDF exports, CI/CD, testing and privacy boundaries.",
+      "status": "blocked",
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
+      "doneCriteria": [
+        "English and Traditional Chinese WarmMemo card and details accurately describe the merged upstream release",
+        "Architecture, session-only Financial Footing, local-font PDF, 92% LCOV gate, security boundaries and deployment are represented without claims beyond the source evidence",
+        "Existing project ID, links, image, homepage curated order and GitHub pin snapshot remain unchanged",
+        "Portfolio build and focused bilingual desktop/mobile browser tests pass before merge"
+      ],
+      "evidence": [
+        "Reviewed WarmMemo main 2d6f61b97cb04f1aa18c5b273ea2587574d322dc, merged PRs #27/#28/#30/#31/#32 and coverage policy",
+        "WarmMemo main CI run 43166204947 succeeded; Pages run 43166471273 succeeded for the same main SHA",
+        "WarmMemo CI enforces 92% LCOV line coverage and uploads an artifact; upstream documentation records 3,277/3,545 lines on PR #31 main",
+        "Bilingual catalogue copy, system-design source link and targeted browser regression tests proposed via GitHub MCP",
+        "Portfolio npm/build/Playwright not run in MCP editing session; PR CI acceptance and screenshot currency review pending"
+      ]
+    } ]
 }
