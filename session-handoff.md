@@ -1,8 +1,31 @@
 # Session Handoff
 
-**Current objective (2026-11-11):** Update Gridline's bilingual portfolio entry and current research-product description while preserving the October fixed-source engineering case.
+**Current objective (2026-11-12):** Complete the existing WarmMemo bilingual portfolio record with verified engineering, Financial Footing, offline-after-load PDF, privacy and CI/CD details.
 
-**Current status:** Proposed via GitHub MCP. Product source `31a7a8b661d1734999f6d5871127b39ddb93c682`; historical audited source `e3d47a638ddb7f3192c63598596628f60c7b364d`.
+**Current status:** Proposed via GitHub MCP on `docs/warmmemo-flutter-firebase-release-20261112`; awaiting Portfolio CI/build/browser acceptance and PR review.
+
+## Verified evidence
+
+WarmMemo main `2d6f61b97cb04f1aa18c5b273ea2587574d322dc`. Main CI [43166204947](https://github.com/LEO0331/warmmemo/actions/runs/43166204947) and Pages [43166471273](https://github.com/LEO0331/warmmemo/actions/runs/43166471273) succeeded. PR #31 supplies the 92% Flutter LCOV CI gate; PR #32 corrects PDF glyph mapping.
+
+## Work and scope
+
+Edited `src/data/projects.ts`, `src/data/projects.zh.ts`; added `tests/e2e/warmmemo-showcase.spec.ts`. Maintained existing project ID, demo, preview paths, manual homepage featured order and GitHub pin snapshot.
+
+## Remaining verification
+
+GitHub MCP cannot execute Portfolio npm/build/Playwright locally. Review PR checks, open bilingual project drawers at desktop/mobile widths, and confirm screenshot remains a representative preview. No upstream financial, Firebase or payment behavior was changed.
+
+## Next step
+
+Review this focused PR and hosted checks, then merge when the Portfolio E2E and responsive presentation are accepted.
+
+---
+
+## Previous handoff — 2026-11-11 Gridline
+**Previous objective (2026-11-11):** Update Gridline's bilingual portfolio entry and current research-product description while preserving the October fixed-source engineering case.
+
+**Previous status:** Proposed via GitHub MCP. Product source `31a7a8b661d1734999f6d5871127b39ddb93c682`; historical audited source `e3d47a638ddb7f3192c63598596628f60c7b364d`.
 
 ## Verification Evidence
 
