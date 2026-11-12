@@ -96,12 +96,27 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   },
   "warmmemo": {
     name: "暖備 WarmMemo",
-    tagline: "線上追思、數位訃聞與服務交付流程",
-    shortDescription: "以 Flutter Web 與 Firebase 協助家屬及殯葬服務團隊準備追思內容並管理服務訂單。",
-    fullDescription: "WarmMemo 整合可分享的追思頁與 QR Code、訃聞撰寫與匯出、規劃工具，以及訂單、供應商和交付里程碑的管理工作區。",
-    role: "產品／前端開發者",
+    tagline: "Flutter／Firebase 追思平台，整合隱私優先的人生規劃與可驗證交付流程",
+    shortDescription: "已完成並部署的 Flutter Web／Firebase 產品，涵蓋追思頁分享、數位訃聞、人生規劃與管理端服務流程。",
+    fullDescription: "WarmMemo 採模組化 Flutter Web 架構，透過 Firebase Authentication、Cloud Firestore 與擁有者／管理員 Security Rules 隔離私人草稿、公開追思內容及服務作業。支援追思頁分享與 QR Code、數位訃聞，以及使用內建繁中文字型的 PDF 匯出。「人生倒數」區分終身財務預估與僅限當次工作階段的淨資產、現金緩衝檢視，財務現況資料不會上傳或加入公開分享。Stripe Payment Links 保留 Firestore 訂單識別供管理員人工對帳；GitHub Actions 執行 Flutter 測試、後端安全檢查、92% LCOV 行覆蓋率門檻與受 CI 控管的 GitHub Pages 部署。",
+    role: "產品／Flutter 與 Firebase 工程師",
     categories: ["Web 應用", "服務設計", "流程工具"],
-    features: ["可分享追思頁與 QR Code", "數位訃聞撰寫與匯出", "服務訂單與通知", "供應商與交付管理"]
+    features: [
+      "Firebase 驗證、Firestore 擁有者／管理員權限與公開／私人資料隔離",
+      "人生倒數：長期收支預估與僅限當次工作階段的淨資產、現金緩衝",
+      "內建繁中文字型與 QR 連結的追思頁、訃聞 PDF 匯出",
+      "服務訂單、供應商協調及交付里程碑",
+      "Stripe 託管結帳、訂單識別及管理員人工對帳",
+      "GitHub Actions CI/CD、Flutter 測試、92% LCOV 門檻與 Pages 部署"
+    ],
+    challenges: [
+      "確保私人規劃資料及追思草稿不會出現在公開分享流程",
+      "兼顧繁體中文 PDF 字元覆蓋、字型載入量及載入後離線匯出"
+    ],
+    outcomes: [
+      "完成既定功能清單並部署 Flutter／Firebase Web 應用",
+      "CI 發布 LCOV 覆蓋率證據，落實 92% 門檻並驗證 Pages 部署"
+    ]
   },
   "leave-request": {
     name: "請假管理系統",
