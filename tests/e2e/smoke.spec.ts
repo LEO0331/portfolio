@@ -208,7 +208,7 @@ test.describe("Portfolio smoke", () => {
 
     await expect(page).toHaveURL(/\/portfolio\/zh\/projects$/);
     await expect(page.getByRole("heading", { name: "專案", level: 1 })).toBeVisible();
-    await expect(page.getByPlaceholder("可搜尋名稱、標語、描述、分類或技術")).toBeVisible();
+    await expect(page.getByPlaceholder("例如 Flutter、API 或 Gridline", { exact: true })).toBeVisible();
     await expect(page.getByText("剩食媒合與取餐安排")).toBeVisible();
   });
 

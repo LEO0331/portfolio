@@ -4,6 +4,30 @@
 
 **Last updated:** 2026-11-12
 
+**Active work:** Polish Traditional Chinese portfolio copy for Taiwanese recruiters.
+
+**Status:** The homepage introduces Leo as a full-stack engineer and describes his backend strengths in the summary. The homepage, project catalogue, about page, contact page and shared footer use more direct Traditional Chinese. The corresponding static and client metadata are aligned.
+
+### Verification Evidence
+
+The changed strings are limited to Traditional Chinese copy and metadata. See the dated entry below for verification.
+
+### Blockers
+
+None.
+
+### Remaining Risks
+
+None for the local copy change.
+
+### Next Session Should
+
+Review the Traditional Chinese homepage and contact flow, then publish through the existing workflow.
+
+## Previous current state — 2026-11-12 CI hardening
+
+**Last updated:** 2026-11-12
+
 **Active work:** Harden Portfolio workflows and local link-audit authentication.
 
 **Status:** Local implementation on `codex/portfolio-ci-hardening`.
@@ -119,6 +143,12 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-12 — Traditional Chinese recruiter copy
+
+Updated `src/i18n/copy.ts`, `src/data/profile.zh.ts`, and the matching Traditional Chinese metadata in `src/routes/routeConfig.json`. The homepage CTA now reads 「正在找全端工程師嗎？」.
+
+Locked install, npm audit (zero findings), harness, 47 unit tests, production build, 284 Chromium tests, 17/17 tracked flows, and diff check passed. Updated the existing localized smoke assertion to match the new search placeholder. Focused checks at 390px and 1440px verified the revised pages, contact navigation, metadata and language switching.
 
 ### 2026-11-12 — CI and audit credential hardening
 
