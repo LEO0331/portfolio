@@ -75,16 +75,16 @@
     },
     "warmmemo": {
       "repoUrl": "https://github.com/LEO0331/warmmemo",
-      "pushedAt": "2026-10-31T22:13:13Z",
+      "pushedAt": "2026-11-12T06:09:56Z",
       "description": "Less paperwork, more presence—Warm Memo handles the complexities of parting so you can focus on the beauty of the memory.",
       "homepage": "https://leo0331.github.io/warmmemo/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "5f866442aa48f7f9c9100f1e99311829b26529e6"
+      "readmeSha": "42a23990f80452c3338c0a5829e6f3dc98ecf8eb"
     },
     "leave-request": {
       "repoUrl": "https://github.com/LEO0331/LeaveRequest",
-      "pushedAt": "2026-10-31T19:45:03Z",
+      "pushedAt": "2026-11-02T01:15:18Z",
       "description": "An interactive Leave Management System built with React 18, TypeScript, and MUI. This application features dynamic form validation, automated duration calculation, and data handling. It leverages Faker to simulate 10,000+ records, ensuring seamless filtering and search capabilities even under heavy data loads.",
       "homepage": "https://leo0331.github.io/LeaveRequest/",
       "defaultBranch": "main",
@@ -102,7 +102,7 @@
     },
     "amazon-app": {
       "repoUrl": "https://github.com/LEO0331/family-cabinet",
-      "pushedAt": "2026-10-31T18:39:12Z",
+      "pushedAt": "2026-11-02T01:16:50Z",
       "description": "Family Cabinet is a living digital archive of things a family makes, keeps and collects—documenting the object, its story, its history and where it sits in the collection.",
       "homepage": "https://leo0331.github.io/family-cabinet/",
       "defaultBranch": "master",
@@ -120,7 +120,7 @@
     },
     "email-website": {
       "repoUrl": "https://github.com/LEO0331/competition-practice",
-      "pushedAt": "2026-11-01T00:58:44Z",
+      "pushedAt": "2026-11-02T01:17:06Z",
       "description": "簡單易用的環境知識競賽題庫練習網站，適合逐題複習與賽前準備。",
       "homepage": "https://leo0331.github.io/competition-practice/",
       "defaultBranch": "main",
@@ -129,16 +129,16 @@
     },
     "robotfriends": {
       "repoUrl": "https://github.com/LEO0331/Gridline",
-      "pushedAt": "2026-10-31T17:18:32Z",
+      "pushedAt": "2026-11-12T21:51:17Z",
       "description": "A source-first research workflow for investigating whether data-center buildout is showing up in grid demand, project decisions, company disclosures, and market prices.",
       "homepage": "https://leo0331.github.io/Gridline/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "68af4f3d3c63108116845bbb0ce8372cd30d5c80"
+      "readmeSha": "ff7222a625f3dce6a795a868af9927ee82fff616"
     },
     "epubreader": {
       "repoUrl": "https://github.com/LEO0331/epubreader",
-      "pushedAt": "2026-10-29T01:42:28Z",
+      "pushedAt": "2026-11-05T08:20:47Z",
       "description": "Local-first bilingual book ingestion, wiki generation, and citation-grounded RAG for a private library.",
       "homepage": "https://epubreader-theta.vercel.app",
       "defaultBranch": "main",
