@@ -219,7 +219,7 @@
     },
     "publicsafetydashboard": {
       "repoUrl": "https://github.com/LEO0331/publicsafetydashboard",
-      "pushedAt": "2026-10-19T01:02:38Z",
+      "pushedAt": "2026-11-05T08:29:36Z",
       "description": "Full-stack educational dashboard for Taipei public traffic-safety PDF announcements, with Next.js, SQLite, Python ingestion, filters, stats, and map visualization.",
       "homepage": "https://publicsafetydashboard.onrender.com",
       "defaultBranch": "main",
@@ -228,34 +228,34 @@
     },
     "taipei-bin-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-bin-map",
-      "pushedAt": "2026-10-29T07:22:37Z",
+      "pushedAt": "2026-11-13T00:51:57Z",
       "description": "A mobile-first, bilingual map and directory for public amenities in Taipei.",
       "homepage": "https://taipei-bin-map.vercel.app/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "91ef569eaadc1380dccde4e5e9ce00dbb90ccee1"
+      "readmeSha": "b6333d5e4226a2dcc0208f5291ce959f2214c314"
     },
     "taipei-crash-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-crash-map",
-      "pushedAt": "2026-10-22T05:48:42Z",
+      "pushedAt": "2026-11-04T00:26:03Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei A1/A2 traffic accident hotspot data.",
       "homepage": "https://leo0331.github.io/taipei-crash-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "1353bebd3e2b0315c5ba9eae6bebd351e5ddee99"
+      "readmeSha": "247473affb85a82333892cb9fdb7348a8090824c"
     },
     "taipei-faith-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-faith-map",
-      "pushedAt": "2026-10-29T01:20:13Z",
+      "pushedAt": "2026-11-09T08:58:08Z",
       "description": "Mobile-first bilingual map for exploring registered religious organizations in Taipei.",
       "homepage": "https://leo0331.github.io/taipei-faith-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "089e45221114fe99e8fd297f6d81a8e715e90314"
+      "readmeSha": "d8b334a87058653519883d7c7efb9e07b8aa9dcf"
     },
     "taipei-1999-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-1999-map",
-      "pushedAt": "2026-10-26T08:36:35Z",
+      "pushedAt": "2026-11-12T07:05:26Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei 1999 dispatched service request data.",
       "homepage": "https://leo0331.github.io/taipei-1999-map/",
       "defaultBranch": "main",
@@ -264,12 +264,12 @@
     },
     "taipei-feitsui-water-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-feitsui-water-map",
-      "pushedAt": "2026-10-29T14:04:44Z",
+      "pushedAt": "2026-11-04T00:27:26Z",
       "description": "Mobile-first bilingual map and dashboard for exploring monthly Feitsui Reservoir water-quality monitoring data.",
       "homepage": "https://leo0331.github.io/taipei-feitsui-water-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "51fed0d2ba5bff8a72a6b3f0a95a7f0fcfe02a21"
+      "readmeSha": "611bb2a7a451be5ec3275676148e7fcd20d46195"
     },
     "taipei-zoo-guide": {
       "repoUrl": "https://github.com/LEO0331/taipei-zoo-guide",
@@ -282,7 +282,7 @@
     },
     "taipei-safety-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-safety-map",
-      "pushedAt": "2026-10-29T14:04:21Z",
+      "pushedAt": "2026-11-04T00:26:51Z",
       "description": "Mobile-first bilingual map and dashboard for exploring Taipei air-raid shelter locations and historical residential burglary records.",
       "homepage": "https://leo0331.github.io/taipei-safety-map/",
       "defaultBranch": "main",
