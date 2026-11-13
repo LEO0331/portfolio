@@ -156,7 +156,7 @@
     },
     "skill-gen": {
       "repoUrl": "https://github.com/LEO0331/projects_drafts",
-      "pushedAt": "2026-10-26T08:36:15Z",
+      "pushedAt": "2026-11-05T06:43:57Z",
       "description": "Turn index.html, style.css, and script.js into reusable skills.md artifacts",
       "homepage": "https://leo0331.github.io/projects_drafts/",
       "defaultBranch": "main",
@@ -183,7 +183,7 @@
     },
     "wordpressparser": {
       "repoUrl": "https://github.com/LEO0331/wordpressparser",
-      "pushedAt": "2026-10-31T19:07:39Z",
+      "pushedAt": "2026-11-12T04:19:53Z",
       "description": "Turn WordPress sources JSON data into a reusable skill.md or wiki.md",
       "homepage": "https://wordpressparser.vercel.app",
       "defaultBranch": "main",
@@ -192,7 +192,7 @@
     },
     "wordpress": {
       "repoUrl": "https://github.com/LEO0331/wordpress",
-      "pushedAt": "2026-10-02T06:32:22Z",
+      "pushedAt": "2026-11-10T08:06:02Z",
       "description": "WordPress blog migrated to Jekyll, with local image assets preserved for long-term backup.",
       "homepage": "https://leo0331.github.io/wordpress/",
       "defaultBranch": "main",
@@ -201,7 +201,7 @@
     },
     "rednote-gallery": {
       "repoUrl": "https://github.com/LEO0331/rednote-gallery",
-      "pushedAt": "2026-10-21T13:26:30Z",
+      "pushedAt": "2026-11-02T00:16:08Z",
       "description": "An image gallery website for displaying RedNote / Xiaohongshu milestone screenshots.",
       "homepage": "https://leo0331.github.io/rednote-gallery/",
       "defaultBranch": "main",
@@ -210,12 +210,12 @@
     },
     "craftfocus": {
       "repoUrl": "https://github.com/LEO0331/craftfocus",
-      "pushedAt": "2026-10-31T19:13:26Z",
+      "pushedAt": "2026-11-10T00:09:22Z",
       "description": "CraftFocus helps people stay focused, unlock pixel room items, and share handmade projects with friends.",
       "homepage": "https://leo0331.github.io/craftfocus/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "b548f9a72d5d1fb9c4072b2b5533b1df1aee30d5"
+      "readmeSha": "4d5ec6c3102833446de6fc08f033341379730364"
     },
     "publicsafetydashboard": {
       "repoUrl": "https://github.com/LEO0331/publicsafetydashboard",
