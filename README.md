@@ -128,6 +128,9 @@ Run `npm run sync:pins` with `GITHUB_TOKEN` to query GraphQL, save public pins/m
 
 ## Monthly project maintenance
 
+**Manual metadata checkpoint — 2026-11-13:** Refreshed GitHub metadata and root README hashes for all 38 curated source repositories. The [scan review queue](./.github/project-scan-report.md) preserves 27 changed-source signals requiring editorial assessment; timestamps and changed README hashes do not automatically revise showcased features. Verified that all 38 entries already have Traditional Chinese content (including the three unquoted object keys) and corrected the WanderStamp repository link. This checkpoint is not a live-demo verification or an execution of the monthly workflow.
+
+
 [Monthly Project Maintenance](./.github/workflows/project-maintenance.yml) runs on the first of each month at **09:17 Asia/Taipei**. To run it manually, select the default branch in Actions → Monthly Project Maintenance → Run workflow. A read-only job scans and tests the proposal. A separate job checks that the review branch still matches the scanned revision and publishes the draft PR. Enable **Allow GitHub Actions to create and approve pull requests** in Settings → Actions → General.
 
 The scanner compares repository push timestamps, canonical URLs, descriptions, homepages, default branches, archive status, and root README hashes. It follows repository redirects, handles monorepo links, and paginates the owner's public repositories to list unlisted candidates. The first run records a baseline and opens a draft review PR; later runs open or update that PR only when tracked changes exist. An open maintenance branch is reused without force-pushing, preserving pending curation; merge conflicts stop the job for review.
