@@ -208,7 +208,8 @@
         "TypeScript/build passed; 24/24 E2E, 17/17 tracked flows",
         "npm ci passed after incorporating upstream Dependabot updates; npm audit reports 5 high Tailwind-toolchain vulnerabilities, reported separately by workflow",
         "Live public API scan reached unauthenticated rate limit with no partial state saved; Actions uses built-in authenticated token",
-        "Workflow Bash syntax and final harness/diff checks recorded in progress.md"
+        "Workflow Bash syntax and final harness/diff checks recorded in progress.md",
+        "2026-11-13 GitHub MCP metadata checkpoint rechecked 38 source repositories, refreshed their source baseline and retained 27 changed-source review flags; translation and canonical URL integrity tests added"
       ]
     },
     {
