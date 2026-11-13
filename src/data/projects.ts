@@ -149,7 +149,7 @@ export const projects: Project[] = [
     features: ["Traveler and recipient workflows", "Postcard sharing", "Travel stories and encouragement"],
     image: "/src/assets/images/projects/warmthfromafar.png",
     demoUrl: "https://leo0331.github.io/WanderStamp/",
-    repoUrl: "https://github.com/LEO0331/WarmthFromAfar",
+    repoUrl: "https://github.com/LEO0331/WanderStamp",
     status: "live",
     featured: false
   },
