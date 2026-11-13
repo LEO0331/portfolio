@@ -1,3 +1,12 @@
+## Latest maintenance update — 2026-11-13 (GitHub MCP)
+
+- All 38 curated projects already have Traditional Chinese descriptions. Added catalogue integrity tests to prevent false gaps, recognizing quoted and unquoted TypeScript object keys.
+- Updated WanderStamp repository URL to the canonical `LEO0331/WanderStamp` path; stable project slug, id, and demo remain unchanged.
+- Refreshed the GitHub metadata/README hash baseline for all 38 entries and preserved 27 changed-source signals in `.github/project-scan-report.md` as a **review-required** queue. Upstream pushes are not automatic evidence of new features.
+- Next: verify candidate PR unit/build/E2E checks, review the still-open source metadata queue as needed, and confirm any resulting Pages deployment. Do not describe the metadata refresh as a live product verification.
+
+---
+
 # Session Handoff
 
 **Current objective:** Use natural Taiwanese Traditional Chinese across the portfolio pages recruiters are most likely to visit.
