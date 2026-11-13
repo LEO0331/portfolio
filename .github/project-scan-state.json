@@ -291,12 +291,12 @@
     },
     "taipei-friendly-food-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-friendly-food-map",
-      "pushedAt": "2026-10-31T12:40:06Z",
+      "pushedAt": "2026-11-04T00:27:02Z",
       "description": "Mobile-first bilingual map for finding friendly stores and registered restaurant businesses in Taipei.",
       "homepage": "https://leo0331.github.io/taipei-friendly-food-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "7384c8c919720050d68911d38e205af235a79d02"
+      "readmeSha": "a1ae0067259306a1707450c1a971d54521911107"
     },
     "taipei-free-wifi-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-free-wifi-map",
@@ -309,34 +309,34 @@
     },
     "taipei-civic-groups-map": {
       "repoUrl": "https://github.com/LEO0331/taipei-civic-groups-map",
-      "pushedAt": "2026-10-31T11:51:45Z",
+      "pushedAt": "2026-11-04T00:33:17Z",
       "description": "Mobile-first bilingual directory and district map for exploring Taipei civic group public records.",
       "homepage": "https://leo0331.github.io/taipei-civic-groups-map/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "c25a9f1ca3257303107664b0a4983bf5e9475f27"
+      "readmeSha": "fabd2a12792e37e244ade02aa1573af0129759bc"
     },
     "taipei-real-estate-dashboard": {
       "repoUrl": "https://github.com/LEO0331/taipei-real-estate-dashboard",
-      "pushedAt": "2026-10-29T11:48:22Z",
+      "pushedAt": "2026-11-11T01:22:35Z",
       "description": "Mobile-first bilingual dashboard for exploring Taipei real-price records, quarterly market analysis, and demographic context.",
       "homepage": "https://leo0331.github.io/taipei-real-estate-dashboard/",
       "defaultBranch": "main",
       "archived": false,
-      "readmeSha": "5ad39ce6ca19af8fa50208e788f26dc43df2f8a6"
+      "readmeSha": "3674ce35d27d152427b578b2d584121fe25a3799"
     },
     "genomic-data-science-with-galaxy-project": {
       "repoUrl": "https://github.com/LEO0331/Genomic-Data-Science-with-Galaxy-Project",
-      "pushedAt": "2026-10-29T01:46:02Z",
+      "pushedAt": "2026-11-05T08:28:28Z",
       "description": "Interactive genomic variant workflow case-study web app with browser-based VCF exploration, filtering, and CSV export, powered by Galaxy-generated results.",
       "homepage": "https://genomic-data-science-with-galaxy-pr.vercel.app",
       "defaultBranch": "master",
       "archived": false,
-      "readmeSha": "204c334b1e9d110bbe4966156372864bb3bcb51e"
+      "readmeSha": "5cb5d673deffb164c5e0f913972c11d98e1a5b49"
     },
     "thalassemia-seq-analysis": {
       "repoUrl": "https://github.com/LEO0331/Thalassemia_SEQ_analysis",
-      "pushedAt": "2026-10-31T14:58:04Z",
+      "pushedAt": "2026-11-02T00:20:02Z",
       "description": "Upload .ab1 Sanger files, run primer-specific thalassemia mutation checks, view QC/mutation results in web UI, and export JSON reports.",
       "homepage": "https://thalassemia-seq-analysis.vercel.app",
       "defaultBranch": "master",
