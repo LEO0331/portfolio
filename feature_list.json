@@ -925,6 +925,24 @@
         "21 focused Chromium checks passed. Full three-worker rerun passed 288 tests and 17/17 tracked flows after two Civic Explorer failures under default ten-worker parallelism",
         "English and Traditional Chinese desktop/mobile before-and-after screenshots in docs/evidence/portfolio-engineering-storytelling"
       ]
+    },
+    {
+      "id": "portfolio-selected-engineering-stories-2026-11",
+      "name": "Extend the engineering stories to CraftFocus, Tax Auto Extraction and Passport Comparison",
+      "description": "Reuse the bilingual engineering summary format to show three verified workflows in the existing drawer.",
+      "status": "complete",
+      "dependencies": ["portfolio-engineering-storytelling-2026-11"],
+      "doneCriteria": [
+        "Each selected drawer presents a source-backed summary, one workflow, a decision and a caption for its existing preview",
+        "A project ID lookup selects optional engineering content while preserving existing routing, catalogue data and Book QA presentation",
+        "Verification covers both languages, narrow and desktop drawers and the existing portfolio gate"
+      ],
+      "evidence": [
+        "Source review pinned CraftFocus 261af12, Tax Auto Extraction 3b6575c and Passport Comparison 1a1e57d",
+        "Locked install, zero npm audit advisories, harness, 49 unit tests, TypeScript, production build and diff check passed",
+        "294 Chromium tests and 17/17 tracked flows passed with three workers, including bilingual drawer checks at 320, 640 and 1440px",
+        "Paired desktop/mobile captures in docs/evidence/portfolio-selected-engineering-stories"
+      ]
     }
   ]
 }

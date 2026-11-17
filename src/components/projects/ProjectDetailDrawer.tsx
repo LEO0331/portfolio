@@ -10,7 +10,7 @@ import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
 import { Tag } from "../common/Tag";
-import { BookQaEngineering } from "./BookQaEngineering";
+import { getProjectEngineering } from "./ProjectEngineering";
 
 interface ProjectDetailDrawerProps {
   project: Project;
@@ -81,7 +81,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
   const govtechCases = getProjectGovTechCaseLinks(project, locale);
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
-  const isBookQa = project.id === "epubreader";
+  const engineering = getProjectEngineering(project.id, locale);
 
   useEffect(() => {
     setImageFailed(false);
@@ -179,9 +179,9 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
           </div>
 
           <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
-            {!isBookQa && preview}
+            {!engineering && preview}
 
-            <div className={isBookQa ? "space-y-4" : "mt-4 space-y-4 sm:mt-5"}>
+            <div className={engineering ? "space-y-4" : "mt-4 space-y-4 sm:mt-5"}>
               <div className="flex flex-wrap items-center gap-2">
                 <Badge
                   label={getStatusLabel(project.status, {
@@ -194,17 +194,17 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                 <Tag label={project.teamType === "solo" ? text.projects.teamSolo : text.projects.teamTeam} />
               </div>
 
-              {isBookQa ? (
+              {engineering ? (
                 <>
-                  <BookQaEngineering locale={locale} />
-                  <figure>
-                    {preview}
-                    {hasImage && (
+                  {engineering.body}
+                  {hasImage && engineering.previewCaption ? (
+                    <figure>
+                      {preview}
                       <figcaption className="mt-2 text-sm text-slate-600">
-                        {locale === "zh" ? "截圖顯示 API 模式的儀表板與後端連線狀態。" : "The screenshot shows the API-mode dashboard and its backend connection status."}
+                        {engineering.previewCaption}
                       </figcaption>
-                    )}
-                  </figure>
+                    </figure>
+                  ) : preview}
                 </>
               ) : (
                 <>
@@ -238,7 +238,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                 </div>
               </section>
 
-              {!isBookQa && <ListSection title={text.projects.features} items={project.features} itemKeyPrefix={`${project.id}-feature`} />}
+              {!engineering && <ListSection title={text.projects.features} items={project.features} itemKeyPrefix={`${project.id}-feature`} />}
               <ListSection title={text.projects.challenges} items={project.challenges} itemKeyPrefix={`${project.id}-challenge`} />
               <ListSection title={text.projects.outcomes} items={project.outcomes} itemKeyPrefix={`${project.id}-outcome`} />
 

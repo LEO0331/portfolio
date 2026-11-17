@@ -4,6 +4,30 @@
 
 **Last updated:** 2026-11-17
 
+**Active work:** Extend the merged PR #60 pattern to CraftFocus, Tax Auto Extraction and Passport Comparison.
+
+**Status:** A project ID lookup selects bilingual engineering content for the existing drawers. Each new story has four facts, one diagram, one decision and a caption for the existing screenshot.
+
+### Verification Evidence
+
+The dated entry records the source pins and full gate results. All 294 Chromium tests and 17 tracked flows passed.
+
+### Blockers
+
+None for the portfolio change.
+
+### Remaining Risks
+
+The source review covers checked-in backend behavior. Live signed-in writes, upstream database test execution, the private PDF integration test and Passport PDF export were outside this review.
+
+### Next Session Should
+
+Review the three drawers in the focused PR and compare its before/after evidence.
+
+## Previous current state — 2026-11-17 Gridline and Book QA Library
+
+**Last updated:** 2026-11-17
+
 **Active work:** Clarify the Gridline (`robotfriends`) and Book QA Library (`epubreader`) engineering stories in both languages.
 
 **Status:** The existing Gridline case and Book QA drawer share a four-fact format and each present one workflow diagram and short decision notes. Gridline shows the local API and static publication paths. Book QA shows the public parser's stopping point and the configured retrieval and answer stages.
@@ -167,6 +191,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-17 — Selected engineering stories after PR #60
+
+- **CraftFocus (`craftfocus`)**. The signed-in path ties the timer to a recorded run, checks ownership and elapsed server time, and records session completion and wallet credit together. The pinned source includes a concurrency test for completing the same run twice. The Pages workflow builds the separate local mode. [Client dispatch](https://github.com/LEO0331/craftfocus/blob/261af1268052cd7d1d08120b1ab2ab9292b725d8/hooks/useFocusSession.ts#L15-L42) · [Reward and craft functions](https://github.com/LEO0331/craftfocus/blob/261af1268052cd7d1d08120b1ab2ab9292b725d8/supabase/migrations/20260908110000_deployment_risk_hardening.sql#L101-L198) · [Concurrency test](https://github.com/LEO0331/craftfocus/blob/261af1268052cd7d1d08120b1ab2ab9292b725d8/tests/database/review_concurrency.sql#L51-L65) · [Pages build](https://github.com/LEO0331/craftfocus/blob/261af1268052cd7d1d08120b1ab2ab9292b725d8/.github/workflows/deploy-pages.yml#L81-L87)
+- **Tax Auto Extraction (`simpletaxautoextraction`)**. Supported PDFs are parsed in Flutter and Forge subtotals are reconciled. The import flow reviews unmatched categories and shows category-level changes before replacing worksheet values. Reviewed records are saved to Cloud Firestore. [PDF parsing and category mapping](https://github.com/LEO0331/simpletaxautoextraction/blob/3b6575c948702d0720eeac4c7bdb52dca4731857/lib/services/pdf_extraction_service.dart) · [Import review](https://github.com/LEO0331/simpletaxautoextraction/blob/3b6575c948702d0720eeac4c7bdb52dca4731857/lib/screens/home_screen.dart) · [Firestore persistence](https://github.com/LEO0331/simpletaxautoextraction/blob/3b6575c948702d0720eeac4c7bdb52dca4731857/lib/services/firestore_service.dart#L129-L195)
+- **Passport Comparison (`passportcomparison`)**. Versioned JSON moves from validated import and review to a static browser comparison. Missing and expired rules remain unconfirmed. PDFs include version and attribution. The live HTML and bundled asset responded with HTTP 200, and the live `1.3.0` snapshot metadata matched the reviewed source. The retained preview shows the earlier Passport Atlas picker. [Importer](https://github.com/LEO0331/passportcomparison/blob/1a1e57d0ab62a06f20ae300f5ef1ec3dfbe11447/scripts/data/import_travel_requirements.py) · [Refresh workflow](https://github.com/LEO0331/passportcomparison/blob/1a1e57d0ab62a06f20ae300f5ef1ec3dfbe11447/.github/workflows/refresh-data.yml) · [Dataset loader](https://github.com/LEO0331/passportcomparison/blob/1a1e57d0ab62a06f20ae300f5ef1ec3dfbe11447/lib/services/dataset_repository.dart) · [PDF report](https://github.com/LEO0331/passportcomparison/blob/1a1e57d0ab62a06f20ae300f5ef1ec3dfbe11447/lib/services/comparison_report.dart)
+- `src/components/projects/ProjectEngineering.tsx` selects optional content for `ProjectDetailDrawer.tsx`. Three bilingual records in `src/data/` reuse `EngineeringAtAGlance`. Thalassemia was reviewed and deferred because its existing record already explains the prototype scope and main architecture.
+- `npm run sync:projects` reported zero updates and zero new candidates. Locked install, audit (zero advisories), harness, 49 unit tests, and TypeScript and production build passed. `npx playwright test --workers=3` passed all 294 Chromium tests and the coverage gate passed 17/17 flows. The new cases check both languages at 320, 640 and 1440px. `git diff --check` passed.
+- All three demo links returned HTTP 200. Reviewed [before/after captures](./docs/evidence/portfolio-selected-engineering-stories) against merged main `912c82f`. The local compressed Projects route chunk grew by 4,164 bytes. Review captures live under `docs/` outside the runtime bundle.
 
 ### 2026-11-17 — Gridline and Book QA engineering presentation
 
