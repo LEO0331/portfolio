@@ -10,6 +10,7 @@ import { Badge } from "../common/Badge";
 import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
 import { Tag } from "../common/Tag";
+import { BookQaEngineering } from "./BookQaEngineering";
 
 interface ProjectDetailDrawerProps {
   project: Project;
@@ -80,6 +81,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
   const safeCaseStudyUrl = toSafeExternalHref(project.caseStudyUrl);
   const govtechCases = getProjectGovTechCaseLinks(project, locale);
   const timeline = formatTimeline(project.startDate, project.endDate, text.projects.present);
+  const isBookQa = project.id === "epubreader";
 
   useEffect(() => {
     setImageFailed(false);
@@ -122,6 +124,31 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
     };
   }, [onClose]);
 
+  const preview = (
+    <div className="relative h-44 overflow-hidden rounded-xl bg-slate-100 sm:h-56">
+      {hasImage ? (
+        <picture>
+          {primaryImage?.endsWith(".webp") ? <source srcSet={primaryImage} type="image/webp" /> : null}
+          <img
+            src={fallbackImage ?? primaryImage}
+            alt={`${project.name}: ${project.tagline}`}
+            className="h-full w-full object-cover"
+            width={1200}
+            height={675}
+            sizes="(max-width: 640px) 100vw, 672px"
+            onError={() => setImageFailed(true)}
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+      ) : (
+        <div className="flex h-full items-center justify-center bg-linear-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
+          {project.name} {text.projects.previewComingSoon}
+        </div>
+      )}
+    </div>
+  );
+
   return (
     <div
       data-testid="project-detail-overlay"
@@ -152,30 +179,9 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
           </div>
 
           <div className="min-h-0 flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-5">
-            <div className="relative h-44 overflow-hidden rounded-xl bg-slate-100 sm:h-56">
-              {hasImage ? (
-                <picture>
-                  {primaryImage?.endsWith(".webp") ? <source srcSet={primaryImage} type="image/webp" /> : null}
-                  <img
-                    src={fallbackImage ?? primaryImage}
-                    alt={`${project.name}: ${project.tagline}`}
-                    className="h-full w-full object-cover"
-                    width={1200}
-                    height={675}
-                    sizes="(max-width: 640px) 100vw, 672px"
-                    onError={() => setImageFailed(true)}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </picture>
-              ) : (
-                <div className="flex h-full items-center justify-center bg-linear-to-br from-slate-100 to-slate-200 px-4 text-center text-sm font-semibold text-slate-600">
-                  {project.name} {text.projects.previewComingSoon}
-                </div>
-              )}
-            </div>
+            {!isBookQa && preview}
 
-            <div className="mt-4 space-y-4 sm:mt-5">
+            <div className={isBookQa ? "space-y-4" : "mt-4 space-y-4 sm:mt-5"}>
               <div className="flex flex-wrap items-center gap-2">
                 <Badge
                   label={getStatusLabel(project.status, {
@@ -188,17 +194,33 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                 <Tag label={project.teamType === "solo" ? text.projects.teamSolo : text.projects.teamTeam} />
               </div>
 
-              <p className="text-sm font-semibold text-slate-800 sm:text-base">{project.tagline}</p>
-              <p className="text-sm text-slate-700">
-                <span className="font-semibold text-slate-900">{text.projects.role}</span> {project.role}
-              </p>
+              {isBookQa ? (
+                <>
+                  <BookQaEngineering locale={locale} />
+                  <figure>
+                    {preview}
+                    {hasImage && (
+                      <figcaption className="mt-2 text-sm text-slate-600">
+                        {locale === "zh" ? "截圖顯示 API 模式的儀表板與後端連線狀態。" : "The screenshot shows the API-mode dashboard and its backend connection status."}
+                      </figcaption>
+                    )}
+                  </figure>
+                </>
+              ) : (
+                <>
+                  <p className="text-sm font-semibold text-slate-800 sm:text-base">{project.tagline}</p>
+                  <p className="text-sm text-slate-700">
+                    <span className="font-semibold text-slate-900">{text.projects.role}</span> {project.role}
+                  </p>
 
-              {project.fullDescription ? (
-                <section className="space-y-1.5">
-                  <h3 className="text-sm font-semibold text-slate-900">{text.projects.overview}</h3>
-                  <p className="text-sm leading-6 text-slate-700">{project.fullDescription}</p>
-                </section>
-              ) : null}
+                  {project.fullDescription ? (
+                    <section className="space-y-1.5">
+                      <h3 className="text-sm font-semibold text-slate-900">{text.projects.overview}</h3>
+                      <p className="text-sm leading-6 text-slate-700">{project.fullDescription}</p>
+                    </section>
+                  ) : null}
+                </>
+              )}
 
               {timeline ? (
                 <section className="space-y-1.5">
@@ -216,7 +238,7 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                 </div>
               </section>
 
-              <ListSection title={text.projects.features} items={project.features} itemKeyPrefix={`${project.id}-feature`} />
+              {!isBookQa && <ListSection title={text.projects.features} items={project.features} itemKeyPrefix={`${project.id}-feature`} />}
               <ListSection title={text.projects.challenges} items={project.challenges} itemKeyPrefix={`${project.id}-challenge`} />
               <ListSection title={text.projects.outcomes} items={project.outcomes} itemKeyPrefix={`${project.id}-outcome`} />
 

@@ -1,4 +1,30 @@
-## Latest maintenance update — 2026-11-13 (GitHub MCP)
+# Session Handoff
+
+**Current objective:** Make the Gridline and Book QA Library engineering stories easier to scan in English and Traditional Chinese.
+
+**Current status:** The focused implementation is on `codex/engineering-storytelling`.
+
+## Verification Evidence
+
+The source revisions and local test results are recorded in `progress.md`. The final three-worker Chromium run passed all 288 tests and all 17 tracked flows. Representative captures are in `docs/evidence/portfolio-engineering-storytelling/`.
+
+## Blockers
+
+None for the portfolio change.
+
+## Remaining Risks
+
+Public parser and static snapshot deployment boundaries are sourced from implementation and existing evidence. A fresh deployment or live backend check is outside this change.
+
+## Recommended Next Step
+
+Review the portfolio PR and its before/after screenshots.
+
+## Files Relevant to the Next Update
+
+`src/pages/GridlineEngineeringPage.tsx`, `src/data/gridlineEngineering.ts`, and the detail components in `src/components/projects/`.
+
+## Previous maintenance update — 2026-11-13 (GitHub MCP)
 
 - All 38 curated projects already have Traditional Chinese descriptions. Added catalogue integrity tests to prevent false gaps, recognizing quoted and unquoted TypeScript object keys.
 - Updated WanderStamp repository URL to the canonical `LEO0331/WanderStamp` path; stable project slug, id, and demo remain unchanged.
@@ -7,7 +33,7 @@
 
 ---
 
-# Session Handoff
+## Previous handoff — 2026-11-12 Traditional Chinese copy
 
 **Current objective:** Use natural Taiwanese Traditional Chinese across the portfolio pages recruiters are most likely to visit.
 

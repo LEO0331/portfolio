@@ -80,6 +80,19 @@ for (const locale of ["en", "zh"] as const) {
     expect(readFileSync("public/sitemap.xml", "utf8")).toContain(`/${prefix}engineering/gridline`);
     await expect(page.locator("article > div > section")).toHaveCount(12);
     await expect(page.locator("table")).toHaveCount(6);
+    await expect(page.locator("#summary dd")).toHaveText(Object.values(content.overview));
+    const architecture = page.locator("#architecture");
+    const workflow = architecture.getByRole("figure", { name: content.architecture.name });
+    await expect(workflow).toBeVisible();
+    await expect(workflow.locator("figcaption")).toHaveText(content.architecture.caption);
+    await expect(workflow).toContainText(content.architecture.local[0]);
+    await expect(workflow).toContainText(content.architecture.public[0]);
+    const architectureEvidence = architecture.locator("[data-engineering-evidence]");
+    await expect(architectureEvidence).not.toHaveAttribute("open");
+    await architectureEvidence.locator("summary").click();
+    await expect(architectureEvidence.getByRole("link", { name: "server/export-static-snapshot.js" }))
+      .toHaveAttribute("href", gridlineSource("server/export-static-snapshot.js"));
+    await expect(page.locator("#tradeoffs dt")).toHaveText(content.decisions.map(([title]) => title));
     await expect(page.locator("#security")).toContainText("GHSA-27r3-jxmh-p828");
     await expect(page.locator("#identity")).toContainText("ON CONFLICT");
     await expect(page.locator("#publication")).toContainText("Promise.all");
@@ -120,6 +133,9 @@ test("engineering tables, diagrams, disclosures and authentic images work at all
     await page.setViewportSize({ width, height: 900 });
     await page.goto(`./${locale === "zh" ? "zh/" : ""}engineering/gridline`);
     await expect(page.locator("html")).toHaveClass(theme === "dark" ? /dark/ : /^(?!.*dark)/);
+    const diagram = page.locator("#architecture figure");
+    await expect(diagram).toBeVisible();
+    expect(await diagram.evaluate(element => element.scrollWidth <= element.clientWidth + 1), `diagram ${locale}/${theme}/${width}`).toBe(true);
     for (const table of await page.locator("table").all()) {
       await expect(table.locator("caption")).toBeAttached();
       const region = table.locator("..");
