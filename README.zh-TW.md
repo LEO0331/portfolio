@@ -131,6 +131,8 @@ node tools/capture-project-previews.mjs
 
 Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連結、置頂對應與外部參照。可見內容分別說明 Node.js／SQLite API 模式及公開靜態 Demo。詳見 [v2.2 證據與驗證](./docs/portfolio-v2.2-recruiter-refinement.md)。
 
+Gridline 工程案例與私人書庫問答系統的專案詳情共用雙語工程摘要版型。Gridline 的流程圖呈現本機 API 與靜態發布流程。私人書庫問答系統則標明公開示範的解析範圍，以及須設定後端才能使用的附來源問答。
+
 設定 `GITHUB_TOKEN` 後執行 `npm run sync:pins`，透過 GraphQL 同步公開置頂儲存庫、對應 ID 與既有 `featured` 旗標。每月掃描也會執行同步，使用正式儲存庫網址處理改名。API 錯誤會保留上次成功快照並使工作失敗；頁面不需即時 API 或 token。初始快照已於 2026-10-06 核對公開個人頁面：六個置頂中有五個專案，`LEO0331/portfolio` 不列為卡片。
 
 ## 每月專案維護

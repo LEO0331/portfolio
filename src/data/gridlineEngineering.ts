@@ -1,4 +1,5 @@
 import type { Locale } from "../i18n/LocaleContext";
+import type { EngineeringFacts } from "../components/projects/EngineeringAtAGlance";
 
 export const GRIDLINE_SOURCE_SHA = "e3d47a638ddb7f3192c63598596628f60c7b364d";
 export const gridlineSource = (path: string): string => `https://github.com/LEO0331/Gridline/blob/${GRIDLINE_SOURCE_SHA}/${path}`;
@@ -56,13 +57,25 @@ export interface EngineeringSection {
   table?: EngineeringTable;
 }
 
+type WorkflowStep = [label: string, description: string];
+
+export interface GridlineWorkflow {
+  name: string;
+  collect: WorkflowStep;
+  ingest: WorkflowStep;
+  persist: WorkflowStep;
+  local: WorkflowStep;
+  export: WorkflowStep;
+  public: WorkflowStep;
+  caption: string;
+}
+
 interface GridlineEngineeringContent {
   title: string;
   summary: string;
-  overview: [string, string][];
-  architecture: string[];
-  profiles: { title: string; steps: string[] }[];
-  architectureNote: string;
+  overview: EngineeringFacts;
+  architecture: GridlineWorkflow;
+  decisions: [title: string, explanation: string, evidenceSection: "identity" | "publication"][];
   databaseNote: string;
   sections: EngineeringSection[];
 }
@@ -71,18 +84,26 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
   en: {
     title: "Gridline — Financial Data Engineering & Backend Reliability",
     summary: "An evidence-first AI infrastructure research dashboard with thematic comparisons, source-verified catalyst schedules and point-in-time reporting, grounded in fail-closed ingestion and static publication.",
-    overview: [
-      ["Engineering problem", "Combine heterogeneous SEC, energy, event and market records without confusing missing data, old evidence and successful refreshes."],
-      ["Implementation", "A native Node.js API, SQLite/WAL research history, deterministic observations and a separate validated static publication path."],
-      ["Verified evidence", "10 JSON endpoints, 6 SQLite tables, a 20-company universe and targeted source regressions. Retained artifacts passed acceptance with two source warnings."],
-      ["October 2026 audit boundary", "The October source pin reported an unapproved high advisory at that time; this is historical evidence rather than a current security verdict. The public demo serves static snapshots, not the Node API."]
+    overview: {
+      problem: "Trace data-center buildout across company filings, energy records and market prices while keeping evidence gaps visible.",
+      contribution: "I built the source adapters, observation store, research API and snapshot publishing workflow.",
+      architecture: "A local Node.js API and SQLite/WAL store support research. React on GitHub Pages reads exported JSON.",
+      outcome: "The October 2026 audit verified 10 local JSON endpoints and 6 SQLite tables. The retained snapshot passed acceptance with two partial-source warnings."
+    },
+    architecture: {
+      name: "Gridline evidence pipeline",
+      collect: ["External sources", "SEC filings, EIA data, events and market prices"],
+      ingest: ["Ingest and validate", "Source adapters normalize observations and attach provenance"],
+      persist: ["SQLite research store", "Persists observations and provider health"],
+      local: ["Local Node.js API", "Historical queries, scenarios and backtests for local clients"],
+      export: ["Offline snapshot export", "Merges fresh observations with the previous snapshot, then validates full and compact JSON before publication"],
+      public: ["Public GitHub Pages", "React reads published, read-only research snapshots"],
+      caption: "October 2026 source scope. The API and database run outside the public site. The offline export job runs its own ingestion service and SQLite store."
+    },
+    decisions: [
+      ["Stable observation IDs", "I derived IDs from observation contents so repeated refreshes reuse the same row. A changed value or observation time creates a new row. Provenance metadata on an existing row can still change.", "identity"],
+      ["Validate before static publication", "I used readiness and consistency checks before publishing JSON so the dashboard can retain its previous snapshot if a refresh fails validation. Readers may see older data until a new batch passes and deploys.", "publication"]
     ],
-    architecture: ["External SEC / EIA / event / price sources", "Source-specific adapters and bounded HTTP requests", "Validation, normalization and observation provenance", "SQLite research store and retained source health"],
-    profiles: [
-      { title: "Local / API profile", steps: ["Historical queries and versioned domain services", "Controlled ingestion; persisted scenarios and backtests", "Local React interface or API client"] },
-      { title: "Public GitHub Pages profile", steps: ["Merge fresh rows with the previous committed snapshot", "Generate full + compact JSON; check acceptance and consistency", "Publish a Git commit, dispatch Pages, render static React"] }
-    ],
-    architectureNote: "The exporter reads fresh local observations and previous JSON history; the public website exposes neither the Node API nor SQLite. Optional Supabase accounts/preferences are a separate store.",
     databaseNote: "These six tables share application-level source, ticker, method and lineage references. No SQL foreign-key relationships are declared. Observation batches are transactional; raw files, health updates and score writes are separate boundaries.",
     sections: [
       {
@@ -233,18 +254,26 @@ export const gridlineEngineeringContent: Record<Locale, GridlineEngineeringConte
   zh: {
     title: "Gridline — 金融資料工程與後端可靠性",
     summary: "以來源治理為核心的 AI 基礎設施研究平台，結合主題比較、已驗證事件日曆與時間點報告，並透過嚴格資料驗證及靜態發布保留可靠性。",
-    overview: [
-      ["工程問題", "整合 SEC、能源、事件與市場資料，同時區分缺值、歷史證據及真正成功的更新。"],
-      ["實作方式", "原生 Node.js API、SQLite/WAL 研究歷史、確定性觀測識別，以及獨立驗證的靜態發布流程。"],
-      ["已驗證證據", "10 個 JSON 端點、6 張 SQLite 資料表、20 家企業與部分來源回歸測試；保留快照通過接受檢查，附兩項來源警告。"],
-      ["2026 年 10 月稽核界線", "十月固定來源版本當時報告未核准的高風險公告，屬歷史證據，不能視為目前安全狀態。公開 Demo 提供靜態快照，並非公開 Node API。"]
+    overview: {
+      problem: "從企業申報、能源紀錄與市場價格追蹤資料中心建置進度，並清楚標示證據缺口。",
+      contribution: "我開發了來源介接器、觀測資料儲存、研究 API 和快照發布流程。",
+      architecture: "本機以 Node.js API 與 SQLite/WAL 支援研究。GitHub Pages 上的 React 介面讀取匯出的 JSON。",
+      outcome: "2026 年 10 月稽核確認 10 個本機 JSON 端點與 6 張 SQLite 資料表。留存快照通過發布檢查，另有兩項來源覆蓋不完整的警告。"
+    },
+    architecture: {
+      name: "Gridline 研究資料流程",
+      collect: ["外部來源", "SEC 申報、EIA 資料、事件與市場價格"],
+      ingest: ["擷取與驗證", "介接器將觀測資料正規化並保留來源資訊"],
+      persist: ["SQLite 研究資料庫", "保存觀測資料及來源狀態"],
+      local: ["本機 Node.js API", "供本機用戶端查詢歷史資料、執行情境分析與回測"],
+      export: ["離線匯出快照", "合併新觀測資料與前版快照，通過完整及精簡版 JSON 驗證後才發布"],
+      public: ["公開 GitHub Pages", "React 讀取已發布的唯讀研究快照"],
+      caption: "依據 2026 年 10 月來源。API 與資料庫在公開網站之外執行，離線匯出另行啟動資料擷取服務並使用獨立的 SQLite 資料庫。"
+    },
+    decisions: [
+      ["固定的觀測識別碼", "我依觀測資料內容產生識別碼，重複擷取相同資料時會沿用原本的紀錄。數值或觀測時間有變動時會新增紀錄，既有紀錄的來源資訊仍可更新。", "identity"],
+      ["驗證通過才發布靜態快照", "我在發布 JSON 前檢查資料是否達到發布條件，以及兩種檔案內容是否一致。驗證未通過時，公開網站會沿用前版快照，等下一批通過檢查並部署後才會更新。", "publication"]
     ],
-    architecture: ["外部 SEC／EIA／事件／市場來源", "各來源介接器與有上限的 HTTP 請求", "驗證、正規化與觀測來源追溯", "SQLite 研究儲存與來源健康狀態"],
-    profiles: [
-      { title: "本機／API 模式", steps: ["歷史查詢與具方法版本的領域服務", "受控資料介接；保存情境與回測執行", "本機 React 介面或 API 用戶端"] },
-      { title: "公開 GitHub Pages 模式", steps: ["合併新資料與先前已提交的快照", "產生完整／精簡 JSON；驗證接受條件及一致性", "發布 Git 提交、觸發 Pages、呈現靜態 React"] }
-    ],
-    architectureNote: "匯出器讀取本機新觀測與先前 JSON 歷史；公開網站不開放 Node API 或 SQLite。可選 Supabase 帳號與偏好設定使用獨立儲存。",
     databaseNote: "六張資料表透過應用層的來源、企業代號、方法與追溯識別建立邏輯參照，未宣告 SQL 外鍵關係。觀測批次具交易邊界；原始檔、健康狀態及訊號寫入屬不同邊界。",
     sections: [
       {

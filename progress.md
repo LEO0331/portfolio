@@ -2,6 +2,30 @@
 
 ## Current State
 
+**Last updated:** 2026-11-17
+
+**Active work:** Clarify the Gridline (`robotfriends`) and Book QA Library (`epubreader`) engineering stories in both languages.
+
+**Status:** The existing Gridline case and Book QA drawer share a four-fact format and each present one workflow diagram and short decision notes. Gridline shows the local API and static publication paths. Book QA shows the public parser's stopping point and the configured retrieval and answer stages.
+
+### Verification Evidence
+
+Reviewed the pinned Gridline API, SQLite schema, ingestion service and snapshot scripts at `e3d47a638ddb7f3192c63598596628f60c7b364d`. Reviewed Book QA runtime modes, ingestion, query routes, Chroma indexing and citation generation at `3906362f253033dbe3f087d669050d19ce818b9b`. See the dated entry for test results.
+
+### Blockers
+
+None for the portfolio change.
+
+### Remaining Risks
+
+Historical Gridline checks and the Book QA configured-mode capture retain their original scope. Live backend behavior and measured project outcomes are outside this verification.
+
+### Next Session Should
+
+Review the Gridline case and Book QA drawer in both languages before merging the portfolio PR.
+
+## Previous current state — 2026-11-12 Traditional Chinese copy
+
 **Last updated:** 2026-11-12
 
 **Active work:** Polish Traditional Chinese portfolio copy for Taiwanese recruiters.
@@ -143,6 +167,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-17 — Gridline and Book QA engineering presentation
+
+- Gridline updates `src/pages/GridlineEngineeringPage.tsx`, `src/data/gridlineEngineering.ts`, and `src/components/projects/GridlineWorkflowDiagram.tsx`. The overview, workflow and decisions precede the detailed October audit. Its dated evidence remains in the existing case.
+- Book QA updates `src/components/projects/ProjectDetailDrawer.tsx` and `src/components/projects/BookQaEngineering.tsx`. Its workflow follows EPUB or supported URL ingestion, section and chunk inspection, then the retrieval and citations that require API mode. The existing dashboard preview identifies the configured API shown in the capture.
+- Both projects use `src/components/projects/EngineeringAtAGlance.tsx` and reuse the existing catalogue records, featured order, previews and routes.
+- `npm run sync:projects` reported zero updates and zero new candidates. The locked install and npm audit passed with zero advisories. The harness and all 49 unit tests passed.
+- The TypeScript and production builds passed. The 21 focused Chromium tests cover the engineering views and audit preservation. The full `npm run test:e2e` run at default ten-worker parallelism had 286 passes and two Civic Explorer failures (a timeout and a focus assertion). The three-worker rerun passed all 288 tests, including both failures, and `node tools/e2e-coverage-check.mjs` verified 17/17 tracked flows. `git diff --check` passed.
+- Both demo links returned HTTP 200. Compared production-build captures for both languages on desktop and mobile, with representative [before/after images](./docs/evidence/portfolio-engineering-storytelling) from the `2149440` baseline and candidate. Portfolio browser checks exercised rendering, links, filters, SEO and keyboard dismissal.
 
 ### 2026-11-12 — Traditional Chinese recruiter copy
 

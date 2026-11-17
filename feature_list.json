@@ -907,6 +907,24 @@
         "Local Chromium verified the updated Traditional Chinese copy, project and contact navigation, metadata, layout and the English toggle at 390px and 1440px",
         "Locked install, npm audit, harness, 47 unit tests, production build, 284 Chromium tests, 17 tracked flows and diff check passed"
       ]
+    },
+    {
+      "id": "portfolio-engineering-storytelling-2026-11",
+      "name": "Clarify the Gridline and Book QA Library engineering stories",
+      "description": "Show the engineering contribution, data flow, trade-offs and verified implementation scope in the existing bilingual views.",
+      "status": "complete",
+      "dependencies": ["portfolio-catalogue-2026-08", "gridline-engineering-v2-3-2026-10"],
+      "doneCriteria": [
+        "Each project has one localized workflow diagram that identifies its public demo and backend boundaries",
+        "Both views show concise contributions, source-backed decisions and implementation outcomes while preserving existing evidence and authentic images",
+        "The portfolio gate and bilingual desktop/mobile checks pass, and a focused PR is available for review"
+      ],
+      "evidence": [
+        "Gridline October pin e3d47a6 and Book QA source pin 3906362 substantiate the workflow, decisions and outcomes",
+        "Locked install, npm audit with zero advisories, harness, 49 unit tests, TypeScript and production build passed",
+        "21 focused Chromium checks passed. Full three-worker rerun passed 288 tests and 17/17 tracked flows after two Civic Explorer failures under default ten-worker parallelism",
+        "English and Traditional Chinese desktop/mobile before-and-after screenshots in docs/evidence/portfolio-engineering-storytelling"
+      ]
     }
   ]
 }
