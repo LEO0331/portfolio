@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Extend PR #60 to the existing CraftFocus, Tax Auto Extraction and Passport Comparison drawers.
+
+**Current status:** [PR #61](https://github.com/LEO0331/portfolio/pull/61) includes the bilingual stories and the refreshed Passport Comparison preview from the live demo.
+
+## Verification Evidence
+
+Source pins and evidence links are in the November 17 entry in `progress.md`. The three-worker suite passed 294 Chromium tests and 17/17 tracked flows. Paired captures are in `docs/evidence/portfolio-selected-engineering-stories/`.
+
+## Blockers
+
+None for the portfolio change.
+
+## Remaining Risks
+
+Upstream account writes, private-file extraction and Passport PDF export were outside the verification. The Passport snapshot in the preview is dated by its dataset version.
+
+## Recommended Next Step
+
+Review the three drawers and their paired screenshots in the pull request.
+
+## Files Relevant to the Next Update
+
+`src/components/projects/ProjectEngineering.tsx`, `src/components/projects/ProjectDetailDrawer.tsx`, and the three localized story records in `src/data/`.
+
+## Previous handoff — 2026-11-17 Gridline and Book QA Library
+
 **Current objective:** Make the Gridline and Book QA Library engineering stories easier to scan in English and Traditional Chinese.
 
 **Current status:** The focused implementation is on `codex/engineering-storytelling`.
