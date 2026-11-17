@@ -18,7 +18,7 @@ export const passportComparisonEngineering: LocalizedEngineeringStory = {
       caption: "Results use the published snapshot. Confirm current requirements with the destination authority before travel."
     },
     decision: "Only confirmed categories can establish a difference. Missing records and expired temporary rules appear as unconfirmed so travelers can see where further verification is needed.",
-    previewCaption: "An earlier Passport Atlas screen shows passport-count selection before a comparison."
+    previewCaption: "The Taiwan–Japan comparison shows shared visa-free access, entry-rule differences, and unconfirmed requirements in dataset v1.3.0."
   },
   zh: {
     facts: {
@@ -37,6 +37,6 @@ export const passportComparisonEngineering: LocalizedEngineeringStory = {
       caption: "比較結果來自網站發布的快照。出發前請向目的地主管機關確認最新入境規定。"
     },
     decision: "僅將已確認的入境類別納入差異判定。缺少的紀錄與已到期的臨時規定會標示為未確認，讓旅客知道哪些資訊仍需查證。",
-    previewCaption: "較早版本的 Passport Atlas 畫面，呈現開始比較前選擇護照數量的步驟。"
+    previewCaption: "台灣與日本護照的比較結果列出共同免簽範圍、入境規定差異及尚未確認的項目，資料集版本為 v1.3.0。"
   }
 };

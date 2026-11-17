@@ -6,7 +6,7 @@
 
 **Active work:** Extend the merged PR #60 pattern to CraftFocus, Tax Auto Extraction and Passport Comparison.
 
-**Status:** A project ID lookup selects bilingual engineering content for the existing drawers. Each new story has four facts, one diagram, one decision and a caption for the existing screenshot.
+**Status:** A project ID lookup selects bilingual engineering content for the existing drawers. Each story has four facts, one diagram, one decision and a preview caption. The Passport card and drawer now use a capture of the live analyzer.
 
 ### Verification Evidence
 
@@ -191,6 +191,12 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-17 — Passport Comparison live preview refresh
+
+- Verified the live analyzer in Chromium and loaded the Taiwan–Japan comparison with dataset `v1.3.0`. The earlier portfolio preview showed the Passport Atlas count picker. Replaced both `passportcomparison` preview files and updated the English and Traditional Chinese captions in `src/data/passportComparisonEngineering.ts`. [Live comparison](https://leo0331.github.io/passportcomparison/?passports=TW%2CJP)
+- Confirmed that the built card and drawer serve the exact new WebP and PNG at 390px and 1440px in both languages. Refreshed the Passport after capture for PR #61. The dry run, locked install, audit, harness, 49 unit tests, production build, 294 Chromium tests, 17/17 tracked flows, and diff check passed.
+- The refreshed preview is on the review branch. The hosted portfolio will display it after approval and deployment of PR #61.
 
 ### 2026-11-17 — Selected engineering stories after PR #60
 

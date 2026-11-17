@@ -2,7 +2,7 @@
 
 **Current objective:** Extend PR #60 to the existing CraftFocus, Tax Auto Extraction and Passport Comparison drawers.
 
-**Current status:** The bilingual stories are on `codex/selected-engineering-stories`, based on merged main at `912c82f`.
+**Current status:** [PR #61](https://github.com/LEO0331/portfolio/pull/61) includes the bilingual stories and the refreshed Passport Comparison preview from the live demo.
 
 ## Verification Evidence
 
@@ -14,7 +14,7 @@ None for the portfolio change.
 
 ## Remaining Risks
 
-Upstream account writes, private-file extraction and Passport PDF export were outside the verification. The Passport preview depicts an earlier version.
+Upstream account writes, private-file extraction and Passport PDF export were outside the verification. The Passport snapshot in the preview is dated by its dataset version.
 
 ## Recommended Next Step
 
