@@ -943,6 +943,24 @@
         "294 Chromium tests and 17/17 tracked flows passed with three workers, including bilingual drawer checks at 320, 640 and 1440px",
         "Paired desktop/mobile captures in docs/evidence/portfolio-selected-engineering-stories, including the refreshed Passport preview"
       ]
+    },
+    {
+      "id": "portfolio-engineering-stories-phase-3-2026-11",
+      "name": "Explain API, privacy and publication workflows in three selected drawers",
+      "description": "Add bilingual engineering stories for WordPress Persona Parser, WanderStamp and Public Safety Dashboard.",
+      "status": "complete",
+      "dependencies": ["portfolio-selected-engineering-stories-2026-11"],
+      "doneCriteria": [
+        "The three stories reuse the existing drawer registration and describe source-backed implementation boundaries",
+        "Bilingual tests cover the summaries, diagrams, focus, preview images and links at mobile and desktop widths",
+        "One review PR includes the source pins, verification results and privacy-safe captures"
+      ],
+      "evidence": [
+        "Reviewed source pins WordPress f019185, WanderStamp 8f8be2b and Public Safety d529597",
+        "Locked install, npm audit with zero advisories, harness, 49 unit tests, TypeScript, production build and diff check passed",
+        "300 Chromium tests and 17/17 tracked flows passed. All three stories passed in both languages at 320, 640 and 1440px",
+        "Desktop and mobile narrative captures in docs/evidence/portfolio-engineering-stories-phase-3"
+      ]
     }
   ]
 }

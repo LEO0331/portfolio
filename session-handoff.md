@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Add three source-backed stories using the existing project drawer.
+
+**Current status:** Phase 3 is on `codex/engineering-stories-phase-3`, based on merged PR #61 at `4526883`.
+
+## Verification Evidence
+
+The three-worker Chromium run passed 300 tests and all 17 tracked flows. Source pins are in `progress.md`, and paired captures are in `docs/evidence/portfolio-engineering-stories-phase-3/`.
+
+## Blockers
+
+None for the portfolio change.
+
+## Remaining Risks
+
+Hosted service configuration and upstream refresh or write operations were outside this source review.
+
+## Recommended Next Step
+
+Review the Phase 3 pull request and its paired narrative captures.
+
+## Files Relevant to the Next Update
+
+`src/components/projects/ProjectEngineering.tsx`, the three Phase 3 story modules in `src/data/`, and `tests/e2e/selected-project-engineering.spec.ts`.
+
+## Previous handoff — 2026-11-17 selected stories
+
 **Current objective:** Extend PR #60 to the existing CraftFocus, Tax Auto Extraction and Passport Comparison drawers.
 
 **Current status:** [PR #61](https://github.com/LEO0331/portfolio/pull/61) includes the bilingual stories and the refreshed Passport Comparison preview from the live demo.

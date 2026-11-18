@@ -1,6 +1,9 @@
 import { craftFocusEngineering } from "../../data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../data/passportComparisonEngineering";
+import { publicSafetyDashboardEngineering } from "../../data/publicSafetyDashboardEngineering";
 import { taxAutoExtractionEngineering } from "../../data/taxAutoExtractionEngineering";
+import { wanderStampEngineering } from "../../data/wanderStampEngineering";
+import { wordpressParserEngineering } from "../../data/wordpressParserEngineering";
 import type { Locale } from "../../i18n/LocaleContext";
 import type { EngineeringStory, LocalizedEngineeringStory } from "../../types/projectEngineering";
 import { BookQaEngineering } from "./BookQaEngineering";
@@ -21,7 +24,10 @@ const engineeringByProjectId = new Map<string, LocalizedEngineeringStory | Custo
   }],
   ["craftfocus", craftFocusEngineering],
   ["simpletaxautoextraction", taxAutoExtractionEngineering],
-  ["passportcomparison", passportComparisonEngineering]
+  ["passportcomparison", passportComparisonEngineering],
+  ["wordpressparser", wordpressParserEngineering],
+  ["warmthfromafar", wanderStampEngineering],
+  ["publicsafetydashboard", publicSafetyDashboardEngineering]
 ]);
 
 function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; story: EngineeringStory; projectId: string }): JSX.Element {

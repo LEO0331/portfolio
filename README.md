@@ -126,6 +126,8 @@ The Gridline engineering case and Book QA Library project drawer share a bilingu
 
 The CraftFocus, Tax Auto Extraction and Passport Comparison drawers use the same format to explain account-backed rewards, statement review and dataset publication.
 
+The WordPress Persona Parser, WanderStamp and Public Safety Dashboard drawers use it to explain parser and AI modes, public tracking projections and traceable publication from official notices.
+
 Portfolio v2.3 adds standalone English `/engineering/gridline` and Traditional Chinese `/zh/engineering/gridline` engineering routes, linked from the existing Gridline card and drawer. The case documents the pinned native HTTP API, six-table SQLite model, observation identities, degraded-source recovery and static publication boundaries. It preserves all twelve GovTech studies and adds no dependencies or live data calls. See the [source audit](./docs/engineering-gridline-source-audit.md) and [verification report](./docs/portfolio-v2.3-gridline-verification.md) for dated source tests, the upstream dependency blocker, genuine demo captures and browser/resource evidence.
 
 Run `npm run sync:pins` with `GITHUB_TOKEN` to query GraphQL, save public pins/matched IDs, and update existing `featured` flags. The monthly scan performs the same sync using canonical repository URLs to handle renames. API errors preserve the last successful snapshot and fail the job. Rendering needs no network request or token. The initial snapshot was verified against the public profile on 2026-10-06: six pins, five catalogue matches, with `LEO0331/portfolio` intentionally unlisted.
