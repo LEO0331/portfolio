@@ -4,6 +4,30 @@
 
 **Last updated:** 2026-11-18
 
+**Active work:** Make the eight existing engineering stories easier to find from the catalogue.
+
+**Status:** Engineering Stories filters by the existing drawer registry and Gridline’s case route. It shares the URL with `project` and composes with the existing filters. The seven drawer actions use contextual labels in the catalogue.
+
+### Verification Evidence
+
+All 304 Chromium tests and 17 tracked flows passed locally. The dated entry separates candidate verification from the hosted baseline smoke and npm audit findings.
+
+### Blockers
+
+None for the catalogue change.
+
+### Remaining Risks
+
+The baseline `npm audit` reports five high-severity findings in the Vite build dependency chain from the picomatch advisory. `npm audit --omit=dev` reports zero findings.
+
+### Next Session Should
+
+Review the targeted pull request and confirm the filter on Pages after deployment.
+
+## Previous current state — 2026-11-18 engineering storytelling Phase 3
+
+**Last updated:** 2026-11-18
+
 **Active work:** Extend merged PR #61 to WordPress Persona Parser, WanderStamp and Public Safety Dashboard.
 
 **Status:** Three bilingual stories reuse the existing project ID lookup. They cover parser fallback and quotas, public tracking disclosures, and provenance from official notices to dashboard summaries.
@@ -215,6 +239,14 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-18 — Recruiter engineering story discovery
+
+- `ProjectsPage.tsx`, `useProjectFilters.ts` and `ProjectFilters.tsx` compose Engineering Stories with search, category, technology and status. `?engineering=1` is shareable and can coexist with `?project=`. The existing empty-state reset clears the filter and the other controls.
+- `ProjectEngineering.tsx` exposes membership from the existing registry. `ProjectGrid.tsx` passes that membership to `ProjectCard.tsx` for a contextual label and project-specific accessible name. Gridline keeps its dedicated case link. Bilingual featured copy points to the catalogue filter.
+- The dependency install passed. The full audit reports five high-severity entries in the baseline Vite development dependency chain. The production-only audit reports zero findings. [Advisory](https://github.com/advisories/GHSA-fc5q-39xc-vjpf)
+- The harness, 49 unit tests, TypeScript and production build, 304 Chromium tests with three workers, 17/17 tracked flows, and diff check passed. The first focused run caught an ambiguous Traditional Chinese test selector. The final suite uses the combobox role and passed all four new cases.
+- Compared [filter captures](./docs/evidence/portfolio-recruiter-engineering-discovery) against merged main `964f6fd`. The live Pages home → catalogue → CraftFocus drawer → Escape journey passed in English at 1440px and Traditional Chinese at 390px. The new filter was tested locally and awaits deployment.
 
 ### 2026-11-18 — Engineering storytelling Phase 3
 

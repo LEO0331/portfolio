@@ -9,9 +9,11 @@ interface ProjectFiltersProps {
   selectedCategory: string;
   selectedTechnology: string;
   selectedStatus: "all" | ProjectStatus;
+  engineeringOnly: boolean;
   onCategoryChange: (value: string) => void;
   onTechnologyChange: (value: string) => void;
   onStatusChange: (value: "all" | ProjectStatus) => void;
+  onEngineeringOnlyChange: (value: boolean) => void;
 }
 
 export function ProjectFilters({
@@ -20,16 +22,29 @@ export function ProjectFilters({
   selectedCategory,
   selectedTechnology,
   selectedStatus,
+  engineeringOnly,
   onCategoryChange,
   onTechnologyChange,
-  onStatusChange
+  onStatusChange,
+  onEngineeringOnlyChange
 }: ProjectFiltersProps): JSX.Element {
   const { locale } = useLocale();
   const text = copy[locale];
 
   return (
     <div className="panel p-3.5 sm:p-4">
-      <p className="eyebrow">{text.projects.filters}</p>
+      <div className="flex flex-wrap items-center justify-between gap-x-3">
+        <p className="eyebrow">{text.projects.filters}</p>
+        <label className="inline-flex min-h-11 cursor-pointer items-center gap-2 text-sm font-semibold text-slate-700 dark:text-slate-200">
+          <input
+            type="checkbox"
+            checked={engineeringOnly}
+            onChange={event => onEngineeringOnlyChange(event.target.checked)}
+            className="size-4 accent-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 dark:focus-visible:outline-slate-200"
+          />
+          {text.projects.engineeringStories}
+        </label>
+      </div>
       <div className="mt-2.5 grid grid-cols-1 gap-3.5 sm:mt-3 sm:gap-4 md:grid-cols-3">
         <label className="space-y-1 text-sm text-slate-700 dark:text-slate-200">
           <span className="font-semibold">{text.projects.category}</span>

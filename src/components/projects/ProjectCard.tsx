@@ -12,6 +12,7 @@ import { toSafeExternalHref } from "../../utils/urlSafety";
 interface ProjectCardProps {
   project: Project;
   onViewDetails?: (project: Project, trigger: HTMLButtonElement) => void;
+  engineeringDrawer?: boolean;
 }
 
 const MAX_TECH_PREVIEW = 6;
@@ -29,7 +30,7 @@ function statusLabel(status: Project["status"], live: string, inProgress: string
   return archived;
 }
 
-export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.Element {
+export function ProjectCard({ project, onViewDetails, engineeringDrawer }: ProjectCardProps): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const text = copy[locale];
   const [imageFailed, setImageFailed] = useState(false);
@@ -37,6 +38,9 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
   const shouldShowImage = !imageFailed && Boolean(primaryImage || fallbackImage);
   const safeDemoUrl = toSafeExternalHref(project.demoUrl);
   const safeRepoUrl = toSafeExternalHref(project.repoUrl);
+  const opensEngineeringStory = engineeringDrawer && !project.engineeringCasePath;
+  const detailsLabel = opensEngineeringStory ? text.projects.engineeringStory : text.projects.viewDetails;
+  const detailsAriaLabel = opensEngineeringStory ? `${detailsLabel} · ${project.name}` : undefined;
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white transition hover:-translate-y-0.5 hover:border-slate-300">
@@ -126,13 +130,14 @@ export function ProjectCard({ project, onViewDetails }: ProjectCardProps): JSX.E
             <Button
               variant="ghost"
               size="sm"
+              aria-label={detailsAriaLabel}
               onClick={(event) => onViewDetails(project, event.currentTarget)}
             >
-              {text.projects.viewDetails}
+              {detailsLabel}
             </Button>
           ) : (
-            <Link to={`${toLocalePath("/projects")}?project=${project.slug}`} className={getButtonClassName("ghost", "sm")}>
-              {text.projects.viewDetails}
+            <Link to={`${toLocalePath("/projects")}?project=${project.slug}`} aria-label={detailsAriaLabel} className={getButtonClassName("ghost", "sm")}>
+              {detailsLabel}
             </Link>
           )}
         </div>

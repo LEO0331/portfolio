@@ -66,6 +66,10 @@ function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; st
   );
 }
 
+export function hasEngineeringDrawer(projectId: string): boolean {
+  return engineeringByProjectId.has(projectId);
+}
+
 export function getProjectEngineering(projectId: string, locale: Locale): { body: JSX.Element; previewCaption?: string } | undefined {
   const entry = engineeringByProjectId.get(projectId);
   if (!entry) return undefined;

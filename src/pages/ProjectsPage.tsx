@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ProjectFilters } from "../components/projects/ProjectFilters";
 import { ProjectDetailDrawer } from "../components/projects/ProjectDetailDrawer";
+import { hasEngineeringDrawer } from "../components/projects/ProjectEngineering";
 import { ProjectGrid } from "../components/projects/ProjectGrid";
 import { ProjectHighlights } from "../components/projects/ProjectHighlights";
 import { ProjectSearch } from "../components/projects/ProjectSearch";
@@ -57,6 +58,8 @@ export function ProjectsPage(): JSX.Element {
     jsonLd: projectsStructuredData
   });
 
+  const [searchParams, setSearchParams] = useSearchParams();
+  const engineeringOnly = searchParams.get("engineering") === "1";
   const {
     searchTerm,
     selectedCategory,
@@ -70,21 +73,19 @@ export function ProjectsPage(): JSX.Element {
     setSelectedTechnology,
     setSelectedStatus,
     resetFilters
-  } = useProjectFilters(localizedProjects);
-  const [searchParams, setSearchParams] = useSearchParams();
+  } = useProjectFilters(localizedProjects, engineeringOnly);
   const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
-  const updateProjectQueryParam = useCallback(
-    (projectSlug: string | null, replace = false) => {
-      const next = new URLSearchParams(searchParams);
-      if (projectSlug) {
-        next.set("project", projectSlug);
-      } else {
-        next.delete("project");
-      }
-      setSearchParams(next, { replace });
+  const updateQueryParam = useCallback(
+    (key: "project" | "engineering", value: string | null, replace = false) => {
+      setSearchParams(previous => {
+        const next = new URLSearchParams(previous);
+        if (value === null) next.delete(key);
+        else next.set(key, value);
+        return next;
+      }, { replace });
     },
-    [searchParams, setSearchParams]
+    [setSearchParams]
   );
 
   const selectedProject = useMemo(
@@ -100,7 +101,7 @@ export function ProjectsPage(): JSX.Element {
     }
 
     if (!isValidProjectSlug(paramSlug)) {
-      updateProjectQueryParam(null, true);
+      updateQueryParam("project", null, true);
       return;
     }
 
@@ -110,23 +111,23 @@ export function ProjectsPage(): JSX.Element {
       return;
     }
 
-    updateProjectQueryParam(null, true);
-  }, [localizedProjects, searchParams, updateProjectQueryParam]);
+    updateQueryParam("project", null, true);
+  }, [localizedProjects, searchParams, updateQueryParam]);
 
   const onOpenDetails = useCallback(
     (project: Project, trigger: HTMLButtonElement) => {
       triggerRef.current = trigger;
       setSelectedProjectSlug(project.slug);
-      updateProjectQueryParam(project.slug);
+      updateQueryParam("project", project.slug);
     },
-    [updateProjectQueryParam]
+    [updateQueryParam]
   );
 
   const onCloseDetails = useCallback(() => {
     setSelectedProjectSlug(null);
-    updateProjectQueryParam(null);
+    updateQueryParam("project", null);
     triggerRef.current?.focus();
-  }, [updateProjectQueryParam]);
+  }, [updateQueryParam]);
 
   return (
     <Section>
@@ -146,12 +147,22 @@ export function ProjectsPage(): JSX.Element {
           selectedCategory={selectedCategory}
           selectedTechnology={selectedTechnology}
           selectedStatus={selectedStatus}
+          engineeringOnly={engineeringOnly}
           onCategoryChange={setSelectedCategory}
           onTechnologyChange={setSelectedTechnology}
           onStatusChange={setSelectedStatus}
+          onEngineeringOnlyChange={value => updateQueryParam("engineering", value ? "1" : null)}
         />
         <ProjectHighlights allProjects={localizedProjects} visibleProjects={filteredProjects} />
-        <ProjectGrid projects={filteredProjects} onReset={resetFilters} onViewDetails={onOpenDetails} />
+        <ProjectGrid
+          projects={filteredProjects}
+          onReset={() => {
+            resetFilters();
+            if (engineeringOnly) updateQueryParam("engineering", null);
+          }}
+          onViewDetails={onOpenDetails}
+          hasEngineeringDrawer={hasEngineeringDrawer}
+        />
       </div>
 
       {selectedProject ? (
