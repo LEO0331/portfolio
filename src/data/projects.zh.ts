@@ -13,14 +13,26 @@ export interface LocalizedProjectContent {
 export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   "assistanthub": {
     name: "AssistantHub 人才庫",
-    tagline: "助理人才探索、收藏與本機招募流程",
-    shortDescription: "以 React 實作的人才庫展示，支援角色、可用時間與費率篩選、人才收藏及本機招募流程。",
-    fullDescription: "AssistantHub Talent Pool 提供可重現的示範人才資料、詳情抽屜、招募詢問、CSV／JSON 匯入匯出，以及大量資料的虛擬化列表。",
-    role: "前端／全端作品實作",
-    categories: ["Web 應用", "前端", "目錄平台"],
-    features: ["人才篩選與收藏", "本機招募狀態流程", "可重現示範資料與虛擬列表", "CSV 與 JSON 匯入匯出"],
-    challenges: ["設計清楚且便於瀏覽的助理服務探索體驗"],
-    outcomes: ["提供可公開瀏覽的線上示範"]
+    tagline: "人才探索展示與具稽核紀錄的本機招募流程",
+    shortDescription: "公開 React 展示可搜尋、篩選與收藏虛構人才；另有僅供本機執行的 Express/MySQL API，提供 JWT 權限、版本控管與招募狀態稽核。",
+    fullDescription: "公開的 GitHub Pages 網站為離線 React/Vite 展示：使用可重現的模擬人才資料，支援搜尋篩選、卡片與虛擬化列表、人才收藏、聘用狀態操作，以及具 CSV 公式注入防護與 JSON 匯入筆數限制的資料匯出入。另有獨立設定、僅綁定本機位址的 Node.js／Express／Sequelize／MySQL API，使用虛構測試資料，實作 JWT 驗證、角色權限、樂觀鎖、交易式稽核紀錄，以及處理回應遺失的冪等重試。後端並未公開部署，也不處理真實求職者資料。",
+    role: "個人全端工程實作",
+    categories: ["Web 應用", "前端", "全端", "目錄平台"],
+    features: [
+      "搜尋篩選、人才收藏，以及最多 5,000 筆虛構人才的虛擬化瀏覽",
+      "離線聘用狀態展示、CSV 公式注入防護與 JSON 匯入筆數限制",
+      "僅供本機使用的 API，具 JWT 身分驗證與角色權限控管",
+      "版本檢查的招募狀態轉換與交易式稽核紀錄",
+      "依操作者區分的冪等鍵與不確定 HTTP 結果的安全重試"
+    ],
+    challenges: [
+      "清楚區分公開瀏覽器模擬資料與本機 API 的權威狀態",
+      "在並行更新及重試時避免重複異動與稽核紀錄不一致"
+    ],
+    outcomes: [
+      "以 GitHub Pages 部署只含虛構資料的離線前端展示",
+      "完成具並行更新保護、交易回滾與稽核重播測試的本機 MySQL 招募流程"
+    ]
   },
   "circles-app": {
     name: "Circles 圓點篩選應用",
