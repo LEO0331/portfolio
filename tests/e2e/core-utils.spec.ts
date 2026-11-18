@@ -33,6 +33,39 @@ function project(overrides: Partial<Project>): Project {
   };
 }
 
+test("AssistantHub catalogue accurately separates the public demo and private hiring API in both languages", () => {
+  const english = portfolioProjects.find(item => item.id === "assistanthub");
+  expect(english).toBeDefined();
+  expect(english?.slug).toBe("assistanthub");
+  expect(english?.demoUrl).toBe("https://leo0331.github.io/AssistantHub/");
+  expect(english?.repoUrl).toBe("https://github.com/LEO0331/AssistantHub");
+  expect(english?.status).toBe("live");
+  expect(english?.image).toBe("/src/assets/images/projects/assistanthub.png");
+  expect(english?.featured).toBe(false);
+  expect(english?.techStack).toEqual(expect.arrayContaining(["React", "Node.js", "Express", "MySQL", "Sequelize"]));
+  expect(english?.fullDescription).toMatch(/public GitHub Pages site is an offline/i);
+  expect(english?.fullDescription).toMatch(/loopback-only/);
+  expect(english?.fullDescription).toMatch(/not publicly deployed/);
+  expect(english?.features?.join(" ")).toMatch(/idempotency|idempotent/i);
+
+  const chinese = getLocalizedProjects(portfolioProjects, "zh").find(item => item.id === "assistanthub");
+  expect(chinese).toBeDefined();
+  expect(chinese?.name).toBe("AssistantHub 人才庫");
+  expect(chinese?.fullDescription).toMatch(/離線/);
+  expect(chinese?.fullDescription).toMatch(/僅綁定本機位址/);
+  expect(chinese?.fullDescription).toMatch(/後端並未公開部署/);
+  expect(chinese?.features?.join(" ")).toMatch(/冪等/);
+
+  const filter = {
+    searchTerm: "assistanthub",
+    category: "full-stack-web",
+    technology: "backend-data",
+    status: "live" as const
+  };
+  expect(filterProjects(portfolioProjects, filter).map(item => item.id)).toContain("assistanthub");
+  expect(filterProjects(getLocalizedProjects(portfolioProjects, "zh"), filter).map(item => item.id)).toContain("assistanthub");
+});
+
 test("sortProjects prioritizes featured, then status, then name", () => {
   const result = sortProjects([
     project({ id: "archived", name: "A", status: "archived" }),

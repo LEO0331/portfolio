@@ -5,23 +5,30 @@ export const projects: Project[] = [
     id: "assistanthub",
     slug: "assistanthub",
     name: "AssistantHub Talent Pool",
-    tagline: "Assistant discovery, shortlisting, and local hiring pipelines",
+    tagline: "Talent discovery demo with a locally audited hiring workflow",
     shortDescription:
-      "A React talent-pool demo with role, availability, and rate filters, shortlists, and a local hiring pipeline.",
+      "Browse and shortlist fictional talent in a public React demo. A separate local Express/MySQL API adds JWT roles, versioned hiring transitions, and an audit trail.",
     fullDescription:
-      "AssistantHub Talent Pool supports seeded talent generation, detail drawers, hiring inquiries, CSV/JSON portability, and virtualized browsing of large demo datasets.",
-    role: "Frontend / Full Stack Portfolio Project",
+      "The public GitHub Pages site is an offline React/Vite demo with deterministic sample profiles, search and filters, card and virtualized list views, shortlist and hiring-status controls, and protected CSV/JSON import and export. A separately configured, loopback-only Node.js/Express/Sequelize/MySQL API supports synthetic candidates, JWT authentication, server-side roles, optimistic concurrency, transactional audit events, and idempotent retries after lost responses. The API is not publicly deployed and does not process real applicant data.",
+    role: "Solo Full-Stack Engineer",
     teamType: "solo",
-    techStack: ["React", "JavaScript", "Leaflet"],
-    categories: ["Web App", "Frontend", "Directory"],
+    techStack: ["React", "JavaScript", "Node.js", "Express", "MySQL", "Sequelize", "Leaflet"],
+    categories: ["Web App", "Frontend", "Full Stack", "Directory"],
     features: [
-      "Talent filters and shortlists",
-      "Local hiring status pipeline",
-      "Seeded demo data and virtualized lists",
-      "CSV and JSON import/export"
+      "Search, filters, shortlists, and virtualized browsing of up to 5,000 synthetic profiles",
+      "Offline hiring-status demo with CSV formula protection and bounded JSON imports",
+      "Separate loopback-only API with JWT authentication and role-based access",
+      "Version-checked hiring transitions and transactional audit history",
+      "Actor-scoped idempotency keys and safe retries for ambiguous HTTP outcomes"
     ],
-    challenges: ["Designing a clean browsing experience for service discovery"],
-    outcomes: ["Working public demo available"],
+    challenges: [
+      "Keeping the public browser-only demo separate from authoritative local API state",
+      "Preventing duplicate hiring updates and audit inconsistencies during concurrent requests and retries"
+    ],
+    outcomes: [
+      "Deployed the fictional-data frontend as an offline-only GitHub Pages demo",
+      "Implemented and tested a local MySQL workflow with concurrent-write protection, transactional audit consistency, and idempotent replay"
+    ],
     image: "/src/assets/images/projects/assistanthub.png",
     demoUrl: "https://leo0331.github.io/AssistantHub/",
     repoUrl: "https://github.com/LEO0331/AssistantHub",

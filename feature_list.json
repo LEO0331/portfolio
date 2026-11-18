@@ -798,7 +798,9 @@
       "name": "Refresh the Taipei Faith Map showcase",
       "description": "Present the V2.1 bilingual cultural explorer and its verified engineering scope in the existing catalogue entry.",
       "status": "complete",
-      "dependencies": ["portfolio-catalogue-2026-08"],
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
       "doneCriteria": [
         "Refresh both locales and the two existing preview formats from the public deployment",
         "Verify the card and detail drawer in English and Traditional Chinese at desktop and mobile widths",
@@ -816,7 +818,9 @@
       "name": "Refresh the Passport Comparison showcase",
       "description": "Present the verified Flutter entry-requirements analyzer in the existing bilingual catalogue entry.",
       "status": "complete",
-      "dependencies": ["portfolio-catalogue-2026-08"],
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
       "doneCriteria": [
         "Review merged upstream source and refresh both locales",
         "Capture populated comparison results from the updated public demo",
@@ -877,7 +881,9 @@
       "name": "Limit workflow and link-audit credentials",
       "description": "Scope Pages and monthly maintenance privileges to publishing jobs and make link-audit authentication opt-in.",
       "status": "complete",
-      "dependencies": ["monthly-project-maintenance-2026-10"],
+      "dependencies": [
+        "monthly-project-maintenance-2026-10"
+      ],
       "doneCriteria": [
         "Pages build uses read-only permissions and deployment retains its required scopes",
         "Monthly maintenance verifies in a read-only job and publishes only the allowlisted proposal to the expected review branch",
@@ -897,7 +903,9 @@
       "name": "Polish Traditional Chinese recruiter-facing portfolio copy",
       "description": "Use natural Taiwanese wording to introduce the full-stack role and explain the backend focus.",
       "status": "complete",
-      "dependencies": ["portfolio-catalogue-2026-08"],
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
       "doneCriteria": [
         "Update the homepage, project catalogue UI, about page and contact page in Traditional Chinese",
         "Keep static and client metadata aligned",
@@ -913,7 +921,10 @@
       "name": "Clarify the Gridline and Book QA Library engineering stories",
       "description": "Show the engineering contribution, data flow, trade-offs and verified implementation scope in the existing bilingual views.",
       "status": "complete",
-      "dependencies": ["portfolio-catalogue-2026-08", "gridline-engineering-v2-3-2026-10"],
+      "dependencies": [
+        "portfolio-catalogue-2026-08",
+        "gridline-engineering-v2-3-2026-10"
+      ],
       "doneCriteria": [
         "Each project has one localized workflow diagram that identifies its public demo and backend boundaries",
         "Both views show concise contributions, source-backed decisions and implementation outcomes while preserving existing evidence and authentic images",
@@ -931,7 +942,9 @@
       "name": "Extend the engineering stories to CraftFocus, Tax Auto Extraction and Passport Comparison",
       "description": "Reuse the bilingual engineering summary format to show three verified workflows in the existing drawer.",
       "status": "complete",
-      "dependencies": ["portfolio-engineering-storytelling-2026-11"],
+      "dependencies": [
+        "portfolio-engineering-storytelling-2026-11"
+      ],
       "doneCriteria": [
         "Each selected drawer presents a source-backed summary, one workflow, a decision and a caption for its existing preview",
         "A project ID lookup selects optional engineering content while preserving existing routing, catalogue data and Book QA presentation",
@@ -949,7 +962,9 @@
       "name": "Explain API, privacy and publication workflows in three selected drawers",
       "description": "Add bilingual engineering stories for WordPress Persona Parser, WanderStamp and Public Safety Dashboard.",
       "status": "complete",
-      "dependencies": ["portfolio-selected-engineering-stories-2026-11"],
+      "dependencies": [
+        "portfolio-selected-engineering-stories-2026-11"
+      ],
       "doneCriteria": [
         "The three stories reuse the existing drawer registration and describe source-backed implementation boundaries",
         "Bilingual tests cover the summaries, diagrams, focus, preview images and links at mobile and desktop widths",
@@ -967,7 +982,9 @@
       "name": "Find and open the eight existing engineering stories",
       "description": "Add a shareable catalogue filter and clarify drawer actions in both languages.",
       "status": "complete",
-      "dependencies": ["portfolio-engineering-stories-phase-3-2026-11"],
+      "dependencies": [
+        "portfolio-engineering-stories-phase-3-2026-11"
+      ],
       "doneCriteria": [
         "Engineering Stories selects the seven registered drawers and dedicated Gridline case and works with the existing filters",
         "The filter URL, drawer deep links, history, focus restoration and reset are covered by bilingual browser tests",
@@ -979,6 +996,26 @@
         "Hosted baseline smoke passed in English desktop and Traditional Chinese mobile. Candidate before/after captures are in docs/evidence/portfolio-recruiter-engineering-discovery.",
         "Baseline npm audit reports five Vite development-chain findings from the picomatch advisory. Production-only audit reports zero.",
         "Follow-up audit clarified bilingual homepage copy, raised mobile focus-panel type size, and fixed drawer dismissal focus. Final local suite passed 304 tests and 17 tracked flows."
+      ]
+    },
+    {
+      "id": "assistanthub-portfolio-refresh-2026-11-18",
+      "name": "Refresh AssistantHub bilingual portfolio entry after its full-stack rollout",
+      "description": "Update the existing AssistantHub card and detail drawer from merged upstream source, accurately distinguishing the offline Pages demo from the local JWT/MySQL hiring API.",
+      "status": "in-progress",
+      "dependencies": [
+        "portfolio-catalogue-2026-08"
+      ],
+      "doneCriteria": [
+        "Existing AssistantHub ID, slug, preview, GitHub links and featured selection remain stable",
+        "English and Traditional Chinese card/drawer copy accurately describes released frontend and local-only backend features",
+        "Backend technology filters and bilingual descriptions have a regression check",
+        "Portfolio build, relevant tests and pull request checks pass without touching other project records"
+      ],
+      "evidence": [
+        "Verified upstream AssistantHub main 43ab24bd0789d00fd1899f2105aa40ce369f02fc with PR #44 merged on 2026-11-18",
+        "Reviewed AssistantHub README, local API package, implementation status, workflow audit and idempotency guides",
+        "Updated canonical and zh-TW project records; added a bilingual boundary/filter regression; CI pending"
       ]
     }
   ]
