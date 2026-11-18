@@ -27,7 +27,7 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Deployed the fictional-data frontend as an offline-only GitHub Pages demo",
-      "Implemented and tested a local MySQL workflow with concurrent-write protection, rollback, and audit replay"
+      "Implemented and tested a local MySQL workflow with concurrent-write protection, transactional audit consistency, and idempotent replay"
     ],
     image: "/src/assets/images/projects/assistanthub.png",
     demoUrl: "https://leo0331.github.io/AssistantHub/",

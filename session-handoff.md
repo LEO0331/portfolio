@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Update AssistantHub's existing portfolio card and detail drawer to represent the merged local hiring API and UI/security refinements.
+
+**Current status:** A focused portfolio branch updates English and Traditional Chinese catalogue metadata, preserving `assistanthub` identity, URLs and preview. The public GitHub Pages demo is offline-only; the Express/Sequelize/MySQL workflow with JWT/RBAC, transactional audit and idempotency remains local-only.
+
+## Verification Evidence
+
+AssistantHub source commit `43ab24bd0789d00fd1899f2105aa40ce369f02fc` and merged PR #44 were checked. Bilingual catalogue and backend-filter test added. **This PR's validation is pending; do not reuse earlier baseline test counts as candidate evidence.**
+
+## Blockers
+
+Await fresh portfolio PR checks and visual review of the updated bilingual drawer.
+
+## Remaining Risks
+
+Existing preview was retained and has not been re-captured. Public API hosting, tenant ownership and real applicant handling are out of scope. Portfolio's earlier full npm audit found five Vite development-chain advisories; rerun before quoting a current count.
+
+## Recommended Next Step
+
+Review the AssistantHub metadata PR, confirm CI/build and bilingual catalogue behavior, then validate the hosted portfolio after a separately authorized merge.
+
+## Files Relevant to the Next Update
+
+`src/data/projects.ts`, `src/data/projects.zh.ts`, `tests/e2e/core-utils.spec.ts`, `feature_list.json` and `progress.md`.
+
+## Previous handoff — 2026-11-18 recruiter engineering discovery
+
 **Current objective:** Improve discovery of the existing engineering stories through the catalogue.
 
 **Current status:** PR #63 includes the bilingual filter and action labels, plus the recruiter view audit and fixes for homepage readability and drawer focus.

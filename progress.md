@@ -4,25 +4,25 @@
 
 **Last updated:** 2026-11-18
 
-**Active work:** Make the eight existing engineering stories easier to find from the catalogue.
+**Active work:** Refresh the existing AssistantHub project entry from its merged full-stack repository.
 
-**Status:** Engineering Stories filters by the existing drawer registry and Gridline’s case route. It shares the URL with `project` and composes with the existing filters. The audit clarified homepage copy, enlarged the mobile focus summary, and fixed focus restoration when the drawer closes.
+**Status:** The canonical English and Traditional Chinese project records now describe the offline GitHub Pages talent demo separately from the optional loopback-only Express/MySQL hiring workflow. The stable project ID, slug, demo/repository URLs, image and featured ordering are unchanged.
 
 ### Verification Evidence
 
-All 304 Chromium tests and 17 tracked flows passed locally. The dated entry separates candidate verification from the hosted baseline smoke and npm audit findings.
+Source verified against AssistantHub `43ab24bd0789d00fd1899f2105aa40ce369f02fc` (merged PR #44), its README, local API package, workflow/audit contract and idempotency documentation. A bilingual and backend-filter regression was added to the portfolio. **Portfolio CI and browser tests are pending for this PR**, and must not be inferred from previous baseline results.
 
 ### Blockers
 
-None for the catalogue change.
+No known implementation blocker; acceptance requires fresh portfolio CI results.
 
 ### Remaining Risks
 
-The baseline `npm audit` reports five high-severity findings in the Vite build dependency chain from the picomatch advisory. `npm audit --omit=dev` reports zero findings.
+The public AssistantHub site is offline-only. Its local authenticated MySQL backend is not hosted or approved for real candidate data. The portfolio preview image was intentionally retained pending a separate visual refresh. The portfolio's previously reported five high-severity Vite development-chain audit findings remain a historical baseline, not a new audit result.
 
 ### Next Session Should
 
-Review the targeted pull request and confirm the filter on Pages after deployment.
+Review this focused AssistantHub metadata PR, inspect its CI results and bilingual drawer, and check the live portfolio only after a successful merge/deploy.
 
 ## Previous current state — 2026-11-18 engineering storytelling Phase 3
 
@@ -239,6 +239,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-18 — AssistantHub portfolio record refresh
+
+- Source checked: [AssistantHub main at 43ab24bd](https://github.com/LEO0331/AssistantHub/commit/43ab24bd0789d00fd1899f2105aa40ce369f02fc), merged [AssistantHub PR #44](https://github.com/LEO0331/AssistantHub/pull/44), upstream README, `api/package.json`, `docs/current-state.md`, `docs/workflow-audit-pr5.md` and `docs/idempotency-pr7.md`.
+- Updated project ID `assistanthub` only in `src/data/projects.ts` and `src/data/projects.zh.ts`: card tagline, descriptions, stack/categories, features, engineering challenges and outcomes. Public Pages remains a fictional-data browser demo; separately configured Express/MySQL is loopback-only and not production-hosted.
+- Added a catalogue regression in `tests/e2e/core-utils.spec.ts` covering both languages, stable links/image, offline/API boundary, JWT/MySQL engineering details and backend-technology filtering.
+- Preserved all other project records, image assets, featured ordering, navigation and app behavior. No new dependency, build config or deployment logic. The existing preview is retained without asserting it represents the newest upstream UI.
+- Verification: **pending on this candidate**. Portfolio's prior 304-browser/17-flow evidence is the baseline, not this branch's result. Record actual GitHub Actions checks before merge.
+
 
 ### 2026-11-18 — Recruiter view audit
 

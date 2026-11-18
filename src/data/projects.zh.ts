@@ -31,7 +31,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     ],
     outcomes: [
       "以 GitHub Pages 部署只含虛構資料的離線前端展示",
-      "完成具並行更新保護、交易回滾與稽核重播測試的本機 MySQL 招募流程"
+      "完成具並行更新保護、交易式稽核一致性與冪等重試測試的本機 MySQL 招募流程"
     ]
   },
   "circles-app": {
