@@ -6,7 +6,7 @@
 
 **Active work:** Make the eight existing engineering stories easier to find from the catalogue.
 
-**Status:** Engineering Stories filters by the existing drawer registry and Gridline’s case route. It shares the URL with `project` and composes with the existing filters. The seven drawer actions use contextual labels in the catalogue.
+**Status:** Engineering Stories filters by the existing drawer registry and Gridline’s case route. It shares the URL with `project` and composes with the existing filters. The audit clarified homepage copy, enlarged the mobile focus summary, and fixed focus restoration when the drawer closes.
 
 ### Verification Evidence
 
@@ -239,6 +239,13 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-18 — Recruiter view audit
+
+- The hero described reliability twice, and the small mobile focus panel repeated the API and integration message. `src/i18n/copy.ts` now names traceable records, schema validation, and safe retries. The featured copy identifies data publishing, retrieval with citations, and reward transactions. `Hero.tsx` raises the focus panel body to 14px on mobile, and the catalogue introduction names the Engineering Stories filter.
+- Before the fix, Browser Back after opening a card drawer and Escape from a direct link left focus on the document body. In a quick Back traversal, the URL could also lose `project` while the drawer remained visible. `ProjectsPage.tsx` derives selection from `?project=` and restores the matching card action after dismissal, with the catalogue heading as a fallback. The bilingual discovery tests cover both paths.
+- Checked the homepage, filtered catalogue, Gridline case and all seven enhanced drawers in both languages and themes at 320, 768 and 1440px. The final 120-state Chromium matrix found no page or drawer horizontal overflow and verified the drawer focus loop. [Hero and history focus captures](./docs/evidence/portfolio-recruiter-engineering-discovery/audit)
+- The candidate TypeScript and production build, 49 unit tests, 304 Chromium tests and 17/17 tracked flows passed. A separate production Chromium check covered 24 page and drawer states at 390 and 1440px in both languages. The hosted baseline is reachable and the new Engineering Stories filter was absent there at the time of review.
 
 ### 2026-11-18 — Recruiter engineering story discovery
 

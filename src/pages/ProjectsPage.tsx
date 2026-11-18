@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { ProjectFilters } from "../components/projects/ProjectFilters";
 import { ProjectDetailDrawer } from "../components/projects/ProjectDetailDrawer";
@@ -74,8 +74,9 @@ export function ProjectsPage(): JSX.Element {
     setSelectedStatus,
     resetFilters
   } = useProjectFilters(localizedProjects, engineeringOnly);
-  const [selectedProjectSlug, setSelectedProjectSlug] = useState<string | null>(null);
-  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const triggerRef = useRef<{ slug: string; element: HTMLButtonElement } | null>(null);
+  const previousProjectSlug = useRef<string | null>(null);
   const updateQueryParam = useCallback(
     (key: "project" | "engineering", value: string | null, replace = false) => {
       setSearchParams(previous => {
@@ -88,52 +89,42 @@ export function ProjectsPage(): JSX.Element {
     [setSearchParams]
   );
 
-  const selectedProject = useMemo(
-    () => localizedProjects.find((project) => project.slug === selectedProjectSlug) ?? null,
-    [localizedProjects, selectedProjectSlug]
-  );
+  const projectSlug = searchParams.get("project");
+  const selectedProject = projectSlug && isValidProjectSlug(projectSlug)
+    ? localizedProjects.find(project => project.slug === projectSlug) ?? null
+    : null;
+
+  useLayoutEffect(() => {
+    const previous = previousProjectSlug.current;
+    previousProjectSlug.current = selectedProject?.slug ?? null;
+    if (!previous || selectedProject) return;
+
+    const trigger = triggerRef.current;
+    if (trigger?.slug === previous && trigger.element.isConnected) trigger.element.focus();
+    else titleRef.current?.focus();
+  }, [selectedProject]);
 
   useEffect(() => {
-    const paramSlug = searchParams.get("project");
-    if (!paramSlug) {
-      setSelectedProjectSlug(null);
-      return;
-    }
-
-    if (!isValidProjectSlug(paramSlug)) {
-      updateQueryParam("project", null, true);
-      return;
-    }
-
-    const projectExists = localizedProjects.some((project) => project.slug === paramSlug);
-    if (projectExists) {
-      setSelectedProjectSlug(paramSlug);
-      return;
-    }
-
-    updateQueryParam("project", null, true);
-  }, [localizedProjects, searchParams, updateQueryParam]);
+    if (projectSlug && !selectedProject) updateQueryParam("project", null, true);
+  }, [projectSlug, selectedProject, updateQueryParam]);
 
   const onOpenDetails = useCallback(
     (project: Project, trigger: HTMLButtonElement) => {
-      triggerRef.current = trigger;
-      setSelectedProjectSlug(project.slug);
+      triggerRef.current = { slug: project.slug, element: trigger };
       updateQueryParam("project", project.slug);
     },
     [updateQueryParam]
   );
 
   const onCloseDetails = useCallback(() => {
-    setSelectedProjectSlug(null);
     updateQueryParam("project", null);
-    triggerRef.current?.focus();
   }, [updateQueryParam]);
 
   return (
     <Section>
       <header className="mb-6 space-y-2.5 sm:mb-7 sm:space-y-3">
         <p className="eyebrow">{text.projects.eyebrow}</p>
-        <h1 className="text-3xl font-bold text-slate-900 sm:text-4xl">{text.projects.title}</h1>
+        <h1 ref={titleRef} tabIndex={-1} className="text-3xl font-bold text-slate-900 sm:text-4xl">{text.projects.title}</h1>
         <p className="max-w-3xl text-sm text-slate-600 sm:text-base">
           {text.projects.intro}
         </p>

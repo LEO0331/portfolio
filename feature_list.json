@@ -977,7 +977,8 @@
         "49 unit tests, TypeScript and production build, harness and diff check passed",
         "304 Chromium tests and 17/17 tracked flows passed. Both languages covered filter composition, deep links, history, focus and reset.",
         "Hosted baseline smoke passed in English desktop and Traditional Chinese mobile. Candidate before/after captures are in docs/evidence/portfolio-recruiter-engineering-discovery.",
-        "Baseline npm audit reports five Vite development-chain findings from the picomatch advisory. Production-only audit reports zero."
+        "Baseline npm audit reports five Vite development-chain findings from the picomatch advisory. Production-only audit reports zero.",
+        "Follow-up audit clarified bilingual homepage copy, raised mobile focus-panel type size, and fixed drawer dismissal focus. Final local suite passed 304 tests and 17 tracked flows."
       ]
     }
   ]

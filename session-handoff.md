@@ -2,7 +2,7 @@
 
 **Current objective:** Improve discovery of the existing engineering stories through the catalogue.
 
-**Current status:** The bilingual filter and action labels are on `codex/recruiter-engineering-discovery`, based on merged PR #62 at `964f6fd`.
+**Current status:** PR #63 includes the bilingual filter and action labels, plus the recruiter view audit and fixes for homepage readability and drawer focus.
 
 ## Verification Evidence
 

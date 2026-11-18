@@ -46,6 +46,7 @@ for (const locale of ["en", "zh"] as const) {
     await page.goBack();
     await expect(drawer).toHaveCount(0);
     await expect(checkbox).toBeChecked();
+    await expect(action).toBeFocused();
     await page.goForward();
     await expect(drawer).toBeFocused();
     await page.keyboard.press("Escape");
@@ -62,6 +63,7 @@ for (const locale of ["en", "zh"] as const) {
     await expect(page.getByRole("dialog")).toBeFocused();
     await page.keyboard.press("Escape");
     await expect(checkbox).toBeChecked();
+    await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
     await page.reload();
     await expect(cards).toHaveCount(8);
 
