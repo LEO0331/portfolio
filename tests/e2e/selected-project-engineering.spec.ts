@@ -1,14 +1,20 @@
 import { expect, test } from "@playwright/test";
 import { craftFocusEngineering } from "../../src/data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../src/data/passportComparisonEngineering";
+import { publicSafetyDashboardEngineering } from "../../src/data/publicSafetyDashboardEngineering";
 import { taxAutoExtractionEngineering } from "../../src/data/taxAutoExtractionEngineering";
+import { wanderStampEngineering } from "../../src/data/wanderStampEngineering";
+import { wordpressParserEngineering } from "../../src/data/wordpressParserEngineering";
 import { projects } from "../../src/data/projects";
 import { copy } from "../../src/i18n/copy";
 
 const stories = [
   { id: "craftfocus", content: craftFocusEngineering },
   { id: "simpletaxautoextraction", content: taxAutoExtractionEngineering },
-  { id: "passportcomparison", content: passportComparisonEngineering }
+  { id: "passportcomparison", content: passportComparisonEngineering },
+  { id: "wordpressparser", content: wordpressParserEngineering },
+  { id: "warmthfromafar", content: wanderStampEngineering },
+  { id: "publicsafetydashboard", content: publicSafetyDashboardEngineering }
 ];
 
 for (const { id, content } of stories) {
@@ -28,6 +34,10 @@ for (const { id, content } of stories) {
 
         const drawer = page.getByRole("dialog");
         await expect(drawer).toBeFocused();
+        await page.keyboard.press("Tab");
+        await expect(drawer.getByRole("button", { name: labels.closeDetailsAria })).toBeFocused();
+        const ids = await drawer.locator("[id]").evaluateAll(elements => elements.map(element => element.id));
+        expect(new Set(ids).size).toBe(ids.length);
         await expect(drawer.locator(`#${id}-engineering-overview + dl dd`)).toHaveText(Object.values(story.facts));
         await expect(drawer.getByRole("heading", { name: labels.overview, exact: true })).toHaveCount(0);
         await expect(drawer.getByRole("heading", { name: labels.features, exact: true })).toHaveCount(0);
@@ -44,7 +54,7 @@ for (const { id, content } of stories) {
         await expect(preview).toHaveCount(1);
         await preview.scrollIntoViewIfNeeded();
         await expect.poll(() => preview.evaluate(image => (image as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
-        await expect(drawer.getByText(story.previewCaption!, { exact: true })).toBeVisible();
+        if (story.previewCaption) await expect(drawer.getByText(story.previewCaption, { exact: true })).toBeVisible();
         for (const url of [project.demoUrl, project.repoUrl]) {
           await expect(drawer.locator(`a[href="${url}"]`)).toHaveCount(1);
         }

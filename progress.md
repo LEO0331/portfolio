@@ -2,6 +2,30 @@
 
 ## Current State
 
+**Last updated:** 2026-11-18
+
+**Active work:** Extend merged PR #61 to WordPress Persona Parser, WanderStamp and Public Safety Dashboard.
+
+**Status:** Three bilingual stories reuse the existing project ID lookup. They cover parser fallback and quotas, public tracking disclosures, and provenance from official notices to dashboard summaries.
+
+### Verification Evidence
+
+The dated entry lists the upstream pins and review boundaries. All 300 Chromium tests and all 17 tracked flows passed.
+
+### Blockers
+
+None for the portfolio change.
+
+### Remaining Risks
+
+WanderStamp’s Pages build was confirmed. Firebase rollout and runtime writes, WordPress hosted AI and Blob behavior, and Public Safety live refresh and geocoding runs were outside this review.
+
+### Next Session Should
+
+Review the three drawers and their source evidence in the Phase 3 pull request.
+
+## Previous current state — 2026-11-17 selected stories
+
 **Last updated:** 2026-11-17
 
 **Active work:** Extend the merged PR #60 pattern to CraftFocus, Tax Auto Extraction and Passport Comparison.
@@ -191,6 +215,15 @@ When project data, assets, dependencies, routing, CI, or maintenance workflows c
 4. Record incomplete verification and remaining risks explicitly.
 
 ## History
+
+### 2026-11-18 — Engineering storytelling Phase 3
+
+- **WordPress Persona Parser (`wordpressparser`)**. Parser mode produces the skill draft before optional model generation. If the provider call fails, the draft is retained. The API rejects model requests when the quota is unavailable or exhausted. Profile storage supports version snapshots and rollback, with local files or configured private Blob storage. [Generator](https://github.com/LEO0331/wordpressparser/blob/f019185e9cd48f8ade095c803d3560302acb145a/src/generator.js#L450-L504) · [Quota](https://github.com/LEO0331/wordpressparser/blob/f019185e9cd48f8ade095c803d3560302acb145a/src/ai_quota.js) · [Profile storage](https://github.com/LEO0331/wordpressparser/blob/f019185e9cd48f8ade095c803d3560302acb145a/src/profile_store.js)
+- **WanderStamp (`warmthfromafar`)**. The callable validates submissions and creates separate private and public documents. Rules restrict browser reads of private records to administrators. Server functions enforce administrator authorization and token-based receipt confirmation. Public tracking uses an explicit field list and rounded coordinates. The Pages run succeeded at the reviewed commit. [Rules](https://github.com/LEO0331/WanderStamp/blob/8f8be2b6709ffc344065be0a99bc1576bc84c030/firestore.rules) · [Functions](https://github.com/LEO0331/WanderStamp/blob/8f8be2b6709ffc344065be0a99bc1576bc84c030/functions/postcards.js) · [Projection](https://github.com/LEO0331/WanderStamp/blob/8f8be2b6709ffc344065be0a99bc1576bc84c030/functions/projection.js) · [Pages run](https://github.com/LEO0331/WanderStamp/actions/runs/43813180188)
+- **Public Safety Dashboard (`publicsafetydashboard`)**. SQLite links parsed rows to URL and content hashes. Parser flags guide review, visibility filters apply to derived views, and the monthly job exports the announcement seed before optional geocoding. Missing coordinates limit map coverage. [Parser](https://github.com/LEO0331/publicsafetydashboard/blob/d529597a5f8b145f3cebbe332f17f090dfb3affe/scripts/pdf_parser.py) · [Import](https://github.com/LEO0331/publicsafetydashboard/blob/d529597a5f8b145f3cebbe332f17f090dfb3affe/scripts/import_pdf.py) · [Monthly refresh](https://github.com/LEO0331/publicsafetydashboard/blob/d529597a5f8b145f3cebbe332f17f090dfb3affe/scripts/refresh_monthly.py) · [Public queries](https://github.com/LEO0331/publicsafetydashboard/blob/d529597a5f8b145f3cebbe332f17f090dfb3affe/src/server/queries.ts)
+- Three localized data modules register through `src/components/projects/ProjectEngineering.tsx`. `tests/e2e/selected-project-engineering.spec.ts` extends the existing bilingual drawer tests to all three.
+- The metadata dry run reported zero updates and candidates. Locked install, audit (zero advisories), harness, 49 unit tests, production build with TypeScript, and diff check passed. `npx playwright test --workers=3` passed 300 Chromium tests. The coverage gate passed 17/17 tracked flows. The new checks cover both languages at 320, 640 and 1440px, including Tab and Escape, unique IDs, loaded previews, and link and section counts.
+- Compared the [narrative captures](./docs/evidence/portfolio-engineering-stories-phase-3) against merged main `4526883`. Captures include portfolio text and diagrams only. The existing in-product preview assets are preserved.
 
 ### 2026-11-17 — Passport Comparison live preview refresh
 
