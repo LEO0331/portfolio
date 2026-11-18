@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { hasEngineeringDrawer } from "../components/projects/ProjectEngineering";
 import type { Project, ProjectStatus } from "../types/project";
 import {
   extractUniqueCategories,
@@ -23,7 +24,7 @@ export interface UseProjectFiltersResult {
   resetFilters: () => void;
 }
 
-export function useProjectFilters(projectList: Project[]): UseProjectFiltersResult {
+export function useProjectFilters(projectList: Project[], engineeringOnly: boolean): UseProjectFiltersResult {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedTechnology, setSelectedTechnology] = useState("all");
@@ -35,14 +36,16 @@ export function useProjectFilters(projectList: Project[]): UseProjectFiltersResu
   const filteredProjects = useMemo(
     () =>
       sortProjects(
-        filterProjects(projectList, {
+        filterProjects(engineeringOnly
+          ? projectList.filter(project => project.engineeringCasePath || hasEngineeringDrawer(project.id))
+          : projectList, {
           searchTerm,
           category: selectedCategory,
           technology: selectedTechnology,
           status: selectedStatus
         })
       ),
-    [projectList, searchTerm, selectedCategory, selectedTechnology, selectedStatus]
+    [projectList, engineeringOnly, searchTerm, selectedCategory, selectedTechnology, selectedStatus]
   );
 
   return {

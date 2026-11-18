@@ -34,6 +34,7 @@ The existing Gridline project card and bilingual engineering case now distinguis
 - Explore the thirteen civic engineering cases through an original layered island scene or an accessible HTML list at `/govtech/explore` and `/zh/govtech/explore`. Domain, case, search and view selections can be shared in the URL; existing case evidence remains canonical.
 - Review who you are and your engineering focus
 - Filter projects by category, technology, and status
+- Use Engineering Stories on the Projects page to find the eight projects with a story or case study. Share that view with `?engineering=1`.
 - Open project details in-page without losing filters/scroll state
 - Switch language between English and Traditional Chinese
 - Open live demos and source repositories directly

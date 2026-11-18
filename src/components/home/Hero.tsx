@@ -31,7 +31,7 @@ export function Hero(): JSX.Element {
 
         <aside className="panel p-4 sm:p-5">
           <p className="eyebrow">{text.home.valueCardEyebrow}</p>
-          <div className="mt-3 space-y-2.5 text-xs leading-6 text-slate-700 sm:text-sm sm:leading-6">
+          <div className="mt-3 space-y-2.5 text-sm leading-6 text-slate-700">
             <p>
               <span className="font-semibold text-slate-900">{text.home.primaryFocus}</span> {text.home.primaryFocusValue}
             </p>

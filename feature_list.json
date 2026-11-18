@@ -961,6 +961,25 @@
         "300 Chromium tests and 17/17 tracked flows passed. All three stories passed in both languages at 320, 640 and 1440px",
         "Desktop and mobile narrative captures in docs/evidence/portfolio-engineering-stories-phase-3"
       ]
+    },
+    {
+      "id": "portfolio-recruiter-engineering-discovery-2026-11",
+      "name": "Find and open the eight existing engineering stories",
+      "description": "Add a shareable catalogue filter and clarify drawer actions in both languages.",
+      "status": "complete",
+      "dependencies": ["portfolio-engineering-stories-phase-3-2026-11"],
+      "doneCriteria": [
+        "Engineering Stories selects the seven registered drawers and dedicated Gridline case and works with the existing filters",
+        "The filter URL, drawer deep links, history, focus restoration and reset are covered by bilingual browser tests",
+        "A focused PR includes paired captures and distinguishes local verification from live baseline checks"
+      ],
+      "evidence": [
+        "49 unit tests, TypeScript and production build, harness and diff check passed",
+        "304 Chromium tests and 17/17 tracked flows passed. Both languages covered filter composition, deep links, history, focus and reset.",
+        "Hosted baseline smoke passed in English desktop and Traditional Chinese mobile. Candidate before/after captures are in docs/evidence/portfolio-recruiter-engineering-discovery.",
+        "Baseline npm audit reports five Vite development-chain findings from the picomatch advisory. Production-only audit reports zero.",
+        "Follow-up audit clarified bilingual homepage copy, raised mobile focus-panel type size, and fixed drawer dismissal focus. Final local suite passed 304 tests and 17 tracked flows."
+      ]
     }
   ]
 }

@@ -8,9 +8,10 @@ interface ProjectGridProps {
   projects: Project[];
   onReset: () => void;
   onViewDetails?: (project: Project, trigger: HTMLButtonElement) => void;
+  hasEngineeringDrawer?: (projectId: string) => boolean;
 }
 
-export function ProjectGrid({ projects, onReset, onViewDetails }: ProjectGridProps): JSX.Element {
+export function ProjectGrid({ projects, onReset, onViewDetails, hasEngineeringDrawer }: ProjectGridProps): JSX.Element {
   const { locale } = useLocale();
   const text = copy[locale];
 
@@ -30,7 +31,12 @@ export function ProjectGrid({ projects, onReset, onViewDetails }: ProjectGridPro
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
       {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} onViewDetails={onViewDetails} />
+        <ProjectCard
+          key={project.id}
+          project={project}
+          onViewDetails={onViewDetails}
+          engineeringDrawer={hasEngineeringDrawer?.(project.id)}
+        />
       ))}
     </div>
   );

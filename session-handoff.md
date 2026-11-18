@@ -1,5 +1,31 @@
 # Session Handoff
 
+**Current objective:** Improve discovery of the existing engineering stories through the catalogue.
+
+**Current status:** PR #63 includes the bilingual filter and action labels, plus the recruiter view audit and fixes for homepage readability and drawer focus.
+
+## Verification Evidence
+
+304 Chromium tests and 17/17 tracked flows passed locally. The live Pages baseline passed the existing recruiter journey in both languages. See the November 18 recruiter discovery entry in `progress.md` for the checks and captures.
+
+## Blockers
+
+None for the catalogue change.
+
+## Remaining Risks
+
+The full baseline npm audit reports five findings in the Vite development dependency chain. The production-only audit reports zero findings.
+
+## Recommended Next Step
+
+Review and verify the filter on Pages after deployment.
+
+## Files Relevant to the Next Update
+
+`src/pages/ProjectsPage.tsx`, `src/hooks/useProjectFilters.ts`, `src/components/projects/`, and `tests/e2e/engineering-discovery.spec.ts`.
+
+## Previous handoff — 2026-11-18 engineering storytelling Phase 3
+
 **Current objective:** Add three source-backed stories using the existing project drawer.
 
 **Current status:** Phase 3 is on `codex/engineering-stories-phase-3`, based on merged PR #61 at `4526883`.
