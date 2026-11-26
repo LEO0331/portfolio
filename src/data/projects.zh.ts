@@ -99,12 +99,31 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["年度與主題試題瀏覽", "概念提示與作答筆記", "書籤與複習進度", "瀏覽器本機學習紀錄"]
   },
   boxmatch: {
-    tagline: "展場剩食媒合與取餐安排",
-    shortDescription: "讓展場主辦方發布剩餘餐食，附近使用者可預約取餐時段的媒合應用。",
-    fullDescription: "Boxmatch 整合餐食列表與地圖、企業發布、收餐預約及取餐碼，協調剩食交接流程。",
-    role: "產品／Flutter 開發者",
-    categories: ["Web 應用", "社會影響", "產品概念"],
-    features: ["剩食列表與地圖", "企業發布流程", "預約與取餐時段", "取餐交接碼"]
+    name: "BoxMatch",
+    tagline: "展場剩食媒合、交易式預約與流量智慧分析",
+    shortDescription: "已部署的展場剩食全端媒合平台，整合安全預約流程、擁有者資料權限及隱私優先的流量分析。",
+    fullDescription: "BoxMatch 採 Flutter 餐食列表與 OpenStreetMap 場館地圖，搭配 Render 上的 Node.js／Express REST API、Firebase Authentication 與 Cloud Firestore。預約、取消、取餐確認及庫存異動由後端交易式處理；冪等鍵保障預約重試，編輯權杖雜湊及撤銷機制與公開資料隔離。可選的 Firestore 擁有者限定預約讀取移除 Render 冷啟動依賴，搭配依 UID 隔離的記憶體快取、漸進式載入及 fail-closed 版本化啟動遷移。觀測型流量智慧子系統支援爬蟲分類與可選驗證、行為風險評分、可選本機國別／ASN 資料、有限資源的每日聚合及穩定批次標記，並透過自訂權限保護管理儀表板與 CSV 匯出。GitHub Actions 驗證後端測試、Flutter 覆蓋率、Firestore Emulator 安全規則及瀏覽器回歸測試。",
+    role: "全端工程師",
+    categories: ["Web 應用", "全端", "社會影響"],
+    features: [
+      "公開剩食列表、地圖、企業發布及取餐交接碼",
+      "後端權威庫存交易、預約冪等與編輯權杖輪替／撤銷",
+      "Firebase 身分驗證、擁有者限定預約讀取與私人憑證隔離",
+      "可選 Firestore 直接讀取、UID 快取、漸進式載入與版本化啟動遷移",
+      "隱私優先的爬蟲分類／驗證、行為風險評分及可選國別／ASN 分析",
+      "有限資源的每日聚合、防重複持久化與權限保護的管理儀表板／CSV 匯出",
+      "GitHub Actions CI/CD、後端與 Flutter 測試、Firestore Emulator 及瀏覽器驗證"
+    ],
+    challenges: [
+      "在並行請求、重試與不確定回應中維持庫存交易一致性及授權",
+      "在不放寬擁有者權限的前提下降低免費層冷啟動與頁面載入依賴",
+      "兼顧資料最小化、資源使用上限與具營運價值的觀測訊號"
+    ],
+    outcomes: [
+      "完成全端剩食媒合應用部署，專案擁有者已確認可存取管理儀表板",
+      "實作可選直接讀取路徑，移除預約列表讀取對 Render 的依賴",
+      "2026 年 11 月 26 日 CI 基準：五項檢查均通過，後端 31 suites／546 tests、Flutter 覆蓋率 89.32%，並完成實際 Firestore Emulator 安全驗證"
+    ]
   },
   "warmmemo": {
     name: "暖備 WarmMemo",
