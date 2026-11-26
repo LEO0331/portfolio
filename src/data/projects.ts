@@ -384,21 +384,24 @@ export const projects: Project[] = [
     id: "robotfriends",
     slug: "robotfriends",
     name: "Gridline",
-    tagline: "Evidence-first AI infrastructure research with automated data and reports",
+    tagline: "Evidence-first infrastructure research and independent security observability",
     shortDescription:
-      "A bilingual dashboard combining dated market and SEC evidence, thematic company comparisons, verified catalysts and historical research reports.",
+      "A bilingual AI infrastructure research dashboard with source-backed reports and an independent passive HTTP security probe sensor.",
     fullDescription:
-      "Gridline integrates official company, infrastructure and energy evidence with dated market observations. Its React/GitHub Pages demo provides company research, thematic comparisons, a source-backed week/month/agenda catalyst calendar and point-in-time Daily/Weekly research reports. Node.js ingestion, a local SQLite/WAL research API, fail-closed validation and GitHub Actions support safe static snapshot/report publication. A separate weekly official-source scan proposes strictly verified calendar updates or review candidates; actual publisher coverage remains bounded. The public site is not a hosted Node API, trading system or investment predictor.",
-    role: "Backend / Financial Data Engineering Developer",
+      "Gridline integrates official company, infrastructure and energy evidence with dated market observations. Its React/GitHub Pages demo provides company research, thematic comparisons, a source-backed week/month/agenda catalyst calendar and point-in-time Daily/Weekly research reports. Node.js ingestion, a local SQLite/WAL research API, fail-closed validation and GitHub Actions support safe static snapshot/report publication. A separate weekly official-source scan proposes strictly verified calendar updates or review candidates; actual publisher coverage remains bounded. An isolated Node.js/Express sensor, designed for a separate Docker/Render service, classifies HTTP probes, correlates trusted sources using short-lived HMAC fingerprints and exposes only aggregate metrics through an authenticated operator dashboard. Coverage diagnostics, health-check separation and bounded CSV/JSONL recovery support analysis without storing raw request identities. Optional local country/ASN and bot range matching requires verified topology and a fresh dataset. The public research site is not a hosted Node API, trading system or investment predictor; the sensor is observation-only, not a blocking or incident-response platform.",
+    role: "Backend / Data Engineering & Security Observability Developer",
     teamType: "solo",
-    techStack: ["React", "JavaScript", "Node.js", "SQLite", "Supabase"],
+    techStack: ["React", "JavaScript", "Node.js", "SQLite", "Supabase", "Express", "Docker", "Render"],
     categories: ["Web App", "Backend", "Data Engineering"],
     features: [
       "Source-backed market, SEC and infrastructure research with visible evidence gaps",
       "Thematic company comparisons and official Research Catalyst Calendar",
       "Point-in-time Daily editions and weekly reviews from actual retained sessions",
       "Separate scheduled snapshot/report publishing and verified calendar maintenance",
-      "Local Node.js + SQLite/WAL research profile; optional Supabase preferences"
+      "Local Node.js + SQLite/WAL research profile; optional Supabase preferences",
+      "Independent passive HTTP probe classification and privacy-preserving HMAC correlation",
+      "Authenticated aggregate dashboard, coverage diagnostics and bounded CSV/JSONL restoration",
+      "Optional local network enrichment and Render-owned runtime configuration"
     ],
     image: "/src/assets/images/projects/robotfriends.png",
     demoUrl: "https://leo0331.github.io/Gridline/",

@@ -1017,6 +1017,25 @@
         "Reviewed AssistantHub README, local API package, implementation status, workflow audit and idempotency guides",
         "Updated canonical and zh-TW project records; added a bilingual boundary/filter regression; CI pending"
       ]
+    },
+    {
+      "id": "gridline-security-portfolio-2026-11",
+      "name": "Document Gridline independent passive security intelligence",
+      "description": "Refresh the existing bilingual Gridline card and engineering case from merged sensor Phases 1–3, preserving the historical research audit.",
+      "status": "pending",
+      "dependencies": [
+        "gridline-engineering-v2-3-2026-10"
+      ],
+      "doneCriteria": [
+        "Bilingual project and separate security case reference the merged sensor source and dated CI",
+        "Existing research links, project identity, audit inventory and public demo remain unchanged",
+        "Portfolio checks and bilingual browser acceptance pass"
+      ],
+      "evidence": [
+        "Source f1049eaa5b1ec2c76ab134e918906ee9346136b5; upstream post-merge sensor CI 22/22, zero npm audit findings, Docker and smoke checks passed",
+        "Candidate edits and regression assertions prepared; awaiting portfolio CI. Existing AssistantHub feature remains in-progress in harness; this entry stays pending acceptance.",
+        "Initial E2E 306 passed, one legacy metadata assertion failed. Targeted regression adjustment preserves historical fixture, stable project identity and exact approved role/stack; rerun pending."
+      ]
     }
   ]
 }

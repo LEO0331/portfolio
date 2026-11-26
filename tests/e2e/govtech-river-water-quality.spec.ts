@@ -153,16 +153,19 @@ test("River013 preserves every prior canonical field and Gridline engineering/re
     expect(hash(frozen.normalizeEol ? bytes.toString("utf8").replaceAll("\r\n", "\n") : bytes), frozen.path).toBe(frozen.sha256);
   }
   const gridline = projects.find(project => project.id === "robotfriends")!;
-  // Recruiter-facing copy was deliberately refreshed in November. The historical
-  // Gridline fixture remains unchanged: protect stable identity/links/ownership,
-  // not the older tagline, description and features of a living project card.
+  // Keep the historical fixture intact. The November security refresh explicitly
+  // extends the living project's role and stack; stable identity, links, ownership
+  // and all other historical protections still use the original baseline.
   const gridlineIdentityKeys = [
-    "id", "slug", "name", "role", "teamType", "techStack", "categories",
+    "id", "slug", "name", "teamType", "categories",
     "image", "demoUrl", "repoUrl", "engineeringCasePath", "status", "featured"
   ] as const;
   for (const key of gridlineIdentityKeys) {
     expect(gridline[key], `robotfriends/${key}`).toEqual(prior.gridlineProject[key]);
   }
+  expect(gridline.role, "robotfriends/current role").toBe("Backend / Data Engineering & Security Observability Developer");
+  expect(gridline.techStack, "robotfriends/retained and added technologies")
+    .toEqual([...prior.gridlineProject.techStack, "Express", "Docker", "Render"]);
   const water = projects.find(project => project.id === "taipei-feitsui-water-map")!;
   for (const [key, value] of Object.entries(prior.waterProjectIdentity)) expect(water[key as keyof typeof water], key).toEqual(value);
 });

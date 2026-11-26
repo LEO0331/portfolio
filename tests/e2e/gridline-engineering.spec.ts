@@ -2,6 +2,8 @@ import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { gridlineEngineeringContent, gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, GRIDLINE_SOURCE_SHA, gridlineSource } from "../../src/data/gridlineEngineering";
 import { projects } from "../../src/data/projects";
+import { getLocalizedProjects } from "../../src/utils/projectLocalization";
+import { gridlineSecurity, gridlineSecuritySource, GRIDLINE_SECURITY_SHA, GRIDLINE_SECURITY_CI } from "../../src/data/gridlineSecurity";
 import { govtechCases } from "../../src/data/govtechCases";
 import { govtechCasesZh } from "../../src/data/govtechCases.zh";
 import routeConfig from "../../src/routes/routeConfig.json" with { type: "json" };
@@ -15,6 +17,15 @@ test("engineering inventory and bilingual evidence remain bound to the audited i
     expect(gridlineCurrentRelease[locale].boundary).toContain("2026-11-11");
     for (const feature of gridlineCurrentRelease[locale].features) {
       expect(gridlineCurrentSource(feature.source)).toContain(`/blob/${GRIDLINE_CURRENT_RELEASE_SHA}/`);
+    }
+  }
+  expect(GRIDLINE_SECURITY_SHA).toBe("f1049eaa5b1ec2c76ab134e918906ee9346136b5");
+  expect(GRIDLINE_SECURITY_SHA).not.toBe(GRIDLINE_CURRENT_RELEASE_SHA);
+  for (const locale of ["en", "zh"] as const) {
+    expect(gridlineSecurity[locale].features).toHaveLength(5);
+    expect(gridlineSecurity[locale].verification).toContain("22/22");
+    for (const feature of gridlineSecurity[locale].features) {
+      expect(gridlineSecuritySource(feature.source)).toContain(`/blob/${GRIDLINE_SECURITY_SHA}/`);
     }
   }
   expect(manifest.endpoints).toHaveLength(10);
@@ -48,6 +59,12 @@ test("engineering inventory and bilingual evidence remain bound to the audited i
   expect(gridlineEngineeringContent.en.sections.map(section => section.id)).toEqual(gridlineEngineeringContent.zh.sections.map(section => section.id));
   expect(projects.filter(project => project.id === "robotfriends")).toHaveLength(1);
   expect(projects.find(project => project.id === "robotfriends")).toMatchObject({ slug: "robotfriends", engineeringCasePath: "/engineering/gridline", demoUrl: "https://leo0331.github.io/Gridline/", repoUrl: "https://github.com/LEO0331/Gridline" });
+  const gridline = projects.find(project => project.id === "robotfriends")!;
+  expect(gridline.role).toBe("Backend / Data Engineering & Security Observability Developer");
+  expect(gridline.techStack).toEqual(["React", "JavaScript", "Node.js", "SQLite", "Supabase", "Express", "Docker", "Render"]);
+  const localized = getLocalizedProjects(projects, "zh").find(project => project.id === "robotfriends")!;
+  expect(localized.role).toBe("後端／資料工程與資安可觀測性開發者");
+  expect(localized.techStack).toEqual(gridline.techStack);
   expect(govtechCases).toHaveLength(13);
   expect(govtechCasesZh).toHaveLength(13);
   expect(govtechCases.some(study => study.projectId === "robotfriends")).toBe(false);
@@ -71,6 +88,15 @@ for (const locale of ["en", "zh"] as const) {
     await expect(current).toContainText(gridlineCurrentRelease[locale].boundary);
     await expect(current.getByRole("link")).toHaveCount(5);
     await expect(current.getByRole("link").last()).toHaveAttribute("href", gridlineCurrentSource("scripts/publish-snapshot.js"));
+    const security = page.locator("[data-gridline-security]");
+    await expect(security.getByRole("heading", { level: 2 })).toHaveText(gridlineSecurity[locale].heading);
+    await expect(security).toContainText(gridlineSecurity[locale].boundary);
+    await expect(security).toContainText(gridlineSecurity[locale].verification);
+    await expect(security.getByRole("link", { name: gridlineSecurity[locale].ciLabel })).toHaveAttribute("href", GRIDLINE_SECURITY_CI);
+    for (const feature of gridlineSecurity[locale].features) {
+      await expect(security.getByRole("link", { name: `${gridlineSecurity[locale].evidenceLabel}: ${feature.source}` })).toHaveAttribute("href", gridlineSecuritySource(feature.source));
+    }
+    await expect(security.locator('a[href*="onrender.com"]')).toHaveCount(0);
     await expect(page).toHaveTitle(config.title!);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", page.url());
     await expect(page.locator("html")).toHaveAttribute("lang", locale === "zh" ? "zh-Hant" : "en");
@@ -119,6 +145,7 @@ for (const locale of ["en", "zh"] as const) {
     await page.goto(`./${prefix}projects?project=robotfriends`);
     const drawer = page.getByRole("dialog");
     await expect(drawer).toBeFocused();
+    await expect(drawer).toContainText(locale === "zh" ? "獨立被動式 HTTP 探測分類" : "Independent passive HTTP probe classification");
     await drawer.getByRole("link", { name: locale === "zh" ? "工程案例" : "Engineering Case Study", exact: true }).click();
     await expect(page.getByRole("dialog")).toHaveCount(0);
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(content.title);

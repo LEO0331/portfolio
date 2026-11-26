@@ -196,12 +196,12 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     features: ["大字與簡單題庫操作", "作答回饋與錯題複習", "瀏覽器本機進度", "附來源的筆記與圖卡"]
   },
   "robotfriends": {
-    tagline: "以官方證據為核心的 AI 基礎設施研究與自動化報告平台",
-    shortDescription: "結合具日期的市場與 SEC 證據、主題公司比較、已驗證研究日曆與歷史研究報告的雙語儀表板。",
-    fullDescription: "Gridline 整合官方公司、基礎設施與能源證據及具日期的市場觀測。React／GitHub Pages 公開 Demo 提供公司研究、同業比較、週／月／議程研究日曆，以及保留真實時間點的日報與週報。Node.js 介接、本機 SQLite/WAL API 模式、嚴格資料驗證及 GitHub Actions 支援安全的靜態快照與報告發布；獨立每週官方來源掃描只自動接受嚴格驗證的時程，其他候選留待審閱。日曆涵蓋有限；公開 Demo 並非託管的 Node API、交易系統或投資預測工具。",
-    role: "後端／金融資料工程開發者",
+    tagline: "以官方證據為核心的基礎設施研究與獨立資安可觀測性",
+    shortDescription: "結合具來源的 AI 基礎設施研究報告與獨立被動式 HTTP 安全探測感測器的雙語儀表板。",
+    fullDescription: "Gridline 整合官方公司、基礎設施與能源證據及具日期的市場觀測。React／GitHub Pages 公開 Demo 提供公司研究、同業比較、週／月／議程研究日曆，以及保留真實時間點的日報與週報。Node.js 介接、本機 SQLite/WAL API 模式、嚴格資料驗證及 GitHub Actions 支援安全的靜態快照與報告發布；獨立每週官方來源掃描只自動接受嚴格驗證的時程，其他候選留待審閱。日曆涵蓋有限。另以獨立 Node.js／Express 感測器與 Docker／Render 部署設計，分類 HTTP 探測、以短效 HMAC 指紋關聯可信來源，並透過需驗證的營運儀表板呈現彙總資料。健康檢查分離、觀測覆蓋診斷與有界限的 CSV／JSONL 還原支援分析，不保存原始請求識別資料。可選本機國別／ASN 及 bot 網段匹配需驗證拓樸與有效資料集。公開 Demo 並非託管的 Node API、交易系統或投資預測工具；感測器僅觀測，不執行封鎖或事件應變。",
+    role: "後端／資料工程與資安可觀測性開發者",
     categories: ["Web 應用", "後端", "資料工程"],
-    features: ["市場／SEC／基礎設施來源追溯與資料缺口揭露", "跨公司主題研究及官方研究催化事件日曆", "真實歷史交易日的日報封存與每週回顧", "快照／報告及日曆分離的 GitHub Actions 自動維護", "本機 Node.js＋SQLite/WAL 研究模式與可選 Supabase 偏好整合"]
+    features: ["市場／SEC／基礎設施來源追溯與資料缺口揭露", "跨公司主題研究及官方研究催化事件日曆", "真實歷史交易日的日報封存與每週回顧", "快照／報告及日曆分離的 GitHub Actions 自動維護", "本機 Node.js＋SQLite/WAL 研究模式與可選 Supabase 偏好整合", "獨立被動式 HTTP 探測分類與兼顧隱私的 HMAC 關聯", "需驗證的彙總儀表板、覆蓋診斷與有界限的 CSV／JSONL 還原", "可選本機網路情資及 Render 營運設定管理"]
   },
   "epubreader": {
     name: "私人書庫問答系統",

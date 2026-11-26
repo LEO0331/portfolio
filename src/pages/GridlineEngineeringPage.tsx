@@ -5,6 +5,7 @@ import { ExternalLink } from "../components/common/ExternalLink";
 import { EngineeringAtAGlance } from "../components/projects/EngineeringAtAGlance";
 import { GridlineWorkflowDiagram } from "../components/projects/GridlineWorkflowDiagram";
 import { gridlineEngineeringContent, gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, gridlineSource, GRIDLINE_SOURCE_SHA, type EngineeringTable } from "../data/gridlineEngineering";
+import { gridlineSecurity, gridlineSecuritySource, GRIDLINE_SECURITY_SHA, GRIDLINE_SECURITY_CI } from "../data/gridlineSecurity";
 import { useLocale } from "../i18n/LocaleContext";
 import { usePageSeo } from "../utils/seo";
 import routeConfig from "../routes/routeConfig.json";
@@ -27,6 +28,7 @@ export function GridlineEngineeringPage(): JSX.Element {
   const { locale, toLocalePath } = useLocale();
   const content = gridlineEngineeringContent[locale];
   const currentRelease = gridlineCurrentRelease[locale];
+  const security = gridlineSecurity[locale];
   const sections = [
     ...openingSections.map(id => content.sections.find(section => section.id === id)!),
     ...content.sections.filter(section => !openingSections.includes(section.id))
@@ -52,11 +54,11 @@ export function GridlineEngineeringPage(): JSX.Element {
     <header className="mb-8 mt-6 space-y-4">
       <p className="eyebrow">{zh ? "工程案例 · 後端與資料系統" : "Engineering case · Backend & data systems"}</p>
       <h1 ref={heading} tabIndex={-1} className="text-3xl font-bold leading-tight text-slate-900 sm:text-4xl">{content.title}</h1>
-      <p className="text-lg leading-8 text-slate-600">{content.summary}</p>
+      <p className="text-lg leading-8 text-slate-600">{content.summary} {zh ? "另設獨立被動式安全探測感測器，呈現兼顧隱私的資安可觀測性。" : "A separate passive probe sensor demonstrates privacy-preserving security observability."}</p>
       <div className="flex flex-wrap gap-4 text-sm"><ExternalLink href="https://leo0331.github.io/Gridline/">{zh ? "公開靜態 Demo" : "Public static demo"}</ExternalLink><ExternalLink href="https://github.com/LEO0331/Gridline">{zh ? "Gridline 原始碼" : "Gridline repository"}</ExternalLink></div>
     </header>
     <details className="panel-soft mb-6 p-4"><summary className="cursor-pointer text-sm font-semibold">{zh ? "案例章節" : "Case study sections"}</summary>
-      <nav aria-label={zh ? "案例章節" : "Case study sections"} className="mt-4"><ol className="grid gap-3 text-sm sm:grid-cols-2">{sections.map(section => <li key={section.id}><a className="underline underline-offset-4" href={`#${section.id}`}>{section.title}</a></li>)}</ol></nav>
+      <nav aria-label={zh ? "案例章節" : "Case study sections"} className="mt-4"><ol className="grid gap-3 text-sm sm:grid-cols-2">{sections.map(section => <li key={section.id}><a className="underline underline-offset-4" href={`#${section.id}`}>{section.title}</a></li>)}<li><a className="underline underline-offset-4" href="#passive-security">{security.heading}</a></li></ol></nav>
     </details>
 
     <div className="space-y-10">{sections.map(section => {
@@ -89,6 +91,24 @@ export function GridlineEngineeringPage(): JSX.Element {
             <p className="mt-3 text-sm leading-7 text-slate-700">{currentRelease.introduction}</p>
             <ul className="mt-4 space-y-4">{currentRelease.features.map(feature => <li key={feature.title} className="text-sm leading-6"><h3 className="font-semibold">{feature.title}</h3><p className="mt-1 text-slate-700">{feature.description}</p><ExternalLink href={gridlineCurrentSource(feature.source)}>{currentRelease.evidenceLabel}: {feature.source}</ExternalLink></li>)}</ul>
             <p className="mt-4 border-t border-slate-300 pt-3 text-sm leading-6 text-slate-600">{currentRelease.boundary}</p>
+        </aside>}
+        {section.id === "tradeoffs" && <aside id="passive-security" data-gridline-security aria-labelledby="gridline-security-heading" className="panel-soft scroll-mt-24 space-y-4 p-5 sm:p-6">
+          <h2 id="gridline-security-heading" className="text-xl font-bold text-slate-900">{security.heading}</h2>
+          <p className="text-xs text-slate-600">{security.date} · <ExternalLink href={`https://github.com/LEO0331/Gridline/commit/${GRIDLINE_SECURITY_SHA}`}>{GRIDLINE_SECURITY_SHA.slice(0, 10)}</ExternalLink></p>
+          <p className="text-sm leading-7 text-slate-700">{security.introduction}</p>
+          <figure aria-label={zh ? "獨立感測器資料流程" : "Independent sensor data flow"}>
+            <ol className="grid gap-3 text-sm sm:grid-cols-2">{security.flow.map(([label, description], index) => <li key={label} className="rounded-lg border border-(--line) bg-(--surface) p-3">
+              <p className="font-semibold text-slate-900"><span className="mr-2 text-(--brand)">{index + 1}.</span>{label}</p>
+              <p className="mt-1 leading-6 text-slate-700">{description}</p>
+            </li>)}</ol>
+            <figcaption className="mt-2 text-xs leading-5 text-slate-600">{zh ? "與公開研究網站、本機研究 API 及 SQLite 資料庫分離。" : "Separate from the public research site, local research API and SQLite store."}</figcaption>
+          </figure>
+          <ul className="space-y-4">{security.features.map(feature => <li key={feature.title} className="text-sm leading-6">
+            <h3 className="font-semibold">{feature.title}</h3><p className="mt-1 text-slate-700">{feature.description}</p>
+            <ExternalLink href={gridlineSecuritySource(feature.source)} className="break-all">{security.evidenceLabel}: {feature.source}</ExternalLink>
+          </li>)}</ul>
+          <p className="border-t border-slate-300 pt-3 text-sm leading-6 text-slate-700">{security.verification} <ExternalLink href={GRIDLINE_SECURITY_CI}>{security.ciLabel}</ExternalLink></p>
+          <p className="text-sm leading-6 text-slate-600">{security.boundary}</p>
         </aside>}
       </Fragment>;
     })}</div>
