@@ -11,6 +11,7 @@ import { Button } from "../common/Button";
 import { ExternalLink } from "../common/ExternalLink";
 import { Tag } from "../common/Tag";
 import { getProjectEngineering } from "./ProjectEngineering";
+import { BoxMatchSecurityArchitecture } from "./BoxMatchSecurityArchitecture";
 
 interface ProjectDetailDrawerProps {
   project: Project;
@@ -221,6 +222,8 @@ export function ProjectDetailDrawer({ project, onClose }: ProjectDetailDrawerPro
                   ) : null}
                 </>
               )}
+
+              {project.id === "boxmatch" && <BoxMatchSecurityArchitecture locale={locale} />}
 
               {timeline ? (
                 <section className="space-y-1.5">
