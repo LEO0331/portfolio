@@ -1,5 +1,23 @@
 # Portfolio Progress Log
 
+## Current Gridline security update — 2026-11-26
+
+**Active work:** Focused bilingual Gridline security refresh; retain earlier AssistantHub lifecycle entry without changing its status.
+
+**Status:** Candidate refreshes the existing `robotfriends` project and adds a separate security section pinned to merged Gridline `f1049eaa5b1ec2c76ab134e918906ee9346136b5`. Existing October research audit and November 11 release evidence, public demo, preview and IDs remain intact.
+
+### Verification Evidence
+
+Reviewed merged sensor README, implementation and Render Blueprint; upstream post-merge CI passed 22/22 tests, zero reported npm audit vulnerabilities, Docker build and local smoke tests. Added bilingual portfolio source-pin, content and drawer assertions. Portfolio checks pending; no local checkout available through this MCP workflow, so project sync dry run, local harness/unit/audit/build/full E2E and diff check have not been run locally. Existing CI will exercise the build and browser suite.
+
+### Blockers
+
+Await candidate CI and visual review. No independent Render topology or current live metrics verification; protected operator UI is not published as a demo.
+
+### Next Session Should
+
+Review the focused PR and CI, then confirm both localized portfolio routes after separately approved merge. No Gridline or Render runtime change.
+
 ## Current State
 
 **Last updated:** 2026-11-18

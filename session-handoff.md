@@ -1,5 +1,23 @@
 # Session Handoff
 
+**Current objective:** Document Gridline's merged independent passive security probe work in the existing bilingual portfolio.
+
+**Current status:** Candidate code and copy prepared. Source pinned to `f1049eaa5b1ec2c76ab134e918906ee9346136b5`; upstream sensor 22/22 tests and Docker smoke tests passed. Portfolio acceptance pending. Preserve existing AssistantHub lifecycle state.
+
+## Blockers
+
+No local checkout via MCP; portfolio CI and visual verification pending.
+
+## Recommended Next Step
+
+Review focused PR, CI, localized card and engineering case. Do not publish operator URL or infer live sensor activity.
+
+## Files Relevant to the Next Update
+
+`src/data/projects.ts`, `src/data/projects.zh.ts`, `src/data/gridlineSecurity.ts`, `src/pages/GridlineEngineeringPage.tsx`, `src/routes/routeConfig.json`, `tests/e2e/gridline-engineering.spec.ts`.
+
+## Previous handoff — AssistantHub
+
 **Current objective:** Update AssistantHub's existing portfolio card and detail drawer to represent the merged local hiring API and UI/security refinements.
 
 **Current status:** A focused portfolio branch updates English and Traditional Chinese catalogue metadata, preserving `assistanthub` identity, URLs and preview. The public GitHub Pages demo is offline-only; the Express/Sequelize/MySQL workflow with JWT/RBAC, transactional audit and idempotency remains local-only.

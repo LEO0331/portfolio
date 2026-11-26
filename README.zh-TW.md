@@ -12,6 +12,10 @@ Civic Explorer 進入功能凍結。[最新維護交接](./docs/civic-explorer-m
 
 這是 LEO0331 的正式工程作品集，著重於招募者能快速瀏覽與理解的內容呈現。網站由經過整理的專案資料驅動，支援英文與繁體中文路由，並以靜態網站形式部署至 GitHub Pages。
 
+## Gridline 資安可觀測性 — 2026-11-26
+
+Gridline 專案及工程案例新增獨立被動式 HTTP 安全探測感測器（Phase 1–3 已合併），以獨立來源版本記錄隱私與信任邊界、有界限彙總還原、可選本機情資及 Render 營運設定。公開研究 Demo 與歷史工程稽核不變；營運介面需驗證，未驗證正式拓樸與流量。參考[感測器文件](https://github.com/LEO0331/Gridline/blob/f1049eaa5b1ec2c76ab134e918906ee9346136b5/security-probe-sensor/README.zh-TW.md)。
+
 ## 架構與技術棧
 
 [v3.0.1 穩定化報告](./docs/portfolio-v3.0.1-stabilization.md)記錄實際焦點、閱讀順序、觸控目標修正及前後瀏覽器量測；[可重用元件介面](./docs/explorer-component-api.md)說明受控 React API、市政資料 adapter 與獨立純 React 測試宿主。正式建置後以 `node tools/measure-explorer-stability.mjs baseline` 或 `final` 量測；加上 `--production` 則另行記錄正式站檢查，不混用本機與正式站的效能數值。

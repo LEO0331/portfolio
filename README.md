@@ -12,6 +12,10 @@ Civic Explorer is in feature freeze. [Current maintenance handoff](./docs/civic-
 
 A bilingual engineering portfolio for LEO0331. The site is driven by curated project data, supports English and Traditional Chinese routes, and deploys statically to GitHub Pages.
 
+## Gridline security observability — 2026-11-26
+
+The Gridline card and engineering case now include the independent passive HTTP probe sensor (merged Phases 1–3), with a separately pinned source, privacy and trust boundaries, bounded aggregate recovery, optional offline enrichment and Render-owned settings. The public research demo and historical engineering audit are unchanged. The operator dashboard is private; live topology and traffic are not verified. See the [sensor documentation](https://github.com/LEO0331/Gridline/blob/f1049eaa5b1ec2c76ab134e918906ee9346136b5/security-probe-sensor/README.md).
+
 ## Architecture and stack
 - React 18 and TypeScript
 - React Router 7 with static route entrypoints for GitHub Pages
