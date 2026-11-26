@@ -2,7 +2,7 @@
 
 **Current objective:** Document Gridline's merged independent passive security probe work in the existing bilingual portfolio.
 
-**Current status:** Candidate code and copy prepared. Source pinned to `f1049eaa5b1ec2c76ab134e918906ee9346136b5`; upstream sensor 22/22 tests and Docker smoke tests passed. Portfolio acceptance pending. Preserve existing AssistantHub lifecycle state.
+**Current status:** Candidate code and copy prepared. Source pinned to `f1049eaa5b1ec2c76ab134e918906ee9346136b5`; upstream sensor 22/22 tests and Docker smoke tests passed. Initial E2E: 306 passed, one failed on the historical Gridline role assertion. Targeted test fix retains the original fixture and exact checks for current role and extended stack; rerun pending. Preserve existing AssistantHub lifecycle state.
 
 ## Blockers
 

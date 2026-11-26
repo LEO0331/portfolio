@@ -1033,7 +1033,8 @@
       ],
       "evidence": [
         "Source f1049eaa5b1ec2c76ab134e918906ee9346136b5; upstream post-merge sensor CI 22/22, zero npm audit findings, Docker and smoke checks passed",
-        "Candidate edits and regression assertions prepared; awaiting portfolio CI. Existing AssistantHub feature remains in-progress in harness; this entry stays pending acceptance."
+        "Candidate edits and regression assertions prepared; awaiting portfolio CI. Existing AssistantHub feature remains in-progress in harness; this entry stays pending acceptance.",
+        "Initial E2E 306 passed, one legacy metadata assertion failed. Targeted regression adjustment preserves historical fixture, stable project identity and exact approved role/stack; rerun pending."
       ]
     }
   ]

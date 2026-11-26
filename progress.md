@@ -8,7 +8,7 @@
 
 ### Verification Evidence
 
-Reviewed merged sensor README, implementation and Render Blueprint; upstream post-merge CI passed 22/22 tests, zero reported npm audit vulnerabilities, Docker build and local smoke tests. Added bilingual portfolio source-pin, content and drawer assertions. Portfolio checks pending; no local checkout available through this MCP workflow, so project sync dry run, local harness/unit/audit/build/full E2E and diff check have not been run locally. Existing CI will exercise the build and browser suite.
+Reviewed merged sensor README, implementation and Render Blueprint; upstream post-merge CI passed 22/22 tests, zero reported npm audit vulnerabilities, Docker build and local smoke tests. Added bilingual portfolio source-pin, content and drawer assertions. Initial portfolio E2E: 306 passed, one failed in River013 historical metadata assertion (old Gridline role; old stack also frozen). All six Gridline engineering tests passed. Updated the preservation test to retain immutable identity and assert the exact approved role plus original stack and three added technologies; added bilingual role/stack assertions. New CI pending; no local checkout available through this MCP workflow, so project sync dry run, local harness/unit/audit/build/full E2E and diff check have not been run locally. Existing CI will exercise the build and browser suite.
 
 ### Blockers
 
