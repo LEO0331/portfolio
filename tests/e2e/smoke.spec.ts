@@ -209,7 +209,10 @@ test.describe("Portfolio smoke", () => {
     await expect(page).toHaveURL(/\/portfolio\/zh\/projects$/);
     await expect(page.getByRole("heading", { name: "專案", level: 1 })).toBeVisible();
     await expect(page.getByPlaceholder("例如 Flutter、API 或 Gridline", { exact: true })).toBeVisible();
-    await expect(page.getByText("剩食媒合與取餐安排")).toBeVisible();
+    const boxmatchCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "BoxMatch", exact: true }) });
+    await expect(boxmatchCard).toBeVisible();
+    await expect(boxmatchCard.getByText("展場剩食媒合、交易式預約與流量智慧分析", { exact: true })).toBeVisible();
+    await expect(boxmatchCard.getByText("全端工程師")).toBeVisible();
   });
 
   test("[COV-17] canonical and social metadata use crawlable deployment paths", async ({ page }) => {
