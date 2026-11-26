@@ -36,6 +36,12 @@ v2.3 新增英文 `/engineering/gridline` 與繁中 `/zh/engineering/gridline` �
 - 靜態部署：以可索引路徑與自動產生的 GitHub Pages 路由入口維持相容性
 - 品質防線：Playwright E2E 與 CI 工作流程
 
+## BoxMatch 整合式資安可觀測性 — 2026-11-26
+
+BoxMatch 雙語專案詳細抽屜以響應式架構圖呈現剩食媒合、交易一致性、Firebase 授權與被動探測管線的不同信任邊界。探測模組為可選功能，聚合固定類別、HTTP 方法、UTC 時段、回應及有界限的短期關聯，不建立誘餌、不主動封鎖、不逐筆寫入資料庫。執行期功能開關由營運端管理，未設定時預設關閉；詳見[部署手冊](https://github.com/LEO0331/boxmatch/blob/main/docs/ops/deploy-runbook.md)的設定權責與正式驗收。原始碼能力及測試結果不代表正式儀表板即時可用或已觀測攻擊。
+
+已驗證上游基準：[後端 32 suites／569 tests、npm audit 回報零漏洞](https://github.com/LEO0331/boxmatch/actions/runs/45784578216/job/139788005218)、[Flutter 覆蓋率 88.23%](https://github.com/LEO0331/boxmatch/actions/runs/45784578199/job/139788004359)、Firestore Emulator 安全規則及兩種瀏覽器配置。參考[完整資安架構圖](https://github.com/LEO0331/boxmatch/blob/main/docs/SECURITY_ARCHITECTURE.md)。公開作品集以工程成果及直接驗證證據為主，不呈現交付流程識別碼。
+
 ## 訪客可以做什麼
 
 - 查看個人介紹與工程專長

@@ -216,7 +216,7 @@ export const projects: Project[] = [
     outcomes: [
       "Deployed full-stack surplus-food application with integrated, opt-in passive probe analytics and protected administrator reporting; live observation coverage depends on deployment configuration",
       "Implemented an optional direct-read path that removes the Render dependency for reservation list retrieval",
-      "November 26, 2026 (PR #59 / main 847581b): 5/5 PR checks passed; 569 backend tests across 32 suites, 88.23% Flutter coverage, Firestore emulator security verification and zero vulnerabilities reported by the backend npm audit"
+      "November 26, 2026 verification: all five automated checks passed; 569 backend tests across 32 suites, 88.23% Flutter coverage, Firestore emulator security verification and zero vulnerabilities reported by the backend npm audit"
     ],
     image: "/src/assets/images/projects/boxmatch.png",
     demoUrl: "https://leo0331.github.io/boxmatch/",

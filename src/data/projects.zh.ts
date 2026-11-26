@@ -123,7 +123,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     outcomes: [
       "完成全端剩食媒合應用部署，整合可選被動探測分析及權限保護報表；正式環境觀測範圍取決於部署設定",
       "實作可選直接讀取路徑，移除預約列表讀取對 Render 的依賴",
-      "2026 年 11 月 26 日（PR #59／main 847581b）：五項 PR 檢查均通過，後端 32 suites／569 tests、Flutter 覆蓋率 88.23%、Firestore Emulator 安全驗證，後端 npm audit 回報零漏洞"
+      "2026 年 11 月 26 日驗證：五項自動化檢查均通過，後端 32 suites／569 tests、Flutter 覆蓋率 88.23%、Firestore Emulator 安全驗證，後端 npm audit 回報零漏洞"
     ]
   },
   "warmmemo": {

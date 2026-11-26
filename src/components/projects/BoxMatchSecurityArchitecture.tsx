@@ -3,7 +3,9 @@ import { ExternalLink } from "../common/ExternalLink";
 
 const architectureUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/SECURITY_ARCHITECTURE.md";
 const probeUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/SECURITY_PROBE_INTELLIGENCE.md";
-const checksUrl = "https://github.com/LEO0331/boxmatch/pull/59/checks";
+const backendChecksUrl = "https://github.com/LEO0331/boxmatch/actions/runs/45784578216/job/139788005218";
+const flutterChecksUrl = "https://github.com/LEO0331/boxmatch/actions/runs/45784578199/job/139788004359";
+const runbookUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/ops/deploy-runbook.md";
 
 function Arrow(): JSX.Element {
   return (
@@ -71,7 +73,9 @@ export function BoxMatchSecurityArchitecture({ locale }: { locale: Locale }): JS
         <div className="flex flex-wrap gap-x-3 gap-y-2">
           <ExternalLink href={architectureUrl}>{t("Full security architecture", "完整資安架構圖")}</ExternalLink>
           <ExternalLink href={probeUrl}>{t("Probe design and limits", "探測設計與限制")}</ExternalLink>
-          <ExternalLink href={checksUrl}>{t("Verified PR checks", "已驗證 PR 檢查")}</ExternalLink>
+          <ExternalLink href={backendChecksUrl}>{t("Backend test evidence", "後端測試證據")}</ExternalLink>
+          <ExternalLink href={flutterChecksUrl}>{t("Flutter coverage evidence", "Flutter 覆蓋率證據")}</ExternalLink>
+          <ExternalLink href={runbookUrl}>{t("Deployment runbook", "部署手冊")}</ExternalLink>
         </div>
       </figure>
     </section>
