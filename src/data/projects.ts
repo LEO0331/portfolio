@@ -188,21 +188,34 @@ export const projects: Project[] = [
   {
     id: "boxmatch",
     slug: "boxmatch",
-    name: "Boxmatch",
-    tagline: "Food surplus matching concept for exhibitions and nearby pickup",
+    name: "BoxMatch",
+    tagline: "Food surplus matching with transactional reservations and traffic intelligence",
     shortDescription:
-      "A surplus-food matching app for exhibitions, where organizers post leftover meals and nearby people reserve pickup windows.",
+      "A deployed full-stack exhibition food-surplus platform with secure reservation workflows, owner-scoped data access, and privacy-conscious traffic analytics.",
     fullDescription:
-      "Boxmatch combines a listing feed and map, enterprise posting, recipient reservations, and pickup codes to coordinate surplus-food handoffs.",
-    role: "Product / Flutter Developer",
+      "BoxMatch combines a Flutter listing feed and OpenStreetMap venue map with a Node.js/Express REST API on Render and Firebase Authentication/Cloud Firestore. Server-authoritative transactions protect inventory during reservations, cancellations and pickup confirmation; idempotency keys support safe reserve retries, and hashed, revocable edit capabilities are isolated from public listing data. An optional owner-only Firestore reservation read path avoids the Render cold-start dependency, with UID-scoped memory caching, progressive rendering and a versioned fail-closed startup migration. The observation-only traffic intelligence subsystem provides crawler classification and optional verification, behavioral risk scoring, optional local country/ASN enrichment, bounded daily aggregation with stable flush markers, and a custom-claim-protected administrator dashboard with CSV export. GitHub Actions verifies backend tests, Flutter coverage, Firestore emulator security rules and browser regressions.",
+    role: "Full-Stack Engineer",
     teamType: "solo",
-    techStack: ["Flutter", "Dart", "Firebase"],
-    categories: ["Web App", "Social Impact", "Product Concept"],
+    techStack: ["Flutter", "Dart", "Node.js", "Express", "Firebase Auth", "Cloud Firestore", "REST API", "Render", "GitHub Actions"],
+    categories: ["Web App", "Full-Stack", "Social Impact"],
     features: [
-      "Surplus-food listings and map",
-      "Enterprise posting flow",
-      "Reservation and pickup windows",
-      "Pickup handoff codes"
+      "Public surplus-food listings, map, enterprise publishing and pickup-code workflows",
+      "Server-authoritative inventory transactions, reservation idempotency and secure edit-token rotation/revocation",
+      "Firebase authentication, owner-only reservation reads and private credential isolation",
+      "Opt-in direct Firestore reads, UID-scoped cache, progressive loading and versioned startup migration",
+      "Privacy-conscious crawler classification/verification, behavioral risk scoring and optional country/ASN enrichment",
+      "Bounded daily analytics, duplicate-resistant persistence and a role-protected dashboard with CSV export",
+      "GitHub Actions CI/CD with backend, Flutter, Firestore emulator and browser verification"
+    ],
+    challenges: [
+      "Preserving inventory consistency and authorization across concurrent requests, retries and uncertain responses",
+      "Reducing free-tier cold-start and navigation dependencies without weakening owner-only access",
+      "Collecting useful operational signals with privacy minimization and bounded resource consumption"
+    ],
+    outcomes: [
+      "Deployed full-stack surplus-food application with administrator dashboard access confirmed by the project owner",
+      "Implemented an optional direct-read path that removes the Render dependency for reservation list retrieval",
+      "November 26, 2026 CI baseline: all five checks passed, 546 backend tests across 31 suites, 89.32% Flutter coverage and actual Firestore emulator security verification"
     ],
     image: "/src/assets/images/projects/boxmatch.png",
     demoUrl: "https://leo0331.github.io/boxmatch/",
