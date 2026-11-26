@@ -211,7 +211,7 @@ test.describe("Portfolio smoke", () => {
     await expect(page.getByPlaceholder("例如 Flutter、API 或 Gridline", { exact: true })).toBeVisible();
     const boxmatchCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "BoxMatch", exact: true }) });
     await expect(boxmatchCard).toBeVisible();
-    await expect(boxmatchCard.getByText("展場剩食媒合、交易式預約與流量智慧分析", { exact: true })).toBeVisible();
+    await expect(boxmatchCard.getByText("展場剩食媒合、交易式預約與整合式資安可觀測性", { exact: true })).toBeVisible();
     await expect(boxmatchCard.getByText("全端工程師")).toBeVisible();
   });
 
