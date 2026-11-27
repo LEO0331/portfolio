@@ -153,7 +153,7 @@ node tools/capture-project-previews.mjs
 
 在專案頁勾選「工程解析」，即可查看八個有工程解析或獨立案例的作品。可用 `?engineering=1` 分享此篩選結果。
 
-首頁以 `src/data/featuredProjects.ts` 明確設定 Gridline、Book QA Library、CraftFocus 的順序，另以精簡 GovTech 集合入口連至十三案例總覽。目錄先依相同策展順序，再沿用置頂／狀態／名稱排序。`src/data/github-pins.json` 與 `featured` 旗標仍代表實際 GitHub 置頂，獨立同步。全部專案、搜尋、篩選與專案查詢連結持續可用。
+首頁以 `src/data/featuredProjects.ts` 明確設定 Gridline、BoxMatch、PublicSafetyDashboard 的順序，著重金融資料工程、交易一致性與公共資料治理，另以精簡 GovTech 集合入口連至十三案例總覽。目錄先依相同策展順序，再沿用置頂／狀態／名稱排序。`src/data/github-pins.json` 與 `featured` 旗標仍代表實際 GitHub 置頂，獨立同步。全部專案、搜尋、篩選與專案查詢連結持續可用。
 
 Gridline 保留舊 `robotfriends` ID、slug 與預覽檔名，維持查詢深連結、置頂對應與外部參照。可見內容分別說明 Node.js／SQLite API 模式及公開靜態 Demo。詳見 [v2.2 證據與驗證](./docs/portfolio-v2.2-recruiter-refinement.md)。
 

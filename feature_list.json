@@ -1100,7 +1100,7 @@
       "id": "portfolio-six-additional-engineering-2026-11",
       "name": "Expand six additional bilingual engineering stories",
       "description": "Add compact stories for LeaveRequest, Thalassemia, Genome Variant Explorer, pptx-design-md, Resume Vault and Lighthouse Skill Pack based on reviewed pinned upstream documentation.",
-      "status": "pending",
+      "status": "complete",
       "dependencies": [
         "portfolio-recruiter-editorial-refresh-2026-11"
       ],
@@ -1111,7 +1111,25 @@
         "Portfolio CI passes; source links retained only in documentation"
       ],
       "evidence": [
-        "Reviewed six pinned upstream documentation sets recorded in docs/recruiter-editorial-standard.md; inspected LeaveRequest app-layer and Lighthouse core skill. No full upstream audit or fresh upstream test execution. Candidate CI pending; no local checkout or visual review."
+        "Reviewed six pinned upstream documentation sets recorded in docs/recruiter-editorial-standard.md; inspected LeaveRequest app-layer and Lighthouse core skill. No full upstream audit or fresh upstream test execution. Candidate CI pending; no local checkout or visual review.",
+        "PR #72 merged at 865f93cf4c82f9fd9c0c57b1a468e37ca9169c74; post-merge E2E job 140283254301 passed 324 tests; Lighthouse 140283254437, build 140283254981 and deployment 140283333134 succeeded. No independent live visual review."
+      ]
+    },
+    {
+      "id": "portfolio-banking-it-featured-selection-2026-11",
+      "name": "Curate three homepage flagship projects for backend and banking IT",
+      "description": "Use the requested order Gridline, BoxMatch, PublicSafetyDashboard for homepage and existing catalogue priority; align bilingual intro and README.",
+      "status": "pending",
+      "dependencies": [
+        "portfolio-six-additional-engineering-2026-11"
+      ],
+      "doneCriteria": [
+        "Both locales show exactly the requested three cards in order with existing public and detail links",
+        "Existing catalogue, engineering stories, GovTech records and GitHub pin metadata unchanged",
+        "Portfolio CI passes"
+      ],
+      "evidence": [
+        "Candidate uses the existing independent curated selection; no project records, pin flags, URLs, previews, layout or dependencies changed. Updated bilingual copy, README and exact-order/link tests; fresh CI pending."
       ]
     }
   ]

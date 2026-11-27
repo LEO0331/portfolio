@@ -1,5 +1,17 @@
 # Session Handoff
 
+**Current objective:** Feature Gridline, BoxMatch and PublicSafetyDashboard in the requested order on the bilingual homepage.
+
+**Current status:** PR #72 merged; main E2E 324 passed, Lighthouse/build/deploy succeeded. Candidate updates only curated selection, bilingual introduction, README, tests and lifecycle records. Existing catalogue sorter shares the curated priority; GitHub pins and all 38 project records unchanged.
+
+**Blockers:** Candidate remote CI and visual review pending; no local checkout via MCP.
+
+**Next:** Review checks and merge after approval; verify homepage in both languages.
+
+**Files:** src/data/featuredProjects.ts, src/i18n/copy.ts, README EN/ZH, core-utils and WarmMemo tests, feature_list.json, progress.md and session-handoff.md.
+
+## Previous handoff — Six additional engineering stories
+
 **Current objective:** Add six source-backed bilingual engineering stories using the existing recruiter format.
 
 **Current status:** PR #71 merged and post-merge E2E (312 tests), Lighthouse, build and deploy succeeded. Candidate adds six existing projects to the engineering filter (17 total), aligned catalogue copy and pinned upstream documentation evidence. Existing identity, preview, public links, featured order and GovTech records retained.

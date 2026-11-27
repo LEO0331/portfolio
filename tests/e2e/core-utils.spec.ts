@@ -148,6 +148,7 @@ test("saved GitHub pins select the same projects in pin order for both languages
 });
 
 test("homepage renders the curated recruiter-facing projects in the same order in both languages", async ({ page }) => {
+  expect(featuredProjectIds).toEqual(["robotfriends", "boxmatch", "publicsafetydashboard"]);
   for (const locale of ["en", "zh"] as const) {
     const localized = getLocalizedProjects(portfolioProjects, locale);
     const expected = featuredProjectIds.map((id) => localized.find((project) => project.id === id)!.name);
@@ -155,6 +156,13 @@ test("homepage renders the curated recruiter-facing projects in the same order i
     const section = page.locator("section").filter({ has: page.getByRole("heading", { name: locale === "en" ? "Featured Projects" : "重點專案", exact: true }) });
     await expect(section.locator("article")).toHaveCount(expected.length);
     await expect(section.locator("article h2")).toHaveText(expected);
+    for (const id of featuredProjectIds) {
+      const project = localized.find(item => item.id === id)!;
+      const card = section.locator("article").filter({ has: page.getByRole("heading", { name: project.name, exact: true }) });
+      await expect(card.locator(`a[href="${project.demoUrl}"]`)).toHaveCount(1);
+      await expect(card.locator(`a[href="${project.repoUrl}"]`)).toHaveCount(1);
+      await expect(card.locator(`a[href$="/projects?project=${project.slug}"]`)).toHaveCount(1);
+    }
   }
 });
 

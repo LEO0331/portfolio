@@ -1,5 +1,11 @@
 # Portfolio Progress Log
 
+## Banking IT featured project selection — 2026-11-27
+
+- PR #72 merged at 865f93c; verified 324/324 E2E passes (job 140283254301), Lighthouse/build/deploy success. Marked prior feature complete.
+- User requested Gridline, BoxMatch, PublicSafetyDashboard in that order. Updated independent featuredProjectIds, bilingual homepage introduction and README, and exact bilingual order/link regression assertions. Existing shared catalogue sorting uses the same priority. No changes to project records, GitHub pins, 17 engineering stories, 13 GovTech cases, public URLs or preview assets.
+- MCP-only edit; no local checkout, sync dry run, local harness/install/audit/unit/build/E2E/diff check or visual review. Candidate CI pending. Review before merge.
+
 ## Six additional engineering stories — 2026-11-27
 
 - Verified PR #71 merged at 9c32c25; main E2E 312/312 passed (job 140268899632), Lighthouse/build/deploy succeeded. Marked preceding editorial feature complete without changing unrelated lifecycle states.

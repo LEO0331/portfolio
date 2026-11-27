@@ -20,7 +20,7 @@ test("WarmMemo uses a curated Flutter/Firebase engineering record without changi
   expect(zh?.features.some(item => item.includes("覆蓋率門檻"))).toBe(true);
   expect(zh?.features.some(item => item.includes("淨資產"))).toBe(true);
 
-  expect(featuredProjectIds).toEqual(["robotfriends", "epubreader", "craftfocus"]);
+  expect(featuredProjectIds).toEqual(["robotfriends", "boxmatch", "publicsafetydashboard"]);
 });
 
 for (const locale of ["en", "zh"] as const) {
