@@ -637,20 +637,23 @@ export const projects: Project[] = [
     id: "publicsafetydashboard",
     slug: "publicsafetydashboard",
     name: "Taipei Repeat DUI / Drug-Impaired / Test-Refusal Education Dashboard",
-    tagline: "Explore repeat DUI, drug-impaired, and test-refusal announcements",
+    tagline: "Traceable public-data education with privacy-preserving API governance",
     shortDescription:
-      "An educational dashboard that parses Taipei public PDF announcements about repeat impaired-driving and test-refusal records.",
+      "A bilingual Taipei public-announcement dashboard combining traceable PDF ingestion, grouped maps and responsible public-data access.",
     fullDescription:
-      "This Next.js, SQLite, and Python dashboard supports announcement ingestion, filters, descriptive statistics, map views, CSV exports, and review of parser rows and source freshness.",
-    role: "Full Stack / Data Dashboard Developer",
+      "This Next.js, SQLite and Python educational dashboard imports official Taipei PDFs, links records to their sources and content hashes, and provides filters, descriptive statistics, grouped maps, CSV exports and parser review. Reviewed corrections and withdrawals govern publication. Integrated, optional API observability aggregates route, status, latency, export volume and authorization outcomes without retaining raw request identifiers or person-level access history. A protected operations report supports aggregate CSV analysis, bounded JSONL backup and restoration, sanitized operation events and rule-based investigation signals. Admin authentication uses short-lived opaque sessions, secure production cookies, CSRF checks and process-wide login limits; public exports and maintenance operations are bounded. Sessions and observation history are process-local; the public demo is not a durable audit or threat intelligence platform.",
+    role: "Full Stack / Data Governance & API Security Developer",
     teamType: "solo",
-    techStack: ["Next.js", "TypeScript", "Python", "SQLite"],
+    techStack: ["Next.js", "TypeScript", "Python", "SQLite", "Node.js", "Docker", "Render"],
     categories: ["Web App", "Dashboard", "Data Visualization"],
     features: [
       "Public PDF ingestion",
       "Violation and repeat-count filters",
       "Descriptive statistics and map views",
-      "CSV exports and parser review"
+      "CSV exports, parser review and reviewed source corrections",
+      "Privacy-preserving API metrics and bounded public exports",
+      "Protected aggregate reporting, manual recovery and administrative audit outcomes",
+      "Opaque admin sessions, CSRF protection and login rate limiting"
     ],
     image: "/src/assets/images/projects/publicsafetydashboard.png",
     demoUrl: "https://publicsafetydashboard.onrender.com/",

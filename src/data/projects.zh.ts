@@ -287,12 +287,12 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   },
   "publicsafetydashboard": {
     name: "台北酒駕／毒駕／拒測累犯教育儀表板",
-    tagline: "探索重複酒駕、毒駕與拒測公告紀錄",
-    shortDescription: "解析台北市重複酒駕、毒駕及拒測公開 PDF 公告的教育型儀表板。",
-    fullDescription: "此專案使用 Next.js、SQLite 與 Python，提供公告匯入、篩選、描述性統計、地圖、CSV 匯出，以及解析結果複核與來源更新日期檢視。",
-    role: "全端／資料儀表板開發者",
+    tagline: "可追溯的公共資料教育與兼顧隱私的 API 治理",
+    shortDescription: "整合官方 PDF 來源追溯、群組地圖及負責任公共資料存取的雙語教育儀表板。",
+    fullDescription: "以 Next.js、SQLite 與 Python 匯入臺北市官方 PDF，將紀錄連結至來源與內容雜湊，提供篩選、描述性統計、群組地圖、CSV 匯出及解析複核；公告修正與撤回經人工複核管理。可選的整合式 API 可觀測性彙總路由、狀態、延遲、匯出量與驗證結果，不保存原始請求識別資訊或個案瀏覽紀錄。受驗證的營運報告支援彙總 CSV 分析、有界限的 JSONL 備份與還原、去識別化操作事件與規則式調查訊號。管理端採短效不透明工作階段、正式環境安全 Cookie、CSRF 防護及程序層級登入限流；公開匯出及維護作業亦有限制。工作階段與觀測歷史僅存於程序記憶體，公開 Demo 並非永久稽核或威脅情資平台。",
+    role: "全端／資料治理與 API 資安開發者",
     categories: ["Web 應用", "儀表板", "資料視覺化"],
-    features: ["公開 PDF 匯入", "違規類型與重複次數篩選", "描述性統計與地圖", "CSV 匯出與解析複核"]
+    features: ["公開 PDF 匯入", "違規類型與重複次數篩選", "描述性統計與地圖", "CSV 匯出、解析複核與公告修正管理", "兼顧隱私的 API 指標與有界限的公開匯出", "受驗證的彙總報告、手動還原及管理操作結果", "不透明管理工作階段、CSRF 防護及登入限流"]
   },
   "taipei-bin-map": {
     name: "台北公共便利設施地圖",

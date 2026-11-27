@@ -66,6 +66,20 @@ test("AssistantHub catalogue accurately separates the public demo and private hi
   expect(filterProjects(getLocalizedProjects(portfolioProjects, "zh"), filter).map(item => item.id)).toContain("assistanthub");
 });
 
+test("Public Safety catalogue preserves identity and describes merged governance and session security", () => {
+  const en = portfolioProjects.find(item => item.id === "publicsafetydashboard")!;
+  const zh = getLocalizedProjects(portfolioProjects, "zh").find(item => item.id === en.id)!;
+  expect(en).toMatchObject({ slug: "publicsafetydashboard", image: "/src/assets/images/projects/publicsafetydashboard.png", demoUrl: "https://publicsafetydashboard.onrender.com/", repoUrl: "https://github.com/LEO0331/publicsafetydashboard", featured: true, status: "live", teamType: "solo" });
+  expect(en.techStack).toEqual(["Next.js", "TypeScript", "Python", "SQLite", "Node.js", "Docker", "Render"]);
+  expect(zh.techStack).toEqual(en.techStack);
+  expect(en.fullDescription).toContain("short-lived opaque sessions");
+  expect(en.fullDescription).toContain("process-local");
+  expect(zh.fullDescription).toContain("短效不透明工作階段");
+  expect(zh.fullDescription).toContain("程序記憶體");
+  expect(en.features.join(" ")).toContain("manual recovery");
+  expect(zh.features.join(" ")).toContain("手動還原");
+});
+
 test("sortProjects prioritizes featured, then status, then name", () => {
   const result = sortProjects([
     project({ id: "archived", name: "A", status: "archived" }),

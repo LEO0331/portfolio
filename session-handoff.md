@@ -1,5 +1,17 @@
 # Session Handoff
 
+**Current objective:** Refresh Public Safety Dashboard card and engineering drawer with merged API observability, Phase 2 governance and session authentication hardening.
+
+**Current status:** Candidate source pinned to 41345c98fe680fd88e40c2bf2331fdbdc10792f4. Upstream merged-main CI passed (42 Python, 21 Node, 15 Chromium; 90.05% Node line coverage). Bilingual source-linked supplement and tests added. Existing preview and public links retained.
+
+**Blockers:** Portfolio CI and visual review pending; no local checkout via MCP. No live Render verification or private dashboard exposure. Preserve existing lifecycle history.
+
+**Next:** Review candidate PR and CI, then verify both locales after an approved merge.
+
+**Files:** src/data/projects.ts, src/data/projects.zh.ts, src/data/publicSafetyDashboardEngineering.ts, src/types/projectEngineering.ts, src/components/projects/ProjectEngineering.tsx, tests/e2e/core-utils.spec.ts, tests/e2e/selected-project-engineering.spec.ts, README files and lifecycle records.
+
+## Previous handoff — Gridline
+
 **Current objective:** Document Gridline's merged independent passive security probe work in the existing bilingual portfolio.
 
 **Current status:** Candidate code and copy prepared. Source pinned to `f1049eaa5b1ec2c76ab134e918906ee9346136b5`; upstream sensor 22/22 tests and Docker smoke tests passed. Initial E2E: 306 passed, one failed on the historical Gridline role assertion. Targeted test fix retains the original fixture and exact checks for current role and extended stack; rerun pending. Preserve existing AssistantHub lifecycle state.

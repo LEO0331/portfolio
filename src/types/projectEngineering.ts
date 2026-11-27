@@ -9,6 +9,15 @@ export interface EngineeringStory {
     caption: string;
   };
   decision: string;
+  supplement?: {
+    title: string;
+    items: { label: string; detail: string; href: string }[];
+    verification: string;
+    verificationHref: string;
+    boundary: string;
+    documentationLabel: string;
+    documentationHref: string;
+  };
   previewCaption?: string;
 }
 

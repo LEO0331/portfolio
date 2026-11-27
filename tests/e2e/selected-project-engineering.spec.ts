@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { craftFocusEngineering } from "../../src/data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../src/data/passportComparisonEngineering";
-import { publicSafetyDashboardEngineering } from "../../src/data/publicSafetyDashboardEngineering";
+import { publicSafetyDashboardEngineering, PUBLIC_SAFETY_SOURCE, PUBLIC_SAFETY_CI } from "../../src/data/publicSafetyDashboardEngineering";
 import { taxAutoExtractionEngineering } from "../../src/data/taxAutoExtractionEngineering";
 import { wanderStampEngineering } from "../../src/data/wanderStampEngineering";
 import { wordpressParserEngineering } from "../../src/data/wordpressParserEngineering";
@@ -49,6 +49,22 @@ for (const { id, content } of stories) {
         await expect(drawer.getByText(story.decision, { exact: true })).toBeVisible();
         // The arrow extends into the gap between cards, so measure the list and its text boxes.
         expect(await diagram.locator("ol, li > p").evaluateAll(elements => elements.every(element => element.scrollWidth <= element.clientWidth + 1)), `diagram at ${width}px`).toBe(true);
+
+        if (id === "publicsafetydashboard") {
+          const supplement = story.supplement!;
+          const panel = drawer.getByTestId("publicsafetydashboard-engineering-supplement");
+          await expect(drawer.getByRole("heading", { name: supplement.title, exact: true })).toBeVisible();
+          await expect(panel.getByRole("listitem")).toHaveCount(4);
+          for (const item of supplement.items) {
+            await expect(panel.getByRole("link", { name: item.label, exact: true })).toHaveAttribute("href", item.href);
+            expect(item.href).toContain("/blob/" + PUBLIC_SAFETY_SOURCE + "/");
+            await expect(panel.getByText(item.detail, { exact: true })).toBeVisible();
+          }
+          await expect(panel.getByRole("link", { name: supplement.verification, exact: true })).toHaveAttribute("href", PUBLIC_SAFETY_CI);
+          await expect(panel.getByText(supplement.boundary, { exact: true })).toBeVisible();
+          await expect(panel.getByRole("link", { name: supplement.documentationLabel, exact: true })).toHaveAttribute("href", supplement.documentationHref);
+          await expect(panel.locator('a[href*="onrender.com"]')).toHaveCount(0);
+        }
 
         const preview = drawer.locator("picture img");
         await expect(preview).toHaveCount(1);

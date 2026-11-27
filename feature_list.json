@@ -1036,6 +1036,24 @@
         "Candidate edits and regression assertions prepared; awaiting portfolio CI. Existing AssistantHub feature remains in-progress in harness; this entry stays pending acceptance.",
         "Initial E2E 306 passed, one legacy metadata assertion failed. Targeted regression adjustment preserves historical fixture, stable project identity and exact approved role/stack; rerun pending."
       ]
+    },
+    {
+      "id": "public-safety-governance-portfolio-2026-11",
+      "name": "Refresh Public Safety Dashboard security and data governance story",
+      "description": "Update existing bilingual project record and engineering drawer from merged upstream Phases 1–2 and admin authentication hardening.",
+      "status": "pending",
+      "dependencies": [
+        "portfolio-engineering-stories-phase-3-2026-11"
+      ],
+      "doneCriteria": [
+        "Existing project identity, preview, public URLs and official-notice workflow remain stable",
+        "Bilingual card and compact evidence-backed story cover integrated API security, governance and sessions with explicit deployment boundaries",
+        "Portfolio CI and responsive bilingual drawer tests pass"
+      ],
+      "evidence": [
+        "Pinned upstream main 41345c98fe680fd88e40c2bf2331fdbdc10792f4; PRs #19–21 merged. Main CI job 140252354422 passed 42 Python, 21 Node integration and 15 Chromium tests, Node line coverage 90.05%; lint/typecheck/coverage/Lighthouse passed.",
+        "Candidate portfolio edits and regressions prepared. Existing AssistantHub lifecycle state preserved; this entry remains pending acceptance. No local checkout or live deployment review."
+      ]
     }
   ]
 }
