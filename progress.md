@@ -1,5 +1,12 @@
 # Portfolio Progress Log
 
+## Portfolio-wide recruiter editorial refresh — 2026-11-27
+
+- One bilingual editorial feature covers Gridline, BoxMatch, AssistantHub, WarmMemo, Tax Auto Extraction, Book QA Library, CraftFocus, WordPress Persona Parser, WanderStamp, Passport Comparison and PublicSafetyDashboard. Source is existing curated main b7f41e8f, not a new upstream audit. PR #70 already merged; retained its link-free supplement.
+- Added Gridline opening four-capability summary without modifying original audit data, tables, evidence or route. Simplified BoxMatch diagram and removed dated CI presentation, registered BoxMatch/AssistantHub/WarmMemo engineering stories, refined remaining concise narratives. Catalogue IDs, URLs, previews, stack, categories, status and featured selection unchanged; 13 GovTech records and fixtures untouched.
+- Editorial policy in README EN/ZH, AGENTS and docs/recruiter-editorial-standard.md preserves historical BoxMatch CI and WarmMemo coverage gate evidence. Tests updated for the eleven engineering discoveries, bilingual 320/640/1440 drawers, BoxMatch diagram, Gridline evidence and existing boundaries. No local checkout through MCP: sync dry run, local harness/install/audit/unit/build/E2E/diff check and visual review not run. Remote CI pending.
+- Next: review focused PR and candidate CI; merge only after approval. No upstream code, public data or deployment changes.
+
 ## Public Safety recruiter story refinement — 2026-11-27
 
 - Verified PR #69 merged at fc4194af and its E2E and Lighthouse checks succeeded (runs 45921732257 and 45921732244). Retain the historical upstream evidence in the preceding entry and README.

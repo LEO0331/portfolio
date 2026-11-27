@@ -1060,7 +1060,7 @@
       "id": "public-safety-recruiter-story-2026-11",
       "name": "Simplify Public Safety engineering story for recruiters",
       "description": "Preserve the four-card layout and explain durable competencies, quality practices and trade-offs without source-file or run-specific links in the public drawer.",
-      "status": "pending",
+      "status": "complete",
       "dependencies": [
         "public-safety-governance-portfolio-2026-11"
       ],
@@ -1071,7 +1071,27 @@
         "Responsive bilingual browser checks and portfolio CI pass"
       ],
       "evidence": [
-        "PR #69 merged baseline verified; candidate changes restricted to supplement data, shared renderer/type, regression assertions and documentation. No local checkout or visual review; candidate CI pending."
+        "PR #69 merged baseline verified; candidate changes restricted to supplement data, shared renderer/type, regression assertions and documentation. No local checkout or visual review; candidate CI pending.",
+        "PR #70 merged into main b7f41e8f; recruiter supplement present on current main. Candidate full suite remains separate."
+      ]
+    },
+    {
+      "id": "portfolio-recruiter-editorial-refresh-2026-11",
+      "name": "Refresh eleven bilingual recruiter engineering narratives",
+      "description": "One editorial feature covering all eleven previously identified projects, preserve technical evidence and GovTech records.",
+      "status": "pending",
+      "dependencies": [
+        "public-safety-recruiter-story-2026-11"
+      ],
+      "doneCriteria": [
+        "All eleven project descriptions and engineering narratives reviewed in both locales",
+        "Gridline technical audit, GovTech case records, project identity, public links, preview and pin ordering preserved",
+        "BoxMatch diagram preserved and simplified; AssistantHub, WarmMemo and BoxMatch discoverable via engineering filter",
+        "No transient CI counts or per-file/run links in ordinary recruiter stories; historical evidence documented",
+        "Full portfolio checks and responsive bilingual regression tests pass"
+      ],
+      "evidence": [
+        "Based on curated portfolio main b7f41e8f; no upstream re-audit or deployment. Candidate edits and tests committed, verification pending. Existing unrelated active lifecycle entry retained."
       ]
     }
   ]

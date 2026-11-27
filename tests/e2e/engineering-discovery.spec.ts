@@ -3,7 +3,7 @@ import { projects } from "../../src/data/projects";
 import { copy } from "../../src/i18n/copy";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
 
-const storyIds = ["robotfriends", "epubreader", "craftfocus", "simpletaxautoextraction", "passportcomparison", "wordpressparser", "warmthfromafar", "publicsafetydashboard"];
+const storyIds = ["robotfriends", "epubreader", "craftfocus", "simpletaxautoextraction", "passportcomparison", "wordpressparser", "warmthfromafar", "publicsafetydashboard", "boxmatch", "assistanthub", "warmmemo"];
 
 for (const locale of ["en", "zh"] as const) {
   const prefix = locale === "zh" ? "zh/" : "";
@@ -24,13 +24,13 @@ for (const locale of ["en", "zh"] as const) {
     await page.keyboard.press("Space");
     await expect(page).toHaveURL(/\?engineering=1$/);
     await expect(checkbox).toBeFocused();
-    await expect(cards).toHaveCount(8);
+    await expect(cards).toHaveCount(11);
     expect((await cards.locator("h2").allTextContents()).sort()).toEqual(expectedNames);
 
     const gridline = cards.filter({ has: page.getByRole("heading", { name: "Gridline", exact: true }) });
     await expect(gridline.getByRole("link", { name: locale === "zh" ? "工程案例" : "Engineering Case Study", exact: true })).toHaveCount(1);
     await expect(gridline.getByRole("button", { name: labels.projects.viewDetails })).toHaveCount(1);
-    await expect(cards.getByRole("button", { name: `${labels.projects.engineeringStory} ·` })).toHaveCount(7);
+    await expect(cards.getByRole("button", { name: `${labels.projects.engineeringStory} ·` })).toHaveCount(10);
 
     const craft = cards.filter({ has: page.getByRole("heading", { name: "CraftFocus", exact: true }) });
     const action = craft.getByRole("button", { name: `${labels.projects.engineeringStory} · CraftFocus`, exact: true });
@@ -65,7 +65,7 @@ for (const locale of ["en", "zh"] as const) {
     await expect(checkbox).toBeChecked();
     await expect(page.getByRole("heading", { level: 1 })).toBeFocused();
     await page.reload();
-    await expect(cards).toHaveCount(8);
+    await expect(cards).toHaveCount(11);
 
     const search = page.getByPlaceholder(labels.projects.searchPlaceholder);
     await search.fill("CraftFocus");

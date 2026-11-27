@@ -32,6 +32,14 @@ This is the clean, restartable path for a new session. Use `bash init.sh` in Git
 7. Update `README.md`, `wiki.md`, or `skill.md` when the workflow, stack, commands, or user-facing behavior changes.
 8. Update `progress.md` in the same change. Record the project IDs, source checked, files changed, verification evidence, blockers, and next action.
 
+## Recruiter-facing editorial standard
+
+- Portfolio cards: problem, contribution, material capabilities and business/risk value. Keep language concise, bilingual and durable; retain real technology, identity, demo URLs and deployment boundaries.
+- Engineering stories: architecture, data flow, engineering decisions and trade-offs. Use plain headings and stable capability descriptions; do not add dated test counts, coverage percentages, per-file code links, workflow-run links, exact tunables or implementation phases to ordinary recruiter drawers.
+- GitHub README and docs: preserve source evidence, implementation parameters, setup, dated CI results and operational limitations. Keep the public repository and demo links; a stable architecture document may be useful when it provides a deeper reading path. Do not publish private operator endpoints or live claims unsupported by verification.
+- Gridline's standalone deep dive and the 13 GovTech cases are evidence-bearing exceptions. Retain their historical source pins, quantitative findings, reproducible methodology, existing anchors and technical verification; add concise summaries without rewriting evidence.
+- Do not add a four-card section to every project merely for symmetry. Reuse the existing problem/contribution/architecture/outcome and workflow format. Update the portfolio when material capabilities change, not for routine test-count or configuration changes.
+
 ## Verification
 
 Run the smallest relevant checks, and run the full gate for project-data, dependency, routing, or release changes:

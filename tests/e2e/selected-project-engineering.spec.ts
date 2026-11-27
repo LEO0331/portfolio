@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { assistanthubEngineering, warmmemoEngineering } from "../../src/data/recruiterEngineering";
 import { craftFocusEngineering } from "../../src/data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../src/data/passportComparisonEngineering";
 import { publicSafetyDashboardEngineering } from "../../src/data/publicSafetyDashboardEngineering";
@@ -14,7 +15,9 @@ const stories = [
   { id: "passportcomparison", content: passportComparisonEngineering },
   { id: "wordpressparser", content: wordpressParserEngineering },
   { id: "warmthfromafar", content: wanderStampEngineering },
-  { id: "publicsafetydashboard", content: publicSafetyDashboardEngineering }
+  { id: "publicsafetydashboard", content: publicSafetyDashboardEngineering },
+  { id: "assistanthub", content: assistanthubEngineering },
+  { id: "warmmemo", content: warmmemoEngineering }
 ];
 
 for (const { id, content } of stories) {
