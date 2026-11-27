@@ -159,21 +159,30 @@ test.describe("Portfolio smoke", () => {
   });
 
   test("[COV-13] detail drawer supports Escape and backdrop close", async ({ page }) => {
+    await page.setViewportSize({ width: 1440, height: 900 });
     await page.goto("./projects");
 
-    const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub Talent Pool" }) }).first();
-    await assistantHubCard.getByRole("button", { name: "View Details" }).click();
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toBeVisible();
-    await page.keyboard.press("Escape");
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toHaveCount(0);
+    const assistantHubCard = page.locator("article").filter({ has: page.getByRole("heading", { name: "AssistantHub Talent Pool", exact: true }) });
+    const engineeringTrigger = assistantHubCard.getByRole("button", { name: "Engineering Story · AssistantHub Talent Pool", exact: true });
+    const drawer = page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" });
 
-    await assistantHubCard.getByRole("button", { name: "View Details" }).click();
-    const reopenedDrawer = page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" });
-    await expect(reopenedDrawer).toBeVisible();
-    await page.getByTestId("project-detail-overlay").evaluate((element) => {
-      (element as HTMLElement).click();
-    });
-    await expect(page.getByRole("dialog", { name: "Project details for AssistantHub Talent Pool" })).toHaveCount(0);
+    await engineeringTrigger.click();
+    await expect(drawer).toBeVisible();
+    await expect(drawer).toBeFocused();
+    await expect(page).toHaveURL(/\/portfolio\/projects\?project=assistanthub$/);
+    await page.keyboard.press("Escape");
+    await expect(drawer).toHaveCount(0);
+    await expect(page).toHaveURL(/\/portfolio\/projects$/);
+    await expect(engineeringTrigger).toBeFocused();
+
+    await engineeringTrigger.click();
+    await expect(drawer).toBeVisible();
+    await expect(page).toHaveURL(/\/portfolio\/projects\?project=assistanthub$/);
+    // The desktop drawer is right-aligned; the left edge is the actual backdrop.
+    await page.getByTestId("project-detail-overlay").click({ position: { x: 8, y: 8 } });
+    await expect(drawer).toHaveCount(0);
+    await expect(page).toHaveURL(/\/portfolio\/projects$/);
+    await expect(engineeringTrigger).toBeFocused();
   });
 
   test("[COV-14] deep-link query opens project drawer on initial load", async ({ page }) => {

@@ -1091,7 +1091,8 @@
         "Full portfolio checks and responsive bilingual regression tests pass"
       ],
       "evidence": [
-        "Based on curated portfolio main b7f41e8f; no upstream re-audit or deployment. Candidate edits and tests committed, verification pending. Existing unrelated active lifecycle entry retained."
+        "Based on curated portfolio main b7f41e8f; no upstream re-audit or deployment. Candidate edits and tests committed, verification pending. Existing unrelated active lifecycle entry retained.",
+        "Initial PR #71 E2E job 140264695749: 311 passed, 1 failed, COV-13 old View Details selector for newly registered AssistantHub engineering drawer. Corrected exact accessible name, real backdrop click, URL/focus checks. Fresh CI pending; no application changes."
       ]
     }
   ]

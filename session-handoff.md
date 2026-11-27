@@ -4,7 +4,7 @@
 
 **Current status:** Based on curated main b7f41e8f with PR #70 merged. Updated all eleven catalogue/story presentations, preserved Gridline historical technical evidence and GovTech cases, added three discoverable drawers and maintained public links. Documentation includes the evergreen editorial policy and retained evidence.
 
-**Blockers:** Remote CI and visual review pending; no local checkout via MCP. No upstream re-audit or production verification.
+**Blockers:** Initial E2E run 45925172824 had 311 passes and one stale AssistantHub smoke selector failure. Corrected COV-13 to use the Engineering Story accessible name and verify URL/focus restoration after Escape and backdrop click. Fresh CI and visual review pending; no local checkout via MCP. No upstream re-audit or production verification.
 
 **Next:** Review candidate checks and both locales, then merge after approval.
 
