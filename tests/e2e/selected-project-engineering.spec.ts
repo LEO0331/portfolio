@@ -1,3 +1,4 @@
+import { leaveRequestEngineering, thalassemiaEngineering, genomeVariantEngineering, pptDesignEngineering, resumeVaultEngineering, lighthouseSkillEngineering } from "../../src/data/additionalEngineering";
 import { expect, test } from "@playwright/test";
 import { assistanthubEngineering, warmmemoEngineering } from "../../src/data/recruiterEngineering";
 import { craftFocusEngineering } from "../../src/data/craftFocusEngineering";
@@ -17,7 +18,13 @@ const stories = [
   { id: "warmthfromafar", content: wanderStampEngineering },
   { id: "publicsafetydashboard", content: publicSafetyDashboardEngineering },
   { id: "assistanthub", content: assistanthubEngineering },
-  { id: "warmmemo", content: warmmemoEngineering }
+  { id: "warmmemo", content: warmmemoEngineering },
+  { id: "leave-request", content: leaveRequestEngineering },
+  { id: "thalassemia-seq-analysis", content: thalassemiaEngineering },
+  { id: "genomic-data-science-with-galaxy-project", content: genomeVariantEngineering },
+  { id: "ppt-design-md", content: pptDesignEngineering },
+  { id: "resume-vault", content: resumeVaultEngineering },
+  { id: "lighthouse-skill-pack", content: lighthouseSkillEngineering }
 ];
 
 for (const { id, content } of stories) {

@@ -145,7 +145,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "請假管理系統",
     tagline: "依角色管理請假核准、餘額與報表",
     shortDescription: "以 React、TypeScript 和 MUI 實作請假管理展示，含員工與主管操作、餘額驗證及一萬筆示範申請。",
-    fullDescription: "Leave Management System 追蹤核准狀態與稽核歷程，計算工作日天數，支援搜尋及 CSV 匯入匯出，並依剩餘假期驗證申請。",
+    fullDescription: "瀏覽器本機應用將介面元件與業務驗證、儲存及 CSV／PDF 工具分離。展示申請日期重疊與餘額檢查、請假歷程，以及員工與主管操作流程。使用模擬資料與瀏覽器儲存；角色切換為流程設計展示，非後端權威授權。",
     role: "前端工程師",
     categories: ["商務應用", "前端", "表單系統"],
     features: ["員工與主管核准流程", "假期餘額與工作日驗證", "申請稽核歷程", "可搜尋表格與 CSV 匯入匯出"]
@@ -154,7 +154,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "履歷詞條庫 Resume Vault",
     tagline: "將可重用的職涯詞條轉為客製履歷",
     shortDescription: "雙語且以本機資料為主的工具，將職涯詞條對應職位描述並產生客製履歷。",
-    fullDescription: "Resume Vault 提供職涯詞條庫、簡易與進階流程、ATS 樣板、職位描述匯入、Markdown 與 Obsidian 匯出，以及 JSON 資料備份。",
+    fullDescription: "靜態應用以瀏覽器儲存詞條、樣板與職缺描述；獨立本機 CLI 支援擷取與客製輸出流程。配對提供選取原因、適配及缺口資訊與 Markdown，透過 JSON 備份還原支援資料移轉。核心流程無須後端；可選職缺擷取及私人流程工具於本機執行。",
     role: "前端開發者",
     categories: ["Web 應用", "文件", "工具"],
     features: ["可重用職涯詞條庫", "職位描述配對", "ATS 履歷樣板", "Markdown、Obsidian 與 JSON 匯出"]
@@ -226,7 +226,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "PowerPoint 設計規則擷取工具",
     tagline: "從 PowerPoint 擷取可重用的視覺設計規則",
     shortDescription: "分析單份或多份 PowerPoint，產生可編輯的 design.md 與結構化 analysis.json。",
-    fullDescription: "pptx-design-md 擷取簡報配色、字體、間距與常見版面模式，提供批次分析、Markdown 編輯器及設計產物下載。",
+    fullDescription: "靜態前端呼叫 API，驗證 PPTX、擷取投影片元素、產生 Markdown，並以檔案系統保存分析產物。輸出可編輯 design.md 及結構化 analysis.json，供人員及 AI 工具重用常見視覺規則。輸出為抽象設計指引，非像素級還原。",
     role: "工具／文件流程開發者",
     categories: ["開發者工具", "文件", "流程工具"],
     features: ["單份與批次 PPTX 分析", "配色與字體擷取", "可編輯 design.md", "結構化 analysis.json 匯出"]
@@ -235,8 +235,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "Lighthouse 最佳化技能包",
     tagline: "針對 Lighthouse 分數提升的可重用優化模式包",
     shortDescription: "透過小幅改動改善效能、搜尋引擎最佳化、無障礙與最佳實務評分。",
-    fullDescription:
-      "Lighthouse Skill Pack 提供可重複使用的前端優化流程與修正模式，協助團隊依優先順序處理 LCP、CLS 與 JS 執行瓶頸，同時維持既有體驗品質。",
+    fullDescription: "Markdown 技能定義量測及最佳化步驟；生成索引與按需載入技能內容支援靜態發布。可重用流程引導基準量測、優先修正與回歸檢查；技能瀏覽器設有自動化端對端測試及覆蓋率門檻。提供工程指引與工具，實際效能改善取決於目標應用及量測結果。",
     role: "效能／前端優化開發者",
     categories: ["開發者工具", "效能優化", "前端"],
     features: ["優先序導向優化流程", "可重用效能修正模式", "聚焦 LCP 與 CLS", "開發者導向文件化"]
@@ -401,7 +400,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "基因體變異分析案例探索器",
     tagline: "展示 Galaxy 分析流程並探索基因體變異",
     shortDescription: "互動式案例應用，呈現 Galaxy 產生的結果，支援 VCF 紀錄瀏覽與篩選變異匯出。",
-    fullDescription: "Genome Variant Case Study Explorer 提供流程展示、範例或上傳 VCF 探索、CSV 匯出及分析產物下載；基因體計算於 Web 應用之外執行。",
+    fullDescription: "Galaxy 在應用之外執行主要計算；瀏覽器以共用 TypeScript 邏輯解析內建或本機上傳的 VCF。使用者可查看流程產物、篩選變異與匯出結果，並保留原始分析和展示的分工。本機上傳 VCF 在瀏覽器解析；此應用並非線上變異辨識或臨床平台。",
     role: "生物資訊／全端開發者",
     categories: ["Web 應用", "資料科學", "生物資訊"],
     features: ["Galaxy 流程展示", "範例與上傳 VCF 探索", "變異篩選與 CSV 匯出", "分析產物下載"]
@@ -410,7 +409,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "地中海型貧血 Sanger 定序變異檢查工具",
     tagline: "依引子檢查 Sanger 檔案的變異與品質",
     shortDescription: "研究原型工具，可上傳 .ab1 Sanger 檔案、選擇引子組別，並檢視確定性的變異與品質檢查結果。",
-    fullDescription: "此 Next.js 與 FastAPI 原型整合引子導向序列檢查、瀏覽器結果檢視及結構化 JSON 報告，供教學與研究流程使用。",
+    fullDescription: "BioPython 解析序列及品質資料，依引子確定性規則產出品質摘要與結構化 JSON 報告。研究者可複核變異檢查及品質警示，也可使用不呼叫後端的靜態範例結果。僅供教學與研究流程使用，非獨立臨床診斷工具。",
     role: "生物資訊開發者",
     categories: ["Web 應用", "生物資訊", "研究"],
     features: ["AB1 上傳與引子選擇", "確定性變異檢查", "品質檢查結果檢視", "結構化 JSON 報告匯出"]

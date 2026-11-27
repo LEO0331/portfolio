@@ -1,3 +1,4 @@
+import { leaveRequestEngineering, thalassemiaEngineering, genomeVariantEngineering, pptDesignEngineering, resumeVaultEngineering, lighthouseSkillEngineering } from "../../data/additionalEngineering";
 import { boxmatchEngineering, assistanthubEngineering, warmmemoEngineering } from "../../data/recruiterEngineering";
 import { craftFocusEngineering } from "../../data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../data/passportComparisonEngineering";
@@ -31,7 +32,13 @@ const engineeringByProjectId = new Map<string, LocalizedEngineeringStory | Custo
   ["publicsafetydashboard", publicSafetyDashboardEngineering],
   ["boxmatch", boxmatchEngineering],
   ["assistanthub", assistanthubEngineering],
-  ["warmmemo", warmmemoEngineering]
+  ["warmmemo", warmmemoEngineering],
+  ["leave-request", leaveRequestEngineering],
+  ["thalassemia-seq-analysis", thalassemiaEngineering],
+  ["genomic-data-science-with-galaxy-project", genomeVariantEngineering],
+  ["ppt-design-md", pptDesignEngineering],
+  ["resume-vault", resumeVaultEngineering],
+  ["lighthouse-skill-pack", lighthouseSkillEngineering]
 ]);
 
 function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; story: EngineeringStory; projectId: string }): JSX.Element {
