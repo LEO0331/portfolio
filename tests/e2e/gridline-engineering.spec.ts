@@ -1,4 +1,5 @@
 import { test, expect } from "@playwright/test";
+import { gridlineRecruiterSummary } from "../../src/data/recruiterEngineering";
 import { readFileSync } from "node:fs";
 import { gridlineEngineeringContent, gridlineCurrentRelease, gridlineCurrentSource, GRIDLINE_CURRENT_RELEASE_SHA, GRIDLINE_SOURCE_SHA, gridlineSource } from "../../src/data/gridlineEngineering";
 import { projects } from "../../src/data/projects";
@@ -83,6 +84,13 @@ for (const locale of ["en", "zh"] as const) {
     await page.goto(`./${prefix}engineering/gridline`);
     await page.reload();
     await expect(page.getByRole("heading", { level: 1 })).toHaveText(content.title);
+    const recruiter = page.getByTestId("gridline-recruiter-summary");
+    await expect(recruiter.getByRole("heading", { level: 2 })).toHaveText(gridlineRecruiterSummary[locale].title);
+    await expect(recruiter.getByRole("listitem")).toHaveCount(4);
+    await expect(recruiter.getByRole("heading", { level: 3 })).toHaveText(gridlineRecruiterSummary[locale].items.map(item => item.label));
+    await expect(recruiter).toContainText(gridlineRecruiterSummary[locale].boundary);
+    await expect(recruiter.getByRole("link")).toHaveCount(0);
+    await expect(recruiter).not.toContainText(/\b20\d{2}\b|\d+(?:\.\d+)?%/);
     const current = page.locator("[data-gridline-current]");
     await expect(current).toContainText(gridlineCurrentRelease[locale].heading);
     await expect(current).toContainText(gridlineCurrentRelease[locale].boundary);

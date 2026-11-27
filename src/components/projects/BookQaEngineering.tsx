@@ -4,9 +4,9 @@ import { EngineeringAtAGlance } from "./EngineeringAtAGlance";
 const content = {
   en: {
     problem: "Readers need to find and verify passages across a private library.",
-    contribution: "Built the FastAPI ingestion and query workflows and the Next.js interface.",
+    contribution: "Built FastAPI document ingestion and retrieval-augmented generation (RAG) workflows and the Next.js interface.",
     architecture: "Next.js connects to FastAPI. Full Q&A uses a local Chroma index and a configured model provider.",
-    outcome: "The API exposes separate endpoints for retrieval previews and answers with citations.",
+    outcome: "Separate retrieval previews and citation-grounded answers help readers verify AI outputs against source passages.",
     workflow: "Document to answer",
     parser: "Both modes",
     api: "Configured API mode only",
@@ -20,9 +20,9 @@ const content = {
   },
   zh: {
     problem: "讀者需要在私人書庫中找出相關段落，並核對原文。",
-    contribution: "開發 FastAPI 匯入與查詢流程，以及 Next.js 操作介面。",
+    contribution: "開發 FastAPI 文件匯入、檢索增強生成（RAG）流程與 Next.js 操作介面。",
     architecture: "Next.js 串接 FastAPI。完整問答使用本機 Chroma 索引及已設定的模型服務。",
-    outcome: "API 分別提供檢索預覽與附引文的問答端點。",
+    outcome: "分離檢索預覽與附來源問答，協助讀者回查原文及核對 AI 輸出。",
     workflow: "從文件到問答",
     parser: "兩種模式皆支援",
     api: "僅限已設定後端的 API 模式",

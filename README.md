@@ -1,5 +1,11 @@
 # LEO0331 Engineering Portfolio
 
+## Editorial standard
+
+The portfolio is the recruiter-facing entry point: project purpose, personal contribution, durable engineering competencies, business value and risk reduction. Engineering stories add architecture, data flow, decisions and trade-offs. Use concise bilingual descriptions and keep the original public Demo and repository links. Avoid file-level implementation links, dated test counts, coverage figures and workflow-run links in ordinary project drawers; keep these in GitHub documentation and verification records. Gridline's standalone technical deep dive and the 13 GovTech research cases retain their source-pinned evidence and methodology. Update public copy when material capabilities change, not when test counts or routine configuration change.
+
+See [editorial and evidence policy](./docs/recruiter-editorial-standard.md) for the project-specific boundaries and historical evidence retained by this refresh.
+
 ## Public Safety Dashboard security & governance — 2026-11-27
 
 The existing bilingual project card and engineering drawer now document merged API observability, bounded resource protection, Phase 2 aggregate recovery and operation events, and the subsequent opaque-session authentication hardening (PRs #19–21). The original official-notice workflow and public preview are retained. The private report is not a live portfolio demo. [Pinned upstream operations](https://github.com/LEO0331/publicsafetydashboard/blob/41345c98fe680fd88e40c2bf2331fdbdc10792f4/docs/operations.md) and [merged-main CI](https://github.com/LEO0331/publicsafetydashboard/actions/runs/45921282755/job/140252354422) support the implementation claims; production configuration and live metrics were not verified.

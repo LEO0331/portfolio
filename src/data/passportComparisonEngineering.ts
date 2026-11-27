@@ -4,9 +4,9 @@ export const passportComparisonEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
       problem: "Travelers need to compare entry rules across passports and see which requirements are still uncertain.",
-      contribution: "I built the Python importer and the Flutter comparison and reporting tools.",
+      contribution: "Built a validated Python data ingestion pipeline and versioned Flutter comparison and reporting tools.",
       architecture: "A static Flutter app on GitHub Pages reads a bundled dataset of entry requirements.",
-      outcome: "Full and differences-only PDF reports include the dataset version and source attribution."
+      outcome: "Versioned PDF reports preserve source attribution; uncertain requirements remain visible rather than being treated as confirmed."
     },
     workflow: {
       title: "From source data to passport comparison",
@@ -23,9 +23,9 @@ export const passportComparisonEngineering: LocalizedEngineeringStory = {
   zh: {
     facts: {
       problem: "旅客需要比較多本護照的入境規定，也需要知道哪些規定尚未確認。",
-      contribution: "我實作了 Python 資料匯入工具，以及 Flutter 的比較與報表功能。",
+      contribution: "開發經驗證的 Python 資料匯入流程，以及版本化的 Flutter 比較與報告工具。",
       architecture: "Flutter 靜態網站部署於 GitHub Pages，入境規定以資料快照隨網站一併發布。",
-      outcome: "完整報表及僅列差異的 PDF 報表都附有資料版本與來源標示。"
+      outcome: "PDF 報告保留資料版本及來源，明確區分未確認規定與已確認資訊。"
     },
     workflow: {
       title: "從來源資料到護照比較",

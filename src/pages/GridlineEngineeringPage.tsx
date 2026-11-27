@@ -1,3 +1,4 @@
+import { gridlineRecruiterSummary } from "../data/recruiterEngineering";
 import { Fragment, useEffect, useRef } from "react";
 import { Link, useLocation, useNavigationType } from "react-router-dom";
 import { Section } from "../components/layout/Section";
@@ -57,6 +58,14 @@ export function GridlineEngineeringPage(): JSX.Element {
       <p className="text-lg leading-8 text-slate-600">{content.summary} {zh ? "另設獨立被動式安全探測感測器，呈現兼顧隱私的資安可觀測性。" : "A separate passive probe sensor demonstrates privacy-preserving security observability."}</p>
       <div className="flex flex-wrap gap-4 text-sm"><ExternalLink href="https://leo0331.github.io/Gridline/">{zh ? "公開靜態 Demo" : "Public static demo"}</ExternalLink><ExternalLink href="https://github.com/LEO0331/Gridline">{zh ? "Gridline 原始碼" : "Gridline repository"}</ExternalLink></div>
     </header>
+    <aside className="panel-soft mb-6 space-y-3 p-4 sm:p-5" aria-labelledby="gridline-recruiter-heading" data-testid="gridline-recruiter-summary">
+      <h2 id="gridline-recruiter-heading" className="text-xl font-bold text-slate-900">{gridlineRecruiterSummary[locale].title}</h2>
+      <ul role="list" className="grid gap-3 sm:grid-cols-2">
+        {gridlineRecruiterSummary[locale].items.map(item => <li key={item.label} className="min-w-0 rounded-lg border border-(--line) bg-(--surface) p-3 text-sm wrap-anywhere"><h3 className="font-semibold text-slate-900">{item.label}</h3><p className="mt-1 leading-6 text-slate-700">{item.detail}</p></li>)}
+      </ul>
+      <p className="text-sm leading-6 text-slate-700">{gridlineRecruiterSummary[locale].quality}</p>
+      <p className="text-sm leading-6 text-slate-600">{gridlineRecruiterSummary[locale].boundary}</p>
+    </aside>
     <details className="panel-soft mb-6 p-4"><summary className="cursor-pointer text-sm font-semibold">{zh ? "案例章節" : "Case study sections"}</summary>
       <nav aria-label={zh ? "案例章節" : "Case study sections"} className="mt-4"><ol className="grid gap-3 text-sm sm:grid-cols-2">{sections.map(section => <li key={section.id}><a className="underline underline-offset-4" href={`#${section.id}`}>{section.title}</a></li>)}<li><a className="underline underline-offset-4" href="#passive-security">{security.heading}</a></li></ol></nav>
     </details>

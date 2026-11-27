@@ -9,13 +9,13 @@ export const projects: Project[] = [
     shortDescription:
       "Browse and shortlist fictional talent in a public React demo. A separate local Express/MySQL API adds JWT roles, versioned hiring transitions, and an audit trail.",
     fullDescription:
-      "The public GitHub Pages site is an offline React/Vite demo with deterministic sample profiles, search and filters, card and virtualized list views, shortlist and hiring-status controls, and protected CSV/JSON import and export. A separately configured, loopback-only Node.js/Express/Sequelize/MySQL API supports synthetic candidates, JWT authentication, server-side roles, optimistic concurrency, transactional audit events, and idempotent retries after lost responses. The API is not publicly deployed and does not process real applicant data.",
+      "The public GitHub Pages site is an offline React demo for fictional talent discovery, filtering and shortlisting, with protected CSV/JSON import and export. A separate loopback-only Express/MySQL API demonstrates JWT authentication, role-based access, optimistic concurrency, transactional audit history and idempotent retries after uncertain responses. The API is not publicly deployed and does not process real applicant data.",
     role: "Solo Full-Stack Engineer",
     teamType: "solo",
     techStack: ["React", "JavaScript", "Node.js", "Express", "MySQL", "Sequelize", "Leaflet"],
     categories: ["Web App", "Frontend", "Full Stack", "Directory"],
     features: [
-      "Search, filters, shortlists, and virtualized browsing of up to 5,000 synthetic profiles",
+      "Search, filters, shortlists and virtualized browsing of synthetic profiles",
       "Offline hiring-status demo with CSV formula protection and bounded JSON imports",
       "Separate loopback-only API with JWT authentication and role-based access",
       "Version-checked hiring transitions and transactional audit history",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
     shortDescription:
       "A lightweight Flutter web app that compares two to five passports and shows which destinations all selected passports can enter visa-free.",
     fullDescription:
-      "Compare entry requirements by destination, with separate categories for visa on arrival, electronic travel authorization, and e-visas. The static GitHub Pages app compares a validated, bundled snapshot from TravelRequirements.info (AXG Sp. z o.o., CC BY 4.0) in the browser and shows its version and available source citations. Failed refreshes leave the last validated snapshot in place. Export a full or differences-only PDF with the dataset version used.",
+      "A static Flutter application compares entry requirements using a validated bundled snapshot from TravelRequirements.info (AXG Sp. z o.o., CC BY 4.0). Versioned attribution, fail-closed refresh and explicit unconfirmed categories protect data quality. PDF reports identify the source version; travelers should verify current rules with authorities.",
     role: "Flutter Developer",
     teamType: "solo",
     techStack: ["Flutter", "Dart"],
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     shortDescription:
       "A Flutter app that extracts rental income and expenses from property-management PDF statements and maps them to ATO worksheet categories.",
     fullDescription:
-      "Tax Auto Extraction lets Australian property owners review extracted values, save records with Firebase, and compare income and expenses across financial years.",
+      "Tax Auto Extraction converts supported Australian rental statements into categorized financial records. It checks applicable totals, preserves source line details and previews category-level changes for human review before saving to Firebase, supporting reliable financial-year comparisons.",
     role: "Flutter / Utility Developer",
     teamType: "solo",
     techStack: ["Flutter", "Dart", "Firebase"],
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     shortDescription:
       "A Flutter Web app that connects travelers with people around the world to share postcards, encouragement, and travel stories.",
     fullDescription:
-      "WanderStamp helps people find meaningful connections through handwritten postcards, bringing traveler and recipient workflows into a browser-based experience.",
+      "WanderStamp connects travelers and recipients through handwritten postcards. Server-side validation and transactional private/public tracking projections keep mailing details separate from approved public fields; one-time receipt confirmation and reduced map precision support privacy.",
     role: "Flutter Developer",
     teamType: "solo",
     techStack: ["Flutter", "Dart", "Firebase"],
@@ -193,21 +193,12 @@ export const projects: Project[] = [
     shortDescription:
       "A full-stack exhibition food-surplus platform with transactional reservations, owner-scoped authorization and passive security probe intelligence.",
     fullDescription:
-      "BoxMatch combines a Flutter listing feed and OpenStreetMap venue map with a Node.js/Express REST API on Render and Firebase Authentication/Cloud Firestore. Server-authoritative transactions protect inventory during reservations, cancellations and pickup confirmation; idempotency keys support safe reserve retries, and hashed, revocable edit capabilities are isolated from public listing data. An optional owner-only Firestore reservation read path avoids the Render cold-start dependency, with UID-scoped memory caching, progressive rendering and a versioned fail-closed startup migration. The integrated security observability subsystem combines privacy-conscious crawler classification, optional verification and local country/ASN enrichment with risk signals and opt-in Passive Security Probe Intelligence. It classifies sensitive-path requests by target, method, UTC time and actual response outcome, correlates repeated and multi-category requests within a bounded 60-second trusted HMAC window, and reuses daily aggregation, replay-safe flush markers and the protected administrator dashboard/CSV. Probe aggregates contain no raw IPs, paths or fingerprints; no decoys, active blocking or per-request database writes are added. GitHub Actions verifies backend, Flutter, Firestore emulator rules and browser regressions.",
+      "BoxMatch connects exhibition food donors and recipients through a Flutter feed and map, backed by Express and Firebase. Server-authoritative inventory transactions and idempotency protect reservations and pickup workflows; owner-scoped access and isolated edit credentials protect private data. Optional direct Firestore reads reduce cold-start dependency. Integrated passive security observation supports risk investigation with privacy-conscious aggregate reporting; it does not block requests or establish confirmed incidents. Automated tests cover backend logic, Flutter, Firestore authorization and browser regressions.",
     role: "Full-Stack Engineer",
     teamType: "solo",
     techStack: ["Flutter", "Dart", "Node.js", "Express", "Firebase Auth", "Cloud Firestore", "REST API", "Render", "GitHub Actions"],
     categories: ["Web App", "Full-Stack", "Social Impact"],
-    features: [
-      "Public surplus-food listings, map, enterprise publishing and pickup-code workflows",
-      "Server-authoritative inventory transactions, reservation idempotency and secure edit-token rotation/revocation",
-      "Firebase authentication, owner-only reservation reads and private credential isolation",
-      "Opt-in direct Firestore reads, UID-scoped cache, progressive loading and versioned startup migration",
-      "Passive Security Probe Intelligence: sensitive-path categories, HTTP methods, UTC trends, response outcomes and bounded source correlation",
-      "Privacy-conscious crawler classification/verification, behavioral risk scoring and optional country/ASN enrichment",
-      "Bounded daily analytics, duplicate-resistant persistence and a role-protected dashboard with CSV export",
-      "GitHub Actions CI/CD with backend, Flutter, Firestore emulator and browser verification"
-    ],
+    features: ["Surplus-food listings, map and pickup workflows","Transactional inventory and idempotent reservations","Firebase authentication and owner-scoped access","Optional direct Firestore reads and progressive loading","Passive security probe classification and privacy-preserving aggregation","Protected administrator reporting and automated verification"],
     challenges: [
       "Preserving inventory consistency and authorization across concurrent requests, retries and uncertain responses",
       "Reducing free-tier cold-start and navigation dependencies without weakening owner-only access",
@@ -216,7 +207,7 @@ export const projects: Project[] = [
     outcomes: [
       "Deployed full-stack surplus-food application with integrated, opt-in passive probe analytics and protected administrator reporting; live observation coverage depends on deployment configuration",
       "Implemented an optional direct-read path that removes the Render dependency for reservation list retrieval",
-      "November 26, 2026 verification: all five automated checks passed; 569 backend tests across 32 suites, 88.23% Flutter coverage, Firestore emulator security verification and zero vulnerabilities reported by the backend npm audit"
+      "Automated backend, Flutter, Firestore authorization and browser verification support regression control"
     ],
     image: "/src/assets/images/projects/boxmatch.png",
     demoUrl: "https://leo0331.github.io/boxmatch/",
@@ -232,7 +223,7 @@ export const projects: Project[] = [
     shortDescription:
       "A completed Flutter Web and Firebase product for memorial sharing, digital obituaries, life planning, and administrator-led service workflows.",
     fullDescription:
-      "WarmMemo uses modular Flutter Web features, Firebase Authentication, Cloud Firestore, and owner/admin Security Rules to separate private drafts from public memorials and service operations. It provides shareable memorial pages and QR codes, digital obituaries, and Traditional Chinese PDF exports using bundled local fonts. Final Countdown pairs lifetime financial projections with optional, session-only current net-worth and cash-buffer reflections; the financial snapshot is not uploaded or included in public shares. Stripe-hosted Payment Links use a stable Firestore order reference for administrator-led manual reconciliation. GitHub Actions verifies Flutter tests, backend security checks, a 92% LCOV line-coverage gate, and gated GitHub Pages deployment.",
+      "WarmMemo uses modular Flutter Web features, Firebase Authentication, Cloud Firestore, and owner/admin Security Rules to separate private drafts from public memorials and service operations. It provides shareable memorial pages and QR codes, digital obituaries, and Traditional Chinese PDF exports using bundled local fonts. Final Countdown pairs lifetime financial projections with optional, session-only current net-worth and cash-buffer reflections; the financial snapshot is not uploaded or included in public shares. Stripe-hosted Payment Links use a stable Firestore order reference for administrator-led manual reconciliation. GitHub Actions verifies Flutter tests, backend security checks, a line-coverage gate, and gated GitHub Pages deployment.",
     role: "Product / Flutter & Firebase Engineer",
     teamType: "solo",
     techStack: ["Flutter", "Dart", "Firebase", "Cloud Firestore", "GitHub Actions"],
@@ -243,7 +234,7 @@ export const projects: Project[] = [
       "Memorial and obituary PDF exports with local Traditional Chinese fonts and QR links",
       "Service orders, supplier coordination, and delivery milestones",
       "Stripe-hosted checkout with order references and manual payment reconciliation",
-      "GitHub Actions CI/CD with Flutter tests, 92% LCOV gate, and Pages deployment"
+      "GitHub Actions CI/CD with Flutter tests, coverage gate, and Pages deployment"
     ],
     challenges: [
       "Keeping private planning inputs and memorial drafts out of public sharing flows",
@@ -251,7 +242,7 @@ export const projects: Project[] = [
     ],
     outcomes: [
       "Completed the planned feature backlog and deployed the Flutter/Firebase web app",
-      "Published LCOV coverage artifacts with a 92% CI gate and verified Pages deployment"
+      "Automated tests, published coverage artifacts and gated Pages deployment support quality assurance"
     ],
     image: "/src/assets/images/projects/warmmemo.png",
     demoUrl: "https://leo0331.github.io/warmmemo/",
@@ -388,7 +379,7 @@ export const projects: Project[] = [
     shortDescription:
       "A bilingual AI infrastructure research dashboard with source-backed reports and an independent passive HTTP security probe sensor.",
     fullDescription:
-      "Gridline integrates official company, infrastructure and energy evidence with dated market observations. Its React/GitHub Pages demo provides company research, thematic comparisons, a source-backed week/month/agenda catalyst calendar and point-in-time Daily/Weekly research reports. Node.js ingestion, a local SQLite/WAL research API, fail-closed validation and GitHub Actions support safe static snapshot/report publication. A separate weekly official-source scan proposes strictly verified calendar updates or review candidates; actual publisher coverage remains bounded. An isolated Node.js/Express sensor, designed for a separate Docker/Render service, classifies HTTP probes, correlates trusted sources using short-lived HMAC fingerprints and exposes only aggregate metrics through an authenticated operator dashboard. Coverage diagnostics, health-check separation and bounded CSV/JSONL recovery support analysis without storing raw request identities. Optional local country/ASN and bot range matching requires verified topology and a fresh dataset. The public research site is not a hosted Node API, trading system or investment predictor; the sensor is observation-only, not a blocking or incident-response platform.",
+      "Gridline is a bilingual research dashboard combining source-backed company, market and infrastructure data with thematic comparisons, a verified research calendar and point-in-time reports. Node.js ingestion, a local SQLite/WAL API and automated publication support data validation, traceability and degraded-source recovery. A separate Express sensor demonstrates independent passive HTTP probe classification, privacy-preserving correlation and protected aggregate reporting. The public site is a static research demo, not a hosted research API, trading system or investment predictor. The optional sensor is observation-only; its live topology and traffic are not verified by source tests.",
     role: "Backend / Data Engineering & Security Observability Developer",
     teamType: "solo",
     techStack: ["React", "JavaScript", "Node.js", "SQLite", "Supabase", "Express", "Docker", "Render"],
@@ -400,8 +391,8 @@ export const projects: Project[] = [
       "Separate scheduled snapshot/report publishing and verified calendar maintenance",
       "Local Node.js + SQLite/WAL research profile; optional Supabase preferences",
       "Independent passive HTTP probe classification and privacy-preserving HMAC correlation",
-      "Authenticated aggregate dashboard, coverage diagnostics and bounded CSV/JSONL restoration",
-      "Optional local network enrichment and Render-owned runtime configuration"
+      "Protected aggregate reporting, coverage diagnostics and manual recovery",
+      "Optional network enrichment and independent operator-controlled deployment"
     ],
     image: "/src/assets/images/projects/robotfriends.png",
     demoUrl: "https://leo0331.github.io/Gridline/",
@@ -417,7 +408,7 @@ export const projects: Project[] = [
     tagline: "Private-library ingestion and citation-grounded answers",
     shortDescription: "A local-first bilingual library system for ingesting EPUB and web sources, inspecting parsed content, and asking questions with citations.",
     fullDescription:
-      "Book QA Library combines a FastAPI ingestion and retrieval backend with a Next.js interface. The public parser demo supports ingestion and content inspection. Configured API mode adds generated artifacts, grounded Q&A, collections and exports; those capabilities require a separately configured backend.",
+      "Book QA Library combines FastAPI document ingestion and retrieval with a Next.js interface. The public parser demo supports content inspection. Configured API mode enables citation-grounded Q&A, artifact generation, collections and exports, with a separately configured backend; insufficient retrieval evidence is rejected rather than presented as a grounded answer.",
     role: "Full Stack / AI App Developer",
     teamType: "solo",
     techStack: ["Next.js", "TypeScript", "Python", "FastAPI", "Chroma"],
@@ -541,7 +532,7 @@ export const projects: Project[] = [
     shortDescription:
       "A bilingual tool that parses WordPress JSON or public URLs into knowledge and persona artifacts, with XML-to-Markdown migration.",
     fullDescription:
-      "WordPress Persona Parser supports deterministic parser and optional AI generation modes, reusable skill/wiki outputs, versioned profiles, and Obsidian-ready Markdown ZIP exports from WordPress XML.",
+      "WordPress Persona Parser normalizes blog sources into reusable Markdown skills, wikis and profiles, with optional AI generation, quotas and parser fallback. Versioned profile storage supports recovery; a separate XML migration produces Obsidian-ready Markdown ZIP exports.",
     role: "Utility / Data Workflow Developer",
     teamType: "solo",
     techStack: ["Node.js", "JavaScript", "Express"],
@@ -616,7 +607,7 @@ export const projects: Project[] = [
     shortDescription:
       "An Expo React Native app for iOS, Android, and Web that rewards focus sessions with seeds for room items and handmade collectibles.",
     fullDescription:
-      "CraftFocus combines focus timers, seed rewards, craft claims and social rooms with Supabase Auth and PostgreSQL. Row-level security and transactional database functions support access control and reward/claim consistency. Account-based workflows require sign-in.",
+      "CraftFocus combines focus timers, seed rewards and shared crafts with Supabase Auth and PostgreSQL. Row-level security and transactional database functions enforce access boundaries and consistent rewards or claims under concurrent requests. Account-based workflows require sign-in.",
     role: "Full Stack / Product Developer",
     teamType: "solo",
     techStack: ["React Native", "Expo", "TypeScript", "Supabase", "PostgreSQL"],
@@ -641,7 +632,7 @@ export const projects: Project[] = [
     shortDescription:
       "A bilingual Taipei public-announcement dashboard combining traceable PDF ingestion, grouped maps and responsible public-data access.",
     fullDescription:
-      "This Next.js, SQLite and Python educational dashboard imports official Taipei PDFs, links records to their sources and content hashes, and provides filters, descriptive statistics, grouped maps, CSV exports and parser review. Reviewed corrections and withdrawals govern publication. Integrated, optional API observability aggregates route, status, latency, export volume and authorization outcomes without retaining raw request identifiers or person-level access history. A protected operations report supports aggregate CSV analysis, bounded JSONL backup and restoration, sanitized operation events and rule-based investigation signals. Admin authentication uses short-lived opaque sessions, secure production cookies, CSRF checks and process-wide login limits; public exports and maintenance operations are bounded. Sessions and observation history are process-local; the public demo is not a durable audit or threat intelligence platform.",
+      "This bilingual Next.js, SQLite and Python dashboard imports official Taipei PDF notices and links records to source evidence, supporting filters, descriptive statistics, grouped maps, CSV exports and reviewed corrections or withdrawals. Optional API observability protects privacy while enabling operational review. Bounded exports and maintenance, protected aggregate reporting and manual recovery, sanitized audit events, short-lived opaque sessions, CSRF and login limits support responsible public-data access. Sessions and observation history are process-local; the system is not a durable audit or threat intelligence platform.",
     role: "Full Stack / Data Governance & API Security Developer",
     teamType: "solo",
     techStack: ["Next.js", "TypeScript", "Python", "SQLite", "Node.js", "Docker", "Render"],

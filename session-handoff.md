@@ -1,5 +1,17 @@
 # Session Handoff
 
+**Current objective:** Apply the recruiter editorial principle to all eleven requested project narratives in one bilingual portfolio PR.
+
+**Current status:** Based on curated main b7f41e8f with PR #70 merged. Updated all eleven catalogue/story presentations, preserved Gridline historical technical evidence and GovTech cases, added three discoverable drawers and maintained public links. Documentation includes the evergreen editorial policy and retained evidence.
+
+**Blockers:** Initial E2E run 45925172824 had 311 passes and one stale AssistantHub smoke selector failure. Corrected COV-13 to use the Engineering Story accessible name and verify URL/focus restoration after Escape and backdrop click. Fresh CI and visual review pending; no local checkout via MCP. No upstream re-audit or production verification.
+
+**Next:** Review candidate checks and both locales, then merge after approval.
+
+**Files:** project catalogue, recruiterEngineering data, selected engineering data/components, Gridline presenter, discovery and regression tests, README EN/ZH, AGENTS, editorial evidence docs and lifecycle files.
+
+## Previous handoff — Public Safety recruiter story
+
 **Current objective:** Make the existing Public Safety Dashboard engineering supplement recruiter-focused, retaining the original four-card layout.
 
 **Current status:** PR #69 merged and E2E/Lighthouse passed. Candidate bilingual copy uses competencies, general automated QA and engineering trade-offs; card headings are plain text and no source-file/CI-run links remain in the supplement. Detailed evidence stays in README and progress. Existing project links, metadata, workflow and preview unchanged.

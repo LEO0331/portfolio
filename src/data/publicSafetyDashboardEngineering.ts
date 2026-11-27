@@ -21,7 +21,7 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
     supplement: {
       title: "API security & public-data governance",
       items: [
-        { label: "Privacy protection & security monitoring", detail: "Designed privacy-preserving API monitoring to understand access patterns, unusual requests and service performance without collecting unnecessary personal information." },
+        { label: "Privacy protection & security monitoring", detail: "Designed privacy-preserving API monitoring to understand aggregate access patterns, investigation signals and service performance without collecting unnecessary personal information." },
         { label: "API security & resource protection", detail: "Applied request limits, export capacity controls and maintenance concurrency safeguards to reduce resource abuse and support service reliability." },
         { label: "Data governance & operational auditing", detail: "Built administrative operation records, investigation indicators and aggregate backup and recovery to improve operational traceability and support incident review." },
         { label: "Authentication & access control", detail: "Implemented secure session management, CSRF protection, login rate limiting and authorization checks to reduce credential exposure and unauthorized access risks." }
@@ -53,7 +53,7 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
     supplement: {
       title: "API 資安與公共資料治理",
       items: [
-        { label: "隱私保護與安全監控", detail: "建立兼顧隱私的 API 可觀測性機制，監控存取行為、異常請求及系統效能，避免蒐集不必要的個人資訊。" },
+        { label: "隱私保護與安全監控", detail: "建立兼顧隱私的 API 可觀測性機制，觀測彙總存取模式、調查訊號及系統效能，避免蒐集不必要的個人資訊。" },
         { label: "API 安全與資源保護", detail: "透過請求限制、匯出容量控管及並行作業控制，降低資源濫用風險，維持服務穩定性。" },
         { label: "資料治理與操作稽核", detail: "建立管理操作紀錄、調查指標及彙總資料備份與還原機制，提升營運可追溯性及問題調查能力。" },
         { label: "身分驗證與存取控制", detail: "實作安全工作階段管理、CSRF 防護、登入限流及權限驗證，降低憑證外洩與未授權存取風險。" }

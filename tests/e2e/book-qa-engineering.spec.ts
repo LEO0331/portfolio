@@ -12,6 +12,8 @@ for (const locale of ["en", "zh"] as const) {
       const drawer = page.getByRole("dialog");
       await expect(drawer).toBeFocused();
       await expect(drawer.locator("#book-qa-overview + dl dt")).toHaveCount(4);
+      await expect(drawer.locator("#book-qa-overview + dl")).toContainText("RAG");
+      await expect(drawer.locator("#book-qa-overview + dl")).toContainText(locale === "zh" ? "核對 AI 輸出" : "verify AI outputs");
       const workflow = drawer.locator('figure[aria-labelledby="book-qa-workflow-caption"]');
       await expect(workflow).toHaveCount(1);
       await expect(workflow).toHaveAccessibleName(locale === "zh" ? /公開示範可操作至內容檢視/ : /The public demo stops at content inspection/);

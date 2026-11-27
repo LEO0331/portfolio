@@ -4,9 +4,9 @@ export const wanderStampEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
       problem: "Let recipients follow a postcard’s journey while keeping their mailing details private.",
-      contribution: "Built the server-side request validation and one-time receipt confirmation flow.",
+      contribution: "Built server-side validation, privacy-aware data projections and one-time receipt confirmation.",
       architecture: "Flutter calls Firebase Functions and reads separate private and public Firestore collections.",
-      outcome: "The status update function writes the private record and its public tracking copy in one transaction."
+      outcome: "A transaction keeps private status and approved public tracking data consistent without exposing mailing details."
     },
     workflow: {
       title: "From a request to public tracking",
@@ -22,9 +22,9 @@ export const wanderStampEngineering: LocalizedEngineeringStory = {
   zh: {
     facts: {
       problem: "讓收件人查詢明信片的寄送進度，同時保留郵寄資料的隱私。",
-      contribution: "我實作了伺服器端的申請資料驗證，以及一次性的收件確認流程。",
+      contribution: "開發後端驗證、兼顧隱私的資料投影及一次性收件確認。",
       architecture: "Flutter 呼叫 Firebase Functions，並依用途讀取 Firestore 的私人紀錄或公開追蹤集合。",
-      outcome: "更新寄送狀態時，函式在同一筆交易中寫入私人紀錄及對應的公開追蹤資料。"
+      outcome: "同一交易維持私人狀態及核可公開追蹤資料的一致性，不揭露郵寄資訊。"
     },
     workflow: {
       title: "從明信片申請到公開追蹤",
