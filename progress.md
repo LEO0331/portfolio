@@ -4,7 +4,8 @@
 
 - PR #72 merged at 865f93c; verified 324/324 E2E passes (job 140283254301), Lighthouse/build/deploy success. Marked prior feature complete.
 - User requested Gridline, BoxMatch, PublicSafetyDashboard in that order. Updated independent featuredProjectIds, bilingual homepage introduction and README, and exact bilingual order/link regression assertions. Existing shared catalogue sorting uses the same priority. No changes to project records, GitHub pins, 17 engineering stories, 13 GovTech cases, public URLs or preview assets.
-- MCP-only edit; no local checkout, sync dry run, local harness/install/audit/unit/build/E2E/diff check or visual review. Candidate CI pending. Review before merge.
+- Initial PR #73 E2E run 45931648078/job 140285402616: 323 passed, 1 failed on all retries. River013's protected-file check rejected the intentional homepage selection change (historical featuredProjects.ts digest 120224b5…, current 2f2c88fb…). Preserve the original baseline fixture and its digest; assert the exact approved current IDs and unique catalogue membership instead. All other protected-file hashes, prior case records, Gridline evidence and actual GitHub pin protections remain intact. Existing bilingual homepage order/link assertions remain unchanged. No application changes or skipped tests. Fresh CI pending.
+- MCP-only edit; no local checkout, sync dry run, local harness/install/audit/unit/build/E2E/diff check or visual review. Review corrected CI before merge.
 
 ## Six additional engineering stories — 2026-11-27
 

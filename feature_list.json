@@ -1129,7 +1129,8 @@
         "Portfolio CI passes"
       ],
       "evidence": [
-        "Candidate uses the existing independent curated selection; no project records, pin flags, URLs, previews, layout or dependencies changed. Updated bilingual copy, README and exact-order/link tests; fresh CI pending."
+        "Candidate uses the existing independent curated selection; no project records, pin flags, URLs, previews, layout or dependencies changed. Updated bilingual copy, README and exact-order/link tests; fresh CI pending.",
+        "Initial E2E job 140285402616: 323 passed, 1 failed. River013 historical hash rejected intentional curation change. Retain baseline fixture and original digest, assert approved exact current featured IDs and unique catalogue membership; other historical protections and bilingual order/link tests unchanged. Corrected CI pending."
       ]
     }
   ]

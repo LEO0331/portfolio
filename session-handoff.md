@@ -4,7 +4,7 @@
 
 **Current status:** PR #72 merged; main E2E 324 passed, Lighthouse/build/deploy succeeded. Candidate updates only curated selection, bilingual introduction, README, tests and lifecycle records. Existing catalogue sorter shares the curated priority; GitHub pins and all 38 project records unchanged.
 
-**Blockers:** Candidate remote CI and visual review pending; no local checkout via MCP.
+**Blockers:** Initial PR #73 E2E run 45931648078 had 323 passes and one River013 historical featuredProjects.ts hash mismatch. Corrected the test to retain the historical fixture digest and require the approved exact current selection plus unique catalogue membership. All other historical protections unchanged. Fresh CI and visual review pending; no local checkout via MCP.
 
 **Next:** Review checks and merge after approval; verify homepage in both languages.
 
