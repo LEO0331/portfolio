@@ -6,6 +6,7 @@ import { govtechCasesZh } from "../../src/data/govtechCases.zh";
 import { caseOverviews, caseTechnicalDetails, govtechCaseSummaries } from "../../src/data/govtechCaseSummaries";
 import { govtechCopy } from "../../src/data/govtechCopy";
 import { projects } from "../../src/data/projects";
+import { featuredProjectIds } from "../../src/data/featuredProjects";
 import { getProjectGovTechCases } from "../../src/utils/govtechCase";
 import { GRIDLINE_SOURCE_SHA, GRIDLINE_CURRENT_RELEASE_SHA } from "../../src/data/gridlineEngineering";
 import { getLocalizedProjects } from "../../src/utils/projectLocalization";
@@ -140,6 +141,15 @@ test("River013 preserves every prior canonical field and Gridline engineering/re
     // engineering-route suite covers the current presentation of the same audit.
     if (frozen.path === "src/pages/GridlineEngineeringPage.tsx") continue;
     const bytes = readFileSync(frozen.path);
+    if (frozen.path === "src/data/featuredProjects.ts") {
+      // PR #73 explicitly changes mutable recruiter curation, not historical
+      // GovTech evidence. Retain the original fixture digest as provenance and
+      // enforce the approved current selection instead of the obsolete byte hash.
+      expect(frozen.sha256).toBe("120224b5a2fe79a0bed6553708a94a427a47a345e0478d755fbf6dcb8ca47e39");
+      expect(featuredProjectIds, "approved homepage curation").toEqual(["robotfriends", "boxmatch", "publicsafetydashboard"]);
+      expect(featuredProjectIds.every(id => projects.filter(project => project.id === id).length === 1)).toBe(true);
+      continue;
+    }
     if (frozen.path === "src/data/gridlineEngineering.ts") {
       // The historical raw-file hash remains in the fixture; the November
       // additions are legitimate, so independently freeze its October sections.

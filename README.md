@@ -143,7 +143,7 @@ Notes:
 
 ## Homepage featured projects
 
-The homepage uses the explicit order in `src/data/featuredProjects.ts`: Gridline, Book QA Library and CraftFocus. A separate concise GovTech collection entry links to the thirteen-case landing. The catalogue uses the same priority before its existing pin/status/name ordering. The saved `src/data/github-pins.json` and `featured` flags continue to represent actual GitHub pins and are synchronized independently. All catalogue records, search, filters and project query links remain available.
+The homepage uses the explicit order in `src/data/featuredProjects.ts`: Gridline, BoxMatch and PublicSafetyDashboard, emphasizing financial data engineering, transaction consistency and public-data governance. A separate concise GovTech collection entry links to the thirteen-case landing. The catalogue uses the same priority before its existing pin/status/name ordering. The saved `src/data/github-pins.json` and `featured` flags continue to represent actual GitHub pins and are synchronized independently. All catalogue records, search, filters and project query links remain available.
 
 Gridline retains its legacy `robotfriends` ID, slug and preview filenames to preserve query links, pin mappings and external references. Its visible copy describes the Node.js/SQLite API profile and the static public demo separately. See [v2.2 evidence and verification](./docs/portfolio-v2.2-recruiter-refinement.md).
 
