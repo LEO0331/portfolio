@@ -258,8 +258,7 @@ export const projects: Project[] = [
     tagline: "Role-aware leave approvals, balances, and reporting",
     shortDescription:
       "A React, TypeScript, and MUI leave-management demo with employee and manager actions, balance-aware validation, and 10,000 seeded requests.",
-    fullDescription:
-      "Leave Management System tracks approval states and audit history, calculates business-day durations, supports searchable tables and CSV import/export, and validates requests against leave balances.",
+    fullDescription: "A browser-local application separates UI components from domain validation, storage and CSV/PDF utilities. The demo validates overlapping dates and available balances, records request history, and supports employee and manager workflows. Uses synthetic data and browser storage; role switching demonstrates workflow design, not authoritative access control.",
     role: "Frontend Engineer",
     teamType: "solo",
     techStack: ["React", "TypeScript", "MUI"],
@@ -283,8 +282,7 @@ export const projects: Project[] = [
     tagline: "Turn reusable career entries into tailored resumes",
     shortDescription:
       "A bilingual local-first app that matches reusable career entries to job descriptions and generates tailored resumes.",
-    fullDescription:
-      "Resume Vault offers an Experience Bank, simple and advanced workflows, ATS templates, job-description import, Markdown and Obsidian export, and JSON state portability.",
+    fullDescription: "The static app stores entries, templates and job descriptions in browser storage; a separate local CLI supports capture and tailored output workflows. Matching returns selection reasons and fit/gap information alongside Markdown, with JSON backup and restore for portability. No backend is required for the core flow. Optional job-page capture and private tooling run locally.",
     role: "Frontend Developer",
     teamType: "solo",
     techStack: ["React", "TypeScript", "Vite"],
@@ -481,8 +479,7 @@ export const projects: Project[] = [
     tagline: "Extract reusable visual rules from PowerPoint decks",
     shortDescription:
       "A tool that analyzes one or more PowerPoint files and generates editable design.md rules and structured analysis.json output.",
-    fullDescription:
-      "pptx-design-md extracts colors, typography, spacing, and recurring layout patterns from presentations, with batch analysis, a Markdown editor, and downloadable design artifacts.",
+    fullDescription: "A static frontend calls an API that validates PPTX inputs, extracts slide elements, synthesizes Markdown and saves run artifacts on the filesystem. Produces editable design.md and structured analysis.json so humans and AI tools can reuse recurring visual rules. The output abstracts design guidance, not a pixel-perfect reconstruction.",
     role: "Tooling / Documentation Developer",
     teamType: "solo",
     techStack: ["Python", "FastAPI", "JavaScript"],
@@ -506,8 +503,7 @@ export const projects: Project[] = [
     tagline: "Deterministic optimization patterns for Lighthouse score improvements",
     shortDescription:
       "A practical skill pack focused on improving Lighthouse Performance, SEO, Accessibility, and Best Practices with minimal, high-impact fixes.",
-    fullDescription:
-      "Lighthouse Skill Pack provides reusable optimization workflows and implementation patterns for modern frontend projects. It is designed to help teams apply prioritized fixes for LCP, CLS, and JS execution bottlenecks without sacrificing UX quality.",
+    fullDescription: "Markdown skills define measurement and optimization steps; generated index and lazily loaded skill content support static distribution. Reusable workflows guide baseline measurement, prioritized fixes and regression checks; the skill browser has automated E2E and coverage gates. Provides engineering guidance and tooling; actual performance improvement depends on the target application and measurements.",
     role: "Performance / Frontend Optimization Developer",
     teamType: "solo",
     techStack: ["Lighthouse", "TypeScript", "JavaScript", "Web Performance"],
@@ -987,8 +983,7 @@ export const projects: Project[] = [
     tagline: "Present Galaxy workflows and explore genomic variants",
     shortDescription:
       "An interactive case-study app for presenting Galaxy-generated results, exploring VCF records, and exporting filtered variants.",
-    fullDescription:
-      "Genome Variant Case Study Explorer offers workflow storytelling, bundled or uploaded VCF exploration, CSV exports, and downloadable artifacts; genomic computation is performed outside the web app.",
+    fullDescription: "Galaxy performs the original heavy computation outside the app; the browser parses bundled or locally uploaded VCF files using shared TypeScript logic. Users can inspect workflow artifacts, filter variant records and export results while keeping the source analysis separate. Local VCF uploads are parsed in-browser; this app is not an online variant-calling or clinical platform.",
     role: "Bioinformatics / Full Stack Developer",
     teamType: "solo",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Bioinformatics"],
@@ -1012,8 +1007,7 @@ export const projects: Project[] = [
     tagline: "Review Sanger files with primer-specific mutation and QC checks",
     shortDescription:
       "A research prototype for uploading .ab1 Sanger files, selecting primer groups, and reviewing deterministic mutation and quality-control results.",
-    fullDescription:
-      "This Next.js and FastAPI prototype combines primer-specific sequence checks with browser-based result review and structured JSON reports for educational and research workflows.",
+    fullDescription: "BioPython parses sequence and quality data; primer-specific deterministic rules produce QC summaries and structured JSON reports. Researchers can review mutation-check results and quality warnings or load a static demo result without backend calls. Educational and research prototype only; not a standalone clinical diagnostic tool.",
     role: "Bioinformatics Developer",
     teamType: "solo",
     techStack: ["Next.js", "Python", "FastAPI", "Bioinformatics"],
