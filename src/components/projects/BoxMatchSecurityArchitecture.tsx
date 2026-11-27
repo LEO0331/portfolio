@@ -1,11 +1,4 @@
 import type { Locale } from "../../i18n/LocaleContext";
-import { ExternalLink } from "../common/ExternalLink";
-
-const architectureUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/SECURITY_ARCHITECTURE.md";
-const probeUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/SECURITY_PROBE_INTELLIGENCE.md";
-const backendChecksUrl = "https://github.com/LEO0331/boxmatch/actions/runs/45784578216/job/139788005218";
-const flutterChecksUrl = "https://github.com/LEO0331/boxmatch/actions/runs/45784578199/job/139788004359";
-const runbookUrl = "https://github.com/LEO0331/boxmatch/blob/main/docs/ops/deploy-runbook.md";
 
 function Arrow(): JSX.Element {
   return (
@@ -33,10 +26,10 @@ export function BoxMatchSecurityArchitecture({ locale }: { locale: Locale }): JS
     [t("Business Firestore", "業務 Firestore"), t("Public catalog, owner-scoped reservations and private metadata", "公開目錄、擁有者限定預約與私人中繼資料")]
   ];
   const observation = [
-    [t("Phase 1 · Request intelligence", "Phase 1 · 請求情資"), t("Trusted proxy, HMAC network identity, bot and risk signals, optional GeoIP", "可信代理、HMAC 網路識別、爬蟲與風險訊號、可選 GeoIP")],
-    [t("Passive Security Probe Intelligence", "被動式安全探測情資"), t("Target, method, UTC hour, outcome and bounded 60-second source correlation", "目標、方法、UTC 時段、回應結果及有界限的 60 秒來源關聯")],
-    [t("Phase 2 · Daily aggregation", "Phase 2 · 每日聚合"), t("Bounded memory, traffic_daily and replay-safe traffic_flushes", "有界限記憶體、traffic_daily 與防重複 traffic_flushes")],
-    [t("Phase 3 · Protected dashboard", "Phase 3 · 受保護儀表板"), t("Separate Firebase administrator session, verified custom claim, bounded query and CSV", "獨立 Firebase 管理員工作階段、驗證自訂權限、有界限查詢與 CSV")]
+    [t("Request intelligence", "請求情資"), t("Trusted source resolution, privacy-conscious correlation and client/risk signals", "可信來源解析、兼顧隱私的關聯及用戶端／風險訊號")],
+    [t("Passive Security Probe Intelligence", "被動式安全探測情資"), t("Categorize suspicious path patterns and actual response outcomes; bounded source correlation", "分類可疑路徑模式及實際回應結果，建立有界限的來源關聯")],
+    [t("Daily aggregation", "每日彙總"), t("Bounded memory and duplicate-resistant aggregate persistence", "有界限的記憶體與防重複彙總寫入")],
+    [t("Protected dashboard", "受保護儀表板"), t("Separate Firebase administrator session, verified custom claim, bounded query and CSV", "獨立 Firebase 管理員工作階段、驗證自訂權限、有界限查詢與 CSV")]
   ];
   return (
     <section className="space-y-2">
@@ -70,13 +63,7 @@ export function BoxMatchSecurityArchitecture({ locale }: { locale: Locale }): JS
         <figcaption id="boxmatch-security-caption" className="leading-6 text-slate-600">
           {t("Source architecture, not live traffic evidence. Probe collection is optional and observation-only: no decoys, active blocking or raw identifiers in probe aggregates. Only requests reaching Express are observable.", "原始碼架構，並非正式流量證據。探測收集為可選且僅供觀測：不建立誘餌、不主動封鎖、不在探測聚合保存原始識別資料。僅觀測到達 Express 的請求。")}
         </figcaption>
-        <div className="flex flex-wrap gap-x-3 gap-y-2">
-          <ExternalLink href={architectureUrl}>{t("Full security architecture", "完整資安架構圖")}</ExternalLink>
-          <ExternalLink href={probeUrl}>{t("Probe design and limits", "探測設計與限制")}</ExternalLink>
-          <ExternalLink href={backendChecksUrl}>{t("Backend test evidence", "後端測試證據")}</ExternalLink>
-          <ExternalLink href={flutterChecksUrl}>{t("Flutter coverage evidence", "Flutter 覆蓋率證據")}</ExternalLink>
-          <ExternalLink href={runbookUrl}>{t("Deployment runbook", "部署手冊")}</ExternalLink>
-        </div>
+        <p className="border-t border-(--line) pt-3 leading-6 text-slate-700">{t("Automated backend, Flutter, authorization-rule and browser checks support reliable delivery.", "透過後端、Flutter、授權規則與瀏覽器自動化驗證，支援可靠交付。")}</p>
       </figure>
     </section>
   );

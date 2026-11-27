@@ -4,7 +4,7 @@ export const wordpressParserEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
       problem: "Turn a collection of blog posts into reusable knowledge and writing-style references.",
-      contribution: "Built source normalization, knowledge and persona analysis, and the artifact and profile APIs.",
+      contribution: "Built data normalization, reusable artifact APIs and an optional AI workflow with quota controls and deterministic fallback.",
       architecture: "Express separates artifact generation from profile saves. Profiles use local files or a configured private Vercel Blob store.",
       outcome: "The store snapshots an existing profile before updating it. An administrator can restore a saved version."
     },
@@ -24,7 +24,7 @@ export const wordpressParserEngineering: LocalizedEngineeringStory = {
   zh: {
     facts: {
       problem: "把部落格文章整理成可重複使用的知識與寫作風格參考。",
-      contribution: "我實作了來源資料正規化、知識與寫作風格分析，以及產物生成與作者檔案 API。",
+      contribution: "開發資料正規化、可重用產物 API，以及具配額控管與確定性降級機制的選用 AI 流程。",
       architecture: "Express 將產物生成與檔案儲存分開。作者檔案可寫入本機檔案系統，或存入已設定的私有 Vercel Blob。",
       outcome: "更新既有作者檔案前會先建立快照，管理者可還原已儲存的版本。"
     },

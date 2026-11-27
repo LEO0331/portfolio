@@ -15,11 +15,11 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "AssistantHub 人才庫",
     tagline: "人才探索展示與具稽核紀錄的本機招募流程",
     shortDescription: "公開 React 展示可搜尋、篩選與收藏虛構人才；另有僅供本機執行的 Express/MySQL API，提供 JWT 權限、版本控管與招募狀態稽核。",
-    fullDescription: "公開的 GitHub Pages 網站為離線 React/Vite 展示：使用可重現的模擬人才資料，支援搜尋篩選、卡片與虛擬化列表、人才收藏、聘用狀態操作，以及具 CSV 公式注入防護與 JSON 匯入筆數限制的資料匯出入。另有獨立設定、僅綁定本機位址的 Node.js／Express／Sequelize／MySQL API，使用虛構測試資料，實作 JWT 驗證、角色權限、樂觀鎖、交易式稽核紀錄，以及處理回應遺失的冪等重試。後端並未公開部署，也不處理真實求職者資料。",
+    fullDescription: "公開 GitHub Pages 網站為離線 React 虛構人才展示，支援搜尋、篩選、收藏及受保護的 CSV／JSON 匯入匯出。另有僅綁定本機位址的 Express／MySQL API，展示 JWT 驗證、角色權限、樂觀鎖、交易式稽核紀錄及不確定回應後的冪等重試。後端並未公開部署，也不處理真實求職者資料。",
     role: "個人全端工程實作",
     categories: ["Web 應用", "前端", "全端", "目錄平台"],
     features: [
-      "搜尋篩選、人才收藏，以及最多 5,000 筆虛構人才的虛擬化瀏覽",
+      "搜尋篩選、人才收藏與虛構人才的虛擬化瀏覽",
       "離線聘用狀態展示、CSV 公式注入防護與 JSON 匯入筆數限制",
       "僅供本機使用的 API，具 JWT 身分驗證與角色權限控管",
       "版本檢查的招募狀態轉換與交易式稽核紀錄",
@@ -62,7 +62,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "護照入境待遇差異分析工具",
     tagline: "比較各地入境規定，找出護照之間的免簽差異",
     shortDescription: "輕量的 Flutter 網頁應用，可同時比較二至五本護照，查看所有選取的護照皆可免簽入境的目的地。",
-    fullDescription: "依目的地比較入境規定，分別呈現落地簽證、電子旅行授權及電子簽證等類別。應用程式以靜態網站部署於 GitHub Pages，在瀏覽器內使用經驗證的 TravelRequirements.info 資料快照（AXG Sp. z o.o.，CC BY 4.0），並標示版本與可查閱的資料來源。更新失敗時保留上一份通過驗證的快照。可匯出完整或僅列差異的 PDF，並附上比較所用的資料版本。",
+    fullDescription: "靜態 Flutter 應用使用經驗證的 TravelRequirements.info 資料快照（AXG Sp. z o.o.，CC BY 4.0）比較入境待遇。版本及來源標示、更新失敗保留有效快照、未確認類別區分皆支援資料品質。PDF 報告保留資料版本；旅行前仍須向主管機關確認。",
     role: "Flutter 開發者",
     categories: ["Web 應用", "比較工具", "資料視覺化"],
     features: [
@@ -77,7 +77,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "出租物業稅務資料擷取工具",
     tagline: "將出租物業 PDF 報表轉為分類稅務紀錄",
     shortDescription: "以 Flutter 擷取物業管理 PDF 報表中的租金收入與支出，並對應 ATO 工作表分類。",
-    fullDescription: "Tax Auto Extraction 協助澳洲物業持有人複核與編輯擷取結果，透過 Firebase 保存紀錄，並比較不同財政年度的收入與支出。",
+    fullDescription: "Tax Auto Extraction 將支援的澳洲出租報表轉為分類財務紀錄，核對適用總額、保留原始明細並預覽分類差異，經人工複核後儲存至 Firebase，以支援可靠的財政年度比較。",
     role: "Flutter／工具開發者",
     categories: ["Web 應用", "工具", "資料視覺化"],
     features: ["PDF 收支擷取", "ATO 工作表分類對應", "手動複核與編輯", "財政年度比較"]
@@ -85,7 +85,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   "warmthfromafar": {
     tagline: "透過手寫明信片連結旅人與收件人",
     shortDescription: "以 Flutter Web 連結世界各地的旅人與收件人，分享明信片、鼓勵與旅行故事。",
-    fullDescription: "WanderStamp 以手寫明信片建立有溫度的交流，將旅人與收件人的使用流程整合於瀏覽器體驗。",
+    fullDescription: "WanderStamp 透過手寫明信片連結旅人與收件人。後端驗證與交易式私人／公開追蹤資料隔離，確保郵寄資訊不混入核可公開欄位；一次性收件確認及降低地圖精度兼顧隱私。",
     role: "Flutter 開發者",
     categories: ["Web 應用", "社會影響", "旅行"],
     features: ["旅人與收件人流程", "明信片分享", "旅行故事與鼓勵"]
@@ -102,19 +102,10 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "BoxMatch",
     tagline: "展場剩食媒合、交易式預約與整合式資安可觀測性",
     shortDescription: "展場剩食全端媒合平台，整合交易式預約、擁有者資料權限與被動式安全探測情資。",
-    fullDescription: "BoxMatch 採 Flutter 餐食列表與 OpenStreetMap 場館地圖，搭配 Render 上的 Node.js／Express REST API、Firebase Authentication 與 Cloud Firestore。預約、取消、取餐確認及庫存異動由後端交易式處理；冪等鍵保障預約重試，編輯權杖雜湊及撤銷機制與公開資料隔離。可選的 Firestore 擁有者限定預約讀取移除 Render 冷啟動依賴，搭配依 UID 隔離的記憶體快取、漸進式載入及 fail-closed 版本化啟動遷移。整合式資安可觀測性子系統包含爬蟲分類與可選驗證、風險訊號、可選本機國別／ASN 資料，以及預設關閉的被動式安全探測情資。依敏感路徑類別、HTTP 方法、UTC 時間及實際回應結果統計，使用有界限的 60 秒可信 HMAC 指紋視窗關聯重複與跨類型探測，沿用每日聚合、冪等批次標記與權限保護的管理儀表板／CSV。探測聚合不保存原始 IP、路徑或指紋，不建立誘餌、不主動封鎖、不逐筆寫入資料庫。GitHub Actions 驗證後端、Flutter、Firestore Emulator 安全規則及瀏覽器回歸測試。",
+    fullDescription: "BoxMatch 以 Flutter 列表及地圖連結展場剩食提供者與領取者，搭配 Express 與 Firebase 後端。後端權威庫存交易與冪等設計維持預約及取餐一致性，擁有者限定存取及編輯憑證隔離保護私人資料。可選 Firestore 直接讀取降低冷啟動依賴。整合被動式資安觀測，透過兼顧隱私的彙總報表支援風險調查，不主動封鎖或確認資安事件。自動化驗證涵蓋後端、Flutter、Firestore 授權與瀏覽器回歸。",
     role: "全端工程師",
     categories: ["Web 應用", "全端", "社會影響"],
-    features: [
-      "公開剩食列表、地圖、企業發布及取餐交接碼",
-      "後端權威庫存交易、預約冪等與編輯權杖輪替／撤銷",
-      "Firebase 身分驗證、擁有者限定預約讀取與私人憑證隔離",
-      "可選 Firestore 直接讀取、UID 快取、漸進式載入與版本化啟動遷移",
-      "被動式安全探測情資：敏感路徑分類、HTTP 方法、UTC 趨勢、回應結果及有界限來源關聯",
-      "隱私優先的爬蟲分類／驗證、行為風險評分及可選國別／ASN 分析",
-      "有限資源的每日聚合、防重複持久化與權限保護的管理儀表板／CSV 匯出",
-      "GitHub Actions CI/CD、後端與 Flutter 測試、Firestore Emulator 及瀏覽器驗證"
-    ],
+    features: ["剩食列表、地圖及取餐流程","交易式庫存與預約冪等","Firebase 身分驗證及擁有者限定存取","可選 Firestore 直接讀取與漸進式載入","被動式安全探測分類及兼顧隱私的彙總","權限保護管理報表與自動化驗證"],
     challenges: [
       "在並行請求、重試與不確定回應中維持庫存交易一致性及授權",
       "在不放寬擁有者權限的前提下降低免費層冷啟動與頁面載入依賴",
@@ -123,14 +114,14 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     outcomes: [
       "完成全端剩食媒合應用部署，整合可選被動探測分析及權限保護報表；正式環境觀測範圍取決於部署設定",
       "實作可選直接讀取路徑，移除預約列表讀取對 Render 的依賴",
-      "2026 年 11 月 26 日驗證：五項自動化檢查均通過，後端 32 suites／569 tests、Flutter 覆蓋率 88.23%、Firestore Emulator 安全驗證，後端 npm audit 回報零漏洞"
+      "後端、Flutter、Firestore 授權與瀏覽器自動化驗證支援回歸風險控管"
     ]
   },
   "warmmemo": {
     name: "暖備 WarmMemo",
     tagline: "Flutter／Firebase 追思平台，整合隱私優先的人生規劃與可驗證交付流程",
     shortDescription: "已完成並部署的 Flutter Web／Firebase 產品，涵蓋追思頁分享、數位訃聞、人生規劃與管理端服務流程。",
-    fullDescription: "WarmMemo 採模組化 Flutter Web 架構，透過 Firebase Authentication、Cloud Firestore 與擁有者／管理員 Security Rules 隔離私人草稿、公開追思內容及服務作業。支援追思頁分享與 QR Code、數位訃聞，以及使用內建繁中文字型的 PDF 匯出。「人生倒數」區分終身財務預估與僅限當次工作階段的淨資產、現金緩衝檢視，財務現況資料不會上傳或加入公開分享。Stripe Payment Links 保留 Firestore 訂單識別供管理員人工對帳；GitHub Actions 執行 Flutter 測試、後端安全檢查、92% LCOV 行覆蓋率門檻與受 CI 控管的 GitHub Pages 部署。",
+    fullDescription: "WarmMemo 採模組化 Flutter Web 架構，透過 Firebase Authentication、Cloud Firestore 與擁有者／管理員 Security Rules 隔離私人草稿、公開追思內容及服務作業。支援追思頁分享與 QR Code、數位訃聞，以及使用內建繁中文字型的 PDF 匯出。「人生倒數」區分終身財務預估與僅限當次工作階段的淨資產、現金緩衝檢視，財務現況資料不會上傳或加入公開分享。Stripe Payment Links 保留 Firestore 訂單識別供管理員人工對帳；GitHub Actions 執行 Flutter 測試、後端安全檢查、行覆蓋率門檻與受 CI 控管的 GitHub Pages 部署。",
     role: "產品／Flutter 與 Firebase 工程師",
     categories: ["Web 應用", "服務設計", "流程工具"],
     features: [
@@ -139,7 +130,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
       "內建繁中文字型與 QR 連結的追思頁、訃聞 PDF 匯出",
       "服務訂單、供應商協調及交付里程碑",
       "Stripe 託管結帳、訂單識別及管理員人工對帳",
-      "GitHub Actions CI/CD、Flutter 測試、92% LCOV 門檻與 Pages 部署"
+      "GitHub Actions CI/CD、Flutter 測試、覆蓋率門檻與 Pages 部署"
     ],
     challenges: [
       "確保私人規劃資料及追思草稿不會出現在公開分享流程",
@@ -147,7 +138,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     ],
     outcomes: [
       "完成既定功能清單並部署 Flutter／Firebase Web 應用",
-      "CI 發布 LCOV 覆蓋率證據，落實 92% 門檻並驗證 Pages 部署"
+      "自動化測試、覆蓋率證據及受 CI 控管的 Pages 部署支援品質保證"
     ]
   },
   "leave-request": {
@@ -198,16 +189,16 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   "robotfriends": {
     tagline: "以官方證據為核心的基礎設施研究與獨立資安可觀測性",
     shortDescription: "結合具來源的 AI 基礎設施研究報告與獨立被動式 HTTP 安全探測感測器的雙語儀表板。",
-    fullDescription: "Gridline 整合官方公司、基礎設施與能源證據及具日期的市場觀測。React／GitHub Pages 公開 Demo 提供公司研究、同業比較、週／月／議程研究日曆，以及保留真實時間點的日報與週報。Node.js 介接、本機 SQLite/WAL API 模式、嚴格資料驗證及 GitHub Actions 支援安全的靜態快照與報告發布；獨立每週官方來源掃描只自動接受嚴格驗證的時程，其他候選留待審閱。日曆涵蓋有限。另以獨立 Node.js／Express 感測器與 Docker／Render 部署設計，分類 HTTP 探測、以短效 HMAC 指紋關聯可信來源，並透過需驗證的營運儀表板呈現彙總資料。健康檢查分離、觀測覆蓋診斷與有界限的 CSV／JSONL 還原支援分析，不保存原始請求識別資料。可選本機國別／ASN 及 bot 網段匹配需驗證拓樸與有效資料集。公開 Demo 並非託管的 Node API、交易系統或投資預測工具；感測器僅觀測，不執行封鎖或事件應變。",
+    fullDescription: "Gridline 為雙語研究儀表板，整合具來源的公司、市場及基礎設施資料、主題比較、經驗證的研究日曆與歷史時間點報告。Node.js 介接、本機 SQLite/WAL API 及自動化發布支援資料驗證、可追溯性與來源異常降級。獨立 Express 感測器展示獨立被動式 HTTP 探測分類、兼顧隱私的關聯及受保護彙總報表。公開網站為靜態研究展示，並非託管研究 API、交易系統或投資預測工具。可選感測器僅供觀測，來源測試不代表已驗證正式拓樸及流量。",
     role: "後端／資料工程與資安可觀測性開發者",
     categories: ["Web 應用", "後端", "資料工程"],
-    features: ["市場／SEC／基礎設施來源追溯與資料缺口揭露", "跨公司主題研究及官方研究催化事件日曆", "真實歷史交易日的日報封存與每週回顧", "快照／報告及日曆分離的 GitHub Actions 自動維護", "本機 Node.js＋SQLite/WAL 研究模式與可選 Supabase 偏好整合", "獨立被動式 HTTP 探測分類與兼顧隱私的 HMAC 關聯", "需驗證的彙總儀表板、覆蓋診斷與有界限的 CSV／JSONL 還原", "可選本機網路情資及 Render 營運設定管理"]
+    features: ["市場／SEC／基礎設施來源追溯與資料缺口揭露", "跨公司主題研究及官方研究催化事件日曆", "真實歷史交易日的日報封存與每週回顧", "快照／報告及日曆分離的 GitHub Actions 自動維護", "本機 Node.js＋SQLite/WAL 研究模式與可選 Supabase 偏好整合", "獨立被動式 HTTP 探測分類與兼顧隱私的 HMAC 關聯", "受保護彙總報表、覆蓋診斷與手動還原", "可選網路情資及營運者控制的獨立部署"]
   },
   "epubreader": {
     name: "私人書庫問答系統",
     tagline: "私人書庫匯入與附來源引用的問答",
     shortDescription: "雙語本機優先書庫系統，支援 EPUB 與網頁來源匯入、解析內容檢視及附引用的問答。",
-    fullDescription: "Book QA Library 結合 FastAPI 匯入與檢索後端及 Next.js 介面。公開解析 Demo 支援匯入及內容檢視；產物生成、附來源問答、書籍集合與匯出則需另行設定 API 後端。",
+    fullDescription: "Book QA Library 結合 FastAPI 文件匯入、檢索及 Next.js 介面。公開解析 Demo 支援內容檢視；附來源問答、產物生成、書籍集合與匯出需另行設定 API 後端，檢索證據不足時拒絕生成具來源答案。",
     role: "全端／AI 應用開發者",
     categories: ["Web 應用", "AI 工作流程", "文件"],
     features: ["EPUB 與網頁匯入", "章節與文字區塊檢視", "API 設定模式下的附來源問答", "產物與書籍集合匯出"]
@@ -254,7 +245,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "WordPress 作者人格解析器",
     tagline: "將部落格來源轉為技能、wiki 與可攜 Markdown",
     shortDescription: "雙語工具，可解析 WordPress JSON 或公開網址，產生知識與人格產物，並將 XML 遷移為 Markdown。",
-    fullDescription: "WordPress Persona Parser 支援確定性的解析模式與選用的 AI 生成、技能與 wiki 輸出、版本化個人檔案，以及供 Obsidian 使用的 Markdown ZIP 匯出。",
+    fullDescription: "WordPress Persona Parser 將部落格來源正規化為可重用的 Markdown 技能、wiki 與作者檔案，支援可選 AI 生成、配額及解析降級機制。版本化檔案支援還原，獨立 XML 遷移流程提供 Obsidian Markdown ZIP 匯出。",
     role: "工具／資料流程開發者",
     categories: ["開發者工具", "AI 工作流程", "文件"],
     features: ["WordPress JSON 與網址匯入", "知識與人格分析", "技能與 wiki 生成", "XML 轉 Obsidian Markdown ZIP"]
@@ -280,7 +271,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
   "craftfocus": {
     tagline: "以資料庫支援專注、獎勵與共享手作流程",
     shortDescription: "以 Expo React Native 支援 iOS、Android 與 Web，完成專注後可獲得種子並兌換房間物件與手作收藏。",
-    fullDescription: "CraftFocus 結合專注計時、種子獎勵、手作兌換及社交房間，使用 Supabase Auth 與 PostgreSQL。資料列層級安全及交易式資料庫函式支援存取控制與獎勵／兌換一致性；帳號相關流程需先登入。",
+    fullDescription: "CraftFocus 結合專注計時、種子獎勵及共享手作，以 Supabase Auth 與 PostgreSQL 的資料列層級安全及交易式函式維持權限邊界與並行獎勵／兌換一致性。帳號流程需登入。",
     role: "全端／產品開發者",
     categories: ["生產力工具", "社交應用", "行動應用"],
     features: ["專注計時與種子獎勵", "房間裝飾與收藏", "玩家手作上架與兌換", "朋友房間與社群互動"]
@@ -289,7 +280,7 @@ export const zhProjectContent: Record<string, LocalizedProjectContent> = {
     name: "台北酒駕／毒駕／拒測累犯教育儀表板",
     tagline: "可追溯的公共資料教育與兼顧隱私的 API 治理",
     shortDescription: "整合官方 PDF 來源追溯、群組地圖及負責任公共資料存取的雙語教育儀表板。",
-    fullDescription: "以 Next.js、SQLite 與 Python 匯入臺北市官方 PDF，將紀錄連結至來源與內容雜湊，提供篩選、描述性統計、群組地圖、CSV 匯出及解析複核；公告修正與撤回經人工複核管理。可選的整合式 API 可觀測性彙總路由、狀態、延遲、匯出量與驗證結果，不保存原始請求識別資訊或個案瀏覽紀錄。受驗證的營運報告支援彙總 CSV 分析、有界限的 JSONL 備份與還原、去識別化操作事件與規則式調查訊號。管理端採短效不透明工作階段、正式環境安全 Cookie、CSRF 防護及程序層級登入限流；公開匯出及維護作業亦有限制。工作階段與觀測歷史僅存於程序記憶體，公開 Demo 並非永久稽核或威脅情資平台。",
+    fullDescription: "此雙語 Next.js、SQLite 與 Python 儀表板匯入臺北市官方 PDF 並保留來源依據，提供篩選、描述性統計、群組地圖、CSV 匯出及經複核的公告修正與撤回。可選 API 可觀測性兼顧隱私及營運調查；匯出與維護限制、受保護彙總報表及手動還原、去識別化操作紀錄、短效不透明工作階段、CSRF 與登入限流支援負責任的公共資料存取。工作階段與觀測歷史僅存於程序記憶體，並非永久稽核或威脅情資平台。",
     role: "全端／資料治理與 API 資安開發者",
     categories: ["Web 應用", "儀表板", "資料視覺化"],
     features: ["公開 PDF 匯入", "違規類型與重複次數篩選", "描述性統計與地圖", "CSV 匯出、解析複核與公告修正管理", "兼顧隱私的 API 指標與有界限的公開匯出", "受驗證的彙總報告、手動還原及管理操作結果", "不透明管理工作階段、CSRF 防護及登入限流"]

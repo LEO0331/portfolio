@@ -4,7 +4,7 @@ export const taxAutoExtractionEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
       problem: "Rental statements arrive as PDFs, while tax preparation needs income and expenses grouped by category.",
-      contribution: "Built the statement parsers, worksheet category rules, and import review screen.",
+      contribution: "Built financial data extraction, category mapping, reconciliation checks and human-review workflows.",
       architecture: "Flutter parses PDFs on the device and stores structured worksheet records in Cloud Firestore.",
       outcome: "For monthly Forge statements, the parser checks monthly amounts against annual totals and reconciles the reported subtotals."
     },
@@ -23,7 +23,7 @@ export const taxAutoExtractionEngineering: LocalizedEngineeringStory = {
   zh: {
     facts: {
       problem: "管理出租房產時收到的是 PDF 報表，報稅前還得依類別整理各項收支。",
-      contribution: "開發報表解析、工作表分類規則與匯入檢查畫面。",
+      contribution: "開發財務資料擷取、分類規則、金額核對與人工複核流程。",
       architecture: "Flutter 在使用者裝置上解析 PDF，再將結構化的工作表紀錄存至 Cloud Firestore。",
       outcome: "解析含每月明細的 Forge 年度報表時，會核對各月金額加總與年度總額，並比對報表的收支小計。"
     },

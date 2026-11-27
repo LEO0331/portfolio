@@ -4,9 +4,9 @@ export const craftFocusEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
       problem: "Help players build a focus habit with seeds they can spend on room items and crafts.",
-      contribution: "Built the Expo timer and PostgreSQL functions for seed rewards and craft claims.",
+      contribution: "Designed the Expo timer and transactional PostgreSQL reward and claim workflows to protect balance consistency.",
       architecture: "The public web demo saves progress in IndexedDB. Supabase mode uses sign-in and stores player state in PostgreSQL.",
-      outcome: "A database concurrency test checks that two simultaneous finishes of the same run create one history entry and credit the wallet once."
+      outcome: "Concurrency tests verify that simultaneous finishes record one completed session and credit rewards only once."
     },
     workflow: {
       title: "How a signed-in session earns seeds",
@@ -23,9 +23,9 @@ export const craftFocusEngineering: LocalizedEngineeringStory = {
   zh: {
     facts: {
       problem: "讓玩家透過專注累積種子，再兌換房間道具與手作收藏，培養持續專注的習慣。",
-      contribution: "我開發了 Expo 專注計時器，以及發放種子和兌換手作的 PostgreSQL 函式。",
+      contribution: "以交易式資料庫函式設計專注獎勵及手作兌換流程，維持餘額一致性。",
       architecture: "公開網頁示範用 IndexedDB 儲存進度。Supabase 模式須登入，並將玩家資料存入 PostgreSQL。",
-      outcome: "資料庫並行測試檢查同一筆專注紀錄同時收到兩次結束請求時，是否只新增一筆歷史紀錄並發放一次獎勵。"
+      outcome: "並行測試驗證同一專注流程僅寫入一次完成紀錄、發放一次獎勵。"
     },
     workflow: {
       title: "登入後如何取得專注獎勵",

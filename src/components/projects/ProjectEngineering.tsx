@@ -1,3 +1,4 @@
+import { boxmatchEngineering, assistanthubEngineering, warmmemoEngineering } from "../../data/recruiterEngineering";
 import { craftFocusEngineering } from "../../data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../data/passportComparisonEngineering";
 import { publicSafetyDashboardEngineering } from "../../data/publicSafetyDashboardEngineering";
@@ -27,7 +28,10 @@ const engineeringByProjectId = new Map<string, LocalizedEngineeringStory | Custo
   ["passportcomparison", passportComparisonEngineering],
   ["wordpressparser", wordpressParserEngineering],
   ["warmthfromafar", wanderStampEngineering],
-  ["publicsafetydashboard", publicSafetyDashboardEngineering]
+  ["publicsafetydashboard", publicSafetyDashboardEngineering],
+  ["boxmatch", boxmatchEngineering],
+  ["assistanthub", assistanthubEngineering],
+  ["warmmemo", warmmemoEngineering]
 ]);
 
 function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; story: EngineeringStory; projectId: string }): JSX.Element {
