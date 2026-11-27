@@ -32,7 +32,7 @@ const engineeringByProjectId = new Map<string, LocalizedEngineeringStory | Custo
 
 function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; story: EngineeringStory; projectId: string }): JSX.Element {
   const id = `${projectId}-engineering`;
-  const { facts, workflow, decision } = story;
+  const { facts, workflow, decision, supplement } = story;
 
   return (
     <>
@@ -62,6 +62,24 @@ function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; st
         <h3 className="text-sm font-semibold text-slate-900">{locale === "zh" ? "工程取捨" : "Engineering decision"}</h3>
         <p className="text-sm leading-6 text-slate-700">{decision}</p>
       </section>
+      {supplement && (
+        <section className="space-y-3" aria-labelledby={`${id}-supplement`}>
+          <h3 id={`${id}-supplement`} className="text-sm font-semibold text-slate-900">{supplement.title}</h3>
+          <div className="panel-soft space-y-3 p-3 sm:p-4" data-testid={`${projectId}-engineering-supplement`}>
+            <ul className="grid gap-3 sm:grid-cols-2">
+              {supplement.items.map(item => (
+                <li key={item.label} className="min-w-0 space-y-1 rounded-lg border border-(--line) bg-(--surface) p-3 text-sm wrap-anywhere">
+                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 underline underline-offset-2">{item.label}</a>
+                  <p className="leading-5 text-slate-700">{item.detail}</p>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm leading-5 text-slate-700"><a href={supplement.verificationHref} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{supplement.verification}</a></p>
+            <p className="text-sm leading-5 text-slate-600">{supplement.boundary}</p>
+            <a href={supplement.documentationHref} target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-slate-900 underline underline-offset-2">{supplement.documentationLabel}</a>
+          </div>
+        </section>
+      )}
     </>
   );
 }

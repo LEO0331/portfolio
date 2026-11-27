@@ -1,5 +1,12 @@
 # Portfolio Progress Log
 
+## Public Safety governance refresh — 2026-11-27
+
+- Updated the existing publicsafetydashboard bilingual card and registered engineering drawer, preserving project identity, preview, public links, categories and original official PDF workflow. Added optional compact source-linked security supplement to the existing story renderer; other stories remain unchanged.
+- Source: upstream main 41345c98fe680fd88e40c2bf2331fdbdc10792f4, merged PRs #19–21 (Phase 2 merged 9933050 and session hardening merged 41345c9). Verified main CI job 140252354422: 42 Python tests, 21 Node integration tests, 15 Chromium tests, 90.05% Node line coverage; lint, typecheck, coverage and Lighthouse passed. Docker publication and live Render configuration were not independently verified.
+- Added bilingual metadata and drawer assertions across 320/640/1440px. No local checkout through MCP: project sync dry run, local harness/install/audit/unit/build/E2E/diff check and visual review not executed. Candidate CI pending. No upstream changes or private admin link/screenshot. Existing AssistantHub lifecycle state retained.
+- Next: review focused PR, verify CI and localized drawer, merge only after approval.
+
 ## Current Gridline security update — 2026-11-26
 
 **Active work:** Focused bilingual Gridline security refresh; retain earlier AssistantHub lifecycle entry without changing its status.

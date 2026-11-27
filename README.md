@@ -1,5 +1,9 @@
 # LEO0331 Engineering Portfolio
 
+## Public Safety Dashboard security & governance — 2026-11-27
+
+The existing bilingual project card and engineering drawer now document merged API observability, bounded resource protection, Phase 2 aggregate recovery and operation events, and the subsequent opaque-session authentication hardening (PRs #19–21). The original official-notice workflow and public preview are retained. The private report is not a live portfolio demo. [Pinned upstream operations](https://github.com/LEO0331/publicsafetydashboard/blob/41345c98fe680fd88e40c2bf2331fdbdc10792f4/docs/operations.md) and [merged-main CI](https://github.com/LEO0331/publicsafetydashboard/actions/runs/45921282755/job/140252354422) support the implementation claims; production configuration and live metrics were not verified.
+
 ## Maintenance status — 2026-10-29
 
 Civic Explorer is in feature freeze. [Current maintenance handoff](./docs/civic-explorer-maintenance.md) records merged releases, the independent Dashboard adapter, the single-Draft-PR/companion-branch delivery, source-link rechecks and remaining hosted acceptance. Historical reports retain their original test dates and scope.
