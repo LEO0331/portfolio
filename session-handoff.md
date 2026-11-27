@@ -1,5 +1,17 @@
 # Session Handoff
 
+**Current objective:** Add six source-backed bilingual engineering stories using the existing recruiter format.
+
+**Current status:** PR #71 merged and post-merge E2E (312 tests), Lighthouse, build and deploy succeeded. Candidate adds six existing projects to the engineering filter (17 total), aligned catalogue copy and pinned upstream documentation evidence. Existing identity, preview, public links, featured order and GovTech records retained.
+
+**Blockers:** Candidate CI and visual review pending; no local checkout via MCP. No full upstream audit, upstream test rerun or production verification.
+
+**Next:** Review candidate checks and both locales; merge after approval.
+
+**Files:** src/data/additionalEngineering.ts, projects.ts, projects.zh.ts, ProjectEngineering.tsx, selected-project-engineering and engineering-discovery tests, README EN/ZH, editorial evidence document and lifecycle records.
+
+## Previous handoff — Eleven-project editorial refresh
+
 **Current objective:** Apply the recruiter editorial principle to all eleven requested project narratives in one bilingual portfolio PR.
 
 **Current status:** Based on curated main b7f41e8f with PR #70 merged. Updated all eleven catalogue/story presentations, preserved Gridline historical technical evidence and GovTech cases, added three discoverable drawers and maintained public links. Documentation includes the evergreen editorial policy and retained evidence.

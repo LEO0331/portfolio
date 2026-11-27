@@ -1079,7 +1079,7 @@
       "id": "portfolio-recruiter-editorial-refresh-2026-11",
       "name": "Refresh eleven bilingual recruiter engineering narratives",
       "description": "One editorial feature covering all eleven previously identified projects, preserve technical evidence and GovTech records.",
-      "status": "pending",
+      "status": "complete",
       "dependencies": [
         "public-safety-recruiter-story-2026-11"
       ],
@@ -1092,7 +1092,26 @@
       ],
       "evidence": [
         "Based on curated portfolio main b7f41e8f; no upstream re-audit or deployment. Candidate edits and tests committed, verification pending. Existing unrelated active lifecycle entry retained.",
-        "Initial PR #71 E2E job 140264695749: 311 passed, 1 failed, COV-13 old View Details selector for newly registered AssistantHub engineering drawer. Corrected exact accessible name, real backdrop click, URL/focus checks. Fresh CI pending; no application changes."
+        "Initial PR #71 E2E job 140264695749: 311 passed, 1 failed, COV-13 old View Details selector for newly registered AssistantHub engineering drawer. Corrected exact accessible name, real backdrop click, URL/focus checks. Fresh CI pending; no application changes.",
+        "PR #71 merged at 9c32c257fec742905d96e3be1e8ca611c8d45d01. Post-merge E2E job 140268899632 passed all 312 tests; Lighthouse job 140268899628, build job 140268899864 and deployment job 140268991624 succeeded. No independent live visual review."
+      ]
+    },
+    {
+      "id": "portfolio-six-additional-engineering-2026-11",
+      "name": "Expand six additional bilingual engineering stories",
+      "description": "Add compact stories for LeaveRequest, Thalassemia, Genome Variant Explorer, pptx-design-md, Resume Vault and Lighthouse Skill Pack based on reviewed pinned upstream documentation.",
+      "status": "pending",
+      "dependencies": [
+        "portfolio-recruiter-editorial-refresh-2026-11"
+      ],
+      "doneCriteria": [
+        "Six existing records have bilingual stories, explicit architecture and trade-offs, and source-backed scope boundaries",
+        "Engineering discovery includes 17 projects; responsive tests cover all six new drawers",
+        "Original 38 projects, identities, URLs, stacks, categories, previews, homepage curation and 13 GovTech records remain unchanged",
+        "Portfolio CI passes; source links retained only in documentation"
+      ],
+      "evidence": [
+        "Reviewed six pinned upstream documentation sets recorded in docs/recruiter-editorial-standard.md; inspected LeaveRequest app-layer and Lighthouse core skill. No full upstream audit or fresh upstream test execution. Candidate CI pending; no local checkout or visual review."
       ]
     }
   ]

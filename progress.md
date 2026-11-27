@@ -1,5 +1,12 @@
 # Portfolio Progress Log
 
+## Six additional engineering stories — 2026-11-27
+
+- Verified PR #71 merged at 9c32c25; main E2E 312/312 passed (job 140268899632), Lighthouse/build/deploy succeeded. Marked preceding editorial feature complete without changing unrelated lifecycle states.
+- Added bilingual stories and aligned descriptions for LeaveRequest, Thalassemia, Genome Variant Explorer, pptx-design-md, Resume Vault and Lighthouse Skill Pack. Reviewed pinned upstream README/design documentation, LeaveRequest app-layer and Lighthouse core skill; source references and boundaries in docs/recruiter-editorial-standard.md. No full upstream audit, test rerun or production review.
+- Reused the existing engineering drawer and discovery filter (17 stories including Gridline), no new components/dependencies/routes or preview changes; 38 catalogue records, featured order and 13 GovTech records preserved. Extended responsive and discovery tests, including both locales.
+- MCP-only workflow: no local checkout; project sync dry run, local harness/install/audit/unit/build/E2E/diff check and live visual review not run. Candidate remote CI pending. Review PR before merge.
+
 ## Portfolio-wide recruiter editorial refresh — 2026-11-27
 
 - One bilingual editorial feature covers Gridline, BoxMatch, AssistantHub, WarmMemo, Tax Auto Extraction, Book QA Library, CraftFocus, WordPress Persona Parser, WanderStamp, Passport Comparison and PublicSafetyDashboard. Source is existing curated main b7f41e8f, not a new upstream audit. PR #70 already merged; retained its link-free supplement.

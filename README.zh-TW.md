@@ -6,6 +6,8 @@
 
 參考[編輯與證據原則](./docs/recruiter-editorial-standard.md)，了解各專案應保留的邊界及本次保留的歷史證據。
 
+工程故事另納入請假管理系統、兩項基因體研究專案、PowerPoint 設計規則擷取工具、履歷詞條庫及 Lighthouse 最佳化技能包，沿用精簡版型；上游文件證據與研究／展示界線記錄於同一原則。
+
 ## 公共安全教育儀表板資安與資料治理 — 2026-11-27
 
 既有雙語專案卡片與工程故事新增已合併的 API 可觀測性、資源限制、Phase 2 彙總還原及操作事件，以及後續不透明工作階段驗證強化（PR #19–21）。保留官方公告流程與公開預覽，不展示私有營運介面。[固定版本操作文件](https://github.com/LEO0331/publicsafetydashboard/blob/41345c98fe680fd88e40c2bf2331fdbdc10792f4/docs/operations.zh-TW.md)與[合併後 CI](https://github.com/LEO0331/publicsafetydashboard/actions/runs/45921282755/job/140252354422)提供實作證據；未驗證正式站設定及即時指標。
