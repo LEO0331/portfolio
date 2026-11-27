@@ -28,7 +28,7 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
         { label: "Observe without profiling", detail: "Optional five-minute aggregates record handler status, latency, CSV volume and coarse unverified client/probe signals. No raw IPs, query values, tokens or person-level history.", href: source("src/server/observability.ts") },
         { label: "Bound public access and maintenance", detail: "CSV limits of 10,000 rows and 8 MiB, bounded request bodies and a process-local maintenance guard protect resources without changing legitimate public access.", href: source("src/server/csv-export.ts") },
         { label: "Investigate and recover", detail: "Protected CSV analysis, strict JSONL restoration of ended windows, fixed indicators and capped UTC/action/status audit events. No automatic blocking or record hiding.", href: source("app/api/admin/security/route.ts") },
-        { label: "Secure admin sessions", detail: "Explicit login replaces reusable token headers with hashed opaque sessions, HttpOnly/Secure/SameSite cookies in production, CSRF validation, 30-minute idle and 8-hour absolute expiry, revocation and a process-wide 10-attempt/minute login limit.", href: source("src/server/admin-session.ts") }
+        { label: "Secure admin sessions", detail: "Explicit login replaces reusable token headers with opaque sessions with server-side hashed identifiers, HttpOnly/Secure/SameSite cookies in production, CSRF validation, 30-minute idle and 8-hour absolute expiry, revocation and a process-wide 10-attempt/minute login limit.", href: source("src/server/admin-session.ts") }
       ],
       verification: "Merged main CI, November 27, 2026: 42 Python tests, 21 Node integration tests and 15 Chromium tests passed; Node line coverage 90.05%. Lint, typecheck, coverage and Lighthouse gates passed.",
       verificationHref: PUBLIC_SAFETY_CI,
@@ -61,7 +61,7 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
         { label: "兼顧隱私的觀測", detail: "可選的五分鐘彙總記錄處理器狀態、延遲、CSV 匯出量及未驗證的用戶端／探測訊號；不保存原始 IP、查詢值、權杖或個案瀏覽歷史。", href: source("src/server/observability.ts") },
         { label: "限制資源消耗", detail: "CSV 上限 10,000 列及 8 MiB、請求內容大小限制與程序層級維護作業互斥，保留合法公共資料存取。", href: source("src/server/csv-export.ts") },
         { label: "調查與還原", detail: "受驗證的 CSV 分析、已結束視窗的嚴格 JSONL 還原、固定調查訊號，以及有界限的 UTC／動作／狀態稽核事件；不自動封鎖或隱藏紀錄。", href: source("app/api/admin/security/route.ts") },
-        { label: "管理工作階段安全", detail: "明確登入取代重複傳送權杖；採雜湊不透明工作階段、正式環境 HttpOnly／Secure／SameSite Cookie、CSRF 驗證、閒置 30 分鐘及絕對 8 小時期限、撤銷及每程序每分鐘 10 次登入限制。", href: source("src/server/admin-session.ts") }
+        { label: "管理工作階段安全", detail: "明確登入取代重複傳送權杖；採不透明工作階段及伺服器端雜湊識別碼、正式環境 HttpOnly／Secure／SameSite Cookie、CSRF 驗證、閒置 30 分鐘及絕對 8 小時期限、撤銷及每程序每分鐘 10 次登入限制。", href: source("src/server/admin-session.ts") }
       ],
       verification: "2026 年 11 月 27 日合併後 main CI：42 項 Python 測試、21 項 Node 整合測試及 15 項 Chromium 測試通過；Node 行覆蓋率 90.05%。Lint、型別、覆蓋率及 Lighthouse 門檻均通過。",
       verificationHref: PUBLIC_SAFETY_CI,
