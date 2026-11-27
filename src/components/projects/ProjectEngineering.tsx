@@ -69,14 +69,19 @@ function EngineeringStoryView({ locale, story, projectId }: { locale: Locale; st
             <ul role="list" className="grid gap-3 sm:grid-cols-2">
               {supplement.items.map(item => (
                 <li key={item.label} className="min-w-0 space-y-1 rounded-lg border border-(--line) bg-(--surface) p-3 text-sm wrap-anywhere">
-                  <a href={item.href} target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-900 underline underline-offset-2">{item.label}</a>
+                  <h4 className="font-semibold text-slate-900">{item.label}</h4>
                   <p className="leading-5 text-slate-700">{item.detail}</p>
                 </li>
               ))}
             </ul>
-            <p className="text-sm leading-5 text-slate-700"><a href={supplement.verificationHref} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{supplement.verification}</a></p>
-            <p className="text-sm leading-5 text-slate-600">{supplement.boundary}</p>
-            <a href={supplement.documentationHref} target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-medium text-slate-900 underline underline-offset-2">{supplement.documentationLabel}</a>
+            <div className="space-y-1 border-t border-(--line) pt-3">
+              <h4 className="text-sm font-semibold text-slate-900">{supplement.verificationTitle}</h4>
+              <p className="text-sm leading-6 text-slate-700">{supplement.verification}</p>
+            </div>
+            <div className="space-y-1">
+              <h4 className="text-sm font-semibold text-slate-900">{supplement.boundaryTitle}</h4>
+              <p className="text-sm leading-6 text-slate-700">{supplement.boundary}</p>
+            </div>
           </div>
         </section>
       )}

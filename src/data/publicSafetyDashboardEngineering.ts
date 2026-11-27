@@ -1,9 +1,5 @@
 import type { LocalizedEngineeringStory } from "../types/projectEngineering";
 
-export const PUBLIC_SAFETY_SOURCE = "41345c98fe680fd88e40c2bf2331fdbdc10792f4";
-export const PUBLIC_SAFETY_CI = "https://github.com/LEO0331/publicsafetydashboard/actions/runs/45921282755/job/140252354422";
-const source = (path: string) => `https://github.com/LEO0331/publicsafetydashboard/blob/${PUBLIC_SAFETY_SOURCE}/${path}`;
-
 export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
   en: {
     facts: {
@@ -25,16 +21,15 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
     supplement: {
       title: "API security & public-data governance",
       items: [
-        { label: "Observe without profiling", detail: "Optional five-minute aggregates record handler status, latency, CSV volume and coarse unverified client/probe signals. No raw IPs, query values, tokens or person-level history.", href: source("src/server/observability.ts") },
-        { label: "Bound public access and maintenance", detail: "CSV limits of 10,000 rows and 8 MiB, bounded request bodies and a process-local maintenance guard protect resources without changing legitimate public access.", href: source("src/server/csv-export.ts") },
-        { label: "Investigate and recover", detail: "Protected CSV analysis, strict JSONL restoration of ended windows, fixed indicators and capped UTC/action/status audit events. No automatic blocking or record hiding.", href: source("app/api/admin/security/route.ts") },
-        { label: "Secure admin sessions", detail: "Explicit login replaces reusable token headers with opaque sessions with server-side hashed identifiers, HttpOnly/Secure/SameSite cookies in production, CSRF validation, 30-minute idle and 8-hour absolute expiry, revocation and a process-wide 10-attempt/minute login limit.", href: source("src/server/admin-session.ts") }
+        { label: "Privacy protection & security monitoring", detail: "Designed privacy-preserving API monitoring to understand access patterns, unusual requests and service performance without collecting unnecessary personal information." },
+        { label: "API security & resource protection", detail: "Applied request limits, export capacity controls and maintenance concurrency safeguards to reduce resource abuse and support service reliability." },
+        { label: "Data governance & operational auditing", detail: "Built administrative operation records, investigation indicators and aggregate backup and recovery to improve operational traceability and support incident review." },
+        { label: "Authentication & access control", detail: "Implemented secure session management, CSRF protection, login rate limiting and authorization checks to reduce credential exposure and unauthorized access risks." }
       ],
-      verification: "Merged main CI, November 27, 2026: 42 Python tests, 21 Node integration tests and 15 Chromium tests passed; Node line coverage 90.05%. Lint, typecheck, coverage and Lighthouse gates passed.",
-      verificationHref: PUBLIC_SAFETY_CI,
-      boundary: "Source-backed implementation, not live deployment verification. Reports are private and optional; approximately 24-hour history and sessions are volatile. Recovery is manual, audit events are not individually attributable or tamper-proof, and handler-level indicators are not confirmed attacks.",
-      documentationLabel: "Pinned operations documentation",
-      documentationHref: source("docs/operations.md")
+      verificationTitle: "Quality assurance & continuous integration",
+      verification: "GitHub Actions automates unit, integration and end-to-end tests, type checking, coverage gates and performance checks to support reliable delivery and regression control.",
+      boundaryTitle: "Engineering trade-offs",
+      boundary: "A lightweight architecture balances privacy, reliability and hosting cost. Sessions and monitoring history are process-local; sanitized aggregates support manual recovery. Reports remain private, and operation records are not a durable or individually attributable audit ledger."
     },
     previewCaption: "Existing public educational dashboard preview; the authenticated security and administration interface is not shown."
   },
@@ -58,16 +53,15 @@ export const publicSafetyDashboardEngineering: LocalizedEngineeringStory = {
     supplement: {
       title: "API 資安與公共資料治理",
       items: [
-        { label: "兼顧隱私的觀測", detail: "可選的五分鐘彙總記錄處理器狀態、延遲、CSV 匯出量及未驗證的用戶端／探測訊號；不保存原始 IP、查詢值、權杖或個案瀏覽歷史。", href: source("src/server/observability.ts") },
-        { label: "限制資源消耗", detail: "CSV 上限 10,000 列及 8 MiB、請求內容大小限制與程序層級維護作業互斥，保留合法公共資料存取。", href: source("src/server/csv-export.ts") },
-        { label: "調查與還原", detail: "受驗證的 CSV 分析、已結束視窗的嚴格 JSONL 還原、固定調查訊號，以及有界限的 UTC／動作／狀態稽核事件；不自動封鎖或隱藏紀錄。", href: source("app/api/admin/security/route.ts") },
-        { label: "管理工作階段安全", detail: "明確登入取代重複傳送權杖；採不透明工作階段及伺服器端雜湊識別碼、正式環境 HttpOnly／Secure／SameSite Cookie、CSRF 驗證、閒置 30 分鐘及絕對 8 小時期限、撤銷及每程序每分鐘 10 次登入限制。", href: source("src/server/admin-session.ts") }
+        { label: "隱私保護與安全監控", detail: "建立兼顧隱私的 API 可觀測性機制，監控存取行為、異常請求及系統效能，避免蒐集不必要的個人資訊。" },
+        { label: "API 安全與資源保護", detail: "透過請求限制、匯出容量控管及並行作業控制，降低資源濫用風險，維持服務穩定性。" },
+        { label: "資料治理與操作稽核", detail: "建立管理操作紀錄、調查指標及彙總資料備份與還原機制，提升營運可追溯性及問題調查能力。" },
+        { label: "身分驗證與存取控制", detail: "實作安全工作階段管理、CSRF 防護、登入限流及權限驗證，降低憑證外洩與未授權存取風險。" }
       ],
-      verification: "2026 年 11 月 27 日合併後 main CI：42 項 Python 測試、21 項 Node 整合測試及 15 項 Chromium 測試通過；Node 行覆蓋率 90.05%。Lint、型別、覆蓋率及 Lighthouse 門檻均通過。",
-      verificationHref: PUBLIC_SAFETY_CI,
-      boundary: "依來源程式碼確認實作，並非正式站驗證。報告需驗證且可選啟用；約 24 小時觀測歷史及工作階段皆為揮發性。還原需人工操作，稽核不具個別歸責或防竄改能力，處理器調查訊號不代表已確認攻擊。",
-      documentationLabel: "固定版本操作文件",
-      documentationHref: source("docs/operations.zh-TW.md")
+      verificationTitle: "品質保證與持續整合",
+      verification: "透過 GitHub Actions 自動化單元測試、整合測試、端對端測試、型別檢查、程式碼覆蓋率門檻及效能檢測，支援可靠交付與回歸風險控管。",
+      boundaryTitle: "工程取捨",
+      boundary: "採用輕量化架構，兼顧資料隱私、系統可靠性及主機成本。登入工作階段與觀測歷史僅存於程序記憶體，彙總資料支援手動還原。報告不對外公開，操作紀錄並非永久或可個別歸責的稽核帳本。"
     },
     previewCaption: "沿用公開教育儀表板預覽，不展示需驗證的資安及管理介面。"
   }

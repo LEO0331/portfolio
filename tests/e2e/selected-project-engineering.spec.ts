@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { craftFocusEngineering } from "../../src/data/craftFocusEngineering";
 import { passportComparisonEngineering } from "../../src/data/passportComparisonEngineering";
-import { publicSafetyDashboardEngineering, PUBLIC_SAFETY_SOURCE, PUBLIC_SAFETY_CI } from "../../src/data/publicSafetyDashboardEngineering";
+import { publicSafetyDashboardEngineering } from "../../src/data/publicSafetyDashboardEngineering";
 import { taxAutoExtractionEngineering } from "../../src/data/taxAutoExtractionEngineering";
 import { wanderStampEngineering } from "../../src/data/wanderStampEngineering";
 import { wordpressParserEngineering } from "../../src/data/wordpressParserEngineering";
@@ -56,14 +56,18 @@ for (const { id, content } of stories) {
           await expect(drawer.getByRole("heading", { name: supplement.title, exact: true })).toBeVisible();
           await expect(panel.getByRole("listitem")).toHaveCount(4);
           for (const item of supplement.items) {
-            await expect(panel.getByRole("link", { name: item.label, exact: true })).toHaveAttribute("href", item.href);
-            expect(item.href).toContain("/blob/" + PUBLIC_SAFETY_SOURCE + "/");
+            await expect(panel.getByRole("heading", { name: item.label, exact: true, level: 4 })).toBeVisible();
             await expect(panel.getByText(item.detail, { exact: true })).toBeVisible();
           }
-          await expect(panel.getByRole("link", { name: supplement.verification, exact: true })).toHaveAttribute("href", PUBLIC_SAFETY_CI);
+          await expect(panel.getByRole("heading", { name: supplement.verificationTitle, exact: true, level: 4 })).toBeVisible();
+          await expect(panel.getByText(supplement.verification, { exact: true })).toBeVisible();
+          await expect(panel.getByRole("heading", { name: supplement.boundaryTitle, exact: true, level: 4 })).toBeVisible();
           await expect(panel.getByText(supplement.boundary, { exact: true })).toBeVisible();
-          await expect(panel.getByRole("link", { name: supplement.documentationLabel, exact: true })).toHaveAttribute("href", supplement.documentationHref);
-          await expect(panel.locator('a[href*="onrender.com"]')).toHaveCount(0);
+          await expect(panel.getByRole("link")).toHaveCount(0);
+          await expect(panel).not.toContainText(/\b20\d{2}\b|\d+(?:\.\d+)?%|\/actions\/runs\/|\/blob\//);
+          expect(await panel.locator("li, p, h4").evaluateAll(elements => elements.every(element => element.scrollWidth <= element.clientWidth + 1)), `recruiter supplement at ${width}px`).toBe(true);
+        } else {
+          await expect(drawer.locator('[data-testid$="-engineering-supplement"]')).toHaveCount(0);
         }
 
         const preview = drawer.locator("picture img");
