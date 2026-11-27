@@ -1,5 +1,15 @@
 # Session Handoff
 
+**Current objective:** Make the existing Public Safety Dashboard engineering supplement recruiter-focused, retaining the original four-card layout.
+
+**Current status:** PR #69 merged and E2E/Lighthouse passed. Candidate bilingual copy uses competencies, general automated QA and engineering trade-offs; card headings are plain text and no source-file/CI-run links remain in the supplement. Detailed evidence stays in README and progress. Existing project links, metadata, workflow and preview unchanged.
+
+**Blockers:** Candidate CI and visual review pending; no local checkout via MCP. No upstream or deployment changes.
+
+**Next:** Review this focused PR and CI, then verify both locales after approval. Other engineering stories are outside this update.
+
+## Previous handoff — Public Safety governance refresh
+
 **Current objective:** Refresh Public Safety Dashboard card and engineering drawer with merged API observability, Phase 2 governance and session authentication hardening.
 
 **Current status:** Candidate source pinned to 41345c98fe680fd88e40c2bf2331fdbdc10792f4. Upstream merged-main CI passed (42 Python, 21 Node, 15 Chromium; 90.05% Node line coverage). Bilingual source-linked supplement and tests added. Existing preview and public links retained.

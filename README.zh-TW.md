@@ -4,6 +4,8 @@
 
 既有雙語專案卡片與工程故事新增已合併的 API 可觀測性、資源限制、Phase 2 彙總還原及操作事件，以及後續不透明工作階段驗證強化（PR #19–21）。保留官方公告流程與公開預覽，不展示私有營運介面。[固定版本操作文件](https://github.com/LEO0331/publicsafetydashboard/blob/41345c98fe680fd88e40c2bf2331fdbdc10792f4/docs/operations.zh-TW.md)與[合併後 CI](https://github.com/LEO0331/publicsafetydashboard/actions/runs/45921282755/job/140252354422)提供實作證據；未驗證正式站設定及即時指標。
 
+面向招募者的工程故事以長期適用的工程能力、自動化品質驗證及架構取捨為主；固定版本來源、測試數量與 CI 執行紀錄保留於儲存庫證據，不在作品集介面逐項列出。後續面向招募者的故事可沿用此原則。
+
 ## 維護狀態 — 2026-10-29
 
 Civic Explorer 進入功能凍結。[最新維護交接](./docs/civic-explorer-maintenance.md)記錄已合併版本、獨立的 Dashboard adapter、單一 Draft PR 與作品集配套分支、來源連結複查，以及仍待正式部署後執行的驗收。歷史報告保留原始日期與驗證範圍。

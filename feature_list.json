@@ -1041,7 +1041,7 @@
       "id": "public-safety-governance-portfolio-2026-11",
       "name": "Refresh Public Safety Dashboard security and data governance story",
       "description": "Update existing bilingual project record and engineering drawer from merged upstream Phases 1–2 and admin authentication hardening.",
-      "status": "pending",
+      "status": "complete",
       "dependencies": [
         "portfolio-engineering-stories-phase-3-2026-11"
       ],
@@ -1052,7 +1052,26 @@
       ],
       "evidence": [
         "Pinned upstream main 41345c98fe680fd88e40c2bf2331fdbdc10792f4; PRs #19–21 merged. Main CI job 140252354422 passed 42 Python, 21 Node integration and 15 Chromium tests, Node line coverage 90.05%; lint/typecheck/coverage/Lighthouse passed.",
-        "Candidate portfolio edits and regressions prepared. Existing AssistantHub lifecycle state preserved; this entry remains pending acceptance. No local checkout or live deployment review."
+        "Candidate portfolio edits and regressions prepared. Existing AssistantHub lifecycle state preserved; this entry remains pending acceptance. No local checkout or live deployment review.",
+        "PR #69 merged at fc4194af; E2E and Lighthouse checks for 2a967577 passed (runs 45921732257 and 45921732244). Historical upstream source and CI evidence retained in README and progress."
+      ]
+    },
+    {
+      "id": "public-safety-recruiter-story-2026-11",
+      "name": "Simplify Public Safety engineering story for recruiters",
+      "description": "Preserve the four-card layout and explain durable competencies, quality practices and trade-offs without source-file or run-specific links in the public drawer.",
+      "status": "pending",
+      "dependencies": [
+        "public-safety-governance-portfolio-2026-11"
+      ],
+      "doneCriteria": [
+        "Bilingual four-card supplement uses non-interactive headings and capability-focused descriptions",
+        "General quality assurance and engineering trade-offs replace dated CI figures; historical evidence remains documented",
+        "Existing public project links, official-notice workflow, preview and other stories remain unchanged",
+        "Responsive bilingual browser checks and portfolio CI pass"
+      ],
+      "evidence": [
+        "PR #69 merged baseline verified; candidate changes restricted to supplement data, shared renderer/type, regression assertions and documentation. No local checkout or visual review; candidate CI pending."
       ]
     }
   ]

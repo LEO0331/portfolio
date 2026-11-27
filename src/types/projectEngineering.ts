@@ -11,12 +11,11 @@ export interface EngineeringStory {
   decision: string;
   supplement?: {
     title: string;
-    items: { label: string; detail: string; href: string }[];
+    items: { label: string; detail: string }[];
+    verificationTitle: string;
     verification: string;
-    verificationHref: string;
+    boundaryTitle: string;
     boundary: string;
-    documentationLabel: string;
-    documentationHref: string;
   };
   previewCaption?: string;
 }

@@ -1,5 +1,12 @@
 # Portfolio Progress Log
 
+## Public Safety recruiter story refinement — 2026-11-27
+
+- Verified PR #69 merged at fc4194af and its E2E and Lighthouse checks succeeded (runs 45921732257 and 45921732244). Retain the historical upstream evidence in the preceding entry and README.
+- Changed only the bilingual Public Safety supplement and its shared optional renderer/type: plain four-card headings, competency/risk-focused descriptions, stable quality assurance copy and concise trade-offs. Removed all supplement links and dated CI counts from the UI; existing project repository/demo links, metadata, workflow, preview and other engineering stories unchanged.
+- Updated the existing bilingual 320/640/1440px browser assertions for heading semantics, link-free content, absence of dated counts and overflow, and no supplement on the other standard stories. No local checkout through MCP; local harness/install/audit/unit/build/E2E/diff check and visual review not run. Candidate CI pending.
+- Next: review focused PR and CI; merge after approval. Apply the same editorial principle to other projects only in separately scoped updates.
+
 ## Public Safety governance refresh — 2026-11-27
 
 - Updated the existing publicsafetydashboard bilingual card and registered engineering drawer, preserving project identity, preview, public links, categories and original official PDF workflow. Added optional compact source-linked security supplement to the existing story renderer; other stories remain unchanged.
